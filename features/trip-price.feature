@@ -29,6 +29,14 @@ Feature: What the trip actually costs
     When the trip is priced
     Then the total is 4181.86 ₽
     And the event price is shown as text and excluded from the sum
+    And the screen is given the words "уточняется у организатора" to show
+
+  Scenario: A price the catalogue wrote as a number is part of the sum
+    Given the journey there costs 2090.93 ₽
+    And the journey home costs 2090.93 ₽
+    And the event price reads "13000 р."
+    When the trip is priced
+    Then the total is 17181.86 ₽
 
   Scenario: A price that starts with "от" makes the whole total a lower bound
     Given the journey there costs 2090.93 ₽
@@ -44,7 +52,7 @@ Feature: What the trip actually costs
     And the event price reads "бесплатно"
     When the trip is priced
     Then the total is 4181.86 ₽
-    And the event price is not shown as unknown
+    And the event is priced as free
 
   Scenario Outline: Prices the catalogue writes that must not be turned into numbers
     Given the journey there costs 1000 ₽
@@ -96,10 +104,43 @@ Feature: What the trip actually costs
     Then the budget is not exceeded
     And 0 ₽ is left over
 
-  Scenario: The recorded hotel and trains price a real trip
+  Scenario: A budget verdict on a lower bound is not promised as certain
+    Given the journey there costs 1000 ₽
+    And the journey home costs 1000 ₽
+    And the event price reads "от 7 000 ₽"
+    And the traveller has a budget of 10000 ₽
+    When the trip is priced
+    Then the budget is not exceeded
+    But the trip may still cost more than the budget
+
+  Scenario Outline: A night departure costs fewer working days than a midday one
+    Given the traveller leaves home at <departure> and gets back at 2026-08-30T22:00:00+03:00
+    And every day in between is a working day
+    When the working days are counted
+    Then the trip burns <days> working days
+
+    Examples:
+      | departure                 | days |
+      | 2026-08-28T23:15:00+03:00 | 2    |
+      | 2026-08-28T14:00:00+03:00 | 3    |
+
+  Scenario: A weekend trip burns no working days at all
+    Given the traveller leaves home at 2026-08-28T20:00:00+03:00 and gets back at 2026-08-30T09:00:00+03:00
+    And no day in between is a working day
+    When the working days are counted
+    Then the trip burns 0 working days
+
+  Scenario: Without a production calendar no number is invented
+    Given the traveller leaves home at 2026-08-28T20:00:00+03:00 and gets back at 2026-08-30T09:00:00+03:00
+    And the production calendar did not answer
+    When the working days are counted
+    Then the trip does not say how many working days it burns
+
+  Scenario: The cheapest recorded trip is priced from the recorded payloads
     Given the recorded journeys from Москва to Екатеринбург
     And the recorded journeys from Екатеринбург to Москва
     And the recorded hotels in Екатеринбург
     When the cheapest recorded trip is priced
-    Then the breakdown adds up to the total
+    Then the total is 15889.65 ₽
     And the hotel line equals the price Tutu returned for the whole stay
+    And the breakdown adds up to the total

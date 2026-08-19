@@ -1,6 +1,13 @@
 import assert from 'node:assert/strict';
 import { Given, Then, When } from '@cucumber/cucumber';
-import { parseEventPrice, priceTrip, type TripCost, type TripCostInput } from '../../src/composer/pricing.ts';
+import {
+  countWorkingDaysBurnt,
+  parseEventPrice,
+  priceTrip,
+  type TripCost,
+  type TripCostInput,
+} from '../../src/composer/pricing.ts';
+import type { IsoDate } from '../../src/composer/types.ts';
 import type { ZaezdWorld } from '../support/world.ts';
 import type { RecordedHotel, RecordedVariant } from './tutu.steps.ts';
 
@@ -34,8 +41,9 @@ Given('the stay is {int} nights long', function (this: ZaezdWorld, nights: numbe
   extend(this, { nights });
 });
 
+// The business input is the string the catalogue wrote; parsing it is part of the action.
 Given('the event price reads {string}', function (this: ZaezdWorld, text: string) {
-  extend(this, { eventPrice: parseEventPrice(text) });
+  this.remember('event-price-text', text);
 });
 
 Given('the traveller has a budget of {float} ₽', function (this: ZaezdWorld, budget: number) {
@@ -44,13 +52,23 @@ Given('the traveller has a budget of {float} ₽', function (this: ZaezdWorld, b
 
 When('the trip is priced', function (this: ZaezdWorld) {
   const input = draft(this);
-  this.remember('cost', priceTrip({ ...input, eventPrice: input.eventPrice ?? parseEventPrice(undefined) }));
+  const text = this.scratch.has('event-price-text')
+    ? this.recall<string>('event-price-text')
+    : undefined;
+
+  this.remember(
+    'cost',
+    priceTrip({ ...input, nights: input.nights ?? 0, eventPrice: parseEventPrice(text) }),
+  );
 });
 
 When('the cheapest recorded trip is priced', function (this: ZaezdWorld) {
   const there = cheapest(this.recall<RecordedVariant[]>('journeys:Москва->Екатеринбург'));
   const home = cheapest(this.recall<RecordedVariant[]>('journeys:Екатеринбург->Москва'));
-  const hotel = this.recall<RecordedHotel[]>('recorded-hotels')[0];
+  const hotels = this.recall<RecordedHotel[]>('recorded-hotels');
+  const hotel = hotels.reduce((best, item) =>
+    item.best_offer.price.amount < best.best_offer.price.amount ? item : best,
+  );
   assert.ok(hotel !== undefined, 'the recorded listing has no hotels');
   assert.equal(hotel.best_offer.price_basis, 'stay_total');
 
@@ -83,10 +101,6 @@ Then('the breakdown adds up to the total', function (this: ZaezdWorld) {
 
 Then('the event price is shown as text and excluded from the sum', function (this: ZaezdWorld) {
   assert.equal(cost(this).eventPriceExcluded, true);
-});
-
-Then('the event price is not shown as unknown', function (this: ZaezdWorld) {
-  assert.equal(cost(this).eventPriceExcluded, false);
 });
 
 Then('the total is a lower bound, not an exact figure', function (this: ZaezdWorld) {
@@ -128,4 +142,60 @@ Then('the hotel line equals the price Tutu returned for the whole stay', functio
   const hotel = this.recall<RecordedHotel>('hotel');
   const line = cost(this).breakdown.find((item) => item.part === 'hotel');
   assert.equal(line?.amount, hotel.best_offer.price.amount);
+});
+
+Given(
+  'the traveller leaves home at {word} and gets back at {word}',
+  function (this: ZaezdWorld, departure: string, arrival: string) {
+    this.remember('journey-window', { departure, arrival });
+  },
+);
+
+Given('every day in between is a working day', function (this: ZaezdWorld) {
+  this.remember('calendar', (): boolean => true);
+});
+
+Given('no day in between is a working day', function (this: ZaezdWorld) {
+  this.remember('calendar', (): boolean => false);
+});
+
+Given('the production calendar did not answer', function (this: ZaezdWorld) {
+  this.remember('calendar', (): undefined => undefined);
+});
+
+When('the working days are counted', function (this: ZaezdWorld) {
+  const { departure, arrival } = this.recall<{ departure: string; arrival: string }>(
+    'journey-window',
+  );
+  this.remember(
+    'working-days',
+    countWorkingDaysBurnt({
+      outboundDepartureAt: departure,
+      returnArrivalAt: arrival,
+      isWorkingDay: this.recall<(day: IsoDate) => boolean | undefined>('calendar'),
+    }),
+  );
+});
+
+Then('the trip burns {int} working days', function (this: ZaezdWorld, days: number) {
+  assert.equal(this.recall<number | undefined>('working-days'), days);
+});
+
+Then('the trip does not say how many working days it burns', function (this: ZaezdWorld) {
+  assert.equal(this.recall<number | undefined>('working-days'), undefined);
+});
+
+Then('the screen is given the words {string} to show', function (this: ZaezdWorld, text: string) {
+  assert.equal(cost(this).eventPriceText, text);
+});
+
+Then('the event is priced as free', function (this: ZaezdWorld) {
+  const { breakdown, eventPriceExcluded, eventPriceText } = cost(this);
+  assert.equal(eventPriceExcluded, false);
+  assert.equal(eventPriceText, 'бесплатно');
+  assert.ok(breakdown.every((line) => line.part !== 'event'));
+});
+
+Then('the trip may still cost more than the budget', function (this: ZaezdWorld) {
+  assert.equal(cost(this).budget?.couldExceed, true);
 });
