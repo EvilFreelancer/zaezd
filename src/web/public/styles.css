@@ -215,6 +215,34 @@ button:focus-visible,
   color: var(--tutu-text-tertiary);
 }
 
+/* The hotel photograph sits left of its two lines; without one the card is unchanged. */
+.leg--hotel:has(.leg__photo) {
+  grid-template-columns: 4.5rem minmax(0, 1fr) auto;
+}
+
+.leg__photo {
+  grid-row: 1 / span 3;
+  grid-column: 1;
+  width: 4.5rem;
+  height: 4.5rem;
+  object-fit: cover;
+  border-radius: 8px;
+  background: var(--tutu-surface-muted);
+}
+
+.leg--hotel:has(.leg__photo) .leg__what {
+  grid-column: 2;
+}
+
+.leg--hotel:has(.leg__photo) .leg__price {
+  grid-column: 3;
+}
+
+.leg--hotel:has(.leg__photo) .leg__when,
+.leg--hotel:has(.leg__photo) .leg__margin {
+  grid-column: 2 / -1;
+}
+
 .leg__what {
   overflow-wrap: anywhere;
 }
@@ -235,6 +263,18 @@ button:focus-visible,
 
 .leg__margin--late {
   color: var(--late);
+}
+
+/* Waiting and failing ------------------------------------------------------------------- */
+
+/* Inside a host the board is empty until the host forwards a result. Say so, do not sit blank. */
+.waiting {
+  margin: 0;
+  padding: 1.25rem;
+  border: 1px dashed var(--tutu-border);
+  border-radius: var(--radius);
+  color: var(--tutu-text-secondary);
+  text-align: center;
 }
 
 /* Budget bar ---------------------------------------------------------------------------- */

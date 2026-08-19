@@ -51,8 +51,15 @@ export function escapeJson(value: unknown): string {
 }
 
 /** What a traveller with no JavaScript, or a failed script, still gets to read. */
-function fallbackText(trip: TripResult | undefined, problem: string | undefined): string {
+function fallbackText(
+  trip: TripResult | undefined,
+  problem: string | undefined,
+  channel: Channel,
+): string {
   if (problem !== undefined) return escapeHtml(problem);
+  // The App shell ships without a trip on purpose: it is waiting for one, not reporting a
+  // failure to find one, and saying otherwise would be the first thing a host renders.
+  if (channel === 'app') return 'Ждём поездку от хоста.';
   if (trip?.event === undefined) return 'Поездка не собрана.';
 
   const lines = [
@@ -65,11 +72,55 @@ function fallbackText(trip: TripResult | undefined, problem: string | undefined)
   return lines.map((line) => escapeHtml(line)).join('<br />');
 }
 
+/**
+ * What the board actually needs, and nothing else.
+ *
+ * The domain result carries the handles the checkout builder works with - `checkoutRef` with its
+ * `search_id` and offer hashes - and the English message a source wrote for the logs. The screen
+ * rebuilds a checkout from the request, never from those handles, so they are dropped here
+ * rather than handed to a browser and to an MCP host along with the picture.
+ */
+export function boardPayload(trip: TripResult) {
+  return {
+    ...trip,
+    sourceNotes: trip.sourceNotes.map(({ source, what, reason }) => ({ source, what, reason })),
+    packages: trip.packages.map((item) => ({
+      ...item,
+      variant: {
+        ...item.variant,
+        outbound: withoutRef(item.variant.outbound),
+        back: withoutRef(item.variant.back),
+        ...(item.variant.hotel === undefined
+          ? {}
+          : {
+              hotel: {
+                ...item.variant.hotel,
+                hotel: withoutRef(item.variant.hotel.hotel),
+              },
+            }),
+      },
+    })),
+  };
+}
+
+function withoutRef<T extends { readonly checkoutRef?: unknown }>(value: T): Omit<T, 'checkoutRef'> {
+  const rest: Record<string, unknown> = { ...value };
+  delete rest['checkoutRef'];
+  return rest as Omit<T, 'checkoutRef'>;
+}
+
 export function renderShell(options: ShellOptions): string {
   const data =
     options.trip === undefined
       ? ''
-      : `\n    <script type="application/json" id="trip-data">${escapeJson(options.trip)}</script>`;
+      : `\n    <script type="application/json" id="trip-data">${escapeJson(boardPayload(options.trip))}</script>`;
+
+  // In a host the bridge is fetched here rather than by the board's own dynamic import, so the
+  // transport is up before the host sends its first notification. On the web it is never fetched.
+  const bridge =
+    options.channel === 'app'
+      ? `\n    <script type="module" src="${options.assets.script.replace(/boot\.js$/, 'vendor/mcp-apps/app.js')}"></script>`
+      : '';
 
   return `<!doctype html>
 <html lang="ru">
@@ -81,9 +132,9 @@ export function renderShell(options: ShellOptions): string {
     <link rel="stylesheet" href="${options.assets.styles}" />
   </head>
   <body data-channel="${options.channel}">
-    <noscript class="fallback">${fallbackText(options.trip, options.problem)}</noscript>
+    <noscript class="fallback">${fallbackText(options.trip, options.problem, options.channel)}</noscript>
     <div id="board" class="board" aria-live="polite"></div>${data}
-    <script src="${options.assets.leaflet.replace('.css', '.js')}"></script>
+    <script src="${options.assets.leaflet.replace('.css', '.js')}"></script>${bridge}
     <script type="module" src="${options.assets.script}"></script>
   </body>
 </html>

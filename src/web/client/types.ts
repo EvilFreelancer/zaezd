@@ -154,7 +154,6 @@ export type TripResult = {
     readonly source: string;
     readonly what: string;
     readonly reason: string;
-    readonly message: string;
   }[];
   readonly emptyReason?: string;
   readonly workingDaysCounted: boolean;

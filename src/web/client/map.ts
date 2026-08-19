@@ -29,6 +29,7 @@ type TileLayer = {
 };
 
 type LeafletMap = {
+  remove(): void;
   removeLayer(layer: unknown): void;
   fitBounds(points: readonly LatLng[], options: { padding: readonly [number, number] }): void;
   setView(centre: LatLng, zoom: number): void;
@@ -64,6 +65,8 @@ function pin(colour: string, label?: string): unknown {
 }
 
 let map: LeafletMap | undefined;
+/** The element the current map was built on; a re-render replaces it with a fresh one. */
+let mapHost: HTMLElement | undefined;
 
 export function drawMap(trip: TripResult | undefined, selectedId?: string): void {
   const container = document.getElementById('map');
@@ -91,8 +94,16 @@ export function drawMap(trip: TripResult | undefined, selectedId?: string): void
   }
   container.hidden = false;
 
+  // A second render replaces the whole board, `#map` included. A Leaflet instance bound to the
+  // element that just left the document draws nothing, so it is thrown away with it.
+  if (map !== undefined && mapHost !== container) {
+    map.remove();
+    map = undefined;
+  }
+
   if (map === undefined) {
     map = L.map(container, { attributionControl: true, scrollWheelZoom: false });
+    mapHost = container;
     L.tileLayer('https://tile.openstreetmap.de/{z}/{x}/{y}.png', {
       maxZoom: 18,
       // Public tiles require attribution; this is a condition of use, not decoration.

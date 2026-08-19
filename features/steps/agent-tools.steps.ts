@@ -8,9 +8,8 @@ import { createHandler } from '../../src/web/server.ts';
 import { createMcpServer } from '../../src/mcp/server.ts';
 import { labelForCheckout } from '../../src/composer/checkout-labels.ts';
 import { coverageSentence } from '../../src/web/client/copy.ts';
+import { WEB_URL } from '../support/addresses.ts';
 import type { ZaezdWorld } from '../support/world.ts';
-
-const WEB_URL = 'https://zaezd.example';
 
 type ToolAnswer = {
   readonly structuredContent?: Record<string, unknown>;
@@ -84,6 +83,7 @@ async function published(world: ZaezdWorld): Promise<string> {
   const port = (server.address() as { port: number }).port;
   const address = `http://127.0.0.1:${port}/mcp`;
   world.remember('server', server);
+  world.remember('origin', `http://127.0.0.1:${port}`);
   world.remember('address', address);
   return address;
 }

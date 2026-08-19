@@ -78,6 +78,10 @@ function serveStatic(res: ServerResponse, filePath: string): boolean {
     'Content-Type': CONTENT_TYPES[extname(filePath)] ?? 'application/octet-stream',
     'Content-Length': size,
     'Cache-Control': 'public, max-age=300',
+    // An MCP App runs in a sandboxed iframe with an opaque origin, and a module script is
+    // fetched in CORS mode. Without this header the board loads on the web and stays blank
+    // inside a host - the failure this project cannot afford. These are public static files.
+    'Access-Control-Allow-Origin': '*',
   });
   createReadStream(filePath).pipe(res);
   return true;

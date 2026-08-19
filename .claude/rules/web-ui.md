@@ -81,9 +81,9 @@ variant highlighted, clicking a marker selects its card. No cross-country route 
 destroys the scale at either zoom level. OpenStreetMap attribution is mandatory, and the
 tile provider must be one whose usage policy allows this - `tile.openstreetmap.org` does
 not. If tiles fail to load, hide the map block and render the hotels as a list with their
-distances; an empty grey rectangle is worse than no map. Hotel photos from `cdn1.tu-tu.ru`
-render only if the domain is allowed by CSP, otherwise a placeholder, because broken images
-are worse than none.
+distances; an empty grey rectangle is worse than no map. Hotel photos from `cdn1.tu-tu.ru` and
+`cdn2.tu-tu.ru` need those domains in the CSP; an image that fails to load removes itself,
+because a torn frame in a card is worse than no picture.
 
 The timeline runs from departure to return and marks departure, arrival, event start, event
 end, return departure, return arrival, with the buffer as a coloured span. It shows

@@ -115,12 +115,27 @@ function hotelLine(entry: RankedHotel | undefined): HTMLElement {
       ? undefined
       : el('span', { class: 'leg__margin', text: `${(entry.distanceM / 1000).toFixed(1)} км до площадки` });
 
-  return el('div', { class: 'leg' }, [
+  return el('div', { class: 'leg leg--hotel' }, [
+    photo(entry.hotel.photo, entry.hotel.name),
     el('span', { class: 'leg__what', text: `Отель: ${entry.hotel.name}` }),
     el('span', { class: 'leg__when', text: entry.hotel.address ?? 'адрес Туту не вернул' }),
     el('span', { class: 'leg__price', text: money(entry.hotel.price) }),
     distance,
   ]);
+}
+
+/**
+ * The hotel's own picture, when Tutu gave one and the policy lets it through.
+ *
+ * A broken image is worse than none, so an image that fails to load removes itself instead of
+ * leaving a torn frame in the card.
+ */
+function photo(url: string | undefined, name: string): HTMLElement | undefined {
+  if (url === undefined) return undefined;
+
+  const image = el('img', { class: 'leg__photo', src: url, alt: name, loading: 'lazy' });
+  image.addEventListener('error', () => image.remove());
+  return image;
 }
 
 const PART_NAMES: Readonly<Record<string, string>> = { outbound: 'дорога туда', hotel: 'отель', back: 'обратно', event: 'событие' };

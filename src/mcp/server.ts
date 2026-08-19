@@ -12,6 +12,11 @@
  * Specified in `specs/06-mcp-shlyuz.md`.
  */
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
+import {
+  registerAppResource,
+  registerAppTool,
+  RESOURCE_MIME_TYPE,
+} from '@modelcontextprotocol/ext-apps/server';
 import { z } from 'zod';
 import type { App } from '../app.ts';
 import { decodeTripId, encodeTripId, TripIdError } from '../composer/trip-id.ts';
@@ -19,7 +24,8 @@ import { toList, toNumber, toText } from '../sources/arguments.ts';
 import type { Leg, TripRequest } from '../composer/types.ts';
 import type { RankedHotel } from '../composer/hotels.ts';
 import type { TripResult } from '../composer/build-trip.ts';
-import { renderShell } from '../web/render.ts';
+import { boardPayload, renderShell } from '../web/render.ts';
+import { CHECKOUT_META_KEY, TRIP_META_KEY } from '../web/client/contract.ts';
 import {
   coverageSentence,
   plural,
@@ -31,6 +37,16 @@ import {
 } from '../web/client/copy.ts';
 
 export const UI_RESOURCE = 'ui://zaezd/trip-board';
+
+/**
+ * Where the widget finds the trip.
+ *
+ * `structuredContent` is written for the model: flat, small, snake_case. The board is drawn by
+ * the same renderer the public link uses, and that renderer eats the board payload, so that
+ * payload travels beside the answer under a namespaced key rather than being reshaped into a
+ * second view model that would drift from the first.
+ */
+export { TRIP_META_KEY, CHECKOUT_META_KEY };
 
 /**
  * Every list argument is accepted in the three shapes agents actually send, so the schema is
@@ -474,7 +490,8 @@ export function createMcpServer(app: App, publicUrl: string): McpServer {
     return { id, url: `${publicUrl.replace(/\/$/, '')}/t/${id}` };
   };
 
-  server.registerTool(
+  registerAppTool(
+    server,
     'find_event_trips',
     {
       title: 'Найти поездку на конференцию',
@@ -492,11 +509,16 @@ export function createMcpServer(app: App, publicUrl: string): McpServer {
       const link = linkFor(request);
       const shaped = shapeTrip(trip, link.id, link.url);
 
-      return { content: [{ type: 'text', text: textFor(shaped) }], structuredContent: shaped };
+      return {
+        content: [{ type: 'text', text: textFor(shaped) }],
+        structuredContent: shaped,
+        _meta: { [TRIP_META_KEY]: boardPayload(trip) },
+      };
     },
   );
 
-  server.registerTool(
+  registerAppTool(
+    server,
     'get_trip_details',
     {
       title: 'Раскрыть пакет поездки',
@@ -516,7 +538,13 @@ export function createMcpServer(app: App, publicUrl: string): McpServer {
         ...shapeTrip({ ...trip, packages: only }, link.id, link.url),
         ...detailsOf(trip),
       };
-      return { content: [{ type: 'text', text: textFor(shaped) }], structuredContent: shaped };
+      return {
+        content: [{ type: 'text', text: textFor(shaped) }],
+        structuredContent: shaped,
+        // The board keeps every package. Narrowing it here would shrink a widget the host
+        // already drew from the search, in front of whoever is looking at it.
+        _meta: { [TRIP_META_KEY]: boardPayload(trip) },
+      };
     },
   );
 
@@ -573,6 +601,7 @@ export function createMcpServer(app: App, publicUrl: string): McpServer {
       return {
         content: [{ type: 'text', text: written.join('\n') }],
         structuredContent: shaped,
+        _meta: { [CHECKOUT_META_KEY]: links },
       };
     },
   );
@@ -581,28 +610,38 @@ export function createMcpServer(app: App, publicUrl: string): McpServer {
    * One resource, not three. The App loads it independently of the tool call and receives the
    * result afterwards, so the shell ships without data and the renderer fills it in.
    */
-  server.registerResource(
+  const ui = {
+    csp: {
+      // Everything the page loads or talks to, named. A host defaults to `default-src 'none'`,
+      // so anything left out here simply does not appear.
+      connectDomains: [publicUrl],
+      resourceDomains: [
+        publicUrl,
+        'https://tile.openstreetmap.de',
+        'https://cdn1.tu-tu.ru',
+        'https://cdn2.tu-tu.ru',
+      ],
+    },
+    prefersBorder: true,
+  };
+
+  registerAppResource(
+    server,
     'trip-board',
     UI_RESOURCE,
     {
       title: 'Экран поездки',
       description: 'Тот же экран, что и на публичной ссылке.',
-      mimeType: 'text/html;profile=mcp-app',
-      _meta: {
-        ui: {
-          csp: {
-            connectDomains: [publicUrl],
-            resourceDomains: [publicUrl, 'https://tile.openstreetmap.de', 'https://cdn1.tu-tu.ru', 'https://cdn2.tu-tu.ru'],
-          },
-          prefersBorder: true,
-        },
-      },
+      _meta: { ui },
     },
-    async () => ({
+    () => ({
       contents: [
         {
           uri: UI_RESOURCE,
-          mimeType: 'text/html;profile=mcp-app',
+          mimeType: RESOURCE_MIME_TYPE,
+          // Hosts read this from the content item; the wrapper copy below is for the ones
+          // that read it from the result. Both, because being wrong here means no tiles.
+          _meta: { ui },
           text: renderShell({
             channel: 'app',
             title: 'Заезд',
@@ -614,6 +653,7 @@ export function createMcpServer(app: App, publicUrl: string): McpServer {
           }),
         },
       ],
+      _meta: { ui },
     }),
   );
 
