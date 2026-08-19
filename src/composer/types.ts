@@ -14,6 +14,12 @@ export type IsoDate = string;
  */
 export type IsoDateTime = string;
 
+/** An amount exactly as a source returned it. Rendered without rounding, all the way out. */
+export type Money = {
+  readonly amount: number;
+  readonly currency: string;
+};
+
 /** What a source calls a place, after L3 has resolved the traveller's free-text origin. */
 export type ResolvedCity = {
   readonly slug: string;

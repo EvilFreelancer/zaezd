@@ -60,7 +60,9 @@ Given(
     const fixture = RECORDED_JOURNEYS[`${from}->${to}`];
     assert.ok(fixture !== undefined, `no recorded journeys from ${from} to ${to}`);
 
-    this.remember('variants', loadPayload<{ variants: RecordedVariant[] }>(fixture).variants);
+    const { variants } = loadPayload<{ variants: RecordedVariant[] }>(fixture);
+    this.remember('variants', variants);
+    this.remember(`journeys:${from}->${to}`, variants);
   },
 );
 
