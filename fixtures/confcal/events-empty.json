@@ -1,0 +1,48 @@
+{
+  "recorded_at": "2026-08-19T09:50:57.172Z",
+  "source": "confcal",
+  "tool": "search_events",
+  "arguments": {
+    "cities": [
+      "krasnoyarsk"
+    ],
+    "topics": [
+      "gamedev"
+    ],
+    "event_format": "offline",
+    "limit": 5
+  },
+  "note": "an empty catalogue answer still owes the user a coverage note",
+  "response": {
+    "envelope": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+        "content": [
+          {
+            "text": "{\n  \"items\": [],\n  \"count\": 0,\n  \"filter\": {\n    \"cities\": [\n      \"krasnoyarsk\"\n    ],\n    \"topics\": [\n      \"gamedev\"\n    ],\n    \"date_from\": null,\n    \"date_to\": null,\n    \"only_free\": false,\n    \"limit\": 5,\n    \"offset\": 0\n  }\n}",
+            "type": "text"
+          }
+        ],
+        "isError": false
+      }
+    },
+    "payload": {
+      "items": [],
+      "count": 0,
+      "filter": {
+        "cities": [
+          "krasnoyarsk"
+        ],
+        "topics": [
+          "gamedev"
+        ],
+        "date_from": null,
+        "date_to": null,
+        "only_free": false,
+        "limit": 5,
+        "offset": 0
+      }
+    }
+  }
+}

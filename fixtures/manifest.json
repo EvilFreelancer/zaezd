@@ -1,0 +1,506 @@
+{
+  "recorded_at": "2026-08-19T09:50:57.172Z",
+  "entries": [
+    {
+      "file": "confcal/initialize.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "confcal",
+      "tool": "initialize",
+      "arguments": {},
+      "note": "the session id arrives in the mcp-session-id response header, not in the body",
+      "volatile": [
+        "headers.mcp-session-id"
+      ]
+    },
+    {
+      "file": "confcal/list-cities.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "confcal",
+      "tool": "list_cities",
+      "arguments": {
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "file": "confcal/list-topics.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "confcal",
+      "tool": "list_topics",
+      "arguments": {
+        "limit": 100,
+        "offset": 0
+      }
+    },
+    {
+      "file": "confcal/list-cities-page-2.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "confcal",
+      "tool": "list_cities",
+      "arguments": {
+        "limit": 5,
+        "offset": 5
+      },
+      "note": "a second page, so coverage is not computed from page one and called the catalogue"
+    },
+    {
+      "file": "confcal/events-ai-offline.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "confcal",
+      "tool": "search_events",
+      "arguments": {
+        "cities": [
+          "ekaterinburg",
+          "kazan",
+          "spb",
+          "novosibirsk"
+        ],
+        "topics": [
+          "ai"
+        ],
+        "event_format": "offline",
+        "limit": 20
+      },
+      "note": "the default demo: a morning start with a real address, a null starts_at, a null venue"
+    },
+    {
+      "file": "confcal/events-ai-online.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "confcal",
+      "tool": "search_events",
+      "arguments": {
+        "cities": [
+          "online"
+        ],
+        "topics": [
+          "ai"
+        ],
+        "event_format": "online",
+        "limit": 5
+      },
+      "note": "online events build no trip and get their own message"
+    },
+    {
+      "file": "confcal/events-ai-moscow.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "confcal",
+      "tool": "search_events",
+      "arguments": {
+        "cities": [
+          "moscow"
+        ],
+        "topics": [
+          "ai"
+        ],
+        "event_format": "offline",
+        "limit": 5
+      },
+      "note": "events in the origin city are dropped with their own message"
+    },
+    {
+      "file": "confcal/events-empty.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "confcal",
+      "tool": "search_events",
+      "arguments": {
+        "cities": [
+          "krasnoyarsk"
+        ],
+        "topics": [
+          "gamedev"
+        ],
+        "event_format": "offline",
+        "limit": 5
+      },
+      "note": "an empty catalogue answer still owes the user a coverage note"
+    },
+    {
+      "file": "confcal/session-lost.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "confcal",
+      "tool": "list_cities",
+      "arguments": {
+        "limit": 1
+      },
+      "note": "what an expired or unknown mcp-session-id looks like"
+    },
+    {
+      "file": "tutu/multitransport-msk-ekb-out.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "tutu",
+      "tool": "search_multitransport",
+      "arguments": {
+        "origin": "Москва",
+        "destination": "Екатеринбург",
+        "departure_date": "2026-08-26",
+        "page_size": 6
+      },
+      "volatile": [
+        "variants[].checkout_ref",
+        "variants[].checkout_url"
+      ],
+      "note": "outbound leg of the default demo"
+    },
+    {
+      "file": "tutu/multitransport-ekb-msk-back.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "tutu",
+      "tool": "search_multitransport",
+      "arguments": {
+        "origin": "Екатеринбург",
+        "destination": "Москва",
+        "departure_date": "2026-08-30",
+        "page_size": 6
+      },
+      "volatile": [
+        "variants[].checkout_ref",
+        "variants[].checkout_url"
+      ],
+      "note": "the return leg, without which the total is knowably wrong"
+    },
+    {
+      "file": "tutu/hotels-ekb.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "tutu",
+      "tool": "search_hotels",
+      "arguments": {
+        "city_name": "Екатеринбург",
+        "check_in": "2026-08-26",
+        "check_out": "2026-08-30",
+        "adults": 1,
+        "page_size": 20
+      },
+      "volatile": [
+        "hotels[].checkout_ref",
+        "hotels[].checkout_url",
+        "hotels[].best_offer.checkout_url",
+        "meta.search_id"
+      ]
+    },
+    {
+      "file": "tutu/multitransport-msk-kzn-out.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "tutu",
+      "tool": "search_multitransport",
+      "arguments": {
+        "origin": "Москва",
+        "destination": "Казань",
+        "departure_date": "2026-10-28",
+        "page_size": 6
+      },
+      "volatile": [
+        "variants[].checkout_ref",
+        "variants[].checkout_url"
+      ]
+    },
+    {
+      "file": "tutu/multitransport-kzn-msk-back.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "tutu",
+      "tool": "search_multitransport",
+      "arguments": {
+        "origin": "Казань",
+        "destination": "Москва",
+        "departure_date": "2026-11-01",
+        "page_size": 6
+      },
+      "volatile": [
+        "variants[].checkout_ref",
+        "variants[].checkout_url"
+      ]
+    },
+    {
+      "file": "tutu/hotels-kzn.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "tutu",
+      "tool": "search_hotels",
+      "arguments": {
+        "city_name": "Казань",
+        "check_in": "2026-10-28",
+        "check_out": "2026-11-01",
+        "adults": 1,
+        "page_size": 20
+      },
+      "volatile": [
+        "hotels[].checkout_ref",
+        "hotels[].checkout_url",
+        "hotels[].best_offer.checkout_url",
+        "meta.search_id"
+      ]
+    },
+    {
+      "file": "tutu/multitransport-thin-route.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "tutu",
+      "tool": "search_multitransport",
+      "arguments": {
+        "origin": "Иннополис",
+        "destination": "Калининград",
+        "departure_date": "2026-10-28",
+        "page_size": 6
+      },
+      "volatile": [
+        "variants[].checkout_ref",
+        "variants[].checkout_url"
+      ],
+      "note": "a thin route: some modes come back empty while others live"
+    },
+    {
+      "file": "tutu/error-extra-key.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "tutu",
+      "tool": "search_multitransport",
+      "arguments": {
+        "origin": "Москва",
+        "destination": "Казань",
+        "date": "2026-10-28"
+      },
+      "note": "the validation error every agent hits sooner or later"
+    },
+    {
+      "file": "tutu/checkout-rail.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "tutu",
+      "tool": "create_checkout_link",
+      "arguments": {
+        "transport": "railway",
+        "departure_city_id": 2657260,
+        "arrival_city_id": 2656869,
+        "departure_station_code": "2000003",
+        "arrival_station_code": "2030000",
+        "train_number": "082И",
+        "departure_at": "2026-08-26T16:38:00+03:00",
+        "departure_geo_point_id": 2957765,
+        "arrival_geo_point_id": 2959918,
+        "offer_hash": "4e78226229488cf595ecbe06706307e9",
+        "segment_hash": "b54cabb5c00bbaa744434476fb30759f",
+        "search_id": "4B74CFFC-055D-471B-8DBF-4A0F41BA3B31",
+        "result_id": "e745e539-9ba6-5213-9f5b-147d16dd1ae2",
+        "card_id": "55313c4951e7d58002dfcc44286c5227"
+      },
+      "volatile": [
+        "checkout_url"
+      ],
+      "note": "rail without a seat choice; the kind decides the label, we do not"
+    },
+    {
+      "file": "tutu/checkout-avia.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "tutu",
+      "tool": "create_checkout_link",
+      "arguments": {
+        "transport": "avia",
+        "is_round_trip": false,
+        "search_results_url": "https://avia.tutu.ru/f/Moskva/Ekaterinburg/?class=Y&travelers=1&route[0]=491-26082026-29",
+        "offer_hash": "{\"Price\":6453,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"8a836197e0d49ddf369cccf67374eaee\\\",\\\"variantConditionsHash\\\":\\\"8d49e974c066566c6e0b1560e2cf3f45:f4b7bd50b88d2aef62aa0ef78689dd61\\\",\\\"pricingVariantHash\\\":\\\"4575c91f296ce6ca1701ee6a1e613a1f\\\"}]\"}",
+        "departure_geo_city_id": 2657260,
+        "arrival_geo_city_id": 2656869,
+        "departure_at": "2026-08-26T00:50:00+03:00",
+        "service_class": "ECONOMIC",
+        "departure_avia_id": "491",
+        "arrival_avia_id": "29",
+        "passengers_full": 1,
+        "passengers_child": 0,
+        "passengers_infant": 0
+      },
+      "volatile": [
+        "checkout_url"
+      ],
+      "note": "air: in a cold browser this lands on search, which is what the label must say"
+    },
+    {
+      "file": "tutu/checkout-hotel-page.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "tutu",
+      "tool": "create_checkout_link",
+      "arguments": {
+        "transport": "hotels",
+        "hotel_geo_id": "11409967",
+        "check_in": "2026-08-26",
+        "check_out": "2026-08-30",
+        "adults": 1,
+        "hotel_alias": "marins_park_otel_yekaterinburg",
+        "search_id": "9ffb6f8048d289d91ba131d6e8f8e4c9",
+        "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11409967&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9"
+      },
+      "volatile": [
+        "checkout_url"
+      ],
+      "note": "no offer_pack_hash: this opens the hotel page and is not a cart, whatever we wish"
+    },
+    {
+      "file": "tutu/offer-details-ekb.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "tutu",
+      "tool": "get_offer_details",
+      "arguments": {
+        "product_type": "hotels",
+        "offer_id": "11409967",
+        "check_in": "2026-08-26",
+        "check_out": "2026-08-30",
+        "adults": 1
+      },
+      "volatile": [
+        "rooms[].rates[].offerpack_hash"
+      ],
+      "note": "only a room rate offerpack_hash mints a cart; the listing best_offer one does not"
+    },
+    {
+      "file": "tutu/checkout-hotel-cart.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "tutu",
+      "tool": "create_checkout_link",
+      "arguments": {
+        "transport": "hotels",
+        "hotel_geo_id": "11409967",
+        "check_in": "2026-08-26",
+        "check_out": "2026-08-30",
+        "adults": 1,
+        "hotel_alias": "marins_park_otel_yekaterinburg",
+        "search_id": "9ffb6f8048d289d91ba131d6e8f8e4c9",
+        "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11409967&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
+        "offer_pack_hash": "1d25103c-f6c2-4292-b60f-cbb9bb6504c9"
+      },
+      "volatile": [
+        "checkout_url"
+      ],
+      "note": "with a room rate hash this really is a cart"
+    },
+    {
+      "file": "enrich/nominatim-venue-verbatim.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "nominatim",
+      "tool": "search",
+      "arguments": {
+        "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=5&q=%D0%93%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%BE%D0%B9%20%D0%BC%D0%BE%D0%BB%D0%BE%D0%B4%D1%91%D0%B6%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80%20%C2%AB%D0%A1%D0%B0%D0%BB%D1%8E%D1%82%C2%BB%2C%20%D1%83%D0%BB.%20%D0%A2%D0%BE%D0%BB%D0%BC%D0%B0%D1%87%D1%91%D0%B2%D0%B0%2C%2012%2C%20%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3",
+        "q": "Городской молодёжный кластер «Салют», ул. Толмачёва, 12, Екатеринбург"
+      },
+      "note": "step one, the venue string as the catalogue wrote it: Nominatim returns nothing at all"
+    },
+    {
+      "file": "enrich/nominatim-street.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "nominatim",
+      "tool": "search",
+      "arguments": {
+        "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=5&q=%D1%83%D0%BB.%20%D0%A2%D0%BE%D0%BB%D0%BC%D0%B0%D1%87%D1%91%D0%B2%D0%B0%2C%2012%2C%20%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3",
+        "q": "ул. Толмачёва, 12, Екатеринбург"
+      },
+      "note": "step two, the address part pulled out of the venue string: this is what actually resolves"
+    },
+    {
+      "file": "enrich/nominatim-company-name.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "nominatim",
+      "tool": "search",
+      "arguments": {
+        "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=5&q=YADRO%2C%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3",
+        "q": "YADRO, Санкт-Петербург"
+      },
+      "note": "a company name resolves to something plausible and means little; precision must not be claimed"
+    },
+    {
+      "file": "enrich/nominatim-city.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "nominatim",
+      "tool": "search",
+      "arguments": {
+        "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=5&q=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3",
+        "q": "Екатеринбург"
+      },
+      "note": "step three, the city itself: a normal mode of operation, not an exception"
+    },
+    {
+      "file": "enrich/osrm-foot.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "osrm",
+      "tool": "route-foot",
+      "arguments": {
+        "url": "https://routing.openstreetmap.de/routed-foot/route/v1/foot/49.119747,55.799152;49.108891,55.796127?overview=false",
+        "profile": "foot"
+      },
+      "note": "the only profile a walking time may come from"
+    },
+    {
+      "file": "enrich/osrm-car.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "osrm",
+      "tool": "route-car",
+      "arguments": {
+        "url": "https://router.project-osrm.org/route/v1/driving/49.119747,55.799152;49.108891,55.796127?overview=false",
+        "profile": "driving"
+      },
+      "note": "the public demo server serves this profile only; it must never be shown as walking"
+    },
+    {
+      "file": "enrich/isdayoff-2026-08.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "isdayoff",
+      "tool": "getdata",
+      "arguments": {
+        "url": "https://isdayoff.ru/api/getdata?year=2026&month=08",
+        "year": "2026",
+        "month": "08"
+      },
+      "note": "one character per day, 0 working and 1 off"
+    },
+    {
+      "file": "enrich/isdayoff-2026-09.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "isdayoff",
+      "tool": "getdata",
+      "arguments": {
+        "url": "https://isdayoff.ru/api/getdata?year=2026&month=09",
+        "year": "2026",
+        "month": "09"
+      },
+      "note": "one character per day, 0 working and 1 off"
+    },
+    {
+      "file": "enrich/isdayoff-2026-10.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "isdayoff",
+      "tool": "getdata",
+      "arguments": {
+        "url": "https://isdayoff.ru/api/getdata?year=2026&month=10",
+        "year": "2026",
+        "month": "10"
+      },
+      "note": "one character per day, 0 working and 1 off"
+    },
+    {
+      "file": "enrich/isdayoff-2026-11.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "isdayoff",
+      "tool": "getdata",
+      "arguments": {
+        "url": "https://isdayoff.ru/api/getdata?year=2026&month=11",
+        "year": "2026",
+        "month": "11"
+      },
+      "note": "one character per day, 0 working and 1 off"
+    },
+    {
+      "file": "enrich/openmeteo-in-window.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "open-meteo",
+      "tool": "forecast",
+      "arguments": {
+        "url": "https://api.open-meteo.com/v1/forecast?latitude=56.8389&longitude=60.6057&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=auto&start_date=2026-08-26&end_date=2026-08-30",
+        "city": "Екатеринбург"
+      },
+      "note": "inside the 16-day forecast window at the time of recording"
+    },
+    {
+      "file": "enrich/openmeteo-out-of-window.json",
+      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "source": "open-meteo",
+      "tool": "forecast",
+      "arguments": {
+        "url": "https://api.open-meteo.com/v1/forecast?latitude=55.7963&longitude=49.1088&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=auto&start_date=2026-10-28&end_date=2026-11-01",
+        "city": "Казань"
+      },
+      "note": "beyond the window Open-Meteo refuses the range outright and names the bounds; the block is hidden and history is never substituted"
+    }
+  ]
+}

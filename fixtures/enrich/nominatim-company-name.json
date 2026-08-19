@@ -1,0 +1,57 @@
+{
+  "recorded_at": "2026-08-19T09:50:57.172Z",
+  "source": "nominatim",
+  "tool": "search",
+  "arguments": {
+    "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=5&q=YADRO%2C%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3",
+    "q": "YADRO, Санкт-Петербург"
+  },
+  "note": "a company name resolves to something plausible and means little; precision must not be claimed",
+  "response": {
+    "status": 200,
+    "body": [
+      {
+        "place_id": 169141172,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 5563374530,
+        "lat": "59.9362219",
+        "lon": "30.3341717",
+        "category": "office",
+        "type": "it",
+        "place_rank": 30,
+        "importance": 0.00008232166018153685,
+        "addresstype": "office",
+        "name": "Yadro",
+        "display_name": "Yadro, 17, Итальянская улица, Дворцовый округ, Санкт-Петербург, Северо-Западный федеральный округ, 191186, Россия",
+        "boundingbox": [
+          "59.9361719",
+          "59.9362719",
+          "30.3341217",
+          "30.3342217"
+        ]
+      },
+      {
+        "place_id": 169857515,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 12952682131,
+        "lat": "59.9613593",
+        "lon": "30.4057431",
+        "category": "office",
+        "type": "it",
+        "place_rank": 30,
+        "importance": 0.00008232166018153685,
+        "addresstype": "office",
+        "name": "Yadro",
+        "display_name": "Yadro, 44 литБ, Свердловская набережная, Выборгская сторона, Финляндский округ, Санкт-Петербург, Северо-Западный федеральный округ, 195027, Россия",
+        "boundingbox": [
+          "59.9613093",
+          "59.9614093",
+          "30.4056931",
+          "30.4057931"
+        ]
+      }
+    ]
+  }
+}

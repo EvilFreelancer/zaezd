@@ -1,0 +1,15 @@
+{
+  "recorded_at": "2026-08-19T09:50:57.172Z",
+  "source": "isdayoff",
+  "tool": "getdata",
+  "arguments": {
+    "url": "https://isdayoff.ru/api/getdata?year=2026&month=10",
+    "year": "2026",
+    "month": "10"
+  },
+  "note": "one character per day, 0 working and 1 off",
+  "response": {
+    "status": 200,
+    "body": "0011000001100000110000011000001"
+  }
+}

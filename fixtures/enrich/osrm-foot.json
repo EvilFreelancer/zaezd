@@ -1,0 +1,53 @@
+{
+  "recorded_at": "2026-08-19T09:50:57.172Z",
+  "source": "osrm",
+  "tool": "route-foot",
+  "arguments": {
+    "url": "https://routing.openstreetmap.de/routed-foot/route/v1/foot/49.119747,55.799152;49.108891,55.796127?overview=false",
+    "profile": "foot"
+  },
+  "note": "the only profile a walking time may come from",
+  "response": {
+    "status": 200,
+    "body": {
+      "code": "Ok",
+      "routes": [
+        {
+          "legs": [
+            {
+              "steps": [],
+              "weight": 88.91,
+              "summary": "",
+              "duration": 847.1,
+              "distance": 1058.6
+            }
+          ],
+          "weight_name": "routability",
+          "weight": 88.91,
+          "duration": 847.1,
+          "distance": 1058.6
+        }
+      ],
+      "waypoints": [
+        {
+          "hint": "IHhFnDZ4RZyeAQAAKAAAAAAAAADPAAAAn74lQvCQfUAAAAAAlJilQUsBAAAgAAAAAAAAAKYAAAB6AAAAoYHtAlFtUwMDgu0CcG1TAwAAbwkAAAAA",
+          "location": [
+            49.119649,
+            55.799121
+          ],
+          "name": "",
+          "distance": 7.052286431
+        },
+        {
+          "hint": "F9cBh-bN5JBNAAAA7wAAAAAAAACZAAAAOrcTQWQ35UEAAAAAc6GSQUoAAADlAAAAAAAAAJMAAAB6AAAAWVftAm9hUwObV-0Cn2FTAwAATxMAAAAA",
+          "location": [
+            49.108825,
+            55.796079
+          ],
+          "name": "",
+          "distance": 6.761303378
+        }
+      ]
+    }
+  }
+}

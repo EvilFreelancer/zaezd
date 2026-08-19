@@ -1,0 +1,59 @@
+{
+  "recorded_at": "2026-08-19T09:50:57.172Z",
+  "source": "confcal",
+  "tool": "list_cities",
+  "arguments": {
+    "limit": 5,
+    "offset": 5
+  },
+  "note": "a second page, so coverage is not computed from page one and called the catalogue",
+  "response": {
+    "envelope": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+        "content": [
+          {
+            "text": "{\n  \"items\": [\n    {\n      \"slug\": \"kazan\",\n      \"title\": \"Казань\",\n      \"events_count\": 4\n    },\n    {\n      \"slug\": \"kaliningrad\",\n      \"title\": \"Калининград\",\n      \"events_count\": 2\n    },\n    {\n      \"slug\": \"krasnodar\",\n      \"title\": \"Краснодар\",\n      \"events_count\": 2\n    },\n    {\n      \"slug\": \"krasnoyarsk\",\n      \"title\": \"Красноярск\",\n      \"events_count\": 0\n    },\n    {\n      \"slug\": \"moscow\",\n      \"title\": \"Москва\",\n      \"events_count\": 162\n    }\n  ],\n  \"total\": 21,\n  \"limit\": 5,\n  \"offset\": 5,\n  \"has_more\": true,\n  \"online_count\": 40\n}",
+            "type": "text"
+          }
+        ],
+        "isError": false
+      }
+    },
+    "payload": {
+      "items": [
+        {
+          "slug": "kazan",
+          "title": "Казань",
+          "events_count": 4
+        },
+        {
+          "slug": "kaliningrad",
+          "title": "Калининград",
+          "events_count": 2
+        },
+        {
+          "slug": "krasnodar",
+          "title": "Краснодар",
+          "events_count": 2
+        },
+        {
+          "slug": "krasnoyarsk",
+          "title": "Красноярск",
+          "events_count": 0
+        },
+        {
+          "slug": "moscow",
+          "title": "Москва",
+          "events_count": 162
+        }
+      ],
+      "total": 21,
+      "limit": 5,
+      "offset": 5,
+      "has_more": true,
+      "online_count": 40
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "recorded_at": "2026-08-19T09:50:57.172Z",
+  "source": "confcal",
+  "tool": "initialize",
+  "arguments": {},
+  "note": "the session id arrives in the mcp-session-id response header, not in the body",
+  "volatile": [
+    "headers.mcp-session-id"
+  ],
+  "response": {
+    "headers": {
+      "mcp-session-id": "8bbde26f6c244896956e1f7c52052d39"
+    },
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+        "capabilities": {
+          "experimental": {},
+          "prompts": {
+            "listChanged": false
+          },
+          "resources": {
+            "listChanged": false,
+            "subscribe": false
+          },
+          "tools": {
+            "listChanged": false
+          }
+        },
+        "instructions": "Каталог ИТ-конференций и митапов России. Города и темы берутся из конечного справочника, поэтому сначала стоит вызвать list_cities и list_topics, а потом искать события через search_events. Подписной ICS-календарь выдаёт Telegram-бот: calendar_link возвращает ссылку на бота с уже разобранным фильтром, дальше пользователь подтверждает подписку и получает ссылку на календарь.",
+        "protocolVersion": "2025-06-18",
+        "serverInfo": {
+          "name": "confcal",
+          "title": "Календарь ИТ-конференций России",
+          "version": "0.1.0"
+        }
+      }
+    }
+  }
+}

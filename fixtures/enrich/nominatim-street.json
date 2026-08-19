@@ -1,0 +1,99 @@
+{
+  "recorded_at": "2026-08-19T09:50:57.172Z",
+  "source": "nominatim",
+  "tool": "search",
+  "arguments": {
+    "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=5&q=%D1%83%D0%BB.%20%D0%A2%D0%BE%D0%BB%D0%BC%D0%B0%D1%87%D1%91%D0%B2%D0%B0%2C%2012%2C%20%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3",
+    "q": "ул. Толмачёва, 12, Екатеринбург"
+  },
+  "note": "step two, the address part pulled out of the venue string: this is what actually resolves",
+  "response": {
+    "status": 200,
+    "body": [
+      {
+        "place_id": 419355076,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 41110183,
+        "lat": "56.8381978",
+        "lon": "60.6103939",
+        "category": "building",
+        "type": "civic",
+        "place_rank": 30,
+        "importance": 0.000072487220569116,
+        "addresstype": "building",
+        "name": "",
+        "display_name": "12, улица Толмачёва, Ленинский район, Екатеринбург, городской округ Екатеринбург, Свердловская область, Уральский федеральный округ, 620075, Россия",
+        "boundingbox": [
+          "56.8379896",
+          "56.8384263",
+          "60.6099633",
+          "60.6107436"
+        ]
+      },
+      {
+        "place_id": 201098643,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 2654255490,
+        "lat": "56.8380399",
+        "lon": "60.6101532",
+        "category": "tourism",
+        "type": "artwork",
+        "place_rank": 30,
+        "importance": 0.000072487220569116,
+        "addresstype": "tourism",
+        "name": "Граффити \"Бумажный самолетик\"",
+        "display_name": "Граффити \"Бумажный самолетик\", 12, улица Толмачёва, Ленинский район, Екатеринбург, городской округ Екатеринбург, Свердловская область, Уральский федеральный округ, 620075, Россия",
+        "boundingbox": [
+          "56.8379899",
+          "56.8380899",
+          "60.6101032",
+          "60.6102032"
+        ]
+      },
+      {
+        "place_id": 199994144,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 10565423409,
+        "lat": "56.8382342",
+        "lon": "60.6102645",
+        "category": "tourism",
+        "type": "attraction",
+        "place_rank": 30,
+        "importance": 0.000072487220569116,
+        "addresstype": "tourism",
+        "name": "Граффити Лампаса Покраса \"All your walls are belong to us\"",
+        "display_name": "Граффити Лампаса Покраса \"All your walls are belong to us\", 12, улица Толмачёва, Ленинский район, Екатеринбург, городской округ Екатеринбург, Свердловская область, Уральский федеральный округ, 620075, Россия",
+        "boundingbox": [
+          "56.8381842",
+          "56.8382842",
+          "60.6102145",
+          "60.6103145"
+        ]
+      },
+      {
+        "place_id": 201098496,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 1823658259,
+        "lat": "56.8383439",
+        "lon": "60.6099907",
+        "category": "amenity",
+        "type": "restaurant",
+        "place_rank": 30,
+        "importance": 0.000072487220569116,
+        "addresstype": "amenity",
+        "name": "Pumpula",
+        "display_name": "Pumpula, 12, улица Толмачёва, Ленинский район, Екатеринбург, городской округ Екатеринбург, Свердловская область, Уральский федеральный округ, 620075, Россия",
+        "boundingbox": [
+          "56.8382939",
+          "56.8383939",
+          "60.6099407",
+          "60.6100407"
+        ]
+      }
+    ]
+  }
+}

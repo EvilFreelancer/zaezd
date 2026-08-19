@@ -1,0 +1,36 @@
+{
+  "recorded_at": "2026-08-19T09:50:57.172Z",
+  "source": "nominatim",
+  "tool": "search",
+  "arguments": {
+    "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=5&q=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3",
+    "q": "Екатеринбург"
+  },
+  "note": "step three, the city itself: a normal mode of operation, not an exception",
+  "response": {
+    "status": 200,
+    "body": [
+      {
+        "place_id": 199040639,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "relation",
+        "osm_id": 6564910,
+        "lat": "56.8382071",
+        "lon": "60.6007886",
+        "category": "place",
+        "type": "city",
+        "place_rank": 16,
+        "importance": 0.6834685898898489,
+        "addresstype": "city",
+        "name": "Екатеринбург",
+        "display_name": "Екатеринбург, городской округ Екатеринбург, Свердловская область, Уральский федеральный округ, Россия",
+        "boundingbox": [
+          "56.5937449",
+          "56.9826914",
+          "60.0070815",
+          "60.9432814"
+        ]
+      }
+    ]
+  }
+}

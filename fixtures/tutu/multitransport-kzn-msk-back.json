@@ -1,0 +1,764 @@
+{
+  "recorded_at": "2026-08-19T09:50:57.172Z",
+  "source": "tutu",
+  "tool": "search_multitransport",
+  "arguments": {
+    "origin": "Казань",
+    "destination": "Москва",
+    "departure_date": "2026-11-01",
+    "page_size": 6
+  },
+  "volatile": [
+    "variants[].checkout_ref",
+    "variants[].checkout_url"
+  ],
+  "response": {
+    "envelope": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"variants\":[{\"offer_id\":\"6b2c41d7350f245ceccb33635fb99dba\",\"transport\":\"railway\",\"price\":{\"amount\":2093.82,\"currency\":\"RUB\"},\"duration_min\":730,\"carriers\":[\"ФПК\"],\"search_results_url\":\"https://www.tutu.ru/poezda/rasp_d.php?date=01.11.2026&nnst1=2060615&nnst2=2000000\",\"segments_count\":1,\"checkout_url\":\"https://www.tutu.ru/poezda/order/?departure_st=2656873&arrival_st=2657260&dep_st=2060500&arr_st=2000003&tn=127%D0%AD&date=01.11.2026+16:20:00\",\"departure_at\":\"2026-11-01T16:20:00+03:00\",\"arrival_at\":\"2026-11-02T04:30:00+03:00\",\"legs\":[{\"label\":\"outbound\",\"from\":\"Казань — Казань Пасс (2060500)\",\"to\":\"Москва — Казанский вокзал (2000003)\",\"departure_at\":\"2026-11-01T16:20:00+03:00\",\"arrival_at\":\"2026-11-02T04:30:00+03:00\",\"duration_min\":730,\"segments\":[{\"from\":\"Казань — Казань Пасс (2060500)\",\"to\":\"Москва — Казанский вокзал (2000003)\",\"departure_at\":\"2026-11-01T16:20:00+03:00\",\"arrival_at\":\"2026-11-02T04:30:00+03:00\",\"duration_min\":730,\"carrier\":\"ФПК\",\"voyage_no\":\"127Э\",\"from_geo_point_id\":2961212,\"to_geo_point_id\":2957765}]}],\"checkout_ref\":{\"transport\":\"railway\",\"departure_city_id\":2656873,\"arrival_city_id\":2657260,\"departure_station_code\":\"2060500\",\"arrival_station_code\":\"2000003\",\"train_number\":\"127Э\",\"departure_at\":\"2026-11-01T16:20:00+03:00\",\"departure_geo_point_id\":2961212,\"arrival_geo_point_id\":2957765,\"offer_hash\":\"6b2c41d7350f245ceccb33635fb99dba\",\"segment_hash\":\"75069bd5d11446779ce444b3c3c9feb7\",\"search_id\":\"EF848789-96A2-45E2-9E89-6EA868753EE4\",\"result_id\":\"35132a62-7f07-56df-8f1a-f192596cb0da\",\"card_id\":\"54d3c6e8eae01b4a9ef2fc69b3938ab4\"},\"details_ref\":{\"transport\":\"railway\",\"source\":\"seats-gateway.seats-by-params\",\"departure_station_code\":\"2060500\",\"arrival_station_code\":\"2000003\",\"train_number\":\"127Э\",\"departure_at\":\"2026-11-01T16:20:00+03:00\",\"price\":{\"amount\":2093.82,\"currency\":\"RUB\"},\"title\":\"Поезд 127Э\",\"carriers\":[\"ФПК\"],\"duration_min\":730,\"arrival_at\":\"2026-11-02T04:30:00+03:00\",\"review_summary\":{\"rating\":7.3,\"review_count\":75,\"label\":\"⭐ 7.3/10 · 75 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"train\",\"subject\":\"127Э\",\"scale\":10,\"feedback_key\":\"127Э\"}},\"review_summary\":{\"rating\":7.3,\"review_count\":75,\"label\":\"⭐ 7.3/10 · 75 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"train\",\"subject\":\"127Э\",\"scale\":10,\"feedback_key\":\"127Э\"},\"fares\":{\"count\":38,\"price_from\":2093.82,\"price_to\":10299.5,\"currency\":\"RUB\",\"refundable_count\":32,\"changeable_count\":0,\"seat_categories\":{\"SEDENTARY\":{\"count\":2,\"price_from\":2093.82},\"RESERVED_SEAT\":{\"count\":16,\"price_from\":2871.08},\"COMPARTMENT\":{\"count\":18,\"price_from\":3559.88},\"LUX\":{\"count\":2,\"price_from\":10299.5}}}},{\"offer_id\":\"ff9d7e8e5d623daf15cb9853da2c5961\",\"transport\":\"railway\",\"price\":{\"amount\":2093.82,\"currency\":\"RUB\"},\"duration_min\":784,\"carriers\":[\"ФПК\"],\"search_results_url\":\"https://www.tutu.ru/poezda/rasp_d.php?date=01.11.2026&nnst1=2060615&nnst2=2000000\",\"segments_count\":1,\"checkout_url\":\"https://www.tutu.ru/poezda/order/?departure_st=2656873&arrival_st=2657260&dep_st=2060500&arr_st=2000003&tn=129%D0%AD&date=01.11.2026+21:53:00\",\"departure_at\":\"2026-11-01T21:53:00+03:00\",\"arrival_at\":\"2026-11-02T10:57:00+03:00\",\"legs\":[{\"label\":\"outbound\",\"from\":\"Казань — Казань Пасс (2060500)\",\"to\":\"Москва — Казанский вокзал (2000003)\",\"departure_at\":\"2026-11-01T21:53:00+03:00\",\"arrival_at\":\"2026-11-02T10:57:00+03:00\",\"duration_min\":784,\"segments\":[{\"from\":\"Казань — Казань Пасс (2060500)\",\"to\":\"Москва — Казанский вокзал (2000003)\",\"departure_at\":\"2026-11-01T21:53:00+03:00\",\"arrival_at\":\"2026-11-02T10:57:00+03:00\",\"duration_min\":784,\"carrier\":\"ФПК\",\"voyage_no\":\"129Э\",\"from_geo_point_id\":2961212,\"to_geo_point_id\":2957765}]}],\"checkout_ref\":{\"transport\":\"railway\",\"departure_city_id\":2656873,\"arrival_city_id\":2657260,\"departure_station_code\":\"2060500\",\"arrival_station_code\":\"2000003\",\"train_number\":\"129Э\",\"departure_at\":\"2026-11-01T21:53:00+03:00\",\"departure_geo_point_id\":2961212,\"arrival_geo_point_id\":2957765,\"offer_hash\":\"ff9d7e8e5d623daf15cb9853da2c5961\",\"segment_hash\":\"26173308da446fce45410fe7d6b89349\",\"search_id\":\"EF848789-96A2-45E2-9E89-6EA868753EE4\",\"result_id\":\"77fc42e0-66db-5a93-b244-e0d53ce030ce\",\"card_id\":\"8ee8417b4a9d39591f41978bee596706\"},\"details_ref\":{\"transport\":\"railway\",\"source\":\"seats-gateway.seats-by-params\",\"departure_station_code\":\"2060500\",\"arrival_station_code\":\"2000003\",\"train_number\":\"129Э\",\"departure_at\":\"2026-11-01T21:53:00+03:00\",\"price\":{\"amount\":2093.82,\"currency\":\"RUB\"},\"title\":\"Поезд 129Э\",\"carriers\":[\"ФПК\"],\"duration_min\":784,\"arrival_at\":\"2026-11-02T10:57:00+03:00\",\"review_summary\":{\"rating\":7.8,\"review_count\":72,\"label\":\"⭐ 7.8/10 · 72 отзыва\",\"source\":\"offers-api.feedback\",\"scope\":\"train\",\"subject\":\"129Э\",\"scale\":10,\"feedback_key\":\"129Э\"}},\"review_summary\":{\"rating\":7.8,\"review_count\":72,\"label\":\"⭐ 7.8/10 · 72 отзыва\",\"source\":\"offers-api.feedback\",\"scope\":\"train\",\"subject\":\"129Э\",\"scale\":10,\"feedback_key\":\"129Э\"},\"fares\":{\"count\":37,\"price_from\":2093.82,\"price_to\":10872.5,\"currency\":\"RUB\",\"refundable_count\":31,\"changeable_count\":0,\"seat_categories\":{\"SEDENTARY\":{\"count\":1,\"price_from\":2093.82},\"RESERVED_SEAT\":{\"count\":16,\"price_from\":2871.08},\"COMPARTMENT\":{\"count\":18,\"price_from\":3687.98},\"LUX\":{\"count\":2,\"price_from\":10872.5}}}},{\"offer_id\":\"b2ed6ff9c62dea3d0ad9d5babd73f0ef\",\"transport\":\"railway\",\"price\":{\"amount\":2871.08,\"currency\":\"RUB\"},\"duration_min\":685,\"carriers\":[\"ФПК\"],\"search_results_url\":\"https://www.tutu.ru/poezda/rasp_d.php?date=01.11.2026&nnst1=2060615&nnst2=2000000\",\"segments_count\":1,\"checkout_url\":\"https://www.tutu.ru/poezda/order/?departure_st=2656873&arrival_st=2657260&dep_st=2060961&arr_st=2000003&tn=112%D0%99&date=01.11.2026+22:21:00\",\"departure_at\":\"2026-11-01T22:21:00+03:00\",\"arrival_at\":\"2026-11-02T09:46:00+03:00\",\"legs\":[{\"label\":\"outbound\",\"from\":\"Казань — Казань-2 − Восстание Пасс. (2060961)\",\"to\":\"Москва — Казанский вокзал (2000003)\",\"departure_at\":\"2026-11-01T22:21:00+03:00\",\"arrival_at\":\"2026-11-02T09:46:00+03:00\",\"duration_min\":685,\"segments\":[{\"from\":\"Казань — Казань-2 − Восстание Пасс. (2060961)\",\"to\":\"Москва — Казанский вокзал (2000003)\",\"departure_at\":\"2026-11-01T22:21:00+03:00\",\"arrival_at\":\"2026-11-02T09:46:00+03:00\",\"duration_min\":685,\"carrier\":\"ФПК\",\"voyage_no\":\"111*Й\",\"from_geo_point_id\":2961376,\"to_geo_point_id\":2957765}]}],\"checkout_ref\":{\"transport\":\"railway\",\"departure_city_id\":2656873,\"arrival_city_id\":2657260,\"departure_station_code\":\"2060961\",\"arrival_station_code\":\"2000003\",\"train_number\":\"112Й\",\"departure_at\":\"2026-11-01T22:21:00+03:00\",\"departure_geo_point_id\":2961376,\"arrival_geo_point_id\":2957765,\"offer_hash\":\"b2ed6ff9c62dea3d0ad9d5babd73f0ef\",\"segment_hash\":\"d35e861a934be0e6a2aed2c9d387dd41\",\"search_id\":\"EF848789-96A2-45E2-9E89-6EA868753EE4\",\"result_id\":\"0cd581c4-219a-5e35-927f-2076ef67240f\",\"card_id\":\"5c534bd4fd216d8cee283d99f0a3d46f\"},\"details_ref\":{\"transport\":\"railway\",\"source\":\"seats-gateway.seats-by-params\",\"departure_station_code\":\"2060961\",\"arrival_station_code\":\"2000003\",\"train_number\":\"112Й\",\"departure_at\":\"2026-11-01T22:21:00+03:00\",\"price\":{\"amount\":2871.08,\"currency\":\"RUB\"},\"title\":\"Поезд 111*Й\",\"carriers\":[\"ФПК\"],\"duration_min\":685,\"arrival_at\":\"2026-11-02T09:46:00+03:00\"},\"fares\":{\"count\":36,\"price_from\":2871.08,\"price_to\":5905.68,\"currency\":\"RUB\",\"refundable_count\":30,\"changeable_count\":0,\"seat_categories\":{\"RESERVED_SEAT\":{\"count\":16,\"price_from\":2871.08},\"COMPARTMENT\":{\"count\":20,\"price_from\":3687.98}}}},{\"offer_id\":\"bd029fbd7fc907cb5aac0d4c08365a71\",\"transport\":\"railway\",\"price\":{\"amount\":2871.08,\"currency\":\"RUB\"},\"duration_min\":741,\"carriers\":[\"ФПК\"],\"search_results_url\":\"https://www.tutu.ru/poezda/rasp_d.php?date=01.11.2026&nnst1=2060615&nnst2=2000000\",\"segments_count\":1,\"checkout_url\":\"https://www.tutu.ru/poezda/order/?departure_st=2656873&arrival_st=2657260&dep_st=2060961&arr_st=2000003&tn=095%D0%9D&date=01.11.2026+16:29:00\",\"departure_at\":\"2026-11-01T16:29:00+03:00\",\"arrival_at\":\"2026-11-02T04:50:00+03:00\",\"legs\":[{\"label\":\"outbound\",\"from\":\"Казань — Казань-2 − Восстание Пасс. (2060961)\",\"to\":\"Москва — Казанский вокзал (2000003)\",\"departure_at\":\"2026-11-01T16:29:00+03:00\",\"arrival_at\":\"2026-11-02T04:50:00+03:00\",\"duration_min\":741,\"segments\":[{\"from\":\"Казань — Казань-2 − Восстание Пасс. (2060961)\",\"to\":\"Москва — Казанский вокзал (2000003)\",\"departure_at\":\"2026-11-01T16:29:00+03:00\",\"arrival_at\":\"2026-11-02T04:50:00+03:00\",\"duration_min\":741,\"carrier\":\"ФПК\",\"voyage_no\":\"095Н\",\"from_geo_point_id\":2961376,\"to_geo_point_id\":2957765}]}],\"checkout_ref\":{\"transport\":\"railway\",\"departure_city_id\":2656873,\"arrival_city_id\":2657260,\"departure_station_code\":\"2060961\",\"arrival_station_code\":\"2000003\",\"train_number\":\"095Н\",\"departure_at\":\"2026-11-01T16:29:00+03:00\",\"departure_geo_point_id\":2961376,\"arrival_geo_point_id\":2957765,\"offer_hash\":\"bd029fbd7fc907cb5aac0d4c08365a71\",\"segment_hash\":\"12c769850802774c9b556e24fecadf2c\",\"search_id\":\"EF848789-96A2-45E2-9E89-6EA868753EE4\",\"result_id\":\"378c0427-dc17-539c-a0c6-8f3c7722d18f\",\"card_id\":\"8b6d2af717e5cf14aee92a5bc42a50de\"},\"details_ref\":{\"transport\":\"railway\",\"source\":\"seats-gateway.seats-by-params\",\"departure_station_code\":\"2060961\",\"arrival_station_code\":\"2000003\",\"train_number\":\"095Н\",\"departure_at\":\"2026-11-01T16:29:00+03:00\",\"price\":{\"amount\":2871.08,\"currency\":\"RUB\"},\"title\":\"Поезд 095Н\",\"carriers\":[\"ФПК\"],\"duration_min\":741,\"arrival_at\":\"2026-11-02T04:50:00+03:00\",\"review_summary\":{\"rating\":7.8,\"review_count\":1005,\"label\":\"⭐ 7.8/10 · 1 005 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"train\",\"subject\":\"095Н\",\"scale\":10,\"feedback_key\":\"095Н\"}},\"review_summary\":{\"rating\":7.8,\"review_count\":1005,\"label\":\"⭐ 7.8/10 · 1 005 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"train\",\"subject\":\"095Н\",\"scale\":10,\"feedback_key\":\"095Н\"},\"fares\":{\"count\":36,\"price_from\":2871.08,\"price_to\":6933.32,\"currency\":\"RUB\",\"refundable_count\":30,\"changeable_count\":0,\"seat_categories\":{\"RESERVED_SEAT\":{\"count\":16,\"price_from\":2871.08},\"COMPARTMENT\":{\"count\":20,\"price_from\":3009.68}}}},{\"offer_id\":\"064fbbe2d19ef87d3416ca58911be9a6\",\"transport\":\"railway\",\"price\":{\"amount\":2871.08,\"currency\":\"RUB\"},\"duration_min\":771,\"carriers\":[\"ФПК\"],\"search_results_url\":\"https://www.tutu.ru/poezda/rasp_d.php?date=01.11.2026&nnst1=2060615&nnst2=2000000\",\"segments_count\":1,\"checkout_url\":\"https://www.tutu.ru/poezda/order/?departure_st=2656873&arrival_st=2657260&dep_st=2060961&arr_st=2000003&tn=081%D0%98&date=01.11.2026+16:39:00\",\"departure_at\":\"2026-11-01T16:39:00+03:00\",\"arrival_at\":\"2026-11-02T05:30:00+03:00\",\"legs\":[{\"label\":\"outbound\",\"from\":\"Казань — Казань-2 − Восстание Пасс. (2060961)\",\"to\":\"Москва — Казанский вокзал (2000003)\",\"departure_at\":\"2026-11-01T16:39:00+03:00\",\"arrival_at\":\"2026-11-02T05:30:00+03:00\",\"duration_min\":771,\"segments\":[{\"from\":\"Казань — Казань-2 − Восстание Пасс. (2060961)\",\"to\":\"Москва — Казанский вокзал (2000003)\",\"departure_at\":\"2026-11-01T16:39:00+03:00\",\"arrival_at\":\"2026-11-02T05:30:00+03:00\",\"duration_min\":771,\"carrier\":\"ФПК\",\"voyage_no\":\"081И\",\"from_geo_point_id\":2961376,\"to_geo_point_id\":2957765}]}],\"checkout_ref\":{\"transport\":\"railway\",\"departure_city_id\":2656873,\"arrival_city_id\":2657260,\"departure_station_code\":\"2060961\",\"arrival_station_code\":\"2000003\",\"train_number\":\"081И\",\"departure_at\":\"2026-11-01T16:39:00+03:00\",\"departure_geo_point_id\":2961376,\"arrival_geo_point_id\":2957765,\"offer_hash\":\"064fbbe2d19ef87d3416ca58911be9a6\",\"segment_hash\":\"21081b87acaae36d91524af33778d3b6\",\"search_id\":\"EF848789-96A2-45E2-9E89-6EA868753EE4\",\"result_id\":\"2649744a-a831-595e-8966-fea1304bb2c2\",\"card_id\":\"7c0c0f9f358cde7fea263f5467cebdd7\"},\"details_ref\":{\"transport\":\"railway\",\"source\":\"seats-gateway.seats-by-params\",\"departure_station_code\":\"2060961\",\"arrival_station_code\":\"2000003\",\"train_number\":\"081И\",\"departure_at\":\"2026-11-01T16:39:00+03:00\",\"price\":{\"amount\":2871.08,\"currency\":\"RUB\"},\"title\":\"Поезд 081И\",\"carriers\":[\"ФПК\"],\"duration_min\":771,\"arrival_at\":\"2026-11-02T05:30:00+03:00\",\"review_summary\":{\"rating\":7.8,\"review_count\":1967,\"label\":\"⭐ 7.8/10 · 1 967 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"train\",\"subject\":\"081И\",\"scale\":10,\"feedback_key\":\"081И\"}},\"review_summary\":{\"rating\":7.8,\"review_count\":1967,\"label\":\"⭐ 7.8/10 · 1 967 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"train\",\"subject\":\"081И\",\"scale\":10,\"feedback_key\":\"081И\"},\"fares\":{\"count\":46,\"price_from\":2871.08,\"price_to\":7152.32,\"currency\":\"RUB\",\"refundable_count\":42,\"changeable_count\":0,\"seat_categories\":{\"RESERVED_SEAT\":{\"count\":30,\"price_from\":2871.08},\"COMPARTMENT\":{\"count\":16,\"price_from\":3577.58}}}},{\"offer_id\":\"ecac2a4d92b78bdba30ec82a79cb04d5\",\"transport\":\"railway\",\"price\":{\"amount\":2944.4,\"currency\":\"RUB\"},\"duration_min\":665,\"carriers\":[\"ФПК\"],\"search_results_url\":\"https://www.tutu.ru/poezda/rasp_d.php?date=01.11.2026&nnst1=2060615&nnst2=2000000\",\"segments_count\":1,\"checkout_url\":\"https://www.tutu.ru/poezda/order/?departure_st=2656873&arrival_st=2657260&dep_st=2060961&arr_st=2000003&tn=055%D0%95&date=01.11.2026+11:09:00\",\"departure_at\":\"2026-11-01T11:09:00+03:00\",\"arrival_at\":\"2026-11-01T22:14:00+03:00\",\"legs\":[{\"label\":\"outbound\",\"from\":\"Казань — Казань-2 − Восстание Пасс. (2060961)\",\"to\":\"Москва — Казанский вокзал (2000003)\",\"departure_at\":\"2026-11-01T11:09:00+03:00\",\"arrival_at\":\"2026-11-01T22:14:00+03:00\",\"duration_min\":665,\"segments\":[{\"from\":\"Казань — Казань-2 − Восстание Пасс. (2060961)\",\"to\":\"Москва — Казанский вокзал (2000003)\",\"departure_at\":\"2026-11-01T11:09:00+03:00\",\"arrival_at\":\"2026-11-01T22:14:00+03:00\",\"duration_min\":665,\"carrier\":\"ФПК\",\"voyage_no\":\"055Е\",\"from_geo_point_id\":2961376,\"to_geo_point_id\":2957765,\"vehicle_meta\":{\"name\":\"Урал\",\"is_premium\":true}}]}],\"checkout_ref\":{\"transport\":\"railway\",\"departure_city_id\":2656873,\"arrival_city_id\":2657260,\"departure_station_code\":\"2060961\",\"arrival_station_code\":\"2000003\",\"train_number\":\"055Е\",\"departure_at\":\"2026-11-01T11:09:00+03:00\",\"departure_geo_point_id\":2961376,\"arrival_geo_point_id\":2957765,\"offer_hash\":\"ecac2a4d92b78bdba30ec82a79cb04d5\",\"segment_hash\":\"906c24de46f33e390317f45b486e73e3\",\"search_id\":\"EF848789-96A2-45E2-9E89-6EA868753EE4\",\"result_id\":\"13e137bd-055c-5bbb-ac9a-282ec89eb10e\",\"card_id\":\"04525536ebd5579ef6f71bb921b888c8\"},\"details_ref\":{\"transport\":\"railway\",\"source\":\"seats-gateway.seats-by-params\",\"departure_station_code\":\"2060961\",\"arrival_station_code\":\"2000003\",\"train_number\":\"055Е\",\"departure_at\":\"2026-11-01T11:09:00+03:00\",\"price\":{\"amount\":2944.4,\"currency\":\"RUB\"},\"title\":\"Поезд 055Е\",\"carriers\":[\"ФПК\"],\"duration_min\":665,\"arrival_at\":\"2026-11-01T22:14:00+03:00\",\"review_summary\":{\"rating\":9.3,\"review_count\":494,\"label\":\"⭐ 9.3/10 · 494 отзыва\",\"source\":\"offers-api.feedback\",\"scope\":\"train\",\"subject\":\"055Е\",\"scale\":10,\"feedback_key\":\"055Е\"}},\"review_summary\":{\"rating\":9.3,\"review_count\":494,\"label\":\"⭐ 9.3/10 · 494 отзыва\",\"source\":\"offers-api.feedback\",\"scope\":\"train\",\"subject\":\"055Е\",\"scale\":10,\"feedback_key\":\"055Е\"},\"fares\":{\"count\":32,\"price_from\":2944.4,\"price_to\":17765.08,\"currency\":\"RUB\",\"refundable_count\":30,\"changeable_count\":0,\"seat_categories\":{\"RESERVED_SEAT\":{\"count\":22,\"price_from\":2944.4},\"COMPARTMENT\":{\"count\":8,\"price_from\":4628.78},\"LUX\":{\"count\":2,\"price_from\":17765.08}}}}],\"meta\":{\"from\":{\"name\":\"Казань\",\"geo_id\":\"2656873\",\"region\":\"городской округ Казань, Республика Татарстан\",\"iata\":\"KZN\"},\"to\":{\"name\":\"Москва\",\"geo_id\":\"2657260\",\"region\":\"Москва город федерального значения\",\"iata\":\"MOW\"},\"optimize_for\":\"price\",\"modes_requested\":[\"avia\",\"railway\",\"bus\",\"etrain\"],\"modes_summary\":{\"avia\":{\"count\":8,\"min_price\":4141.0,\"min_duration_min\":105},\"railway\":{\"count\":8,\"min_price\":2093.82,\"min_duration_min\":665,\"cashback\":{\"rate_pct\":3.0,\"applies_to\":\"all_fares\",\"note\":\"Tutu loyalty points credited to the buyer's Tutu account after payment. NOT a discount: every `price` here is the full amount payable.\",\"scope\":\"mode_page\"}},\"bus\":{\"count\":0,\"min_price\":null,\"min_duration_min\":null},\"etrain\":{\"count\":0,\"min_price\":null,\"min_duration_min\":null}},\"unavailable\":[],\"page\":1,\"page_size\":6,\"total_returned\":6,\"has_more\":true}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    "payload": {
+      "variants": [
+        {
+          "offer_id": "6b2c41d7350f245ceccb33635fb99dba",
+          "transport": "railway",
+          "price": {
+            "amount": 2093.82,
+            "currency": "RUB"
+          },
+          "duration_min": 730,
+          "carriers": [
+            "ФПК"
+          ],
+          "search_results_url": "https://www.tutu.ru/poezda/rasp_d.php?date=01.11.2026&nnst1=2060615&nnst2=2000000",
+          "segments_count": 1,
+          "checkout_url": "https://www.tutu.ru/poezda/order/?departure_st=2656873&arrival_st=2657260&dep_st=2060500&arr_st=2000003&tn=127%D0%AD&date=01.11.2026+16:20:00",
+          "departure_at": "2026-11-01T16:20:00+03:00",
+          "arrival_at": "2026-11-02T04:30:00+03:00",
+          "legs": [
+            {
+              "label": "outbound",
+              "from": "Казань — Казань Пасс (2060500)",
+              "to": "Москва — Казанский вокзал (2000003)",
+              "departure_at": "2026-11-01T16:20:00+03:00",
+              "arrival_at": "2026-11-02T04:30:00+03:00",
+              "duration_min": 730,
+              "segments": [
+                {
+                  "from": "Казань — Казань Пасс (2060500)",
+                  "to": "Москва — Казанский вокзал (2000003)",
+                  "departure_at": "2026-11-01T16:20:00+03:00",
+                  "arrival_at": "2026-11-02T04:30:00+03:00",
+                  "duration_min": 730,
+                  "carrier": "ФПК",
+                  "voyage_no": "127Э",
+                  "from_geo_point_id": 2961212,
+                  "to_geo_point_id": 2957765
+                }
+              ]
+            }
+          ],
+          "checkout_ref": {
+            "transport": "railway",
+            "departure_city_id": 2656873,
+            "arrival_city_id": 2657260,
+            "departure_station_code": "2060500",
+            "arrival_station_code": "2000003",
+            "train_number": "127Э",
+            "departure_at": "2026-11-01T16:20:00+03:00",
+            "departure_geo_point_id": 2961212,
+            "arrival_geo_point_id": 2957765,
+            "offer_hash": "6b2c41d7350f245ceccb33635fb99dba",
+            "segment_hash": "75069bd5d11446779ce444b3c3c9feb7",
+            "search_id": "EF848789-96A2-45E2-9E89-6EA868753EE4",
+            "result_id": "35132a62-7f07-56df-8f1a-f192596cb0da",
+            "card_id": "54d3c6e8eae01b4a9ef2fc69b3938ab4"
+          },
+          "details_ref": {
+            "transport": "railway",
+            "source": "seats-gateway.seats-by-params",
+            "departure_station_code": "2060500",
+            "arrival_station_code": "2000003",
+            "train_number": "127Э",
+            "departure_at": "2026-11-01T16:20:00+03:00",
+            "price": {
+              "amount": 2093.82,
+              "currency": "RUB"
+            },
+            "title": "Поезд 127Э",
+            "carriers": [
+              "ФПК"
+            ],
+            "duration_min": 730,
+            "arrival_at": "2026-11-02T04:30:00+03:00",
+            "review_summary": {
+              "rating": 7.3,
+              "review_count": 75,
+              "label": "⭐ 7.3/10 · 75 отзывов",
+              "source": "offers-api.feedback",
+              "scope": "train",
+              "subject": "127Э",
+              "scale": 10,
+              "feedback_key": "127Э"
+            }
+          },
+          "review_summary": {
+            "rating": 7.3,
+            "review_count": 75,
+            "label": "⭐ 7.3/10 · 75 отзывов",
+            "source": "offers-api.feedback",
+            "scope": "train",
+            "subject": "127Э",
+            "scale": 10,
+            "feedback_key": "127Э"
+          },
+          "fares": {
+            "count": 38,
+            "price_from": 2093.82,
+            "price_to": 10299.5,
+            "currency": "RUB",
+            "refundable_count": 32,
+            "changeable_count": 0,
+            "seat_categories": {
+              "SEDENTARY": {
+                "count": 2,
+                "price_from": 2093.82
+              },
+              "RESERVED_SEAT": {
+                "count": 16,
+                "price_from": 2871.08
+              },
+              "COMPARTMENT": {
+                "count": 18,
+                "price_from": 3559.88
+              },
+              "LUX": {
+                "count": 2,
+                "price_from": 10299.5
+              }
+            }
+          }
+        },
+        {
+          "offer_id": "ff9d7e8e5d623daf15cb9853da2c5961",
+          "transport": "railway",
+          "price": {
+            "amount": 2093.82,
+            "currency": "RUB"
+          },
+          "duration_min": 784,
+          "carriers": [
+            "ФПК"
+          ],
+          "search_results_url": "https://www.tutu.ru/poezda/rasp_d.php?date=01.11.2026&nnst1=2060615&nnst2=2000000",
+          "segments_count": 1,
+          "checkout_url": "https://www.tutu.ru/poezda/order/?departure_st=2656873&arrival_st=2657260&dep_st=2060500&arr_st=2000003&tn=129%D0%AD&date=01.11.2026+21:53:00",
+          "departure_at": "2026-11-01T21:53:00+03:00",
+          "arrival_at": "2026-11-02T10:57:00+03:00",
+          "legs": [
+            {
+              "label": "outbound",
+              "from": "Казань — Казань Пасс (2060500)",
+              "to": "Москва — Казанский вокзал (2000003)",
+              "departure_at": "2026-11-01T21:53:00+03:00",
+              "arrival_at": "2026-11-02T10:57:00+03:00",
+              "duration_min": 784,
+              "segments": [
+                {
+                  "from": "Казань — Казань Пасс (2060500)",
+                  "to": "Москва — Казанский вокзал (2000003)",
+                  "departure_at": "2026-11-01T21:53:00+03:00",
+                  "arrival_at": "2026-11-02T10:57:00+03:00",
+                  "duration_min": 784,
+                  "carrier": "ФПК",
+                  "voyage_no": "129Э",
+                  "from_geo_point_id": 2961212,
+                  "to_geo_point_id": 2957765
+                }
+              ]
+            }
+          ],
+          "checkout_ref": {
+            "transport": "railway",
+            "departure_city_id": 2656873,
+            "arrival_city_id": 2657260,
+            "departure_station_code": "2060500",
+            "arrival_station_code": "2000003",
+            "train_number": "129Э",
+            "departure_at": "2026-11-01T21:53:00+03:00",
+            "departure_geo_point_id": 2961212,
+            "arrival_geo_point_id": 2957765,
+            "offer_hash": "ff9d7e8e5d623daf15cb9853da2c5961",
+            "segment_hash": "26173308da446fce45410fe7d6b89349",
+            "search_id": "EF848789-96A2-45E2-9E89-6EA868753EE4",
+            "result_id": "77fc42e0-66db-5a93-b244-e0d53ce030ce",
+            "card_id": "8ee8417b4a9d39591f41978bee596706"
+          },
+          "details_ref": {
+            "transport": "railway",
+            "source": "seats-gateway.seats-by-params",
+            "departure_station_code": "2060500",
+            "arrival_station_code": "2000003",
+            "train_number": "129Э",
+            "departure_at": "2026-11-01T21:53:00+03:00",
+            "price": {
+              "amount": 2093.82,
+              "currency": "RUB"
+            },
+            "title": "Поезд 129Э",
+            "carriers": [
+              "ФПК"
+            ],
+            "duration_min": 784,
+            "arrival_at": "2026-11-02T10:57:00+03:00",
+            "review_summary": {
+              "rating": 7.8,
+              "review_count": 72,
+              "label": "⭐ 7.8/10 · 72 отзыва",
+              "source": "offers-api.feedback",
+              "scope": "train",
+              "subject": "129Э",
+              "scale": 10,
+              "feedback_key": "129Э"
+            }
+          },
+          "review_summary": {
+            "rating": 7.8,
+            "review_count": 72,
+            "label": "⭐ 7.8/10 · 72 отзыва",
+            "source": "offers-api.feedback",
+            "scope": "train",
+            "subject": "129Э",
+            "scale": 10,
+            "feedback_key": "129Э"
+          },
+          "fares": {
+            "count": 37,
+            "price_from": 2093.82,
+            "price_to": 10872.5,
+            "currency": "RUB",
+            "refundable_count": 31,
+            "changeable_count": 0,
+            "seat_categories": {
+              "SEDENTARY": {
+                "count": 1,
+                "price_from": 2093.82
+              },
+              "RESERVED_SEAT": {
+                "count": 16,
+                "price_from": 2871.08
+              },
+              "COMPARTMENT": {
+                "count": 18,
+                "price_from": 3687.98
+              },
+              "LUX": {
+                "count": 2,
+                "price_from": 10872.5
+              }
+            }
+          }
+        },
+        {
+          "offer_id": "b2ed6ff9c62dea3d0ad9d5babd73f0ef",
+          "transport": "railway",
+          "price": {
+            "amount": 2871.08,
+            "currency": "RUB"
+          },
+          "duration_min": 685,
+          "carriers": [
+            "ФПК"
+          ],
+          "search_results_url": "https://www.tutu.ru/poezda/rasp_d.php?date=01.11.2026&nnst1=2060615&nnst2=2000000",
+          "segments_count": 1,
+          "checkout_url": "https://www.tutu.ru/poezda/order/?departure_st=2656873&arrival_st=2657260&dep_st=2060961&arr_st=2000003&tn=112%D0%99&date=01.11.2026+22:21:00",
+          "departure_at": "2026-11-01T22:21:00+03:00",
+          "arrival_at": "2026-11-02T09:46:00+03:00",
+          "legs": [
+            {
+              "label": "outbound",
+              "from": "Казань — Казань-2 − Восстание Пасс. (2060961)",
+              "to": "Москва — Казанский вокзал (2000003)",
+              "departure_at": "2026-11-01T22:21:00+03:00",
+              "arrival_at": "2026-11-02T09:46:00+03:00",
+              "duration_min": 685,
+              "segments": [
+                {
+                  "from": "Казань — Казань-2 − Восстание Пасс. (2060961)",
+                  "to": "Москва — Казанский вокзал (2000003)",
+                  "departure_at": "2026-11-01T22:21:00+03:00",
+                  "arrival_at": "2026-11-02T09:46:00+03:00",
+                  "duration_min": 685,
+                  "carrier": "ФПК",
+                  "voyage_no": "111*Й",
+                  "from_geo_point_id": 2961376,
+                  "to_geo_point_id": 2957765
+                }
+              ]
+            }
+          ],
+          "checkout_ref": {
+            "transport": "railway",
+            "departure_city_id": 2656873,
+            "arrival_city_id": 2657260,
+            "departure_station_code": "2060961",
+            "arrival_station_code": "2000003",
+            "train_number": "112Й",
+            "departure_at": "2026-11-01T22:21:00+03:00",
+            "departure_geo_point_id": 2961376,
+            "arrival_geo_point_id": 2957765,
+            "offer_hash": "b2ed6ff9c62dea3d0ad9d5babd73f0ef",
+            "segment_hash": "d35e861a934be0e6a2aed2c9d387dd41",
+            "search_id": "EF848789-96A2-45E2-9E89-6EA868753EE4",
+            "result_id": "0cd581c4-219a-5e35-927f-2076ef67240f",
+            "card_id": "5c534bd4fd216d8cee283d99f0a3d46f"
+          },
+          "details_ref": {
+            "transport": "railway",
+            "source": "seats-gateway.seats-by-params",
+            "departure_station_code": "2060961",
+            "arrival_station_code": "2000003",
+            "train_number": "112Й",
+            "departure_at": "2026-11-01T22:21:00+03:00",
+            "price": {
+              "amount": 2871.08,
+              "currency": "RUB"
+            },
+            "title": "Поезд 111*Й",
+            "carriers": [
+              "ФПК"
+            ],
+            "duration_min": 685,
+            "arrival_at": "2026-11-02T09:46:00+03:00"
+          },
+          "fares": {
+            "count": 36,
+            "price_from": 2871.08,
+            "price_to": 5905.68,
+            "currency": "RUB",
+            "refundable_count": 30,
+            "changeable_count": 0,
+            "seat_categories": {
+              "RESERVED_SEAT": {
+                "count": 16,
+                "price_from": 2871.08
+              },
+              "COMPARTMENT": {
+                "count": 20,
+                "price_from": 3687.98
+              }
+            }
+          }
+        },
+        {
+          "offer_id": "bd029fbd7fc907cb5aac0d4c08365a71",
+          "transport": "railway",
+          "price": {
+            "amount": 2871.08,
+            "currency": "RUB"
+          },
+          "duration_min": 741,
+          "carriers": [
+            "ФПК"
+          ],
+          "search_results_url": "https://www.tutu.ru/poezda/rasp_d.php?date=01.11.2026&nnst1=2060615&nnst2=2000000",
+          "segments_count": 1,
+          "checkout_url": "https://www.tutu.ru/poezda/order/?departure_st=2656873&arrival_st=2657260&dep_st=2060961&arr_st=2000003&tn=095%D0%9D&date=01.11.2026+16:29:00",
+          "departure_at": "2026-11-01T16:29:00+03:00",
+          "arrival_at": "2026-11-02T04:50:00+03:00",
+          "legs": [
+            {
+              "label": "outbound",
+              "from": "Казань — Казань-2 − Восстание Пасс. (2060961)",
+              "to": "Москва — Казанский вокзал (2000003)",
+              "departure_at": "2026-11-01T16:29:00+03:00",
+              "arrival_at": "2026-11-02T04:50:00+03:00",
+              "duration_min": 741,
+              "segments": [
+                {
+                  "from": "Казань — Казань-2 − Восстание Пасс. (2060961)",
+                  "to": "Москва — Казанский вокзал (2000003)",
+                  "departure_at": "2026-11-01T16:29:00+03:00",
+                  "arrival_at": "2026-11-02T04:50:00+03:00",
+                  "duration_min": 741,
+                  "carrier": "ФПК",
+                  "voyage_no": "095Н",
+                  "from_geo_point_id": 2961376,
+                  "to_geo_point_id": 2957765
+                }
+              ]
+            }
+          ],
+          "checkout_ref": {
+            "transport": "railway",
+            "departure_city_id": 2656873,
+            "arrival_city_id": 2657260,
+            "departure_station_code": "2060961",
+            "arrival_station_code": "2000003",
+            "train_number": "095Н",
+            "departure_at": "2026-11-01T16:29:00+03:00",
+            "departure_geo_point_id": 2961376,
+            "arrival_geo_point_id": 2957765,
+            "offer_hash": "bd029fbd7fc907cb5aac0d4c08365a71",
+            "segment_hash": "12c769850802774c9b556e24fecadf2c",
+            "search_id": "EF848789-96A2-45E2-9E89-6EA868753EE4",
+            "result_id": "378c0427-dc17-539c-a0c6-8f3c7722d18f",
+            "card_id": "8b6d2af717e5cf14aee92a5bc42a50de"
+          },
+          "details_ref": {
+            "transport": "railway",
+            "source": "seats-gateway.seats-by-params",
+            "departure_station_code": "2060961",
+            "arrival_station_code": "2000003",
+            "train_number": "095Н",
+            "departure_at": "2026-11-01T16:29:00+03:00",
+            "price": {
+              "amount": 2871.08,
+              "currency": "RUB"
+            },
+            "title": "Поезд 095Н",
+            "carriers": [
+              "ФПК"
+            ],
+            "duration_min": 741,
+            "arrival_at": "2026-11-02T04:50:00+03:00",
+            "review_summary": {
+              "rating": 7.8,
+              "review_count": 1005,
+              "label": "⭐ 7.8/10 · 1 005 отзывов",
+              "source": "offers-api.feedback",
+              "scope": "train",
+              "subject": "095Н",
+              "scale": 10,
+              "feedback_key": "095Н"
+            }
+          },
+          "review_summary": {
+            "rating": 7.8,
+            "review_count": 1005,
+            "label": "⭐ 7.8/10 · 1 005 отзывов",
+            "source": "offers-api.feedback",
+            "scope": "train",
+            "subject": "095Н",
+            "scale": 10,
+            "feedback_key": "095Н"
+          },
+          "fares": {
+            "count": 36,
+            "price_from": 2871.08,
+            "price_to": 6933.32,
+            "currency": "RUB",
+            "refundable_count": 30,
+            "changeable_count": 0,
+            "seat_categories": {
+              "RESERVED_SEAT": {
+                "count": 16,
+                "price_from": 2871.08
+              },
+              "COMPARTMENT": {
+                "count": 20,
+                "price_from": 3009.68
+              }
+            }
+          }
+        },
+        {
+          "offer_id": "064fbbe2d19ef87d3416ca58911be9a6",
+          "transport": "railway",
+          "price": {
+            "amount": 2871.08,
+            "currency": "RUB"
+          },
+          "duration_min": 771,
+          "carriers": [
+            "ФПК"
+          ],
+          "search_results_url": "https://www.tutu.ru/poezda/rasp_d.php?date=01.11.2026&nnst1=2060615&nnst2=2000000",
+          "segments_count": 1,
+          "checkout_url": "https://www.tutu.ru/poezda/order/?departure_st=2656873&arrival_st=2657260&dep_st=2060961&arr_st=2000003&tn=081%D0%98&date=01.11.2026+16:39:00",
+          "departure_at": "2026-11-01T16:39:00+03:00",
+          "arrival_at": "2026-11-02T05:30:00+03:00",
+          "legs": [
+            {
+              "label": "outbound",
+              "from": "Казань — Казань-2 − Восстание Пасс. (2060961)",
+              "to": "Москва — Казанский вокзал (2000003)",
+              "departure_at": "2026-11-01T16:39:00+03:00",
+              "arrival_at": "2026-11-02T05:30:00+03:00",
+              "duration_min": 771,
+              "segments": [
+                {
+                  "from": "Казань — Казань-2 − Восстание Пасс. (2060961)",
+                  "to": "Москва — Казанский вокзал (2000003)",
+                  "departure_at": "2026-11-01T16:39:00+03:00",
+                  "arrival_at": "2026-11-02T05:30:00+03:00",
+                  "duration_min": 771,
+                  "carrier": "ФПК",
+                  "voyage_no": "081И",
+                  "from_geo_point_id": 2961376,
+                  "to_geo_point_id": 2957765
+                }
+              ]
+            }
+          ],
+          "checkout_ref": {
+            "transport": "railway",
+            "departure_city_id": 2656873,
+            "arrival_city_id": 2657260,
+            "departure_station_code": "2060961",
+            "arrival_station_code": "2000003",
+            "train_number": "081И",
+            "departure_at": "2026-11-01T16:39:00+03:00",
+            "departure_geo_point_id": 2961376,
+            "arrival_geo_point_id": 2957765,
+            "offer_hash": "064fbbe2d19ef87d3416ca58911be9a6",
+            "segment_hash": "21081b87acaae36d91524af33778d3b6",
+            "search_id": "EF848789-96A2-45E2-9E89-6EA868753EE4",
+            "result_id": "2649744a-a831-595e-8966-fea1304bb2c2",
+            "card_id": "7c0c0f9f358cde7fea263f5467cebdd7"
+          },
+          "details_ref": {
+            "transport": "railway",
+            "source": "seats-gateway.seats-by-params",
+            "departure_station_code": "2060961",
+            "arrival_station_code": "2000003",
+            "train_number": "081И",
+            "departure_at": "2026-11-01T16:39:00+03:00",
+            "price": {
+              "amount": 2871.08,
+              "currency": "RUB"
+            },
+            "title": "Поезд 081И",
+            "carriers": [
+              "ФПК"
+            ],
+            "duration_min": 771,
+            "arrival_at": "2026-11-02T05:30:00+03:00",
+            "review_summary": {
+              "rating": 7.8,
+              "review_count": 1967,
+              "label": "⭐ 7.8/10 · 1 967 отзывов",
+              "source": "offers-api.feedback",
+              "scope": "train",
+              "subject": "081И",
+              "scale": 10,
+              "feedback_key": "081И"
+            }
+          },
+          "review_summary": {
+            "rating": 7.8,
+            "review_count": 1967,
+            "label": "⭐ 7.8/10 · 1 967 отзывов",
+            "source": "offers-api.feedback",
+            "scope": "train",
+            "subject": "081И",
+            "scale": 10,
+            "feedback_key": "081И"
+          },
+          "fares": {
+            "count": 46,
+            "price_from": 2871.08,
+            "price_to": 7152.32,
+            "currency": "RUB",
+            "refundable_count": 42,
+            "changeable_count": 0,
+            "seat_categories": {
+              "RESERVED_SEAT": {
+                "count": 30,
+                "price_from": 2871.08
+              },
+              "COMPARTMENT": {
+                "count": 16,
+                "price_from": 3577.58
+              }
+            }
+          }
+        },
+        {
+          "offer_id": "ecac2a4d92b78bdba30ec82a79cb04d5",
+          "transport": "railway",
+          "price": {
+            "amount": 2944.4,
+            "currency": "RUB"
+          },
+          "duration_min": 665,
+          "carriers": [
+            "ФПК"
+          ],
+          "search_results_url": "https://www.tutu.ru/poezda/rasp_d.php?date=01.11.2026&nnst1=2060615&nnst2=2000000",
+          "segments_count": 1,
+          "checkout_url": "https://www.tutu.ru/poezda/order/?departure_st=2656873&arrival_st=2657260&dep_st=2060961&arr_st=2000003&tn=055%D0%95&date=01.11.2026+11:09:00",
+          "departure_at": "2026-11-01T11:09:00+03:00",
+          "arrival_at": "2026-11-01T22:14:00+03:00",
+          "legs": [
+            {
+              "label": "outbound",
+              "from": "Казань — Казань-2 − Восстание Пасс. (2060961)",
+              "to": "Москва — Казанский вокзал (2000003)",
+              "departure_at": "2026-11-01T11:09:00+03:00",
+              "arrival_at": "2026-11-01T22:14:00+03:00",
+              "duration_min": 665,
+              "segments": [
+                {
+                  "from": "Казань — Казань-2 − Восстание Пасс. (2060961)",
+                  "to": "Москва — Казанский вокзал (2000003)",
+                  "departure_at": "2026-11-01T11:09:00+03:00",
+                  "arrival_at": "2026-11-01T22:14:00+03:00",
+                  "duration_min": 665,
+                  "carrier": "ФПК",
+                  "voyage_no": "055Е",
+                  "from_geo_point_id": 2961376,
+                  "to_geo_point_id": 2957765,
+                  "vehicle_meta": {
+                    "name": "Урал",
+                    "is_premium": true
+                  }
+                }
+              ]
+            }
+          ],
+          "checkout_ref": {
+            "transport": "railway",
+            "departure_city_id": 2656873,
+            "arrival_city_id": 2657260,
+            "departure_station_code": "2060961",
+            "arrival_station_code": "2000003",
+            "train_number": "055Е",
+            "departure_at": "2026-11-01T11:09:00+03:00",
+            "departure_geo_point_id": 2961376,
+            "arrival_geo_point_id": 2957765,
+            "offer_hash": "ecac2a4d92b78bdba30ec82a79cb04d5",
+            "segment_hash": "906c24de46f33e390317f45b486e73e3",
+            "search_id": "EF848789-96A2-45E2-9E89-6EA868753EE4",
+            "result_id": "13e137bd-055c-5bbb-ac9a-282ec89eb10e",
+            "card_id": "04525536ebd5579ef6f71bb921b888c8"
+          },
+          "details_ref": {
+            "transport": "railway",
+            "source": "seats-gateway.seats-by-params",
+            "departure_station_code": "2060961",
+            "arrival_station_code": "2000003",
+            "train_number": "055Е",
+            "departure_at": "2026-11-01T11:09:00+03:00",
+            "price": {
+              "amount": 2944.4,
+              "currency": "RUB"
+            },
+            "title": "Поезд 055Е",
+            "carriers": [
+              "ФПК"
+            ],
+            "duration_min": 665,
+            "arrival_at": "2026-11-01T22:14:00+03:00",
+            "review_summary": {
+              "rating": 9.3,
+              "review_count": 494,
+              "label": "⭐ 9.3/10 · 494 отзыва",
+              "source": "offers-api.feedback",
+              "scope": "train",
+              "subject": "055Е",
+              "scale": 10,
+              "feedback_key": "055Е"
+            }
+          },
+          "review_summary": {
+            "rating": 9.3,
+            "review_count": 494,
+            "label": "⭐ 9.3/10 · 494 отзыва",
+            "source": "offers-api.feedback",
+            "scope": "train",
+            "subject": "055Е",
+            "scale": 10,
+            "feedback_key": "055Е"
+          },
+          "fares": {
+            "count": 32,
+            "price_from": 2944.4,
+            "price_to": 17765.08,
+            "currency": "RUB",
+            "refundable_count": 30,
+            "changeable_count": 0,
+            "seat_categories": {
+              "RESERVED_SEAT": {
+                "count": 22,
+                "price_from": 2944.4
+              },
+              "COMPARTMENT": {
+                "count": 8,
+                "price_from": 4628.78
+              },
+              "LUX": {
+                "count": 2,
+                "price_from": 17765.08
+              }
+            }
+          }
+        }
+      ],
+      "meta": {
+        "from": {
+          "name": "Казань",
+          "geo_id": "2656873",
+          "region": "городской округ Казань, Республика Татарстан",
+          "iata": "KZN"
+        },
+        "to": {
+          "name": "Москва",
+          "geo_id": "2657260",
+          "region": "Москва город федерального значения",
+          "iata": "MOW"
+        },
+        "optimize_for": "price",
+        "modes_requested": [
+          "avia",
+          "railway",
+          "bus",
+          "etrain"
+        ],
+        "modes_summary": {
+          "avia": {
+            "count": 8,
+            "min_price": 4141,
+            "min_duration_min": 105
+          },
+          "railway": {
+            "count": 8,
+            "min_price": 2093.82,
+            "min_duration_min": 665,
+            "cashback": {
+              "rate_pct": 3,
+              "applies_to": "all_fares",
+              "note": "Tutu loyalty points credited to the buyer's Tutu account after payment. NOT a discount: every `price` here is the full amount payable.",
+              "scope": "mode_page"
+            }
+          },
+          "bus": {
+            "count": 0,
+            "min_price": null,
+            "min_duration_min": null
+          },
+          "etrain": {
+            "count": 0,
+            "min_price": null,
+            "min_duration_min": null
+          }
+        },
+        "unavailable": [],
+        "page": 1,
+        "page_size": 6,
+        "total_returned": 6,
+        "has_more": true
+      }
+    }
+  }
+}

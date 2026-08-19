@@ -1,0 +1,81 @@
+{
+  "recorded_at": "2026-08-19T09:50:57.172Z",
+  "source": "tutu",
+  "tool": "search_multitransport",
+  "arguments": {
+    "origin": "Иннополис",
+    "destination": "Калининград",
+    "departure_date": "2026-10-28",
+    "page_size": 6
+  },
+  "volatile": [
+    "variants[].checkout_ref",
+    "variants[].checkout_url"
+  ],
+  "note": "a thin route: some modes come back empty while others live",
+  "response": {
+    "envelope": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"variants\":[],\"meta\":{\"from\":{\"name\":\"Иннополис\",\"geo_id\":\"3251799\",\"region\":\"Республика Татарстан\"},\"to\":{\"name\":\"Калининград\",\"geo_id\":\"2656874\",\"region\":\"Калининградская область\"},\"optimize_for\":\"price\",\"modes_requested\":[\"avia\",\"railway\",\"bus\",\"etrain\"],\"modes_summary\":{\"bus\":{\"count\":0,\"min_price\":null,\"min_duration_min\":null},\"etrain\":{\"count\":0,\"min_price\":null,\"min_duration_min\":null}},\"unavailable\":[{\"mode\":\"avia\",\"reason\":\"no_route\",\"detail\":\"avia requires avia_id for origin, but the geo lookup did not return one — try passing a more specific city name.\"},{\"mode\":\"railway\",\"reason\":\"no_route\",\"detail\":\"railway requires railway_id for origin, but the geo lookup did not return one — try passing a more specific city name.\"}],\"page\":1,\"page_size\":6,\"total_returned\":0,\"has_more\":false}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    "payload": {
+      "variants": [],
+      "meta": {
+        "from": {
+          "name": "Иннополис",
+          "geo_id": "3251799",
+          "region": "Республика Татарстан"
+        },
+        "to": {
+          "name": "Калининград",
+          "geo_id": "2656874",
+          "region": "Калининградская область"
+        },
+        "optimize_for": "price",
+        "modes_requested": [
+          "avia",
+          "railway",
+          "bus",
+          "etrain"
+        ],
+        "modes_summary": {
+          "bus": {
+            "count": 0,
+            "min_price": null,
+            "min_duration_min": null
+          },
+          "etrain": {
+            "count": 0,
+            "min_price": null,
+            "min_duration_min": null
+          }
+        },
+        "unavailable": [
+          {
+            "mode": "avia",
+            "reason": "no_route",
+            "detail": "avia requires avia_id for origin, but the geo lookup did not return one — try passing a more specific city name."
+          },
+          {
+            "mode": "railway",
+            "reason": "no_route",
+            "detail": "railway requires railway_id for origin, but the geo lookup did not return one — try passing a more specific city name."
+          }
+        ],
+        "page": 1,
+        "page_size": 6,
+        "total_returned": 0,
+        "has_more": false
+      }
+    }
+  }
+}

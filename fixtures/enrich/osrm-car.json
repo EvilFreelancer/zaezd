@@ -1,0 +1,53 @@
+{
+  "recorded_at": "2026-08-19T09:50:57.172Z",
+  "source": "osrm",
+  "tool": "route-car",
+  "arguments": {
+    "url": "https://router.project-osrm.org/route/v1/driving/49.119747,55.799152;49.108891,55.796127?overview=false",
+    "profile": "driving"
+  },
+  "note": "the public demo server serves this profile only; it must never be shown as walking",
+  "response": {
+    "status": 200,
+    "body": {
+      "code": "Ok",
+      "routes": [
+        {
+          "legs": [
+            {
+              "steps": [],
+              "weight": 269.4,
+              "summary": "",
+              "duration": 269.4,
+              "distance": 2047.6
+            }
+          ],
+          "weight_name": "routability",
+          "weight": 269.4,
+          "duration": 269.4,
+          "distance": 2047.6
+        }
+      ],
+      "waypoints": [
+        {
+          "hint": "1-Q9guvvFoPeAAAAHgAAACgAAAAxAAAAHWy5QjTEQ0H554VBh7OjQd4AAAAeAAAAKAAAADEAAAB1JQEAFoPtAs5tUwMDgu0CcG1TAwIATwkAAAAA",
+          "location": [
+            49.120022,
+            55.799246
+          ],
+          "name": "",
+          "distance": 20.18304493
+        },
+        {
+          "hint": "iFD0gR2rj4kMAAAAHAAAACUAAAAoAAAAOqc0QRXfwUE0OwRCrhgJQgwAAAAcAAAAJQAAACgAAAB1JQEARljtAi5iUwObV-0Cn2FTAwIA_xIAAAAA",
+          "location": [
+            49.109062,
+            55.79627
+          ],
+          "name": "Кремлёвская улица",
+          "distance": 19.20008937
+        }
+      ]
+    }
+  }
+}

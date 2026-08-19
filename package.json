@@ -11,6 +11,7 @@
   "scripts": {
     "start": "node dist/main.js",
     "dev": "node src/main.ts",
+    "record": "node --use-env-proxy scripts/record.ts",
     "typecheck": "tsc --noEmit && tsc -p tsconfig.web.json",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",

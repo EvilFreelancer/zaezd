@@ -1,0 +1,27 @@
+{
+  "recorded_at": "2026-08-19T09:50:57.172Z",
+  "source": "tutu",
+  "tool": "search_multitransport",
+  "arguments": {
+    "origin": "Москва",
+    "destination": "Казань",
+    "date": "2026-10-28"
+  },
+  "note": "the validation error every agent hits sooner or later",
+  "response": {
+    "envelope": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Error executing tool search_multitransport: 1 validation error for search_multitransportArguments\ndate\n  Extra inputs are not permitted [type=extra_forbidden, input_value='2026-10-28', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/extra_forbidden"
+          }
+        ],
+        "isError": true
+      }
+    },
+    "payload": "Error executing tool search_multitransport: 1 validation error for search_multitransportArguments\ndate\n  Extra inputs are not permitted [type=extra_forbidden, input_value='2026-10-28', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/extra_forbidden"
+  }
+}

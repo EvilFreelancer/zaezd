@@ -1,0 +1,138 @@
+{
+  "recorded_at": "2026-08-19T09:50:57.172Z",
+  "source": "confcal",
+  "tool": "list_cities",
+  "arguments": {
+    "limit": 100,
+    "offset": 0
+  },
+  "response": {
+    "envelope": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+        "content": [
+          {
+            "text": "{\n  \"items\": [\n    {\n      \"slug\": \"vladivostok\",\n      \"title\": \"Владивосток\",\n      \"events_count\": 0\n    },\n    {\n      \"slug\": \"volgograd\",\n      \"title\": \"Волгоград\",\n      \"events_count\": 3\n    },\n    {\n      \"slug\": \"voronezh\",\n      \"title\": \"Воронеж\",\n      \"events_count\": 2\n    },\n    {\n      \"slug\": \"ekaterinburg\",\n      \"title\": \"Екатеринбург\",\n      \"events_count\": 5\n    },\n    {\n      \"slug\": \"innopolis\",\n      \"title\": \"Иннополис\",\n      \"events_count\": 0\n    },\n    {\n      \"slug\": \"kazan\",\n      \"title\": \"Казань\",\n      \"events_count\": 4\n    },\n    {\n      \"slug\": \"kaliningrad\",\n      \"title\": \"Калининград\",\n      \"events_count\": 2\n    },\n    {\n      \"slug\": \"krasnodar\",\n      \"title\": \"Краснодар\",\n      \"events_count\": 2\n    },\n    {\n      \"slug\": \"krasnoyarsk\",\n      \"title\": \"Красноярск\",\n      \"events_count\": 0\n    },\n    {\n      \"slug\": \"moscow\",\n      \"title\": \"Москва\",\n      \"events_count\": 162\n    },\n    {\n      \"slug\": \"nizhny-novgorod\",\n      \"title\": \"Нижний Новгород\",\n      \"events_count\": 0\n    },\n    {\n      \"slug\": \"novosibirsk\",\n      \"title\": \"Новосибирск\",\n      \"events_count\": 18\n    },\n    {\n      \"slug\": \"orenburg\",\n      \"title\": \"Оренбург\",\n      \"events_count\": 8\n    },\n    {\n      \"slug\": \"perm\",\n      \"title\": \"Пермь\",\n      \"events_count\": 0\n    },\n    {\n      \"slug\": \"rostov\",\n      \"title\": \"Ростов-на-Дону\",\n      \"events_count\": 7\n    },\n    {\n      \"slug\": \"samara\",\n      \"title\": \"Самара\",\n      \"events_count\": 0\n    },\n    {\n      \"slug\": \"spb\",\n      \"title\": \"Санкт-Петербург\",\n      \"events_count\": 58\n    },\n    {\n      \"slug\": \"sochi\",\n      \"title\": \"Сочи\",\n      \"events_count\": 2\n    },\n    {\n      \"slug\": \"tomsk\",\n      \"title\": \"Томск\",\n      \"events_count\": 1\n    },\n    {\n      \"slug\": \"ufa\",\n      \"title\": \"Уфа\",\n      \"events_count\": 1\n    },\n    {\n      \"slug\": \"chelyabinsk\",\n      \"title\": \"Челябинск\",\n      \"events_count\": 2\n    }\n  ],\n  \"total\": 21,\n  \"limit\": 100,\n  \"offset\": 0,\n  \"has_more\": false,\n  \"online_count\": 40\n}",
+            "type": "text"
+          }
+        ],
+        "isError": false
+      }
+    },
+    "payload": {
+      "items": [
+        {
+          "slug": "vladivostok",
+          "title": "Владивосток",
+          "events_count": 0
+        },
+        {
+          "slug": "volgograd",
+          "title": "Волгоград",
+          "events_count": 3
+        },
+        {
+          "slug": "voronezh",
+          "title": "Воронеж",
+          "events_count": 2
+        },
+        {
+          "slug": "ekaterinburg",
+          "title": "Екатеринбург",
+          "events_count": 5
+        },
+        {
+          "slug": "innopolis",
+          "title": "Иннополис",
+          "events_count": 0
+        },
+        {
+          "slug": "kazan",
+          "title": "Казань",
+          "events_count": 4
+        },
+        {
+          "slug": "kaliningrad",
+          "title": "Калининград",
+          "events_count": 2
+        },
+        {
+          "slug": "krasnodar",
+          "title": "Краснодар",
+          "events_count": 2
+        },
+        {
+          "slug": "krasnoyarsk",
+          "title": "Красноярск",
+          "events_count": 0
+        },
+        {
+          "slug": "moscow",
+          "title": "Москва",
+          "events_count": 162
+        },
+        {
+          "slug": "nizhny-novgorod",
+          "title": "Нижний Новгород",
+          "events_count": 0
+        },
+        {
+          "slug": "novosibirsk",
+          "title": "Новосибирск",
+          "events_count": 18
+        },
+        {
+          "slug": "orenburg",
+          "title": "Оренбург",
+          "events_count": 8
+        },
+        {
+          "slug": "perm",
+          "title": "Пермь",
+          "events_count": 0
+        },
+        {
+          "slug": "rostov",
+          "title": "Ростов-на-Дону",
+          "events_count": 7
+        },
+        {
+          "slug": "samara",
+          "title": "Самара",
+          "events_count": 0
+        },
+        {
+          "slug": "spb",
+          "title": "Санкт-Петербург",
+          "events_count": 58
+        },
+        {
+          "slug": "sochi",
+          "title": "Сочи",
+          "events_count": 2
+        },
+        {
+          "slug": "tomsk",
+          "title": "Томск",
+          "events_count": 1
+        },
+        {
+          "slug": "ufa",
+          "title": "Уфа",
+          "events_count": 1
+        },
+        {
+          "slug": "chelyabinsk",
+          "title": "Челябинск",
+          "events_count": 2
+        }
+      ],
+      "total": 21,
+      "limit": 100,
+      "offset": 0,
+      "has_more": false,
+      "online_count": 40
+    }
+  }
+}
