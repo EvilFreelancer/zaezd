@@ -138,10 +138,16 @@ networks:
 Эндпоинт `<адрес>/mcp` работает по streamable HTTP и не требует ключа. Локально это
 `http://localhost:8080/mcp`, на развёрнутом сервисе - ваш адрес из `ZAEZD_PUBLIC_URL`.
 
-Claude Desktop, в `claude_desktop_config.json`:
+Claude Desktop не принимает удалённые серверы прямо в `claude_desktop_config.json`, там живут
+только stdio-команды, поэтому либо добавьте Заезд через Settings, Connectors, Add custom
+connector, либо пропишите проксирующий запуск:
 
 ```json
-{ "mcpServers": { "zaezd": { "type": "http", "url": "http://localhost:8080/mcp" } } }
+{
+  "mcpServers": {
+    "zaezd": { "command": "npx", "args": ["-y", "mcp-remote", "http://localhost:8080/mcp"] }
+  }
+}
 ```
 
 Claude Code и Codex CLI:
