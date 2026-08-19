@@ -46,6 +46,18 @@ export const UI_RESOURCE = 'ui://zaezd/trip-board';
  */
 export { TRIP_META_KEY, CHECKOUT_META_KEY };
 
+/**
+ * Where the board lives, said twice.
+ *
+ * Hosts disagree about where to look: the tool definition carries this, and so does every
+ * answer that has a board to draw, because some read it only off the result. Both spellings
+ * travel too - `ui.resourceUri` is the current one, `ui/resourceUri` the one older hosts read.
+ */
+const POINTS_AT_THE_BOARD = {
+  ui: { resourceUri: UI_RESOURCE, visibility: ['model', 'app'] },
+  'ui/resourceUri': UI_RESOURCE,
+} as const;
+
 export function createMcpServer(app: App, publicUrl: string): McpServer {
   const server = new McpServer(
     { name: 'zaezd', version: '0.1.0' },
@@ -85,7 +97,7 @@ export function createMcpServer(app: App, publicUrl: string): McpServer {
       return {
         content: [{ type: 'text', text: textFor(shaped) }],
         structuredContent: shaped,
-        _meta: { [TRIP_META_KEY]: boardPayload(trip) },
+        _meta: { ...POINTS_AT_THE_BOARD, [TRIP_META_KEY]: boardPayload(trip) },
       };
     },
   );
@@ -118,7 +130,7 @@ export function createMcpServer(app: App, publicUrl: string): McpServer {
         structuredContent: shaped,
         // The board keeps every package. Narrowing it here would shrink a widget the host
         // already drew from the search, in front of whoever is looking at it.
-        _meta: { [TRIP_META_KEY]: boardPayload(trip) },
+        _meta: { ...POINTS_AT_THE_BOARD, [TRIP_META_KEY]: boardPayload(trip) },
       };
     },
   );

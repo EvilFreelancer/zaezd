@@ -45,6 +45,10 @@ Feature: The same board, drawn inside an agent
     And the resource allows the map tiles it draws
     And the page itself carries the same permissions, where a host reads them
 
+  Scenario: The answer itself says which board to draw it on
+    When the agent asks for a trip on "ai" from "Москва"
+    Then the answer points at the trip board, in both spellings hosts read
+
   Scenario Outline: A tool that draws the board says so; the checklist does not
     When the agent lists the tools
     Then <tool> <points> at the trip board

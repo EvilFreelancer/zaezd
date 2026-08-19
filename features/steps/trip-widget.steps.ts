@@ -206,3 +206,17 @@ Then(/^(\w+) (points|does not point) at the trip board$/, function (
     assert.equal(declared, undefined, `${name} offers a board it has nothing to draw`);
   }
 });
+
+Then('the answer points at the trip board, in both spellings hosts read', function (
+  this: ZaezdWorld,
+) {
+  const meta = (this.recall<{ _meta?: Record<string, unknown> }>('answer')._meta ?? {}) as {
+    ui?: { resourceUri?: string };
+    'ui/resourceUri'?: string;
+  };
+
+  // The definition carries this and so does the answer: hosts differ on which they read, and a
+  // widget that never opens is indistinguishable from a product without one.
+  assert.equal(meta.ui?.resourceUri, UI_RESOURCE, 'the answer names no board under ui.resourceUri');
+  assert.equal(meta['ui/resourceUri'], UI_RESOURCE, 'the older spelling is missing');
+});
