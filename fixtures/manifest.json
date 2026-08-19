@@ -1,9 +1,9 @@
 {
-  "recorded_at": "2026-08-19T11:31:57.818Z",
+  "recorded_at": "2026-08-19T13:15:36.240Z",
   "entries": [
     {
       "file": "confcal/initialize.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "confcal",
       "tool": "initialize",
       "arguments": {},
@@ -14,7 +14,7 @@
     },
     {
       "file": "confcal/list-cities.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "confcal",
       "tool": "list_cities",
       "arguments": {
@@ -24,7 +24,7 @@
     },
     {
       "file": "confcal/list-topics.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "confcal",
       "tool": "list_topics",
       "arguments": {
@@ -34,7 +34,7 @@
     },
     {
       "file": "confcal/list-cities-page-2.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "confcal",
       "tool": "list_cities",
       "arguments": {
@@ -45,7 +45,7 @@
     },
     {
       "file": "confcal/events-ai-offline.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "confcal",
       "tool": "search_events",
       "arguments": {
@@ -69,13 +69,13 @@
           "ai"
         ],
         "event_format": "offline",
-        "limit": 20
+        "limit": 8
       },
       "note": "the default demo, asked exactly as the product asks it"
     },
     {
       "file": "confcal/events-ai-online.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "confcal",
       "tool": "search_events",
       "arguments": {
@@ -92,7 +92,7 @@
     },
     {
       "file": "confcal/events-ai-moscow.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "confcal",
       "tool": "search_events",
       "arguments": {
@@ -109,7 +109,7 @@
     },
     {
       "file": "confcal/events-empty.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "confcal",
       "tool": "search_events",
       "arguments": {
@@ -126,7 +126,7 @@
     },
     {
       "file": "confcal/session-lost.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "confcal",
       "tool": "list_cities",
       "arguments": {
@@ -136,7 +136,7 @@
     },
     {
       "file": "tutu/demo-out.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "tutu",
       "tool": "search_multitransport",
       "arguments": {
@@ -154,7 +154,7 @@
     },
     {
       "file": "tutu/demo-back.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "tutu",
       "tool": "search_multitransport",
       "arguments": {
@@ -172,7 +172,7 @@
     },
     {
       "file": "tutu/demo-hotels.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "tutu",
       "tool": "search_hotels",
       "arguments": {
@@ -191,64 +191,8 @@
       ]
     },
     {
-      "file": "tutu/degraded-out.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
-      "source": "tutu",
-      "tool": "search_multitransport",
-      "arguments": {
-        "origin": "Москва",
-        "destination": "Санкт-Петербург",
-        "departure_date": "2026-09-23",
-        "adults": 1,
-        "page_size": 6
-      },
-      "note": "the honest-degradation showcase: no opening time and no venue, outbound",
-      "volatile": [
-        "variants[].checkout_ref",
-        "variants[].checkout_url"
-      ]
-    },
-    {
-      "file": "tutu/degraded-back.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
-      "source": "tutu",
-      "tool": "search_multitransport",
-      "arguments": {
-        "origin": "Санкт-Петербург",
-        "destination": "Москва",
-        "departure_date": "2026-09-25",
-        "adults": 1,
-        "page_size": 6
-      },
-      "note": "the honest-degradation showcase: no opening time and no venue, the return leg without which the total is knowably wrong",
-      "volatile": [
-        "variants[].checkout_ref",
-        "variants[].checkout_url"
-      ]
-    },
-    {
-      "file": "tutu/degraded-hotels.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
-      "source": "tutu",
-      "tool": "search_hotels",
-      "arguments": {
-        "city_name": "Санкт-Петербург",
-        "check_in": "2026-09-23",
-        "check_out": "2026-09-25",
-        "adults": 1,
-        "page_size": 20
-      },
-      "note": "the honest-degradation showcase: no opening time and no venue",
-      "volatile": [
-        "hotels[].checkout_ref",
-        "hotels[].checkout_url",
-        "hotels[].best_offer.checkout_url",
-        "meta.search_id"
-      ]
-    },
-    {
       "file": "tutu/multitransport-thin-route.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "tutu",
       "tool": "search_multitransport",
       "arguments": {
@@ -266,7 +210,7 @@
     },
     {
       "file": "tutu/error-extra-key.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "tutu",
       "tool": "search_multitransport",
       "arguments": {
@@ -278,7 +222,7 @@
     },
     {
       "file": "enrich/nominatim-venue-verbatim.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "nominatim",
       "tool": "search",
       "arguments": {
@@ -289,7 +233,7 @@
     },
     {
       "file": "enrich/nominatim-street.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "nominatim",
       "tool": "search",
       "arguments": {
@@ -300,7 +244,7 @@
     },
     {
       "file": "enrich/nominatim-city.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "nominatim",
       "tool": "search",
       "arguments": {
@@ -311,7 +255,7 @@
     },
     {
       "file": "enrich/nominatim-company-name.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "nominatim",
       "tool": "search",
       "arguments": {
@@ -321,41 +265,30 @@
       "note": "a company name resolves to something plausible and means little; precision must not be claimed"
     },
     {
-      "file": "enrich/nominatim-city-degraded.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
-      "source": "nominatim",
-      "tool": "search",
-      "arguments": {
-        "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=5&q=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3",
-        "q": "Санкт-Петербург"
-      },
-      "note": "the showcase names no venue, so the ladder falls all the way to the city centre"
-    },
-    {
       "file": "enrich/osrm-foot.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "osrm",
       "tool": "route-foot",
       "arguments": {
-        "url": "https://routing.openstreetmap.de/routed-foot/route/v1/foot/30.398684,59.91768;30.4363945,59.9340393?overview=false",
+        "url": "https://routing.openstreetmap.de/routed-foot/route/v1/foot/30.433834,59.939102;30.4363945,59.9340393?overview=false",
         "profile": "foot"
       },
       "note": "the only profile a walking time may come from"
     },
     {
       "file": "enrich/osrm-car.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "osrm",
       "tool": "route-car",
       "arguments": {
-        "url": "https://router.project-osrm.org/route/v1/driving/30.398684,59.91768;30.4363945,59.9340393?overview=false",
+        "url": "https://router.project-osrm.org/route/v1/driving/30.433834,59.939102;30.4363945,59.9340393?overview=false",
         "profile": "driving"
       },
       "note": "the public demo server serves this profile only; never shown as walking"
     },
     {
       "file": "tutu/checkout-out-railway-1.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "tutu",
       "tool": "create_checkout_link",
       "arguments": {
@@ -363,16 +296,16 @@
         "departure_city_id": 2657260,
         "arrival_city_id": 2656915,
         "departure_station_code": "2006004",
-        "arrival_station_code": "2004006",
-        "train_number": "016А",
-        "departure_at": "2026-08-20T00:46:00+03:00",
+        "arrival_station_code": "2004001",
+        "train_number": "022А",
+        "departure_at": "2026-08-20T00:25:00+03:00",
         "departure_geo_point_id": 2958868,
-        "arrival_geo_point_id": 2958270,
-        "offer_hash": "8ddfe2c0c5766d051edf0e3ac8d2cfbf",
-        "segment_hash": "e3fae1d13986bda645719f35d2cf0624",
-        "search_id": "B921E9E0-ED9D-423F-9A0C-D3C0F0FA0CC8",
-        "result_id": "cdd01035-e5a5-521f-aed1-18fb120a5b43",
-        "card_id": "48a81eb69ca9537611f98f0b357e1596"
+        "arrival_geo_point_id": 2958266,
+        "offer_hash": "beef13e7c1e669e792058c19856177c2",
+        "segment_hash": "6fc438849813428310276ef4120074a1",
+        "search_id": "66D55DDF-D252-4C4C-B491-3D1973A7E1BA",
+        "result_id": "9d120b17-811f-5831-bff4-a705a916d209",
+        "card_id": "2921504779e07d469fb3e9d99cadd885"
       },
       "note": "outbound railway; the kind decides the label, we do not",
       "volatile": [
@@ -381,32 +314,7 @@
     },
     {
       "file": "tutu/checkout-out-avia-2.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
-      "source": "tutu",
-      "tool": "create_checkout_link",
-      "arguments": {
-        "transport": "avia",
-        "is_round_trip": false,
-        "search_results_url": "https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75",
-        "offer_hash": "{\"Price\":10535,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"521fbbc4bb8905c709f84e87dbc2380f\\\",\\\"variantConditionsHash\\\":\\\"fa9adb59deeca88256396ebf53ca2c90:4a15ebaf82f14491e2bac3a776e17da0\\\",\\\"pricingVariantHash\\\":\\\"c76b15591c4b2c741052f1f3376684e0\\\"}]\"}",
-        "departure_geo_city_id": 2657260,
-        "arrival_geo_city_id": 2656915,
-        "departure_at": "2026-08-20T23:30:00+03:00",
-        "service_class": "ECONOMIC",
-        "departure_avia_id": "491",
-        "arrival_avia_id": "75",
-        "passengers_full": 1,
-        "passengers_child": 0,
-        "passengers_infant": 0
-      },
-      "note": "outbound avia; the kind decides the label, we do not",
-      "volatile": [
-        "checkout_url"
-      ]
-    },
-    {
-      "file": "tutu/checkout-out-avia-3.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "tutu",
       "tool": "create_checkout_link",
       "arguments": {
@@ -430,8 +338,8 @@
       ]
     },
     {
-      "file": "tutu/checkout-out-avia-4.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "file": "tutu/checkout-out-avia-3.json",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "tutu",
       "tool": "create_checkout_link",
       "arguments": {
@@ -455,15 +363,15 @@
       ]
     },
     {
-      "file": "tutu/checkout-out-avia-5.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "file": "tutu/checkout-out-avia-4.json",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "tutu",
       "tool": "create_checkout_link",
       "arguments": {
         "transport": "avia",
         "is_round_trip": false,
         "search_results_url": "https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75",
-        "offer_hash": "{\"Price\":10713,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"b1d1b74303267f9bd454c881180729ca\\\",\\\"variantConditionsHash\\\":\\\"b4b4b0f3cbd3a0fc1cb4ae15ecf4c754:f4b7bd50b88d2aef62aa0ef78689dd61\\\",\\\"pricingVariantHash\\\":\\\"be9848e57169ff4b4e69acdc3c56dabd\\\"}]\"}",
+        "offer_hash": "{\"Price\":10853,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"b1d1b74303267f9bd454c881180729ca\\\",\\\"variantConditionsHash\\\":\\\"b4b4b0f3cbd3a0fc1cb4ae15ecf4c754:f4b7bd50b88d2aef62aa0ef78689dd61\\\",\\\"pricingVariantHash\\\":\\\"37d910f85dfc9d3c0101d8ccd23a92f4\\\"}]\"}",
         "departure_geo_city_id": 2657260,
         "arrival_geo_city_id": 2656915,
         "departure_at": "2026-08-20T22:25:00+03:00",
@@ -480,18 +388,43 @@
       ]
     },
     {
-      "file": "tutu/checkout-out-avia-6.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "file": "tutu/checkout-out-avia-5.json",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "tutu",
       "tool": "create_checkout_link",
       "arguments": {
         "transport": "avia",
         "is_round_trip": false,
         "search_results_url": "https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75",
-        "offer_hash": "{\"Price\":11772,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"c5bd9020d596b67138d830254a1db870\\\",\\\"variantConditionsHash\\\":\\\"8ff525bc3ad7963a0f0e851cab7decab:f4b7bd50b88d2aef62aa0ef78689dd61\\\",\\\"pricingVariantHash\\\":\\\"f276a7defe3aadacc51495b8dbef4f1b\\\"}]\"}",
+        "offer_hash": "{\"Price\":12415,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"82e33569305a4d9e1fbedb613731a1f7\\\",\\\"variantConditionsHash\\\":\\\"ea1d696f48f267e7ac1de815acdc9fcf:4a15ebaf82f14491e2bac3a776e17da0\\\",\\\"pricingVariantHash\\\":\\\"a9e10b26fb5f1e2afb56825e0cf3a800\\\"}]\"}",
         "departure_geo_city_id": 2657260,
         "arrival_geo_city_id": 2656915,
-        "departure_at": "2026-08-20T09:15:00+03:00",
+        "departure_at": "2026-08-20T22:30:00+03:00",
+        "service_class": "ECONOMIC",
+        "departure_avia_id": "491",
+        "arrival_avia_id": "75",
+        "passengers_full": 1,
+        "passengers_child": 0,
+        "passengers_infant": 0
+      },
+      "note": "outbound avia; the kind decides the label, we do not",
+      "volatile": [
+        "checkout_url"
+      ]
+    },
+    {
+      "file": "tutu/checkout-out-avia-6.json",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
+      "source": "tutu",
+      "tool": "create_checkout_link",
+      "arguments": {
+        "transport": "avia",
+        "is_round_trip": false,
+        "search_results_url": "https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75",
+        "offer_hash": "{\"Price\":12415,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"48cd047889db027ea0a337766f862906\\\",\\\"variantConditionsHash\\\":\\\"b84aefa2602380e4d3194f47c68ceb22:4a15ebaf82f14491e2bac3a776e17da0\\\",\\\"pricingVariantHash\\\":\\\"6dc5a508bbd4be2b12e8c33c1b71b4c7\\\"}]\"}",
+        "departure_geo_city_id": 2657260,
+        "arrival_geo_city_id": 2656915,
+        "departure_at": "2026-08-20T21:30:00+03:00",
         "service_class": "ECONOMIC",
         "departure_avia_id": "491",
         "arrival_avia_id": "75",
@@ -506,13 +439,13 @@
     },
     {
       "file": "tutu/checkout-back-bus-7.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "tutu",
       "tool": "create_checkout_link",
       "arguments": {
         "transport": "bus",
         "offer_hash": "Kx6lwYxWOtPr7kOIqhinZZ4PDv6vWEA4wprP8Rmc4OITd6%2BKL7iskefrwcWAE4XdFvY9l3y%2FM4dXCG%2BAPGmcdILcUzMGYTQo2rifZxtvoI9vWruShhrGaLa4jJsnMJ05Qp3U%2FM9be8hGHwiqG7%2BDZ1OcwF9T9EWx%2B9Z%2FwCIUPjr0wvaYaposTuA2AoPkHZMbQzAzSNGfWJ9%2FvawsWax3Ppimjz%2BCIx3%2FVcBJQWUXGYel%2F85KdH%2FRvaRWCgQ%3D",
-        "search_id": "1D9DAFB4-FF72-48FF-97B0-0CF8C10D0FAA",
+        "search_id": "A95D4393-CE0D-46B8-8FC2-FACE3FEA3F96",
         "departure_geo_city_id": 2656915,
         "arrival_geo_city_id": 2657260,
         "departure_id": "1447624",
@@ -535,13 +468,13 @@
     },
     {
       "file": "tutu/checkout-back-bus-8.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "tutu",
       "tool": "create_checkout_link",
       "arguments": {
         "transport": "bus",
         "offer_hash": "Gxw1hc0GOtPbkjScAiwFgFPhk2RdZhaV8pfsw8QF5yW0zC%2BAyhmhl1No2bIXTcFv7rUBMQqxirzikSSljL63viLDrcDk4Yn0S6KjB4TfB5XlgBFPA5JcXNGJQZ5UEoU4AxPGIKQAE5uj6Vw981SmvnV7YRotQxyeUQGontlZ3JFr",
-        "search_id": "1D9DAFB4-FF72-48FF-97B0-0CF8C10D0FAA",
+        "search_id": "A95D4393-CE0D-46B8-8FC2-FACE3FEA3F96",
         "departure_geo_city_id": 2656915,
         "arrival_geo_city_id": 2657260,
         "departure_id": "1447624",
@@ -564,13 +497,13 @@
     },
     {
       "file": "tutu/checkout-back-bus-9.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "tutu",
       "tool": "create_checkout_link",
       "arguments": {
         "transport": "bus",
         "offer_hash": "Y101IZVWJpZEDEfrYl8v%2B7ZXue3%2Fwl4IeDG9CTOoMbt4Ipq2L2NU%2B2l95GSWS0o5EqKjCBe4YGExBAvdCFti1LyukXqpk96kt24%2FzTuM4NODj5swwMTTw%2B%2Ff86RasEKccQewAUp8mLLQYUjPBuflOCsTJnI%2B3X24g1LTz3h3xRPcIcyoJEpYz1XGZZjFnfjzaNPD0RwQ%2FP7ZFMMZG2QN3xxf0DkMb4Agylx5Tu5f5ndLMs6RanoDtUDcFaxJGzP9N%2B5i4ISqWnfeo%2FI1cYSCEust0nbJdtNHTGBclhu%2Beats5fngvxAyt8LgOsfy%2FFAGOy2wFJtMuKTMEol6W6Dc",
-        "search_id": "1D9DAFB4-FF72-48FF-97B0-0CF8C10D0FAA",
+        "search_id": "A95D4393-CE0D-46B8-8FC2-FACE3FEA3F96",
         "departure_geo_city_id": 2656915,
         "arrival_geo_city_id": 2657260,
         "departure_id": "1447624",
@@ -593,13 +526,13 @@
     },
     {
       "file": "tutu/checkout-back-bus-10.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "tutu",
       "tool": "create_checkout_link",
       "arguments": {
         "transport": "bus",
         "offer_hash": "Axo1hc0mIpXakixPMkPcLjxNgfOF89fWAJ7yGHmNRWbcEy6my8FGtjiP5YXOGQAyvr6E6p0AUxHimckR9SVwvXafTNaf2W4RNyc7hnSFdd9GcX5j745RfHg%2BgkFRtT58pkfZ5QyGWDLbK7n37rA9Lf2yJi9x3vVTzejdhxY%2FBVgoqD8p7%2Fx4D4643kJD",
-        "search_id": "1D9DAFB4-FF72-48FF-97B0-0CF8C10D0FAA",
+        "search_id": "A95D4393-CE0D-46B8-8FC2-FACE3FEA3F96",
         "departure_geo_city_id": 2656915,
         "arrival_geo_city_id": 2657260,
         "departure_id": "1447624",
@@ -622,13 +555,13 @@
     },
     {
       "file": "tutu/checkout-back-bus-11.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "tutu",
       "tool": "create_checkout_link",
       "arguments": {
         "transport": "bus",
         "offer_hash": "q0A74exWLhdkDMLBvvS%2FMpOnE2KQIOUwPyTiHwnLcoswkN4MfEsq%2Bbf3I2AhyvLSJ5Kij%2BCRvfSEo3HpzdFRwakbESE8iYBBZhgt1wgOXtpzF9OHCTGnpOHdPjpxgF%2FFVKUZ4SOhjplR3ckulaJzqNiPFZef8P2QQTLBGtSEsHRLS3QETcozi6JT%2BsurIbsH8M0SQjTPvtbFlzgpOcpFuZG%2B8P17fVY51eJi0ZwbkJJVcq8yh3vWDqC0vc8adpwozDU9B6Nz1lbm%2BDksjk%2B3HhLj4nLnOhgCiiqsHu9HhJZ6Mm3FnP7Nteo%2F4dqpXZ7bpOnF7Bfebn3vOwm8YLeEiTv2Fuv1Yu%2Bp6BKhuzxYyeenu6yAFLbHpG%2FczQWcndj%2FF6r7hmI7HFpfl91CBezRl0rmeE5saizuncVG8txKQL%2BIZmVGjsADvqB51xnaWld7eQf92k76RWSqJdHbqGDNH9klpl85JlcDNDTKjnOlQnQoDIh9YPtTeHt0l4%2BMBkUX1hYxNprVT8TP16AAcigI2%2FhIc%2B2Qs%2FIpdUGogxPqSLcssAAqaQeevrR3yNoiWZiaO31SyIznZqHZ5XhFxpH3mmuwgtMkl%2FOgTx3aYD2nPCE4%2B7Xpz50BzEA%3D",
-        "search_id": "1D9DAFB4-FF72-48FF-97B0-0CF8C10D0FAA",
+        "search_id": "A95D4393-CE0D-46B8-8FC2-FACE3FEA3F96",
         "departure_geo_city_id": 2656915,
         "arrival_geo_city_id": 2657260,
         "departure_id": "1447624",
@@ -651,13 +584,13 @@
     },
     {
       "file": "tutu/checkout-back-bus-12.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "tutu",
       "tool": "create_checkout_link",
       "arguments": {
         "transport": "bus",
         "offer_hash": "q0A74exWLhdkDMLBvvS%2FMkMHpEnkZsW1jycrEFaAMTfp2Izz6H5z5Y9EWnOLCDmRrgYFKm5ofFCfYzhSwSxykqWedi2dfuaF6y2VhSrjB0%2BYvACgOgRL7gjyL6gubBGfVF3sASqQlv%2Bsm%2FfBnigsFRpB3612tB7T4IZWB5NH89Ru24dw7zLFU9rJOnP%2BvYTBQev83iI5aksvFpADza2e58rTOamj7ja039FhmADWWf%2FrXVZUaSxFf5RrXWH4LkhHiaT9p9HMeEl%2FHslmGcA4eLr8oTB49o6mnH3T69n2e%2BYc3d88Uwzsp7pd2EYC6Z%2FI%2BwqlPgQqRO%2BWTrumC2h1VUnkO6UGmwgXhBUzwOQki6dLKemIi6%2FEKVX1k8osQz0apeJNwUL0467MAC8lRHrEXaS6yQiGu%2BvJ6sICjqXFhAENVt7xYA5CgD8j%2BjIaEhIyCQRxwjw0ARBd%2BFaHbjTWjB2xVg4AhHf6RrgzRZWUWEjZnSyM0%2FSz9IdervRj8Sk4bhDeePdqif1R1dgrm7uw%2BqmF8jS4vAQxW7Xs2UvzP7wn47n%2FdG5e3QWLLZVukA3jEqvwU30hfmrZXrRCIKEFPVif8CeIazk%2FvyXIcbalsYfTJ1Ym1J3%2BzA%3D%3D",
-        "search_id": "1D9DAFB4-FF72-48FF-97B0-0CF8C10D0FAA",
+        "search_id": "A95D4393-CE0D-46B8-8FC2-FACE3FEA3F96",
         "departure_geo_city_id": 2656915,
         "arrival_geo_city_id": 2657260,
         "departure_id": "1447624",
@@ -680,7 +613,65 @@
     },
     {
       "file": "tutu/checkout-hotel-page-1.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
+      "source": "tutu",
+      "tool": "create_checkout_link",
+      "arguments": {
+        "transport": "hotels",
+        "hotel_geo_id": "11882617",
+        "check_in": "2026-08-20",
+        "check_out": "2026-08-21",
+        "adults": 1,
+        "hotel_alias": "odnokomnatnaya_kvartira_na_ulitse_energetikov_8k2",
+        "search_id": "2312d3d861021709757e73ddd657a004",
+        "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=11882617&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=2312d3d861021709757e73ddd657a004"
+      },
+      "note": "no offer_pack_hash: this opens the hotel page and is not a cart, whatever we wish",
+      "volatile": [
+        "checkout_url"
+      ]
+    },
+    {
+      "file": "tutu/offer-details-1.json",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
+      "source": "tutu",
+      "tool": "get_offer_details",
+      "arguments": {
+        "product_type": "hotels",
+        "offer_id": "11882617",
+        "check_in": "2026-08-20",
+        "check_out": "2026-08-21",
+        "adults": 1
+      },
+      "note": "only a room rate offerpack_hash mints a cart; the listing best_offer one does not",
+      "volatile": [
+        "rooms[].rates[].offerpack_hash"
+      ]
+    },
+    {
+      "file": "tutu/checkout-hotel-cart-1.json",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
+      "source": "tutu",
+      "tool": "create_checkout_link",
+      "arguments": {
+        "transport": "hotels",
+        "hotel_geo_id": "11882617",
+        "check_in": "2026-08-20",
+        "check_out": "2026-08-21",
+        "adults": 1,
+        "hotel_alias": "odnokomnatnaya_kvartira_na_ulitse_energetikov_8k2",
+        "search_id": "2312d3d861021709757e73ddd657a004",
+        "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=11882617&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=2312d3d861021709757e73ddd657a004",
+        "offer_pack_hash": "f83f39b1-37c9-44d9-8659-2f6325867d92"
+      },
+      "note": "with a room rate hash this really is a cart",
+      "volatile": [
+        "checkout_url"
+      ]
+    },
+    {
+      "file": "tutu/checkout-hotel-page-2.json",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "tutu",
       "tool": "create_checkout_link",
       "arguments": {
@@ -699,8 +690,8 @@
       ]
     },
     {
-      "file": "tutu/offer-details-1.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "file": "tutu/offer-details-2.json",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "tutu",
       "tool": "get_offer_details",
       "arguments": {
@@ -716,8 +707,8 @@
       ]
     },
     {
-      "file": "tutu/checkout-hotel-cart-1.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "file": "tutu/checkout-hotel-cart-2.json",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "tutu",
       "tool": "create_checkout_link",
       "arguments": {
@@ -729,7 +720,7 @@
         "hotel_alias": "otel_art_deko_nevsky",
         "search_id": "2312d3d861021709757e73ddd657a004",
         "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=2312d3d861021709757e73ddd657a004",
-        "offer_pack_hash": "818d7246-db91-4f21-bab0-8c374967a53f"
+        "offer_pack_hash": "2089829c-6609-40b0-90bd-673f4a695c42"
       },
       "note": "with a room rate hash this really is a cart",
       "volatile": [
@@ -737,8 +728,8 @@
       ]
     },
     {
-      "file": "tutu/checkout-hotel-page-2.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "file": "tutu/checkout-hotel-page-3.json",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "tutu",
       "tool": "create_checkout_link",
       "arguments": {
@@ -757,8 +748,8 @@
       ]
     },
     {
-      "file": "tutu/offer-details-2.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "file": "tutu/offer-details-3.json",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "tutu",
       "tool": "get_offer_details",
       "arguments": {
@@ -774,8 +765,8 @@
       ]
     },
     {
-      "file": "tutu/checkout-hotel-cart-2.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "file": "tutu/checkout-hotel-cart-3.json",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "tutu",
       "tool": "create_checkout_link",
       "arguments": {
@@ -787,65 +778,7 @@
         "hotel_alias": "otel_nomera_na_nevskom_111",
         "search_id": "2312d3d861021709757e73ddd657a004",
         "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=2312d3d861021709757e73ddd657a004",
-        "offer_pack_hash": "ee5362f6-e43d-485e-a219-95ed91e58be3"
-      },
-      "note": "with a room rate hash this really is a cart",
-      "volatile": [
-        "checkout_url"
-      ]
-    },
-    {
-      "file": "tutu/checkout-hotel-page-3.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
-      "source": "tutu",
-      "tool": "create_checkout_link",
-      "arguments": {
-        "transport": "hotels",
-        "hotel_geo_id": "9933954",
-        "check_in": "2026-08-20",
-        "check_out": "2026-08-21",
-        "adults": 1,
-        "hotel_alias": "otel_nomera_na_goncharnoy",
-        "search_id": "2312d3d861021709757e73ddd657a004",
-        "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933954&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=2312d3d861021709757e73ddd657a004"
-      },
-      "note": "no offer_pack_hash: this opens the hotel page and is not a cart, whatever we wish",
-      "volatile": [
-        "checkout_url"
-      ]
-    },
-    {
-      "file": "tutu/offer-details-3.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
-      "source": "tutu",
-      "tool": "get_offer_details",
-      "arguments": {
-        "product_type": "hotels",
-        "offer_id": "9933954",
-        "check_in": "2026-08-20",
-        "check_out": "2026-08-21",
-        "adults": 1
-      },
-      "note": "only a room rate offerpack_hash mints a cart; the listing best_offer one does not",
-      "volatile": [
-        "rooms[].rates[].offerpack_hash"
-      ]
-    },
-    {
-      "file": "tutu/checkout-hotel-cart-3.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
-      "source": "tutu",
-      "tool": "create_checkout_link",
-      "arguments": {
-        "transport": "hotels",
-        "hotel_geo_id": "9933954",
-        "check_in": "2026-08-20",
-        "check_out": "2026-08-21",
-        "adults": 1,
-        "hotel_alias": "otel_nomera_na_goncharnoy",
-        "search_id": "2312d3d861021709757e73ddd657a004",
-        "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933954&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=2312d3d861021709757e73ddd657a004",
-        "offer_pack_hash": "ae5bfc4e-6e2f-4375-8692-2bcdf24f548c"
+        "offer_pack_hash": "3989994d-827c-4db4-ade4-41b8274497de"
       },
       "note": "with a room rate hash this really is a cart",
       "volatile": [
@@ -854,7 +787,7 @@
     },
     {
       "file": "enrich/isdayoff-2026-08.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "isdayoff",
       "tool": "getdata",
       "arguments": {
@@ -866,7 +799,7 @@
     },
     {
       "file": "enrich/isdayoff-2026-09.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "isdayoff",
       "tool": "getdata",
       "arguments": {
@@ -878,7 +811,7 @@
     },
     {
       "file": "enrich/openmeteo-in-window.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
+      "recorded_at": "2026-08-19T13:15:36.240Z",
       "source": "open-meteo",
       "tool": "forecast",
       "arguments": {
@@ -886,17 +819,6 @@
         "city": "Санкт-Петербург"
       },
       "note": "inside the 16-day forecast window at the time of recording"
-    },
-    {
-      "file": "enrich/openmeteo-out-of-window.json",
-      "recorded_at": "2026-08-19T11:31:57.818Z",
-      "source": "open-meteo",
-      "tool": "forecast",
-      "arguments": {
-        "url": "https://api.open-meteo.com/v1/forecast?latitude=59.9606739&longitude=30.1586551&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=auto&start_date=2026-09-23&end_date=2026-09-25",
-        "city": "Санкт-Петербург"
-      },
-      "note": "beyond the window Open-Meteo refuses the range outright and names the bounds; the block is hidden and history is never substituted"
     }
   ]
 }

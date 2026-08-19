@@ -9,7 +9,7 @@ Feature: Talking to the catalogue and to Tutu
   Scenario: The catalogue answers from the recordings
     Given the catalogue and Tutu are wired to the recordings
     When the catalogue is asked for offline events on artificial intelligence
-    Then 20 events come back
+    Then 8 events come back
     And the event "SPb Python Meetup 2026" is among them
 
   Scenario: The catalogue directory answers from the recordings
@@ -17,11 +17,23 @@ Feature: Talking to the catalogue and to Tutu
     When the catalogue directory is asked for
     Then it lists 21 cities
 
+  Scenario: The first question opens a session before it is asked
+    Given the catalogue has never been asked anything yet
+    When the catalogue is asked for offline events on artificial intelligence
+    Then the session was opened before the question
+    And 8 events come back
+
+  Scenario: A session the catalogue no longer knows is reopened, however it says so
+    Given the catalogue refuses the first call with a status code and no explanation
+    When the catalogue is asked for offline events on artificial intelligence
+    Then the session was reopened once
+    And 8 events come back
+
   Scenario: A lost session is reopened once and the call goes through
     Given the catalogue lost its session
     When the catalogue is asked for offline events on artificial intelligence
     Then the session was reopened once
-    And 20 events come back
+    And 8 events come back
 
   Scenario: A catalogue that is simply down is not retried forever
     Given the catalogue is down

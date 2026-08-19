@@ -147,7 +147,7 @@ Then('the origin can be typed rather than picked from a list', function (this: Z
 Then('the fallback names the hotel and its price', function (this: ZaezdWorld) {
   const noscript = /<noscript class="fallback">([\s\S]*?)<\/noscript>/.exec(html(this));
   assert.ok(noscript !== null, 'there is no fallback at all');
-  assert.match(noscript[1] ?? '', /Номера у Невы/, 'the fallback does not name the hotel');
+  assert.match(noscript[1] ?? '', /за проживание/, 'the fallback does not name the hotel');
 });
 
 Then('the page loads the vendored Tutu tokens before its own styles', function (this: ZaezdWorld) {

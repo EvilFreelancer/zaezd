@@ -16,9 +16,15 @@ function envelope(fixture: string): unknown {
 
 describe('unwrapToolResult', () => {
   it('opens the JSON string both servers hide inside a text block', () => {
-    const payload = unwrapToolResult('confcal', envelope('confcal/events-ai-offline.json'));
+    const payload = unwrapToolResult('confcal', envelope('confcal/events-ai-offline.json')) as {
+      count: number;
+      items: readonly unknown[];
+    };
 
-    expect(payload).toMatchObject({ count: 20 });
+    // The count is whatever was recorded; what matters is that the string became an object
+    // whose own count agrees with what it carries.
+    expect(payload.count).toBe(payload.items.length);
+    expect(payload.items.length).toBeGreaterThan(0);
   });
 
   it('refuses a tool error instead of reading its message as data', () => {
@@ -73,7 +79,9 @@ describe('normalizeEvents', () => {
   const events = normalizeEvents(loadPayload('confcal/events-ai-offline.json'));
 
   it('reads every event in the recorded answer', () => {
-    expect(events).toHaveLength(20);
+    const recorded = loadPayload<{ items: readonly unknown[] }>('confcal/events-ai-offline.json');
+
+    expect(events).toHaveLength(recorded.items.length);
   });
 
   it('leaves a venue the catalogue did not fill as missing', () => {

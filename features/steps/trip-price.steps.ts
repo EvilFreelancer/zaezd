@@ -73,6 +73,7 @@ When('the cheapest recorded trip is priced', function (this: ZaezdWorld) {
   assert.equal(hotel.best_offer.price_basis, 'stay_total');
 
   this.remember('hotel', hotel);
+  this.remember('parts', [there.price.amount, home.price.amount, hotel.best_offer.price.amount]);
   this.remember(
     'cost',
     priceTrip({
@@ -92,6 +93,17 @@ function cost(world: ZaezdWorld): TripCost {
 Then('the total is {float} ₽', function (this: ZaezdWorld, expected: number) {
   assert.equal(cost(this).total, expected);
 });
+
+Then(
+  'the total is exactly both journeys plus the whole-stay hotel price',
+  function (this: ZaezdWorld) {
+    // Not a literal: prices move between recordings, and a number that has to be edited every
+    // time proves nothing about the rule it was written for.
+    const parts = this.recall<readonly number[]>('parts');
+    const sum = parts.reduce((running, part) => running + Math.round(part * 100), 0);
+    assert.equal(cost(this).total, sum / 100);
+  },
+);
 
 Then('the breakdown adds up to the total', function (this: ZaezdWorld) {
   const { breakdown, total } = cost(this);

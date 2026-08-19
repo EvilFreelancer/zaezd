@@ -718,6 +718,13 @@ function monthsTouched(scenarios: {
   };
   add(scenarios.demo.stay);
   if (scenarios.degraded !== undefined) add(scenarios.degraded.stay);
+
+  // Plus the month after the demo: reading a trip that crosses a month boundary is a specified
+  // behaviour, and it needs a second month on disk whichever week the recording happens in.
+  const [year, month] = scenarios.demo.stay.checkOut.slice(0, 7).split('-').map(Number) as [number, number];
+  const next = month === 12 ? `${year + 1}-01` : `${year}-${String(month + 1).padStart(2, '0')}`;
+  months.add(next);
+
   return [...months].sort();
 }
 

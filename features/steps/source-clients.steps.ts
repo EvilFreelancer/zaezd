@@ -7,6 +7,8 @@ import { SourceError } from '../../src/sources/normalize.ts';
 import { replayTransport, type McpTransport } from '../../src/sources/mcp-client.ts';
 import { loadRecordings } from '../../src/sources/replay.ts';
 import type { CatalogueEvent, CityDirectory, HotelSearch, TransportSearch } from '../../src/composer/types.ts';
+import { eventQueryFor } from '../../src/composer/build-trip.ts';
+import type { EventQuery } from '../../src/sources/confcal.ts';
 import type { ZaezdWorld } from '../support/world.ts';
 
 type Asked = { readonly tool: string; readonly args: Readonly<Record<string, unknown>> };
@@ -39,20 +41,34 @@ type Wiring = {
   readonly asked: Asked[];
   readonly overlap: { max: number; current: number };
   readonly reopened: { count: number };
+  /** How many questions had been asked when the session was opened. */
+  readonly opened: { before: number };
 };
 
-function wire(world: ZaezdWorld, options: { sessionLost?: boolean; down?: boolean } = {}): Wiring {
+function wire(
+  world: ZaezdWorld,
+  options: { sessionLost?: boolean; down?: boolean; noSession?: boolean; opaqueRefusal?: boolean } = {},
+): Wiring {
   const recordings = loadRecordings();
   const asked: Asked[] = [];
   const overlap = { max: 0, current: 0 };
   const reopened = { count: 0 };
+  const opened = { before: -1 };
 
   const base = replayTransport('confcal', recordings);
-  let sessionAlive = options.sessionLost !== true;
+  let sessionAlive = options.sessionLost !== true && options.noSession !== true;
+  let refusedOnce = false;
 
   const confcalTransport: McpTransport = {
     async call(tool, args, callOptions) {
       if (options.down === true) throw new SourceError('confcal', 'session is gone');
+      if (options.opaqueRefusal === true && !refusedOnce) {
+        refusedOnce = true;
+        // What the server really answers: a status code, with the reason only in the body.
+        throw new SourceError('confcal', 'answered with HTTP 400', {
+          error: { code: -32600, message: 'Bad Request: Missing session ID' },
+        });
+      }
       if (!sessionAlive) {
         sessionAlive = false;
         throw new SourceError('confcal', 'session is gone');
@@ -67,8 +83,10 @@ function wire(world: ZaezdWorld, options: { sessionLost?: boolean; down?: boolea
       cache: new TtlCache({ clock: () => 0 }),
       reopenSession: async () => {
         reopened.count += 1;
+        opened.before = asked.length;
         sessionAlive = options.down !== true;
       },
+      hasSession: () => sessionAlive,
     }),
     tutu: tutuClient({
       transport: watched(replayTransport('tutu', recordings), asked, overlap),
@@ -77,6 +95,7 @@ function wire(world: ZaezdWorld, options: { sessionLost?: boolean; down?: boolea
     asked,
     overlap,
     reopened,
+    opened,
   };
 
   world.remember('wiring', wiring);
@@ -91,6 +110,17 @@ Given('the catalogue and Tutu are wired to the recordings', function (this: Zaez
   wire(this);
 });
 
+Given('the catalogue has never been asked anything yet', function (this: ZaezdWorld) {
+  wire(this, { noSession: true });
+});
+
+Given(
+  'the catalogue refuses the first call with a status code and no explanation',
+  function (this: ZaezdWorld) {
+    wire(this, { opaqueRefusal: true });
+  },
+);
+
 Given('the catalogue lost its session', function (this: ZaezdWorld) {
   wire(this, { sessionLost: true });
 });
@@ -100,23 +130,27 @@ Given('the catalogue is down', function (this: ZaezdWorld) {
 });
 
 /** The catalogue is asked exactly what the product asks it: every city that has events, bar home. */
-const AI_OFFLINE = {
-  cities: ['chelyabinsk', 'ekaterinburg', 'kaliningrad', 'kazan', 'krasnodar', 'novosibirsk', 'orenburg', 'rostov', 'sochi', 'spb', 'tomsk', 'ufa', 'volgograd', 'voronezh'],
-  topics: ['ai'],
-  format: 'offline',
-  limit: 20,
-} as const;
+/**
+ * The question the product itself asks, built by the product's own function.
+ *
+ * Spelling it out here once let the recorded arguments and the asked-for arguments drift apart
+ * the moment the limit changed, and every replay lookup missed.
+ */
+async function aiOffline(world: ZaezdWorld): Promise<EventQuery> {
+  const directory = await wiring(world).confcal.listCities();
+  return eventQueryFor(directory.cities, 'moscow', { topics: ['ai'] });
+}
 
 When(
   'the catalogue is asked for offline events on artificial intelligence',
   async function (this: ZaezdWorld) {
-    this.remember('events', await wiring(this).confcal.searchEvents(AI_OFFLINE));
+    this.remember('events', await wiring(this).confcal.searchEvents(await aiOffline(this)));
   },
 );
 
 When('the catalogue is asked and refuses', async function (this: ZaezdWorld) {
   try {
-    await wiring(this).confcal.searchEvents(AI_OFFLINE);
+    await wiring(this).confcal.searchEvents(await aiOffline(this));
     this.remember('refusal', undefined);
   } catch (error) {
     this.remember('refusal', error);
@@ -129,7 +163,7 @@ When('the catalogue directory is asked for', async function (this: ZaezdWorld) {
 
 When('two different questions are asked at the same moment', async function (this: ZaezdWorld) {
   const client = wiring(this).confcal;
-  await Promise.all([client.searchEvents(AI_OFFLINE), client.listCities()]);
+  await Promise.all([client.searchEvents(await aiOffline(this)), client.listCities()]);
 });
 
 When(
@@ -230,4 +264,10 @@ Then('Tutu was asked once', function (this: ZaezdWorld) {
     wiring(this).asked.filter((item) => item.tool === 'search_multitransport').length,
     1,
   );
+});
+
+Then('the session was opened before the question', function (this: ZaezdWorld) {
+  const { opened, reopened } = wiring(this);
+  assert.equal(reopened.count, 1, 'no session was opened at all');
+  assert.equal(opened.before, 0, 'the question went out before the session existed');
 });

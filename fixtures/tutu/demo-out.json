@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-08-19T11:31:57.818Z",
+  "recorded_at": "2026-08-19T13:15:36.240Z",
   "source": "tutu",
   "tool": "search_multitransport",
   "arguments": {
@@ -22,7 +22,7 @@
         "content": [
           {
             "type": "text",
-            "text": "{\"variants\":[{\"offer_id\":\"8ddfe2c0c5766d051edf0e3ac8d2cfbf\",\"transport\":\"railway\",\"price\":{\"amount\":3647.69,\"currency\":\"RUB\"},\"duration_min\":509,\"carriers\":[\"ФПК\"],\"search_results_url\":\"https://www.tutu.ru/poezda/rasp_d.php?date=20.08.2026&nnst1=2000000&nnst2=2004000\",\"segments_count\":1,\"checkout_url\":\"https://www.tutu.ru/poezda/order/?departure_st=2657260&arrival_st=2656915&dep_st=2006004&arr_st=2004006&tn=016%D0%90&date=20.08.2026+00:46:00\",\"departure_at\":\"2026-08-20T00:46:00+03:00\",\"arrival_at\":\"2026-08-20T09:15:00+03:00\",\"legs\":[{\"label\":\"outbound\",\"from\":\"Москва — Ленинградский вокзал (2006004)\",\"to\":\"Санкт-Петербург — Ладожский вокзал (2004006)\",\"departure_at\":\"2026-08-20T00:46:00+03:00\",\"arrival_at\":\"2026-08-20T09:15:00+03:00\",\"duration_min\":509,\"segments\":[{\"from\":\"Москва — Ленинградский вокзал (2006004)\",\"to\":\"Санкт-Петербург — Ладожский вокзал (2004006)\",\"departure_at\":\"2026-08-20T00:46:00+03:00\",\"arrival_at\":\"2026-08-20T09:15:00+03:00\",\"duration_min\":509,\"carrier\":\"ФПК\",\"voyage_no\":\"016А\",\"from_geo_point_id\":2958868,\"to_geo_point_id\":2958270,\"vehicle_meta\":{\"name\":\"Арктика\",\"is_premium\":true}}]}],\"checkout_ref\":{\"transport\":\"railway\",\"departure_city_id\":2657260,\"arrival_city_id\":2656915,\"departure_station_code\":\"2006004\",\"arrival_station_code\":\"2004006\",\"train_number\":\"016А\",\"departure_at\":\"2026-08-20T00:46:00+03:00\",\"departure_geo_point_id\":2958868,\"arrival_geo_point_id\":2958270,\"offer_hash\":\"8ddfe2c0c5766d051edf0e3ac8d2cfbf\",\"segment_hash\":\"e3fae1d13986bda645719f35d2cf0624\",\"search_id\":\"B921E9E0-ED9D-423F-9A0C-D3C0F0FA0CC8\",\"result_id\":\"cdd01035-e5a5-521f-aed1-18fb120a5b43\",\"card_id\":\"48a81eb69ca9537611f98f0b357e1596\"},\"details_ref\":{\"transport\":\"railway\",\"source\":\"seats-gateway.seats-by-params\",\"departure_station_code\":\"2006004\",\"arrival_station_code\":\"2004006\",\"train_number\":\"016А\",\"departure_at\":\"2026-08-20T00:46:00+03:00\",\"price\":{\"amount\":3647.69,\"currency\":\"RUB\"},\"title\":\"Поезд 016А\",\"carriers\":[\"ФПК\"],\"duration_min\":509,\"arrival_at\":\"2026-08-20T09:15:00+03:00\",\"review_summary\":{\"rating\":8.7,\"review_count\":2090,\"label\":\"⭐ 8.7/10 · 2 090 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"train\",\"subject\":\"016А\",\"scale\":10,\"feedback_key\":\"016А\"}},\"review_summary\":{\"rating\":8.7,\"review_count\":2090,\"label\":\"⭐ 8.7/10 · 2 090 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"train\",\"subject\":\"016А\",\"scale\":10,\"feedback_key\":\"016А\"},\"fares\":{\"count\":2,\"price_from\":3647.69,\"price_to\":4195.79,\"currency\":\"RUB\",\"refundable_count\":2,\"changeable_count\":0,\"seat_categories\":{\"RESERVED_SEAT\":{\"count\":2,\"price_from\":3647.69}}}},{\"offer_id\":\"fa9adb59deeca88256396ebf53ca2c90\",\"transport\":\"avia\",\"price\":{\"amount\":10535.0,\"currency\":\"RUB\"},\"duration_min\":90,\"carriers\":[\"Аэрофлот\"],\"search_results_url\":\"https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75\",\"segments_count\":1,\"departure_at\":\"2026-08-20T23:30:00+03:00\",\"arrival_at\":\"2026-08-21T01:00:00+03:00\",\"legs\":[{\"label\":\"outbound\",\"from\":\"Москва — Внуково (VKO), терм. A\",\"to\":\"Санкт-Петербург — Пулково (LED), терм. 1\",\"departure_at\":\"2026-08-20T23:30:00+03:00\",\"arrival_at\":\"2026-08-21T01:00:00+03:00\",\"duration_min\":90,\"segments\":[{\"from\":\"Москва — Внуково (VKO), терм. A\",\"to\":\"Санкт-Петербург — Пулково (LED), терм. 1\",\"departure_at\":\"2026-08-20T23:30:00+03:00\",\"arrival_at\":\"2026-08-21T01:00:00+03:00\",\"duration_min\":90,\"carrier\":\"Аэрофлот\",\"voyage_no\":\"SU-6186\",\"from_geo_point_id\":2718687,\"to_geo_point_id\":2718757,\"review_summary\":{\"rating\":9.25,\"review_count\":22870,\"label\":\"⭐ 9.25/10 · 22 870 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"Аэрофлот\",\"scale\":10,\"feedback_key\":\"1062\"}}]}],\"variants\":[{\"variant_id\":\"7cfaf45558a0a7c38dba3e4db80368cd:06dd44ad3a22ddcce66412f835719a8b\",\"offer_hash\":\"{\\\"Price\\\":10535,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"521fbbc4bb8905c709f84e87dbc2380f\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"fa9adb59deeca88256396ebf53ca2c90:4a15ebaf82f14491e2bac3a776e17da0\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"c76b15591c4b2c741052f1f3376684e0\\\\\\\"}]\\\"}\",\"price\":{\"amount\":10535.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Эконом Базовый\",\"baggage\":{\"kg\":0,\"pieces\":0},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":false,\"changeable\":true,\"seat_selection\":\"available_paid\",\"boarding_privileges\":\"unavailable\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"7cfaf45558a0a7c38dba3e4db80368cd:18b4760245c91ba348ccd2657ed950bf\",\"offer_hash\":\"{\\\"Price\\\":11273,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"ac5ca36c170cefad95d0b255eed9656b\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"fa9adb59deeca88256396ebf53ca2c90:8b791de79500e960f46a786d93478b8f\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"48571dae6651aad48838804db7fb1834\\\\\\\"}]\\\"}\",\"price\":{\"amount\":11273.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Шаттл\",\"baggage\":{\"kg\":0,\"pieces\":0},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":false,\"changeable\":null,\"seat_selection\":\"available_paid\",\"boarding_privileges\":\"unavailable\"},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"7cfaf45558a0a7c38dba3e4db80368cd:e17195945116eee5cc4360dcb82da5f9\",\"offer_hash\":\"{\\\"Price\\\":13933,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"0c7fe30523c4875ee5fad6f8403d4bd0\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"fa9adb59deeca88256396ebf53ca2c90:3512777c0927777baf7233034bcadd1e\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"c741f5ee709fc5e9dde34fcbedbdd852\\\\\\\"}]\\\"}\",\"price\":{\"amount\":13933.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Эконом Оптимум\",\"baggage\":{\"kg\":23,\"pieces\":1},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":true,\"changeable\":true,\"seat_selection\":\"available_paid\",\"boarding_privileges\":\"unavailable\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"7cfaf45558a0a7c38dba3e4db80368cd:4d092885eeefcfea271ba047c06138ee\",\"offer_hash\":\"{\\\"Price\\\":20461,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"823e25710305000ef40e582083acd421\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"fa9adb59deeca88256396ebf53ca2c90:82e1de26d80c0447c4375b0fe9df31c8\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"75b467503f2bcef53eb433377cb4b201\\\\\\\"}]\\\"}\",\"price\":{\"amount\":20461.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Эконом Максимум\",\"baggage\":{\"kg\":23,\"pieces\":2},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":true,\"changeable\":true,\"seat_selection\":\"available_free\",\"boarding_privileges\":\"free\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"7cfaf45558a0a7c38dba3e4db80368cd:3816b3b0bc66756051ce27437191e540\",\"offer_hash\":\"{\\\"Price\\\":47903,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"14b7213502b528b17e5ac63d1cbc1fd6\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"fa9adb59deeca88256396ebf53ca2c90:71ac8e907bd67cd6dcdbf26f298bfc43\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"12298e84191a182d616cf6971ab00031\\\\\\\"}]\\\"}\",\"price\":{\"amount\":47903.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Бизнес Базовый\",\"baggage\":{\"kg\":32,\"pieces\":1},\"cabin_baggage\":{\"kg\":15,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":false,\"changeable\":true,\"seat_selection\":\"available_free\",\"business_hall_allowed\":true,\"boarding_privileges\":\"free\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"BUSINESS\"},{\"variant_id\":\"7cfaf45558a0a7c38dba3e4db80368cd:46f9e51481197e3f8f65e1d51d167338\",\"offer_hash\":\"{\\\"Price\\\":55159,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"27faeef1fa8caebb634e65c6880f8d26\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"fa9adb59deeca88256396ebf53ca2c90:8f2a245a2a2a76b399b0cd6268977c2f\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"8eb069ee10317a7580fa55b9839fa086\\\\\\\"}]\\\"}\",\"price\":{\"amount\":55159.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Бизнес Оптимум\",\"baggage\":{\"kg\":32,\"pieces\":2},\"cabin_baggage\":{\"kg\":15,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":true,\"changeable\":true,\"seat_selection\":\"available_free\",\"business_hall_allowed\":true,\"boarding_privileges\":\"free\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"BUSINESS\"}],\"checkout_ref\":{\"transport\":\"avia\",\"is_round_trip\":false,\"search_results_url\":\"https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75\",\"offer_hash\":\"{\\\"Price\\\":10535,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"521fbbc4bb8905c709f84e87dbc2380f\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"fa9adb59deeca88256396ebf53ca2c90:4a15ebaf82f14491e2bac3a776e17da0\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"c76b15591c4b2c741052f1f3376684e0\\\\\\\"}]\\\"}\",\"departure_geo_city_id\":2657260,\"arrival_geo_city_id\":2656915,\"departure_at\":\"2026-08-20T23:30:00+03:00\",\"service_class\":\"ECONOMIC\",\"departure_avia_id\":\"491\",\"arrival_avia_id\":\"75\",\"passengers_full\":1,\"passengers_child\":0,\"passengers_infant\":0},\"review_summary\":{\"rating\":9.25,\"review_count\":22870,\"label\":\"⭐ 9.25/10 · 22 870 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"Аэрофлот\",\"scale\":10,\"feedback_key\":\"1062\"}},{\"offer_id\":\"b39124216a7093a33829c1dacf33a49c\",\"transport\":\"avia\",\"price\":{\"amount\":10704.0,\"currency\":\"RUB\"},\"duration_min\":85,\"carriers\":[\"Аэрофлот\"],\"search_results_url\":\"https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75\",\"segments_count\":1,\"departure_at\":\"2026-08-20T23:55:00+03:00\",\"arrival_at\":\"2026-08-21T01:20:00+03:00\",\"legs\":[{\"label\":\"outbound\",\"from\":\"Москва — Шереметьево (SVO), терм. B\",\"to\":\"Санкт-Петербург — Пулково (LED), терм. 1\",\"departure_at\":\"2026-08-20T23:55:00+03:00\",\"arrival_at\":\"2026-08-21T01:20:00+03:00\",\"duration_min\":85,\"segments\":[{\"from\":\"Москва — Шереметьево (SVO), терм. B\",\"to\":\"Санкт-Петербург — Пулково (LED), терм. 1\",\"departure_at\":\"2026-08-20T23:55:00+03:00\",\"arrival_at\":\"2026-08-21T01:20:00+03:00\",\"duration_min\":85,\"carrier\":\"Аэрофлот\",\"voyage_no\":\"SU-6807\",\"from_geo_point_id\":2719726,\"to_geo_point_id\":2718757,\"review_summary\":{\"rating\":9.25,\"review_count\":22870,\"label\":\"⭐ 9.25/10 · 22 870 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"Аэрофлот\",\"scale\":10,\"feedback_key\":\"1062\"}}]}],\"variants\":[{\"variant_id\":\"472e3bf3c42e315fceef1225134ddf5c:06dd44ad3a22ddcce66412f835719a8b\",\"offer_hash\":\"{\\\"Price\\\":10704,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"0b398d95abce5901d2d01140d6e12218\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b39124216a7093a33829c1dacf33a49c:4a15ebaf82f14491e2bac3a776e17da0\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"32ae1aae96fedb3cb34d8c8b59f70855\\\\\\\"}]\\\"}\",\"price\":{\"amount\":10704.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Эконом Базовый\",\"baggage\":{\"kg\":0,\"pieces\":0},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":false,\"changeable\":true,\"seat_selection\":\"available_paid\",\"boarding_privileges\":\"unavailable\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"472e3bf3c42e315fceef1225134ddf5c:18b4760245c91ba348ccd2657ed950bf\",\"offer_hash\":\"{\\\"Price\\\":11457,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"556ee04d1038e988695f3f87b734d412\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b39124216a7093a33829c1dacf33a49c:8b791de79500e960f46a786d93478b8f\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"0766d8ac8059129c290653382b866cfb\\\\\\\"}]\\\"}\",\"price\":{\"amount\":11457.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Шаттл\",\"baggage\":{\"kg\":0,\"pieces\":0},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":false,\"changeable\":null,\"seat_selection\":\"available_paid\",\"boarding_privileges\":\"unavailable\"},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"472e3bf3c42e315fceef1225134ddf5c:e17195945116eee5cc4360dcb82da5f9\",\"offer_hash\":\"{\\\"Price\\\":14103,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"43db2e02a9b91738a96c1f7446bca4f0\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b39124216a7093a33829c1dacf33a49c:3512777c0927777baf7233034bcadd1e\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"d6246b38ccc15ad8c5a2cc8bdc9eacfb\\\\\\\"}]\\\"}\",\"price\":{\"amount\":14103.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Эконом Оптимум\",\"baggage\":{\"kg\":23,\"pieces\":1},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":true,\"changeable\":true,\"seat_selection\":\"available_paid\",\"boarding_privileges\":\"unavailable\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"472e3bf3c42e315fceef1225134ddf5c:4d092885eeefcfea271ba047c06138ee\",\"offer_hash\":\"{\\\"Price\\\":20630,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"95eb21cc7391608b6af76c575d9706b3\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b39124216a7093a33829c1dacf33a49c:82e1de26d80c0447c4375b0fe9df31c8\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"c80183e8f449fed8f961bcbe704d8662\\\\\\\"}]\\\"}\",\"price\":{\"amount\":20630.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Эконом Максимум\",\"baggage\":{\"kg\":23,\"pieces\":2},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":true,\"changeable\":true,\"seat_selection\":\"available_free\",\"boarding_privileges\":\"free\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"472e3bf3c42e315fceef1225134ddf5c:3816b3b0bc66756051ce27437191e540\",\"offer_hash\":\"{\\\"Price\\\":48072,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"20934dab11a1bef92258794f8701e227\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b39124216a7093a33829c1dacf33a49c:71ac8e907bd67cd6dcdbf26f298bfc43\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"97b8c49a72b97fa766f3765e4ebc47a4\\\\\\\"}]\\\"}\",\"price\":{\"amount\":48072.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Бизнес Базовый\",\"baggage\":{\"kg\":32,\"pieces\":1},\"cabin_baggage\":{\"kg\":15,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":false,\"changeable\":true,\"seat_selection\":\"available_free\",\"business_hall_allowed\":true,\"boarding_privileges\":\"free\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"BUSINESS\"},{\"variant_id\":\"472e3bf3c42e315fceef1225134ddf5c:46f9e51481197e3f8f65e1d51d167338\",\"offer_hash\":\"{\\\"Price\\\":55328,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"0758f35d4fa1e6a384120228105c7aca\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b39124216a7093a33829c1dacf33a49c:8f2a245a2a2a76b399b0cd6268977c2f\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"e60c47558983ea001066d8badec7e0a6\\\\\\\"}]\\\"}\",\"price\":{\"amount\":55328.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Бизнес Оптимум\",\"baggage\":{\"kg\":32,\"pieces\":2},\"cabin_baggage\":{\"kg\":15,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":true,\"changeable\":true,\"seat_selection\":\"available_free\",\"business_hall_allowed\":true,\"boarding_privileges\":\"free\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"BUSINESS\"}],\"checkout_ref\":{\"transport\":\"avia\",\"is_round_trip\":false,\"search_results_url\":\"https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75\",\"offer_hash\":\"{\\\"Price\\\":10704,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"0b398d95abce5901d2d01140d6e12218\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b39124216a7093a33829c1dacf33a49c:4a15ebaf82f14491e2bac3a776e17da0\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"32ae1aae96fedb3cb34d8c8b59f70855\\\\\\\"}]\\\"}\",\"departure_geo_city_id\":2657260,\"arrival_geo_city_id\":2656915,\"departure_at\":\"2026-08-20T23:55:00+03:00\",\"service_class\":\"ECONOMIC\",\"departure_avia_id\":\"491\",\"arrival_avia_id\":\"75\",\"passengers_full\":1,\"passengers_child\":0,\"passengers_infant\":0},\"review_summary\":{\"rating\":9.25,\"review_count\":22870,\"label\":\"⭐ 9.25/10 · 22 870 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"Аэрофлот\",\"scale\":10,\"feedback_key\":\"1062\"}},{\"offer_id\":\"3c629c8181c7afd4fdec296b99d413fb\",\"transport\":\"avia\",\"price\":{\"amount\":10704.0,\"currency\":\"RUB\"},\"duration_min\":85,\"carriers\":[\"Аэрофлот\"],\"search_results_url\":\"https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75\",\"segments_count\":1,\"departure_at\":\"2026-08-20T23:30:00+03:00\",\"arrival_at\":\"2026-08-21T00:55:00+03:00\",\"legs\":[{\"label\":\"outbound\",\"from\":\"Москва — Шереметьево (SVO), терм. B\",\"to\":\"Санкт-Петербург — Пулково (LED), терм. 1\",\"departure_at\":\"2026-08-20T23:30:00+03:00\",\"arrival_at\":\"2026-08-21T00:55:00+03:00\",\"duration_min\":85,\"segments\":[{\"from\":\"Москва — Шереметьево (SVO), терм. B\",\"to\":\"Санкт-Петербург — Пулково (LED), терм. 1\",\"departure_at\":\"2026-08-20T23:30:00+03:00\",\"arrival_at\":\"2026-08-21T00:55:00+03:00\",\"duration_min\":85,\"carrier\":\"Аэрофлот\",\"voyage_no\":\"SU-6805\",\"from_geo_point_id\":2719726,\"to_geo_point_id\":2718757,\"review_summary\":{\"rating\":9.25,\"review_count\":22870,\"label\":\"⭐ 9.25/10 · 22 870 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"Аэрофлот\",\"scale\":10,\"feedback_key\":\"1062\"}}]}],\"variants\":[{\"variant_id\":\"f4182a0a888edbfa6238592de8e791d0:06dd44ad3a22ddcce66412f835719a8b\",\"offer_hash\":\"{\\\"Price\\\":10704,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"fb7fe83cd0f8bf4eeebe3b244f97e9c4\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"3c629c8181c7afd4fdec296b99d413fb:4a15ebaf82f14491e2bac3a776e17da0\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"d8d9a721e6e474460f9e079a6f4c77b9\\\\\\\"}]\\\"}\",\"price\":{\"amount\":10704.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Эконом Базовый\",\"baggage\":{\"kg\":0,\"pieces\":0},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":false,\"changeable\":true,\"seat_selection\":\"available_paid\",\"boarding_privileges\":\"unavailable\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"f4182a0a888edbfa6238592de8e791d0:18b4760245c91ba348ccd2657ed950bf\",\"offer_hash\":\"{\\\"Price\\\":11457,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"da1ee6142640fe19b22707b9aba20587\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"3c629c8181c7afd4fdec296b99d413fb:8b791de79500e960f46a786d93478b8f\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"155851e10ce990b9caa5b35af96e3b42\\\\\\\"}]\\\"}\",\"price\":{\"amount\":11457.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Шаттл\",\"baggage\":{\"kg\":0,\"pieces\":0},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":false,\"changeable\":null,\"seat_selection\":\"available_paid\",\"boarding_privileges\":\"unavailable\"},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"f4182a0a888edbfa6238592de8e791d0:e17195945116eee5cc4360dcb82da5f9\",\"offer_hash\":\"{\\\"Price\\\":14103,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"35d6389f43906d3d545c73046cf7be15\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"3c629c8181c7afd4fdec296b99d413fb:3512777c0927777baf7233034bcadd1e\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"6af59dac41ce02792c1d34cbeb8fea1c\\\\\\\"}]\\\"}\",\"price\":{\"amount\":14103.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Эконом Оптимум\",\"baggage\":{\"kg\":23,\"pieces\":1},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":true,\"changeable\":true,\"seat_selection\":\"available_paid\",\"boarding_privileges\":\"unavailable\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"f4182a0a888edbfa6238592de8e791d0:4d092885eeefcfea271ba047c06138ee\",\"offer_hash\":\"{\\\"Price\\\":20630,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"8fa4d7e9c81f81d7ea9aa46b4f51bc11\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"3c629c8181c7afd4fdec296b99d413fb:82e1de26d80c0447c4375b0fe9df31c8\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"c42ff8178e0739ada18602b45e409512\\\\\\\"}]\\\"}\",\"price\":{\"amount\":20630.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Эконом Максимум\",\"baggage\":{\"kg\":23,\"pieces\":2},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":true,\"changeable\":true,\"seat_selection\":\"available_free\",\"boarding_privileges\":\"free\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"f4182a0a888edbfa6238592de8e791d0:3816b3b0bc66756051ce27437191e540\",\"offer_hash\":\"{\\\"Price\\\":48072,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"f09ade25473db1eeafa1871f31f9bfd9\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"3c629c8181c7afd4fdec296b99d413fb:71ac8e907bd67cd6dcdbf26f298bfc43\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"50fd3817b0725688d7b9eb0a922695e4\\\\\\\"}]\\\"}\",\"price\":{\"amount\":48072.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Бизнес Базовый\",\"baggage\":{\"kg\":32,\"pieces\":1},\"cabin_baggage\":{\"kg\":15,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":false,\"changeable\":true,\"seat_selection\":\"available_free\",\"business_hall_allowed\":true,\"boarding_privileges\":\"free\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"BUSINESS\"},{\"variant_id\":\"f4182a0a888edbfa6238592de8e791d0:46f9e51481197e3f8f65e1d51d167338\",\"offer_hash\":\"{\\\"Price\\\":55328,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"178325d369eead2dd34d738c7ea64075\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"3c629c8181c7afd4fdec296b99d413fb:8f2a245a2a2a76b399b0cd6268977c2f\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"eef0d820cc9c847cdb950bfd5ae89df0\\\\\\\"}]\\\"}\",\"price\":{\"amount\":55328.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Бизнес Оптимум\",\"baggage\":{\"kg\":32,\"pieces\":2},\"cabin_baggage\":{\"kg\":15,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":true,\"changeable\":true,\"seat_selection\":\"available_free\",\"business_hall_allowed\":true,\"boarding_privileges\":\"free\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"BUSINESS\"}],\"checkout_ref\":{\"transport\":\"avia\",\"is_round_trip\":false,\"search_results_url\":\"https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75\",\"offer_hash\":\"{\\\"Price\\\":10704,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"fb7fe83cd0f8bf4eeebe3b244f97e9c4\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"3c629c8181c7afd4fdec296b99d413fb:4a15ebaf82f14491e2bac3a776e17da0\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"d8d9a721e6e474460f9e079a6f4c77b9\\\\\\\"}]\\\"}\",\"departure_geo_city_id\":2657260,\"arrival_geo_city_id\":2656915,\"departure_at\":\"2026-08-20T23:30:00+03:00\",\"service_class\":\"ECONOMIC\",\"departure_avia_id\":\"491\",\"arrival_avia_id\":\"75\",\"passengers_full\":1,\"passengers_child\":0,\"passengers_infant\":0},\"review_summary\":{\"rating\":9.25,\"review_count\":22870,\"label\":\"⭐ 9.25/10 · 22 870 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"Аэрофлот\",\"scale\":10,\"feedback_key\":\"1062\"}},{\"offer_id\":\"b4b4b0f3cbd3a0fc1cb4ae15ecf4c754\",\"transport\":\"avia\",\"price\":{\"amount\":10713.0,\"currency\":\"RUB\"},\"duration_min\":85,\"carriers\":[\"Победа\"],\"search_results_url\":\"https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75\",\"segments_count\":1,\"departure_at\":\"2026-08-20T22:25:00+03:00\",\"arrival_at\":\"2026-08-20T23:50:00+03:00\",\"legs\":[{\"label\":\"outbound\",\"from\":\"Москва — Внуково (VKO)\",\"to\":\"Санкт-Петербург — Пулково (LED)\",\"departure_at\":\"2026-08-20T22:25:00+03:00\",\"arrival_at\":\"2026-08-20T23:50:00+03:00\",\"duration_min\":85,\"segments\":[{\"from\":\"Москва — Внуково (VKO)\",\"to\":\"Санкт-Петербург — Пулково (LED)\",\"departure_at\":\"2026-08-20T22:25:00+03:00\",\"arrival_at\":\"2026-08-20T23:50:00+03:00\",\"duration_min\":85,\"carrier\":\"Победа\",\"voyage_no\":\"DP-205\",\"from_geo_point_id\":2718687,\"to_geo_point_id\":2718757,\"review_summary\":{\"rating\":6.93,\"review_count\":14260,\"label\":\"⭐ 6.93/10 · 14 260 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"Победа\",\"scale\":10,\"feedback_key\":\"2227\"}}]}],\"variants\":[{\"variant_id\":\"89dd841ffafe9079040cbd747d1410cc:671018c27b97d70aa92a2c65120e84ac\",\"offer_hash\":\"{\\\"Price\\\":10713,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"b1d1b74303267f9bd454c881180729ca\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b4b4b0f3cbd3a0fc1cb4ae15ecf4c754:f4b7bd50b88d2aef62aa0ef78689dd61\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"be9848e57169ff4b4e69acdc3c56dabd\\\\\\\"}]\\\"}\",\"price\":{\"amount\":10713.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Базовый\",\"baggage\":{\"kg\":0,\"pieces\":0},\"cabin_baggage\":{\"kg\":null,\"pieces\":1,\"dimensions\":\"36 × 30 × 27\"},\"refundable\":false,\"changeable\":false},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"89dd841ffafe9079040cbd747d1410cc:6216f4b2c5b065a73a13b6ce8448635a\",\"offer_hash\":\"{\\\"Price\\\":13916,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"2f41af4a81f73ba457feccec738daf3a\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b4b4b0f3cbd3a0fc1cb4ae15ecf4c754:7bdef7201719c823a5aaf6841db6231e\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"a762ca384986dd40a803aff8d755c22c\\\\\\\"}]\\\"}\",\"price\":{\"amount\":13916.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Выгодный\",\"baggage\":{\"kg\":10,\"pieces\":1},\"cabin_baggage\":{\"kg\":null,\"pieces\":1,\"dimensions\":\"36 × 30 × 27\"},\"refundable\":false,\"changeable\":true,\"exchange\":{\"available\":true,\"deadline_hours\":48}},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"89dd841ffafe9079040cbd747d1410cc:66fcf35c9562f0614bb9617bbea50c84\",\"offer_hash\":\"{\\\"Price\\\":17600,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"bc3da7547ccca52bd4f6641f12c42486\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b4b4b0f3cbd3a0fc1cb4ae15ecf4c754:81e223a99b8ce32d2cd1059cbdcab4ab\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"c6c15b8d82943ad0904199f23038a521\\\\\\\"}]\\\"}\",\"price\":{\"amount\":17600.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Максимум\",\"baggage\":{\"kg\":20,\"pieces\":1},\"cabin_baggage\":{\"kg\":null,\"pieces\":1,\"dimensions\":\"36 × 30 × 27\"},\"refundable\":true,\"changeable\":true,\"exchange\":{\"available\":true,\"deadline_hours\":48}},\"service_class\":\"ECONOMIC\"}],\"checkout_ref\":{\"transport\":\"avia\",\"is_round_trip\":false,\"search_results_url\":\"https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75\",\"offer_hash\":\"{\\\"Price\\\":10713,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"b1d1b74303267f9bd454c881180729ca\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b4b4b0f3cbd3a0fc1cb4ae15ecf4c754:f4b7bd50b88d2aef62aa0ef78689dd61\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"be9848e57169ff4b4e69acdc3c56dabd\\\\\\\"}]\\\"}\",\"departure_geo_city_id\":2657260,\"arrival_geo_city_id\":2656915,\"departure_at\":\"2026-08-20T22:25:00+03:00\",\"service_class\":\"ECONOMIC\",\"departure_avia_id\":\"491\",\"arrival_avia_id\":\"75\",\"passengers_full\":1,\"passengers_child\":0,\"passengers_infant\":0},\"review_summary\":{\"rating\":6.93,\"review_count\":14260,\"label\":\"⭐ 6.93/10 · 14 260 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"Победа\",\"scale\":10,\"feedback_key\":\"2227\"}},{\"offer_id\":\"8ff525bc3ad7963a0f0e851cab7decab\",\"transport\":\"avia\",\"price\":{\"amount\":11772.0,\"currency\":\"RUB\"},\"duration_min\":85,\"carriers\":[\"Победа\"],\"search_results_url\":\"https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75\",\"segments_count\":1,\"departure_at\":\"2026-08-20T09:15:00+03:00\",\"arrival_at\":\"2026-08-20T10:40:00+03:00\",\"legs\":[{\"label\":\"outbound\",\"from\":\"Москва — Шереметьево (SVO)\",\"to\":\"Санкт-Петербург — Пулково (LED)\",\"departure_at\":\"2026-08-20T09:15:00+03:00\",\"arrival_at\":\"2026-08-20T10:40:00+03:00\",\"duration_min\":85,\"segments\":[{\"from\":\"Москва — Шереметьево (SVO)\",\"to\":\"Санкт-Петербург — Пулково (LED)\",\"departure_at\":\"2026-08-20T09:15:00+03:00\",\"arrival_at\":\"2026-08-20T10:40:00+03:00\",\"duration_min\":85,\"carrier\":\"Победа\",\"voyage_no\":\"DP-6821\",\"from_geo_point_id\":2719726,\"to_geo_point_id\":2718757,\"review_summary\":{\"rating\":6.93,\"review_count\":14260,\"label\":\"⭐ 6.93/10 · 14 260 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"Победа\",\"scale\":10,\"feedback_key\":\"2227\"}}]}],\"variants\":[{\"variant_id\":\"251ffc031ed91b4f091a1370888751b5:671018c27b97d70aa92a2c65120e84ac\",\"offer_hash\":\"{\\\"Price\\\":11772,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"c5bd9020d596b67138d830254a1db870\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"8ff525bc3ad7963a0f0e851cab7decab:f4b7bd50b88d2aef62aa0ef78689dd61\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"f276a7defe3aadacc51495b8dbef4f1b\\\\\\\"}]\\\"}\",\"price\":{\"amount\":11772.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Базовый\",\"baggage\":{\"kg\":0,\"pieces\":0},\"cabin_baggage\":{\"kg\":null,\"pieces\":1,\"dimensions\":\"36 × 30 × 27\"},\"refundable\":false,\"changeable\":false},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"251ffc031ed91b4f091a1370888751b5:6216f4b2c5b065a73a13b6ce8448635a\",\"offer_hash\":\"{\\\"Price\\\":15039,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"1181262d0583ab4d859612afc24c50c6\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"8ff525bc3ad7963a0f0e851cab7decab:7bdef7201719c823a5aaf6841db6231e\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"4431fb178e73699c9986a0568e98b94d\\\\\\\"}]\\\"}\",\"price\":{\"amount\":15039.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Выгодный\",\"baggage\":{\"kg\":10,\"pieces\":1},\"cabin_baggage\":{\"kg\":null,\"pieces\":1,\"dimensions\":\"36 × 30 × 27\"},\"refundable\":false,\"changeable\":true,\"exchange\":{\"available\":true,\"deadline_hours\":48}},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"251ffc031ed91b4f091a1370888751b5:66fcf35c9562f0614bb9617bbea50c84\",\"offer_hash\":\"{\\\"Price\\\":19021,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"b08dbef1907808bb1ee2cf63a9570098\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"8ff525bc3ad7963a0f0e851cab7decab:81e223a99b8ce32d2cd1059cbdcab4ab\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"3fc40d7427bf8ac32e1603f15c71a287\\\\\\\"}]\\\"}\",\"price\":{\"amount\":19021.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Максимум\",\"baggage\":{\"kg\":20,\"pieces\":1},\"cabin_baggage\":{\"kg\":null,\"pieces\":1,\"dimensions\":\"36 × 30 × 27\"},\"refundable\":true,\"changeable\":true,\"exchange\":{\"available\":true,\"deadline_hours\":48}},\"service_class\":\"ECONOMIC\"}],\"checkout_ref\":{\"transport\":\"avia\",\"is_round_trip\":false,\"search_results_url\":\"https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75\",\"offer_hash\":\"{\\\"Price\\\":11772,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"c5bd9020d596b67138d830254a1db870\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"8ff525bc3ad7963a0f0e851cab7decab:f4b7bd50b88d2aef62aa0ef78689dd61\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"f276a7defe3aadacc51495b8dbef4f1b\\\\\\\"}]\\\"}\",\"departure_geo_city_id\":2657260,\"arrival_geo_city_id\":2656915,\"departure_at\":\"2026-08-20T09:15:00+03:00\",\"service_class\":\"ECONOMIC\",\"departure_avia_id\":\"491\",\"arrival_avia_id\":\"75\",\"passengers_full\":1,\"passengers_child\":0,\"passengers_infant\":0},\"review_summary\":{\"rating\":6.93,\"review_count\":14260,\"label\":\"⭐ 6.93/10 · 14 260 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"Победа\",\"scale\":10,\"feedback_key\":\"2227\"}}],\"meta\":{\"from\":{\"name\":\"Москва\",\"geo_id\":\"2657260\",\"region\":\"Москва город федерального значения\",\"iata\":\"MOW\"},\"to\":{\"name\":\"Санкт-Петербург\",\"geo_id\":\"2656915\",\"region\":\"Санкт-Петербург город федерального значения\",\"iata\":\"LED\"},\"optimize_for\":\"price\",\"modes_requested\":[\"avia\",\"railway\",\"bus\",\"etrain\"],\"modes_summary\":{\"avia\":{\"count\":8,\"min_price\":10535.0,\"min_duration_min\":85},\"railway\":{\"count\":8,\"min_price\":3647.69,\"min_duration_min\":376,\"cashback\":{\"rate_pct\":3.0,\"applies_to\":\"all_fares\",\"note\":\"Tutu loyalty points credited to the buyer's Tutu account after payment. NOT a discount: every `price` here is the full amount payable.\",\"scope\":\"mode_page\"}},\"bus\":{\"count\":0,\"min_price\":null,\"min_duration_min\":null},\"etrain\":{\"count\":0,\"min_price\":null,\"min_duration_min\":null}},\"unavailable\":[],\"page\":1,\"page_size\":6,\"total_returned\":6,\"has_more\":true}}"
+            "text": "{\"variants\":[{\"offer_id\":\"beef13e7c1e669e792058c19856177c2\",\"transport\":\"railway\",\"price\":{\"amount\":8403.82,\"currency\":\"RUB\"},\"duration_min\":508,\"carriers\":[\"ТВЕРСК\"],\"search_results_url\":\"https://www.tutu.ru/poezda/rasp_d.php?date=20.08.2026&nnst1=2000000&nnst2=2004000\",\"segments_count\":1,\"checkout_url\":\"https://www.tutu.ru/poezda/order/?departure_st=2657260&arrival_st=2656915&dep_st=2006004&arr_st=2004001&tn=022%D0%90&date=20.08.2026+00:25:00\",\"departure_at\":\"2026-08-20T00:25:00+03:00\",\"arrival_at\":\"2026-08-20T08:53:00+03:00\",\"legs\":[{\"label\":\"outbound\",\"from\":\"Москва — Ленинградский вокзал (2006004)\",\"to\":\"Санкт-Петербург — Московский вокзал (2004001)\",\"departure_at\":\"2026-08-20T00:25:00+03:00\",\"arrival_at\":\"2026-08-20T08:53:00+03:00\",\"duration_min\":508,\"segments\":[{\"from\":\"Москва — Ленинградский вокзал (2006004)\",\"to\":\"Санкт-Петербург — Московский вокзал (2004001)\",\"departure_at\":\"2026-08-20T00:25:00+03:00\",\"arrival_at\":\"2026-08-20T08:53:00+03:00\",\"duration_min\":508,\"carrier\":\"ТВЕРСК\",\"voyage_no\":\"022А\",\"from_geo_point_id\":2958868,\"to_geo_point_id\":2958266,\"vehicle_meta\":{\"name\":\"Ночной экспресс\"}}]}],\"checkout_ref\":{\"transport\":\"railway\",\"departure_city_id\":2657260,\"arrival_city_id\":2656915,\"departure_station_code\":\"2006004\",\"arrival_station_code\":\"2004001\",\"train_number\":\"022А\",\"departure_at\":\"2026-08-20T00:25:00+03:00\",\"departure_geo_point_id\":2958868,\"arrival_geo_point_id\":2958266,\"offer_hash\":\"beef13e7c1e669e792058c19856177c2\",\"segment_hash\":\"6fc438849813428310276ef4120074a1\",\"search_id\":\"66D55DDF-D252-4C4C-B491-3D1973A7E1BA\",\"result_id\":\"9d120b17-811f-5831-bff4-a705a916d209\",\"card_id\":\"2921504779e07d469fb3e9d99cadd885\"},\"details_ref\":{\"transport\":\"railway\",\"source\":\"seats-gateway.seats-by-params\",\"departure_station_code\":\"2006004\",\"arrival_station_code\":\"2004001\",\"train_number\":\"022А\",\"departure_at\":\"2026-08-20T00:25:00+03:00\",\"price\":{\"amount\":8403.82,\"currency\":\"RUB\"},\"title\":\"Поезд 022А\",\"carriers\":[\"ТВЕРСК\"],\"duration_min\":508,\"arrival_at\":\"2026-08-20T08:53:00+03:00\",\"review_summary\":{\"rating\":9.8,\"review_count\":218,\"label\":\"⭐ 9.8/10 · 218 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"train\",\"subject\":\"022А\",\"scale\":10,\"feedback_key\":\"022А\"}},\"review_summary\":{\"rating\":9.8,\"review_count\":218,\"label\":\"⭐ 9.8/10 · 218 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"train\",\"subject\":\"022А\",\"scale\":10,\"feedback_key\":\"022А\"},\"fares\":{\"count\":5,\"price_from\":8403.82,\"price_to\":18870.7,\"currency\":\"RUB\",\"refundable_count\":5,\"changeable_count\":0,\"seat_categories\":{\"COMPARTMENT\":{\"count\":4,\"price_from\":8403.82},\"LUX\":{\"count\":1,\"price_from\":18870.7}}}},{\"offer_id\":\"b39124216a7093a33829c1dacf33a49c\",\"transport\":\"avia\",\"price\":{\"amount\":10704.0,\"currency\":\"RUB\"},\"duration_min\":85,\"carriers\":[\"Аэрофлот\"],\"search_results_url\":\"https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75\",\"segments_count\":1,\"departure_at\":\"2026-08-20T23:55:00+03:00\",\"arrival_at\":\"2026-08-21T01:20:00+03:00\",\"legs\":[{\"label\":\"outbound\",\"from\":\"Москва — Шереметьево (SVO), терм. B\",\"to\":\"Санкт-Петербург — Пулково (LED), терм. 1\",\"departure_at\":\"2026-08-20T23:55:00+03:00\",\"arrival_at\":\"2026-08-21T01:20:00+03:00\",\"duration_min\":85,\"segments\":[{\"from\":\"Москва — Шереметьево (SVO), терм. B\",\"to\":\"Санкт-Петербург — Пулково (LED), терм. 1\",\"departure_at\":\"2026-08-20T23:55:00+03:00\",\"arrival_at\":\"2026-08-21T01:20:00+03:00\",\"duration_min\":85,\"carrier\":\"Аэрофлот\",\"voyage_no\":\"SU-6807\",\"from_geo_point_id\":2719726,\"to_geo_point_id\":2718757,\"review_summary\":{\"rating\":9.25,\"review_count\":22870,\"label\":\"⭐ 9.25/10 · 22 870 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"Аэрофлот\",\"scale\":10,\"feedback_key\":\"1062\"}}]}],\"variants\":[{\"variant_id\":\"472e3bf3c42e315fceef1225134ddf5c:06dd44ad3a22ddcce66412f835719a8b\",\"offer_hash\":\"{\\\"Price\\\":10704,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"0b398d95abce5901d2d01140d6e12218\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b39124216a7093a33829c1dacf33a49c:4a15ebaf82f14491e2bac3a776e17da0\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"32ae1aae96fedb3cb34d8c8b59f70855\\\\\\\"}]\\\"}\",\"price\":{\"amount\":10704.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Эконом Базовый\",\"baggage\":{\"kg\":0,\"pieces\":0},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":false,\"changeable\":true,\"seat_selection\":\"available_paid\",\"boarding_privileges\":\"unavailable\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"472e3bf3c42e315fceef1225134ddf5c:18b4760245c91ba348ccd2657ed950bf\",\"offer_hash\":\"{\\\"Price\\\":11457,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"556ee04d1038e988695f3f87b734d412\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b39124216a7093a33829c1dacf33a49c:8b791de79500e960f46a786d93478b8f\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"0766d8ac8059129c290653382b866cfb\\\\\\\"}]\\\"}\",\"price\":{\"amount\":11457.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Шаттл\",\"baggage\":{\"kg\":0,\"pieces\":0},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":false,\"changeable\":null,\"seat_selection\":\"available_paid\",\"boarding_privileges\":\"unavailable\"},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"472e3bf3c42e315fceef1225134ddf5c:e17195945116eee5cc4360dcb82da5f9\",\"offer_hash\":\"{\\\"Price\\\":14103,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"43db2e02a9b91738a96c1f7446bca4f0\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b39124216a7093a33829c1dacf33a49c:3512777c0927777baf7233034bcadd1e\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"d6246b38ccc15ad8c5a2cc8bdc9eacfb\\\\\\\"}]\\\"}\",\"price\":{\"amount\":14103.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Эконом Оптимум\",\"baggage\":{\"kg\":23,\"pieces\":1},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":true,\"changeable\":true,\"seat_selection\":\"available_paid\",\"boarding_privileges\":\"unavailable\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"472e3bf3c42e315fceef1225134ddf5c:4d092885eeefcfea271ba047c06138ee\",\"offer_hash\":\"{\\\"Price\\\":20630,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"95eb21cc7391608b6af76c575d9706b3\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b39124216a7093a33829c1dacf33a49c:82e1de26d80c0447c4375b0fe9df31c8\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"c80183e8f449fed8f961bcbe704d8662\\\\\\\"}]\\\"}\",\"price\":{\"amount\":20630.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Эконом Максимум\",\"baggage\":{\"kg\":23,\"pieces\":2},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":true,\"changeable\":true,\"seat_selection\":\"available_free\",\"boarding_privileges\":\"free\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"472e3bf3c42e315fceef1225134ddf5c:3816b3b0bc66756051ce27437191e540\",\"offer_hash\":\"{\\\"Price\\\":49289,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"ac3b2b339fc5e035d65055e14220c70c\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b39124216a7093a33829c1dacf33a49c:71ac8e907bd67cd6dcdbf26f298bfc43\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"a971fb68f2b4aaee3c56aa69cb0c668a\\\\\\\"}]\\\"}\",\"price\":{\"amount\":49289.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Бизнес Базовый\",\"baggage\":{\"kg\":32,\"pieces\":1},\"cabin_baggage\":{\"kg\":15,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":false,\"changeable\":true,\"seat_selection\":\"available_free\",\"business_hall_allowed\":true,\"boarding_privileges\":\"free\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"BUSINESS\"},{\"variant_id\":\"472e3bf3c42e315fceef1225134ddf5c:46f9e51481197e3f8f65e1d51d167338\",\"offer_hash\":\"{\\\"Price\\\":56583,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"209c74f3606ffc492dcbe25a807eb3c9\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b39124216a7093a33829c1dacf33a49c:8f2a245a2a2a76b399b0cd6268977c2f\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"e4eefde9acbb75a637d0a72ddd44043b\\\\\\\"}]\\\"}\",\"price\":{\"amount\":56583.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Бизнес Оптимум\",\"baggage\":{\"kg\":32,\"pieces\":2},\"cabin_baggage\":{\"kg\":15,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":true,\"changeable\":true,\"seat_selection\":\"available_free\",\"business_hall_allowed\":true,\"boarding_privileges\":\"free\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"BUSINESS\"}],\"checkout_ref\":{\"transport\":\"avia\",\"is_round_trip\":false,\"search_results_url\":\"https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75\",\"offer_hash\":\"{\\\"Price\\\":10704,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"0b398d95abce5901d2d01140d6e12218\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b39124216a7093a33829c1dacf33a49c:4a15ebaf82f14491e2bac3a776e17da0\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"32ae1aae96fedb3cb34d8c8b59f70855\\\\\\\"}]\\\"}\",\"departure_geo_city_id\":2657260,\"arrival_geo_city_id\":2656915,\"departure_at\":\"2026-08-20T23:55:00+03:00\",\"service_class\":\"ECONOMIC\",\"departure_avia_id\":\"491\",\"arrival_avia_id\":\"75\",\"passengers_full\":1,\"passengers_child\":0,\"passengers_infant\":0},\"review_summary\":{\"rating\":9.25,\"review_count\":22870,\"label\":\"⭐ 9.25/10 · 22 870 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"Аэрофлот\",\"scale\":10,\"feedback_key\":\"1062\"}},{\"offer_id\":\"3c629c8181c7afd4fdec296b99d413fb\",\"transport\":\"avia\",\"price\":{\"amount\":10704.0,\"currency\":\"RUB\"},\"duration_min\":85,\"carriers\":[\"Аэрофлот\"],\"search_results_url\":\"https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75\",\"segments_count\":1,\"departure_at\":\"2026-08-20T23:30:00+03:00\",\"arrival_at\":\"2026-08-21T00:55:00+03:00\",\"legs\":[{\"label\":\"outbound\",\"from\":\"Москва — Шереметьево (SVO), терм. B\",\"to\":\"Санкт-Петербург — Пулково (LED), терм. 1\",\"departure_at\":\"2026-08-20T23:30:00+03:00\",\"arrival_at\":\"2026-08-21T00:55:00+03:00\",\"duration_min\":85,\"segments\":[{\"from\":\"Москва — Шереметьево (SVO), терм. B\",\"to\":\"Санкт-Петербург — Пулково (LED), терм. 1\",\"departure_at\":\"2026-08-20T23:30:00+03:00\",\"arrival_at\":\"2026-08-21T00:55:00+03:00\",\"duration_min\":85,\"carrier\":\"Аэрофлот\",\"voyage_no\":\"SU-6805\",\"from_geo_point_id\":2719726,\"to_geo_point_id\":2718757,\"review_summary\":{\"rating\":9.25,\"review_count\":22870,\"label\":\"⭐ 9.25/10 · 22 870 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"Аэрофлот\",\"scale\":10,\"feedback_key\":\"1062\"}}]}],\"variants\":[{\"variant_id\":\"f4182a0a888edbfa6238592de8e791d0:06dd44ad3a22ddcce66412f835719a8b\",\"offer_hash\":\"{\\\"Price\\\":10704,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"fb7fe83cd0f8bf4eeebe3b244f97e9c4\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"3c629c8181c7afd4fdec296b99d413fb:4a15ebaf82f14491e2bac3a776e17da0\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"d8d9a721e6e474460f9e079a6f4c77b9\\\\\\\"}]\\\"}\",\"price\":{\"amount\":10704.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Эконом Базовый\",\"baggage\":{\"kg\":0,\"pieces\":0},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":false,\"changeable\":true,\"seat_selection\":\"available_paid\",\"boarding_privileges\":\"unavailable\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"f4182a0a888edbfa6238592de8e791d0:18b4760245c91ba348ccd2657ed950bf\",\"offer_hash\":\"{\\\"Price\\\":11457,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"da1ee6142640fe19b22707b9aba20587\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"3c629c8181c7afd4fdec296b99d413fb:8b791de79500e960f46a786d93478b8f\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"155851e10ce990b9caa5b35af96e3b42\\\\\\\"}]\\\"}\",\"price\":{\"amount\":11457.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Шаттл\",\"baggage\":{\"kg\":0,\"pieces\":0},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":false,\"changeable\":null,\"seat_selection\":\"available_paid\",\"boarding_privileges\":\"unavailable\"},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"f4182a0a888edbfa6238592de8e791d0:e17195945116eee5cc4360dcb82da5f9\",\"offer_hash\":\"{\\\"Price\\\":14103,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"35d6389f43906d3d545c73046cf7be15\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"3c629c8181c7afd4fdec296b99d413fb:3512777c0927777baf7233034bcadd1e\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"6af59dac41ce02792c1d34cbeb8fea1c\\\\\\\"}]\\\"}\",\"price\":{\"amount\":14103.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Эконом Оптимум\",\"baggage\":{\"kg\":23,\"pieces\":1},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":true,\"changeable\":true,\"seat_selection\":\"available_paid\",\"boarding_privileges\":\"unavailable\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"f4182a0a888edbfa6238592de8e791d0:4d092885eeefcfea271ba047c06138ee\",\"offer_hash\":\"{\\\"Price\\\":20630,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"8fa4d7e9c81f81d7ea9aa46b4f51bc11\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"3c629c8181c7afd4fdec296b99d413fb:82e1de26d80c0447c4375b0fe9df31c8\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"c42ff8178e0739ada18602b45e409512\\\\\\\"}]\\\"}\",\"price\":{\"amount\":20630.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Эконом Максимум\",\"baggage\":{\"kg\":23,\"pieces\":2},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":true,\"changeable\":true,\"seat_selection\":\"available_free\",\"boarding_privileges\":\"free\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"f4182a0a888edbfa6238592de8e791d0:3816b3b0bc66756051ce27437191e540\",\"offer_hash\":\"{\\\"Price\\\":48072,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"f09ade25473db1eeafa1871f31f9bfd9\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"3c629c8181c7afd4fdec296b99d413fb:71ac8e907bd67cd6dcdbf26f298bfc43\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"50fd3817b0725688d7b9eb0a922695e4\\\\\\\"}]\\\"}\",\"price\":{\"amount\":48072.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Бизнес Базовый\",\"baggage\":{\"kg\":32,\"pieces\":1},\"cabin_baggage\":{\"kg\":15,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":false,\"changeable\":true,\"seat_selection\":\"available_free\",\"business_hall_allowed\":true,\"boarding_privileges\":\"free\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"BUSINESS\"},{\"variant_id\":\"f4182a0a888edbfa6238592de8e791d0:46f9e51481197e3f8f65e1d51d167338\",\"offer_hash\":\"{\\\"Price\\\":55328,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"178325d369eead2dd34d738c7ea64075\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"3c629c8181c7afd4fdec296b99d413fb:8f2a245a2a2a76b399b0cd6268977c2f\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"eef0d820cc9c847cdb950bfd5ae89df0\\\\\\\"}]\\\"}\",\"price\":{\"amount\":55328.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Бизнес Оптимум\",\"baggage\":{\"kg\":32,\"pieces\":2},\"cabin_baggage\":{\"kg\":15,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":true,\"changeable\":true,\"seat_selection\":\"available_free\",\"business_hall_allowed\":true,\"boarding_privileges\":\"free\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"BUSINESS\"}],\"checkout_ref\":{\"transport\":\"avia\",\"is_round_trip\":false,\"search_results_url\":\"https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75\",\"offer_hash\":\"{\\\"Price\\\":10704,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"fb7fe83cd0f8bf4eeebe3b244f97e9c4\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"3c629c8181c7afd4fdec296b99d413fb:4a15ebaf82f14491e2bac3a776e17da0\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"d8d9a721e6e474460f9e079a6f4c77b9\\\\\\\"}]\\\"}\",\"departure_geo_city_id\":2657260,\"arrival_geo_city_id\":2656915,\"departure_at\":\"2026-08-20T23:30:00+03:00\",\"service_class\":\"ECONOMIC\",\"departure_avia_id\":\"491\",\"arrival_avia_id\":\"75\",\"passengers_full\":1,\"passengers_child\":0,\"passengers_infant\":0},\"review_summary\":{\"rating\":9.25,\"review_count\":22870,\"label\":\"⭐ 9.25/10 · 22 870 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"Аэрофлот\",\"scale\":10,\"feedback_key\":\"1062\"}},{\"offer_id\":\"b4b4b0f3cbd3a0fc1cb4ae15ecf4c754\",\"transport\":\"avia\",\"price\":{\"amount\":10853.0,\"currency\":\"RUB\"},\"duration_min\":85,\"carriers\":[\"Победа\"],\"search_results_url\":\"https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75\",\"segments_count\":1,\"departure_at\":\"2026-08-20T22:25:00+03:00\",\"arrival_at\":\"2026-08-20T23:50:00+03:00\",\"legs\":[{\"label\":\"outbound\",\"from\":\"Москва — Внуково (VKO)\",\"to\":\"Санкт-Петербург — Пулково (LED)\",\"departure_at\":\"2026-08-20T22:25:00+03:00\",\"arrival_at\":\"2026-08-20T23:50:00+03:00\",\"duration_min\":85,\"segments\":[{\"from\":\"Москва — Внуково (VKO)\",\"to\":\"Санкт-Петербург — Пулково (LED)\",\"departure_at\":\"2026-08-20T22:25:00+03:00\",\"arrival_at\":\"2026-08-20T23:50:00+03:00\",\"duration_min\":85,\"carrier\":\"Победа\",\"voyage_no\":\"DP-205\",\"from_geo_point_id\":2718687,\"to_geo_point_id\":2718757,\"review_summary\":{\"rating\":6.93,\"review_count\":14260,\"label\":\"⭐ 6.93/10 · 14 260 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"Победа\",\"scale\":10,\"feedback_key\":\"2227\"}}]}],\"variants\":[{\"variant_id\":\"89dd841ffafe9079040cbd747d1410cc:671018c27b97d70aa92a2c65120e84ac\",\"offer_hash\":\"{\\\"Price\\\":10853,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"b1d1b74303267f9bd454c881180729ca\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b4b4b0f3cbd3a0fc1cb4ae15ecf4c754:f4b7bd50b88d2aef62aa0ef78689dd61\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"37d910f85dfc9d3c0101d8ccd23a92f4\\\\\\\"}]\\\"}\",\"price\":{\"amount\":10853.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Базовый\",\"baggage\":{\"kg\":0,\"pieces\":0},\"cabin_baggage\":{\"kg\":null,\"pieces\":1,\"dimensions\":\"36 × 30 × 27\"},\"refundable\":false,\"changeable\":false},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"89dd841ffafe9079040cbd747d1410cc:6216f4b2c5b065a73a13b6ce8448635a\",\"offer_hash\":\"{\\\"Price\\\":14056,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"2f41af4a81f73ba457feccec738daf3a\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b4b4b0f3cbd3a0fc1cb4ae15ecf4c754:7bdef7201719c823a5aaf6841db6231e\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"fd968a34f66ab8358ee370f244a7a416\\\\\\\"}]\\\"}\",\"price\":{\"amount\":14056.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Выгодный\",\"baggage\":{\"kg\":10,\"pieces\":1},\"cabin_baggage\":{\"kg\":null,\"pieces\":1,\"dimensions\":\"36 × 30 × 27\"},\"refundable\":false,\"changeable\":true,\"exchange\":{\"available\":true,\"deadline_hours\":48}},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"89dd841ffafe9079040cbd747d1410cc:66fcf35c9562f0614bb9617bbea50c84\",\"offer_hash\":\"{\\\"Price\\\":17740,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"bc3da7547ccca52bd4f6641f12c42486\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b4b4b0f3cbd3a0fc1cb4ae15ecf4c754:81e223a99b8ce32d2cd1059cbdcab4ab\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"faeecd4a6cc2997873c56d9699d110c9\\\\\\\"}]\\\"}\",\"price\":{\"amount\":17740.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Максимум\",\"baggage\":{\"kg\":20,\"pieces\":1},\"cabin_baggage\":{\"kg\":null,\"pieces\":1,\"dimensions\":\"36 × 30 × 27\"},\"refundable\":true,\"changeable\":true,\"exchange\":{\"available\":true,\"deadline_hours\":48}},\"service_class\":\"ECONOMIC\"}],\"checkout_ref\":{\"transport\":\"avia\",\"is_round_trip\":false,\"search_results_url\":\"https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75\",\"offer_hash\":\"{\\\"Price\\\":10853,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"b1d1b74303267f9bd454c881180729ca\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b4b4b0f3cbd3a0fc1cb4ae15ecf4c754:f4b7bd50b88d2aef62aa0ef78689dd61\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"37d910f85dfc9d3c0101d8ccd23a92f4\\\\\\\"}]\\\"}\",\"departure_geo_city_id\":2657260,\"arrival_geo_city_id\":2656915,\"departure_at\":\"2026-08-20T22:25:00+03:00\",\"service_class\":\"ECONOMIC\",\"departure_avia_id\":\"491\",\"arrival_avia_id\":\"75\",\"passengers_full\":1,\"passengers_child\":0,\"passengers_infant\":0},\"review_summary\":{\"rating\":6.93,\"review_count\":14260,\"label\":\"⭐ 6.93/10 · 14 260 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"Победа\",\"scale\":10,\"feedback_key\":\"2227\"}},{\"offer_id\":\"ea1d696f48f267e7ac1de815acdc9fcf\",\"transport\":\"avia\",\"price\":{\"amount\":12415.0,\"currency\":\"RUB\"},\"duration_min\":85,\"carriers\":[\"Аэрофлот\"],\"search_results_url\":\"https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75\",\"segments_count\":1,\"departure_at\":\"2026-08-20T22:30:00+03:00\",\"arrival_at\":\"2026-08-20T23:55:00+03:00\",\"legs\":[{\"label\":\"outbound\",\"from\":\"Москва — Шереметьево (SVO), терм. B\",\"to\":\"Санкт-Петербург — Пулково (LED), терм. 1\",\"departure_at\":\"2026-08-20T22:30:00+03:00\",\"arrival_at\":\"2026-08-20T23:55:00+03:00\",\"duration_min\":85,\"segments\":[{\"from\":\"Москва — Шереметьево (SVO), терм. B\",\"to\":\"Санкт-Петербург — Пулково (LED), терм. 1\",\"departure_at\":\"2026-08-20T22:30:00+03:00\",\"arrival_at\":\"2026-08-20T23:55:00+03:00\",\"duration_min\":85,\"carrier\":\"Аэрофлот\",\"voyage_no\":\"SU-6809\",\"from_geo_point_id\":2719726,\"to_geo_point_id\":2718757,\"review_summary\":{\"rating\":9.25,\"review_count\":22870,\"label\":\"⭐ 9.25/10 · 22 870 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"Аэрофлот\",\"scale\":10,\"feedback_key\":\"1062\"}}]}],\"variants\":[{\"variant_id\":\"054eda991e92e59146ce044e6c853966:06dd44ad3a22ddcce66412f835719a8b\",\"offer_hash\":\"{\\\"Price\\\":12415,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"82e33569305a4d9e1fbedb613731a1f7\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"ea1d696f48f267e7ac1de815acdc9fcf:4a15ebaf82f14491e2bac3a776e17da0\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"a9e10b26fb5f1e2afb56825e0cf3a800\\\\\\\"}]\\\"}\",\"price\":{\"amount\":12415.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Эконом Базовый\",\"baggage\":{\"kg\":0,\"pieces\":0},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":false,\"changeable\":true,\"seat_selection\":\"available_paid\",\"boarding_privileges\":\"unavailable\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"054eda991e92e59146ce044e6c853966:18b4760245c91ba348ccd2657ed950bf\",\"offer_hash\":\"{\\\"Price\\\":13178,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"7f4d24867308fe81074e03a3b5c27f94\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"ea1d696f48f267e7ac1de815acdc9fcf:8b791de79500e960f46a786d93478b8f\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"7c4e81559073247e84d11e7035e9fe5c\\\\\\\"}]\\\"}\",\"price\":{\"amount\":13178.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Шаттл\",\"baggage\":{\"kg\":0,\"pieces\":0},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":false,\"changeable\":null,\"seat_selection\":\"available_paid\",\"boarding_privileges\":\"unavailable\"},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"054eda991e92e59146ce044e6c853966:e17195945116eee5cc4360dcb82da5f9\",\"offer_hash\":\"{\\\"Price\\\":15712,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"9d3effb916d315ca10beb699feb7a132\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"ea1d696f48f267e7ac1de815acdc9fcf:3512777c0927777baf7233034bcadd1e\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"7b9b840bbaa9b618a2cad4907efed3fb\\\\\\\"}]\\\"}\",\"price\":{\"amount\":15712.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Эконом Оптимум\",\"baggage\":{\"kg\":23,\"pieces\":1},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":true,\"changeable\":true,\"seat_selection\":\"available_paid\",\"boarding_privileges\":\"unavailable\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"054eda991e92e59146ce044e6c853966:4d092885eeefcfea271ba047c06138ee\",\"offer_hash\":\"{\\\"Price\\\":22408,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"22f272790b54398e6cd98271d57be18e\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"ea1d696f48f267e7ac1de815acdc9fcf:82e1de26d80c0447c4375b0fe9df31c8\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"a118ef60b77b02cabe044cd20efaaa56\\\\\\\"}]\\\"}\",\"price\":{\"amount\":22408.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Эконом Максимум\",\"baggage\":{\"kg\":23,\"pieces\":2},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":true,\"changeable\":true,\"seat_selection\":\"available_free\",\"boarding_privileges\":\"free\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"054eda991e92e59146ce044e6c853966:3816b3b0bc66756051ce27437191e540\",\"offer_hash\":\"{\\\"Price\\\":49289,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"b5bed10c73184c688e623a39997c4587\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"ea1d696f48f267e7ac1de815acdc9fcf:71ac8e907bd67cd6dcdbf26f298bfc43\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"612218d9fa7dd15363c5d11ccf35424a\\\\\\\"}]\\\"}\",\"price\":{\"amount\":49289.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Бизнес Базовый\",\"baggage\":{\"kg\":32,\"pieces\":1},\"cabin_baggage\":{\"kg\":15,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":false,\"changeable\":true,\"seat_selection\":\"available_free\",\"business_hall_allowed\":true,\"boarding_privileges\":\"free\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"BUSINESS\"},{\"variant_id\":\"054eda991e92e59146ce044e6c853966:46f9e51481197e3f8f65e1d51d167338\",\"offer_hash\":\"{\\\"Price\\\":56583,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"ec30248f70e7a87f3be3ba68654ddb06\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"ea1d696f48f267e7ac1de815acdc9fcf:8f2a245a2a2a76b399b0cd6268977c2f\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"e8eff72fdd8d6cc6307f8f01c2fd9059\\\\\\\"}]\\\"}\",\"price\":{\"amount\":56583.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Бизнес Оптимум\",\"baggage\":{\"kg\":32,\"pieces\":2},\"cabin_baggage\":{\"kg\":15,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":true,\"changeable\":true,\"seat_selection\":\"available_free\",\"business_hall_allowed\":true,\"boarding_privileges\":\"free\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"BUSINESS\"}],\"checkout_ref\":{\"transport\":\"avia\",\"is_round_trip\":false,\"search_results_url\":\"https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75\",\"offer_hash\":\"{\\\"Price\\\":12415,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"82e33569305a4d9e1fbedb613731a1f7\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"ea1d696f48f267e7ac1de815acdc9fcf:4a15ebaf82f14491e2bac3a776e17da0\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"a9e10b26fb5f1e2afb56825e0cf3a800\\\\\\\"}]\\\"}\",\"departure_geo_city_id\":2657260,\"arrival_geo_city_id\":2656915,\"departure_at\":\"2026-08-20T22:30:00+03:00\",\"service_class\":\"ECONOMIC\",\"departure_avia_id\":\"491\",\"arrival_avia_id\":\"75\",\"passengers_full\":1,\"passengers_child\":0,\"passengers_infant\":0},\"review_summary\":{\"rating\":9.25,\"review_count\":22870,\"label\":\"⭐ 9.25/10 · 22 870 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"Аэрофлот\",\"scale\":10,\"feedback_key\":\"1062\"}},{\"offer_id\":\"b84aefa2602380e4d3194f47c68ceb22\",\"transport\":\"avia\",\"price\":{\"amount\":12415.0,\"currency\":\"RUB\"},\"duration_min\":85,\"carriers\":[\"Аэрофлот\"],\"search_results_url\":\"https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75\",\"segments_count\":1,\"departure_at\":\"2026-08-20T21:30:00+03:00\",\"arrival_at\":\"2026-08-20T22:55:00+03:00\",\"legs\":[{\"label\":\"outbound\",\"from\":\"Москва — Шереметьево (SVO), терм. B\",\"to\":\"Санкт-Петербург — Пулково (LED), терм. 1\",\"departure_at\":\"2026-08-20T21:30:00+03:00\",\"arrival_at\":\"2026-08-20T22:55:00+03:00\",\"duration_min\":85,\"segments\":[{\"from\":\"Москва — Шереметьево (SVO), терм. B\",\"to\":\"Санкт-Петербург — Пулково (LED), терм. 1\",\"departure_at\":\"2026-08-20T21:30:00+03:00\",\"arrival_at\":\"2026-08-20T22:55:00+03:00\",\"duration_min\":85,\"carrier\":\"Аэрофлот\",\"voyage_no\":\"SU-6707\",\"from_geo_point_id\":2719726,\"to_geo_point_id\":2718757,\"review_summary\":{\"rating\":9.25,\"review_count\":22870,\"label\":\"⭐ 9.25/10 · 22 870 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"Аэрофлот\",\"scale\":10,\"feedback_key\":\"1062\"}}]}],\"variants\":[{\"variant_id\":\"d05b170f1a38ed5de6347ff03390df78:06dd44ad3a22ddcce66412f835719a8b\",\"offer_hash\":\"{\\\"Price\\\":12415,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"48cd047889db027ea0a337766f862906\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b84aefa2602380e4d3194f47c68ceb22:4a15ebaf82f14491e2bac3a776e17da0\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"6dc5a508bbd4be2b12e8c33c1b71b4c7\\\\\\\"}]\\\"}\",\"price\":{\"amount\":12415.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Эконом Базовый\",\"baggage\":{\"kg\":0,\"pieces\":0},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":false,\"changeable\":true,\"seat_selection\":\"available_paid\",\"boarding_privileges\":\"unavailable\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"d05b170f1a38ed5de6347ff03390df78:18b4760245c91ba348ccd2657ed950bf\",\"offer_hash\":\"{\\\"Price\\\":13178,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"fa7a8eca6df224503185746ab14b0fd0\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b84aefa2602380e4d3194f47c68ceb22:8b791de79500e960f46a786d93478b8f\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"81bdd7e982debae3f1bbf54048e80a1e\\\\\\\"}]\\\"}\",\"price\":{\"amount\":13178.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Шаттл\",\"baggage\":{\"kg\":0,\"pieces\":0},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":false,\"changeable\":null,\"seat_selection\":\"available_paid\",\"boarding_privileges\":\"unavailable\"},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"d05b170f1a38ed5de6347ff03390df78:e17195945116eee5cc4360dcb82da5f9\",\"offer_hash\":\"{\\\"Price\\\":15712,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"ca5bdac2d3c08a71d557a4edc2f22e84\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b84aefa2602380e4d3194f47c68ceb22:3512777c0927777baf7233034bcadd1e\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"8df6e88882bf81cdae5a804f4f69b5e4\\\\\\\"}]\\\"}\",\"price\":{\"amount\":15712.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Эконом Оптимум\",\"baggage\":{\"kg\":23,\"pieces\":1},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":true,\"changeable\":true,\"seat_selection\":\"available_paid\",\"boarding_privileges\":\"unavailable\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"d05b170f1a38ed5de6347ff03390df78:4d092885eeefcfea271ba047c06138ee\",\"offer_hash\":\"{\\\"Price\\\":22408,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"68ca0b8289c9c78cfd4e786b3b9c788e\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b84aefa2602380e4d3194f47c68ceb22:82e1de26d80c0447c4375b0fe9df31c8\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"82ec2d9b46680a283dc2edef76ce17dd\\\\\\\"}]\\\"}\",\"price\":{\"amount\":22408.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Эконом Максимум\",\"baggage\":{\"kg\":23,\"pieces\":2},\"cabin_baggage\":{\"kg\":10,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":true,\"changeable\":true,\"seat_selection\":\"available_free\",\"boarding_privileges\":\"free\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"ECONOMIC\"},{\"variant_id\":\"d05b170f1a38ed5de6347ff03390df78:3816b3b0bc66756051ce27437191e540\",\"offer_hash\":\"{\\\"Price\\\":49289,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"fc8aabc212129b66d426f84ca476eeb5\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b84aefa2602380e4d3194f47c68ceb22:71ac8e907bd67cd6dcdbf26f298bfc43\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"3fe776433c7e538e03602dc3a7377a14\\\\\\\"}]\\\"}\",\"price\":{\"amount\":49289.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Бизнес Базовый\",\"baggage\":{\"kg\":32,\"pieces\":1},\"cabin_baggage\":{\"kg\":15,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":false,\"changeable\":true,\"seat_selection\":\"available_free\",\"business_hall_allowed\":true,\"boarding_privileges\":\"free\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"BUSINESS\"},{\"variant_id\":\"d05b170f1a38ed5de6347ff03390df78:46f9e51481197e3f8f65e1d51d167338\",\"offer_hash\":\"{\\\"Price\\\":56583,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"8d1bc4f80eb50f24491053c8027506be\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b84aefa2602380e4d3194f47c68ceb22:8f2a245a2a2a76b399b0cd6268977c2f\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"57f7ffe7b10fae33102907c8f24b4e0d\\\\\\\"}]\\\"}\",\"price\":{\"amount\":56583.0,\"currency\":\"RUB\"},\"conditions\":{\"fare_family\":\"Бизнес Оптимум\",\"baggage\":{\"kg\":32,\"pieces\":2},\"cabin_baggage\":{\"kg\":15,\"pieces\":1,\"dimensions\":\"55 × 40 × 25\"},\"refundable\":true,\"changeable\":true,\"seat_selection\":\"available_free\",\"business_hall_allowed\":true,\"boarding_privileges\":\"free\",\"exchange\":{\"available\":true,\"deadline_hours\":1}},\"service_class\":\"BUSINESS\"}],\"checkout_ref\":{\"transport\":\"avia\",\"is_round_trip\":false,\"search_results_url\":\"https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75\",\"offer_hash\":\"{\\\"Price\\\":12415,\\\"OriginalHash\\\":\\\"[{\\\\\\\"offerVariantHash\\\\\\\":\\\\\\\"48cd047889db027ea0a337766f862906\\\\\\\",\\\\\\\"variantConditionsHash\\\\\\\":\\\\\\\"b84aefa2602380e4d3194f47c68ceb22:4a15ebaf82f14491e2bac3a776e17da0\\\\\\\",\\\\\\\"pricingVariantHash\\\\\\\":\\\\\\\"6dc5a508bbd4be2b12e8c33c1b71b4c7\\\\\\\"}]\\\"}\",\"departure_geo_city_id\":2657260,\"arrival_geo_city_id\":2656915,\"departure_at\":\"2026-08-20T21:30:00+03:00\",\"service_class\":\"ECONOMIC\",\"departure_avia_id\":\"491\",\"arrival_avia_id\":\"75\",\"passengers_full\":1,\"passengers_child\":0,\"passengers_infant\":0},\"review_summary\":{\"rating\":9.25,\"review_count\":22870,\"label\":\"⭐ 9.25/10 · 22 870 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"Аэрофлот\",\"scale\":10,\"feedback_key\":\"1062\"}}],\"meta\":{\"from\":{\"name\":\"Москва\",\"geo_id\":\"2657260\",\"region\":\"Москва город федерального значения\",\"iata\":\"MOW\"},\"to\":{\"name\":\"Санкт-Петербург\",\"geo_id\":\"2656915\",\"region\":\"Санкт-Петербург город федерального значения\",\"iata\":\"LED\"},\"optimize_for\":\"price\",\"modes_requested\":[\"avia\",\"railway\",\"bus\",\"etrain\"],\"modes_summary\":{\"avia\":{\"count\":8,\"min_price\":10704.0,\"min_duration_min\":85},\"railway\":{\"count\":7,\"min_price\":8403.82,\"min_duration_min\":237,\"cashback\":{\"rate_pct\":3.0,\"applies_to\":\"all_fares\",\"note\":\"Tutu loyalty points credited to the buyer's Tutu account after payment. NOT a discount: every `price` here is the full amount payable.\",\"scope\":\"mode_page\"}},\"bus\":{\"count\":0,\"min_price\":null,\"min_duration_min\":null},\"etrain\":{\"count\":0,\"min_price\":null,\"min_duration_min\":null}},\"unavailable\":[],\"page\":1,\"page_size\":6,\"total_returned\":6,\"has_more\":true}}"
           }
         ],
         "isError": false
@@ -31,43 +31,42 @@
     "payload": {
       "variants": [
         {
-          "offer_id": "8ddfe2c0c5766d051edf0e3ac8d2cfbf",
+          "offer_id": "beef13e7c1e669e792058c19856177c2",
           "transport": "railway",
           "price": {
-            "amount": 3647.69,
+            "amount": 8403.82,
             "currency": "RUB"
           },
-          "duration_min": 509,
+          "duration_min": 508,
           "carriers": [
-            "ФПК"
+            "ТВЕРСК"
           ],
           "search_results_url": "https://www.tutu.ru/poezda/rasp_d.php?date=20.08.2026&nnst1=2000000&nnst2=2004000",
           "segments_count": 1,
-          "checkout_url": "https://www.tutu.ru/poezda/order/?departure_st=2657260&arrival_st=2656915&dep_st=2006004&arr_st=2004006&tn=016%D0%90&date=20.08.2026+00:46:00",
-          "departure_at": "2026-08-20T00:46:00+03:00",
-          "arrival_at": "2026-08-20T09:15:00+03:00",
+          "checkout_url": "https://www.tutu.ru/poezda/order/?departure_st=2657260&arrival_st=2656915&dep_st=2006004&arr_st=2004001&tn=022%D0%90&date=20.08.2026+00:25:00",
+          "departure_at": "2026-08-20T00:25:00+03:00",
+          "arrival_at": "2026-08-20T08:53:00+03:00",
           "legs": [
             {
               "label": "outbound",
               "from": "Москва — Ленинградский вокзал (2006004)",
-              "to": "Санкт-Петербург — Ладожский вокзал (2004006)",
-              "departure_at": "2026-08-20T00:46:00+03:00",
-              "arrival_at": "2026-08-20T09:15:00+03:00",
-              "duration_min": 509,
+              "to": "Санкт-Петербург — Московский вокзал (2004001)",
+              "departure_at": "2026-08-20T00:25:00+03:00",
+              "arrival_at": "2026-08-20T08:53:00+03:00",
+              "duration_min": 508,
               "segments": [
                 {
                   "from": "Москва — Ленинградский вокзал (2006004)",
-                  "to": "Санкт-Петербург — Ладожский вокзал (2004006)",
-                  "departure_at": "2026-08-20T00:46:00+03:00",
-                  "arrival_at": "2026-08-20T09:15:00+03:00",
-                  "duration_min": 509,
-                  "carrier": "ФПК",
-                  "voyage_no": "016А",
+                  "to": "Санкт-Петербург — Московский вокзал (2004001)",
+                  "departure_at": "2026-08-20T00:25:00+03:00",
+                  "arrival_at": "2026-08-20T08:53:00+03:00",
+                  "duration_min": 508,
+                  "carrier": "ТВЕРСК",
+                  "voyage_no": "022А",
                   "from_geo_point_id": 2958868,
-                  "to_geo_point_id": 2958270,
+                  "to_geo_point_id": 2958266,
                   "vehicle_meta": {
-                    "name": "Арктика",
-                    "is_premium": true
+                    "name": "Ночной экспресс"
                   }
                 }
               ]
@@ -78,316 +77,72 @@
             "departure_city_id": 2657260,
             "arrival_city_id": 2656915,
             "departure_station_code": "2006004",
-            "arrival_station_code": "2004006",
-            "train_number": "016А",
-            "departure_at": "2026-08-20T00:46:00+03:00",
+            "arrival_station_code": "2004001",
+            "train_number": "022А",
+            "departure_at": "2026-08-20T00:25:00+03:00",
             "departure_geo_point_id": 2958868,
-            "arrival_geo_point_id": 2958270,
-            "offer_hash": "8ddfe2c0c5766d051edf0e3ac8d2cfbf",
-            "segment_hash": "e3fae1d13986bda645719f35d2cf0624",
-            "search_id": "B921E9E0-ED9D-423F-9A0C-D3C0F0FA0CC8",
-            "result_id": "cdd01035-e5a5-521f-aed1-18fb120a5b43",
-            "card_id": "48a81eb69ca9537611f98f0b357e1596"
+            "arrival_geo_point_id": 2958266,
+            "offer_hash": "beef13e7c1e669e792058c19856177c2",
+            "segment_hash": "6fc438849813428310276ef4120074a1",
+            "search_id": "66D55DDF-D252-4C4C-B491-3D1973A7E1BA",
+            "result_id": "9d120b17-811f-5831-bff4-a705a916d209",
+            "card_id": "2921504779e07d469fb3e9d99cadd885"
           },
           "details_ref": {
             "transport": "railway",
             "source": "seats-gateway.seats-by-params",
             "departure_station_code": "2006004",
-            "arrival_station_code": "2004006",
-            "train_number": "016А",
-            "departure_at": "2026-08-20T00:46:00+03:00",
+            "arrival_station_code": "2004001",
+            "train_number": "022А",
+            "departure_at": "2026-08-20T00:25:00+03:00",
             "price": {
-              "amount": 3647.69,
+              "amount": 8403.82,
               "currency": "RUB"
             },
-            "title": "Поезд 016А",
+            "title": "Поезд 022А",
             "carriers": [
-              "ФПК"
+              "ТВЕРСК"
             ],
-            "duration_min": 509,
-            "arrival_at": "2026-08-20T09:15:00+03:00",
+            "duration_min": 508,
+            "arrival_at": "2026-08-20T08:53:00+03:00",
             "review_summary": {
-              "rating": 8.7,
-              "review_count": 2090,
-              "label": "⭐ 8.7/10 · 2 090 отзывов",
+              "rating": 9.8,
+              "review_count": 218,
+              "label": "⭐ 9.8/10 · 218 отзывов",
               "source": "offers-api.feedback",
               "scope": "train",
-              "subject": "016А",
+              "subject": "022А",
               "scale": 10,
-              "feedback_key": "016А"
+              "feedback_key": "022А"
             }
           },
           "review_summary": {
-            "rating": 8.7,
-            "review_count": 2090,
-            "label": "⭐ 8.7/10 · 2 090 отзывов",
+            "rating": 9.8,
+            "review_count": 218,
+            "label": "⭐ 9.8/10 · 218 отзывов",
             "source": "offers-api.feedback",
             "scope": "train",
-            "subject": "016А",
+            "subject": "022А",
             "scale": 10,
-            "feedback_key": "016А"
+            "feedback_key": "022А"
           },
           "fares": {
-            "count": 2,
-            "price_from": 3647.69,
-            "price_to": 4195.79,
+            "count": 5,
+            "price_from": 8403.82,
+            "price_to": 18870.7,
             "currency": "RUB",
-            "refundable_count": 2,
+            "refundable_count": 5,
             "changeable_count": 0,
             "seat_categories": {
-              "RESERVED_SEAT": {
-                "count": 2,
-                "price_from": 3647.69
+              "COMPARTMENT": {
+                "count": 4,
+                "price_from": 8403.82
+              },
+              "LUX": {
+                "count": 1,
+                "price_from": 18870.7
               }
             }
-          }
-        },
-        {
-          "offer_id": "fa9adb59deeca88256396ebf53ca2c90",
-          "transport": "avia",
-          "price": {
-            "amount": 10535,
-            "currency": "RUB"
-          },
-          "duration_min": 90,
-          "carriers": [
-            "Аэрофлот"
-          ],
-          "search_results_url": "https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75",
-          "segments_count": 1,
-          "departure_at": "2026-08-20T23:30:00+03:00",
-          "arrival_at": "2026-08-21T01:00:00+03:00",
-          "legs": [
-            {
-              "label": "outbound",
-              "from": "Москва — Внуково (VKO), терм. A",
-              "to": "Санкт-Петербург — Пулково (LED), терм. 1",
-              "departure_at": "2026-08-20T23:30:00+03:00",
-              "arrival_at": "2026-08-21T01:00:00+03:00",
-              "duration_min": 90,
-              "segments": [
-                {
-                  "from": "Москва — Внуково (VKO), терм. A",
-                  "to": "Санкт-Петербург — Пулково (LED), терм. 1",
-                  "departure_at": "2026-08-20T23:30:00+03:00",
-                  "arrival_at": "2026-08-21T01:00:00+03:00",
-                  "duration_min": 90,
-                  "carrier": "Аэрофлот",
-                  "voyage_no": "SU-6186",
-                  "from_geo_point_id": 2718687,
-                  "to_geo_point_id": 2718757,
-                  "review_summary": {
-                    "rating": 9.25,
-                    "review_count": 22870,
-                    "label": "⭐ 9.25/10 · 22 870 отзывов",
-                    "source": "offers-api.feedback",
-                    "scope": "carrier",
-                    "subject": "Аэрофлот",
-                    "scale": 10,
-                    "feedback_key": "1062"
-                  }
-                }
-              ]
-            }
-          ],
-          "variants": [
-            {
-              "variant_id": "7cfaf45558a0a7c38dba3e4db80368cd:06dd44ad3a22ddcce66412f835719a8b",
-              "offer_hash": "{\"Price\":10535,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"521fbbc4bb8905c709f84e87dbc2380f\\\",\\\"variantConditionsHash\\\":\\\"fa9adb59deeca88256396ebf53ca2c90:4a15ebaf82f14491e2bac3a776e17da0\\\",\\\"pricingVariantHash\\\":\\\"c76b15591c4b2c741052f1f3376684e0\\\"}]\"}",
-              "price": {
-                "amount": 10535,
-                "currency": "RUB"
-              },
-              "conditions": {
-                "fare_family": "Эконом Базовый",
-                "baggage": {
-                  "kg": 0,
-                  "pieces": 0
-                },
-                "cabin_baggage": {
-                  "kg": 10,
-                  "pieces": 1,
-                  "dimensions": "55 × 40 × 25"
-                },
-                "refundable": false,
-                "changeable": true,
-                "seat_selection": "available_paid",
-                "boarding_privileges": "unavailable",
-                "exchange": {
-                  "available": true,
-                  "deadline_hours": 1
-                }
-              },
-              "service_class": "ECONOMIC"
-            },
-            {
-              "variant_id": "7cfaf45558a0a7c38dba3e4db80368cd:18b4760245c91ba348ccd2657ed950bf",
-              "offer_hash": "{\"Price\":11273,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"ac5ca36c170cefad95d0b255eed9656b\\\",\\\"variantConditionsHash\\\":\\\"fa9adb59deeca88256396ebf53ca2c90:8b791de79500e960f46a786d93478b8f\\\",\\\"pricingVariantHash\\\":\\\"48571dae6651aad48838804db7fb1834\\\"}]\"}",
-              "price": {
-                "amount": 11273,
-                "currency": "RUB"
-              },
-              "conditions": {
-                "fare_family": "Шаттл",
-                "baggage": {
-                  "kg": 0,
-                  "pieces": 0
-                },
-                "cabin_baggage": {
-                  "kg": 10,
-                  "pieces": 1,
-                  "dimensions": "55 × 40 × 25"
-                },
-                "refundable": false,
-                "changeable": null,
-                "seat_selection": "available_paid",
-                "boarding_privileges": "unavailable"
-              },
-              "service_class": "ECONOMIC"
-            },
-            {
-              "variant_id": "7cfaf45558a0a7c38dba3e4db80368cd:e17195945116eee5cc4360dcb82da5f9",
-              "offer_hash": "{\"Price\":13933,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"0c7fe30523c4875ee5fad6f8403d4bd0\\\",\\\"variantConditionsHash\\\":\\\"fa9adb59deeca88256396ebf53ca2c90:3512777c0927777baf7233034bcadd1e\\\",\\\"pricingVariantHash\\\":\\\"c741f5ee709fc5e9dde34fcbedbdd852\\\"}]\"}",
-              "price": {
-                "amount": 13933,
-                "currency": "RUB"
-              },
-              "conditions": {
-                "fare_family": "Эконом Оптимум",
-                "baggage": {
-                  "kg": 23,
-                  "pieces": 1
-                },
-                "cabin_baggage": {
-                  "kg": 10,
-                  "pieces": 1,
-                  "dimensions": "55 × 40 × 25"
-                },
-                "refundable": true,
-                "changeable": true,
-                "seat_selection": "available_paid",
-                "boarding_privileges": "unavailable",
-                "exchange": {
-                  "available": true,
-                  "deadline_hours": 1
-                }
-              },
-              "service_class": "ECONOMIC"
-            },
-            {
-              "variant_id": "7cfaf45558a0a7c38dba3e4db80368cd:4d092885eeefcfea271ba047c06138ee",
-              "offer_hash": "{\"Price\":20461,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"823e25710305000ef40e582083acd421\\\",\\\"variantConditionsHash\\\":\\\"fa9adb59deeca88256396ebf53ca2c90:82e1de26d80c0447c4375b0fe9df31c8\\\",\\\"pricingVariantHash\\\":\\\"75b467503f2bcef53eb433377cb4b201\\\"}]\"}",
-              "price": {
-                "amount": 20461,
-                "currency": "RUB"
-              },
-              "conditions": {
-                "fare_family": "Эконом Максимум",
-                "baggage": {
-                  "kg": 23,
-                  "pieces": 2
-                },
-                "cabin_baggage": {
-                  "kg": 10,
-                  "pieces": 1,
-                  "dimensions": "55 × 40 × 25"
-                },
-                "refundable": true,
-                "changeable": true,
-                "seat_selection": "available_free",
-                "boarding_privileges": "free",
-                "exchange": {
-                  "available": true,
-                  "deadline_hours": 1
-                }
-              },
-              "service_class": "ECONOMIC"
-            },
-            {
-              "variant_id": "7cfaf45558a0a7c38dba3e4db80368cd:3816b3b0bc66756051ce27437191e540",
-              "offer_hash": "{\"Price\":47903,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"14b7213502b528b17e5ac63d1cbc1fd6\\\",\\\"variantConditionsHash\\\":\\\"fa9adb59deeca88256396ebf53ca2c90:71ac8e907bd67cd6dcdbf26f298bfc43\\\",\\\"pricingVariantHash\\\":\\\"12298e84191a182d616cf6971ab00031\\\"}]\"}",
-              "price": {
-                "amount": 47903,
-                "currency": "RUB"
-              },
-              "conditions": {
-                "fare_family": "Бизнес Базовый",
-                "baggage": {
-                  "kg": 32,
-                  "pieces": 1
-                },
-                "cabin_baggage": {
-                  "kg": 15,
-                  "pieces": 1,
-                  "dimensions": "55 × 40 × 25"
-                },
-                "refundable": false,
-                "changeable": true,
-                "seat_selection": "available_free",
-                "business_hall_allowed": true,
-                "boarding_privileges": "free",
-                "exchange": {
-                  "available": true,
-                  "deadline_hours": 1
-                }
-              },
-              "service_class": "BUSINESS"
-            },
-            {
-              "variant_id": "7cfaf45558a0a7c38dba3e4db80368cd:46f9e51481197e3f8f65e1d51d167338",
-              "offer_hash": "{\"Price\":55159,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"27faeef1fa8caebb634e65c6880f8d26\\\",\\\"variantConditionsHash\\\":\\\"fa9adb59deeca88256396ebf53ca2c90:8f2a245a2a2a76b399b0cd6268977c2f\\\",\\\"pricingVariantHash\\\":\\\"8eb069ee10317a7580fa55b9839fa086\\\"}]\"}",
-              "price": {
-                "amount": 55159,
-                "currency": "RUB"
-              },
-              "conditions": {
-                "fare_family": "Бизнес Оптимум",
-                "baggage": {
-                  "kg": 32,
-                  "pieces": 2
-                },
-                "cabin_baggage": {
-                  "kg": 15,
-                  "pieces": 1,
-                  "dimensions": "55 × 40 × 25"
-                },
-                "refundable": true,
-                "changeable": true,
-                "seat_selection": "available_free",
-                "business_hall_allowed": true,
-                "boarding_privileges": "free",
-                "exchange": {
-                  "available": true,
-                  "deadline_hours": 1
-                }
-              },
-              "service_class": "BUSINESS"
-            }
-          ],
-          "checkout_ref": {
-            "transport": "avia",
-            "is_round_trip": false,
-            "search_results_url": "https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75",
-            "offer_hash": "{\"Price\":10535,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"521fbbc4bb8905c709f84e87dbc2380f\\\",\\\"variantConditionsHash\\\":\\\"fa9adb59deeca88256396ebf53ca2c90:4a15ebaf82f14491e2bac3a776e17da0\\\",\\\"pricingVariantHash\\\":\\\"c76b15591c4b2c741052f1f3376684e0\\\"}]\"}",
-            "departure_geo_city_id": 2657260,
-            "arrival_geo_city_id": 2656915,
-            "departure_at": "2026-08-20T23:30:00+03:00",
-            "service_class": "ECONOMIC",
-            "departure_avia_id": "491",
-            "arrival_avia_id": "75",
-            "passengers_full": 1,
-            "passengers_child": 0,
-            "passengers_infant": 0
-          },
-          "review_summary": {
-            "rating": 9.25,
-            "review_count": 22870,
-            "label": "⭐ 9.25/10 · 22 870 отзывов",
-            "source": "offers-api.feedback",
-            "scope": "carrier",
-            "subject": "Аэрофлот",
-            "scale": 10,
-            "feedback_key": "1062"
           }
         },
         {
@@ -553,9 +308,9 @@
             },
             {
               "variant_id": "472e3bf3c42e315fceef1225134ddf5c:3816b3b0bc66756051ce27437191e540",
-              "offer_hash": "{\"Price\":48072,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"20934dab11a1bef92258794f8701e227\\\",\\\"variantConditionsHash\\\":\\\"b39124216a7093a33829c1dacf33a49c:71ac8e907bd67cd6dcdbf26f298bfc43\\\",\\\"pricingVariantHash\\\":\\\"97b8c49a72b97fa766f3765e4ebc47a4\\\"}]\"}",
+              "offer_hash": "{\"Price\":49289,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"ac3b2b339fc5e035d65055e14220c70c\\\",\\\"variantConditionsHash\\\":\\\"b39124216a7093a33829c1dacf33a49c:71ac8e907bd67cd6dcdbf26f298bfc43\\\",\\\"pricingVariantHash\\\":\\\"a971fb68f2b4aaee3c56aa69cb0c668a\\\"}]\"}",
               "price": {
-                "amount": 48072,
+                "amount": 49289,
                 "currency": "RUB"
               },
               "conditions": {
@@ -583,9 +338,9 @@
             },
             {
               "variant_id": "472e3bf3c42e315fceef1225134ddf5c:46f9e51481197e3f8f65e1d51d167338",
-              "offer_hash": "{\"Price\":55328,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"0758f35d4fa1e6a384120228105c7aca\\\",\\\"variantConditionsHash\\\":\\\"b39124216a7093a33829c1dacf33a49c:8f2a245a2a2a76b399b0cd6268977c2f\\\",\\\"pricingVariantHash\\\":\\\"e60c47558983ea001066d8badec7e0a6\\\"}]\"}",
+              "offer_hash": "{\"Price\":56583,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"209c74f3606ffc492dcbe25a807eb3c9\\\",\\\"variantConditionsHash\\\":\\\"b39124216a7093a33829c1dacf33a49c:8f2a245a2a2a76b399b0cd6268977c2f\\\",\\\"pricingVariantHash\\\":\\\"e4eefde9acbb75a637d0a72ddd44043b\\\"}]\"}",
               "price": {
-                "amount": 55328,
+                "amount": 56583,
                 "currency": "RUB"
               },
               "conditions": {
@@ -890,7 +645,7 @@
           "offer_id": "b4b4b0f3cbd3a0fc1cb4ae15ecf4c754",
           "transport": "avia",
           "price": {
-            "amount": 10713,
+            "amount": 10853,
             "currency": "RUB"
           },
           "duration_min": 85,
@@ -937,9 +692,9 @@
           "variants": [
             {
               "variant_id": "89dd841ffafe9079040cbd747d1410cc:671018c27b97d70aa92a2c65120e84ac",
-              "offer_hash": "{\"Price\":10713,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"b1d1b74303267f9bd454c881180729ca\\\",\\\"variantConditionsHash\\\":\\\"b4b4b0f3cbd3a0fc1cb4ae15ecf4c754:f4b7bd50b88d2aef62aa0ef78689dd61\\\",\\\"pricingVariantHash\\\":\\\"be9848e57169ff4b4e69acdc3c56dabd\\\"}]\"}",
+              "offer_hash": "{\"Price\":10853,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"b1d1b74303267f9bd454c881180729ca\\\",\\\"variantConditionsHash\\\":\\\"b4b4b0f3cbd3a0fc1cb4ae15ecf4c754:f4b7bd50b88d2aef62aa0ef78689dd61\\\",\\\"pricingVariantHash\\\":\\\"37d910f85dfc9d3c0101d8ccd23a92f4\\\"}]\"}",
               "price": {
-                "amount": 10713,
+                "amount": 10853,
                 "currency": "RUB"
               },
               "conditions": {
@@ -960,9 +715,9 @@
             },
             {
               "variant_id": "89dd841ffafe9079040cbd747d1410cc:6216f4b2c5b065a73a13b6ce8448635a",
-              "offer_hash": "{\"Price\":13916,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"2f41af4a81f73ba457feccec738daf3a\\\",\\\"variantConditionsHash\\\":\\\"b4b4b0f3cbd3a0fc1cb4ae15ecf4c754:7bdef7201719c823a5aaf6841db6231e\\\",\\\"pricingVariantHash\\\":\\\"a762ca384986dd40a803aff8d755c22c\\\"}]\"}",
+              "offer_hash": "{\"Price\":14056,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"2f41af4a81f73ba457feccec738daf3a\\\",\\\"variantConditionsHash\\\":\\\"b4b4b0f3cbd3a0fc1cb4ae15ecf4c754:7bdef7201719c823a5aaf6841db6231e\\\",\\\"pricingVariantHash\\\":\\\"fd968a34f66ab8358ee370f244a7a416\\\"}]\"}",
               "price": {
-                "amount": 13916,
+                "amount": 14056,
                 "currency": "RUB"
               },
               "conditions": {
@@ -987,9 +742,9 @@
             },
             {
               "variant_id": "89dd841ffafe9079040cbd747d1410cc:66fcf35c9562f0614bb9617bbea50c84",
-              "offer_hash": "{\"Price\":17600,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"bc3da7547ccca52bd4f6641f12c42486\\\",\\\"variantConditionsHash\\\":\\\"b4b4b0f3cbd3a0fc1cb4ae15ecf4c754:81e223a99b8ce32d2cd1059cbdcab4ab\\\",\\\"pricingVariantHash\\\":\\\"c6c15b8d82943ad0904199f23038a521\\\"}]\"}",
+              "offer_hash": "{\"Price\":17740,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"bc3da7547ccca52bd4f6641f12c42486\\\",\\\"variantConditionsHash\\\":\\\"b4b4b0f3cbd3a0fc1cb4ae15ecf4c754:81e223a99b8ce32d2cd1059cbdcab4ab\\\",\\\"pricingVariantHash\\\":\\\"faeecd4a6cc2997873c56d9699d110c9\\\"}]\"}",
               "price": {
-                "amount": 17600,
+                "amount": 17740,
                 "currency": "RUB"
               },
               "conditions": {
@@ -1017,7 +772,7 @@
             "transport": "avia",
             "is_round_trip": false,
             "search_results_url": "https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75",
-            "offer_hash": "{\"Price\":10713,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"b1d1b74303267f9bd454c881180729ca\\\",\\\"variantConditionsHash\\\":\\\"b4b4b0f3cbd3a0fc1cb4ae15ecf4c754:f4b7bd50b88d2aef62aa0ef78689dd61\\\",\\\"pricingVariantHash\\\":\\\"be9848e57169ff4b4e69acdc3c56dabd\\\"}]\"}",
+            "offer_hash": "{\"Price\":10853,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"b1d1b74303267f9bd454c881180729ca\\\",\\\"variantConditionsHash\\\":\\\"b4b4b0f3cbd3a0fc1cb4ae15ecf4c754:f4b7bd50b88d2aef62aa0ef78689dd61\\\",\\\"pricingVariantHash\\\":\\\"37d910f85dfc9d3c0101d8ccd23a92f4\\\"}]\"}",
             "departure_geo_city_id": 2657260,
             "arrival_geo_city_id": 2656915,
             "departure_at": "2026-08-20T22:25:00+03:00",
@@ -1040,48 +795,48 @@
           }
         },
         {
-          "offer_id": "8ff525bc3ad7963a0f0e851cab7decab",
+          "offer_id": "ea1d696f48f267e7ac1de815acdc9fcf",
           "transport": "avia",
           "price": {
-            "amount": 11772,
+            "amount": 12415,
             "currency": "RUB"
           },
           "duration_min": 85,
           "carriers": [
-            "Победа"
+            "Аэрофлот"
           ],
           "search_results_url": "https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75",
           "segments_count": 1,
-          "departure_at": "2026-08-20T09:15:00+03:00",
-          "arrival_at": "2026-08-20T10:40:00+03:00",
+          "departure_at": "2026-08-20T22:30:00+03:00",
+          "arrival_at": "2026-08-20T23:55:00+03:00",
           "legs": [
             {
               "label": "outbound",
-              "from": "Москва — Шереметьево (SVO)",
-              "to": "Санкт-Петербург — Пулково (LED)",
-              "departure_at": "2026-08-20T09:15:00+03:00",
-              "arrival_at": "2026-08-20T10:40:00+03:00",
+              "from": "Москва — Шереметьево (SVO), терм. B",
+              "to": "Санкт-Петербург — Пулково (LED), терм. 1",
+              "departure_at": "2026-08-20T22:30:00+03:00",
+              "arrival_at": "2026-08-20T23:55:00+03:00",
               "duration_min": 85,
               "segments": [
                 {
-                  "from": "Москва — Шереметьево (SVO)",
-                  "to": "Санкт-Петербург — Пулково (LED)",
-                  "departure_at": "2026-08-20T09:15:00+03:00",
-                  "arrival_at": "2026-08-20T10:40:00+03:00",
+                  "from": "Москва — Шереметьево (SVO), терм. B",
+                  "to": "Санкт-Петербург — Пулково (LED), терм. 1",
+                  "departure_at": "2026-08-20T22:30:00+03:00",
+                  "arrival_at": "2026-08-20T23:55:00+03:00",
                   "duration_min": 85,
-                  "carrier": "Победа",
-                  "voyage_no": "DP-6821",
+                  "carrier": "Аэрофлот",
+                  "voyage_no": "SU-6809",
                   "from_geo_point_id": 2719726,
                   "to_geo_point_id": 2718757,
                   "review_summary": {
-                    "rating": 6.93,
-                    "review_count": 14260,
-                    "label": "⭐ 6.93/10 · 14 260 отзывов",
+                    "rating": 9.25,
+                    "review_count": 22870,
+                    "label": "⭐ 9.25/10 · 22 870 отзывов",
                     "source": "offers-api.feedback",
                     "scope": "carrier",
-                    "subject": "Победа",
+                    "subject": "Аэрофлот",
                     "scale": 10,
-                    "feedback_key": "2227"
+                    "feedback_key": "1062"
                   }
                 }
               ]
@@ -1089,91 +844,186 @@
           ],
           "variants": [
             {
-              "variant_id": "251ffc031ed91b4f091a1370888751b5:671018c27b97d70aa92a2c65120e84ac",
-              "offer_hash": "{\"Price\":11772,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"c5bd9020d596b67138d830254a1db870\\\",\\\"variantConditionsHash\\\":\\\"8ff525bc3ad7963a0f0e851cab7decab:f4b7bd50b88d2aef62aa0ef78689dd61\\\",\\\"pricingVariantHash\\\":\\\"f276a7defe3aadacc51495b8dbef4f1b\\\"}]\"}",
+              "variant_id": "054eda991e92e59146ce044e6c853966:06dd44ad3a22ddcce66412f835719a8b",
+              "offer_hash": "{\"Price\":12415,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"82e33569305a4d9e1fbedb613731a1f7\\\",\\\"variantConditionsHash\\\":\\\"ea1d696f48f267e7ac1de815acdc9fcf:4a15ebaf82f14491e2bac3a776e17da0\\\",\\\"pricingVariantHash\\\":\\\"a9e10b26fb5f1e2afb56825e0cf3a800\\\"}]\"}",
               "price": {
-                "amount": 11772,
+                "amount": 12415,
                 "currency": "RUB"
               },
               "conditions": {
-                "fare_family": "Базовый",
+                "fare_family": "Эконом Базовый",
                 "baggage": {
                   "kg": 0,
                   "pieces": 0
                 },
                 "cabin_baggage": {
-                  "kg": null,
-                  "pieces": 1,
-                  "dimensions": "36 × 30 × 27"
-                },
-                "refundable": false,
-                "changeable": false
-              },
-              "service_class": "ECONOMIC"
-            },
-            {
-              "variant_id": "251ffc031ed91b4f091a1370888751b5:6216f4b2c5b065a73a13b6ce8448635a",
-              "offer_hash": "{\"Price\":15039,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"1181262d0583ab4d859612afc24c50c6\\\",\\\"variantConditionsHash\\\":\\\"8ff525bc3ad7963a0f0e851cab7decab:7bdef7201719c823a5aaf6841db6231e\\\",\\\"pricingVariantHash\\\":\\\"4431fb178e73699c9986a0568e98b94d\\\"}]\"}",
-              "price": {
-                "amount": 15039,
-                "currency": "RUB"
-              },
-              "conditions": {
-                "fare_family": "Выгодный",
-                "baggage": {
                   "kg": 10,
-                  "pieces": 1
-                },
-                "cabin_baggage": {
-                  "kg": null,
                   "pieces": 1,
-                  "dimensions": "36 × 30 × 27"
+                  "dimensions": "55 × 40 × 25"
                 },
                 "refundable": false,
                 "changeable": true,
+                "seat_selection": "available_paid",
+                "boarding_privileges": "unavailable",
                 "exchange": {
                   "available": true,
-                  "deadline_hours": 48
+                  "deadline_hours": 1
                 }
               },
               "service_class": "ECONOMIC"
             },
             {
-              "variant_id": "251ffc031ed91b4f091a1370888751b5:66fcf35c9562f0614bb9617bbea50c84",
-              "offer_hash": "{\"Price\":19021,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"b08dbef1907808bb1ee2cf63a9570098\\\",\\\"variantConditionsHash\\\":\\\"8ff525bc3ad7963a0f0e851cab7decab:81e223a99b8ce32d2cd1059cbdcab4ab\\\",\\\"pricingVariantHash\\\":\\\"3fc40d7427bf8ac32e1603f15c71a287\\\"}]\"}",
+              "variant_id": "054eda991e92e59146ce044e6c853966:18b4760245c91ba348ccd2657ed950bf",
+              "offer_hash": "{\"Price\":13178,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"7f4d24867308fe81074e03a3b5c27f94\\\",\\\"variantConditionsHash\\\":\\\"ea1d696f48f267e7ac1de815acdc9fcf:8b791de79500e960f46a786d93478b8f\\\",\\\"pricingVariantHash\\\":\\\"7c4e81559073247e84d11e7035e9fe5c\\\"}]\"}",
               "price": {
-                "amount": 19021,
+                "amount": 13178,
                 "currency": "RUB"
               },
               "conditions": {
-                "fare_family": "Максимум",
+                "fare_family": "Шаттл",
                 "baggage": {
-                  "kg": 20,
+                  "kg": 0,
+                  "pieces": 0
+                },
+                "cabin_baggage": {
+                  "kg": 10,
+                  "pieces": 1,
+                  "dimensions": "55 × 40 × 25"
+                },
+                "refundable": false,
+                "changeable": null,
+                "seat_selection": "available_paid",
+                "boarding_privileges": "unavailable"
+              },
+              "service_class": "ECONOMIC"
+            },
+            {
+              "variant_id": "054eda991e92e59146ce044e6c853966:e17195945116eee5cc4360dcb82da5f9",
+              "offer_hash": "{\"Price\":15712,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"9d3effb916d315ca10beb699feb7a132\\\",\\\"variantConditionsHash\\\":\\\"ea1d696f48f267e7ac1de815acdc9fcf:3512777c0927777baf7233034bcadd1e\\\",\\\"pricingVariantHash\\\":\\\"7b9b840bbaa9b618a2cad4907efed3fb\\\"}]\"}",
+              "price": {
+                "amount": 15712,
+                "currency": "RUB"
+              },
+              "conditions": {
+                "fare_family": "Эконом Оптимум",
+                "baggage": {
+                  "kg": 23,
                   "pieces": 1
                 },
                 "cabin_baggage": {
-                  "kg": null,
+                  "kg": 10,
                   "pieces": 1,
-                  "dimensions": "36 × 30 × 27"
+                  "dimensions": "55 × 40 × 25"
                 },
                 "refundable": true,
                 "changeable": true,
+                "seat_selection": "available_paid",
+                "boarding_privileges": "unavailable",
                 "exchange": {
                   "available": true,
-                  "deadline_hours": 48
+                  "deadline_hours": 1
                 }
               },
               "service_class": "ECONOMIC"
+            },
+            {
+              "variant_id": "054eda991e92e59146ce044e6c853966:4d092885eeefcfea271ba047c06138ee",
+              "offer_hash": "{\"Price\":22408,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"22f272790b54398e6cd98271d57be18e\\\",\\\"variantConditionsHash\\\":\\\"ea1d696f48f267e7ac1de815acdc9fcf:82e1de26d80c0447c4375b0fe9df31c8\\\",\\\"pricingVariantHash\\\":\\\"a118ef60b77b02cabe044cd20efaaa56\\\"}]\"}",
+              "price": {
+                "amount": 22408,
+                "currency": "RUB"
+              },
+              "conditions": {
+                "fare_family": "Эконом Максимум",
+                "baggage": {
+                  "kg": 23,
+                  "pieces": 2
+                },
+                "cabin_baggage": {
+                  "kg": 10,
+                  "pieces": 1,
+                  "dimensions": "55 × 40 × 25"
+                },
+                "refundable": true,
+                "changeable": true,
+                "seat_selection": "available_free",
+                "boarding_privileges": "free",
+                "exchange": {
+                  "available": true,
+                  "deadline_hours": 1
+                }
+              },
+              "service_class": "ECONOMIC"
+            },
+            {
+              "variant_id": "054eda991e92e59146ce044e6c853966:3816b3b0bc66756051ce27437191e540",
+              "offer_hash": "{\"Price\":49289,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"b5bed10c73184c688e623a39997c4587\\\",\\\"variantConditionsHash\\\":\\\"ea1d696f48f267e7ac1de815acdc9fcf:71ac8e907bd67cd6dcdbf26f298bfc43\\\",\\\"pricingVariantHash\\\":\\\"612218d9fa7dd15363c5d11ccf35424a\\\"}]\"}",
+              "price": {
+                "amount": 49289,
+                "currency": "RUB"
+              },
+              "conditions": {
+                "fare_family": "Бизнес Базовый",
+                "baggage": {
+                  "kg": 32,
+                  "pieces": 1
+                },
+                "cabin_baggage": {
+                  "kg": 15,
+                  "pieces": 1,
+                  "dimensions": "55 × 40 × 25"
+                },
+                "refundable": false,
+                "changeable": true,
+                "seat_selection": "available_free",
+                "business_hall_allowed": true,
+                "boarding_privileges": "free",
+                "exchange": {
+                  "available": true,
+                  "deadline_hours": 1
+                }
+              },
+              "service_class": "BUSINESS"
+            },
+            {
+              "variant_id": "054eda991e92e59146ce044e6c853966:46f9e51481197e3f8f65e1d51d167338",
+              "offer_hash": "{\"Price\":56583,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"ec30248f70e7a87f3be3ba68654ddb06\\\",\\\"variantConditionsHash\\\":\\\"ea1d696f48f267e7ac1de815acdc9fcf:8f2a245a2a2a76b399b0cd6268977c2f\\\",\\\"pricingVariantHash\\\":\\\"e8eff72fdd8d6cc6307f8f01c2fd9059\\\"}]\"}",
+              "price": {
+                "amount": 56583,
+                "currency": "RUB"
+              },
+              "conditions": {
+                "fare_family": "Бизнес Оптимум",
+                "baggage": {
+                  "kg": 32,
+                  "pieces": 2
+                },
+                "cabin_baggage": {
+                  "kg": 15,
+                  "pieces": 1,
+                  "dimensions": "55 × 40 × 25"
+                },
+                "refundable": true,
+                "changeable": true,
+                "seat_selection": "available_free",
+                "business_hall_allowed": true,
+                "boarding_privileges": "free",
+                "exchange": {
+                  "available": true,
+                  "deadline_hours": 1
+                }
+              },
+              "service_class": "BUSINESS"
             }
           ],
           "checkout_ref": {
             "transport": "avia",
             "is_round_trip": false,
             "search_results_url": "https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75",
-            "offer_hash": "{\"Price\":11772,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"c5bd9020d596b67138d830254a1db870\\\",\\\"variantConditionsHash\\\":\\\"8ff525bc3ad7963a0f0e851cab7decab:f4b7bd50b88d2aef62aa0ef78689dd61\\\",\\\"pricingVariantHash\\\":\\\"f276a7defe3aadacc51495b8dbef4f1b\\\"}]\"}",
+            "offer_hash": "{\"Price\":12415,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"82e33569305a4d9e1fbedb613731a1f7\\\",\\\"variantConditionsHash\\\":\\\"ea1d696f48f267e7ac1de815acdc9fcf:4a15ebaf82f14491e2bac3a776e17da0\\\",\\\"pricingVariantHash\\\":\\\"a9e10b26fb5f1e2afb56825e0cf3a800\\\"}]\"}",
             "departure_geo_city_id": 2657260,
             "arrival_geo_city_id": 2656915,
-            "departure_at": "2026-08-20T09:15:00+03:00",
+            "departure_at": "2026-08-20T22:30:00+03:00",
             "service_class": "ECONOMIC",
             "departure_avia_id": "491",
             "arrival_avia_id": "75",
@@ -1182,14 +1032,262 @@
             "passengers_infant": 0
           },
           "review_summary": {
-            "rating": 6.93,
-            "review_count": 14260,
-            "label": "⭐ 6.93/10 · 14 260 отзывов",
+            "rating": 9.25,
+            "review_count": 22870,
+            "label": "⭐ 9.25/10 · 22 870 отзывов",
             "source": "offers-api.feedback",
             "scope": "carrier",
-            "subject": "Победа",
+            "subject": "Аэрофлот",
             "scale": 10,
-            "feedback_key": "2227"
+            "feedback_key": "1062"
+          }
+        },
+        {
+          "offer_id": "b84aefa2602380e4d3194f47c68ceb22",
+          "transport": "avia",
+          "price": {
+            "amount": 12415,
+            "currency": "RUB"
+          },
+          "duration_min": 85,
+          "carriers": [
+            "Аэрофлот"
+          ],
+          "search_results_url": "https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75",
+          "segments_count": 1,
+          "departure_at": "2026-08-20T21:30:00+03:00",
+          "arrival_at": "2026-08-20T22:55:00+03:00",
+          "legs": [
+            {
+              "label": "outbound",
+              "from": "Москва — Шереметьево (SVO), терм. B",
+              "to": "Санкт-Петербург — Пулково (LED), терм. 1",
+              "departure_at": "2026-08-20T21:30:00+03:00",
+              "arrival_at": "2026-08-20T22:55:00+03:00",
+              "duration_min": 85,
+              "segments": [
+                {
+                  "from": "Москва — Шереметьево (SVO), терм. B",
+                  "to": "Санкт-Петербург — Пулково (LED), терм. 1",
+                  "departure_at": "2026-08-20T21:30:00+03:00",
+                  "arrival_at": "2026-08-20T22:55:00+03:00",
+                  "duration_min": 85,
+                  "carrier": "Аэрофлот",
+                  "voyage_no": "SU-6707",
+                  "from_geo_point_id": 2719726,
+                  "to_geo_point_id": 2718757,
+                  "review_summary": {
+                    "rating": 9.25,
+                    "review_count": 22870,
+                    "label": "⭐ 9.25/10 · 22 870 отзывов",
+                    "source": "offers-api.feedback",
+                    "scope": "carrier",
+                    "subject": "Аэрофлот",
+                    "scale": 10,
+                    "feedback_key": "1062"
+                  }
+                }
+              ]
+            }
+          ],
+          "variants": [
+            {
+              "variant_id": "d05b170f1a38ed5de6347ff03390df78:06dd44ad3a22ddcce66412f835719a8b",
+              "offer_hash": "{\"Price\":12415,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"48cd047889db027ea0a337766f862906\\\",\\\"variantConditionsHash\\\":\\\"b84aefa2602380e4d3194f47c68ceb22:4a15ebaf82f14491e2bac3a776e17da0\\\",\\\"pricingVariantHash\\\":\\\"6dc5a508bbd4be2b12e8c33c1b71b4c7\\\"}]\"}",
+              "price": {
+                "amount": 12415,
+                "currency": "RUB"
+              },
+              "conditions": {
+                "fare_family": "Эконом Базовый",
+                "baggage": {
+                  "kg": 0,
+                  "pieces": 0
+                },
+                "cabin_baggage": {
+                  "kg": 10,
+                  "pieces": 1,
+                  "dimensions": "55 × 40 × 25"
+                },
+                "refundable": false,
+                "changeable": true,
+                "seat_selection": "available_paid",
+                "boarding_privileges": "unavailable",
+                "exchange": {
+                  "available": true,
+                  "deadline_hours": 1
+                }
+              },
+              "service_class": "ECONOMIC"
+            },
+            {
+              "variant_id": "d05b170f1a38ed5de6347ff03390df78:18b4760245c91ba348ccd2657ed950bf",
+              "offer_hash": "{\"Price\":13178,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"fa7a8eca6df224503185746ab14b0fd0\\\",\\\"variantConditionsHash\\\":\\\"b84aefa2602380e4d3194f47c68ceb22:8b791de79500e960f46a786d93478b8f\\\",\\\"pricingVariantHash\\\":\\\"81bdd7e982debae3f1bbf54048e80a1e\\\"}]\"}",
+              "price": {
+                "amount": 13178,
+                "currency": "RUB"
+              },
+              "conditions": {
+                "fare_family": "Шаттл",
+                "baggage": {
+                  "kg": 0,
+                  "pieces": 0
+                },
+                "cabin_baggage": {
+                  "kg": 10,
+                  "pieces": 1,
+                  "dimensions": "55 × 40 × 25"
+                },
+                "refundable": false,
+                "changeable": null,
+                "seat_selection": "available_paid",
+                "boarding_privileges": "unavailable"
+              },
+              "service_class": "ECONOMIC"
+            },
+            {
+              "variant_id": "d05b170f1a38ed5de6347ff03390df78:e17195945116eee5cc4360dcb82da5f9",
+              "offer_hash": "{\"Price\":15712,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"ca5bdac2d3c08a71d557a4edc2f22e84\\\",\\\"variantConditionsHash\\\":\\\"b84aefa2602380e4d3194f47c68ceb22:3512777c0927777baf7233034bcadd1e\\\",\\\"pricingVariantHash\\\":\\\"8df6e88882bf81cdae5a804f4f69b5e4\\\"}]\"}",
+              "price": {
+                "amount": 15712,
+                "currency": "RUB"
+              },
+              "conditions": {
+                "fare_family": "Эконом Оптимум",
+                "baggage": {
+                  "kg": 23,
+                  "pieces": 1
+                },
+                "cabin_baggage": {
+                  "kg": 10,
+                  "pieces": 1,
+                  "dimensions": "55 × 40 × 25"
+                },
+                "refundable": true,
+                "changeable": true,
+                "seat_selection": "available_paid",
+                "boarding_privileges": "unavailable",
+                "exchange": {
+                  "available": true,
+                  "deadline_hours": 1
+                }
+              },
+              "service_class": "ECONOMIC"
+            },
+            {
+              "variant_id": "d05b170f1a38ed5de6347ff03390df78:4d092885eeefcfea271ba047c06138ee",
+              "offer_hash": "{\"Price\":22408,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"68ca0b8289c9c78cfd4e786b3b9c788e\\\",\\\"variantConditionsHash\\\":\\\"b84aefa2602380e4d3194f47c68ceb22:82e1de26d80c0447c4375b0fe9df31c8\\\",\\\"pricingVariantHash\\\":\\\"82ec2d9b46680a283dc2edef76ce17dd\\\"}]\"}",
+              "price": {
+                "amount": 22408,
+                "currency": "RUB"
+              },
+              "conditions": {
+                "fare_family": "Эконом Максимум",
+                "baggage": {
+                  "kg": 23,
+                  "pieces": 2
+                },
+                "cabin_baggage": {
+                  "kg": 10,
+                  "pieces": 1,
+                  "dimensions": "55 × 40 × 25"
+                },
+                "refundable": true,
+                "changeable": true,
+                "seat_selection": "available_free",
+                "boarding_privileges": "free",
+                "exchange": {
+                  "available": true,
+                  "deadline_hours": 1
+                }
+              },
+              "service_class": "ECONOMIC"
+            },
+            {
+              "variant_id": "d05b170f1a38ed5de6347ff03390df78:3816b3b0bc66756051ce27437191e540",
+              "offer_hash": "{\"Price\":49289,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"fc8aabc212129b66d426f84ca476eeb5\\\",\\\"variantConditionsHash\\\":\\\"b84aefa2602380e4d3194f47c68ceb22:71ac8e907bd67cd6dcdbf26f298bfc43\\\",\\\"pricingVariantHash\\\":\\\"3fe776433c7e538e03602dc3a7377a14\\\"}]\"}",
+              "price": {
+                "amount": 49289,
+                "currency": "RUB"
+              },
+              "conditions": {
+                "fare_family": "Бизнес Базовый",
+                "baggage": {
+                  "kg": 32,
+                  "pieces": 1
+                },
+                "cabin_baggage": {
+                  "kg": 15,
+                  "pieces": 1,
+                  "dimensions": "55 × 40 × 25"
+                },
+                "refundable": false,
+                "changeable": true,
+                "seat_selection": "available_free",
+                "business_hall_allowed": true,
+                "boarding_privileges": "free",
+                "exchange": {
+                  "available": true,
+                  "deadline_hours": 1
+                }
+              },
+              "service_class": "BUSINESS"
+            },
+            {
+              "variant_id": "d05b170f1a38ed5de6347ff03390df78:46f9e51481197e3f8f65e1d51d167338",
+              "offer_hash": "{\"Price\":56583,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"8d1bc4f80eb50f24491053c8027506be\\\",\\\"variantConditionsHash\\\":\\\"b84aefa2602380e4d3194f47c68ceb22:8f2a245a2a2a76b399b0cd6268977c2f\\\",\\\"pricingVariantHash\\\":\\\"57f7ffe7b10fae33102907c8f24b4e0d\\\"}]\"}",
+              "price": {
+                "amount": 56583,
+                "currency": "RUB"
+              },
+              "conditions": {
+                "fare_family": "Бизнес Оптимум",
+                "baggage": {
+                  "kg": 32,
+                  "pieces": 2
+                },
+                "cabin_baggage": {
+                  "kg": 15,
+                  "pieces": 1,
+                  "dimensions": "55 × 40 × 25"
+                },
+                "refundable": true,
+                "changeable": true,
+                "seat_selection": "available_free",
+                "business_hall_allowed": true,
+                "boarding_privileges": "free",
+                "exchange": {
+                  "available": true,
+                  "deadline_hours": 1
+                }
+              },
+              "service_class": "BUSINESS"
+            }
+          ],
+          "checkout_ref": {
+            "transport": "avia",
+            "is_round_trip": false,
+            "search_results_url": "https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75",
+            "offer_hash": "{\"Price\":12415,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"48cd047889db027ea0a337766f862906\\\",\\\"variantConditionsHash\\\":\\\"b84aefa2602380e4d3194f47c68ceb22:4a15ebaf82f14491e2bac3a776e17da0\\\",\\\"pricingVariantHash\\\":\\\"6dc5a508bbd4be2b12e8c33c1b71b4c7\\\"}]\"}",
+            "departure_geo_city_id": 2657260,
+            "arrival_geo_city_id": 2656915,
+            "departure_at": "2026-08-20T21:30:00+03:00",
+            "service_class": "ECONOMIC",
+            "departure_avia_id": "491",
+            "arrival_avia_id": "75",
+            "passengers_full": 1,
+            "passengers_child": 0,
+            "passengers_infant": 0
+          },
+          "review_summary": {
+            "rating": 9.25,
+            "review_count": 22870,
+            "label": "⭐ 9.25/10 · 22 870 отзывов",
+            "source": "offers-api.feedback",
+            "scope": "carrier",
+            "subject": "Аэрофлот",
+            "scale": 10,
+            "feedback_key": "1062"
           }
         }
       ],
@@ -1216,13 +1314,13 @@
         "modes_summary": {
           "avia": {
             "count": 8,
-            "min_price": 10535,
+            "min_price": 10704,
             "min_duration_min": 85
           },
           "railway": {
-            "count": 8,
-            "min_price": 3647.69,
-            "min_duration_min": 376,
+            "count": 7,
+            "min_price": 8403.82,
+            "min_duration_min": 237,
             "cashback": {
               "rate_pct": 3,
               "applies_to": "all_fares",

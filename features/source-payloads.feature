@@ -9,14 +9,14 @@ Feature: What the sources said, and what they did not
   Scenario: The catalogue answer is read into events the product understands
     Given the recorded catalogue answer for offline events on artificial intelligence
     When the answer is read
-    Then 20 events are understood
-    And the event "CNews Петербург 2026 — передовые технологии и кейсы России" is in Санкт-Петербург
+    Then 8 events are understood
+    And the event "Data Dojo 2026" is in Санкт-Петербург
 
   Scenario: A field the catalogue did not fill stays missing
     Given the recorded catalogue answer for offline events on artificial intelligence
     When the answer is read
-    Then the event "CNews Петербург 2026 — передовые технологии и кейсы России" has no venue
-    And the event "CNews Петербург 2026 — передовые технологии и кейсы России" has no opening time
+    Then the event "Data Dojo 2026" has no venue
+    And the event "XIII Международный форум технологического развития «Технопром-2026»" has no opening time
 
   Scenario: A field the catalogue did fill is kept
     Given the recorded catalogue answer for offline events on artificial intelligence

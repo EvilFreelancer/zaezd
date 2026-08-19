@@ -1,5 +1,7 @@
-# Deployment behind Traefik. Host-specific values (network name, certresolver, entrypoint)
-# belong in docker-compose.override.yaml, which is gitignored.
+# Deployment behind Traefik. The names differ between installations - one calls its TLS
+# entrypoint `websecure`, another `https` - so they are variables with the values this
+# deployment actually uses. Anything else host-specific belongs in docker-compose.override.yaml,
+# which is gitignored.
 services:
   zaezd:
     build: .
@@ -14,13 +16,15 @@ services:
     labels:
       traefik.enable: "true"
       traefik.http.routers.zaezd.rule: Host(`${ZAEZD_HOST:-zaezd.rpa.icu}`)
-      traefik.http.routers.zaezd.entrypoints: websecure
+      traefik.http.routers.zaezd.entrypoints: ${ZAEZD_ENTRYPOINT:-https}
       traefik.http.routers.zaezd.tls: "true"
-      traefik.http.routers.zaezd.tls.certresolver: letsencrypt
+      traefik.http.routers.zaezd.tls.certresolver: ${ZAEZD_CERTRESOLVER:-letsencrypt}
+      traefik.docker.network: ${ZAEZD_NETWORK:-traefik}
       traefik.http.services.zaezd.loadbalancer.server.port: "8080"
     networks:
       - traefik
 
 networks:
   traefik:
+    name: ${ZAEZD_NETWORK:-traefik}
     external: true

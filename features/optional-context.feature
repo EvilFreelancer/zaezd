@@ -33,7 +33,7 @@ Feature: The optional context, and the silence when there is none
   Scenario: A precise venue earns a walking time from the foot profile
     Given the venue is located precisely at the recorded venue
     When the walk from the recorded hotel is measured
-    Then the walk is 57 minutes
+    Then the walk is 9 minutes
 
   Scenario: The production calendar marks the days of a trip
     When the calendar is read for 2026-08-19 to 2026-08-23

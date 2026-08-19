@@ -1,10 +1,10 @@
 {
-  "recorded_at": "2026-08-19T11:31:57.818Z",
+  "recorded_at": "2026-08-19T13:15:36.240Z",
   "source": "tutu",
   "tool": "get_offer_details",
   "arguments": {
     "product_type": "hotels",
-    "offer_id": "9933959",
+    "offer_id": "8181037",
     "check_in": "2026-08-20",
     "check_out": "2026-08-21",
     "adults": 1
@@ -21,7 +21,7 @@
         "content": [
           {
             "type": "text",
-            "text": "{\"hotel\":{\"hotel_id\":\"9933959\",\"name\":\"Номера на Невском 111\",\"address\":\"Россия, г Санкт-Петербург, пр-кт Невский, д 111/3\",\"stars\":2,\"rating\":8.69,\"review_count\":1351,\"phones\":[],\"emails\":[],\"check_in_time\":\"14:00:00\",\"check_out_time\":\"12:00:00\",\"amenity_groups\":[{\"group_name\":\"Самые популярные удобства\",\"amenities\":[\"Бесплатный Wi-Fi\",\"Круглосуточная стойка регистрации\",\"Завтрак\",\"Можно с питомцами\",\"Курить нельзя везде\",\"Охрана\"]},{\"group_name\":\"Интернет\",\"amenities\":[\"Бесплатный Wi-Fi\",\"Бесплатный интернет\",\"Wi-Fi\",\"Интернет\"]},{\"group_name\":\"На территории\",\"amenities\":[\"Комната хранения\",\"Без лифтов\"]},{\"group_name\":\"Развлечения и досуг\",\"amenities\":[\"Экскурсии\"]},{\"group_name\":\"Питание\",\"amenities\":[\"Завтрак\",\"Бесплатный чай/кофе\",\"Набор для приготовления чая и кофе\",\"Стаканы\",\"Торговый автомат с едой и напитками\"]},{\"group_name\":\"Микроклимат\",\"amenities\":[\"Отопление\"]},{\"group_name\":\"Услуги\",\"amenities\":[\"Сейф\",\"Обслуживание номеров\",\"Сушилка для одежды\",\"Гладильные принадлежности\",\"Уборка\"]},{\"group_name\":\"Для работы\",\"amenities\":[\"Факс/ксерокс\",\"Ксерокс\"]},{\"group_name\":\"Техника и электроника\",\"amenities\":[\"Телевизор\",\"Телевизор с плоским экраном\",\"Телевизор в лобби\",\"Кабельное/спутниковое телевидение\",\"Утюг\",\"Фен\",\"Стиральная машина\",\"Микроволновка\",\"Чайник\",\"Телефон\"]},{\"group_name\":\"Удобства\",\"amenities\":[\"Санузел в номере\",\"Душ\",\"Душевая кабина\",\"Туалет\",\"Москитная сетка\"]},{\"group_name\":\"В ванной комнате\",\"amenities\":[\"Косметические средства\",\"Туалетные средства\",\"Мыло\",\"Тапочки\"]},{\"group_name\":\"Для питомцев\",\"amenities\":[\"Можно с питомцами\"]},{\"group_name\":\"Курение на территории\",\"amenities\":[\"Курить нельзя везде\",\"Отель для некурящих\"]},{\"group_name\":\"Транспорт\",\"amenities\":[\"Парковка по запросу\",\"Заказ такси\"]},{\"group_name\":\"Стойка регистрации\",\"amenities\":[\"Круглосуточная стойка регистрации\",\"Ускоренная регистрация заезда/выезда\",\"Индивидуальная регистрация заезда/выезда\",\"Ранняя регистрация заезда\",\"Поздняя регистрация выезда\",\"Регистрация иностранных граждан\",\"Счета и закрывающие документы\"]},{\"group_name\":\"Безопасность\",\"amenities\":[\"Охрана\",\"Видеонаблюдение\",\"Детектор дыма\",\"Огнетушитель\"]},{\"group_name\":\"Персонал говорит на этих языках\",\"amenities\":[\"Русский\",\"Английский\"]},{\"group_name\":\"Специальные номера\",\"amenities\":[\"Номера для некурящих\"]}],\"policy\":[{\"paragraphs\":[\"Цена дополнительного завтрака: 1,000.00 RUB на человека. Информация о типе питания, включенном в стоимость, указана в деталях тарифа.\"],\"title\":\"Питание\",\"type\":\"POLICY_TYPE_UNKNOWN\"},{\"paragraphs\":[\"Плата за дополнительную кровать: 1,300.00 RUB за ночь.\",\"Количество дополнительных кроватей зависит от категории номера. Необходимо ознакомиться с информацией о вместимости выбранного номера.\"],\"title\":\"Размещение с детьми и информация о дополнительных кроватях\",\"type\":\"POLICY_TYPE_UNKNOWN\"},{\"paragraphs\":[\"Необходимо внести депозит за размещение с домашними животными. Стоимость: 5,000.00 RUB с гостя за всё время пребывания.\",\"Если для въезда в страну вам требуется виза, ваш отель в большинстве случаев предоставит вам необходимые документы для ее получения. За более подробной информацией обращайтесь в отель, контактная информация указана в подтверждении бронирования. За эти услуги может взиматься дополнительная плата, даже в случае последующей отмены бронирования. Все договоренности осуществляются исключительно между вами и отелем.\"],\"title\":\"Особые условия проживания\",\"type\":\"POLICY_TYPE_UNKNOWN\"},{\"paragraphs\":[\"Требования к документам для заселения зависят от типа объекта размещения и применимых к нему правил. Для гостиниц и иных средств размещения могут приниматься паспорт РФ, заграничный паспорт или водительское удостоверение. Для квартир, апартаментов и иных объектов, где заселение или заключение договора осуществляется по правилам конкретного объекта, требования к документам определяются объектом размещения.\",\"Вход в отель осуществляется с улицы Полтавская, д. 3.\\r\",\"\\r\",\"После 00:00 заезд возможен только по предоплате в размере стоимости первой ночи проживания. Контактная информация указана в подтверждении бронирования.\\r\",\"\\r\",\"Дополнительное спальное место на раскладной кровати предоставляется по запросу, при наличии возможности и за дополнительную плату. С 01.04 по 30.09 и с 29.12 по 08.01 доплата составляет 1300.00 RUB в сутки. В остальные даты дополнительная кровать предоставляется бесплатно. При бронировании дополнительного места завтрак в стоимость не включён и оплачивается на месте. Стоимость завтрака — 1000.00 RUB.\\n\",\"\\r\",\"Возможно предоставление детской кровати в качестве дополнительного спального места. Ребёнок в возрасте от 0 до 17 лет размещается на основном месте бесплатно. При размещении ребёнка младше 7 лет на дополнительной кровати проживание предоставляется бесплатно. Максимальное количество дополнительных кроватей в номере — 1. Дополнительные кровати предоставляются по запросу и требуют подтверждения со стороны отеля.\\r\",\"\\r\",\"В отеле возможен гарантированный ранний заезд. Стоимость составляет 100% от стоимости суток, предшествующих заезду. Негарантированный ранний заезд предоставляется бесплатно с 08:00 при наличии свободных номеров.\\r\",\"\\r\",\"Поздний выезд до 17:00 оплачивается в размере 50% от стоимости суток выезда. Поздний выезд после 17:00 оплачивается в размере 100% от стоимости суток выезда.\\r\",\"\\r\",\"Возможно размещение с питомцем весом до 10 кг. Услуга оплачивается отдельно. Стоимость проживания с питомцем весом до 5 кг составляет 500.00 RUB в сутки, с питомцем от 5 до 10 кг — 1000.00 RUB в сутки. При заезде с животным взимается депозит, который возвращается при отсутствии повреждений в номере.\\r\",\"\\r\",\"Бизнес-путешественникам предоставляются отчётные документы.\\r\",\"\\r\",\"В объекте размещения в соответствии с внутренними правилами может взиматься плата за дополнительные услуги, не представленные на сайте. Подробности можно уточнить через отдел бронирования или администрацию.\"],\"title\":\"Дополнительно\",\"type\":\"POLICY_TYPE_UNKNOWN\"}],\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/3a8baab4-d42d-4892-aca9-92c880323b62/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/4f17fe0be9e578df6402745c18b93ae2.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/83a72d4b-d641-43f2-811d-5728b88d5057/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/145b198a48d26d9ac4cdc675366d2083.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/2528974a-0c57-4c8c-80ca-df7241b427c5/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/abc83cf61b6bb629549224207994631d.jpg\"],\"location\":{\"lat\":59.92809,\"lng\":30.37053,\"city_geo_id\":\"2656915\",\"city\":\"Санкт-Петербург\"},\"alias\":\"otel_nomera_na_nevskom_111\",\"review_summary\":{\"rating\":8.69,\"scale\":10,\"review_count\":1351,\"text\":\"Отлично\",\"source\":\"hotels-review-gateway\",\"scope\":\"hotel\",\"subject\":\"9933959\",\"color\":\"RATING_COLOR_HIGH\",\"aspects\":[{\"rating\":8.47,\"scale\":10,\"text\":\"Цена/Качество\",\"source\":\"hotels-review-gateway\",\"scope\":\"hotel_aspect\",\"color\":\"RATING_COLOR_HIGH\",\"label\":\"⭐ 8.47/10 · Цена/Качество\"},{\"rating\":8.73,\"scale\":10,\"text\":\"Чистота\",\"source\":\"hotels-review-gateway\",\"scope\":\"hotel_aspect\",\"color\":\"RATING_COLOR_HIGH\",\"label\":\"⭐ 8.73/10 · Чистота\"},{\"rating\":9.32,\"scale\":10,\"text\":\"Расположение\",\"source\":\"hotels-review-gateway\",\"scope\":\"hotel_aspect\",\"color\":\"RATING_COLOR_VERY_HIGH\",\"label\":\"⭐ 9.32/10 · Расположение\"},{\"rating\":8.26,\"scale\":10,\"text\":\"Комфорт\",\"source\":\"hotels-review-gateway\",\"scope\":\"hotel_aspect\",\"color\":\"RATING_COLOR_HIGH\",\"label\":\"⭐ 8.26/10 · Комфорт\"},{\"rating\":8.88,\"scale\":10,\"text\":\"Питание\",\"source\":\"hotels-review-gateway\",\"scope\":\"hotel_aspect\",\"color\":\"RATING_COLOR_HIGH\",\"label\":\"⭐ 8.88/10 · Питание\"},{\"rating\":8.68,\"scale\":10,\"text\":\"Обслуживание\",\"source\":\"hotels-review-gateway\",\"scope\":\"hotel_aspect\",\"color\":\"RATING_COLOR_HIGH\",\"label\":\"⭐ 8.68/10 · Обслуживание\"}],\"available_reviews_from_partners\":[],\"label\":\"⭐ 8.69/10 · Отлично · 1 351 отзыв\"},\"photos_total\":29},\"stay\":{\"check_in\":\"2026-08-20\",\"check_out\":\"2026-08-21\",\"nights\":1,\"guests\":{\"adults\":1,\"children_ages\":[]}},\"rooms\":[{\"room_name\":\"Двухместный номер Стандарт\",\"room_description\":\"• Двуспальная кровать\\n• Кровать queen size\\n\",\"room_amenities\":[{\"id\":\"1232\",\"name\":\"Ванная комната\",\"icon\":\"bath-bubbles\"},{\"id\":\"1214\",\"name\":\"Чайник\",\"icon\":\"kettle\"},{\"id\":\"1199\",\"name\":\"Фен\",\"icon\":\"hairdryer\"},{\"id\":\"1605\",\"name\":\"Светонепроницаемые шторы\",\"icon\":\"window-blind\"},{\"id\":\"1269\",\"name\":\"Тапочки\",\"icon\":\"slippers\"}],\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/edc5800c-7881-4825-b728-ad54f083f4a2/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/f0a278eb82b4eaaf5b71125d7cb07444.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/ebef8bc2-7b61-47ce-bf1c-b246e66f053e/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/0afc6be0720582e7eb441781d4bc1a58.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/c0072c27-f1b9-4b1f-810b-aaad12cf0f01/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/e7059e60ec484212a745ced5ba97e422.jpg\"],\"bed_summary\":\"Двуспальная кровать ・ Кровать queen size\",\"bed_type\":\"double\",\"view\":null,\"room_size_sqm\":null,\"max_occupancy\":null,\"room_property_items\":[{\"id\":\"room_property\",\"icon\":\"bed-double\",\"text\":\"Двуспальная кровать ・ Кровать queen size\"}],\"price_from\":{\"amount\":5446.0,\"currency\":\"RUB\",\"price_basis\":\"stay_total\"},\"rates\":[{\"offerpack_hash\":\"ee5362f6-e43d-485e-a219-95ed91e58be3\",\"price\":{\"amount\":5446.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":false,\"name\":\"Питание не включено\",\"type\":\"nomeal\"},\"breakfast_included\":false,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Питание не включено\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"e31f0bb6-0a7a-41ac-968a-cf99643dfce3\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"446c034d-c72d-4b3a-8a93-8e4c60f1716b\",\"price\":{\"amount\":8468.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак и ужин включены\",\"type\":\"halfboard\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак и ужин включены\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"1eeb5dfb-aabb-4afd-889f-ebfe9a176665\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"}],\"photos_total\":8},{\"room_name\":\"Одноместный номер Стандарт\",\"room_description\":\"• В главном здании\\n\",\"room_amenities\":[{\"id\":\"1232\",\"name\":\"Ванная комната\",\"icon\":\"bath-bubbles\"},{\"id\":\"1199\",\"name\":\"Фен\",\"icon\":\"hairdryer\"},{\"id\":\"1605\",\"name\":\"Светонепроницаемые шторы\",\"icon\":\"window-blind\"},{\"id\":\"1269\",\"name\":\"Тапочки\",\"icon\":\"slippers\"},{\"id\":\"1177\",\"name\":\"Телевизор\",\"icon\":\"tv\"}],\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/5fa997d9-20b7-4698-a651-e665d3ad7d6e/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/415a44eab919d4796810626b0ccfda54.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/44badf11-3b37-4d7c-b0f3-d50fc4364b25/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/e358923bdc8c4e94a645d1217a915803.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/7bb71516-c644-4f5a-bdf6-32225094498a/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/c6318e7c664a3ef1272a12199b1f1e21.jpg\"],\"bed_summary\":\"В главном здании\",\"bed_type\":null,\"view\":null,\"room_size_sqm\":null,\"max_occupancy\":null,\"room_property_items\":[{\"id\":\"room_property\",\"icon\":\"bed-double\",\"text\":\"В главном здании\"}],\"price_from\":{\"amount\":5871.0,\"currency\":\"RUB\",\"price_basis\":\"stay_total\"},\"rates\":[{\"offerpack_hash\":\"edd1680b-d1c1-4453-bcab-105d08ec847f\",\"price\":{\"amount\":5871.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":false,\"name\":\"Питание не включено\",\"type\":\"nomeal\"},\"breakfast_included\":false,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Питание не включено\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"cb229b59-c292-4e65-b315-f263ba34190b\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"290c215a-0a50-4d32-94bb-72fdd63dca07\",\"price\":{\"amount\":6744.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":false,\"name\":\"Питание не включено\",\"type\":\"nomeal\"},\"breakfast_included\":false,\"refundable\":true,\"free_cancellation\":true,\"free_cancellation_until\":\"2026-08-20T11:00:00Z\",\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Питание не включено\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена до 20 авг 11:00\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"622fea80-bd8f-455d-93bc-d0dfc464cd8c\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"6076f0f2-472c-478b-8f6e-8a422185741a\",\"price\":{\"amount\":6932.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак включён\",\"type\":\"breakfast\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"48906320-b000-408b-8dab-8b4447cdec82\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"40b171f5-8aa1-4eb6-ad35-a5e9845c7eee\",\"price\":{\"amount\":7156.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Ужин\",\"type\":\"dinner\"},\"breakfast_included\":null,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Ужин\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"baba81a9-f825-43ed-8f4c-6d8f29f8aa2f\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"5c789449-870a-4b94-b7f9-a92df910277c\",\"price\":{\"amount\":7805.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак включён\",\"type\":\"breakfast\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":true,\"free_cancellation_until\":\"2026-08-20T11:00:00Z\",\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена до 20 авг 11:00\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"6fde75bf-f12f-45b0-9093-2c626e5c8aa0\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"fadc971a-a786-4ee2-be1c-82b462999b07\",\"price\":{\"amount\":8029.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Ужин\",\"type\":\"dinner\"},\"breakfast_included\":null,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Ужин\"},{\"type\":\"policies\",\"text\":\"Возможен возврат с учетом правил отмены\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"2c21cb13-fdcd-45fe-b7d5-88c8f848326f\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"c8287a51-e14f-4ecf-b4ba-1c28aaf5f868\",\"price\":{\"amount\":8097.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак включён\",\"type\":\"breakfast\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"},{\"type\":\"policies\",\"text\":\"Возможен возврат с учетом правил отмены\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"0404992c-5b22-4794-9fd6-45107ffb2048\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"}],\"photos_total\":8},{\"room_name\":\"Двухместный номер Стандарт\",\"room_description\":\"• Двуспальная кровать\\n• Кровать queen size\\n\",\"room_amenities\":[{\"id\":\"1232\",\"name\":\"Ванная комната\",\"icon\":\"bath-bubbles\"},{\"id\":\"1214\",\"name\":\"Чайник\",\"icon\":\"kettle\"},{\"id\":\"1199\",\"name\":\"Фен\",\"icon\":\"hairdryer\"},{\"id\":\"1605\",\"name\":\"Светонепроницаемые шторы\",\"icon\":\"window-blind\"},{\"id\":\"1269\",\"name\":\"Тапочки\",\"icon\":\"slippers\"}],\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/edc5800c-7881-4825-b728-ad54f083f4a2/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/f0a278eb82b4eaaf5b71125d7cb07444.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/ebef8bc2-7b61-47ce-bf1c-b246e66f053e/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/0afc6be0720582e7eb441781d4bc1a58.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/c0072c27-f1b9-4b1f-810b-aaad12cf0f01/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/e7059e60ec484212a745ced5ba97e422.jpg\"],\"bed_summary\":\"Двуспальная кровать ・ Кровать queen size\",\"bed_type\":\"double\",\"view\":null,\"room_size_sqm\":null,\"max_occupancy\":null,\"room_property_items\":[{\"id\":\"room_property\",\"icon\":\"bed-double\",\"text\":\"Двуспальная кровать ・ Кровать queen size\"}],\"price_from\":{\"amount\":6677.0,\"currency\":\"RUB\",\"price_basis\":\"stay_total\"},\"rates\":[{\"offerpack_hash\":\"d05bbd3a-306e-4f25-b83e-ca687afaf4c5\",\"price\":{\"amount\":6677.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак включён\",\"type\":\"breakfast\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"b2ae7ab6-6932-43fb-9300-a24fe609a414\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"}],\"photos_total\":8},{\"room_name\":\"Двухместный номер Стандарт\",\"room_description\":\"• Двуспальная кровать\\n\",\"room_amenities\":[{\"id\":\"1232\",\"name\":\"Ванная комната\",\"icon\":\"bath-bubbles\"},{\"id\":\"1214\",\"name\":\"Чайник\",\"icon\":\"kettle\"},{\"id\":\"1199\",\"name\":\"Фен\",\"icon\":\"hairdryer\"},{\"id\":\"1605\",\"name\":\"Светонепроницаемые шторы\",\"icon\":\"window-blind\"},{\"id\":\"1269\",\"name\":\"Тапочки\",\"icon\":\"slippers\"}],\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/edc5800c-7881-4825-b728-ad54f083f4a2/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/f0a278eb82b4eaaf5b71125d7cb07444.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/ebef8bc2-7b61-47ce-bf1c-b246e66f053e/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/0afc6be0720582e7eb441781d4bc1a58.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/c0072c27-f1b9-4b1f-810b-aaad12cf0f01/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/e7059e60ec484212a745ced5ba97e422.jpg\"],\"bed_summary\":\"Двуспальная кровать\",\"bed_type\":\"double\",\"view\":null,\"room_size_sqm\":null,\"max_occupancy\":null,\"room_property_items\":[{\"id\":\"room_property\",\"icon\":\"bed-double\",\"text\":\"Двуспальная кровать\"}],\"price_from\":{\"amount\":6917.0,\"currency\":\"RUB\",\"price_basis\":\"stay_total\"},\"rates\":[{\"offerpack_hash\":\"25b564f2-beb7-4c53-8061-150b9af46323\",\"price\":{\"amount\":6917.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":false,\"name\":\"Питание не включено\",\"type\":\"nomeal\"},\"breakfast_included\":false,\"refundable\":true,\"free_cancellation\":true,\"free_cancellation_until\":\"2026-08-19T21:00:00Z\",\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Питание не включено\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена до 19 авг 21:00\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"87f6e5e1-23c5-4edc-b167-90e2552e3a9a\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"e546ca8d-39b8-4e59-9b71-d41d5210c19c\",\"price\":{\"amount\":8006.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак включён\",\"type\":\"breakfast\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":true,\"free_cancellation_until\":\"2026-08-19T21:00:00Z\",\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена до 19 авг 21:00\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"1723e074-8e8b-44f2-926a-651c77d563da\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"}],\"photos_total\":8},{\"room_name\":\"Трёхместный номер Семейный\",\"room_description\":\"• Двуспальная кровать\\n• Диван\\n\",\"room_amenities\":[{\"id\":\"1232\",\"name\":\"Ванная комната\",\"icon\":\"bath-bubbles\"},{\"id\":\"1214\",\"name\":\"Чайник\",\"icon\":\"kettle\"},{\"id\":\"1199\",\"name\":\"Фен\",\"icon\":\"hairdryer\"},{\"id\":\"1605\",\"name\":\"Светонепроницаемые шторы\",\"icon\":\"window-blind\"},{\"id\":\"1269\",\"name\":\"Тапочки\",\"icon\":\"slippers\"}],\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/19556599-ad1a-42eb-8d6a-d20568fc24ca/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/70eb654229aca7092abe0e2c8cc4f9f0.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/9ac72f94-1de8-4f6d-ae91-f671d844d35f/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/6d2aadf01ae495b4b494988dcdb9c258.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/3d307ef9-7530-4631-8bcb-67c712612ba6/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/ba7eca2edcba2f74ce9db7632e8ad144.jpg\"],\"bed_summary\":\"Двуспальная кровать ・ Диван\",\"bed_type\":\"double\",\"view\":null,\"room_size_sqm\":null,\"max_occupancy\":null,\"room_property_items\":[{\"id\":\"room_property\",\"icon\":\"bed-double\",\"text\":\"Двуспальная кровать ・ Диван\"}],\"price_from\":{\"amount\":7021.0,\"currency\":\"RUB\",\"price_basis\":\"stay_total\"},\"rates\":[{\"offerpack_hash\":\"16e32ae6-5af1-4bdb-90f3-3d598b7aed94\",\"price\":{\"amount\":7021.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":false,\"name\":\"Питание не включено\",\"type\":\"nomeal\"},\"breakfast_included\":false,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Питание не включено\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"fbfaaf01-ef5e-4a85-9d89-7d5ae5494dd0\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"3bfa3a4d-8780-4be7-93d2-8ed88b2a8c09\",\"price\":{\"amount\":8214.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак включён\",\"type\":\"breakfast\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"a0910379-7333-4163-baeb-cbfc45aefcda\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"5359f8fd-f631-4c16-bb34-e962f6784a13\",\"price\":{\"amount\":8214.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак включён\",\"type\":\"breakfast\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"de5c3e97-9a21-4364-a6a1-1d04a14a83a7\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"934de771-0b6e-4eb9-883e-a18587352e01\",\"price\":{\"amount\":10284.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак и ужин включены\",\"type\":\"halfboard\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак и ужин включены\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"a0fc35c1-6096-4b89-a38b-a96f13ed1fd7\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"}],\"photos_total\":15},{\"room_name\":\"Трёхместный номер Семейный\",\"room_description\":\"• 2 отдельные кровати\\n• Диван\\n\",\"room_amenities\":[{\"id\":\"1232\",\"name\":\"Ванная комната\",\"icon\":\"bath-bubbles\"},{\"id\":\"1214\",\"name\":\"Чайник\",\"icon\":\"kettle\"},{\"id\":\"1199\",\"name\":\"Фен\",\"icon\":\"hairdryer\"},{\"id\":\"1605\",\"name\":\"Светонепроницаемые шторы\",\"icon\":\"window-blind\"},{\"id\":\"1269\",\"name\":\"Тапочки\",\"icon\":\"slippers\"}],\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/19556599-ad1a-42eb-8d6a-d20568fc24ca/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/70eb654229aca7092abe0e2c8cc4f9f0.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/9ac72f94-1de8-4f6d-ae91-f671d844d35f/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/6d2aadf01ae495b4b494988dcdb9c258.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/3d307ef9-7530-4631-8bcb-67c712612ba6/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/ba7eca2edcba2f74ce9db7632e8ad144.jpg\"],\"bed_summary\":\"2 отдельные кровати ・ Диван\",\"bed_type\":\"twin\",\"view\":null,\"room_size_sqm\":null,\"max_occupancy\":null,\"room_property_items\":[{\"id\":\"room_property\",\"icon\":\"bed-double\",\"text\":\"2 отдельные кровати ・ Диван\"}],\"price_from\":{\"amount\":7021.0,\"currency\":\"RUB\",\"price_basis\":\"stay_total\"},\"rates\":[{\"offerpack_hash\":\"fe306a3f-4ecb-4c78-aa00-405cec0026fb\",\"price\":{\"amount\":7021.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":false,\"name\":\"Питание не включено\",\"type\":\"nomeal\"},\"breakfast_included\":false,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Питание не включено\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"24b4146c-9180-47cd-aead-07a0fd789ff4\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"27d007da-2470-46be-a205-96cd5a3290ca\",\"price\":{\"amount\":10284.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак и ужин включены\",\"type\":\"halfboard\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак и ужин включены\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"6f5b8e97-c532-4396-ab1c-8d276dce02be\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"}],\"photos_total\":15},{\"room_name\":\"Трёхместный номер Семейный\",\"room_description\":\"• В главном здании\\n\",\"room_amenities\":[{\"id\":\"1232\",\"name\":\"Ванная комната\",\"icon\":\"bath-bubbles\"},{\"id\":\"1214\",\"name\":\"Чайник\",\"icon\":\"kettle\"},{\"id\":\"1199\",\"name\":\"Фен\",\"icon\":\"hairdryer\"},{\"id\":\"1605\",\"name\":\"Светонепроницаемые шторы\",\"icon\":\"window-blind\"},{\"id\":\"1269\",\"name\":\"Тапочки\",\"icon\":\"slippers\"}],\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/19556599-ad1a-42eb-8d6a-d20568fc24ca/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/70eb654229aca7092abe0e2c8cc4f9f0.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/9ac72f94-1de8-4f6d-ae91-f671d844d35f/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/6d2aadf01ae495b4b494988dcdb9c258.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/3d307ef9-7530-4631-8bcb-67c712612ba6/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/ba7eca2edcba2f74ce9db7632e8ad144.jpg\"],\"bed_summary\":\"В главном здании\",\"bed_type\":null,\"view\":null,\"room_size_sqm\":null,\"max_occupancy\":null,\"room_property_items\":[{\"id\":\"room_property\",\"icon\":\"bed-double\",\"text\":\"В главном здании\"}],\"price_from\":{\"amount\":7569.0,\"currency\":\"RUB\",\"price_basis\":\"stay_total\"},\"rates\":[{\"offerpack_hash\":\"8501edf0-a0b0-4f8d-acec-2810a25da5e1\",\"price\":{\"amount\":7569.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":false,\"name\":\"Питание не включено\",\"type\":\"nomeal\"},\"breakfast_included\":false,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Питание не включено\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"9b9b9b0f-7c0e-4889-b6db-9e3b59287145\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"3c78ccd1-cb0a-4b8f-ac95-b716bec203b2\",\"price\":{\"amount\":8591.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак включён\",\"type\":\"breakfast\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"13743bd2-ef35-4ced-a14d-9a0e41c2892c\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"b7e83314-7a83-4222-a1cb-78bf037fc81b\",\"price\":{\"amount\":8656.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":false,\"name\":\"Питание не включено\",\"type\":\"nomeal\"},\"breakfast_included\":false,\"refundable\":true,\"free_cancellation\":true,\"free_cancellation_until\":\"2026-08-20T11:00:00Z\",\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Питание не включено\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена до 20 авг 11:00\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"487e3f03-ac79-4b7b-9521-8b135b5e28d9\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"135957d0-dfd3-450c-96f2-cd2176fb8093\",\"price\":{\"amount\":9712.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак включён\",\"type\":\"breakfast\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":true,\"free_cancellation_until\":\"2026-08-20T11:00:00Z\",\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена до 20 авг 11:00\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"31631665-9e9c-467e-b47c-178e90ba2bb9\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"e92f96f8-cb2b-4b02-9649-abec89a95f54\",\"price\":{\"amount\":9870.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак и ужин включены\",\"type\":\"halfboard\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак и ужин включены\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"32fa9d99-eaf1-47d1-b6cb-61fcec96c3bb\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"33595f2e-80d6-431f-86c7-2389bc3e9057\",\"price\":{\"amount\":10003.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак включён\",\"type\":\"breakfast\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"},{\"type\":\"policies\",\"text\":\"Возможен возврат с учетом правил отмены\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"fa6a7703-ec01-451c-aa5a-42faef001f0e\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"4401402f-3e1d-42b5-be20-dc4813345207\",\"price\":{\"amount\":10992.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак и ужин включены\",\"type\":\"halfboard\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак и ужин включены\"},{\"type\":\"policies\",\"text\":\"Возможен возврат с учетом правил отмены\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"1cf25a03-9711-4df2-980e-be28eacd30a5\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"}],\"photos_total\":15},{\"room_name\":\"Трёхместный номер Семейный\",\"room_description\":\"• Двуспальная кровать и односпальная кровать\\n\",\"room_amenities\":[{\"id\":\"1232\",\"name\":\"Ванная комната\",\"icon\":\"bath-bubbles\"},{\"id\":\"1214\",\"name\":\"Чайник\",\"icon\":\"kettle\"},{\"id\":\"1199\",\"name\":\"Фен\",\"icon\":\"hairdryer\"},{\"id\":\"1605\",\"name\":\"Светонепроницаемые шторы\",\"icon\":\"window-blind\"},{\"id\":\"1269\",\"name\":\"Тапочки\",\"icon\":\"slippers\"}],\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/19556599-ad1a-42eb-8d6a-d20568fc24ca/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/70eb654229aca7092abe0e2c8cc4f9f0.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/9ac72f94-1de8-4f6d-ae91-f671d844d35f/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/6d2aadf01ae495b4b494988dcdb9c258.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/3d307ef9-7530-4631-8bcb-67c712612ba6/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/ba7eca2edcba2f74ce9db7632e8ad144.jpg\"],\"bed_summary\":\"Двуспальная кровать и односпальная кровать\",\"bed_type\":\"double\",\"view\":null,\"room_size_sqm\":null,\"max_occupancy\":null,\"room_property_items\":[{\"id\":\"room_property\",\"icon\":\"bed-double\",\"text\":\"Двуспальная кровать и односпальная кровать\"}],\"price_from\":{\"amount\":7764.0,\"currency\":\"RUB\",\"price_basis\":\"stay_total\"},\"rates\":[{\"offerpack_hash\":\"de898a95-9dbc-45e6-becc-b73b23d18532\",\"price\":{\"amount\":7764.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":false,\"name\":\"Питание не включено\",\"type\":\"nomeal\"},\"breakfast_included\":false,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Питание не включено\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"e2ca8eb4-f9f1-42e0-8e0b-1b3cf1632f9e\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"b475b36d-bb2d-4651-8838-d1dfd3ce4762\",\"price\":{\"amount\":8812.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак включён\",\"type\":\"breakfast\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"6c49a2e4-5ca5-44e4-9323-ba9814d08773\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"063976e6-9102-4cc3-a85b-a1fd2ecb96ed\",\"price\":{\"amount\":8879.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":false,\"name\":\"Питание не включено\",\"type\":\"nomeal\"},\"breakfast_included\":false,\"refundable\":true,\"free_cancellation\":true,\"free_cancellation_until\":\"2026-08-19T21:00:00Z\",\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Питание не включено\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена до 19 авг 21:00\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"3d9b482c-4ea0-49fe-8214-19ccbcdc6db7\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"380de77d-0ba6-48b3-8c67-03d555bf5bec\",\"price\":{\"amount\":9963.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак включён\",\"type\":\"breakfast\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":true,\"free_cancellation_until\":\"2026-08-19T21:00:00Z\",\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена до 19 авг 21:00\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"2b910ab2-3dee-4d71-a13f-8b5e37f62fd5\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"}],\"photos_total\":15},{\"room_name\":\"Одноместный номер Стандарт\",\"room_description\":\"• В главном здании\\n\",\"room_amenities\":[{\"id\":\"1232\",\"name\":\"Ванная комната\",\"icon\":\"bath-bubbles\"},{\"id\":\"1199\",\"name\":\"Фен\",\"icon\":\"hairdryer\"},{\"id\":\"1605\",\"name\":\"Светонепроницаемые шторы\",\"icon\":\"window-blind\"},{\"id\":\"1269\",\"name\":\"Тапочки\",\"icon\":\"slippers\"},{\"id\":\"1177\",\"name\":\"Телевизор\",\"icon\":\"tv\"}],\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/5fa997d9-20b7-4698-a651-e665d3ad7d6e/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/415a44eab919d4796810626b0ccfda54.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/44badf11-3b37-4d7c-b0f3-d50fc4364b25/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/e358923bdc8c4e94a645d1217a915803.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/7bb71516-c644-4f5a-bdf6-32225094498a/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/c6318e7c664a3ef1272a12199b1f1e21.jpg\"],\"bed_summary\":\"В главном здании\",\"bed_type\":null,\"view\":null,\"room_size_sqm\":null,\"max_occupancy\":null,\"room_property_items\":[{\"id\":\"room_property\",\"icon\":\"bed-double\",\"text\":\"В главном здании\"}],\"price_from\":{\"amount\":8180.0,\"currency\":\"RUB\",\"price_basis\":\"stay_total\"},\"rates\":[{\"offerpack_hash\":\"87f325d0-ad10-4e23-8469-963f30b3da77\",\"price\":{\"amount\":8180.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак и ужин включены\",\"type\":\"halfboard\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак и ужин включены\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"4ab00d5b-6338-4e94-a21e-e89135469335\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"0b1b7f58-bddb-4830-b41b-c9ec76a8702e\",\"price\":{\"amount\":8471.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак и ужин включены\",\"type\":\"halfboard\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак и ужин включены\"},{\"type\":\"policies\",\"text\":\"Возможен возврат с учетом правил отмены\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"330807f0-44e2-47f7-8b96-9334cd4e2e95\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"a57dad55-ccfd-43a3-8a85-a0c47de08445\",\"price\":{\"amount\":9049.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак и ужин включены\",\"type\":\"halfboard\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак и ужин включены\"},{\"type\":\"policies\",\"text\":\"Возможен возврат с учетом правил отмены\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"1d7a5fe4-c651-42ff-8a30-124e8e4e4d1f\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"}],\"photos_total\":8},{\"room_name\":\"Трёхместный номер Семейный\",\"room_description\":\"• В главном здании\\n\",\"room_amenities\":[{\"id\":\"1232\",\"name\":\"Ванная комната\",\"icon\":\"bath-bubbles\"},{\"id\":\"1214\",\"name\":\"Чайник\",\"icon\":\"kettle\"},{\"id\":\"1199\",\"name\":\"Фен\",\"icon\":\"hairdryer\"},{\"id\":\"1605\",\"name\":\"Светонепроницаемые шторы\",\"icon\":\"window-blind\"},{\"id\":\"1269\",\"name\":\"Тапочки\",\"icon\":\"slippers\"}],\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/19556599-ad1a-42eb-8d6a-d20568fc24ca/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/70eb654229aca7092abe0e2c8cc4f9f0.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/9ac72f94-1de8-4f6d-ae91-f671d844d35f/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/6d2aadf01ae495b4b494988dcdb9c258.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/3d307ef9-7530-4631-8bcb-67c712612ba6/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/ba7eca2edcba2f74ce9db7632e8ad144.jpg\"],\"bed_summary\":\"В главном здании\",\"bed_type\":null,\"view\":null,\"room_size_sqm\":null,\"max_occupancy\":null,\"room_property_items\":[{\"id\":\"room_property\",\"icon\":\"bed-double\",\"text\":\"В главном здании\"}],\"price_from\":{\"amount\":8814.0,\"currency\":\"RUB\",\"price_basis\":\"stay_total\"},\"rates\":[{\"offerpack_hash\":\"21813850-521d-4a8c-89b1-4f40d7c3cdbd\",\"price\":{\"amount\":8814.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Ужин\",\"type\":\"dinner\"},\"breakfast_included\":null,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Ужин\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"b0ef3840-d208-4e90-85d0-2ac1cb95ba60\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"b5c1542e-ebf8-44bc-834c-bc2e4a81ccb1\",\"price\":{\"amount\":9936.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Ужин\",\"type\":\"dinner\"},\"breakfast_included\":null,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Ужин\"},{\"type\":\"policies\",\"text\":\"Возможен возврат с учетом правил отмены\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"a5590c66-3c99-40fe-b77f-41e16173b0e2\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"}],\"photos_total\":15}],\"filters_available\":[{\"id\":\"free_cancellation\",\"name\":\"Бесплатная отмена\",\"type\":\"button\",\"value\":null},{\"id\":\"meals_included\",\"name\":\"Питание\",\"type\":\"checkbox\",\"value\":{\"min\":0,\"max\":0,\"options\":[{\"id\":\"завтрак включён\",\"name\":\"завтрак включён\"},{\"id\":\"завтрак и ужин включены\",\"name\":\"завтрак и ужин включены\"},{\"id\":\"питание не включено\",\"name\":\"питание не включено\"},{\"id\":\"ужин\",\"name\":\"ужин\"}],\"default_id\":\"\"}},{\"id\":\"price\",\"name\":\"Цена\",\"type\":\"range\",\"value\":{\"min\":5446,\"max\":10992,\"options\":[],\"default_id\":\"\"}}]}"
+            "text": "{\"hotel\":{\"hotel_id\":\"8181037\",\"name\":\"Номера у Невы\",\"address\":\"Россия, г Санкт-Петербург, пр-кт Обуховской Обороны, д 11\",\"stars\":3,\"rating\":7.85,\"review_count\":136,\"phones\":[],\"emails\":[],\"check_in_time\":\"14:00:00\",\"check_out_time\":\"12:00:00\",\"amenity_groups\":[{\"group_name\":\"Самые популярные удобства\",\"amenities\":[\"Wi-Fi\",\"Можно с питомцами\"]},{\"group_name\":\"Интернет\",\"amenities\":[\"Wi-Fi\"]},{\"group_name\":\"Микроклимат\",\"amenities\":[\"Отопление\"]},{\"group_name\":\"Услуги\",\"amenities\":[\"Кулер на этаже\",\"Уборка\"]},{\"group_name\":\"Техника и электроника\",\"amenities\":[\"Телевизор с плоским экраном\",\"Кабельное/спутниковое телевидение\",\"Фен\"]},{\"group_name\":\"Удобства\",\"amenities\":[\"Ванная комната\",\"Санузел в номере\",\"Душ\",\"Туалет\"]},{\"group_name\":\"В ванной комнате\",\"amenities\":[\"Гигиенические средства\",\"Косметические средства\",\"Туалетные средства\",\"Мыло\",\"Тапочки\"]},{\"group_name\":\"Для питомцев\",\"amenities\":[\"Можно с питомцами\"]},{\"group_name\":\"Специальные номера\",\"amenities\":[\"Номера для некурящих\"]}],\"policy\":[{\"paragraphs\":[\"Цена дополнительного завтрака: 700.00 RUB на человека. Информация о типе питания, включенном в стоимость, указана в деталях тарифа.\"],\"title\":\"Питание\",\"type\":\"POLICY_TYPE_UNKNOWN\"},{\"paragraphs\":[\"Необходимо внести депозит за проживание с домашним животным. Стоимость: 5,000.00 RUB за номер за всё время пребывания.\",\"Если для въезда в страну вам требуется виза, ваш отель в большинстве случаев предоставит вам необходимые документы для ее получения. За более подробной информацией обращайтесь в отель, контактная информация указана в подтверждении бронирования. За эти услуги может взиматься дополнительная плата, даже в случае последующей отмены бронирования. Все договоренности осуществляются исключительно между вами и отелем.\"],\"title\":\"Особые условия проживания\",\"type\":\"POLICY_TYPE_UNKNOWN\"},{\"paragraphs\":[\"Требования к документам для заселения зависят от типа объекта размещения и применимых к нему правил. Для гостиниц и иных средств размещения могут приниматься паспорт РФ, заграничный паспорт или водительское удостоверение. Для квартир, апартаментов и иных объектов, где заселение или заключение договора осуществляется по правилам конкретного объекта, требования к документам определяются объектом размещения.\",\"Завтраки в ланчбоксах доступны в нескольких вариантах. Заказ проводится через администрацию или отдел бронирования до 19:00. Питание предоставляется на следующий день.\\r\",\"\\r\",\"Дополнительное спальное место на раскладной кровати предоставляется по запросу и при наличии возможности за дополнительную плату. С 01.04 по 30.09 и с 29.12 по 08.01 размер доплаты составляет 1500.00 RUB в сутки, в остальные даты дополнительная кровать предоставляется бесплатно. При бронировании дополнительного места завтрак не включён и оплачивается отдельно.\\r\",\"\\r\",\"Ребёнок в возрасте от 0 до 17 лет размещается на свободном основном месте бесплатно.\\r\",\"\\r\",\"Максимальное количество дополнительных кроватей в номере — 1. Дополнительные кровати предоставляются по запросу и требуют подтверждения со стороны отеля.\\r\",\"\\r\",\"Возможно размещение с питомцами весом до 10 кг. Данная услуга оплачивается отдельно. Стоимость размещения питомца весом до 5 кг составляет 500.00 RUB в сутки, питомца от 5 до 10 кг — 1000.00 RUB в сутки. При заезде с животными взимается депозит, который возвращается при условии, что в номере ничего не повреждено.\\r\",\"\\r\",\"В отеле возможен гарантированный ранний заезд. Стоимость составляет 100% от стоимости суток, предшествующих заезду.\\r\",\"Услуга негарантированного раннего заезда предоставляется бесплатно с 08:00 при наличии свободных номеров.\\r\",\"\\r\",\"Поздний выезд до 17:00 оплачивается в размере 50% от стоимости суток выезда. Поздний выезд после 17:00 оплачивается в размере 100% от стоимости суток выезда.\\r\",\"\\r\",\"Бизнес-путешественникам предоставляются отчётные документы.\\r\",\"\\r\",\"После 00:00 заезд возможен только по предоплате в размере стоимости первой ночи проживания.\\r\",\"\\r\",\"Отель предоставляет регистрацию для иностранных граждан.\\r\",\"\\r\",\"В объекте размещения, согласно его внутренним правилам, может взиматься плата за дополнительные услуги, не представленные на сайте. Подробности можно уточнить через отдел бронирования или администрацию. Контактная информация указана в подтверждении бронирования.\"],\"title\":\"Дополнительно\",\"type\":\"POLICY_TYPE_UNKNOWN\"}],\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/ebf7ecd0-590d-4466-a722-d6350f6cced7/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/a299aabd7b89700a1811a7642bfaa1fd.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/c2ee2a22-9b8f-474a-9c91-84c4051427af/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/f9fcecdf8e407d9d9429490158d1e028.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/540b1aeb-e7de-4829-853d-73be8ddd8555/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/86ecf3794768eccf92c83704478a281b.jpg\"],\"location\":{\"lat\":59.91768,\"lng\":30.398684,\"city_geo_id\":\"2656915\",\"city\":\"Санкт-Петербург\"},\"alias\":\"otel_art_deko_nevsky\",\"review_summary\":{\"rating\":7.85,\"scale\":10,\"review_count\":136,\"text\":\"Хорошо\",\"source\":\"hotels-review-gateway\",\"scope\":\"hotel\",\"subject\":\"8181037\",\"color\":\"RATING_COLOR_HIGH\",\"aspects\":[{\"rating\":8.61,\"scale\":10,\"text\":\"Цена/Качество\",\"source\":\"hotels-review-gateway\",\"scope\":\"hotel_aspect\",\"color\":\"RATING_COLOR_HIGH\",\"label\":\"⭐ 8.61/10 · Цена/Качество\"},{\"rating\":8.4,\"scale\":10,\"text\":\"Чистота\",\"source\":\"hotels-review-gateway\",\"scope\":\"hotel_aspect\",\"color\":\"RATING_COLOR_HIGH\",\"label\":\"⭐ 8.4/10 · Чистота\"},{\"rating\":8.86,\"scale\":10,\"text\":\"Расположение\",\"source\":\"hotels-review-gateway\",\"scope\":\"hotel_aspect\",\"color\":\"RATING_COLOR_HIGH\",\"label\":\"⭐ 8.86/10 · Расположение\"},{\"rating\":8.48,\"scale\":10,\"text\":\"Комфорт\",\"source\":\"hotels-review-gateway\",\"scope\":\"hotel_aspect\",\"color\":\"RATING_COLOR_HIGH\",\"label\":\"⭐ 8.48/10 · Комфорт\"},{\"rating\":8.84,\"scale\":10,\"text\":\"Питание\",\"source\":\"hotels-review-gateway\",\"scope\":\"hotel_aspect\",\"color\":\"RATING_COLOR_HIGH\",\"label\":\"⭐ 8.84/10 · Питание\"},{\"rating\":8.59,\"scale\":10,\"text\":\"Обслуживание\",\"source\":\"hotels-review-gateway\",\"scope\":\"hotel_aspect\",\"color\":\"RATING_COLOR_HIGH\",\"label\":\"⭐ 8.59/10 · Обслуживание\"}],\"available_reviews_from_partners\":[],\"label\":\"⭐ 7.85/10 · Хорошо · 136 отзывов\"},\"photos_total\":29},\"stay\":{\"check_in\":\"2026-08-20\",\"check_out\":\"2026-08-21\",\"nights\":1,\"guests\":{\"adults\":1,\"children_ages\":[]}},\"rooms\":[{\"room_name\":\"Одноместный номер Стандартный\",\"room_description\":\"• Односпальная кровать\\n\",\"room_amenities\":[{\"id\":\"1232\",\"name\":\"Ванная комната\",\"icon\":\"bath-bubbles\"},{\"id\":\"1199\",\"name\":\"Фен\",\"icon\":\"hairdryer\"},{\"id\":\"1269\",\"name\":\"Тапочки\",\"icon\":\"slippers\"},{\"id\":\"1177\",\"name\":\"Телевизор\",\"icon\":\"tv\"},{\"id\":\"1277\",\"name\":\"Туалетные принадлежности\",\"icon\":\"drop\"}],\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/dd4f218d-17d1-4f4d-975c-fdbbbfe8397f/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/2bf10965156556ccb2cd9c4018a97b6e.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/401624d0-d500-4af7-8d9f-e6ce268c539e/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/44c43db5725a43d092b61470342a95b4.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/f659123b-2ba8-48a9-b333-273d4bb0fefd/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/896fb5b3e7b86f4bdb4a624bd4375f4a.jpg\"],\"bed_summary\":\"Односпальная кровать\",\"bed_type\":\"single\",\"view\":null,\"room_size_sqm\":null,\"max_occupancy\":null,\"room_property_items\":[{\"id\":\"room_property\",\"icon\":\"bed-double\",\"text\":\"Односпальная кровать\"}],\"price_from\":{\"amount\":2910.0,\"currency\":\"RUB\",\"price_basis\":\"stay_total\"},\"rates\":[{\"offerpack_hash\":\"2089829c-6609-40b0-90bd-673f4a695c42\",\"price\":{\"amount\":2910.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":false,\"name\":\"Питание не включено\",\"type\":\"nomeal\"},\"breakfast_included\":false,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Питание не включено\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"fae7db96-058c-4936-9e7e-8c0798c868c7\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"56562a38-09c0-42f1-bb6f-acd3ae142fed\",\"price\":{\"amount\":3785.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак включён\",\"type\":\"breakfast\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"0c35d29b-214c-449a-83c7-2a2a36e7e3ba\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"}],\"photos_total\":5},{\"room_name\":\"Двухместный номер Стандартный\",\"room_description\":\"• Двуспальная кровать\\n\",\"room_amenities\":[{\"id\":\"1232\",\"name\":\"Ванная комната\",\"icon\":\"bath-bubbles\"},{\"id\":\"1199\",\"name\":\"Фен\",\"icon\":\"hairdryer\"},{\"id\":\"1269\",\"name\":\"Тапочки\",\"icon\":\"slippers\"},{\"id\":\"1177\",\"name\":\"Телевизор\",\"icon\":\"tv\"},{\"id\":\"1277\",\"name\":\"Туалетные принадлежности\",\"icon\":\"drop\"}],\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/66a50d57-e316-402e-b2a5-334cad00d02d/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/62ab02a9190391814c9d4ea0e4147263.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/e4f72dec-46ae-4219-88fe-c305c23bac75/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/3d9b5b383ae58bcff6b01df4c306d350.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/45dd0eba-6882-485d-a4f5-de462b118449/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/9926035e4a55e2bc162f9d6b0307c91c.jpg\"],\"bed_summary\":\"Двуспальная кровать\",\"bed_type\":\"double\",\"view\":null,\"room_size_sqm\":null,\"max_occupancy\":null,\"room_property_items\":[{\"id\":\"room_property\",\"icon\":\"bed-double\",\"text\":\"Двуспальная кровать\"}],\"price_from\":{\"amount\":3103.0,\"currency\":\"RUB\",\"price_basis\":\"stay_total\"},\"rates\":[{\"offerpack_hash\":\"eb636ae9-9cfb-42f1-b61e-3d0ae49fefc2\",\"price\":{\"amount\":3103.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":false,\"name\":\"Питание не включено\",\"type\":\"nomeal\"},\"breakfast_included\":false,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Питание не включено\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"47b33669-b86f-4ab4-8d30-293e2a1a5fe3\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"d87f4778-23c4-42e8-8b2f-3970be487e45\",\"price\":{\"amount\":3979.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак включён\",\"type\":\"breakfast\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"2a9f8dea-3c2b-4eea-b07d-1699eb3c270b\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"}],\"photos_total\":18},{\"room_name\":\"Одноместный номер Стандартный\",\"room_description\":\"• Без окна, в главном здании\\n\",\"room_amenities\":[{\"id\":\"1232\",\"name\":\"Ванная комната\",\"icon\":\"bath-bubbles\"},{\"id\":\"1199\",\"name\":\"Фен\",\"icon\":\"hairdryer\"},{\"id\":\"1269\",\"name\":\"Тапочки\",\"icon\":\"slippers\"},{\"id\":\"1177\",\"name\":\"Телевизор\",\"icon\":\"tv\"},{\"id\":\"1277\",\"name\":\"Туалетные принадлежности\",\"icon\":\"drop\"}],\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/dd4f218d-17d1-4f4d-975c-fdbbbfe8397f/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/2bf10965156556ccb2cd9c4018a97b6e.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/401624d0-d500-4af7-8d9f-e6ce268c539e/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/44c43db5725a43d092b61470342a95b4.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/f659123b-2ba8-48a9-b333-273d4bb0fefd/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/896fb5b3e7b86f4bdb4a624bd4375f4a.jpg\"],\"bed_summary\":\"Без окна, в главном здании\",\"bed_type\":null,\"view\":null,\"room_size_sqm\":null,\"max_occupancy\":null,\"room_property_items\":[{\"id\":\"room_property\",\"icon\":\"bed-double\",\"text\":\"Без окна, в главном здании\"}],\"price_from\":{\"amount\":3135.0,\"currency\":\"RUB\",\"price_basis\":\"stay_total\"},\"rates\":[{\"offerpack_hash\":\"36bcd30d-bad9-41a6-8c52-815df10f3d82\",\"price\":{\"amount\":3135.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":false,\"name\":\"Питание не включено\",\"type\":\"nomeal\"},\"breakfast_included\":false,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Питание не включено\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"faea8a20-b272-4065-80b3-9c727794be27\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"e28b0ade-520f-4192-908e-63b45223e460\",\"price\":{\"amount\":3633.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":false,\"name\":\"Питание не включено\",\"type\":\"nomeal\"},\"breakfast_included\":false,\"refundable\":true,\"free_cancellation\":true,\"free_cancellation_until\":\"2026-08-20T11:00:00Z\",\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Питание не включено\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена до 20 авг 11:00\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"395f02b1-175d-441a-8c8a-3d8a7eb6fbeb\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"c926ac55-2828-4355-93d3-e50b9b34c93f\",\"price\":{\"amount\":3895.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак включён\",\"type\":\"breakfast\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"5e38a12e-295e-4f6c-8caf-aba79ffa1d31\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"438e4c5a-9c44-4136-a52a-af18c593ed6e\",\"price\":{\"amount\":4363.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак включён\",\"type\":\"breakfast\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":true,\"free_cancellation_until\":\"2026-08-20T11:00:00Z\",\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена до 20 авг 11:00\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"4964c979-d90e-484a-97e4-aab49e5409a0\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"38e672bf-402d-4529-b73b-1f3a5b60ad82\",\"price\":{\"amount\":4564.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак включён\",\"type\":\"breakfast\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"},{\"type\":\"policies\",\"text\":\"Возможен возврат с учетом правил отмены\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"1396a818-e283-4fcf-9a98-1b9fa9df17b6\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"}],\"photos_total\":5},{\"room_name\":\"Двухместный номер Улучшенный\",\"room_description\":\"• Двуспальная кровать\\n\",\"room_amenities\":[{\"id\":\"1232\",\"name\":\"Ванная комната\",\"icon\":\"bath-bubbles\"},{\"id\":\"1199\",\"name\":\"Фен\",\"icon\":\"hairdryer\"},{\"id\":\"1269\",\"name\":\"Тапочки\",\"icon\":\"slippers\"},{\"id\":\"1177\",\"name\":\"Телевизор\",\"icon\":\"tv\"},{\"id\":\"1277\",\"name\":\"Туалетные принадлежности\",\"icon\":\"drop\"}],\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/0aa04bad-1e96-4f4e-a699-64671ef9935d/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/173bc962bf269815b78bb26ef0d1b59d.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/398a9d72-e11a-46e1-b178-6451f6558ea7/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/90e5926f439641d5340e0cee1ffd776f.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/a601902e-c2f8-4ec7-99ab-db6674b449c5/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/9e658b8b783366b3f009b182981a502e.jpg\"],\"bed_summary\":\"Двуспальная кровать\",\"bed_type\":\"double\",\"view\":null,\"room_size_sqm\":null,\"max_occupancy\":null,\"room_property_items\":[{\"id\":\"room_property\",\"icon\":\"bed-double\",\"text\":\"Двуспальная кровать\"}],\"price_from\":{\"amount\":3325.0,\"currency\":\"RUB\",\"price_basis\":\"stay_total\"},\"rates\":[{\"offerpack_hash\":\"ac72de4a-a5d1-4090-9221-95bcf9580b27\",\"price\":{\"amount\":3325.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":false,\"name\":\"Питание не включено\",\"type\":\"nomeal\"},\"breakfast_included\":false,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Питание не включено\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"2179bc0f-798a-4af3-b302-8122ca5846d2\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"2d135772-67f3-4b35-a909-3acc08018aa9\",\"price\":{\"amount\":4172.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак включён\",\"type\":\"breakfast\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"131e7f1d-cca4-48ad-8e95-34f43d975dd1\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"}],\"photos_total\":25},{\"room_name\":\"Двухместный номер Улучшенный\",\"room_description\":\"• 2 отдельные кровати\\n\",\"room_amenities\":[{\"id\":\"1232\",\"name\":\"Ванная комната\",\"icon\":\"bath-bubbles\"},{\"id\":\"1199\",\"name\":\"Фен\",\"icon\":\"hairdryer\"},{\"id\":\"1269\",\"name\":\"Тапочки\",\"icon\":\"slippers\"},{\"id\":\"1177\",\"name\":\"Телевизор\",\"icon\":\"tv\"},{\"id\":\"1277\",\"name\":\"Туалетные принадлежности\",\"icon\":\"drop\"}],\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/4bb59651-81e7-4131-b34e-8c5484a6408f/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/b48ba9e91e5c146c9e7b5972e7ef2206.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/7e137f39-2f50-4b83-a6d0-02a063394960/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/621b6ca513aec8d95ef46e0dc6f02383.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/f5ce20d9-7d44-4f5b-a022-2d6aebcaea59/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/e93b3e12f835c411a533546562c64dbd.jpg\"],\"bed_summary\":\"2 отдельные кровати\",\"bed_type\":\"twin\",\"view\":null,\"room_size_sqm\":null,\"max_occupancy\":null,\"room_property_items\":[{\"id\":\"room_property\",\"icon\":\"bed-double\",\"text\":\"2 отдельные кровати\"}],\"price_from\":{\"amount\":3325.0,\"currency\":\"RUB\",\"price_basis\":\"stay_total\"},\"rates\":[{\"offerpack_hash\":\"3fb9dd90-7c05-484f-af0b-b597c1c1f909\",\"price\":{\"amount\":3325.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":false,\"name\":\"Питание не включено\",\"type\":\"nomeal\"},\"breakfast_included\":false,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Питание не включено\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"3cb64575-9db0-4f96-b391-1b679306eb1e\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"a8caeb2a-1060-4c69-9fc4-8dc668a7be8b\",\"price\":{\"amount\":4172.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак включён\",\"type\":\"breakfast\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"b67c2c6b-1263-4a2a-be62-085da3b806ea\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"}],\"photos_total\":15},{\"room_name\":\"Одноместный номер Стандартный\",\"room_description\":\"• В главном здании\\n\",\"room_amenities\":[{\"id\":\"1232\",\"name\":\"Ванная комната\",\"icon\":\"bath-bubbles\"},{\"id\":\"1199\",\"name\":\"Фен\",\"icon\":\"hairdryer\"},{\"id\":\"1269\",\"name\":\"Тапочки\",\"icon\":\"slippers\"},{\"id\":\"1177\",\"name\":\"Телевизор\",\"icon\":\"tv\"},{\"id\":\"1277\",\"name\":\"Туалетные принадлежности\",\"icon\":\"drop\"}],\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/dd4f218d-17d1-4f4d-975c-fdbbbfe8397f/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/2bf10965156556ccb2cd9c4018a97b6e.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/401624d0-d500-4af7-8d9f-e6ce268c539e/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/44c43db5725a43d092b61470342a95b4.jpg\",\"https://cdn2.tu-tu.ru/imghub/view/f659123b-2ba8-48a9-b333-273d4bb0fefd/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/896fb5b3e7b86f4bdb4a624bd4375f4a.jpg\"],\"bed_summary\":\"В главном здании\",\"bed_type\":null,\"view\":null,\"room_size_sqm\":null,\"max_occupancy\":null,\"room_property_items\":[{\"id\":\"room_property\",\"icon\":\"bed-double\",\"text\":\"В главном здании\"}],\"price_from\":{\"amount\":3373.0,\"currency\":\"RUB\",\"price_basis\":\"stay_total\"},\"rates\":[{\"offerpack_hash\":\"5151ae66-b660-4d70-bdff-3b33eea039ca\",\"price\":{\"amount\":3373.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":false,\"name\":\"Питание не включено\",\"type\":\"nomeal\"},\"breakfast_included\":false,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Питание не включено\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"f59705d7-9155-4358-a4ee-f09ba229bd8e\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"776b5888-5f75-413c-8404-001d2f679410\",\"price\":{\"amount\":3872.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":false,\"name\":\"Питание не включено\",\"type\":\"nomeal\"},\"breakfast_included\":false,\"refundable\":true,\"free_cancellation\":true,\"free_cancellation_until\":\"2026-08-20T11:00:00Z\",\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Питание не включено\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена до 20 авг 11:00\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"334be2ec-922d-4b93-a0fb-525a53077140\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"a8555eb1-e396-42c1-9ea9-4031718112d1\",\"price\":{\"amount\":4103.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак включён\",\"type\":\"breakfast\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"},{\"type\":\"policies\",\"text\":\"При отмене бронирования стоимость не возвращается\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"504b1e9d-5e12-4ba2-9e1e-8e48a6e16663\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"c99d4b0d-94bd-4b3c-bcbe-3db76ec6c712\",\"price\":{\"amount\":4603.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак включён\",\"type\":\"breakfast\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":true,\"free_cancellation_until\":\"2026-08-20T11:00:00Z\",\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена до 20 авг 11:00\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"849c2818-7375-45d5-a24f-c2a9c0a87612\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"},{\"offerpack_hash\":\"86e6d023-7f44-414e-9eb5-01058a603d2e\",\"price\":{\"amount\":4804.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"meal\":{\"included\":true,\"name\":\"Завтрак включён\",\"type\":\"breakfast\"},\"breakfast_included\":true,\"refundable\":true,\"free_cancellation\":false,\"free_cancellation_until\":null,\"pay_at_hotel\":null,\"pay_online\":true,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"},{\"type\":\"policies\",\"text\":\"Возможен возврат с учетом правил отмены\"},{\"type\":\"payment\",\"text\":\"Оплата онлайн\"}],\"is_business_trip\":false,\"id\":\"7d14506f-f287-4d0a-842d-aa498f65431b\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1\"}],\"photos_total\":5}],\"filters_available\":[{\"id\":\"free_cancellation\",\"name\":\"Бесплатная отмена\",\"type\":\"button\",\"value\":null},{\"id\":\"meals_included\",\"name\":\"Питание\",\"type\":\"checkbox\",\"value\":{\"min\":0,\"max\":0,\"options\":[{\"id\":\"завтрак включён\",\"name\":\"завтрак включён\"},{\"id\":\"питание не включено\",\"name\":\"питание не включено\"}],\"default_id\":\"\"}},{\"id\":\"price\",\"name\":\"Цена\",\"type\":\"range\",\"value\":{\"min\":2910,\"max\":4804,\"options\":[],\"default_id\":\"\"}}]}"
           }
         ],
         "isError": false
@@ -29,12 +29,12 @@
     },
     "payload": {
       "hotel": {
-        "hotel_id": "9933959",
-        "name": "Номера на Невском 111",
-        "address": "Россия, г Санкт-Петербург, пр-кт Невский, д 111/3",
-        "stars": 2,
-        "rating": 8.69,
-        "review_count": 1351,
+        "hotel_id": "8181037",
+        "name": "Номера у Невы",
+        "address": "Россия, г Санкт-Петербург, пр-кт Обуховской Обороны, д 11",
+        "stars": 3,
+        "rating": 7.85,
+        "review_count": 136,
         "phones": [],
         "emails": [],
         "check_in_time": "14:00:00",
@@ -43,44 +43,14 @@
           {
             "group_name": "Самые популярные удобства",
             "amenities": [
-              "Бесплатный Wi-Fi",
-              "Круглосуточная стойка регистрации",
-              "Завтрак",
-              "Можно с питомцами",
-              "Курить нельзя везде",
-              "Охрана"
+              "Wi-Fi",
+              "Можно с питомцами"
             ]
           },
           {
             "group_name": "Интернет",
             "amenities": [
-              "Бесплатный Wi-Fi",
-              "Бесплатный интернет",
-              "Wi-Fi",
-              "Интернет"
-            ]
-          },
-          {
-            "group_name": "На территории",
-            "amenities": [
-              "Комната хранения",
-              "Без лифтов"
-            ]
-          },
-          {
-            "group_name": "Развлечения и досуг",
-            "amenities": [
-              "Экскурсии"
-            ]
-          },
-          {
-            "group_name": "Питание",
-            "amenities": [
-              "Завтрак",
-              "Бесплатный чай/кофе",
-              "Набор для приготовления чая и кофе",
-              "Стаканы",
-              "Торговый автомат с едой и напитками"
+              "Wi-Fi"
             ]
           },
           {
@@ -92,48 +62,31 @@
           {
             "group_name": "Услуги",
             "amenities": [
-              "Сейф",
-              "Обслуживание номеров",
-              "Сушилка для одежды",
-              "Гладильные принадлежности",
+              "Кулер на этаже",
               "Уборка"
-            ]
-          },
-          {
-            "group_name": "Для работы",
-            "amenities": [
-              "Факс/ксерокс",
-              "Ксерокс"
             ]
           },
           {
             "group_name": "Техника и электроника",
             "amenities": [
-              "Телевизор",
               "Телевизор с плоским экраном",
-              "Телевизор в лобби",
               "Кабельное/спутниковое телевидение",
-              "Утюг",
-              "Фен",
-              "Стиральная машина",
-              "Микроволновка",
-              "Чайник",
-              "Телефон"
+              "Фен"
             ]
           },
           {
             "group_name": "Удобства",
             "amenities": [
+              "Ванная комната",
               "Санузел в номере",
               "Душ",
-              "Душевая кабина",
-              "Туалет",
-              "Москитная сетка"
+              "Туалет"
             ]
           },
           {
             "group_name": "В ванной комнате",
             "amenities": [
+              "Гигиенические средства",
               "Косметические средства",
               "Туалетные средства",
               "Мыло",
@@ -147,48 +100,6 @@
             ]
           },
           {
-            "group_name": "Курение на территории",
-            "amenities": [
-              "Курить нельзя везде",
-              "Отель для некурящих"
-            ]
-          },
-          {
-            "group_name": "Транспорт",
-            "amenities": [
-              "Парковка по запросу",
-              "Заказ такси"
-            ]
-          },
-          {
-            "group_name": "Стойка регистрации",
-            "amenities": [
-              "Круглосуточная стойка регистрации",
-              "Ускоренная регистрация заезда/выезда",
-              "Индивидуальная регистрация заезда/выезда",
-              "Ранняя регистрация заезда",
-              "Поздняя регистрация выезда",
-              "Регистрация иностранных граждан",
-              "Счета и закрывающие документы"
-            ]
-          },
-          {
-            "group_name": "Безопасность",
-            "amenities": [
-              "Охрана",
-              "Видеонаблюдение",
-              "Детектор дыма",
-              "Огнетушитель"
-            ]
-          },
-          {
-            "group_name": "Персонал говорит на этих языках",
-            "amenities": [
-              "Русский",
-              "Английский"
-            ]
-          },
-          {
             "group_name": "Специальные номера",
             "amenities": [
               "Номера для некурящих"
@@ -198,22 +109,14 @@
         "policy": [
           {
             "paragraphs": [
-              "Цена дополнительного завтрака: 1,000.00 RUB на человека. Информация о типе питания, включенном в стоимость, указана в деталях тарифа."
+              "Цена дополнительного завтрака: 700.00 RUB на человека. Информация о типе питания, включенном в стоимость, указана в деталях тарифа."
             ],
             "title": "Питание",
             "type": "POLICY_TYPE_UNKNOWN"
           },
           {
             "paragraphs": [
-              "Плата за дополнительную кровать: 1,300.00 RUB за ночь.",
-              "Количество дополнительных кроватей зависит от категории номера. Необходимо ознакомиться с информацией о вместимости выбранного номера."
-            ],
-            "title": "Размещение с детьми и информация о дополнительных кроватях",
-            "type": "POLICY_TYPE_UNKNOWN"
-          },
-          {
-            "paragraphs": [
-              "Необходимо внести депозит за размещение с домашними животными. Стоимость: 5,000.00 RUB с гостя за всё время пребывания.",
+              "Необходимо внести депозит за проживание с домашним животным. Стоимость: 5,000.00 RUB за номер за всё время пребывания.",
               "Если для въезда в страну вам требуется виза, ваш отель в большинстве случаев предоставит вам необходимые документы для ее получения. За более подробной информацией обращайтесь в отель, контактная информация указана в подтверждении бронирования. За эти услуги может взиматься дополнительная плата, даже в случае последующей отмены бронирования. Все договоренности осуществляются исключительно между вами и отелем."
             ],
             "title": "Особые условия проживания",
@@ -222,107 +125,112 @@
           {
             "paragraphs": [
               "Требования к документам для заселения зависят от типа объекта размещения и применимых к нему правил. Для гостиниц и иных средств размещения могут приниматься паспорт РФ, заграничный паспорт или водительское удостоверение. Для квартир, апартаментов и иных объектов, где заселение или заключение договора осуществляется по правилам конкретного объекта, требования к документам определяются объектом размещения.",
-              "Вход в отель осуществляется с улицы Полтавская, д. 3.\r",
+              "Завтраки в ланчбоксах доступны в нескольких вариантах. Заказ проводится через администрацию или отдел бронирования до 19:00. Питание предоставляется на следующий день.\r",
               "\r",
-              "После 00:00 заезд возможен только по предоплате в размере стоимости первой ночи проживания. Контактная информация указана в подтверждении бронирования.\r",
+              "Дополнительное спальное место на раскладной кровати предоставляется по запросу и при наличии возможности за дополнительную плату. С 01.04 по 30.09 и с 29.12 по 08.01 размер доплаты составляет 1500.00 RUB в сутки, в остальные даты дополнительная кровать предоставляется бесплатно. При бронировании дополнительного места завтрак не включён и оплачивается отдельно.\r",
               "\r",
-              "Дополнительное спальное место на раскладной кровати предоставляется по запросу, при наличии возможности и за дополнительную плату. С 01.04 по 30.09 и с 29.12 по 08.01 доплата составляет 1300.00 RUB в сутки. В остальные даты дополнительная кровать предоставляется бесплатно. При бронировании дополнительного места завтрак в стоимость не включён и оплачивается на месте. Стоимость завтрака — 1000.00 RUB.\n",
+              "Ребёнок в возрасте от 0 до 17 лет размещается на свободном основном месте бесплатно.\r",
               "\r",
-              "Возможно предоставление детской кровати в качестве дополнительного спального места. Ребёнок в возрасте от 0 до 17 лет размещается на основном месте бесплатно. При размещении ребёнка младше 7 лет на дополнительной кровати проживание предоставляется бесплатно. Максимальное количество дополнительных кроватей в номере — 1. Дополнительные кровати предоставляются по запросу и требуют подтверждения со стороны отеля.\r",
+              "Максимальное количество дополнительных кроватей в номере — 1. Дополнительные кровати предоставляются по запросу и требуют подтверждения со стороны отеля.\r",
               "\r",
-              "В отеле возможен гарантированный ранний заезд. Стоимость составляет 100% от стоимости суток, предшествующих заезду. Негарантированный ранний заезд предоставляется бесплатно с 08:00 при наличии свободных номеров.\r",
+              "Возможно размещение с питомцами весом до 10 кг. Данная услуга оплачивается отдельно. Стоимость размещения питомца весом до 5 кг составляет 500.00 RUB в сутки, питомца от 5 до 10 кг — 1000.00 RUB в сутки. При заезде с животными взимается депозит, который возвращается при условии, что в номере ничего не повреждено.\r",
+              "\r",
+              "В отеле возможен гарантированный ранний заезд. Стоимость составляет 100% от стоимости суток, предшествующих заезду.\r",
+              "Услуга негарантированного раннего заезда предоставляется бесплатно с 08:00 при наличии свободных номеров.\r",
               "\r",
               "Поздний выезд до 17:00 оплачивается в размере 50% от стоимости суток выезда. Поздний выезд после 17:00 оплачивается в размере 100% от стоимости суток выезда.\r",
               "\r",
-              "Возможно размещение с питомцем весом до 10 кг. Услуга оплачивается отдельно. Стоимость проживания с питомцем весом до 5 кг составляет 500.00 RUB в сутки, с питомцем от 5 до 10 кг — 1000.00 RUB в сутки. При заезде с животным взимается депозит, который возвращается при отсутствии повреждений в номере.\r",
-              "\r",
               "Бизнес-путешественникам предоставляются отчётные документы.\r",
               "\r",
-              "В объекте размещения в соответствии с внутренними правилами может взиматься плата за дополнительные услуги, не представленные на сайте. Подробности можно уточнить через отдел бронирования или администрацию."
+              "После 00:00 заезд возможен только по предоплате в размере стоимости первой ночи проживания.\r",
+              "\r",
+              "Отель предоставляет регистрацию для иностранных граждан.\r",
+              "\r",
+              "В объекте размещения, согласно его внутренним правилам, может взиматься плата за дополнительные услуги, не представленные на сайте. Подробности можно уточнить через отдел бронирования или администрацию. Контактная информация указана в подтверждении бронирования."
             ],
             "title": "Дополнительно",
             "type": "POLICY_TYPE_UNKNOWN"
           }
         ],
         "photos": [
-          "https://cdn2.tu-tu.ru/imghub/view/3a8baab4-d42d-4892-aca9-92c880323b62/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/4f17fe0be9e578df6402745c18b93ae2.jpg",
-          "https://cdn2.tu-tu.ru/imghub/view/83a72d4b-d641-43f2-811d-5728b88d5057/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/145b198a48d26d9ac4cdc675366d2083.jpg",
-          "https://cdn2.tu-tu.ru/imghub/view/2528974a-0c57-4c8c-80ca-df7241b427c5/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/abc83cf61b6bb629549224207994631d.jpg"
+          "https://cdn2.tu-tu.ru/imghub/view/ebf7ecd0-590d-4466-a722-d6350f6cced7/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/a299aabd7b89700a1811a7642bfaa1fd.jpg",
+          "https://cdn2.tu-tu.ru/imghub/view/c2ee2a22-9b8f-474a-9c91-84c4051427af/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/f9fcecdf8e407d9d9429490158d1e028.jpg",
+          "https://cdn2.tu-tu.ru/imghub/view/540b1aeb-e7de-4829-853d-73be8ddd8555/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/86ecf3794768eccf92c83704478a281b.jpg"
         ],
         "location": {
-          "lat": 59.92809,
-          "lng": 30.37053,
+          "lat": 59.91768,
+          "lng": 30.398684,
           "city_geo_id": "2656915",
           "city": "Санкт-Петербург"
         },
-        "alias": "otel_nomera_na_nevskom_111",
+        "alias": "otel_art_deko_nevsky",
         "review_summary": {
-          "rating": 8.69,
+          "rating": 7.85,
           "scale": 10,
-          "review_count": 1351,
-          "text": "Отлично",
+          "review_count": 136,
+          "text": "Хорошо",
           "source": "hotels-review-gateway",
           "scope": "hotel",
-          "subject": "9933959",
+          "subject": "8181037",
           "color": "RATING_COLOR_HIGH",
           "aspects": [
             {
-              "rating": 8.47,
+              "rating": 8.61,
               "scale": 10,
               "text": "Цена/Качество",
               "source": "hotels-review-gateway",
               "scope": "hotel_aspect",
               "color": "RATING_COLOR_HIGH",
-              "label": "⭐ 8.47/10 · Цена/Качество"
+              "label": "⭐ 8.61/10 · Цена/Качество"
             },
             {
-              "rating": 8.73,
+              "rating": 8.4,
               "scale": 10,
               "text": "Чистота",
               "source": "hotels-review-gateway",
               "scope": "hotel_aspect",
               "color": "RATING_COLOR_HIGH",
-              "label": "⭐ 8.73/10 · Чистота"
+              "label": "⭐ 8.4/10 · Чистота"
             },
             {
-              "rating": 9.32,
+              "rating": 8.86,
               "scale": 10,
               "text": "Расположение",
               "source": "hotels-review-gateway",
               "scope": "hotel_aspect",
-              "color": "RATING_COLOR_VERY_HIGH",
-              "label": "⭐ 9.32/10 · Расположение"
+              "color": "RATING_COLOR_HIGH",
+              "label": "⭐ 8.86/10 · Расположение"
             },
             {
-              "rating": 8.26,
+              "rating": 8.48,
               "scale": 10,
               "text": "Комфорт",
               "source": "hotels-review-gateway",
               "scope": "hotel_aspect",
               "color": "RATING_COLOR_HIGH",
-              "label": "⭐ 8.26/10 · Комфорт"
+              "label": "⭐ 8.48/10 · Комфорт"
             },
             {
-              "rating": 8.88,
+              "rating": 8.84,
               "scale": 10,
               "text": "Питание",
               "source": "hotels-review-gateway",
               "scope": "hotel_aspect",
               "color": "RATING_COLOR_HIGH",
-              "label": "⭐ 8.88/10 · Питание"
+              "label": "⭐ 8.84/10 · Питание"
             },
             {
-              "rating": 8.68,
+              "rating": 8.59,
               "scale": 10,
               "text": "Обслуживание",
               "source": "hotels-review-gateway",
               "scope": "hotel_aspect",
               "color": "RATING_COLOR_HIGH",
-              "label": "⭐ 8.68/10 · Обслуживание"
+              "label": "⭐ 8.59/10 · Обслуживание"
             }
           ],
           "available_reviews_from_partners": [],
-          "label": "⭐ 8.69/10 · Отлично · 1 351 отзыв"
+          "label": "⭐ 7.85/10 · Хорошо · 136 отзывов"
         },
         "photos_total": 29
       },
@@ -337,136 +245,8 @@
       },
       "rooms": [
         {
-          "room_name": "Двухместный номер Стандарт",
-          "room_description": "• Двуспальная кровать\n• Кровать queen size\n",
-          "room_amenities": [
-            {
-              "id": "1232",
-              "name": "Ванная комната",
-              "icon": "bath-bubbles"
-            },
-            {
-              "id": "1214",
-              "name": "Чайник",
-              "icon": "kettle"
-            },
-            {
-              "id": "1199",
-              "name": "Фен",
-              "icon": "hairdryer"
-            },
-            {
-              "id": "1605",
-              "name": "Светонепроницаемые шторы",
-              "icon": "window-blind"
-            },
-            {
-              "id": "1269",
-              "name": "Тапочки",
-              "icon": "slippers"
-            }
-          ],
-          "photos": [
-            "https://cdn2.tu-tu.ru/imghub/view/edc5800c-7881-4825-b728-ad54f083f4a2/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/f0a278eb82b4eaaf5b71125d7cb07444.jpg",
-            "https://cdn2.tu-tu.ru/imghub/view/ebef8bc2-7b61-47ce-bf1c-b246e66f053e/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/0afc6be0720582e7eb441781d4bc1a58.jpg",
-            "https://cdn2.tu-tu.ru/imghub/view/c0072c27-f1b9-4b1f-810b-aaad12cf0f01/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/e7059e60ec484212a745ced5ba97e422.jpg"
-          ],
-          "bed_summary": "Двуспальная кровать ・ Кровать queen size",
-          "bed_type": "double",
-          "view": null,
-          "room_size_sqm": null,
-          "max_occupancy": null,
-          "room_property_items": [
-            {
-              "id": "room_property",
-              "icon": "bed-double",
-              "text": "Двуспальная кровать ・ Кровать queen size"
-            }
-          ],
-          "price_from": {
-            "amount": 5446,
-            "currency": "RUB",
-            "price_basis": "stay_total"
-          },
-          "rates": [
-            {
-              "offerpack_hash": "ee5362f6-e43d-485e-a219-95ed91e58be3",
-              "price": {
-                "amount": 5446,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": false,
-                "name": "Питание не включено",
-                "type": "nomeal"
-              },
-              "breakfast_included": false,
-              "refundable": true,
-              "free_cancellation": false,
-              "free_cancellation_until": null,
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Питание не включено"
-                },
-                {
-                  "type": "policies",
-                  "text": "При отмене бронирования стоимость не возвращается"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "e31f0bb6-0a7a-41ac-968a-cf99643dfce3",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            },
-            {
-              "offerpack_hash": "446c034d-c72d-4b3a-8a93-8e4c60f1716b",
-              "price": {
-                "amount": 8468,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": true,
-                "name": "Завтрак и ужин включены",
-                "type": "halfboard"
-              },
-              "breakfast_included": true,
-              "refundable": true,
-              "free_cancellation": false,
-              "free_cancellation_until": null,
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Завтрак и ужин включены"
-                },
-                {
-                  "type": "policies",
-                  "text": "При отмене бронирования стоимость не возвращается"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "1eeb5dfb-aabb-4afd-889f-ebfe9a176665",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            }
-          ],
-          "photos_total": 8
-        },
-        {
-          "room_name": "Одноместный номер Стандарт",
-          "room_description": "• В главном здании\n",
+          "room_name": "Одноместный номер Стандартный",
+          "room_description": "• Односпальная кровать\n",
           "room_amenities": [
             {
               "id": "1232",
@@ -477,11 +257,6 @@
               "id": "1199",
               "name": "Фен",
               "icon": "hairdryer"
-            },
-            {
-              "id": "1605",
-              "name": "Светонепроницаемые шторы",
-              "icon": "window-blind"
             },
             {
               "id": "1269",
@@ -492,15 +267,20 @@
               "id": "1177",
               "name": "Телевизор",
               "icon": "tv"
+            },
+            {
+              "id": "1277",
+              "name": "Туалетные принадлежности",
+              "icon": "drop"
             }
           ],
           "photos": [
-            "https://cdn2.tu-tu.ru/imghub/view/5fa997d9-20b7-4698-a651-e665d3ad7d6e/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/415a44eab919d4796810626b0ccfda54.jpg",
-            "https://cdn2.tu-tu.ru/imghub/view/44badf11-3b37-4d7c-b0f3-d50fc4364b25/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/e358923bdc8c4e94a645d1217a915803.jpg",
-            "https://cdn2.tu-tu.ru/imghub/view/7bb71516-c644-4f5a-bdf6-32225094498a/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/c6318e7c664a3ef1272a12199b1f1e21.jpg"
+            "https://cdn2.tu-tu.ru/imghub/view/dd4f218d-17d1-4f4d-975c-fdbbbfe8397f/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/2bf10965156556ccb2cd9c4018a97b6e.jpg",
+            "https://cdn2.tu-tu.ru/imghub/view/401624d0-d500-4af7-8d9f-e6ce268c539e/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/44c43db5725a43d092b61470342a95b4.jpg",
+            "https://cdn2.tu-tu.ru/imghub/view/f659123b-2ba8-48a9-b333-273d4bb0fefd/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/896fb5b3e7b86f4bdb4a624bd4375f4a.jpg"
           ],
-          "bed_summary": "В главном здании",
-          "bed_type": null,
+          "bed_summary": "Односпальная кровать",
+          "bed_type": "single",
           "view": null,
           "room_size_sqm": null,
           "max_occupancy": null,
@@ -508,19 +288,19 @@
             {
               "id": "room_property",
               "icon": "bed-double",
-              "text": "В главном здании"
+              "text": "Односпальная кровать"
             }
           ],
           "price_from": {
-            "amount": 5871,
+            "amount": 2910,
             "currency": "RUB",
             "price_basis": "stay_total"
           },
           "rates": [
             {
-              "offerpack_hash": "edd1680b-d1c1-4453-bcab-105d08ec847f",
+              "offerpack_hash": "2089829c-6609-40b0-90bd-673f4a695c42",
               "price": {
-                "amount": 5871,
+                "amount": 2910,
                 "currency": "RUB"
               },
               "price_basis": "stay_total",
@@ -550,49 +330,13 @@
                 }
               ],
               "is_business_trip": false,
-              "id": "cb229b59-c292-4e65-b315-f263ba34190b",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
+              "id": "fae7db96-058c-4936-9e7e-8c0798c868c7",
+              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
             },
             {
-              "offerpack_hash": "290c215a-0a50-4d32-94bb-72fdd63dca07",
+              "offerpack_hash": "56562a38-09c0-42f1-bb6f-acd3ae142fed",
               "price": {
-                "amount": 6744,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": false,
-                "name": "Питание не включено",
-                "type": "nomeal"
-              },
-              "breakfast_included": false,
-              "refundable": true,
-              "free_cancellation": true,
-              "free_cancellation_until": "2026-08-20T11:00:00Z",
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Питание не включено"
-                },
-                {
-                  "type": "policies",
-                  "text": "Бесплатная отмена до 20 авг 11:00"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "622fea80-bd8f-455d-93bc-d0dfc464cd8c",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            },
-            {
-              "offerpack_hash": "6076f0f2-472c-478b-8f6e-8a422185741a",
-              "price": {
-                "amount": 6932,
+                "amount": 3785,
                 "currency": "RUB"
               },
               "price_basis": "stay_total",
@@ -622,250 +366,14 @@
                 }
               ],
               "is_business_trip": false,
-              "id": "48906320-b000-408b-8dab-8b4447cdec82",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            },
-            {
-              "offerpack_hash": "40b171f5-8aa1-4eb6-ad35-a5e9845c7eee",
-              "price": {
-                "amount": 7156,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": true,
-                "name": "Ужин",
-                "type": "dinner"
-              },
-              "breakfast_included": null,
-              "refundable": true,
-              "free_cancellation": false,
-              "free_cancellation_until": null,
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Ужин"
-                },
-                {
-                  "type": "policies",
-                  "text": "При отмене бронирования стоимость не возвращается"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "baba81a9-f825-43ed-8f4c-6d8f29f8aa2f",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            },
-            {
-              "offerpack_hash": "5c789449-870a-4b94-b7f9-a92df910277c",
-              "price": {
-                "amount": 7805,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": true,
-                "name": "Завтрак включён",
-                "type": "breakfast"
-              },
-              "breakfast_included": true,
-              "refundable": true,
-              "free_cancellation": true,
-              "free_cancellation_until": "2026-08-20T11:00:00Z",
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Завтрак включён"
-                },
-                {
-                  "type": "policies",
-                  "text": "Бесплатная отмена до 20 авг 11:00"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "6fde75bf-f12f-45b0-9093-2c626e5c8aa0",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            },
-            {
-              "offerpack_hash": "fadc971a-a786-4ee2-be1c-82b462999b07",
-              "price": {
-                "amount": 8029,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": true,
-                "name": "Ужин",
-                "type": "dinner"
-              },
-              "breakfast_included": null,
-              "refundable": true,
-              "free_cancellation": false,
-              "free_cancellation_until": null,
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Ужин"
-                },
-                {
-                  "type": "policies",
-                  "text": "Возможен возврат с учетом правил отмены"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "2c21cb13-fdcd-45fe-b7d5-88c8f848326f",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            },
-            {
-              "offerpack_hash": "c8287a51-e14f-4ecf-b4ba-1c28aaf5f868",
-              "price": {
-                "amount": 8097,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": true,
-                "name": "Завтрак включён",
-                "type": "breakfast"
-              },
-              "breakfast_included": true,
-              "refundable": true,
-              "free_cancellation": false,
-              "free_cancellation_until": null,
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Завтрак включён"
-                },
-                {
-                  "type": "policies",
-                  "text": "Возможен возврат с учетом правил отмены"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "0404992c-5b22-4794-9fd6-45107ffb2048",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
+              "id": "0c35d29b-214c-449a-83c7-2a2a36e7e3ba",
+              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
             }
           ],
-          "photos_total": 8
+          "photos_total": 5
         },
         {
-          "room_name": "Двухместный номер Стандарт",
-          "room_description": "• Двуспальная кровать\n• Кровать queen size\n",
-          "room_amenities": [
-            {
-              "id": "1232",
-              "name": "Ванная комната",
-              "icon": "bath-bubbles"
-            },
-            {
-              "id": "1214",
-              "name": "Чайник",
-              "icon": "kettle"
-            },
-            {
-              "id": "1199",
-              "name": "Фен",
-              "icon": "hairdryer"
-            },
-            {
-              "id": "1605",
-              "name": "Светонепроницаемые шторы",
-              "icon": "window-blind"
-            },
-            {
-              "id": "1269",
-              "name": "Тапочки",
-              "icon": "slippers"
-            }
-          ],
-          "photos": [
-            "https://cdn2.tu-tu.ru/imghub/view/edc5800c-7881-4825-b728-ad54f083f4a2/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/f0a278eb82b4eaaf5b71125d7cb07444.jpg",
-            "https://cdn2.tu-tu.ru/imghub/view/ebef8bc2-7b61-47ce-bf1c-b246e66f053e/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/0afc6be0720582e7eb441781d4bc1a58.jpg",
-            "https://cdn2.tu-tu.ru/imghub/view/c0072c27-f1b9-4b1f-810b-aaad12cf0f01/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/e7059e60ec484212a745ced5ba97e422.jpg"
-          ],
-          "bed_summary": "Двуспальная кровать ・ Кровать queen size",
-          "bed_type": "double",
-          "view": null,
-          "room_size_sqm": null,
-          "max_occupancy": null,
-          "room_property_items": [
-            {
-              "id": "room_property",
-              "icon": "bed-double",
-              "text": "Двуспальная кровать ・ Кровать queen size"
-            }
-          ],
-          "price_from": {
-            "amount": 6677,
-            "currency": "RUB",
-            "price_basis": "stay_total"
-          },
-          "rates": [
-            {
-              "offerpack_hash": "d05bbd3a-306e-4f25-b83e-ca687afaf4c5",
-              "price": {
-                "amount": 6677,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": true,
-                "name": "Завтрак включён",
-                "type": "breakfast"
-              },
-              "breakfast_included": true,
-              "refundable": true,
-              "free_cancellation": false,
-              "free_cancellation_until": null,
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Завтрак включён"
-                },
-                {
-                  "type": "policies",
-                  "text": "При отмене бронирования стоимость не возвращается"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "b2ae7ab6-6932-43fb-9300-a24fe609a414",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            }
-          ],
-          "photos_total": 8
-        },
-        {
-          "room_name": "Двухместный номер Стандарт",
+          "room_name": "Двухместный номер Стандартный",
           "room_description": "• Двуспальная кровать\n",
           "room_amenities": [
             {
@@ -874,30 +382,30 @@
               "icon": "bath-bubbles"
             },
             {
-              "id": "1214",
-              "name": "Чайник",
-              "icon": "kettle"
-            },
-            {
               "id": "1199",
               "name": "Фен",
               "icon": "hairdryer"
             },
             {
-              "id": "1605",
-              "name": "Светонепроницаемые шторы",
-              "icon": "window-blind"
-            },
-            {
               "id": "1269",
               "name": "Тапочки",
               "icon": "slippers"
+            },
+            {
+              "id": "1177",
+              "name": "Телевизор",
+              "icon": "tv"
+            },
+            {
+              "id": "1277",
+              "name": "Туалетные принадлежности",
+              "icon": "drop"
             }
           ],
           "photos": [
-            "https://cdn2.tu-tu.ru/imghub/view/edc5800c-7881-4825-b728-ad54f083f4a2/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/f0a278eb82b4eaaf5b71125d7cb07444.jpg",
-            "https://cdn2.tu-tu.ru/imghub/view/ebef8bc2-7b61-47ce-bf1c-b246e66f053e/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/0afc6be0720582e7eb441781d4bc1a58.jpg",
-            "https://cdn2.tu-tu.ru/imghub/view/c0072c27-f1b9-4b1f-810b-aaad12cf0f01/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/e7059e60ec484212a745ced5ba97e422.jpg"
+            "https://cdn2.tu-tu.ru/imghub/view/66a50d57-e316-402e-b2a5-334cad00d02d/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/62ab02a9190391814c9d4ea0e4147263.jpg",
+            "https://cdn2.tu-tu.ru/imghub/view/e4f72dec-46ae-4219-88fe-c305c23bac75/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/3d9b5b383ae58bcff6b01df4c306d350.jpg",
+            "https://cdn2.tu-tu.ru/imghub/view/45dd0eba-6882-485d-a4f5-de462b118449/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/9926035e4a55e2bc162f9d6b0307c91c.jpg"
           ],
           "bed_summary": "Двуспальная кровать",
           "bed_type": "double",
@@ -912,15 +420,15 @@
             }
           ],
           "price_from": {
-            "amount": 6917,
+            "amount": 3103,
             "currency": "RUB",
             "price_basis": "stay_total"
           },
           "rates": [
             {
-              "offerpack_hash": "25b564f2-beb7-4c53-8061-150b9af46323",
+              "offerpack_hash": "eb636ae9-9cfb-42f1-b61e-3d0ae49fefc2",
               "price": {
-                "amount": 6917,
+                "amount": 3103,
                 "currency": "RUB"
               },
               "price_basis": "stay_total",
@@ -931,8 +439,8 @@
               },
               "breakfast_included": false,
               "refundable": true,
-              "free_cancellation": true,
-              "free_cancellation_until": "2026-08-19T21:00:00Z",
+              "free_cancellation": false,
+              "free_cancellation_until": null,
               "pay_at_hotel": null,
               "pay_online": true,
               "highlights": [
@@ -942,7 +450,7 @@
                 },
                 {
                   "type": "policies",
-                  "text": "Бесплатная отмена до 19 авг 21:00"
+                  "text": "При отмене бронирования стоимость не возвращается"
                 },
                 {
                   "type": "payment",
@@ -950,13 +458,13 @@
                 }
               ],
               "is_business_trip": false,
-              "id": "87f6e5e1-23c5-4edc-b167-90e2552e3a9a",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
+              "id": "47b33669-b86f-4ab4-8d30-293e2a1a5fe3",
+              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
             },
             {
-              "offerpack_hash": "e546ca8d-39b8-4e59-9b71-d41d5210c19c",
+              "offerpack_hash": "d87f4778-23c4-42e8-8b2f-3970be487e45",
               "price": {
-                "amount": 8006,
+                "amount": 3979,
                 "currency": "RUB"
               },
               "price_basis": "stay_total",
@@ -967,8 +475,8 @@
               },
               "breakfast_included": true,
               "refundable": true,
-              "free_cancellation": true,
-              "free_cancellation_until": "2026-08-19T21:00:00Z",
+              "free_cancellation": false,
+              "free_cancellation_until": null,
               "pay_at_hotel": null,
               "pay_online": true,
               "highlights": [
@@ -978,7 +486,7 @@
                 },
                 {
                   "type": "policies",
-                  "text": "Бесплатная отмена до 19 авг 21:00"
+                  "text": "При отмене бронирования стоимость не возвращается"
                 },
                 {
                   "type": "payment",
@@ -986,851 +494,15 @@
                 }
               ],
               "is_business_trip": false,
-              "id": "1723e074-8e8b-44f2-926a-651c77d563da",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
+              "id": "2a9f8dea-3c2b-4eea-b07d-1699eb3c270b",
+              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
             }
           ],
-          "photos_total": 8
+          "photos_total": 18
         },
         {
-          "room_name": "Трёхместный номер Семейный",
-          "room_description": "• Двуспальная кровать\n• Диван\n",
-          "room_amenities": [
-            {
-              "id": "1232",
-              "name": "Ванная комната",
-              "icon": "bath-bubbles"
-            },
-            {
-              "id": "1214",
-              "name": "Чайник",
-              "icon": "kettle"
-            },
-            {
-              "id": "1199",
-              "name": "Фен",
-              "icon": "hairdryer"
-            },
-            {
-              "id": "1605",
-              "name": "Светонепроницаемые шторы",
-              "icon": "window-blind"
-            },
-            {
-              "id": "1269",
-              "name": "Тапочки",
-              "icon": "slippers"
-            }
-          ],
-          "photos": [
-            "https://cdn2.tu-tu.ru/imghub/view/19556599-ad1a-42eb-8d6a-d20568fc24ca/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/70eb654229aca7092abe0e2c8cc4f9f0.jpg",
-            "https://cdn2.tu-tu.ru/imghub/view/9ac72f94-1de8-4f6d-ae91-f671d844d35f/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/6d2aadf01ae495b4b494988dcdb9c258.jpg",
-            "https://cdn2.tu-tu.ru/imghub/view/3d307ef9-7530-4631-8bcb-67c712612ba6/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/ba7eca2edcba2f74ce9db7632e8ad144.jpg"
-          ],
-          "bed_summary": "Двуспальная кровать ・ Диван",
-          "bed_type": "double",
-          "view": null,
-          "room_size_sqm": null,
-          "max_occupancy": null,
-          "room_property_items": [
-            {
-              "id": "room_property",
-              "icon": "bed-double",
-              "text": "Двуспальная кровать ・ Диван"
-            }
-          ],
-          "price_from": {
-            "amount": 7021,
-            "currency": "RUB",
-            "price_basis": "stay_total"
-          },
-          "rates": [
-            {
-              "offerpack_hash": "16e32ae6-5af1-4bdb-90f3-3d598b7aed94",
-              "price": {
-                "amount": 7021,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": false,
-                "name": "Питание не включено",
-                "type": "nomeal"
-              },
-              "breakfast_included": false,
-              "refundable": true,
-              "free_cancellation": false,
-              "free_cancellation_until": null,
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Питание не включено"
-                },
-                {
-                  "type": "policies",
-                  "text": "При отмене бронирования стоимость не возвращается"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "fbfaaf01-ef5e-4a85-9d89-7d5ae5494dd0",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            },
-            {
-              "offerpack_hash": "3bfa3a4d-8780-4be7-93d2-8ed88b2a8c09",
-              "price": {
-                "amount": 8214,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": true,
-                "name": "Завтрак включён",
-                "type": "breakfast"
-              },
-              "breakfast_included": true,
-              "refundable": true,
-              "free_cancellation": false,
-              "free_cancellation_until": null,
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Завтрак включён"
-                },
-                {
-                  "type": "policies",
-                  "text": "При отмене бронирования стоимость не возвращается"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "a0910379-7333-4163-baeb-cbfc45aefcda",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            },
-            {
-              "offerpack_hash": "5359f8fd-f631-4c16-bb34-e962f6784a13",
-              "price": {
-                "amount": 8214,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": true,
-                "name": "Завтрак включён",
-                "type": "breakfast"
-              },
-              "breakfast_included": true,
-              "refundable": true,
-              "free_cancellation": false,
-              "free_cancellation_until": null,
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Завтрак включён"
-                },
-                {
-                  "type": "policies",
-                  "text": "При отмене бронирования стоимость не возвращается"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "de5c3e97-9a21-4364-a6a1-1d04a14a83a7",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            },
-            {
-              "offerpack_hash": "934de771-0b6e-4eb9-883e-a18587352e01",
-              "price": {
-                "amount": 10284,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": true,
-                "name": "Завтрак и ужин включены",
-                "type": "halfboard"
-              },
-              "breakfast_included": true,
-              "refundable": true,
-              "free_cancellation": false,
-              "free_cancellation_until": null,
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Завтрак и ужин включены"
-                },
-                {
-                  "type": "policies",
-                  "text": "При отмене бронирования стоимость не возвращается"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "a0fc35c1-6096-4b89-a38b-a96f13ed1fd7",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            }
-          ],
-          "photos_total": 15
-        },
-        {
-          "room_name": "Трёхместный номер Семейный",
-          "room_description": "• 2 отдельные кровати\n• Диван\n",
-          "room_amenities": [
-            {
-              "id": "1232",
-              "name": "Ванная комната",
-              "icon": "bath-bubbles"
-            },
-            {
-              "id": "1214",
-              "name": "Чайник",
-              "icon": "kettle"
-            },
-            {
-              "id": "1199",
-              "name": "Фен",
-              "icon": "hairdryer"
-            },
-            {
-              "id": "1605",
-              "name": "Светонепроницаемые шторы",
-              "icon": "window-blind"
-            },
-            {
-              "id": "1269",
-              "name": "Тапочки",
-              "icon": "slippers"
-            }
-          ],
-          "photos": [
-            "https://cdn2.tu-tu.ru/imghub/view/19556599-ad1a-42eb-8d6a-d20568fc24ca/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/70eb654229aca7092abe0e2c8cc4f9f0.jpg",
-            "https://cdn2.tu-tu.ru/imghub/view/9ac72f94-1de8-4f6d-ae91-f671d844d35f/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/6d2aadf01ae495b4b494988dcdb9c258.jpg",
-            "https://cdn2.tu-tu.ru/imghub/view/3d307ef9-7530-4631-8bcb-67c712612ba6/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/ba7eca2edcba2f74ce9db7632e8ad144.jpg"
-          ],
-          "bed_summary": "2 отдельные кровати ・ Диван",
-          "bed_type": "twin",
-          "view": null,
-          "room_size_sqm": null,
-          "max_occupancy": null,
-          "room_property_items": [
-            {
-              "id": "room_property",
-              "icon": "bed-double",
-              "text": "2 отдельные кровати ・ Диван"
-            }
-          ],
-          "price_from": {
-            "amount": 7021,
-            "currency": "RUB",
-            "price_basis": "stay_total"
-          },
-          "rates": [
-            {
-              "offerpack_hash": "fe306a3f-4ecb-4c78-aa00-405cec0026fb",
-              "price": {
-                "amount": 7021,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": false,
-                "name": "Питание не включено",
-                "type": "nomeal"
-              },
-              "breakfast_included": false,
-              "refundable": true,
-              "free_cancellation": false,
-              "free_cancellation_until": null,
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Питание не включено"
-                },
-                {
-                  "type": "policies",
-                  "text": "При отмене бронирования стоимость не возвращается"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "24b4146c-9180-47cd-aead-07a0fd789ff4",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            },
-            {
-              "offerpack_hash": "27d007da-2470-46be-a205-96cd5a3290ca",
-              "price": {
-                "amount": 10284,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": true,
-                "name": "Завтрак и ужин включены",
-                "type": "halfboard"
-              },
-              "breakfast_included": true,
-              "refundable": true,
-              "free_cancellation": false,
-              "free_cancellation_until": null,
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Завтрак и ужин включены"
-                },
-                {
-                  "type": "policies",
-                  "text": "При отмене бронирования стоимость не возвращается"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "6f5b8e97-c532-4396-ab1c-8d276dce02be",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            }
-          ],
-          "photos_total": 15
-        },
-        {
-          "room_name": "Трёхместный номер Семейный",
-          "room_description": "• В главном здании\n",
-          "room_amenities": [
-            {
-              "id": "1232",
-              "name": "Ванная комната",
-              "icon": "bath-bubbles"
-            },
-            {
-              "id": "1214",
-              "name": "Чайник",
-              "icon": "kettle"
-            },
-            {
-              "id": "1199",
-              "name": "Фен",
-              "icon": "hairdryer"
-            },
-            {
-              "id": "1605",
-              "name": "Светонепроницаемые шторы",
-              "icon": "window-blind"
-            },
-            {
-              "id": "1269",
-              "name": "Тапочки",
-              "icon": "slippers"
-            }
-          ],
-          "photos": [
-            "https://cdn2.tu-tu.ru/imghub/view/19556599-ad1a-42eb-8d6a-d20568fc24ca/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/70eb654229aca7092abe0e2c8cc4f9f0.jpg",
-            "https://cdn2.tu-tu.ru/imghub/view/9ac72f94-1de8-4f6d-ae91-f671d844d35f/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/6d2aadf01ae495b4b494988dcdb9c258.jpg",
-            "https://cdn2.tu-tu.ru/imghub/view/3d307ef9-7530-4631-8bcb-67c712612ba6/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/ba7eca2edcba2f74ce9db7632e8ad144.jpg"
-          ],
-          "bed_summary": "В главном здании",
-          "bed_type": null,
-          "view": null,
-          "room_size_sqm": null,
-          "max_occupancy": null,
-          "room_property_items": [
-            {
-              "id": "room_property",
-              "icon": "bed-double",
-              "text": "В главном здании"
-            }
-          ],
-          "price_from": {
-            "amount": 7569,
-            "currency": "RUB",
-            "price_basis": "stay_total"
-          },
-          "rates": [
-            {
-              "offerpack_hash": "8501edf0-a0b0-4f8d-acec-2810a25da5e1",
-              "price": {
-                "amount": 7569,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": false,
-                "name": "Питание не включено",
-                "type": "nomeal"
-              },
-              "breakfast_included": false,
-              "refundable": true,
-              "free_cancellation": false,
-              "free_cancellation_until": null,
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Питание не включено"
-                },
-                {
-                  "type": "policies",
-                  "text": "При отмене бронирования стоимость не возвращается"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "9b9b9b0f-7c0e-4889-b6db-9e3b59287145",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            },
-            {
-              "offerpack_hash": "3c78ccd1-cb0a-4b8f-ac95-b716bec203b2",
-              "price": {
-                "amount": 8591,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": true,
-                "name": "Завтрак включён",
-                "type": "breakfast"
-              },
-              "breakfast_included": true,
-              "refundable": true,
-              "free_cancellation": false,
-              "free_cancellation_until": null,
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Завтрак включён"
-                },
-                {
-                  "type": "policies",
-                  "text": "При отмене бронирования стоимость не возвращается"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "13743bd2-ef35-4ced-a14d-9a0e41c2892c",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            },
-            {
-              "offerpack_hash": "b7e83314-7a83-4222-a1cb-78bf037fc81b",
-              "price": {
-                "amount": 8656,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": false,
-                "name": "Питание не включено",
-                "type": "nomeal"
-              },
-              "breakfast_included": false,
-              "refundable": true,
-              "free_cancellation": true,
-              "free_cancellation_until": "2026-08-20T11:00:00Z",
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Питание не включено"
-                },
-                {
-                  "type": "policies",
-                  "text": "Бесплатная отмена до 20 авг 11:00"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "487e3f03-ac79-4b7b-9521-8b135b5e28d9",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            },
-            {
-              "offerpack_hash": "135957d0-dfd3-450c-96f2-cd2176fb8093",
-              "price": {
-                "amount": 9712,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": true,
-                "name": "Завтрак включён",
-                "type": "breakfast"
-              },
-              "breakfast_included": true,
-              "refundable": true,
-              "free_cancellation": true,
-              "free_cancellation_until": "2026-08-20T11:00:00Z",
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Завтрак включён"
-                },
-                {
-                  "type": "policies",
-                  "text": "Бесплатная отмена до 20 авг 11:00"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "31631665-9e9c-467e-b47c-178e90ba2bb9",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            },
-            {
-              "offerpack_hash": "e92f96f8-cb2b-4b02-9649-abec89a95f54",
-              "price": {
-                "amount": 9870,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": true,
-                "name": "Завтрак и ужин включены",
-                "type": "halfboard"
-              },
-              "breakfast_included": true,
-              "refundable": true,
-              "free_cancellation": false,
-              "free_cancellation_until": null,
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Завтрак и ужин включены"
-                },
-                {
-                  "type": "policies",
-                  "text": "При отмене бронирования стоимость не возвращается"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "32fa9d99-eaf1-47d1-b6cb-61fcec96c3bb",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            },
-            {
-              "offerpack_hash": "33595f2e-80d6-431f-86c7-2389bc3e9057",
-              "price": {
-                "amount": 10003,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": true,
-                "name": "Завтрак включён",
-                "type": "breakfast"
-              },
-              "breakfast_included": true,
-              "refundable": true,
-              "free_cancellation": false,
-              "free_cancellation_until": null,
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Завтрак включён"
-                },
-                {
-                  "type": "policies",
-                  "text": "Возможен возврат с учетом правил отмены"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "fa6a7703-ec01-451c-aa5a-42faef001f0e",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            },
-            {
-              "offerpack_hash": "4401402f-3e1d-42b5-be20-dc4813345207",
-              "price": {
-                "amount": 10992,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": true,
-                "name": "Завтрак и ужин включены",
-                "type": "halfboard"
-              },
-              "breakfast_included": true,
-              "refundable": true,
-              "free_cancellation": false,
-              "free_cancellation_until": null,
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Завтрак и ужин включены"
-                },
-                {
-                  "type": "policies",
-                  "text": "Возможен возврат с учетом правил отмены"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "1cf25a03-9711-4df2-980e-be28eacd30a5",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            }
-          ],
-          "photos_total": 15
-        },
-        {
-          "room_name": "Трёхместный номер Семейный",
-          "room_description": "• Двуспальная кровать и односпальная кровать\n",
-          "room_amenities": [
-            {
-              "id": "1232",
-              "name": "Ванная комната",
-              "icon": "bath-bubbles"
-            },
-            {
-              "id": "1214",
-              "name": "Чайник",
-              "icon": "kettle"
-            },
-            {
-              "id": "1199",
-              "name": "Фен",
-              "icon": "hairdryer"
-            },
-            {
-              "id": "1605",
-              "name": "Светонепроницаемые шторы",
-              "icon": "window-blind"
-            },
-            {
-              "id": "1269",
-              "name": "Тапочки",
-              "icon": "slippers"
-            }
-          ],
-          "photos": [
-            "https://cdn2.tu-tu.ru/imghub/view/19556599-ad1a-42eb-8d6a-d20568fc24ca/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/70eb654229aca7092abe0e2c8cc4f9f0.jpg",
-            "https://cdn2.tu-tu.ru/imghub/view/9ac72f94-1de8-4f6d-ae91-f671d844d35f/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/6d2aadf01ae495b4b494988dcdb9c258.jpg",
-            "https://cdn2.tu-tu.ru/imghub/view/3d307ef9-7530-4631-8bcb-67c712612ba6/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/ba7eca2edcba2f74ce9db7632e8ad144.jpg"
-          ],
-          "bed_summary": "Двуспальная кровать и односпальная кровать",
-          "bed_type": "double",
-          "view": null,
-          "room_size_sqm": null,
-          "max_occupancy": null,
-          "room_property_items": [
-            {
-              "id": "room_property",
-              "icon": "bed-double",
-              "text": "Двуспальная кровать и односпальная кровать"
-            }
-          ],
-          "price_from": {
-            "amount": 7764,
-            "currency": "RUB",
-            "price_basis": "stay_total"
-          },
-          "rates": [
-            {
-              "offerpack_hash": "de898a95-9dbc-45e6-becc-b73b23d18532",
-              "price": {
-                "amount": 7764,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": false,
-                "name": "Питание не включено",
-                "type": "nomeal"
-              },
-              "breakfast_included": false,
-              "refundable": true,
-              "free_cancellation": false,
-              "free_cancellation_until": null,
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Питание не включено"
-                },
-                {
-                  "type": "policies",
-                  "text": "При отмене бронирования стоимость не возвращается"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "e2ca8eb4-f9f1-42e0-8e0b-1b3cf1632f9e",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            },
-            {
-              "offerpack_hash": "b475b36d-bb2d-4651-8838-d1dfd3ce4762",
-              "price": {
-                "amount": 8812,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": true,
-                "name": "Завтрак включён",
-                "type": "breakfast"
-              },
-              "breakfast_included": true,
-              "refundable": true,
-              "free_cancellation": false,
-              "free_cancellation_until": null,
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Завтрак включён"
-                },
-                {
-                  "type": "policies",
-                  "text": "При отмене бронирования стоимость не возвращается"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "6c49a2e4-5ca5-44e4-9323-ba9814d08773",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            },
-            {
-              "offerpack_hash": "063976e6-9102-4cc3-a85b-a1fd2ecb96ed",
-              "price": {
-                "amount": 8879,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": false,
-                "name": "Питание не включено",
-                "type": "nomeal"
-              },
-              "breakfast_included": false,
-              "refundable": true,
-              "free_cancellation": true,
-              "free_cancellation_until": "2026-08-19T21:00:00Z",
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Питание не включено"
-                },
-                {
-                  "type": "policies",
-                  "text": "Бесплатная отмена до 19 авг 21:00"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "3d9b482c-4ea0-49fe-8214-19ccbcdc6db7",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            },
-            {
-              "offerpack_hash": "380de77d-0ba6-48b3-8c67-03d555bf5bec",
-              "price": {
-                "amount": 9963,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": true,
-                "name": "Завтрак включён",
-                "type": "breakfast"
-              },
-              "breakfast_included": true,
-              "refundable": true,
-              "free_cancellation": true,
-              "free_cancellation_until": "2026-08-19T21:00:00Z",
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Завтрак включён"
-                },
-                {
-                  "type": "policies",
-                  "text": "Бесплатная отмена до 19 авг 21:00"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "2b910ab2-3dee-4d71-a13f-8b5e37f62fd5",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            }
-          ],
-          "photos_total": 15
-        },
-        {
-          "room_name": "Одноместный номер Стандарт",
-          "room_description": "• В главном здании\n",
+          "room_name": "Одноместный номер Стандартный",
+          "room_description": "• Без окна, в главном здании\n",
           "room_amenities": [
             {
               "id": "1232",
@@ -1841,11 +513,6 @@
               "id": "1199",
               "name": "Фен",
               "icon": "hairdryer"
-            },
-            {
-              "id": "1605",
-              "name": "Светонепроницаемые шторы",
-              "icon": "window-blind"
             },
             {
               "id": "1269",
@@ -1856,14 +523,19 @@
               "id": "1177",
               "name": "Телевизор",
               "icon": "tv"
+            },
+            {
+              "id": "1277",
+              "name": "Туалетные принадлежности",
+              "icon": "drop"
             }
           ],
           "photos": [
-            "https://cdn2.tu-tu.ru/imghub/view/5fa997d9-20b7-4698-a651-e665d3ad7d6e/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/415a44eab919d4796810626b0ccfda54.jpg",
-            "https://cdn2.tu-tu.ru/imghub/view/44badf11-3b37-4d7c-b0f3-d50fc4364b25/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/e358923bdc8c4e94a645d1217a915803.jpg",
-            "https://cdn2.tu-tu.ru/imghub/view/7bb71516-c644-4f5a-bdf6-32225094498a/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/c6318e7c664a3ef1272a12199b1f1e21.jpg"
+            "https://cdn2.tu-tu.ru/imghub/view/dd4f218d-17d1-4f4d-975c-fdbbbfe8397f/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/2bf10965156556ccb2cd9c4018a97b6e.jpg",
+            "https://cdn2.tu-tu.ru/imghub/view/401624d0-d500-4af7-8d9f-e6ce268c539e/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/44c43db5725a43d092b61470342a95b4.jpg",
+            "https://cdn2.tu-tu.ru/imghub/view/f659123b-2ba8-48a9-b333-273d4bb0fefd/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/896fb5b3e7b86f4bdb4a624bd4375f4a.jpg"
           ],
-          "bed_summary": "В главном здании",
+          "bed_summary": "Без окна, в главном здании",
           "bed_type": null,
           "view": null,
           "room_size_sqm": null,
@@ -1872,28 +544,28 @@
             {
               "id": "room_property",
               "icon": "bed-double",
-              "text": "В главном здании"
+              "text": "Без окна, в главном здании"
             }
           ],
           "price_from": {
-            "amount": 8180,
+            "amount": 3135,
             "currency": "RUB",
             "price_basis": "stay_total"
           },
           "rates": [
             {
-              "offerpack_hash": "87f325d0-ad10-4e23-8469-963f30b3da77",
+              "offerpack_hash": "36bcd30d-bad9-41a6-8c52-815df10f3d82",
               "price": {
-                "amount": 8180,
+                "amount": 3135,
                 "currency": "RUB"
               },
               "price_basis": "stay_total",
               "meal": {
-                "included": true,
-                "name": "Завтрак и ужин включены",
-                "type": "halfboard"
+                "included": false,
+                "name": "Питание не включено",
+                "type": "nomeal"
               },
-              "breakfast_included": true,
+              "breakfast_included": false,
               "refundable": true,
               "free_cancellation": false,
               "free_cancellation_until": null,
@@ -1902,7 +574,7 @@
               "highlights": [
                 {
                   "type": "meal",
-                  "text": "Завтрак и ужин включены"
+                  "text": "Питание не включено"
                 },
                 {
                   "type": "policies",
@@ -1914,20 +586,56 @@
                 }
               ],
               "is_business_trip": false,
-              "id": "4ab00d5b-6338-4e94-a21e-e89135469335",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
+              "id": "faea8a20-b272-4065-80b3-9c727794be27",
+              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
             },
             {
-              "offerpack_hash": "0b1b7f58-bddb-4830-b41b-c9ec76a8702e",
+              "offerpack_hash": "e28b0ade-520f-4192-908e-63b45223e460",
               "price": {
-                "amount": 8471,
+                "amount": 3633,
+                "currency": "RUB"
+              },
+              "price_basis": "stay_total",
+              "meal": {
+                "included": false,
+                "name": "Питание не включено",
+                "type": "nomeal"
+              },
+              "breakfast_included": false,
+              "refundable": true,
+              "free_cancellation": true,
+              "free_cancellation_until": "2026-08-20T11:00:00Z",
+              "pay_at_hotel": null,
+              "pay_online": true,
+              "highlights": [
+                {
+                  "type": "meal",
+                  "text": "Питание не включено"
+                },
+                {
+                  "type": "policies",
+                  "text": "Бесплатная отмена до 20 авг 11:00"
+                },
+                {
+                  "type": "payment",
+                  "text": "Оплата онлайн"
+                }
+              ],
+              "is_business_trip": false,
+              "id": "395f02b1-175d-441a-8c8a-3d8a7eb6fbeb",
+              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
+            },
+            {
+              "offerpack_hash": "c926ac55-2828-4355-93d3-e50b9b34c93f",
+              "price": {
+                "amount": 3895,
                 "currency": "RUB"
               },
               "price_basis": "stay_total",
               "meal": {
                 "included": true,
-                "name": "Завтрак и ужин включены",
-                "type": "halfboard"
+                "name": "Завтрак включён",
+                "type": "breakfast"
               },
               "breakfast_included": true,
               "refundable": true,
@@ -1938,7 +646,79 @@
               "highlights": [
                 {
                   "type": "meal",
-                  "text": "Завтрак и ужин включены"
+                  "text": "Завтрак включён"
+                },
+                {
+                  "type": "policies",
+                  "text": "При отмене бронирования стоимость не возвращается"
+                },
+                {
+                  "type": "payment",
+                  "text": "Оплата онлайн"
+                }
+              ],
+              "is_business_trip": false,
+              "id": "5e38a12e-295e-4f6c-8caf-aba79ffa1d31",
+              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
+            },
+            {
+              "offerpack_hash": "438e4c5a-9c44-4136-a52a-af18c593ed6e",
+              "price": {
+                "amount": 4363,
+                "currency": "RUB"
+              },
+              "price_basis": "stay_total",
+              "meal": {
+                "included": true,
+                "name": "Завтрак включён",
+                "type": "breakfast"
+              },
+              "breakfast_included": true,
+              "refundable": true,
+              "free_cancellation": true,
+              "free_cancellation_until": "2026-08-20T11:00:00Z",
+              "pay_at_hotel": null,
+              "pay_online": true,
+              "highlights": [
+                {
+                  "type": "meal",
+                  "text": "Завтрак включён"
+                },
+                {
+                  "type": "policies",
+                  "text": "Бесплатная отмена до 20 авг 11:00"
+                },
+                {
+                  "type": "payment",
+                  "text": "Оплата онлайн"
+                }
+              ],
+              "is_business_trip": false,
+              "id": "4964c979-d90e-484a-97e4-aab49e5409a0",
+              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
+            },
+            {
+              "offerpack_hash": "38e672bf-402d-4529-b73b-1f3a5b60ad82",
+              "price": {
+                "amount": 4564,
+                "currency": "RUB"
+              },
+              "price_basis": "stay_total",
+              "meal": {
+                "included": true,
+                "name": "Завтрак включён",
+                "type": "breakfast"
+              },
+              "breakfast_included": true,
+              "refundable": true,
+              "free_cancellation": false,
+              "free_cancellation_until": null,
+              "pay_at_hotel": null,
+              "pay_online": true,
+              "highlights": [
+                {
+                  "type": "meal",
+                  "text": "Завтрак включён"
                 },
                 {
                   "type": "policies",
@@ -1950,50 +730,270 @@
                 }
               ],
               "is_business_trip": false,
-              "id": "330807f0-44e2-47f7-8b96-9334cd4e2e95",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
-            },
-            {
-              "offerpack_hash": "a57dad55-ccfd-43a3-8a85-a0c47de08445",
-              "price": {
-                "amount": 9049,
-                "currency": "RUB"
-              },
-              "price_basis": "stay_total",
-              "meal": {
-                "included": true,
-                "name": "Завтрак и ужин включены",
-                "type": "halfboard"
-              },
-              "breakfast_included": true,
-              "refundable": true,
-              "free_cancellation": false,
-              "free_cancellation_until": null,
-              "pay_at_hotel": null,
-              "pay_online": true,
-              "highlights": [
-                {
-                  "type": "meal",
-                  "text": "Завтрак и ужин включены"
-                },
-                {
-                  "type": "policies",
-                  "text": "Возможен возврат с учетом правил отмены"
-                },
-                {
-                  "type": "payment",
-                  "text": "Оплата онлайн"
-                }
-              ],
-              "is_business_trip": false,
-              "id": "1d7a5fe4-c651-42ff-8a30-124e8e4e4d1f",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
+              "id": "1396a818-e283-4fcf-9a98-1b9fa9df17b6",
+              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
             }
           ],
-          "photos_total": 8
+          "photos_total": 5
         },
         {
-          "room_name": "Трёхместный номер Семейный",
+          "room_name": "Двухместный номер Улучшенный",
+          "room_description": "• Двуспальная кровать\n",
+          "room_amenities": [
+            {
+              "id": "1232",
+              "name": "Ванная комната",
+              "icon": "bath-bubbles"
+            },
+            {
+              "id": "1199",
+              "name": "Фен",
+              "icon": "hairdryer"
+            },
+            {
+              "id": "1269",
+              "name": "Тапочки",
+              "icon": "slippers"
+            },
+            {
+              "id": "1177",
+              "name": "Телевизор",
+              "icon": "tv"
+            },
+            {
+              "id": "1277",
+              "name": "Туалетные принадлежности",
+              "icon": "drop"
+            }
+          ],
+          "photos": [
+            "https://cdn2.tu-tu.ru/imghub/view/0aa04bad-1e96-4f4e-a699-64671ef9935d/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/173bc962bf269815b78bb26ef0d1b59d.jpg",
+            "https://cdn2.tu-tu.ru/imghub/view/398a9d72-e11a-46e1-b178-6451f6558ea7/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/90e5926f439641d5340e0cee1ffd776f.jpg",
+            "https://cdn2.tu-tu.ru/imghub/view/a601902e-c2f8-4ec7-99ab-db6674b449c5/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/9e658b8b783366b3f009b182981a502e.jpg"
+          ],
+          "bed_summary": "Двуспальная кровать",
+          "bed_type": "double",
+          "view": null,
+          "room_size_sqm": null,
+          "max_occupancy": null,
+          "room_property_items": [
+            {
+              "id": "room_property",
+              "icon": "bed-double",
+              "text": "Двуспальная кровать"
+            }
+          ],
+          "price_from": {
+            "amount": 3325,
+            "currency": "RUB",
+            "price_basis": "stay_total"
+          },
+          "rates": [
+            {
+              "offerpack_hash": "ac72de4a-a5d1-4090-9221-95bcf9580b27",
+              "price": {
+                "amount": 3325,
+                "currency": "RUB"
+              },
+              "price_basis": "stay_total",
+              "meal": {
+                "included": false,
+                "name": "Питание не включено",
+                "type": "nomeal"
+              },
+              "breakfast_included": false,
+              "refundable": true,
+              "free_cancellation": false,
+              "free_cancellation_until": null,
+              "pay_at_hotel": null,
+              "pay_online": true,
+              "highlights": [
+                {
+                  "type": "meal",
+                  "text": "Питание не включено"
+                },
+                {
+                  "type": "policies",
+                  "text": "При отмене бронирования стоимость не возвращается"
+                },
+                {
+                  "type": "payment",
+                  "text": "Оплата онлайн"
+                }
+              ],
+              "is_business_trip": false,
+              "id": "2179bc0f-798a-4af3-b302-8122ca5846d2",
+              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
+            },
+            {
+              "offerpack_hash": "2d135772-67f3-4b35-a909-3acc08018aa9",
+              "price": {
+                "amount": 4172,
+                "currency": "RUB"
+              },
+              "price_basis": "stay_total",
+              "meal": {
+                "included": true,
+                "name": "Завтрак включён",
+                "type": "breakfast"
+              },
+              "breakfast_included": true,
+              "refundable": true,
+              "free_cancellation": false,
+              "free_cancellation_until": null,
+              "pay_at_hotel": null,
+              "pay_online": true,
+              "highlights": [
+                {
+                  "type": "meal",
+                  "text": "Завтрак включён"
+                },
+                {
+                  "type": "policies",
+                  "text": "При отмене бронирования стоимость не возвращается"
+                },
+                {
+                  "type": "payment",
+                  "text": "Оплата онлайн"
+                }
+              ],
+              "is_business_trip": false,
+              "id": "131e7f1d-cca4-48ad-8e95-34f43d975dd1",
+              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
+            }
+          ],
+          "photos_total": 25
+        },
+        {
+          "room_name": "Двухместный номер Улучшенный",
+          "room_description": "• 2 отдельные кровати\n",
+          "room_amenities": [
+            {
+              "id": "1232",
+              "name": "Ванная комната",
+              "icon": "bath-bubbles"
+            },
+            {
+              "id": "1199",
+              "name": "Фен",
+              "icon": "hairdryer"
+            },
+            {
+              "id": "1269",
+              "name": "Тапочки",
+              "icon": "slippers"
+            },
+            {
+              "id": "1177",
+              "name": "Телевизор",
+              "icon": "tv"
+            },
+            {
+              "id": "1277",
+              "name": "Туалетные принадлежности",
+              "icon": "drop"
+            }
+          ],
+          "photos": [
+            "https://cdn2.tu-tu.ru/imghub/view/4bb59651-81e7-4131-b34e-8c5484a6408f/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/b48ba9e91e5c146c9e7b5972e7ef2206.jpg",
+            "https://cdn2.tu-tu.ru/imghub/view/7e137f39-2f50-4b83-a6d0-02a063394960/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/621b6ca513aec8d95ef46e0dc6f02383.jpg",
+            "https://cdn2.tu-tu.ru/imghub/view/f5ce20d9-7d44-4f5b-a022-2d6aebcaea59/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/e93b3e12f835c411a533546562c64dbd.jpg"
+          ],
+          "bed_summary": "2 отдельные кровати",
+          "bed_type": "twin",
+          "view": null,
+          "room_size_sqm": null,
+          "max_occupancy": null,
+          "room_property_items": [
+            {
+              "id": "room_property",
+              "icon": "bed-double",
+              "text": "2 отдельные кровати"
+            }
+          ],
+          "price_from": {
+            "amount": 3325,
+            "currency": "RUB",
+            "price_basis": "stay_total"
+          },
+          "rates": [
+            {
+              "offerpack_hash": "3fb9dd90-7c05-484f-af0b-b597c1c1f909",
+              "price": {
+                "amount": 3325,
+                "currency": "RUB"
+              },
+              "price_basis": "stay_total",
+              "meal": {
+                "included": false,
+                "name": "Питание не включено",
+                "type": "nomeal"
+              },
+              "breakfast_included": false,
+              "refundable": true,
+              "free_cancellation": false,
+              "free_cancellation_until": null,
+              "pay_at_hotel": null,
+              "pay_online": true,
+              "highlights": [
+                {
+                  "type": "meal",
+                  "text": "Питание не включено"
+                },
+                {
+                  "type": "policies",
+                  "text": "При отмене бронирования стоимость не возвращается"
+                },
+                {
+                  "type": "payment",
+                  "text": "Оплата онлайн"
+                }
+              ],
+              "is_business_trip": false,
+              "id": "3cb64575-9db0-4f96-b391-1b679306eb1e",
+              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
+            },
+            {
+              "offerpack_hash": "a8caeb2a-1060-4c69-9fc4-8dc668a7be8b",
+              "price": {
+                "amount": 4172,
+                "currency": "RUB"
+              },
+              "price_basis": "stay_total",
+              "meal": {
+                "included": true,
+                "name": "Завтрак включён",
+                "type": "breakfast"
+              },
+              "breakfast_included": true,
+              "refundable": true,
+              "free_cancellation": false,
+              "free_cancellation_until": null,
+              "pay_at_hotel": null,
+              "pay_online": true,
+              "highlights": [
+                {
+                  "type": "meal",
+                  "text": "Завтрак включён"
+                },
+                {
+                  "type": "policies",
+                  "text": "При отмене бронирования стоимость не возвращается"
+                },
+                {
+                  "type": "payment",
+                  "text": "Оплата онлайн"
+                }
+              ],
+              "is_business_trip": false,
+              "id": "b67c2c6b-1263-4a2a-be62-085da3b806ea",
+              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
+            }
+          ],
+          "photos_total": 15
+        },
+        {
+          "room_name": "Одноместный номер Стандартный",
           "room_description": "• В главном здании\n",
           "room_amenities": [
             {
@@ -2002,30 +1002,30 @@
               "icon": "bath-bubbles"
             },
             {
-              "id": "1214",
-              "name": "Чайник",
-              "icon": "kettle"
-            },
-            {
               "id": "1199",
               "name": "Фен",
               "icon": "hairdryer"
             },
             {
-              "id": "1605",
-              "name": "Светонепроницаемые шторы",
-              "icon": "window-blind"
-            },
-            {
               "id": "1269",
               "name": "Тапочки",
               "icon": "slippers"
+            },
+            {
+              "id": "1177",
+              "name": "Телевизор",
+              "icon": "tv"
+            },
+            {
+              "id": "1277",
+              "name": "Туалетные принадлежности",
+              "icon": "drop"
             }
           ],
           "photos": [
-            "https://cdn2.tu-tu.ru/imghub/view/19556599-ad1a-42eb-8d6a-d20568fc24ca/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/70eb654229aca7092abe0e2c8cc4f9f0.jpg",
-            "https://cdn2.tu-tu.ru/imghub/view/9ac72f94-1de8-4f6d-ae91-f671d844d35f/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/6d2aadf01ae495b4b494988dcdb9c258.jpg",
-            "https://cdn2.tu-tu.ru/imghub/view/3d307ef9-7530-4631-8bcb-67c712612ba6/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/ba7eca2edcba2f74ce9db7632e8ad144.jpg"
+            "https://cdn2.tu-tu.ru/imghub/view/dd4f218d-17d1-4f4d-975c-fdbbbfe8397f/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/2bf10965156556ccb2cd9c4018a97b6e.jpg",
+            "https://cdn2.tu-tu.ru/imghub/view/401624d0-d500-4af7-8d9f-e6ce268c539e/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/44c43db5725a43d092b61470342a95b4.jpg",
+            "https://cdn2.tu-tu.ru/imghub/view/f659123b-2ba8-48a9-b333-273d4bb0fefd/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/896fb5b3e7b86f4bdb4a624bd4375f4a.jpg"
           ],
           "bed_summary": "В главном здании",
           "bed_type": null,
@@ -2040,24 +1040,24 @@
             }
           ],
           "price_from": {
-            "amount": 8814,
+            "amount": 3373,
             "currency": "RUB",
             "price_basis": "stay_total"
           },
           "rates": [
             {
-              "offerpack_hash": "21813850-521d-4a8c-89b1-4f40d7c3cdbd",
+              "offerpack_hash": "5151ae66-b660-4d70-bdff-3b33eea039ca",
               "price": {
-                "amount": 8814,
+                "amount": 3373,
                 "currency": "RUB"
               },
               "price_basis": "stay_total",
               "meal": {
-                "included": true,
-                "name": "Ужин",
-                "type": "dinner"
+                "included": false,
+                "name": "Питание не включено",
+                "type": "nomeal"
               },
-              "breakfast_included": null,
+              "breakfast_included": false,
               "refundable": true,
               "free_cancellation": false,
               "free_cancellation_until": null,
@@ -2066,7 +1066,7 @@
               "highlights": [
                 {
                   "type": "meal",
-                  "text": "Ужин"
+                  "text": "Питание не включено"
                 },
                 {
                   "type": "policies",
@@ -2078,22 +1078,58 @@
                 }
               ],
               "is_business_trip": false,
-              "id": "b0ef3840-d208-4e90-85d0-2ac1cb95ba60",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
+              "id": "f59705d7-9155-4358-a4ee-f09ba229bd8e",
+              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
             },
             {
-              "offerpack_hash": "b5c1542e-ebf8-44bc-834c-bc2e4a81ccb1",
+              "offerpack_hash": "776b5888-5f75-413c-8404-001d2f679410",
               "price": {
-                "amount": 9936,
+                "amount": 3872,
+                "currency": "RUB"
+              },
+              "price_basis": "stay_total",
+              "meal": {
+                "included": false,
+                "name": "Питание не включено",
+                "type": "nomeal"
+              },
+              "breakfast_included": false,
+              "refundable": true,
+              "free_cancellation": true,
+              "free_cancellation_until": "2026-08-20T11:00:00Z",
+              "pay_at_hotel": null,
+              "pay_online": true,
+              "highlights": [
+                {
+                  "type": "meal",
+                  "text": "Питание не включено"
+                },
+                {
+                  "type": "policies",
+                  "text": "Бесплатная отмена до 20 авг 11:00"
+                },
+                {
+                  "type": "payment",
+                  "text": "Оплата онлайн"
+                }
+              ],
+              "is_business_trip": false,
+              "id": "334be2ec-922d-4b93-a0fb-525a53077140",
+              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
+            },
+            {
+              "offerpack_hash": "a8555eb1-e396-42c1-9ea9-4031718112d1",
+              "price": {
+                "amount": 4103,
                 "currency": "RUB"
               },
               "price_basis": "stay_total",
               "meal": {
                 "included": true,
-                "name": "Ужин",
-                "type": "dinner"
+                "name": "Завтрак включён",
+                "type": "breakfast"
               },
-              "breakfast_included": null,
+              "breakfast_included": true,
               "refundable": true,
               "free_cancellation": false,
               "free_cancellation_until": null,
@@ -2102,7 +1138,79 @@
               "highlights": [
                 {
                   "type": "meal",
-                  "text": "Ужин"
+                  "text": "Завтрак включён"
+                },
+                {
+                  "type": "policies",
+                  "text": "При отмене бронирования стоимость не возвращается"
+                },
+                {
+                  "type": "payment",
+                  "text": "Оплата онлайн"
+                }
+              ],
+              "is_business_trip": false,
+              "id": "504b1e9d-5e12-4ba2-9e1e-8e48a6e16663",
+              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
+            },
+            {
+              "offerpack_hash": "c99d4b0d-94bd-4b3c-bcbe-3db76ec6c712",
+              "price": {
+                "amount": 4603,
+                "currency": "RUB"
+              },
+              "price_basis": "stay_total",
+              "meal": {
+                "included": true,
+                "name": "Завтрак включён",
+                "type": "breakfast"
+              },
+              "breakfast_included": true,
+              "refundable": true,
+              "free_cancellation": true,
+              "free_cancellation_until": "2026-08-20T11:00:00Z",
+              "pay_at_hotel": null,
+              "pay_online": true,
+              "highlights": [
+                {
+                  "type": "meal",
+                  "text": "Завтрак включён"
+                },
+                {
+                  "type": "policies",
+                  "text": "Бесплатная отмена до 20 авг 11:00"
+                },
+                {
+                  "type": "payment",
+                  "text": "Оплата онлайн"
+                }
+              ],
+              "is_business_trip": false,
+              "id": "849c2818-7375-45d5-a24f-c2a9c0a87612",
+              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
+            },
+            {
+              "offerpack_hash": "86e6d023-7f44-414e-9eb5-01058a603d2e",
+              "price": {
+                "amount": 4804,
+                "currency": "RUB"
+              },
+              "price_basis": "stay_total",
+              "meal": {
+                "included": true,
+                "name": "Завтрак включён",
+                "type": "breakfast"
+              },
+              "breakfast_included": true,
+              "refundable": true,
+              "free_cancellation": false,
+              "free_cancellation_until": null,
+              "pay_at_hotel": null,
+              "pay_online": true,
+              "highlights": [
+                {
+                  "type": "meal",
+                  "text": "Завтрак включён"
                 },
                 {
                   "type": "policies",
@@ -2114,11 +1222,11 @@
                 }
               ],
               "is_business_trip": false,
-              "id": "a5590c66-3c99-40fe-b77f-41e16173b0e2",
-              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=9933959&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
+              "id": "7d14506f-f287-4d0a-842d-aa498f65431b",
+              "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1"
             }
           ],
-          "photos_total": 15
+          "photos_total": 5
         }
       ],
       "filters_available": [
@@ -2141,16 +1249,8 @@
                 "name": "завтрак включён"
               },
               {
-                "id": "завтрак и ужин включены",
-                "name": "завтрак и ужин включены"
-              },
-              {
                 "id": "питание не включено",
                 "name": "питание не включено"
-              },
-              {
-                "id": "ужин",
-                "name": "ужин"
               }
             ],
             "default_id": ""
@@ -2161,8 +1261,8 @@
           "name": "Цена",
           "type": "range",
           "value": {
-            "min": 5446,
-            "max": 10992,
+            "min": 2910,
+            "max": 4804,
             "options": [],
             "default_id": ""
           }

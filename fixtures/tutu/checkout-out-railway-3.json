@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-08-19T13:15:36.240Z",
+  "recorded_at": "2026-08-19T13:09:04.498Z",
   "source": "tutu",
   "tool": "create_checkout_link",
   "arguments": {
@@ -14,8 +14,8 @@
     "arrival_geo_point_id": 2958266,
     "offer_hash": "beef13e7c1e669e792058c19856177c2",
     "segment_hash": "6fc438849813428310276ef4120074a1",
-    "search_id": "66D55DDF-D252-4C4C-B491-3D1973A7E1BA",
-    "result_id": "9d120b17-811f-5831-bff4-a705a916d209",
+    "search_id": "6EE2E0C1-3CB8-43CB-B142-6DF17AB5D71A",
+    "result_id": "e9d3f841-a315-5afe-aff4-8e2aec061e7f",
     "card_id": "2921504779e07d469fb3e9d99cadd885"
   },
   "volatile": [

@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { Given, Then, When } from '@cucumber/cucumber';
 import { TtlCache } from '../../src/sources/cache.ts';
 import { loadRecordings } from '../../src/sources/replay.ts';
@@ -16,7 +17,20 @@ import type { ZaezdWorld } from '../support/world.ts';
  */
 const VENUE: GeoPoint = { lat: 59.9340393, lng: 30.4363945 };
 const CITY_CENTRE: GeoPoint = { lat: 59.9606739, lng: 30.1586551 };
-const HOTEL: GeoPoint = { lat: 59.91768, lng: 30.398684 };
+/**
+ * The hotel the recorder measured from, read out of the recording itself.
+ *
+ * Written by hand it silently stopped matching the fixture the day the ranking picked another
+ * hotel, and the scenario failed for a reason that had nothing to do with walking.
+ */
+const HOTEL: GeoPoint = (() => {
+  const recorded = JSON.parse(readFileSync('fixtures/enrich/osrm-foot.json', 'utf8')) as {
+    arguments: { url: string };
+  };
+  const from = /foot\/([\d.]+),([\d.]+);/.exec(recorded.arguments.url);
+  assert.ok(from !== null, 'the recorded foot route names no starting point');
+  return { lat: Number(from[2]), lng: Number(from[1]) };
+})();
 
 type Wiring = { readonly http: HttpFetch; readonly cache: TtlCache };
 

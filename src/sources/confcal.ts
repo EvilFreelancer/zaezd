@@ -20,8 +20,24 @@ export const CONFCAL_TIMEOUT_MS = 8_000;
 
 const SOURCE = 'confcal';
 
-/** What a lost session looks like coming back. The wording is the server's, not ours. */
+/**
+ * What a lost session looks like coming back.
+ *
+ * The wording is the server's, not ours, and it does not always reach the message: a refusal
+ * arrives as `answered with HTTP 400` with the reason only in the body. Both are searched.
+ */
 const SESSION_LOST = /session|сесси/i;
+
+function looksLikeALostSession(error: unknown): boolean {
+  if (!(error instanceof SourceError)) return false;
+  if (SESSION_LOST.test(error.message)) return true;
+
+  try {
+    return SESSION_LOST.test(JSON.stringify(error.detail) ?? '');
+  } catch {
+    return false;
+  }
+}
 
 export type EventQuery = {
   readonly cities?: readonly string[];
@@ -42,6 +58,8 @@ export type ConfcalOptions = {
   readonly cache: TtlCache;
   /** Reopens the session and returns whether a fresh one was obtained. Absent in replay. */
   readonly reopenSession?: () => Promise<void>;
+  /** Whether a session is currently held. Absent in replay, where there is no such thing. */
+  readonly hasSession?: () => boolean;
 };
 
 function toArguments(query: EventQuery): Record<string, unknown> {
@@ -74,14 +92,16 @@ export function confcalClient(options: ConfcalOptions): ConfcalClient {
 
   const call = async (tool: string, args: Record<string, unknown>): Promise<unknown> =>
     serialise(async () => {
+      // The catalogue demands a session it minted. The first question of the process has none,
+      // and asking anyway earns an HTTP 400 that no retry rule would have caught.
+      if (options.reopenSession !== undefined && options.hasSession?.() === false) {
+        await options.reopenSession();
+      }
+
       try {
         return await callOnce(tool, args);
       } catch (error) {
-        const lostSession =
-          options.reopenSession !== undefined &&
-          error instanceof SourceError &&
-          SESSION_LOST.test(error.message);
-        if (!lostSession) throw error;
+        if (options.reopenSession === undefined || !looksLikeALostSession(error)) throw error;
 
         // Exactly once. A second reopen would loop against a server that is simply down.
         await options.reopenSession();
@@ -136,6 +156,7 @@ export function liveConfcal(options: {
   return confcalClient({
     transport,
     cache: options.cache,
+    hasSession: () => sessionId !== undefined,
     reopenSession: async () => {
       sessionId = await initializeSession({
         url: options.url,

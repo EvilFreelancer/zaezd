@@ -1,9 +1,9 @@
 {
-  "recorded_at": "2026-08-19T11:31:57.818Z",
+  "recorded_at": "2026-08-19T13:15:36.240Z",
   "source": "osrm",
   "tool": "route-foot",
   "arguments": {
-    "url": "https://routing.openstreetmap.de/routed-foot/route/v1/foot/30.398684,59.91768;30.4363945,59.9340393?overview=false",
+    "url": "https://routing.openstreetmap.de/routed-foot/route/v1/foot/30.433834,59.939102;30.4363945,59.9340393?overview=false",
     "profile": "foot"
   },
   "note": "the only profile a walking time may come from",
@@ -16,27 +16,27 @@
           "legs": [
             {
               "steps": [],
-              "weight": 359.37,
+              "weight": 57.27,
               "summary": "",
-              "duration": 3425.7,
-              "distance": 4279.5
+              "duration": 550.5,
+              "distance": 683.2
             }
           ],
           "weight_name": "routability",
-          "weight": 359.37,
-          "duration": 3425.7,
-          "distance": 4279.5
+          "weight": 57.27,
+          "duration": 550.5,
+          "distance": 683.2
         }
       ],
       "waypoints": [
         {
-          "hint": "IzKWkMMAgJMnAAAAFAAAAAAAAAAAAAAA29x8QOyF-T8AAAAAAAAAAB8AAAAQAAAAAAAAAAAAAAB6AAAAKtjPAcpEkgPc2M8BcEWSAwAArxIAAAAA",
+          "hint": "8LN1nAU5u50AAAAAkQAAAAAAAAAAAAAAAAAAAEOYi0EAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAB6AAAAlGPQAfWYkgMqYtABHpmSAwAArwUAAAAA",
           "location": [
-            30.398506,
-            59.917514
+            30.434196,
+            59.939061
           ],
           "name": "",
-          "distance": 21.003237
+          "distance": 20.7542184
         },
         {
           "hint": "5omeibCNE5I4AAAAdAAAAAAAAABGAAAARPDZQKsbXUEAAAAAouiyQDYAAABvAAAAAAAAAC0AAAB6AAAARmzQATeFkgMrbNABV4WSAwAAbw8AAAAA",

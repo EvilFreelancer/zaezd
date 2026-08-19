@@ -112,14 +112,26 @@ When('both wait for their answer', async function (this: ZaezdWorld) {
 When('the recorded catalogue answer is looked up', function (this: ZaezdWorld) {
   this.remember(
     'looked-up',
-    this.recall<Recordings>('recordings').envelope('confcal', 'search_events', {
-      cities: ['chelyabinsk', 'ekaterinburg', 'kaliningrad', 'kazan', 'krasnodar', 'novosibirsk', 'orenburg', 'rostov', 'sochi', 'spb', 'tomsk', 'ufa', 'volgograd', 'voronezh'],
-      topics: ['ai'],
-      event_format: 'offline',
-      limit: 20,
-    }),
+    // Looked up by the arguments the recorder wrote, so a changed query cannot leave this
+    // green while every real lookup misses.
+    this.recall<Recordings>('recordings').envelope(
+      'confcal',
+      'search_events',
+      recordedSearchArguments(),
+    ),
   );
 });
+
+function recordedSearchArguments(): Record<string, unknown> {
+  const manifest = JSON.parse(readFileSync('fixtures/manifest.json', 'utf8')) as {
+    entries: readonly { tool: string; arguments: Record<string, unknown> }[];
+  };
+  const recorded = manifest.entries.find(
+    (entry) => entry.tool === 'search_events' && Array.isArray(entry.arguments['cities']),
+  );
+  assert.ok(recorded !== undefined, 'no catalogue search was ever recorded');
+  return recorded.arguments;
+}
 
 When('the recorded checkout answer is looked up', function (this: ZaezdWorld) {
   const manifest = JSON.parse(readFileSync('fixtures/manifest.json', 'utf8')) as {

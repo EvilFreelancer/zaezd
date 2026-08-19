@@ -1,11 +1,11 @@
 {
-  "recorded_at": "2026-08-19T11:31:57.818Z",
+  "recorded_at": "2026-08-19T13:15:36.240Z",
   "source": "tutu",
   "tool": "create_checkout_link",
   "arguments": {
     "transport": "bus",
     "offer_hash": "Gxw1hc0GOtPbkjScAiwFgFPhk2RdZhaV8pfsw8QF5yW0zC%2BAyhmhl1No2bIXTcFv7rUBMQqxirzikSSljL63viLDrcDk4Yn0S6KjB4TfB5XlgBFPA5JcXNGJQZ5UEoU4AxPGIKQAE5uj6Vw981SmvnV7YRotQxyeUQGontlZ3JFr",
-    "search_id": "1D9DAFB4-FF72-48FF-97B0-0CF8C10D0FAA",
+    "search_id": "A95D4393-CE0D-46B8-8FC2-FACE3FEA3F96",
     "departure_geo_city_id": 2656915,
     "arrival_geo_city_id": 2657260,
     "departure_id": "1447624",

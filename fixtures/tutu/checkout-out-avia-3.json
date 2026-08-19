@@ -1,15 +1,15 @@
 {
-  "recorded_at": "2026-08-19T11:31:57.818Z",
+  "recorded_at": "2026-08-19T13:15:36.240Z",
   "source": "tutu",
   "tool": "create_checkout_link",
   "arguments": {
     "transport": "avia",
     "is_round_trip": false,
     "search_results_url": "https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75",
-    "offer_hash": "{\"Price\":10704,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"0b398d95abce5901d2d01140d6e12218\\\",\\\"variantConditionsHash\\\":\\\"b39124216a7093a33829c1dacf33a49c:4a15ebaf82f14491e2bac3a776e17da0\\\",\\\"pricingVariantHash\\\":\\\"32ae1aae96fedb3cb34d8c8b59f70855\\\"}]\"}",
+    "offer_hash": "{\"Price\":10704,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"fb7fe83cd0f8bf4eeebe3b244f97e9c4\\\",\\\"variantConditionsHash\\\":\\\"3c629c8181c7afd4fdec296b99d413fb:4a15ebaf82f14491e2bac3a776e17da0\\\",\\\"pricingVariantHash\\\":\\\"d8d9a721e6e474460f9e079a6f4c77b9\\\"}]\"}",
     "departure_geo_city_id": 2657260,
     "arrival_geo_city_id": 2656915,
-    "departure_at": "2026-08-20T23:55:00+03:00",
+    "departure_at": "2026-08-20T23:30:00+03:00",
     "service_class": "ECONOMIC",
     "departure_avia_id": "491",
     "arrival_avia_id": "75",
@@ -29,7 +29,7 @@
         "content": [
           {
             "type": "text",
-            "text": "{\"kind\":\"deeplink\",\"search_results_url\":\"https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75\",\"checkout_url\":\"https://mtp-deeplink.tutu.ru/api/v1/deeplink/explicit/avia?departure_geo_city_id=2657260&arrival_geo_city_id=2656915&departure_time=2026-08-20T23:55:00%2B03:00&offer_variant_hash=0b398d95abce5901d2d01140d6e12218&variant_conditions_hash=b39124216a7093a33829c1dacf33a49c:4a15ebaf82f14491e2bac3a776e17da0&pricing_variant_hash=32ae1aae96fedb3cb34d8c8b59f70855&service_class=1&fallback_to_vid=true&source=mcp&passengers_full=1&passengers_child=0&passengers_infant=0&loading=true\",\"purchase_url_note\":\"checkout_url is a Tutu deeplink that 301-redirects to this exact ticket's purchase page (cheapest fare family of the chosen offer; for a different fare override `offer_hash` with the selected `variants[i].offer_hash`). If the offer becomes unavailable, the deeplink falls back to the avia search results instead of breaking. The deeplink requests the passenger composition you passed (`passengers_full/child/infant`); tell the user to confirm the passenger count in the cart before paying.\"}"
+            "text": "{\"kind\":\"deeplink\",\"search_results_url\":\"https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75\",\"checkout_url\":\"https://mtp-deeplink.tutu.ru/api/v1/deeplink/explicit/avia?departure_geo_city_id=2657260&arrival_geo_city_id=2656915&departure_time=2026-08-20T23:30:00%2B03:00&offer_variant_hash=fb7fe83cd0f8bf4eeebe3b244f97e9c4&variant_conditions_hash=3c629c8181c7afd4fdec296b99d413fb:4a15ebaf82f14491e2bac3a776e17da0&pricing_variant_hash=d8d9a721e6e474460f9e079a6f4c77b9&service_class=1&fallback_to_vid=true&source=mcp&passengers_full=1&passengers_child=0&passengers_infant=0&loading=true\",\"purchase_url_note\":\"checkout_url is a Tutu deeplink that 301-redirects to this exact ticket's purchase page (cheapest fare family of the chosen offer; for a different fare override `offer_hash` with the selected `variants[i].offer_hash`). If the offer becomes unavailable, the deeplink falls back to the avia search results instead of breaking. The deeplink requests the passenger composition you passed (`passengers_full/child/infant`); tell the user to confirm the passenger count in the cart before paying.\"}"
           }
         ],
         "isError": false
@@ -38,7 +38,7 @@
     "payload": {
       "kind": "deeplink",
       "search_results_url": "https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75",
-      "checkout_url": "https://mtp-deeplink.tutu.ru/api/v1/deeplink/explicit/avia?departure_geo_city_id=2657260&arrival_geo_city_id=2656915&departure_time=2026-08-20T23:55:00%2B03:00&offer_variant_hash=0b398d95abce5901d2d01140d6e12218&variant_conditions_hash=b39124216a7093a33829c1dacf33a49c:4a15ebaf82f14491e2bac3a776e17da0&pricing_variant_hash=32ae1aae96fedb3cb34d8c8b59f70855&service_class=1&fallback_to_vid=true&source=mcp&passengers_full=1&passengers_child=0&passengers_infant=0&loading=true",
+      "checkout_url": "https://mtp-deeplink.tutu.ru/api/v1/deeplink/explicit/avia?departure_geo_city_id=2657260&arrival_geo_city_id=2656915&departure_time=2026-08-20T23:30:00%2B03:00&offer_variant_hash=fb7fe83cd0f8bf4eeebe3b244f97e9c4&variant_conditions_hash=3c629c8181c7afd4fdec296b99d413fb:4a15ebaf82f14491e2bac3a776e17da0&pricing_variant_hash=d8d9a721e6e474460f9e079a6f4c77b9&service_class=1&fallback_to_vid=true&source=mcp&passengers_full=1&passengers_child=0&passengers_infant=0&loading=true",
       "purchase_url_note": "checkout_url is a Tutu deeplink that 301-redirects to this exact ticket's purchase page (cheapest fare family of the chosen offer; for a different fare override `offer_hash` with the selected `variants[i].offer_hash`). If the offer becomes unavailable, the deeplink falls back to the avia search results instead of breaking. The deeplink requests the passenger composition you passed (`passengers_full/child/infant`); tell the user to confirm the passenger count in the cart before paying."
     }
   }

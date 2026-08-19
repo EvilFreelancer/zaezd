@@ -38,6 +38,9 @@ import { forecastFor, type DayForecast, type WeatherOptions } from '../enrich/we
 
 /** How many journeys each way go into the cartesian product. Six each way is 36 pairs. */
 const LEGS_CONSIDERED = 6;
+
+/** How many events to ask the catalogue for. See the note in `eventQueryFor`. */
+const CANDIDATE_LIMIT = 8;
 const HOTELS_CONSIDERED = 3;
 
 export type Stage = 'events' | 'transport' | 'hotels' | 'context' | 'done';
@@ -116,7 +119,10 @@ export function eventQueryFor(
     cities: worthAsking,
     topics: [...request.topics],
     format: 'offline',
-    limit: 20,
+    // Eight, not twenty. Measured from the deployment host: this catalogue stops emitting
+    // mid-stream once the result set passes nine, and the call then hangs until it times out.
+    // Five candidates are listed and one is computed, so eight is more than the screen uses.
+    limit: CANDIDATE_LIMIT,
     ...(request.dateFrom === undefined ? {} : { dateFrom: request.dateFrom }),
     ...(request.dateTo === undefined ? {} : { dateTo: request.dateTo }),
   };

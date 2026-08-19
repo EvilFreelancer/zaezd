@@ -81,11 +81,11 @@ Feature: Stay dates are decided by the event, not by the model
       | event                                            | arrival    | departure  | nights |
       | SPb Python Meetup 2026                                     | 2026-08-20 | 2026-08-21 | 1 |
       | Конференция СTRL+ALT+LEAD                                  | 2026-08-19 | 2026-08-21 | 2 |
-      | CNews Петербург 2026 — передовые технологии и кейсы России | 2026-09-23 | 2026-09-25 | 2 |
+      | Data Dojo 2026                                           | 2026-09-08 | 2026-09-10 | 2 |
 
   Scenario: An event the catalogue gave no start time for says so out loud
     Given the recorded catalogue of offline events on artificial intelligence
-    When the stay is computed for "CNews Петербург 2026 — передовые технологии и кейсы России"
+    When the stay is computed for "XIII Международный форум технологического развития «Технопром-2026»"
     Then the trip says the opening time is unknown
 
   Scenario: An event the catalogue did give a start time for is not called unknown

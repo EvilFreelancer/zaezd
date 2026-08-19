@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-08-19T11:31:57.818Z",
+  "recorded_at": "2026-08-19T13:15:36.240Z",
   "source": "confcal",
   "tool": "list_topics",
   "arguments": {
@@ -13,7 +13,7 @@
       "result": {
         "content": [
           {
-            "text": "{\n  \"items\": [\n    {\n      \"slug\": \"ai\",\n      \"title\": \"Нейросети и ML\",\n      \"events_count\": 99\n    },\n    {\n      \"slug\": \"backend\",\n      \"title\": \"Бэкенд\",\n      \"events_count\": 43\n    },\n    {\n      \"slug\": \"frontend\",\n      \"title\": \"Фронтенд\",\n      \"events_count\": 15\n    },\n    {\n      \"slug\": \"mobile\",\n      \"title\": \"Мобильная разработка\",\n      \"events_count\": 11\n    },\n    {\n      \"slug\": \"devops\",\n      \"title\": \"DevOps и SRE\",\n      \"events_count\": 39\n    },\n    {\n      \"slug\": \"data\",\n      \"title\": \"Данные и аналитика\",\n      \"events_count\": 50\n    },\n    {\n      \"slug\": \"security\",\n      \"title\": \"Информационная безопасность\",\n      \"events_count\": 71\n    },\n    {\n      \"slug\": \"qa\",\n      \"title\": \"Тестирование\",\n      \"events_count\": 10\n    },\n    {\n      \"slug\": \"management\",\n      \"title\": \"Управление и тимлиды\",\n      \"events_count\": 61\n    },\n    {\n      \"slug\": \"product\",\n      \"title\": \"Продукт и дизайн\",\n      \"events_count\": 26\n    },\n    {\n      \"slug\": \"gamedev\",\n      \"title\": \"Геймдев\",\n      \"events_count\": 9\n    },\n    {\n      \"slug\": \"hardware\",\n      \"title\": \"Железо и embedded\",\n      \"events_count\": 33\n    },\n    {\n      \"slug\": \"science\",\n      \"title\": \"Наука и R&D\",\n      \"events_count\": 49\n    },\n    {\n      \"slug\": \"marketing\",\n      \"title\": \"Маркетинг и SEO\",\n      \"events_count\": 45\n    }\n  ],\n  \"total\": 14,\n  \"limit\": 100,\n  \"offset\": 0,\n  \"has_more\": false\n}",
+            "text": "{\n  \"items\": [\n    {\n      \"slug\": \"ai\",\n      \"title\": \"Нейросети и ML\",\n      \"events_count\": 99\n    },\n    {\n      \"slug\": \"backend\",\n      \"title\": \"Бэкенд\",\n      \"events_count\": 43\n    },\n    {\n      \"slug\": \"frontend\",\n      \"title\": \"Фронтенд\",\n      \"events_count\": 15\n    },\n    {\n      \"slug\": \"mobile\",\n      \"title\": \"Мобильная разработка\",\n      \"events_count\": 11\n    },\n    {\n      \"slug\": \"devops\",\n      \"title\": \"DevOps и SRE\",\n      \"events_count\": 39\n    },\n    {\n      \"slug\": \"data\",\n      \"title\": \"Данные и аналитика\",\n      \"events_count\": 50\n    },\n    {\n      \"slug\": \"security\",\n      \"title\": \"Информационная безопасность\",\n      \"events_count\": 71\n    },\n    {\n      \"slug\": \"qa\",\n      \"title\": \"Тестирование\",\n      \"events_count\": 10\n    },\n    {\n      \"slug\": \"management\",\n      \"title\": \"Управление и тимлиды\",\n      \"events_count\": 61\n    },\n    {\n      \"slug\": \"product\",\n      \"title\": \"Продукт и дизайн\",\n      \"events_count\": 26\n    },\n    {\n      \"slug\": \"gamedev\",\n      \"title\": \"Геймдев\",\n      \"events_count\": 9\n    },\n    {\n      \"slug\": \"hardware\",\n      \"title\": \"Железо и embedded\",\n      \"events_count\": 33\n    },\n    {\n      \"slug\": \"science\",\n      \"title\": \"Наука и R&D\",\n      \"events_count\": 50\n    },\n    {\n      \"slug\": \"marketing\",\n      \"title\": \"Маркетинг и SEO\",\n      \"events_count\": 45\n    }\n  ],\n  \"total\": 14,\n  \"limit\": 100,\n  \"offset\": 0,\n  \"has_more\": false\n}",
             "type": "text"
           }
         ],
@@ -85,7 +85,7 @@
         {
           "slug": "science",
           "title": "Наука и R&D",
-          "events_count": 49
+          "events_count": 50
         },
         {
           "slug": "marketing",
