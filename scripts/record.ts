@@ -471,6 +471,11 @@ async function recordEnrich(): Promise<void> {
       'Екатеринбург',
       'step three, the city itself: a normal mode of operation, not an exception',
     ],
+    [
+      'enrich/nominatim-city-kazan.json',
+      'Казань',
+      'the degradation showcase falls all the way to the city, so its centre is recorded too',
+    ],
   ];
   for (const [file, query, note] of venues) {
     await recordHttp(file, 'nominatim', 'search', nominatim(query), { q: query }, { note });
@@ -509,11 +514,13 @@ async function recordEnrich(): Promise<void> {
     );
   }
 
+  // The coordinates are the ones the geocoder actually returns, because the product asks for
+  // the forecast where the venue is and the recording has to answer that exact question.
   await recordHttp(
     'enrich/openmeteo-in-window.json',
     'open-meteo',
     'forecast',
-    'https://api.open-meteo.com/v1/forecast?latitude=56.8389&longitude=60.6057' +
+    'https://api.open-meteo.com/v1/forecast?latitude=56.8381978&longitude=60.6103939' +
       '&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=auto' +
       '&start_date=2026-08-26&end_date=2026-08-30',
     { city: 'Екатеринбург' },
@@ -523,7 +530,7 @@ async function recordEnrich(): Promise<void> {
     'enrich/openmeteo-out-of-window.json',
     'open-meteo',
     'forecast',
-    'https://api.open-meteo.com/v1/forecast?latitude=55.7963&longitude=49.1088' +
+    'https://api.open-meteo.com/v1/forecast?latitude=55.7946485&longitude=49.1115022' +
       '&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=auto' +
       '&start_date=2026-10-28&end_date=2026-11-01',
     { city: 'Казань' },

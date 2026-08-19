@@ -39,6 +39,12 @@ export type Recordings = {
   readonly referenceDate: IsoDate;
   /** The whole MCP envelope, as it came off the wire. */
   envelope(source: string, tool: string, args: Readonly<Record<string, unknown>>): unknown;
+  /** A plain HTTP answer, status and all. The status is part of the answer, not decoration. */
+  http(
+    source: string,
+    tool: string,
+    args: Readonly<Record<string, unknown>>,
+  ): { readonly status: number; readonly body: unknown };
   /** True when the recorded answer carries fields that have most likely expired by now. */
   isVolatile(source: string, tool: string, args: Readonly<Record<string, unknown>>): boolean;
 };
@@ -91,6 +97,18 @@ export function loadRecordings(root = 'fixtures'): Recordings {
         );
       }
       return stored.response.envelope ?? stored.response.body ?? stored.response;
+    },
+
+    http(source, tool, args) {
+      const stored = find(source, tool, args);
+      if (stored === undefined) {
+        throw new SourceError(
+          'replay',
+          `has no recording of ${source}.${tool} with these arguments; run npm run record`,
+          args,
+        );
+      }
+      return { status: stored.response.status ?? 200, body: stored.response.body };
     },
 
     isVolatile(source, tool, args) {

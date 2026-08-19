@@ -1,9 +1,9 @@
 {
-  "recorded_at": "2026-08-19T10:53:04.672Z",
+  "recorded_at": "2026-08-19T10:58:53.435Z",
   "source": "open-meteo",
   "tool": "forecast",
   "arguments": {
-    "url": "https://api.open-meteo.com/v1/forecast?latitude=56.8389&longitude=60.6057&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=auto&start_date=2026-08-26&end_date=2026-08-30",
+    "url": "https://api.open-meteo.com/v1/forecast?latitude=56.8381978&longitude=60.6103939&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=auto&start_date=2026-08-26&end_date=2026-08-30",
     "city": "Екатеринбург"
   },
   "note": "inside the 16-day forecast window at the time of recording",
@@ -12,11 +12,11 @@
     "body": {
       "latitude": 56.8125,
       "longitude": 60.625,
-      "generationtime_ms": 2.0046234130859375,
+      "generationtime_ms": 0.8368492126464844,
       "utc_offset_seconds": 18000,
       "timezone": "Asia/Yekaterinburg",
       "timezone_abbreviation": "GMT+5",
-      "elevation": 244,
+      "elevation": 254,
       "daily_units": {
         "time": "iso8601",
         "temperature_2m_max": "°C",
@@ -39,7 +39,7 @@
           14.2
         ],
         "temperature_2m_min": [
-          10.6,
+          10.5,
           11,
           10.9,
           8.8,
