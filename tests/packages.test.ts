@@ -2,6 +2,20 @@ import { describe, expect, it } from 'vitest';
 import { choosePackages, type TripVariant } from '../src/composer/packages.ts';
 import type { TripCost } from '../src/composer/pricing.ts';
 import type { Feasibility } from '../src/composer/feasibility.ts';
+import type { Leg } from '../src/composer/types.ts';
+
+/** A minimal journey. These tests are about choosing between trips, not about their contents. */
+function leg(offerId: string): Leg {
+  return {
+    offerId,
+    mode: 'railway',
+    price: { amount: 0, currency: 'RUB' },
+    durationMin: 60,
+    departureAt: '2026-08-26T18:00:00+03:00',
+    arrivalAt: '2026-08-26T22:00:00+03:00',
+    carriers: [],
+  };
+}
 
 const WORKS: Feasibility = { makesTheOpening: true, canBePrimary: true, notes: [] };
 const MISSES: Feasibility = { makesTheOpening: false, canBePrimary: false, notes: [] };
@@ -40,6 +54,8 @@ function variant(
 ): TripVariant {
   return {
     id,
+    outbound: leg(`${id}-out`),
+    back: leg(`${id}-back`),
     cost: cost(total, extra.budget),
     feasibility: extra.feasibility ?? WORKS,
     totalDurationMin: durationMin,
@@ -179,6 +195,23 @@ describe('choosePackages', () => {
 
     expect(forwards).toEqual(backwards);
     expect(forwards.packages[0]?.variant.id).toBe('a');
+  });
+
+  it('shows exactly one card when nothing fits the budget', () => {
+    // Three trips the traveller cannot afford in three different ways is not an answer.
+    const result = choosePackages([
+      variant('dear', 40000, 1400, { workingDays: 3, budget: { limit: 30000 } }),
+      variant('dearer', 50000, 200, { workingDays: 1, budget: { limit: 30000 } }),
+    ]);
+
+    expect(result.packages).toHaveLength(1);
+    expect(result.packages[0]?.rules).toEqual(['cheapest']);
+  });
+
+  it('refuses two variants sharing an identifier rather than showing the wrong one', () => {
+    expect(() =>
+      choosePackages([variant('same', 10000, 100), variant('same', 50000, 900)]),
+    ).toThrow(/identifier/);
   });
 
   it('returns nothing for nothing rather than failing', () => {

@@ -26,10 +26,22 @@ Feature: Whether the traveller actually makes it
     When the traveller arrives at 2026-08-27T11:00:00+03:00
     Then the variant cannot be offered as the main trip
 
-  Scenario: A variant that makes the opening can be the headline trip
+  Scenario: A variant that makes the opening and leaves afterwards can be the headline trip
     Given the event opens at 2026-08-27T10:00:00+03:00
-    When the traveller arrives at 2026-08-26T18:00:00+03:00
+    When the traveller arrives at 2026-08-26T18:00:00+03:00 and leaves at 2026-08-28T09:00:00+03:00
     Then the variant can be offered as the main trip
+
+  Scenario: A trip with no arrival time cannot be the headline one
+    Given the event opens at 2026-08-27T10:00:00+03:00
+    When only the journey home is known, leaving at 2026-08-28T09:00:00+03:00
+    Then the variant cannot be offered as the main trip
+    And the trip notes that nobody said when the traveller lands
+
+  Scenario: A time with no offset is refused, because otherwise the answer depends on the server
+    Given the event opens at 2026-08-27T10:00:00+03:00
+    When the traveller arrives at 2026-08-27T08:00:00
+    Then the trip cannot say whether it makes the opening
+    And the variant cannot be offered as the main trip
 
   Scenario: Arrival and opening in different time zones are compared as moments, not as clocks
     Given the event opens at 2026-08-27T10:00:00+05:00
@@ -38,7 +50,7 @@ Feature: Whether the traveller actually makes it
 
   Scenario: When the catalogue gave no opening time the check is relaxed and says so
     Given the event opening time is unknown
-    When the traveller arrives at 2026-08-27T23:00:00+03:00
+    When the traveller arrives at 2026-08-27T23:00:00+03:00 and leaves at 2026-08-28T09:00:00+03:00
     Then the trip cannot say whether it makes the opening
     And the trip notes that the catalogue gave no opening time
     And the variant can be offered as the main trip

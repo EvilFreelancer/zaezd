@@ -53,7 +53,9 @@ export function labelForCheckout(
   const label = kind === undefined ? undefined : LABELS[kind];
   if (label === undefined) return UNKNOWN;
 
-  if (product === 'avia' && !label.opensACart) {
+  // Only the deeplink behaves this way. An order page is an order page in any browser, and a
+  // search redirect already says it is a search.
+  if (product === 'avia' && kind === 'deeplink') {
     return { ...label, caveat: COLD_BROWSER_AIR };
   }
   return label;

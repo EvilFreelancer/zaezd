@@ -99,14 +99,17 @@ describe('priceTrip', () => {
   const noEventPrice = parseEventPrice(undefined);
 
   it('adds both journeys and the whole stay', () => {
+    // The two legs are priced differently on purpose: with equal fares an implementation that
+    // counts the outbound twice and ignores the return would pass this test unnoticed.
     const cost = priceTrip({
-      ...legs,
+      outbound: { amount: 2090.93, currency: RUB },
+      back: { amount: 3117.5, currency: RUB },
       nights: 4,
       hotel: { amount: 12800, currency: RUB },
       eventPrice: noEventPrice,
     });
 
-    expect(cost.total).toBe(16981.86);
+    expect(cost.total).toBe(18008.43);
   });
 
   it('adds fractional fares without floating-point dust', () => {
@@ -336,14 +339,22 @@ describe('priceTrip', () => {
 });
 
 describe('countWorkingDaysBurnt', () => {
-  const allWorking = (): boolean => true;
-  const allOff = (): boolean => false;
+  /** A calendar covering the days these trips touch, as data rather than as a lookup. */
+  function calendar(days: readonly string[], working: boolean): Record<string, boolean> {
+    return Object.fromEntries(days.map((day) => [day, working]));
+  }
+
+  const AUGUST = [
+    '2026-08-26', '2026-08-27', '2026-08-28', '2026-08-29', '2026-08-30', '2026-08-31',
+  ];
+  const allWorking = calendar(AUGUST, true);
+  const allOff = calendar(AUGUST, false);
 
   it('burns nothing on a trip that runs over a weekend', () => {
     const burnt = countWorkingDaysBurnt({
       outboundDepartureAt: '2026-08-28T20:00:00+03:00',
       returnArrivalAt: '2026-08-30T09:00:00+03:00',
-      isWorkingDay: allOff,
+      workingDays: allOff,
     });
 
     expect(burnt).toBe(0);
@@ -354,7 +365,7 @@ describe('countWorkingDaysBurnt', () => {
     const burnt = countWorkingDaysBurnt({
       outboundDepartureAt: '2026-08-28T23:15:00+03:00',
       returnArrivalAt: '2026-08-29T20:00:00+03:00',
-      isWorkingDay: allWorking,
+      workingDays: allWorking,
     });
 
     expect(burnt).toBe(1);
@@ -364,7 +375,7 @@ describe('countWorkingDaysBurnt', () => {
     const burnt = countWorkingDaysBurnt({
       outboundDepartureAt: '2026-08-28T14:00:00+03:00',
       returnArrivalAt: '2026-08-29T20:00:00+03:00',
-      isWorkingDay: allWorking,
+      workingDays: allWorking,
     });
 
     expect(burnt).toBe(2);
@@ -374,12 +385,12 @@ describe('countWorkingDaysBurnt', () => {
     const night = countWorkingDaysBurnt({
       outboundDepartureAt: '2026-08-28T23:15:00+03:00',
       returnArrivalAt: '2026-08-30T22:00:00+03:00',
-      isWorkingDay: allWorking,
+      workingDays: allWorking,
     });
     const midday = countWorkingDaysBurnt({
       outboundDepartureAt: '2026-08-28T14:00:00+03:00',
       returnArrivalAt: '2026-08-30T22:00:00+03:00',
-      isWorkingDay: allWorking,
+      workingDays: allWorking,
     });
 
     expect(night).toBe(2);
@@ -390,7 +401,7 @@ describe('countWorkingDaysBurnt', () => {
     const burnt = countWorkingDaysBurnt({
       outboundDepartureAt: '2026-08-28T23:15:00+03:00',
       returnArrivalAt: '2026-08-30T07:00:00+03:00',
-      isWorkingDay: allWorking,
+      workingDays: allWorking,
     });
 
     expect(burnt).toBe(1);
@@ -400,7 +411,7 @@ describe('countWorkingDaysBurnt', () => {
     const burnt = countWorkingDaysBurnt({
       outboundDepartureAt: '2026-08-26T09:00:00+03:00',
       returnArrivalAt: '2026-08-30T20:00:00+03:00',
-      isWorkingDay: (day) => day !== '2026-08-29' && day !== '2026-08-30',
+      workingDays: { ...allWorking, '2026-08-29': false, '2026-08-30': false },
     });
 
     expect(burnt).toBe(3);
@@ -410,7 +421,10 @@ describe('countWorkingDaysBurnt', () => {
     const burnt = countWorkingDaysBurnt({
       outboundDepartureAt: '2026-10-30T09:00:00+03:00',
       returnArrivalAt: '2026-11-02T20:00:00+03:00',
-      isWorkingDay: allWorking,
+      workingDays: calendar(
+        ['2026-10-30', '2026-10-31', '2026-11-01', '2026-11-02'],
+        true,
+      ),
     });
 
     expect(burnt).toBe(4);
@@ -420,7 +434,7 @@ describe('countWorkingDaysBurnt', () => {
     const burnt = countWorkingDaysBurnt({
       outboundDepartureAt: '2026-08-26T09:00:00+03:00',
       returnArrivalAt: '2026-08-30T20:00:00+03:00',
-      isWorkingDay: () => undefined,
+      workingDays: {},
     });
 
     expect(burnt).toBeUndefined();
@@ -430,7 +444,7 @@ describe('countWorkingDaysBurnt', () => {
     const burnt = countWorkingDaysBurnt({
       outboundDepartureAt: '2026-08-30T09:00:00+03:00',
       returnArrivalAt: '2026-08-26T20:00:00+03:00',
-      isWorkingDay: allWorking,
+      workingDays: allWorking,
     });
 
     expect(burnt).toBeUndefined();

@@ -3,6 +3,7 @@ import { Given, Then, When } from '@cucumber/cucumber';
 import { choosePackages, type PackageNote, type PackagesResult, type TripVariant } from '../../src/composer/packages.ts';
 import { parseEventPrice, priceTrip } from '../../src/composer/pricing.ts';
 import { checkFeasibility } from '../../src/composer/feasibility.ts';
+import type { Leg } from '../../src/composer/types.ts';
 import type { ZaezdWorld } from '../support/world.ts';
 
 const OPENS_AT = '2026-08-27T10:00:00+03:00';
@@ -24,10 +25,26 @@ function addDraft(world: ZaezdWorld, draft: Draft): void {
   world.remember('drafts', [...drafts(world), draft]);
 }
 
+
+/** A minimal journey. This feature is about choosing between trips, not about their contents. */
+function leg(offerId: string, departureAt: string, arrivalAt: string): Leg {
+  return {
+    offerId,
+    mode: 'railway',
+    price: { amount: 0, currency: 'RUB' },
+    durationMin: 60,
+    departureAt,
+    arrivalAt,
+    carriers: [],
+  };
+}
+
 /** The whole cost sits on the outbound leg; this feature is about choosing, not about pricing. */
 function toVariant(draft: Draft, budget?: number): TripVariant {
   return {
     id: draft.id,
+    outbound: leg(`${draft.id}-out`, '2026-08-26T18:00:00+03:00', '2026-08-26T22:00:00+03:00'),
+    back: leg(`${draft.id}-back`, '2026-08-30T09:00:00+03:00', '2026-08-30T18:00:00+03:00'),
     cost: priceTrip({
       outbound: { amount: draft.total, currency: 'RUB' },
       back: { amount: 0, currency: 'RUB' },
@@ -38,6 +55,7 @@ function toVariant(draft: Draft, budget?: number): TripVariant {
     feasibility: checkFeasibility({
       event: EVENT,
       arrivalAt: draft.makesTheOpening ? '2026-08-26T18:00:00+03:00' : '2026-08-27T11:00:00+03:00',
+      returnDepartureAt: '2026-08-30T09:00:00+03:00',
     }),
     totalDurationMin: draft.durationMin,
     ...(draft.workingDays === undefined ? {} : { workingDaysBurnt: draft.workingDays }),

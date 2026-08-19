@@ -81,10 +81,51 @@ describe('checkFeasibility, what it will not claim', () => {
     const result = checkFeasibility({
       event: { startDate: '2026-10-29', endDate: '2026-10-31' },
       arrivalAt: '2026-10-28T18:00:00+03:00',
+      returnDepartureAt: '2026-11-01T09:00:00+03:00',
     });
 
-    expect(result).toMatchObject({ canBePrimary: true });
-    expect(result.notes).toEqual(['opening-time-unknown']);
+    expect(result.canBePrimary).toBe(true);
+    expect(result.notes).toContain('opening-time-unknown');
+  });
+
+  it('refuses to headline a trip whose arrival nobody supplied', () => {
+    // Not knowing when the traveller lands is not the same as landing in time.
+    const result = checkFeasibility({
+      event: MORNING_EVENT,
+      returnDepartureAt: '2026-08-30T09:00:00+03:00',
+    });
+
+    expect(result).toMatchObject({ canBePrimary: false });
+    expect(result.notes).toContain('arrival-time-missing');
+  });
+
+  it('refuses to headline a trip whose journey home nobody supplied', () => {
+    const result = checkFeasibility({ event: MORNING_EVENT, arrivalAt: '2026-08-26T18:00:00+03:00' });
+
+    expect(result).toMatchObject({ canBePrimary: false });
+    expect(result.notes).toContain('return-time-missing');
+  });
+
+  it('refuses a timestamp with no offset, whatever time zone the machine is in', () => {
+    // Date.parse reads a naive timestamp in the machine's own zone, which would make the same
+    // trip feasible on a server in Moscow and infeasible on one in Tokyo.
+    const result = checkFeasibility({
+      event: MORNING_EVENT,
+      arrivalAt: '2026-08-27T08:00:00',
+      returnDepartureAt: '2026-08-30T09:00:00+03:00',
+    });
+
+    expect(result.notes).toContain('arrival-time-unreadable');
+  });
+
+  it('refuses an event opening time with no offset for the same reason', () => {
+    const result = checkFeasibility({
+      event: { startDate: '2026-08-27', endDate: '2026-08-27', startsAt: '2026-08-27T10:00:00' },
+      arrivalAt: '2026-08-27T08:00:00+03:00',
+      returnDepartureAt: '2026-08-28T09:00:00+03:00',
+    });
+
+    expect(result.notes).toContain('opening-time-unknown');
   });
 
   it('treats an unreadable opening time as no opening time at all', () => {
@@ -100,7 +141,8 @@ describe('checkFeasibility, what it will not claim', () => {
     const result = checkFeasibility({ event: MORNING_EVENT, arrivalAt: 'сегодня-вечером' });
 
     expect(result.makesTheOpening).toBeUndefined();
-    expect(result).toMatchObject({ canBePrimary: false, notes: ['arrival-time-unreadable'] });
+    expect(result.canBePrimary).toBe(false);
+    expect(result.notes).toContain('arrival-time-unreadable');
   });
 
   it('reports no margin at all when there is nothing to measure', () => {
@@ -156,11 +198,12 @@ describe('checkFeasibility, leaving after the event', () => {
   it('will not judge a departure on the last day without a closing time', () => {
     const result = checkFeasibility({
       event: { startDate: '2026-08-27', endDate: '2026-08-29' },
+      arrivalAt: '2026-08-26T18:00:00+03:00',
       returnDepartureAt: '2026-08-29T21:00:00+03:00',
     });
 
-    expect(result.leavesAfterTheEnd).toBeUndefined();
     expect(result.canBePrimary).toBe(true);
+    expect(result.leavesAfterTheEnd).toBeUndefined();
     expect(result.notes).toContain('closing-time-unknown');
   });
 

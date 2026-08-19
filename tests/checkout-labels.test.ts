@@ -58,6 +58,13 @@ describe('labelForCheckout', () => {
     expect(labelForCheckout('deeplink', 'avia').caveat).toMatch(/без активной сессии/);
   });
 
+  it.each(['order_url', 'seats_url', 'search_redirect', 'hotel_page'])(
+    'adds no cold-browser warning to an air %s link, which does not behave that way',
+    (kind) => {
+      expect(labelForCheckout(kind, 'avia').caveat).toBeUndefined();
+    },
+  );
+
   it('adds no such warning to a rail link of the same kind', () => {
     expect(labelForCheckout('deeplink', 'railway').caveat).toBeUndefined();
   });

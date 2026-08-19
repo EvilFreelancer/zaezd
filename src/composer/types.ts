@@ -203,3 +203,35 @@ export type HotelSearch = {
   readonly totalReturned: number;
   readonly hasMore: boolean;
 };
+
+/** What the traveller asked for, after the gateway normalised it. */
+export type TripRequest = {
+  readonly topics: readonly string[];
+  /** As typed. L3 resolves it against the catalogue directory before the core sees it. */
+  readonly origin: string;
+  readonly budget?: number;
+  readonly dateFrom?: IsoDate;
+  readonly dateTo?: IsoDate;
+  readonly adults: number;
+};
+
+/** The event as the screen shows it: the catalogue record plus what was learned about it. */
+export type EventCard = {
+  readonly event: CatalogueEvent;
+  readonly venueLocation: VenueLocation;
+  /** Minutes on foot from the chosen hotel. Absent unless a foot route was really computed. */
+  readonly walkingMinutes?: number;
+};
+
+/** One line of the checkout checklist, with the wording derived from Tutu's own answer. */
+export type CheckoutLink = {
+  readonly part: 'outbound' | 'back' | 'hotel';
+  readonly url: string;
+  /** What Tutu called it. The label is derived from this and never assigned in advance. */
+  readonly kind?: string;
+  readonly label: string;
+  readonly opensACart: boolean;
+  readonly caveat?: string;
+  /** True when the link came from a recording and has most likely expired. */
+  readonly recorded?: boolean;
+};

@@ -76,7 +76,9 @@ export function rankHotels(input: HotelRankingInput): HotelRanking {
     input.maxStayPrice === undefined
       ? measured
       : measured.filter((entry) => price(entry.hotel) <= (input.maxStayPrice as number));
-  const priceCeilingUnmet = input.maxStayPrice !== undefined && withinCeiling.length === 0;
+  // An empty listing did not fail to meet the ceiling; there was nothing to meet it with.
+  const priceCeilingUnmet =
+    input.maxStayPrice !== undefined && withinCeiling.length === 0 && measured.length > 0;
   const pool = priceCeilingUnmet ? measured : withinCeiling;
 
   const byDistance = (left: RankedHotel, right: RankedHotel): number => {

@@ -84,13 +84,29 @@ describe('rankHotels with a precise venue', () => {
     expect(ranking.hotels[0]?.distanceM).toBeUndefined();
   });
 
-  it('breaks a distance tie by price, then rating, then id', () => {
+  it('breaks a distance tie by price', () => {
     const cheap = hotel({ id: 'a', price: { amount: 5000, currency: 'RUB' } });
     const pricey = hotel({ id: 'b', price: { amount: 9000, currency: 'RUB' } });
 
     const ranking = rankHotels({ hotels: [pricey, cheap], venue: VENUE });
 
     expect(ranking.hotels.map((entry) => entry.hotel.id)).toEqual(['a', 'b']);
+  });
+
+  it('breaks a price tie by rating, higher first', () => {
+    const worse = hotel({ id: 'a', rating: 6 });
+    const better = hotel({ id: 'b', rating: 9 });
+
+    const ranking = rankHotels({ hotels: [worse, better], venue: VENUE });
+
+    expect(ranking.hotels.map((entry) => entry.hotel.id)).toEqual(['b', 'a']);
+  });
+
+  it('breaks a rating tie by identifier, so array order never decides', () => {
+    const second = hotel({ id: 'b', rating: 8 });
+    const first = hotel({ id: 'a', rating: 8 });
+
+    expect(rankHotels({ hotels: [second, first], venue: VENUE }).hotels[0]?.hotel.id).toBe('a');
   });
 
   it('answers the same whichever order the listing arrived in', () => {
@@ -179,5 +195,11 @@ describe('rankHotels and the price ceiling', () => {
 
   it('returns nothing for an empty listing instead of failing', () => {
     expect(rankHotels({ hotels: [], venue: VENUE }).hotels).toEqual([]);
+  });
+
+  it('does not accuse an empty listing of failing a ceiling it was never offered', () => {
+    expect(rankHotels({ hotels: [], venue: VENUE, maxStayPrice: 10000 }).priceCeilingUnmet).toBe(
+      false,
+    );
   });
 });

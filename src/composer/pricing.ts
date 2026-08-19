@@ -203,8 +203,13 @@ export type WorkingDaysInput = {
   /** When the traveller leaves home, and when they get back. Both with their offsets. */
   readonly outboundDepartureAt: IsoDateTime;
   readonly returnArrivalAt: IsoDateTime;
-  /** From the production calendar. A day it does not know about is not counted. */
-  readonly isWorkingDay: (day: IsoDate) => boolean | undefined;
+  /**
+   * The production calendar as data, one entry per day, `true` for a working day.
+   *
+   * Data rather than a lookup function on purpose: a callback lets a caller smuggle I/O or L2
+   * state into a function this layer promises is pure, and nothing would catch it.
+   */
+  readonly workingDays: Readonly<Record<IsoDate, boolean>>;
 };
 
 function localDay(value: IsoDateTime): IsoDate {
@@ -237,8 +242,8 @@ export function countWorkingDaysBurnt(input: WorkingDaysInput): number | undefin
 
   let burnt = 0;
   for (let day = first; day <= last; day = addDays(day, 1)) {
-    const working = input.isWorkingDay(day);
-    // The calendar could not answer, so no number is invented for the whole trip.
+    const working = input.workingDays[day];
+    // The calendar says nothing about this day, so no number is invented for the whole trip.
     if (working === undefined) return undefined;
     if (!working) continue;
 

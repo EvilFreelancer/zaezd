@@ -10,15 +10,28 @@
  * and exhaustively testable. Specified in `specs/04-kompozitor.md`, step 6.
  */
 import type { Feasibility } from './feasibility.ts';
+import type { RankedHotel } from './hotels.ts';
 import type { TripCost } from './pricing.ts';
+import type { Leg } from './types.ts';
 
 export type PackageRule = 'cheapest' | 'no-leave' | 'fastest';
 
 /** The order the cards appear in, which is also the order the rules are applied in. */
 const RULE_ORDER: readonly PackageRule[] = ['cheapest', 'no-leave', 'fastest'];
 
+/**
+ * One assembled trip: the journeys, the room, and everything already computed about them.
+ *
+ * The legs and the hotel travel with the numbers rather than in a side table keyed by id,
+ * because the card and the checkout list both need them and looking them up again is how a
+ * checkout link ends up pointing at a different train than the one on the card.
+ */
 export type TripVariant = {
   readonly id: string;
+  readonly outbound: Leg;
+  readonly back: Leg;
+  /** Absent on a same-day trip, and on a trip whose hotels did not load. */
+  readonly hotel?: RankedHotel;
   readonly cost: TripCost;
   readonly feasibility: Feasibility;
   /** Time in transit, both journeys together. */
@@ -84,6 +97,13 @@ function fitsBudget(variant: TripVariant): boolean {
 export function choosePackages(variants: readonly TripVariant[]): PackagesResult {
   if (variants.length === 0) return { packages: [], notes: [] };
 
+  const identifiers = new Set(variants.map((variant) => variant.id));
+  if (identifiers.size !== variants.length) {
+    // Cards are looked up by identifier. Two variants sharing one would let the wrong trip be
+    // shown under the right rule, which is the exact failure this layer exists to prevent.
+    throw new RangeError('Two trip variants share an identifier');
+  }
+
   const notes: PackageNote[] = [];
 
   // A trip that misses the opening is not a cheaper trip. But if nothing makes the opening,
@@ -93,17 +113,23 @@ export function choosePackages(variants: readonly TripVariant[]): PackagesResult
   const afterFeasibility = feasible.length > 0 ? feasible : variants;
 
   const affordable = afterFeasibility.filter(fitsBudget);
-  if (affordable.length === 0) notes.push('over-budget');
-  const pool = affordable.length > 0 ? affordable : afterFeasibility;
+  const nothingFits = affordable.length === 0;
+  if (nothingFits) notes.push('over-budget');
+  const pool = nothingFits ? afterFeasibility : affordable;
 
   if (pool.some((variant) => variant.cost.budget?.couldExceed === true)) {
     notes.push('budget-uncertain');
   }
 
+  // When nothing fits the budget the answer is the cheapest trip with an overflow badge, not
+  // three trips the traveller cannot afford in three different ways.
+  const rules = nothingFits ? (['cheapest'] as const) : RULE_ORDER;
+
   const chosen = new Map<string, PackageRule[]>();
+  const winners = new Map<string, TripVariant>();
   const order: string[] = [];
 
-  for (const rule of RULE_ORDER) {
+  for (const rule of rules) {
     const { compare, needs } = RULES[rule];
     const eligible =
       needs === 'working-days'
@@ -116,20 +142,20 @@ export function choosePackages(variants: readonly TripVariant[]): PackagesResult
     }
 
     const winner = [...eligible].sort(compare)[0] as TripVariant;
-    const rules = chosen.get(winner.id);
-    if (rules === undefined) {
+    const already = chosen.get(winner.id);
+    if (already === undefined) {
       chosen.set(winner.id, [rule]);
+      winners.set(winner.id, winner);
       order.push(winner.id);
     } else {
-      rules.push(rule);
+      already.push(rule);
     }
   }
 
-  const byIdentifier = new Map(pool.map((variant) => [variant.id, variant]));
   return {
     packages: order.map((id) => ({
       rules: chosen.get(id) as PackageRule[],
-      variant: byIdentifier.get(id) as TripVariant,
+      variant: winners.get(id) as TripVariant,
     })),
     notes,
   };

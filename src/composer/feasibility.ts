@@ -18,7 +18,9 @@ export type FeasibilityNote =
   | 'opening-time-unknown'
   | 'closing-time-unknown'
   | 'arrival-time-unreadable'
-  | 'return-time-unreadable';
+  | 'return-time-unreadable'
+  | 'arrival-time-missing'
+  | 'return-time-missing';
 
 export type EventTiming = {
   readonly startDate: IsoDate;
@@ -44,10 +46,19 @@ export type Feasibility = {
   readonly notes: readonly FeasibilityNote[];
 };
 
-/** An instant, or `undefined` when the string is not one. Requires a real date and time. */
+/**
+ * An instant, or `undefined` when the string is not one.
+ *
+ * The offset is required, and that is the whole point of this function. `Date.parse` reads a
+ * timestamp without one in the machine's own time zone, so the same trip would be feasible on
+ * a server in Moscow and infeasible on a server in Tokyo. This layer answers the same way
+ * everywhere or it answers nothing.
+ */
 function toInstant(value: IsoDateTime | undefined): number | undefined {
   if (value === undefined) return undefined;
-  if (!/^\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}/.test(value)) return undefined;
+  if (!/^\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}(:\d{2}(\.\d+)?)?(Z|[+-]\d{2}:?\d{2})$/.test(value)) {
+    return undefined;
+  }
 
   const parsed = Date.parse(value);
   return Number.isNaN(parsed) ? undefined : parsed;
@@ -71,7 +82,10 @@ export function checkFeasibility(input: FeasibilityInput): Feasibility {
     notes.push('opening-time-unknown');
   }
 
-  if (input.arrivalAt !== undefined) {
+  if (input.arrivalAt === undefined) {
+    // Not knowing when the traveller lands is not the same as landing in time.
+    notes.push('arrival-time-missing');
+  } else {
     const arrival = toInstant(input.arrivalAt);
     if (arrival === undefined) {
       // A time nobody can read is not a time that works out. Say so instead of assuming.
@@ -87,7 +101,9 @@ export function checkFeasibility(input: FeasibilityInput): Feasibility {
 
   let leavesAfterTheEnd: boolean | undefined;
 
-  if (input.returnDepartureAt !== undefined) {
+  if (input.returnDepartureAt === undefined) {
+    notes.push('return-time-missing');
+  } else {
     const departure = toInstant(input.returnDepartureAt);
     const closing = toInstant(input.event.endsAt);
 
@@ -105,14 +121,17 @@ export function checkFeasibility(input: FeasibilityInput): Feasibility {
     }
   }
 
-  const unreadable =
-    notes.includes('arrival-time-unreadable') || notes.includes('return-time-unreadable');
+  // A time that is missing and a time that cannot be read block the headline card equally: in
+  // both cases the product does not know whether the traveller makes it.
+  const unknownTiming = (
+    ['arrival-time-unreadable', 'return-time-unreadable', 'arrival-time-missing', 'return-time-missing'] as const
+  ).some((note) => notes.includes(note));
 
   return {
     ...(makesTheOpening === undefined ? {} : { makesTheOpening }),
     ...(marginMinutes === undefined ? {} : { marginMinutes }),
     ...(leavesAfterTheEnd === undefined ? {} : { leavesAfterTheEnd }),
-    canBePrimary: makesTheOpening !== false && leavesAfterTheEnd !== false && !unreadable,
+    canBePrimary: makesTheOpening !== false && leavesAfterTheEnd !== false && !unknownTiming,
     notes,
   };
 }

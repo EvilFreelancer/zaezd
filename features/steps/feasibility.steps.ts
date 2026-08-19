@@ -42,6 +42,23 @@ Given('the event is {string}', function (this: ZaezdWorld, title: string) {
   });
 });
 
+When(
+  'the traveller arrives at {word} and leaves at {word}',
+  function (this: ZaezdWorld, arrivalAt: string, returnDepartureAt: string) {
+    this.remember(
+      'feasibility',
+      checkFeasibility({ event: timing(this), arrivalAt, returnDepartureAt }),
+    );
+  },
+);
+
+When(
+  'only the journey home is known, leaving at {word}',
+  function (this: ZaezdWorld, returnDepartureAt: string) {
+    this.remember('feasibility', checkFeasibility({ event: timing(this), returnDepartureAt }));
+  },
+);
+
 When('the traveller arrives at {word}', function (this: ZaezdWorld, arrivalAt: string) {
   this.remember('feasibility', checkFeasibility({ event: timing(this), arrivalAt }));
 });
@@ -99,6 +116,7 @@ Then('the trip cannot say whether it leaves after the event is over', function (
 const FEASIBILITY_NOTES: Readonly<Record<string, Feasibility['notes'][number]>> = {
   'the catalogue gave no opening time': 'opening-time-unknown',
   'the catalogue gave no closing time': 'closing-time-unknown',
+  'nobody said when the traveller lands': 'arrival-time-missing',
 };
 
 Then(

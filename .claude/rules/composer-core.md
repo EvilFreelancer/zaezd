@@ -79,6 +79,13 @@ understates the coverage by whatever the page size happened to be.
 | Makes the opening | `arrival_at` no later than `starts_at` minus 60 minutes | otherwise flagged, cannot be the primary package |
 | Leaves after the end | return departure not before the event ends | otherwise flagged |
 | Start time unknown | `starts_at === null` | relax the check and say so on the card |
+| A time that will not parse | the string is there but is not a moment | same as absent: the variant cannot be primary |
+| A time nobody supplied | no arrival, or no return departure | the variant cannot be primary; not knowing is not the same as arriving in time |
+
+Compare instants, never rounded minutes: 59 minutes and 30 seconds rounds to 60 and sails
+through the very check that exists to guarantee the hour. The offset in a timestamp is
+mandatory, because `Date.parse` reads a naive one in the machine's own zone and the same trip
+would be feasible on a server in Moscow and infeasible on one in Tokyo.
 
 The buffer is reported as a number ("запас 4 ч 15 мин"), never as the word "успевает".
 
@@ -101,7 +108,9 @@ total = outbound leg + return leg + hotel for the whole stay + event price (only
   train leaving at 23:15 on Friday does not burn Friday and a 14:00 flight does.
 - The event price is often a lower bound ("от 7 000 ₽"). Parsed as a lower bound, the total
   is labelled a lower bound too, never presented as an exact sum.
-- The marked set of working days arrives as an argument. Reading isDayOff is L2.
+- The marked set of working days arrives as data, one entry per day. Not as a lookup function:
+  a callback lets a caller smuggle I/O or L2 state into a function this layer promises is pure,
+  and nothing would catch it.
 
 ## Packages, `packages.ts`
 
@@ -118,9 +127,16 @@ Every tie is broken down to a stable secondary key and, in the last resort, to t
 identifier, so the same input always yields the same card. A tie left to array order
 destroys the determinism the whole layer exists for.
 
-If two rules pick the same variant, emit fewer cards rather than duplicates. If nothing
-fits the budget, emit the cheapest with an explicit overflow badge. An empty screen is
-never an acceptable output.
+Narrow before choosing: feasible variants first, then the ones inside the budget, then the
+three rules over what is left. Applied to the whole set, the cheapest card is routinely a trip
+the traveller misses the opening on. If a narrowing step empties the pool, undo it and add a
+note - a flagged screen beats an empty one.
+
+If two rules pick the same variant, emit fewer cards rather than duplicates. If nothing fits
+the budget, emit exactly one card, the cheapest, with an explicit overflow badge: three trips
+the traveller cannot afford in three different ways is not an answer. An empty screen is never
+an acceptable output. Two variants sharing an identifier are refused, because cards are looked
+up by it.
 
 ## The composer never
 

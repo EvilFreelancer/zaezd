@@ -151,16 +151,22 @@ Given(
   },
 );
 
+/** A production calendar covering every day the scenarios' journeys touch. */
+function calendarOf(working: boolean): Record<IsoDate, boolean> {
+  const days = ['2026-08-26', '2026-08-27', '2026-08-28', '2026-08-29', '2026-08-30', '2026-08-31'];
+  return Object.fromEntries(days.map((day) => [day, working]));
+}
+
 Given('every day in between is a working day', function (this: ZaezdWorld) {
-  this.remember('calendar', (): boolean => true);
+  this.remember('calendar', calendarOf(true));
 });
 
 Given('no day in between is a working day', function (this: ZaezdWorld) {
-  this.remember('calendar', (): boolean => false);
+  this.remember('calendar', calendarOf(false));
 });
 
 Given('the production calendar did not answer', function (this: ZaezdWorld) {
-  this.remember('calendar', (): undefined => undefined);
+  this.remember('calendar', {});
 });
 
 When('the working days are counted', function (this: ZaezdWorld) {
@@ -172,7 +178,7 @@ When('the working days are counted', function (this: ZaezdWorld) {
     countWorkingDaysBurnt({
       outboundDepartureAt: departure,
       returnArrivalAt: arrival,
-      isWorkingDay: this.recall<(day: IsoDate) => boolean | undefined>('calendar'),
+      workingDays: this.recall<Record<IsoDate, boolean>>('calendar'),
     }),
   );
 });
