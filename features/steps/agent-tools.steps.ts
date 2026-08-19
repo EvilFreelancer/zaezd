@@ -552,3 +552,30 @@ Then('the answer is still about the event the link was made for', function (this
   const event = structured(this)['event'] as { title: string };
   assert.equal(event.title, this.recall<string>('pinned_title'));
 });
+
+Then(
+  'the tools ask the agent to look the address up when the catalogue has none',
+  function (this: ZaezdWorld) {
+    // The product never invents an address. An agent with a web search can find one, and the
+    // tool has to say so, otherwise the trip quietly ends at "адрес неизвестен".
+    const board = tools(this).filter((tool) => tool.name !== 'create_trip_checkout');
+    assert.ok(board.length > 0, 'no board tool at all');
+
+    for (const tool of board) {
+      assert.match(
+        (tool as { description?: string }).description ?? '',
+        /venue_precision/,
+        `${tool.name} says nothing about what to do with a missing address`,
+      );
+    }
+  },
+);
+
+Then(
+  'the plain text says nothing about looking the address up, because this one has it',
+  function (this: ZaezdWorld) {
+    const event = structured(this)['event'] as { venue_precision: string };
+    assert.equal(event.venue_precision, 'exact', 'the recorded demo lost its exact address');
+    assert.ok(!text(this).includes('найдите адрес'), 'the text asks for an address it already has');
+  },
+);

@@ -59,6 +59,19 @@ const POINTS_AT_THE_BOARD = {
   'ui/resourceUri': UI_RESOURCE,
 } as const;
 
+/**
+ * What to do when the catalogue named no address.
+ *
+ * The product itself never invents one: a venue it could not locate is reported as located
+ * roughly or not at all, and the map draws no pin. An agent with a web search has an option we
+ * do not, so the tool asks it to take that option and to say where the address came from -
+ * which keeps the invented-nothing promise while still getting the traveller to the door.
+ */
+const LOOK_THE_ADDRESS_UP =
+  'Если venue_precision не "exact", точного адреса площадки в каталоге нет. Заезд его не ' +
+  'выдумывает: найдите адрес сами в открытых источниках, по названию события и площадки, и ' +
+  'скажите человеку, что адрес взят не из каталога, а из поиска.';
+
 export function createMcpServer(app: App, publicUrl: string): McpServer {
   const server = new McpServer(
     { name: 'zaezd', version: '0.1.0' },
@@ -89,7 +102,8 @@ export function createMcpServer(app: App, publicUrl: string): McpServer {
       title: 'Найти поездку на конференцию',
       description:
         'Собирает поездку от повода: находит ближайшее офлайн-событие по теме, считает дорогу ' +
-        'туда и обратно, отель и полную цену участия, и возвращает до трёх объяснимых пакетов.',
+        'туда и обратно, отель и полную цену участия, и возвращает до трёх объяснимых пакетов. ' +
+        LOOK_THE_ADDRESS_UP,
       inputSchema: FIND_INPUT,
       outputSchema: FIND_OUTPUT,
       annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
@@ -114,7 +128,9 @@ export function createMcpServer(app: App, publicUrl: string): McpServer {
     'get_trip_details',
     {
       title: 'Раскрыть пакет поездки',
-      description: 'Подробности одного пакета: дороги, отель, запас до начала и погода, если она есть.',
+      description:
+        'Подробности одного пакета: дороги, отель, запас до начала и погода, если она есть. ' +
+        LOOK_THE_ADDRESS_UP,
       inputSchema: DETAILS_INPUT,
       outputSchema: DETAILS_OUTPUT,
       annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true },

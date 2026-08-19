@@ -225,7 +225,9 @@ function legLine(what: string, leg: ShapedLeg): string {
  * a JSON blob. Every number here was computed upstream; this function only formats.
  */
 export function textFor(shaped: Record<string, unknown>): string {
-  const event = shaped['event'] as { title?: string; city?: string; starts_at?: string } | undefined;
+  const event = shaped['event'] as
+    | { title?: string; city?: string; starts_at?: string; venue?: string; venue_precision?: string }
+    | undefined;
   const packages = shaped['packages'] as readonly ShapedPackage[];
   const coverage = String(shaped['coverage']);
 
@@ -237,6 +239,18 @@ export function textFor(shaped: Record<string, unknown>): string {
 
   const stay = shaped['stay'] as { check_in: string; check_out: string; nights: number } | undefined;
   const lines: string[] = [`${event.title}, ${event.city ?? 'город не указан'}`];
+
+  // The catalogue gave no address, and this product does not make one up. An agent that can
+  // search the web can, so it is asked to - and asked to say where the address came from.
+  if (event.venue_precision !== 'exact') {
+    lines.push(
+      event.venue === undefined
+        ? 'Площадку каталог не назвал: найдите адрес в открытых источниках по названию события.'
+        : `Точного адреса каталог не дал, известно только "${event.venue}": найдите адрес в ` +
+          'открытых источниках и скажите, что он не из каталога.',
+    );
+  }
+
   if (stay !== undefined) {
     lines.push(
       `Заезд ${stay.check_in}, выезд ${stay.check_out}, ` +

@@ -140,3 +140,11 @@ Feature: An agent gets three verbs, not sixteen searches
     Given the product is published at an address
     When an agent sends a body far larger than any request
     Then the address refuses it without reading it all
+
+  Scenario: An address the catalogue never gave is handed to the agent as a task
+    When the agent lists the tools
+    Then the tools ask the agent to look the address up when the catalogue has none
+
+  Scenario: The plain text says outright that the address is missing and where it is not from
+    When the agent asks for a trip on "ai" from "Москва"
+    Then the plain text says nothing about looking the address up, because this one has it
