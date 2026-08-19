@@ -1,0 +1,141 @@
+- generic [active] [ref=f5e1]:
+  - search [ref=f5e2]:
+    - generic [ref=f5e3]:
+      - generic [ref=f5e4]: Тема
+      - textbox "Тема" [ref=f5e5]:
+        - /placeholder: ai, data
+        - text: ai
+    - generic [ref=f5e6]:
+      - generic [ref=f5e7]: Откуда
+      - textbox "Откуда" [ref=f5e8]:
+        - /placeholder: Москва
+        - text: Москва
+    - generic [ref=f5e9]:
+      - generic [ref=f5e10]: Бюджет, ₽
+      - spinbutton "Бюджет, ₽" [ref=f5e11]
+    - button "Собрать поездку" [ref=f5e12] [cursor=pointer]
+  - generic [ref=f5e13]:
+    - banner [ref=f5e14]:
+      - heading [level=1] [ref=f5e15]:
+        - link "SPb Python Meetup 2026" [ref=f5e16] [cursor=pointer]:
+          - /url: https://docs.google.com/forms/d/e/1FAIpQLSeTDKJ4NgBowfkm1zBNi7eGw0JUgOGHWBzH-yjM0VAscB61WA/viewform
+      - paragraph [ref=f5e17]: Санкт-Петербург · 20 августа - 21 августа · 1 ночь · бесплатно
+      - paragraph [ref=f5e18]: Офис «Леста Игры», площадь Карла Фаберже, 8В
+      - paragraph [ref=f5e19]: 57 мин пешком от ближайшего отеля
+    - generic [ref=f5e20]:
+      - generic [ref=f5e21]:
+        - region "Варианты поездки" [ref=f5e22]:
+          - 'button "Дешевле всего · Без отпуска 12 778.92 ₽ Туда: поезд 060*Г 20 августа, 00:48 → 09:50 8 079.92 ₽ запас 9 ч 10 мин Номера у Невы Отель: Номера у Невы 5.2 км от центра, 1 км от метро Площадь Александра Невского 1 2 999 ₽ 2.8 км до площадки Обратно: автобус 21 августа, 06:30 → 15:30 1 700 ₽ Сгорает 2 рабочих дня дорога туда: 8 079.92 ₽ отель: 2 999 ₽ обратно: 1 700 ₽ дорога туда 8 079.92 ₽ + отель 2 999 ₽ + обратно 1 700 ₽ = 12 778.92 ₽ Собрать ссылки на оплату" [pressed] [ref=f5e23] [cursor=pointer]':
+            - generic [ref=f5e24]:
+              - heading "Дешевле всего · Без отпуска" [level=3] [ref=f5e25]
+              - paragraph [ref=f5e26]: 12 778.92 ₽
+            - generic [ref=f5e27]:
+              - generic [ref=f5e28]: "Туда: поезд 060*Г"
+              - generic [ref=f5e29]: 20 августа, 00:48 → 09:50
+              - generic [ref=f5e30]: 8 079.92 ₽
+              - generic [ref=f5e31]: запас 9 ч 10 мин
+            - generic [ref=f5e32]:
+              - img "Номера у Невы" [ref=f5e33]
+              - generic [ref=f5e34]: "Отель: Номера у Невы"
+              - generic [ref=f5e35]: 5.2 км от центра, 1 км от метро Площадь Александра Невского 1
+              - generic [ref=f5e36]: 2 999 ₽
+              - generic [ref=f5e37]: 2.8 км до площадки
+            - generic [ref=f5e38]:
+              - generic [ref=f5e39]: "Обратно: автобус"
+              - generic [ref=f5e40]: 21 августа, 06:30 → 15:30
+              - generic [ref=f5e41]: 1 700 ₽
+            - paragraph [ref=f5e42]: Сгорает 2 рабочих дня
+            - generic [ref=f5e43]:
+              - generic [ref=f5e44]:
+                - 'generic "дорога туда: 8 079.92 ₽" [ref=f5e45]'
+                - 'generic "отель: 2 999 ₽" [ref=f5e46]'
+                - 'generic "обратно: 1 700 ₽" [ref=f5e47]'
+              - paragraph [ref=f5e48]: дорога туда 8 079.92 ₽ + отель 2 999 ₽ + обратно 1 700 ₽ = 12 778.92 ₽
+            - button "Собрать ссылки на оплату" [ref=f5e49]
+          - 'button "Быстрее всего 13 752.02 ₽ Туда: поезд 022А 20 августа, 00:25 → 08:53 8 753.02 ₽ запас 10 ч 07 мин Номера у Невы Отель: Номера у Невы 5.2 км от центра, 1 км от метро Площадь Александра Невского 1 2 999 ₽ 2.8 км до площадки Обратно: автобус 21 августа, 23:00 → 07:00 2 000 ₽ Сгорает 2 рабочих дня дорога туда: 8 753.02 ₽ отель: 2 999 ₽ обратно: 2 000 ₽ дорога туда 8 753.02 ₽ + отель 2 999 ₽ + обратно 2 000 ₽ = 13 752.02 ₽ Собрать ссылки на оплату" [ref=f5e50] [cursor=pointer]':
+            - generic [ref=f5e51]:
+              - heading "Быстрее всего" [level=3] [ref=f5e52]
+              - paragraph [ref=f5e53]: 13 752.02 ₽
+            - generic [ref=f5e54]:
+              - generic [ref=f5e55]: "Туда: поезд 022А"
+              - generic [ref=f5e56]: 20 августа, 00:25 → 08:53
+              - generic [ref=f5e57]: 8 753.02 ₽
+              - generic [ref=f5e58]: запас 10 ч 07 мин
+            - generic [ref=f5e59]:
+              - img "Номера у Невы" [ref=f5e60]
+              - generic [ref=f5e61]: "Отель: Номера у Невы"
+              - generic [ref=f5e62]: 5.2 км от центра, 1 км от метро Площадь Александра Невского 1
+              - generic [ref=f5e63]: 2 999 ₽
+              - generic [ref=f5e64]: 2.8 км до площадки
+            - generic [ref=f5e65]:
+              - generic [ref=f5e66]: "Обратно: автобус"
+              - generic [ref=f5e67]: 21 августа, 23:00 → 07:00
+              - generic [ref=f5e68]: 2 000 ₽
+            - paragraph [ref=f5e69]: Сгорает 2 рабочих дня
+            - generic [ref=f5e70]:
+              - generic [ref=f5e71]:
+                - 'generic "дорога туда: 8 753.02 ₽" [ref=f5e72]'
+                - 'generic "отель: 2 999 ₽" [ref=f5e73]'
+                - 'generic "обратно: 2 000 ₽" [ref=f5e74]'
+              - paragraph [ref=f5e75]: дорога туда 8 753.02 ₽ + отель 2 999 ₽ + обратно 2 000 ₽ = 13 752.02 ₽
+            - button "Собрать ссылки на оплату" [ref=f5e76]
+        - region "Таймлайн поездки" [ref=f5e77]:
+          - generic [ref=f5e78]:
+            - generic "выезд, 20 августа 00:48" [ref=f5e79]
+            - generic "прибытие, 20 августа 09:50" [ref=f5e80]
+            - generic "начало, 20 августа 19:00" [ref=f5e81]
+            - generic "выезд обратно, 21 августа 06:30" [ref=f5e82]
+            - generic "дома, 21 августа 15:30" [ref=f5e83]
+          - paragraph [ref=f5e84]: выезд 00:48 · прибытие 09:50 · начало 19:00 · выезд обратно 06:30 · дома 15:30
+      - generic [ref=f5e85]:
+        - generic "Карта города события" [ref=f5e86]:
+          - generic:
+            - generic:
+              - button "Площадка" [ref=f5e87] [cursor=pointer]
+              - button "Номера у Невы" [ref=f5e91] [cursor=pointer]
+              - button "Номера у Невы" [ref=f5e95] [cursor=pointer]
+          - generic:
+            - generic [ref=f5e99]:
+              - button "Zoom in" [ref=f5e100] [cursor=pointer]: +
+              - button "Zoom out" [ref=f5e101] [cursor=pointer]: −
+            - generic [ref=f5e102]:
+              - link "Leaflet" [ref=f5e103] [cursor=pointer]:
+                - /url: https://leafletjs.com
+              - text: "| © OpenStreetMap"
+        - region "Отели рядом с площадкой" [ref=f5e108]:
+          - heading "Где спать" [level=2] [ref=f5e109]
+          - list [ref=f5e110]:
+            - listitem [ref=f5e111]:
+              - button "Номера у Невы 2.8 км до площадки 2 999 ₽" [ref=f5e112] [cursor=pointer]:
+                - generic [ref=f5e113]: Номера у Невы
+                - generic [ref=f5e114]: 2.8 км до площадки
+                - generic [ref=f5e115]: 2 999 ₽
+        - generic [ref=f5e116]:
+          - heading "Погода" [level=2] [ref=f5e117]
+          - list [ref=f5e118]:
+            - listitem [ref=f5e119]: "20 августа: 12…19 °C, осадки 92%"
+            - listitem [ref=f5e120]: "21 августа: 15…19 °C, осадки 63%"
+    - generic [ref=f5e121]:
+      - heading "Ещё события по теме" [level=2] [ref=f5e122]
+      - list [ref=f5e123]:
+        - listitem [ref=f5e124]:
+          - link "Конференция СTRL+ALT+LEAD" [ref=f5e125] [cursor=pointer]:
+            - /url: https://adaurum.timepad.ru/event/4083924
+          - text: — Санкт-Петербург, 20 августа
+        - listitem [ref=f5e126]:
+          - link "День открытых дверей Т-Поколения в Санкт-Петербурге" [ref=f5e127] [cursor=pointer]:
+            - /url: https://education.tbank.ru/activities/events/event/dod-t-pokoleniya-spb-26
+          - text: — Санкт-Петербург, 23 августа
+        - listitem [ref=f5e128]:
+          - link "XIII Международный форум технологического развития «Технопром-2026»" [ref=f5e129] [cursor=pointer]:
+            - /url: https://novosibexpo.ru/calendar/events.html
+          - text: — Новосибирск, 26 августа
+        - listitem [ref=f5e130]:
+          - link "Искусственный интеллект для роста бизнеса AI Growth Days" [ref=f5e131] [cursor=pointer]:
+            - /url: https://agday.ru/
+          - text: — Екатеринбург, 27 августа
+    - generic [ref=f5e132]:
+      - heading "Что не вошло" [level=2] [ref=f5e133]
+      - list [ref=f5e134]:
+        - listitem [ref=f5e135]: 3 события — не поместились в короткий список
+    - paragraph [ref=f5e136]: Каталог знает 21 город, живые офлайн-события есть в 15. Ещё 40 событий проходят онлайн.

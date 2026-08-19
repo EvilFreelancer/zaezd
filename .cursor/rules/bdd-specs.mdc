@@ -87,7 +87,7 @@ consequence instead: the same request answers the same way without touching the 
 
 **Anything that needs a browser.** Widths, horizontal scroll, keyboard focus, contrast, CSP
 and the map are invisible to Cucumber on Node. They are covered by Playwright
-(`npm run test:ui`) and named in the feature only as an outcome the renderer produces.
+in a real browser, and named in the feature only as an outcome the renderer produces.
 
 No `@skip` and no `@wip` in committed specs. A scenario is red only while the task that
 introduced it is in progress; a task is not done until every scenario is green.

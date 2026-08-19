@@ -25,12 +25,11 @@ npm install          # once
 npm start            # the server, ZAEZD_MODE=live or replay
 npm run bdd          # executable Gherkin specifications (features/)
 npm test             # unit tests (tests/)
-npm run test:ui      # Playwright: widths, focus, contrast, no horizontal scroll
 npm run typecheck    # tsc over the Node tree and the browser tree
 npm run lint         # eslint
 npm run rules:sync   # regenerate .cursor/rules from .claude/rules
 npm run build        # compile to dist/ and copy static assets
-npm run verify       # all of the above except test:ui and build, the gate before done
+npm run verify       # all of the above except build, the gate before calling anything done
 ```
 
 Runtime dependencies are added as the layer that needs them is built: `zod` with

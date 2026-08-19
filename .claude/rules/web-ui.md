@@ -103,8 +103,9 @@ inside an App. Verify contrast on light.
 
 Three widths are checked: 360, 768, 1280. On mobile the cards come first, the map shrinks
 to 240-320 px, and the checkout button stays clear of the back gesture. Keyboard focus,
-contrast, long-name overflow and the absence of horizontal scroll are verified by Playwright
-(`npm run test:ui`), not by eye - Cucumber on Node cannot see any of it.
+contrast, long-name overflow and the absence of horizontal scroll are checked in a real
+browser and the result is written into `docs/decisions.md` - Cucumber on Node cannot see any
+of it, and a computed style is the only honest evidence that a colour token resolved at all.
 
 Every string that came from confcal or Tutu is escaped on the way out, in text, in
 attributes, in URLs and inside the embedded JSON. Event and hotel names are third-party

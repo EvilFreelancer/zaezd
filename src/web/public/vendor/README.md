@@ -35,4 +35,5 @@ The bridge is a 330 KB module and is fetched only inside a host: the page import
 from the branch that runs when the channel is `app`, so a browser opening the public link never
 downloads it.
 
-Update the version in the table above in the same change, and re-run `npm run test:ui`.
+Update the version in the table above in the same change, and re-check the screen in a
+browser: a vendored file that fails to load is invisible to every test that runs on Node.

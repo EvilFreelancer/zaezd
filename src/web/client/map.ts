@@ -102,7 +102,6 @@ export function drawMap(
     container.hidden = true;
     return;
   }
-  container.hidden = false;
 
   // A second render replaces the whole board, `#map` included. A Leaflet instance bound to the
   // element that just left the document draws nothing, so it is thrown away with it.
@@ -114,6 +113,10 @@ export function drawMap(
   if (map === undefined) {
     map = L.map(container, { attributionControl: true, scrollWheelZoom: false });
     mapHost = container;
+    const built = map;
+    // Hidden until the first tile actually draws. An empty frame that fills in later looks
+    // broken for as long as the tile server is slow, and the hotels are listed under it anyway.
+    container.hidden = true;
     let drewSomething = false;
     L.tileLayer('https://tile.openstreetmap.de/{z}/{x}/{y}.png', {
       maxZoom: 18,
@@ -121,6 +124,10 @@ export function drawMap(
       attribution: '© OpenStreetMap',
     })
       .on('tileload', () => {
+        if (!drewSomething) {
+          container.hidden = false;
+          built.invalidateSize();
+        }
         drewSomething = true;
       })
       .on('tileerror', () => {
@@ -173,9 +180,9 @@ export function drawMap(
   // The container is laid out after the map is built, and inside a host it is resized again
   // when the panel changes. Leaflet caches the size it saw, so it has to be told each time,
   // or the tiles cover a rectangle that no longer matches the box.
-  const built = map;
-  requestAnimationFrame(() => built.invalidateSize());
-  watch(container, () => built.invalidateSize());
+  const drawn = map;
+  requestAnimationFrame(() => drawn.invalidateSize());
+  watch(container, () => drawn.invalidateSize());
 }
 
 let watching: ResizeObserver | undefined;
