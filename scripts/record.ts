@@ -257,13 +257,13 @@ async function recordTutu(): Promise<void> {
   const outbound = await call(
     'tutu/multitransport-msk-ekb-out.json',
     'search_multitransport',
-    { origin: 'Москва', destination: 'Екатеринбург', departure_date: '2026-08-26', page_size: 6 },
+    { origin: 'Москва', destination: 'Екатеринбург', departure_date: '2026-08-26', adults: 1, page_size: 6 },
     { volatile: volatileTransport, note: 'outbound leg of the default demo' },
   );
   await call(
     'tutu/multitransport-ekb-msk-back.json',
     'search_multitransport',
-    { origin: 'Екатеринбург', destination: 'Москва', departure_date: '2026-08-30', page_size: 6 },
+    { origin: 'Екатеринбург', destination: 'Москва', departure_date: '2026-08-30', adults: 1, page_size: 6 },
     { volatile: volatileTransport, note: 'the return leg, without which the total is knowably wrong' },
   );
   const hotels = await call(
@@ -283,13 +283,13 @@ async function recordTutu(): Promise<void> {
   await call(
     'tutu/multitransport-msk-kzn-out.json',
     'search_multitransport',
-    { origin: 'Москва', destination: 'Казань', departure_date: '2026-10-28', page_size: 6 },
+    { origin: 'Москва', destination: 'Казань', departure_date: '2026-10-28', adults: 1, page_size: 6 },
     { volatile: volatileTransport },
   );
   await call(
     'tutu/multitransport-kzn-msk-back.json',
     'search_multitransport',
-    { origin: 'Казань', destination: 'Москва', departure_date: '2026-11-01', page_size: 6 },
+    { origin: 'Казань', destination: 'Москва', departure_date: '2026-11-01', adults: 1, page_size: 6 },
     { volatile: volatileTransport },
   );
   await call(
@@ -309,7 +309,7 @@ async function recordTutu(): Promise<void> {
   await call(
     'tutu/multitransport-thin-route.json',
     'search_multitransport',
-    { origin: 'Иннополис', destination: 'Калининград', departure_date: '2026-10-28', page_size: 6 },
+    { origin: 'Иннополис', destination: 'Калининград', departure_date: '2026-10-28', adults: 1, page_size: 6 },
     { volatile: volatileTransport, note: 'a thin route: some modes come back empty while others live' },
   );
 

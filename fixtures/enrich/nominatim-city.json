@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-08-19T09:50:57.172Z",
+  "recorded_at": "2026-08-19T10:53:04.672Z",
   "source": "nominatim",
   "tool": "search",
   "arguments": {
@@ -11,7 +11,7 @@
     "status": 200,
     "body": [
       {
-        "place_id": 199040639,
+        "place_id": 199810423,
         "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
         "osm_type": "relation",
         "osm_id": 6564910,

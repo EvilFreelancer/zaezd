@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-08-19T09:50:57.172Z",
+  "recorded_at": "2026-08-19T10:53:04.672Z",
   "source": "tutu",
   "tool": "search_hotels",
   "arguments": {
@@ -23,7 +23,7 @@
         "content": [
           {
             "type": "text",
-            "text": "{\"hotels\":[{\"hotel_id\":\"11409967\",\"hotel_geo_id\":\"11409967\",\"tutu_offer_id\":\"fbac7697-4b30-4466-aea1-eeadc7d88d49\",\"name\":\"Marins Екатеринбург\",\"stars\":3,\"rating\":8.21,\"review_count\":908,\"address\":\"2.1 км от центра\",\"location\":{\"lat\":56.85621,\"lng\":60.60571,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/e41b577e-b978-40e7-b13b-88a0611e4745/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/c27a50f326dc019135c78c3e6d9aac3c.jpg\"],\"alias\":\"marins_park_otel_yekaterinburg\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11409967&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"e16760d1-8bdb-40f6-b941-a8d61052b0df\",\"room_name\":\"Номер эконом с 1 односпальной кроватью\",\"price\":{\"amount\":15106.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11409967&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.21,\"review_count\":908,\"label\":\"⭐ 8.21/10 · 908 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11409967\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11409967\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"marins_park_otel_yekaterinburg\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11409967&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":71},{\"hotel_id\":\"11404215\",\"hotel_geo_id\":\"11404215\",\"tutu_offer_id\":\"8bf7ea45-003f-47ce-8542-0ae048a6fbe0\",\"name\":\"Большой Урал\",\"stars\":0,\"rating\":7.53,\"review_count\":167,\"address\":\"1.2 км от центра\",\"location\":{\"lat\":56.83729,\"lng\":60.61722,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/1ff68de0-a9aa-43db-b330-94fb54262e0e/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/0a4630511bee4b76c36b8751ab197957.jpg\"],\"alias\":\"bolshoy_ural_ru_yekaterinburg_625000_ul_krasnoarmeyskaya_1\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11404215&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"bee40fd8-977f-4831-89b1-b0f0d0d9880b\",\"room_name\":\"Одноместный номер РЕТРО с удобствами в блоке\",\"price\":{\"amount\":10000.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11404215&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":7.53,\"review_count\":167,\"label\":\"⭐ 7.53/10 · 167 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11404215\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11404215\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"bolshoy_ural_ru_yekaterinburg_625000_ul_krasnoarmeyskaya_1\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11404215&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":7},{\"hotel_id\":\"11412154\",\"hotel_geo_id\":\"11412154\",\"tutu_offer_id\":\"36f6d991-ca13-4f3f-ba38-7d5bd5444673\",\"name\":\"Отель Визави\",\"stars\":3,\"rating\":7.94,\"review_count\":49,\"address\":\"2.9 км от центра\",\"location\":{\"lat\":56.8375,\"lng\":60.5484,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/2379fa7440ee1c735e84c00902ba92f959729058.626bab55cd5fc8756e5b7a43ad5fead6e7da993e.jpeg\"],\"alias\":\"vizavi_rossiya_620028_sverdlovskaya_obl_g_yekaterinburg_ul_tatishcheva_d_86\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11412154&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"1e0281e7-9c14-4764-843d-3b977be6127d\",\"room_name\":\"Стандарт-single\",\"price\":{\"amount\":15260.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11412154&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":7.94,\"review_count\":49,\"label\":\"⭐ 7.94/10 · 49 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11412154\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11412154\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"vizavi_rossiya_620028_sverdlovskaya_obl_g_yekaterinburg_ul_tatishcheva_d_86\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11412154&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":20},{\"hotel_id\":\"10239007\",\"hotel_geo_id\":\"10239007\",\"tutu_offer_id\":\"420db8c8-70ea-4a09-82ba-b0b27a62941a\",\"name\":\"Лето&Зеленая Роща\",\"stars\":0,\"rating\":7.07,\"review_count\":15,\"address\":\"1.6 км от центра\",\"location\":{\"lat\":56.823677,\"lng\":60.60051,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/8e5d5df7-ec12-4a2a-82d0-5706d598e55c/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/8cdda816b0ada4d654cec2d7c0dbc2c7.jpg\"],\"alias\":\"apartamenty_leto_and_zelenaya_roshcha\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=10239007&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"b79ee54b-9846-4391-b449-0a37eb699c1c\",\"room_name\":\"Место в общем  номере для женщин\",\"price\":{\"amount\":4800.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=10239007&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":7.07,\"review_count\":15,\"label\":\"⭐ 7.07/10 · 15 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"10239007\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"10239007\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"apartamenty_leto_and_zelenaya_roshcha\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=10239007&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":64},{\"hotel_id\":\"9487071\",\"hotel_geo_id\":\"9487071\",\"tutu_offer_id\":\"e9a224f8-d272-4110-a963-ea2aba3b14fb\",\"name\":\"Меблированные комнаты Уютное местечко\",\"stars\":0,\"rating\":8.48,\"review_count\":13,\"address\":\"3.3 км от центра\",\"location\":{\"lat\":56.84819,\"lng\":60.64797,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn.ostrovok.ru/t/x500/extranet/49/65/496504a21d491423fcc23b827f601448f7e0cf72.JPEG\"],\"alias\":\"khostel_uyutnoye_mestechko_yekaterinburg_ulitsa_botanicheskaya_d30_yekaterinburg\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=9487071&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"073bdfb8-cc6a-43d2-90e8-e22cce91342c\",\"room_name\":\"Кровать в 12-местном общем номере \",\"price\":{\"amount\":2697.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=9487071&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.48,\"review_count\":13,\"label\":\"⭐ 8.48/10 · 13 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"9487071\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"9487071\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"khostel_uyutnoye_mestechko_yekaterinburg_ulitsa_botanicheskaya_d30_yekaterinburg\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=9487071&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":25},{\"hotel_id\":\"10230361\",\"hotel_geo_id\":\"10230361\",\"tutu_offer_id\":\"ff6e1365-a046-46a2-94f7-5a7d3760281b\",\"name\":\"Отель Вознесенский\",\"stars\":4,\"rating\":8.53,\"review_count\":95,\"address\":\"1.4 км от центра\",\"location\":{\"lat\":56.84503,\"lng\":60.61548,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/2c967c06-d4b7-462d-96c9-5fbd69677b66/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/b0f0165c24088f5100d1644e522e30ce.jpg\"],\"alias\":\"otel_voznesensky\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=10230361&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"7df14b5c-7c76-453a-8236-4d860cffc3b4\",\"room_name\":\"Стандарт Классик\",\"price\":{\"amount\":26300.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=10230361&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.53,\"review_count\":95,\"label\":\"⭐ 8.53/10 · 95 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"10230361\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"10230361\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"otel_voznesensky\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=10230361&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":100},{\"hotel_id\":\"8002890\",\"hotel_geo_id\":\"8002890\",\"tutu_offer_id\":\"ab3d3a36-9214-448c-b967-87ff8413ba1b\",\"name\":\"Протекс-Отель\",\"stars\":3,\"rating\":8.28,\"review_count\":408,\"address\":\"1.8 км от центра\",\"location\":{\"lat\":56.822086,\"lng\":60.604286,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/b6e761ed-c7bf-462c-9059-856900f1f282/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/7a86db4e6597eab2c121055414a76064.jpg\"],\"alias\":\"otel_proteks\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=8002890&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"add3b2d8-4330-4161-b116-03a92d33360e\",\"room_name\":\"Комфорт\",\"price\":{\"amount\":15742.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=8002890&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.28,\"review_count\":408,\"label\":\"⭐ 8.28/10 · 408 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"8002890\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"8002890\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"otel_proteks\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=8002890&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":10},{\"hotel_id\":\"10952727\",\"hotel_geo_id\":\"10952727\",\"tutu_offer_id\":\"12e2e8cc-2c2e-486e-becb-37d668333110\",\"name\":\"Однокомнатная квартира на улице: Фрунзе 31\",\"stars\":0,\"rating\":6.67,\"review_count\":3,\"address\":\"3.2 км от центра\",\"location\":{\"lat\":56.8119,\"lng\":60.618332,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/81e52c18-f8f4-4005-a9fe-b8e6dda06258/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/ce937d45c175f35f281526e20c5851c7.jpg\"],\"alias\":\"odnokomnatnaya_kvartira_na_ulitse_frunze_31_frunze_31_5\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=10952727&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"1d019fec-92f0-4c5e-b40d-7fec1bffb2a2\",\"room_name\":\"Однокомнатная квартира на улице: Фрунзе 31\",\"price\":{\"amount\":15104.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=10952727&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":{\"rating\":6.67,\"review_count\":3,\"label\":\"⭐ 6.67/10 · 3 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"10952727\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"10952727\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"odnokomnatnaya_kvartira_na_ulitse_frunze_31_frunze_31_5\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=10952727&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":23},{\"hotel_id\":\"11669574\",\"hotel_geo_id\":\"11669574\",\"tutu_offer_id\":\"c301f02c-09d4-4666-ad24-57e22314a893\",\"name\":\"Конгресс-отель Екатеринбург\",\"stars\":4,\"rating\":9.57,\"review_count\":60,\"address\":\"3.2 км от центра\",\"location\":{\"lat\":56.85391,\"lng\":60.55326,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/11b28c8b-dd5e-4d26-a279-5186e346a305/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/4ff210c23078124bd1988e0e4249b3b7.jpg\"],\"alias\":\"kongressotel_yekaterinburg_rossiya_620034_sverdlovskaya_obl_g_yekaterinburg_ul_bebelya_str_59\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11669574&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"da0c2aa2-f4af-47e0-93ab-947669889c57\",\"room_name\":\"Делюкс с двуспальной кроватью\",\"price\":{\"amount\":41200.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11669574&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":true,\"meal_name\":\"Завтрак \\\"шведский стол\\\"\",\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак \\\"шведский стол\\\"\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":9.57,\"review_count\":60,\"label\":\"⭐ 9.57/10 · 60 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11669574\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11669574\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"kongressotel_yekaterinburg_rossiya_620034_sverdlovskaya_obl_g_yekaterinburg_ul_bebelya_str_59\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11669574&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"}},{\"hotel_id\":\"7654533\",\"hotel_geo_id\":\"7654533\",\"tutu_offer_id\":\"e4febea7-0f5c-4c47-896c-ebe391dccf8e\",\"name\":\"Отель Сон Lite\",\"stars\":0,\"rating\":8.66,\"review_count\":91,\"address\":\"2.4 км от центра\",\"location\":{\"lat\":56.816887,\"lng\":60.603752,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/c1bea7bd-e2ae-4bef-a58f-67effd33c843/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/85580c8b4d417dd1ba945e6f8c5e678c.jpg\"],\"alias\":\"otel_son_lite\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=7654533&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"bde34306-8004-42ff-a57b-e2a566a40e0e\",\"room_name\":\"Номер эконом с 1 односпальной кроватью \",\"price\":{\"amount\":7487.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=7654533&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.66,\"review_count\":91,\"label\":\"⭐ 8.66/10 · 91 отзыв\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"7654533\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"7654533\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"otel_son_lite\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=7654533&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":100},{\"hotel_id\":\"11307816\",\"hotel_geo_id\":\"11307816\",\"tutu_offer_id\":\"97b88df3-b646-4d6f-a308-cb41483dd06e\",\"name\":\"Cosmos Екатеринбург\",\"stars\":4,\"rating\":8.75,\"review_count\":142,\"address\":\"1.3 км от центра\",\"location\":{\"lat\":56.836678,\"lng\":60.618504,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/fa7205c5-74e0-436c-9068-bb0346bfab8d/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/b00d430e28ae28ef82aeb77a8397a8bf.jpg\"],\"alias\":\"cosmos_ekaterinburg_hotel\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11307816&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"80718082-51e2-46d2-aa53-e872491efe9f\",\"room_name\":\"Стандарт с одной кроватью\",\"price\":{\"amount\":32775.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11307816&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":{\"rating\":8.75,\"review_count\":142,\"label\":\"⭐ 8.75/10 · 142 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11307816\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11307816\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"cosmos_ekaterinburg_hotel\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11307816&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":41},{\"hotel_id\":\"11415574\",\"hotel_geo_id\":\"11415574\",\"tutu_offer_id\":\"35d1839a-302f-4d07-8cab-78ac05fa6765\",\"name\":\"Грин Парк Отель\",\"stars\":3,\"rating\":9.43,\"review_count\":186,\"address\":\"1.5 км от центра\",\"location\":{\"lat\":56.824387,\"lng\":60.60017,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/1fcca9d0-58e0-4973-8e86-cb081451dc53/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/61d9c277065da536af5ecfe07fd8d559.jpg\"],\"alias\":\"grin_park_rossiya_620144_sverdlovskaya_obl_g_yekaterinburg_ul_narodnoy_voli_d_24\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11415574&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"289c22ce-3186-4001-bb34-e6a2cc15509c\",\"room_name\":\"Стандарт +\",\"price\":{\"amount\":26700.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11415574&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":9.43,\"review_count\":186,\"label\":\"⭐ 9.43/10 · 186 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11415574\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11415574\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"grin_park_rossiya_620144_sverdlovskaya_obl_g_yekaterinburg_ul_narodnoy_voli_d_24\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11415574&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":72},{\"hotel_id\":\"11450625\",\"hotel_geo_id\":\"11450625\",\"tutu_offer_id\":\"8e9c9b68-157b-40bf-87d3-b4db57179dda\",\"name\":\"Отель Хаятт Ридженси Екатеринбург\",\"stars\":5,\"rating\":8.98,\"review_count\":61,\"address\":\"647 м от центра\",\"location\":{\"lat\":56.843,\"lng\":60.592,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/ea158cc6-5ff4-4831-9efb-ba989f2697b1/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/af221274faf26bb710232540f666ddb3.jpg\"],\"alias\":\"khayatt_ridzhensi_yekaterinburg_rossiya_620014_sverdlovskaya_obl_g_yekaterinburg_ul_borisa_yeltsina_d_8\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11450625&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"af5d8ef3-96ad-4dd7-abfb-e6da161da918\",\"room_name\":\"Номер стандарт с 1 двуспальной кроватью\",\"price\":{\"amount\":64103.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11450625&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":true,\"meal_name\":\"Завтрак \\\"шведский стол\\\"\",\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак \\\"шведский стол\\\"\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.98,\"review_count\":61,\"label\":\"⭐ 8.98/10 · 61 отзыв\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11450625\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11450625\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"khayatt_ridzhensi_yekaterinburg_rossiya_620014_sverdlovskaya_obl_g_yekaterinburg_ul_borisa_yeltsina_d_8\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11450625&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":31},{\"hotel_id\":\"11421389\",\"hotel_geo_id\":\"11421389\",\"tutu_offer_id\":\"243aa4ba-53d7-4a26-8b0d-bb12e6a9b8a9\",\"name\":\"Отель Гранд Холл\",\"stars\":4,\"rating\":8.2,\"review_count\":23,\"address\":\"3 км от центра\",\"location\":{\"lat\":56.83404,\"lng\":60.64615,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/9333e0b54c15bd2fbc21fe45d5555e8a9ff9c157.c2458e3903adb21e0ef0aa159d408b800696682b.jpeg\"],\"alias\":\"grand_kholl\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11421389&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"9d8cd70a-fdc0-4cbc-8fec-c427515b3d1a\",\"room_name\":\"Стандарт одноместный\",\"price\":{\"amount\":22800.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11421389&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.2,\"review_count\":23,\"label\":\"⭐ 8.2/10 · 23 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11421389\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11421389\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"grand_kholl\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11421389&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":10},{\"hotel_id\":\"11871206\",\"hotel_geo_id\":\"11871206\",\"tutu_offer_id\":\"10df5221-3f94-4b91-8994-6599e6b48b51\",\"name\":\"Однокомнатная квартира на улице: Куйбышева 159а ЛОТ:15929\",\"stars\":0,\"rating\":0.0,\"review_count\":0,\"address\":\"3.3 км от центра\",\"location\":{\"lat\":56.82874,\"lng\":60.648506,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/8e35104d594d440c051f5c6660c63af40d2d656a.6228bc978cd7b6c01a7388110880fdab4c127a31.jpeg\"],\"alias\":\"odnokomnatnaya_kvartira_na_ulitse_kuybysheva_159a_lot15929\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11871206&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"cae52591-ffda-424f-9623-10b246b4169a\",\"room_name\":\"Однокомнатная квартира на улице: Куйбышева 159а ЛОТ:15929\",\"price\":{\"amount\":14767.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11871206&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":null,\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11871206\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"odnokomnatnaya_kvartira_na_ulitse_kuybysheva_159a_lot15929\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11871206&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":7},{\"hotel_id\":\"11844585\",\"hotel_geo_id\":\"11844585\",\"tutu_offer_id\":\"b9c55bdf-7bcc-4f2f-91e6-f2d322231b4e\",\"name\":\"Олимп\",\"stars\":3,\"rating\":9.15,\"review_count\":118,\"address\":\"548 м от центра\",\"location\":{\"lat\":56.833187,\"lng\":60.593746,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/dd9966220d9755246796cff11a8c5c91ecdce5ae.9a7d5c97704274417e1a444636b7eab46397ad10.jpeg\"],\"alias\":\"olimp_rossiya_620014_sverdlovskaya_obl_g_yekaterinburg_ul_malysheva_d_28\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11844585&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"5703d530-e1d1-45d4-9f3c-68cb11fa198f\",\"room_name\":\"Стандарт двухместный Twin\",\"price\":{\"amount\":21600.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11844585&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":9.15,\"review_count\":118,\"label\":\"⭐ 9.15/10 · 118 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11844585\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11844585\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"olimp_rossiya_620014_sverdlovskaya_obl_g_yekaterinburg_ul_malysheva_d_28\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11844585&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":4},{\"hotel_id\":\"11417555\",\"hotel_geo_id\":\"11417555\",\"tutu_offer_id\":\"ac3892b1-64e2-408f-a092-35915b4f810c\",\"name\":\"Мини-отель Александровский парк-отель\",\"stars\":0,\"rating\":9.47,\"review_count\":65,\"address\":\"3.6 км от центра\",\"location\":{\"lat\":56.811897,\"lng\":60.632465,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/4197d030-8704-4532-bc05-e82332c5eda3/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/aaa1cec1f110da9328460bb6e8d7c3ac.jpg\"],\"alias\":\"aleksandrovsky_park_otel\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11417555&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"0508a63f-6c44-4343-8ff2-63a12f42b825\",\"room_name\":\"2-местный номер стандарт\",\"price\":{\"amount\":15644.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11417555&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":9.47,\"review_count\":65,\"label\":\"⭐ 9.47/10 · 65 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11417555\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11417555\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"aleksandrovsky_park_otel\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11417555&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":33},{\"hotel_id\":\"7652256\",\"hotel_geo_id\":\"7652256\",\"tutu_offer_id\":\"fd8c1f3d-f327-4ced-96d8-76b6464c3904\",\"name\":\"Апартаменты Mini в Stepanenkov\",\"stars\":0,\"rating\":7.87,\"review_count\":30,\"address\":\"499 м от центра\",\"location\":{\"lat\":56.833508,\"lng\":60.59913,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/bb49c752-e323-4d32-8437-89744e37617a/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/3db62aa4e1a55efa609f00f25f09e113.jpg\"],\"alias\":\"miniotel_renthouse\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=7652256&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"d12c1c6b-2dd4-4cf5-8e64-cc9f045eefc6\",\"room_name\":\"Номер студия\",\"price\":{\"amount\":7919.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=7652256&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":{\"rating\":7.87,\"review_count\":30,\"label\":\"⭐ 7.87/10 · 30 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"7652256\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"7652256\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"miniotel_renthouse\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=7652256&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":51},{\"hotel_id\":\"11460859\",\"hotel_geo_id\":\"11460859\",\"tutu_offer_id\":\"5e28f555-af38-44d9-ab39-2fb8e64f2206\",\"name\":\"Отель Хаятт Плейс Екатеринбург\",\"stars\":4,\"rating\":8.88,\"review_count\":85,\"address\":\"1.4 км от центра\",\"location\":{\"lat\":56.835083,\"lng\":60.575172,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/9cf6a048-0e8d-45b7-b52b-87d01d804381/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/73706b1e6240b580325804bd8dc90525.jpg\"],\"alias\":\"khayatt_pleys_yekaterinburg\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11460859&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"b9834369-136e-4a99-9e36-13962d735781\",\"room_name\":\"Номер стандарт с 2 односпальными кроватями\",\"price\":{\"amount\":33859.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11460859&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":true,\"meal_name\":\"Завтрак \\\"шведский стол\\\"\",\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак \\\"шведский стол\\\"\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.88,\"review_count\":85,\"label\":\"⭐ 8.88/10 · 85 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11460859\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11460859\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"khayatt_pleys_yekaterinburg\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11460859&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":49},{\"hotel_id\":\"11417725\",\"hotel_geo_id\":\"11417725\",\"tutu_offer_id\":\"ae7de32d-c142-4045-beee-c80f2c5882ce\",\"name\":\"Атриум Палас Отель\",\"stars\":5,\"rating\":8.53,\"review_count\":63,\"address\":\"1.6 км от центра\",\"location\":{\"lat\":56.82763,\"lng\":60.615925,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/c7d39b886711137842a209515a4dc200a3e896d3.b321ef200918d360f4212a8aed92861cd7139606.jpeg\"],\"alias\":\"atrium_palas\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11417725&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"1467cab1-31b6-4423-92d5-916ea5af9748\",\"room_name\":\"Стандартный номер\",\"price\":{\"amount\":39600.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11417725&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":true,\"meal_name\":\"Завтрак включён\",\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.53,\"review_count\":63,\"label\":\"⭐ 8.53/10 · 63 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11417725\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11417725\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"atrium_palas\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11417725&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":41}],\"stay\":{\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"nights\":4},\"meta\":{\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"page\":1,\"page_size\":20,\"total_returned\":20,\"has_more\":true,\"geo_id\":\"2656869\",\"resolved_geo\":{\"geo_id\":\"2656869\",\"name\":\"Екатеринбург\",\"country\":\"Россия\",\"region\":\"Свердловская область\",\"geo_type\":\"locality\",\"hotels_count\":9614},\"filters_applied\":{\"option_filters\":[],\"range_filters\":[],\"button_filters\":[],\"quick_filters_order\":[],\"changes\":[]},\"post_filter_dropped_over_cap\":0,\"post_filter_dropped_no_free_cancellation\":0,\"post_filter_dropped_no_breakfast\":0}}"
+            "text": "{\"hotels\":[{\"hotel_id\":\"11409967\",\"hotel_geo_id\":\"11409967\",\"tutu_offer_id\":\"0b912b75-4ef1-46ea-a081-c98025004a46\",\"name\":\"Marins Екатеринбург\",\"stars\":3,\"rating\":8.21,\"review_count\":908,\"address\":\"2.1 км от центра\",\"location\":{\"lat\":56.85621,\"lng\":60.60571,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/e41b577e-b978-40e7-b13b-88a0611e4745/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/c27a50f326dc019135c78c3e6d9aac3c.jpg\"],\"alias\":\"marins_park_otel_yekaterinburg\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11409967&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"c9c2a781-ce90-4eb9-b19b-e93ed6930e89\",\"room_name\":\"Номер эконом с 1 односпальной кроватью\",\"price\":{\"amount\":15106.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11409967&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.21,\"review_count\":908,\"label\":\"⭐ 8.21/10 · 908 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11409967\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11409967\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"marins_park_otel_yekaterinburg\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11409967&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":71},{\"hotel_id\":\"11404215\",\"hotel_geo_id\":\"11404215\",\"tutu_offer_id\":\"523169ee-2711-43e6-a4a9-ceee9d652d43\",\"name\":\"Большой Урал\",\"stars\":0,\"rating\":7.53,\"review_count\":167,\"address\":\"1.2 км от центра\",\"location\":{\"lat\":56.83729,\"lng\":60.61722,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/1ff68de0-a9aa-43db-b330-94fb54262e0e/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/0a4630511bee4b76c36b8751ab197957.jpg\"],\"alias\":\"bolshoy_ural_ru_yekaterinburg_625000_ul_krasnoarmeyskaya_1\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11404215&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"a44de61d-ce1d-4668-9a71-f9fd7310c713\",\"room_name\":\"Одноместный номер РЕТРО с удобствами в блоке\",\"price\":{\"amount\":10000.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11404215&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":7.53,\"review_count\":167,\"label\":\"⭐ 7.53/10 · 167 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11404215\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11404215\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"bolshoy_ural_ru_yekaterinburg_625000_ul_krasnoarmeyskaya_1\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11404215&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":7},{\"hotel_id\":\"11412154\",\"hotel_geo_id\":\"11412154\",\"tutu_offer_id\":\"587fe0ee-84d4-4191-9218-fbed0dbc888d\",\"name\":\"Отель Визави\",\"stars\":3,\"rating\":7.94,\"review_count\":49,\"address\":\"2.9 км от центра\",\"location\":{\"lat\":56.8375,\"lng\":60.5484,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/2379fa7440ee1c735e84c00902ba92f959729058.626bab55cd5fc8756e5b7a43ad5fead6e7da993e.jpeg\"],\"alias\":\"vizavi_rossiya_620028_sverdlovskaya_obl_g_yekaterinburg_ul_tatishcheva_d_86\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11412154&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"9a91642a-7bc7-4833-8cdc-fd13550a9cb6\",\"room_name\":\"Стандарт-single\",\"price\":{\"amount\":15260.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11412154&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":7.94,\"review_count\":49,\"label\":\"⭐ 7.94/10 · 49 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11412154\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11412154\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"vizavi_rossiya_620028_sverdlovskaya_obl_g_yekaterinburg_ul_tatishcheva_d_86\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11412154&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":20},{\"hotel_id\":\"10239007\",\"hotel_geo_id\":\"10239007\",\"tutu_offer_id\":\"4178dfa0-8409-425a-b995-0b1f75d99e45\",\"name\":\"Лето&Зеленая Роща\",\"stars\":0,\"rating\":7.07,\"review_count\":15,\"address\":\"1.6 км от центра\",\"location\":{\"lat\":56.823677,\"lng\":60.60051,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/8e5d5df7-ec12-4a2a-82d0-5706d598e55c/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/8cdda816b0ada4d654cec2d7c0dbc2c7.jpg\"],\"alias\":\"apartamenty_leto_and_zelenaya_roshcha\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=10239007&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"3360fc3e-ddfd-4e72-a619-e3c60db3a54f\",\"room_name\":\"Место в общем  номере для женщин\",\"price\":{\"amount\":4800.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=10239007&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":7.07,\"review_count\":15,\"label\":\"⭐ 7.07/10 · 15 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"10239007\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"10239007\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"apartamenty_leto_and_zelenaya_roshcha\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=10239007&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":64},{\"hotel_id\":\"9487071\",\"hotel_geo_id\":\"9487071\",\"tutu_offer_id\":\"900fbfa1-e168-4a63-a1d1-6f2a9145adfe\",\"name\":\"Меблированные комнаты Уютное местечко\",\"stars\":0,\"rating\":8.48,\"review_count\":13,\"address\":\"3.3 км от центра\",\"location\":{\"lat\":56.84819,\"lng\":60.64797,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn.ostrovok.ru/t/x500/extranet/49/65/496504a21d491423fcc23b827f601448f7e0cf72.JPEG\"],\"alias\":\"khostel_uyutnoye_mestechko_yekaterinburg_ulitsa_botanicheskaya_d30_yekaterinburg\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=9487071&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"98024cbb-75d9-4f58-abb7-b7d3b592b4cd\",\"room_name\":\"Кровать в 12-местном общем номере \",\"price\":{\"amount\":2697.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=9487071&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.48,\"review_count\":13,\"label\":\"⭐ 8.48/10 · 13 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"9487071\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"9487071\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"khostel_uyutnoye_mestechko_yekaterinburg_ulitsa_botanicheskaya_d30_yekaterinburg\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=9487071&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":25},{\"hotel_id\":\"10230361\",\"hotel_geo_id\":\"10230361\",\"tutu_offer_id\":\"db1ef39b-dd38-4962-a486-14518e776343\",\"name\":\"Отель Вознесенский\",\"stars\":4,\"rating\":8.53,\"review_count\":95,\"address\":\"1.4 км от центра\",\"location\":{\"lat\":56.84503,\"lng\":60.61548,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/2c967c06-d4b7-462d-96c9-5fbd69677b66/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/b0f0165c24088f5100d1644e522e30ce.jpg\"],\"alias\":\"otel_voznesensky\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=10230361&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"26ebb082-6847-4e3a-9c30-d29da4c85c6c\",\"room_name\":\"Стандарт Классик\",\"price\":{\"amount\":26300.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=10230361&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.53,\"review_count\":95,\"label\":\"⭐ 8.53/10 · 95 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"10230361\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"10230361\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"otel_voznesensky\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=10230361&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":100},{\"hotel_id\":\"8002890\",\"hotel_geo_id\":\"8002890\",\"tutu_offer_id\":\"d1774520-5e1c-4f94-b6ad-ec2c0169dfaf\",\"name\":\"Протекс-Отель\",\"stars\":3,\"rating\":8.28,\"review_count\":408,\"address\":\"1.8 км от центра\",\"location\":{\"lat\":56.822086,\"lng\":60.604286,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/b6e761ed-c7bf-462c-9059-856900f1f282/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/7a86db4e6597eab2c121055414a76064.jpg\"],\"alias\":\"otel_proteks\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=8002890&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"384f91d6-2d04-49d8-9c25-1004768c8cef\",\"room_name\":\"Комфорт\",\"price\":{\"amount\":15742.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=8002890&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.28,\"review_count\":408,\"label\":\"⭐ 8.28/10 · 408 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"8002890\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"8002890\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"otel_proteks\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=8002890&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":10},{\"hotel_id\":\"10952727\",\"hotel_geo_id\":\"10952727\",\"tutu_offer_id\":\"ab6218bc-0b38-466c-91fa-54bb391fa547\",\"name\":\"Однокомнатная квартира на улице: Фрунзе 31\",\"stars\":0,\"rating\":6.67,\"review_count\":3,\"address\":\"3.2 км от центра\",\"location\":{\"lat\":56.8119,\"lng\":60.618332,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/81e52c18-f8f4-4005-a9fe-b8e6dda06258/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/ce937d45c175f35f281526e20c5851c7.jpg\"],\"alias\":\"odnokomnatnaya_kvartira_na_ulitse_frunze_31_frunze_31_5\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=10952727&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"1b1e98c5-27bc-4849-bc95-43b54892893b\",\"room_name\":\"Однокомнатная квартира на улице: Фрунзе 31\",\"price\":{\"amount\":15104.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=10952727&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":{\"rating\":6.67,\"review_count\":3,\"label\":\"⭐ 6.67/10 · 3 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"10952727\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"10952727\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"odnokomnatnaya_kvartira_na_ulitse_frunze_31_frunze_31_5\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=10952727&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":23},{\"hotel_id\":\"11669574\",\"hotel_geo_id\":\"11669574\",\"tutu_offer_id\":\"c58b045b-0c9a-4b17-bfa4-99b6eee38b51\",\"name\":\"Конгресс-отель Екатеринбург\",\"stars\":4,\"rating\":9.57,\"review_count\":60,\"address\":\"3.2 км от центра\",\"location\":{\"lat\":56.85391,\"lng\":60.55326,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/11b28c8b-dd5e-4d26-a279-5186e346a305/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/4ff210c23078124bd1988e0e4249b3b7.jpg\"],\"alias\":\"kongressotel_yekaterinburg_rossiya_620034_sverdlovskaya_obl_g_yekaterinburg_ul_bebelya_str_59\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11669574&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"bd9578b2-8761-4609-bdd3-7b46f8df4fb5\",\"room_name\":\"Делюкс с двуспальной кроватью\",\"price\":{\"amount\":41200.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11669574&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":true,\"meal_name\":\"Завтрак \\\"шведский стол\\\"\",\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак \\\"шведский стол\\\"\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":9.57,\"review_count\":60,\"label\":\"⭐ 9.57/10 · 60 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11669574\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11669574\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"kongressotel_yekaterinburg_rossiya_620034_sverdlovskaya_obl_g_yekaterinburg_ul_bebelya_str_59\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11669574&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"}},{\"hotel_id\":\"7654533\",\"hotel_geo_id\":\"7654533\",\"tutu_offer_id\":\"08ceb7f1-e5ad-488e-b99e-bec5460e5573\",\"name\":\"Отель Сон Lite\",\"stars\":0,\"rating\":8.66,\"review_count\":91,\"address\":\"2.4 км от центра\",\"location\":{\"lat\":56.816887,\"lng\":60.603752,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/c1bea7bd-e2ae-4bef-a58f-67effd33c843/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/85580c8b4d417dd1ba945e6f8c5e678c.jpg\"],\"alias\":\"otel_son_lite\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=7654533&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"2414dc8d-61c6-492a-9bcb-97d1d323b058\",\"room_name\":\"Номер эконом с 1 односпальной кроватью \",\"price\":{\"amount\":7487.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=7654533&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.66,\"review_count\":91,\"label\":\"⭐ 8.66/10 · 91 отзыв\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"7654533\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"7654533\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"otel_son_lite\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=7654533&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":100},{\"hotel_id\":\"11421389\",\"hotel_geo_id\":\"11421389\",\"tutu_offer_id\":\"b96c214d-c76c-47d0-a125-5435e3ca2f52\",\"name\":\"Отель Гранд Холл\",\"stars\":4,\"rating\":8.2,\"review_count\":23,\"address\":\"3 км от центра\",\"location\":{\"lat\":56.83404,\"lng\":60.64615,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/9333e0b54c15bd2fbc21fe45d5555e8a9ff9c157.c2458e3903adb21e0ef0aa159d408b800696682b.jpeg\"],\"alias\":\"grand_kholl\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11421389&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"3fcb7d4d-d53b-4179-92d4-7848787737f6\",\"room_name\":\"Стандарт одноместный\",\"price\":{\"amount\":22800.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11421389&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.2,\"review_count\":23,\"label\":\"⭐ 8.2/10 · 23 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11421389\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11421389\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"grand_kholl\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11421389&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":10},{\"hotel_id\":\"11415574\",\"hotel_geo_id\":\"11415574\",\"tutu_offer_id\":\"bcf6d7da-f3ce-4e1a-a89e-524d8078dab7\",\"name\":\"Грин Парк Отель\",\"stars\":3,\"rating\":9.43,\"review_count\":186,\"address\":\"1.5 км от центра\",\"location\":{\"lat\":56.824387,\"lng\":60.60017,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/1fcca9d0-58e0-4973-8e86-cb081451dc53/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/61d9c277065da536af5ecfe07fd8d559.jpg\"],\"alias\":\"grin_park_rossiya_620144_sverdlovskaya_obl_g_yekaterinburg_ul_narodnoy_voli_d_24\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11415574&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"2eb6ca5e-02d3-405c-8fd2-e6b79896f52a\",\"room_name\":\"Стандарт +\",\"price\":{\"amount\":26700.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11415574&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":9.43,\"review_count\":186,\"label\":\"⭐ 9.43/10 · 186 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11415574\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11415574\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"grin_park_rossiya_620144_sverdlovskaya_obl_g_yekaterinburg_ul_narodnoy_voli_d_24\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11415574&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":72},{\"hotel_id\":\"11417555\",\"hotel_geo_id\":\"11417555\",\"tutu_offer_id\":\"c398f39f-4e4a-44d8-ae23-ca1a386c7b73\",\"name\":\"Мини-отель Александровский парк-отель\",\"stars\":0,\"rating\":9.47,\"review_count\":65,\"address\":\"3.6 км от центра\",\"location\":{\"lat\":56.811897,\"lng\":60.632465,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/4197d030-8704-4532-bc05-e82332c5eda3/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/aaa1cec1f110da9328460bb6e8d7c3ac.jpg\"],\"alias\":\"aleksandrovsky_park_otel\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11417555&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"1048fa19-c19d-4201-b9d8-8be2d7025254\",\"room_name\":\"2-местный номер стандарт\",\"price\":{\"amount\":15644.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11417555&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":9.47,\"review_count\":65,\"label\":\"⭐ 9.47/10 · 65 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11417555\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11417555\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"aleksandrovsky_park_otel\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11417555&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":33},{\"hotel_id\":\"11450625\",\"hotel_geo_id\":\"11450625\",\"tutu_offer_id\":\"c9bb33ff-3198-4078-9f77-2a2c67c68940\",\"name\":\"Отель Хаятт Ридженси Екатеринбург\",\"stars\":5,\"rating\":8.98,\"review_count\":61,\"address\":\"647 м от центра\",\"location\":{\"lat\":56.843,\"lng\":60.592,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/ea158cc6-5ff4-4831-9efb-ba989f2697b1/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/af221274faf26bb710232540f666ddb3.jpg\"],\"alias\":\"khayatt_ridzhensi_yekaterinburg_rossiya_620014_sverdlovskaya_obl_g_yekaterinburg_ul_borisa_yeltsina_d_8\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11450625&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"5211bb72-f35a-4d7d-9ded-2b3f82d6b126\",\"room_name\":\"Номер стандарт с 1 двуспальной кроватью\",\"price\":{\"amount\":64103.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11450625&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":true,\"meal_name\":\"Завтрак \\\"шведский стол\\\"\",\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак \\\"шведский стол\\\"\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.98,\"review_count\":61,\"label\":\"⭐ 8.98/10 · 61 отзыв\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11450625\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11450625\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"khayatt_ridzhensi_yekaterinburg_rossiya_620014_sverdlovskaya_obl_g_yekaterinburg_ul_borisa_yeltsina_d_8\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11450625&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":31},{\"hotel_id\":\"11307816\",\"hotel_geo_id\":\"11307816\",\"tutu_offer_id\":\"d5673158-3c48-4d30-8847-3f618447008b\",\"name\":\"Cosmos Екатеринбург\",\"stars\":4,\"rating\":8.75,\"review_count\":142,\"address\":\"1.3 км от центра\",\"location\":{\"lat\":56.836678,\"lng\":60.618504,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/fa7205c5-74e0-436c-9068-bb0346bfab8d/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/b00d430e28ae28ef82aeb77a8397a8bf.jpg\"],\"alias\":\"cosmos_ekaterinburg_hotel\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11307816&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"6d8e7336-2f21-4081-8936-c7c71a0dd203\",\"room_name\":\"Стандарт с одной кроватью\",\"price\":{\"amount\":32775.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11307816&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":{\"rating\":8.75,\"review_count\":142,\"label\":\"⭐ 8.75/10 · 142 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11307816\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11307816\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"cosmos_ekaterinburg_hotel\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11307816&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":41},{\"hotel_id\":\"11871212\",\"hotel_geo_id\":\"11871212\",\"tutu_offer_id\":\"86d26d8a-11b2-4698-a345-91a0cc7b0224\",\"name\":\"Однокомнатная квартира на улице: Куйбышева 159А ЛОТ:15985\",\"stars\":0,\"rating\":0.0,\"review_count\":0,\"address\":\"3.3 км от центра\",\"location\":{\"lat\":56.82874,\"lng\":60.648506,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/c9342388f3f2c698bc54114f1c2e3620de42ce37.a3f5a2a177dcb39b30b0bd21ecc53362e0122985.jpeg\"],\"alias\":\"odnokomnatnaya_kvartira_na_ulitse_kuybysheva_159a_lot15985\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11871212&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"721c48cb-d607-47ac-bf69-ea59bdb1481a\",\"room_name\":\"Однокомнатная квартира на улице: Куйбышева 159А ЛОТ:15985\",\"price\":{\"amount\":14311.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11871212&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":null,\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11871212\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"odnokomnatnaya_kvartira_na_ulitse_kuybysheva_159a_lot15985\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11871212&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":8},{\"hotel_id\":\"11844585\",\"hotel_geo_id\":\"11844585\",\"tutu_offer_id\":\"4e1d4e01-db86-43ae-a0f6-5b3d83ca7954\",\"name\":\"Олимп\",\"stars\":3,\"rating\":9.15,\"review_count\":118,\"address\":\"548 м от центра\",\"location\":{\"lat\":56.833187,\"lng\":60.593746,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/dd9966220d9755246796cff11a8c5c91ecdce5ae.9a7d5c97704274417e1a444636b7eab46397ad10.jpeg\"],\"alias\":\"olimp_rossiya_620014_sverdlovskaya_obl_g_yekaterinburg_ul_malysheva_d_28\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11844585&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"dab48450-a551-4679-ab21-0f867a2a7c36\",\"room_name\":\"Стандарт двухместный Twin\",\"price\":{\"amount\":21600.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11844585&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":9.15,\"review_count\":118,\"label\":\"⭐ 9.15/10 · 118 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11844585\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11844585\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"olimp_rossiya_620014_sverdlovskaya_obl_g_yekaterinburg_ul_malysheva_d_28\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11844585&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":4},{\"hotel_id\":\"7652256\",\"hotel_geo_id\":\"7652256\",\"tutu_offer_id\":\"437d42cc-3a32-464b-a87a-de117a9e962c\",\"name\":\"Апартаменты Mini в Stepanenkov\",\"stars\":0,\"rating\":7.87,\"review_count\":30,\"address\":\"499 м от центра\",\"location\":{\"lat\":56.833508,\"lng\":60.59913,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/bb49c752-e323-4d32-8437-89744e37617a/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/3db62aa4e1a55efa609f00f25f09e113.jpg\"],\"alias\":\"miniotel_renthouse\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=7652256&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"b601c2ac-c9b1-4b9c-8057-27b4df561288\",\"room_name\":\"Номер студия\",\"price\":{\"amount\":7919.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=7652256&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":{\"rating\":7.87,\"review_count\":30,\"label\":\"⭐ 7.87/10 · 30 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"7652256\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"7652256\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"miniotel_renthouse\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=7652256&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":51},{\"hotel_id\":\"11460859\",\"hotel_geo_id\":\"11460859\",\"tutu_offer_id\":\"95970fb1-3076-46f8-b065-97a4f0fa637d\",\"name\":\"Отель Хаятт Плейс Екатеринбург\",\"stars\":4,\"rating\":8.88,\"review_count\":85,\"address\":\"1.4 км от центра\",\"location\":{\"lat\":56.835083,\"lng\":60.575172,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/9cf6a048-0e8d-45b7-b52b-87d01d804381/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/73706b1e6240b580325804bd8dc90525.jpg\"],\"alias\":\"khayatt_pleys_yekaterinburg\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11460859&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"b78dc474-a4e3-47b3-9d8f-38f340b7aac5\",\"room_name\":\"Номер стандарт с 2 односпальными кроватями\",\"price\":{\"amount\":33859.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11460859&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":true,\"meal_name\":\"Завтрак \\\"шведский стол\\\"\",\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак \\\"шведский стол\\\"\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.88,\"review_count\":85,\"label\":\"⭐ 8.88/10 · 85 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11460859\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11460859\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"khayatt_pleys_yekaterinburg\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11460859&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":49},{\"hotel_id\":\"7652648\",\"hotel_geo_id\":\"7652648\",\"tutu_offer_id\":\"870af3d0-52e8-420d-afcc-f5a9e14ae0ab\",\"name\":\"\\\"Успенский Двор\\\"\",\"stars\":3,\"rating\":8.6,\"review_count\":68,\"address\":\"1.5 км от центра\",\"location\":{\"lat\":56.82977,\"lng\":60.6158,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn.worldota.net/t/x500/extranet/65/f6/65f6a23b74f626a5a0dffde0167be51f942ebef9.jpeg\"],\"alias\":\"miniotel_uspensky_dvor_tsentralnaya\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=7652648&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"best_offer\":{\"offerpack_hash\":\"19bef3fc-6964-4f3d-8e13-56b667bdb0ff\",\"room_name\":\"Улучшенный одноместный\",\"price\":{\"amount\":15600.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=7652648&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.6,\"review_count\":68,\"label\":\"⭐ 8.6/10 · 68 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"7652648\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"7652648\",\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"adults\":1,\"hotel_alias\":\"miniotel_uspensky_dvor_tsentralnaya\",\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=7652648&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9\"},\"photos_total\":100}],\"stay\":{\"check_in\":\"2026-08-26\",\"check_out\":\"2026-08-30\",\"nights\":4},\"meta\":{\"search_id\":\"9ffb6f8048d289d91ba131d6e8f8e4c9\",\"page\":1,\"page_size\":20,\"total_returned\":20,\"has_more\":true,\"geo_id\":\"2656869\",\"resolved_geo\":{\"geo_id\":\"2656869\",\"name\":\"Екатеринбург\",\"country\":\"Россия\",\"region\":\"Свердловская область\",\"geo_type\":\"locality\",\"hotels_count\":9614},\"filters_applied\":{\"option_filters\":[],\"range_filters\":[],\"button_filters\":[],\"quick_filters_order\":[],\"changes\":[]},\"post_filter_dropped_over_cap\":0,\"post_filter_dropped_no_free_cancellation\":0,\"post_filter_dropped_no_breakfast\":0}}"
           }
         ],
         "isError": false
@@ -34,7 +34,7 @@
         {
           "hotel_id": "11409967",
           "hotel_geo_id": "11409967",
-          "tutu_offer_id": "fbac7697-4b30-4466-aea1-eeadc7d88d49",
+          "tutu_offer_id": "0b912b75-4ef1-46ea-a081-c98025004a46",
           "name": "Marins Екатеринбург",
           "stars": 3,
           "rating": 8.21,
@@ -52,7 +52,7 @@
           "alias": "marins_park_otel_yekaterinburg",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11409967&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
           "best_offer": {
-            "offerpack_hash": "e16760d1-8bdb-40f6-b941-a8d61052b0df",
+            "offerpack_hash": "c9c2a781-ce90-4eb9-b19b-e93ed6930e89",
             "room_name": "Номер эконом с 1 односпальной кроватью",
             "price": {
               "amount": 15106,
@@ -97,7 +97,7 @@
         {
           "hotel_id": "11404215",
           "hotel_geo_id": "11404215",
-          "tutu_offer_id": "8bf7ea45-003f-47ce-8542-0ae048a6fbe0",
+          "tutu_offer_id": "523169ee-2711-43e6-a4a9-ceee9d652d43",
           "name": "Большой Урал",
           "stars": 0,
           "rating": 7.53,
@@ -115,7 +115,7 @@
           "alias": "bolshoy_ural_ru_yekaterinburg_625000_ul_krasnoarmeyskaya_1",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11404215&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
           "best_offer": {
-            "offerpack_hash": "bee40fd8-977f-4831-89b1-b0f0d0d9880b",
+            "offerpack_hash": "a44de61d-ce1d-4668-9a71-f9fd7310c713",
             "room_name": "Одноместный номер РЕТРО с удобствами в блоке",
             "price": {
               "amount": 10000,
@@ -160,7 +160,7 @@
         {
           "hotel_id": "11412154",
           "hotel_geo_id": "11412154",
-          "tutu_offer_id": "36f6d991-ca13-4f3f-ba38-7d5bd5444673",
+          "tutu_offer_id": "587fe0ee-84d4-4191-9218-fbed0dbc888d",
           "name": "Отель Визави",
           "stars": 3,
           "rating": 7.94,
@@ -178,7 +178,7 @@
           "alias": "vizavi_rossiya_620028_sverdlovskaya_obl_g_yekaterinburg_ul_tatishcheva_d_86",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11412154&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
           "best_offer": {
-            "offerpack_hash": "1e0281e7-9c14-4764-843d-3b977be6127d",
+            "offerpack_hash": "9a91642a-7bc7-4833-8cdc-fd13550a9cb6",
             "room_name": "Стандарт-single",
             "price": {
               "amount": 15260,
@@ -223,7 +223,7 @@
         {
           "hotel_id": "10239007",
           "hotel_geo_id": "10239007",
-          "tutu_offer_id": "420db8c8-70ea-4a09-82ba-b0b27a62941a",
+          "tutu_offer_id": "4178dfa0-8409-425a-b995-0b1f75d99e45",
           "name": "Лето&Зеленая Роща",
           "stars": 0,
           "rating": 7.07,
@@ -241,7 +241,7 @@
           "alias": "apartamenty_leto_and_zelenaya_roshcha",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=10239007&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
           "best_offer": {
-            "offerpack_hash": "b79ee54b-9846-4391-b449-0a37eb699c1c",
+            "offerpack_hash": "3360fc3e-ddfd-4e72-a619-e3c60db3a54f",
             "room_name": "Место в общем  номере для женщин",
             "price": {
               "amount": 4800,
@@ -286,7 +286,7 @@
         {
           "hotel_id": "9487071",
           "hotel_geo_id": "9487071",
-          "tutu_offer_id": "e9a224f8-d272-4110-a963-ea2aba3b14fb",
+          "tutu_offer_id": "900fbfa1-e168-4a63-a1d1-6f2a9145adfe",
           "name": "Меблированные комнаты Уютное местечко",
           "stars": 0,
           "rating": 8.48,
@@ -304,7 +304,7 @@
           "alias": "khostel_uyutnoye_mestechko_yekaterinburg_ulitsa_botanicheskaya_d30_yekaterinburg",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=9487071&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
           "best_offer": {
-            "offerpack_hash": "073bdfb8-cc6a-43d2-90e8-e22cce91342c",
+            "offerpack_hash": "98024cbb-75d9-4f58-abb7-b7d3b592b4cd",
             "room_name": "Кровать в 12-местном общем номере ",
             "price": {
               "amount": 2697,
@@ -349,7 +349,7 @@
         {
           "hotel_id": "10230361",
           "hotel_geo_id": "10230361",
-          "tutu_offer_id": "ff6e1365-a046-46a2-94f7-5a7d3760281b",
+          "tutu_offer_id": "db1ef39b-dd38-4962-a486-14518e776343",
           "name": "Отель Вознесенский",
           "stars": 4,
           "rating": 8.53,
@@ -367,7 +367,7 @@
           "alias": "otel_voznesensky",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=10230361&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
           "best_offer": {
-            "offerpack_hash": "7df14b5c-7c76-453a-8236-4d860cffc3b4",
+            "offerpack_hash": "26ebb082-6847-4e3a-9c30-d29da4c85c6c",
             "room_name": "Стандарт Классик",
             "price": {
               "amount": 26300,
@@ -412,7 +412,7 @@
         {
           "hotel_id": "8002890",
           "hotel_geo_id": "8002890",
-          "tutu_offer_id": "ab3d3a36-9214-448c-b967-87ff8413ba1b",
+          "tutu_offer_id": "d1774520-5e1c-4f94-b6ad-ec2c0169dfaf",
           "name": "Протекс-Отель",
           "stars": 3,
           "rating": 8.28,
@@ -430,7 +430,7 @@
           "alias": "otel_proteks",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=8002890&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
           "best_offer": {
-            "offerpack_hash": "add3b2d8-4330-4161-b116-03a92d33360e",
+            "offerpack_hash": "384f91d6-2d04-49d8-9c25-1004768c8cef",
             "room_name": "Комфорт",
             "price": {
               "amount": 15742,
@@ -475,7 +475,7 @@
         {
           "hotel_id": "10952727",
           "hotel_geo_id": "10952727",
-          "tutu_offer_id": "12e2e8cc-2c2e-486e-becb-37d668333110",
+          "tutu_offer_id": "ab6218bc-0b38-466c-91fa-54bb391fa547",
           "name": "Однокомнатная квартира на улице: Фрунзе 31",
           "stars": 0,
           "rating": 6.67,
@@ -493,7 +493,7 @@
           "alias": "odnokomnatnaya_kvartira_na_ulitse_frunze_31_frunze_31_5",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=10952727&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
           "best_offer": {
-            "offerpack_hash": "1d019fec-92f0-4c5e-b40d-7fec1bffb2a2",
+            "offerpack_hash": "1b1e98c5-27bc-4849-bc95-43b54892893b",
             "room_name": "Однокомнатная квартира на улице: Фрунзе 31",
             "price": {
               "amount": 15104,
@@ -533,7 +533,7 @@
         {
           "hotel_id": "11669574",
           "hotel_geo_id": "11669574",
-          "tutu_offer_id": "c301f02c-09d4-4666-ad24-57e22314a893",
+          "tutu_offer_id": "c58b045b-0c9a-4b17-bfa4-99b6eee38b51",
           "name": "Конгресс-отель Екатеринбург",
           "stars": 4,
           "rating": 9.57,
@@ -551,7 +551,7 @@
           "alias": "kongressotel_yekaterinburg_rossiya_620034_sverdlovskaya_obl_g_yekaterinburg_ul_bebelya_str_59",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11669574&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
           "best_offer": {
-            "offerpack_hash": "da0c2aa2-f4af-47e0-93ab-947669889c57",
+            "offerpack_hash": "bd9578b2-8761-4609-bdd3-7b46f8df4fb5",
             "room_name": "Делюкс с двуспальной кроватью",
             "price": {
               "amount": 41200,
@@ -599,7 +599,7 @@
         {
           "hotel_id": "7654533",
           "hotel_geo_id": "7654533",
-          "tutu_offer_id": "e4febea7-0f5c-4c47-896c-ebe391dccf8e",
+          "tutu_offer_id": "08ceb7f1-e5ad-488e-b99e-bec5460e5573",
           "name": "Отель Сон Lite",
           "stars": 0,
           "rating": 8.66,
@@ -617,7 +617,7 @@
           "alias": "otel_son_lite",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=7654533&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
           "best_offer": {
-            "offerpack_hash": "bde34306-8004-42ff-a57b-e2a566a40e0e",
+            "offerpack_hash": "2414dc8d-61c6-492a-9bcb-97d1d323b058",
             "room_name": "Номер эконом с 1 односпальной кроватью ",
             "price": {
               "amount": 7487,
@@ -660,67 +660,72 @@
           "photos_total": 100
         },
         {
-          "hotel_id": "11307816",
-          "hotel_geo_id": "11307816",
-          "tutu_offer_id": "97b88df3-b646-4d6f-a308-cb41483dd06e",
-          "name": "Cosmos Екатеринбург",
+          "hotel_id": "11421389",
+          "hotel_geo_id": "11421389",
+          "tutu_offer_id": "b96c214d-c76c-47d0-a125-5435e3ca2f52",
+          "name": "Отель Гранд Холл",
           "stars": 4,
-          "rating": 8.75,
-          "review_count": 142,
-          "address": "1.3 км от центра",
+          "rating": 8.2,
+          "review_count": 23,
+          "address": "3 км от центра",
           "location": {
-            "lat": 56.836678,
-            "lng": 60.618504,
+            "lat": 56.83404,
+            "lng": 60.64615,
             "city": null,
             "city_geo_id": null
           },
           "photos": [
-            "https://cdn2.tu-tu.ru/imghub/view/fa7205c5-74e0-436c-9068-bb0346bfab8d/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/b00d430e28ae28ef82aeb77a8397a8bf.jpg"
+            "https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/9333e0b54c15bd2fbc21fe45d5555e8a9ff9c157.c2458e3903adb21e0ef0aa159d408b800696682b.jpeg"
           ],
-          "alias": "cosmos_ekaterinburg_hotel",
-          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11307816&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
+          "alias": "grand_kholl",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11421389&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
           "best_offer": {
-            "offerpack_hash": "80718082-51e2-46d2-aa53-e872491efe9f",
-            "room_name": "Стандарт с одной кроватью",
+            "offerpack_hash": "3fcb7d4d-d53b-4179-92d4-7848787737f6",
+            "room_name": "Стандарт одноместный",
             "price": {
-              "amount": 32775,
+              "amount": 22800,
               "currency": "RUB"
             },
             "price_basis": "stay_total",
-            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11307816&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11421389&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
             "room_size_sqm": null,
             "breakfast_included": null,
             "meal_name": null,
-            "free_cancellation": null,
+            "free_cancellation": true,
             "pay_at_hotel": null,
             "pay_online": null,
-            "highlights": []
+            "highlights": [
+              {
+                "type": "policies",
+                "text": "Бесплатная отмена"
+              }
+            ]
           },
           "review_summary": {
-            "rating": 8.75,
-            "review_count": 142,
-            "label": "⭐ 8.75/10 · 142 отзыва",
+            "rating": 8.2,
+            "review_count": 23,
+            "label": "⭐ 8.2/10 · 23 отзыва",
             "source": "offers-hotel-api",
             "scope": "hotel",
-            "subject": "11307816",
+            "subject": "11421389",
             "scale": 10
           },
           "checkout_ref": {
             "transport": "hotels",
-            "hotel_geo_id": "11307816",
+            "hotel_geo_id": "11421389",
             "check_in": "2026-08-26",
             "check_out": "2026-08-30",
             "adults": 1,
-            "hotel_alias": "cosmos_ekaterinburg_hotel",
+            "hotel_alias": "grand_kholl",
             "search_id": "9ffb6f8048d289d91ba131d6e8f8e4c9",
-            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11307816&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9"
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11421389&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9"
           },
-          "photos_total": 41
+          "photos_total": 10
         },
         {
           "hotel_id": "11415574",
           "hotel_geo_id": "11415574",
-          "tutu_offer_id": "35d1839a-302f-4d07-8cab-78ac05fa6765",
+          "tutu_offer_id": "bcf6d7da-f3ce-4e1a-a89e-524d8078dab7",
           "name": "Грин Парк Отель",
           "stars": 3,
           "rating": 9.43,
@@ -738,7 +743,7 @@
           "alias": "grin_park_rossiya_620144_sverdlovskaya_obl_g_yekaterinburg_ul_narodnoy_voli_d_24",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11415574&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
           "best_offer": {
-            "offerpack_hash": "289c22ce-3186-4001-bb34-e6a2cc15509c",
+            "offerpack_hash": "2eb6ca5e-02d3-405c-8fd2-e6b79896f52a",
             "room_name": "Стандарт +",
             "price": {
               "amount": 26700,
@@ -781,9 +786,72 @@
           "photos_total": 72
         },
         {
+          "hotel_id": "11417555",
+          "hotel_geo_id": "11417555",
+          "tutu_offer_id": "c398f39f-4e4a-44d8-ae23-ca1a386c7b73",
+          "name": "Мини-отель Александровский парк-отель",
+          "stars": 0,
+          "rating": 9.47,
+          "review_count": 65,
+          "address": "3.6 км от центра",
+          "location": {
+            "lat": 56.811897,
+            "lng": 60.632465,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn2.tu-tu.ru/imghub/view/4197d030-8704-4532-bc05-e82332c5eda3/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/aaa1cec1f110da9328460bb6e8d7c3ac.jpg"
+          ],
+          "alias": "aleksandrovsky_park_otel",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11417555&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
+          "best_offer": {
+            "offerpack_hash": "1048fa19-c19d-4201-b9d8-8be2d7025254",
+            "room_name": "2-местный номер стандарт",
+            "price": {
+              "amount": 15644,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11417555&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
+            "room_size_sqm": null,
+            "breakfast_included": null,
+            "meal_name": null,
+            "free_cancellation": true,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": [
+              {
+                "type": "policies",
+                "text": "Бесплатная отмена"
+              }
+            ]
+          },
+          "review_summary": {
+            "rating": 9.47,
+            "review_count": 65,
+            "label": "⭐ 9.47/10 · 65 отзывов",
+            "source": "offers-hotel-api",
+            "scope": "hotel",
+            "subject": "11417555",
+            "scale": 10
+          },
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "11417555",
+            "check_in": "2026-08-26",
+            "check_out": "2026-08-30",
+            "adults": 1,
+            "hotel_alias": "aleksandrovsky_park_otel",
+            "search_id": "9ffb6f8048d289d91ba131d6e8f8e4c9",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11417555&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9"
+          },
+          "photos_total": 33
+        },
+        {
           "hotel_id": "11450625",
           "hotel_geo_id": "11450625",
-          "tutu_offer_id": "8e9c9b68-157b-40bf-87d3-b4db57179dda",
+          "tutu_offer_id": "c9bb33ff-3198-4078-9f77-2a2c67c68940",
           "name": "Отель Хаятт Ридженси Екатеринбург",
           "stars": 5,
           "rating": 8.98,
@@ -801,7 +869,7 @@
           "alias": "khayatt_ridzhensi_yekaterinburg_rossiya_620014_sverdlovskaya_obl_g_yekaterinburg_ul_borisa_yeltsina_d_8",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11450625&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
           "best_offer": {
-            "offerpack_hash": "af5d8ef3-96ad-4dd7-abfb-e6da161da918",
+            "offerpack_hash": "5211bb72-f35a-4d7d-9ded-2b3f82d6b126",
             "room_name": "Номер стандарт с 1 двуспальной кроватью",
             "price": {
               "amount": 64103,
@@ -848,73 +916,68 @@
           "photos_total": 31
         },
         {
-          "hotel_id": "11421389",
-          "hotel_geo_id": "11421389",
-          "tutu_offer_id": "243aa4ba-53d7-4a26-8b0d-bb12e6a9b8a9",
-          "name": "Отель Гранд Холл",
+          "hotel_id": "11307816",
+          "hotel_geo_id": "11307816",
+          "tutu_offer_id": "d5673158-3c48-4d30-8847-3f618447008b",
+          "name": "Cosmos Екатеринбург",
           "stars": 4,
-          "rating": 8.2,
-          "review_count": 23,
-          "address": "3 км от центра",
+          "rating": 8.75,
+          "review_count": 142,
+          "address": "1.3 км от центра",
           "location": {
-            "lat": 56.83404,
-            "lng": 60.64615,
+            "lat": 56.836678,
+            "lng": 60.618504,
             "city": null,
             "city_geo_id": null
           },
           "photos": [
-            "https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/9333e0b54c15bd2fbc21fe45d5555e8a9ff9c157.c2458e3903adb21e0ef0aa159d408b800696682b.jpeg"
+            "https://cdn2.tu-tu.ru/imghub/view/fa7205c5-74e0-436c-9068-bb0346bfab8d/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/b00d430e28ae28ef82aeb77a8397a8bf.jpg"
           ],
-          "alias": "grand_kholl",
-          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11421389&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
+          "alias": "cosmos_ekaterinburg_hotel",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11307816&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
           "best_offer": {
-            "offerpack_hash": "9d8cd70a-fdc0-4cbc-8fec-c427515b3d1a",
-            "room_name": "Стандарт одноместный",
+            "offerpack_hash": "6d8e7336-2f21-4081-8936-c7c71a0dd203",
+            "room_name": "Стандарт с одной кроватью",
             "price": {
-              "amount": 22800,
+              "amount": 32775,
               "currency": "RUB"
             },
             "price_basis": "stay_total",
-            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11421389&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11307816&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
             "room_size_sqm": null,
             "breakfast_included": null,
             "meal_name": null,
-            "free_cancellation": true,
+            "free_cancellation": null,
             "pay_at_hotel": null,
             "pay_online": null,
-            "highlights": [
-              {
-                "type": "policies",
-                "text": "Бесплатная отмена"
-              }
-            ]
+            "highlights": []
           },
           "review_summary": {
-            "rating": 8.2,
-            "review_count": 23,
-            "label": "⭐ 8.2/10 · 23 отзыва",
+            "rating": 8.75,
+            "review_count": 142,
+            "label": "⭐ 8.75/10 · 142 отзыва",
             "source": "offers-hotel-api",
             "scope": "hotel",
-            "subject": "11421389",
+            "subject": "11307816",
             "scale": 10
           },
           "checkout_ref": {
             "transport": "hotels",
-            "hotel_geo_id": "11421389",
+            "hotel_geo_id": "11307816",
             "check_in": "2026-08-26",
             "check_out": "2026-08-30",
             "adults": 1,
-            "hotel_alias": "grand_kholl",
+            "hotel_alias": "cosmos_ekaterinburg_hotel",
             "search_id": "9ffb6f8048d289d91ba131d6e8f8e4c9",
-            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11421389&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9"
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11307816&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9"
           },
-          "photos_total": 10
+          "photos_total": 41
         },
         {
-          "hotel_id": "11871206",
-          "hotel_geo_id": "11871206",
-          "tutu_offer_id": "10df5221-3f94-4b91-8994-6599e6b48b51",
-          "name": "Однокомнатная квартира на улице: Куйбышева 159а ЛОТ:15929",
+          "hotel_id": "11871212",
+          "hotel_geo_id": "11871212",
+          "tutu_offer_id": "86d26d8a-11b2-4698-a345-91a0cc7b0224",
+          "name": "Однокомнатная квартира на улице: Куйбышева 159А ЛОТ:15985",
           "stars": 0,
           "rating": 0,
           "review_count": 0,
@@ -926,19 +989,19 @@
             "city_geo_id": null
           },
           "photos": [
-            "https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/8e35104d594d440c051f5c6660c63af40d2d656a.6228bc978cd7b6c01a7388110880fdab4c127a31.jpeg"
+            "https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/c9342388f3f2c698bc54114f1c2e3620de42ce37.a3f5a2a177dcb39b30b0bd21ecc53362e0122985.jpeg"
           ],
-          "alias": "odnokomnatnaya_kvartira_na_ulitse_kuybysheva_159a_lot15929",
-          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11871206&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
+          "alias": "odnokomnatnaya_kvartira_na_ulitse_kuybysheva_159a_lot15985",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11871212&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
           "best_offer": {
-            "offerpack_hash": "cae52591-ffda-424f-9623-10b246b4169a",
-            "room_name": "Однокомнатная квартира на улице: Куйбышева 159а ЛОТ:15929",
+            "offerpack_hash": "721c48cb-d607-47ac-bf69-ea59bdb1481a",
+            "room_name": "Однокомнатная квартира на улице: Куйбышева 159А ЛОТ:15985",
             "price": {
-              "amount": 14767,
+              "amount": 14311,
               "currency": "RUB"
             },
             "price_basis": "stay_total",
-            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11871206&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11871212&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
             "room_size_sqm": null,
             "breakfast_included": null,
             "meal_name": null,
@@ -950,20 +1013,20 @@
           "review_summary": null,
           "checkout_ref": {
             "transport": "hotels",
-            "hotel_geo_id": "11871206",
+            "hotel_geo_id": "11871212",
             "check_in": "2026-08-26",
             "check_out": "2026-08-30",
             "adults": 1,
-            "hotel_alias": "odnokomnatnaya_kvartira_na_ulitse_kuybysheva_159a_lot15929",
+            "hotel_alias": "odnokomnatnaya_kvartira_na_ulitse_kuybysheva_159a_lot15985",
             "search_id": "9ffb6f8048d289d91ba131d6e8f8e4c9",
-            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11871206&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9"
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11871212&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9"
           },
-          "photos_total": 7
+          "photos_total": 8
         },
         {
           "hotel_id": "11844585",
           "hotel_geo_id": "11844585",
-          "tutu_offer_id": "b9c55bdf-7bcc-4f2f-91e6-f2d322231b4e",
+          "tutu_offer_id": "4e1d4e01-db86-43ae-a0f6-5b3d83ca7954",
           "name": "Олимп",
           "stars": 3,
           "rating": 9.15,
@@ -981,7 +1044,7 @@
           "alias": "olimp_rossiya_620014_sverdlovskaya_obl_g_yekaterinburg_ul_malysheva_d_28",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11844585&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
           "best_offer": {
-            "offerpack_hash": "5703d530-e1d1-45d4-9f3c-68cb11fa198f",
+            "offerpack_hash": "dab48450-a551-4679-ab21-0f867a2a7c36",
             "room_name": "Стандарт двухместный Twin",
             "price": {
               "amount": 21600,
@@ -1024,72 +1087,9 @@
           "photos_total": 4
         },
         {
-          "hotel_id": "11417555",
-          "hotel_geo_id": "11417555",
-          "tutu_offer_id": "ac3892b1-64e2-408f-a092-35915b4f810c",
-          "name": "Мини-отель Александровский парк-отель",
-          "stars": 0,
-          "rating": 9.47,
-          "review_count": 65,
-          "address": "3.6 км от центра",
-          "location": {
-            "lat": 56.811897,
-            "lng": 60.632465,
-            "city": null,
-            "city_geo_id": null
-          },
-          "photos": [
-            "https://cdn2.tu-tu.ru/imghub/view/4197d030-8704-4532-bc05-e82332c5eda3/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/aaa1cec1f110da9328460bb6e8d7c3ac.jpg"
-          ],
-          "alias": "aleksandrovsky_park_otel",
-          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11417555&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
-          "best_offer": {
-            "offerpack_hash": "0508a63f-6c44-4343-8ff2-63a12f42b825",
-            "room_name": "2-местный номер стандарт",
-            "price": {
-              "amount": 15644,
-              "currency": "RUB"
-            },
-            "price_basis": "stay_total",
-            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11417555&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
-            "room_size_sqm": null,
-            "breakfast_included": null,
-            "meal_name": null,
-            "free_cancellation": true,
-            "pay_at_hotel": null,
-            "pay_online": null,
-            "highlights": [
-              {
-                "type": "policies",
-                "text": "Бесплатная отмена"
-              }
-            ]
-          },
-          "review_summary": {
-            "rating": 9.47,
-            "review_count": 65,
-            "label": "⭐ 9.47/10 · 65 отзывов",
-            "source": "offers-hotel-api",
-            "scope": "hotel",
-            "subject": "11417555",
-            "scale": 10
-          },
-          "checkout_ref": {
-            "transport": "hotels",
-            "hotel_geo_id": "11417555",
-            "check_in": "2026-08-26",
-            "check_out": "2026-08-30",
-            "adults": 1,
-            "hotel_alias": "aleksandrovsky_park_otel",
-            "search_id": "9ffb6f8048d289d91ba131d6e8f8e4c9",
-            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11417555&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9"
-          },
-          "photos_total": 33
-        },
-        {
           "hotel_id": "7652256",
           "hotel_geo_id": "7652256",
-          "tutu_offer_id": "fd8c1f3d-f327-4ced-96d8-76b6464c3904",
+          "tutu_offer_id": "437d42cc-3a32-464b-a87a-de117a9e962c",
           "name": "Апартаменты Mini в Stepanenkov",
           "stars": 0,
           "rating": 7.87,
@@ -1107,7 +1107,7 @@
           "alias": "miniotel_renthouse",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=7652256&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
           "best_offer": {
-            "offerpack_hash": "d12c1c6b-2dd4-4cf5-8e64-cc9f045eefc6",
+            "offerpack_hash": "b601c2ac-c9b1-4b9c-8057-27b4df561288",
             "room_name": "Номер студия",
             "price": {
               "amount": 7919,
@@ -1147,7 +1147,7 @@
         {
           "hotel_id": "11460859",
           "hotel_geo_id": "11460859",
-          "tutu_offer_id": "5e28f555-af38-44d9-ab39-2fb8e64f2206",
+          "tutu_offer_id": "95970fb1-3076-46f8-b065-97a4f0fa637d",
           "name": "Отель Хаятт Плейс Екатеринбург",
           "stars": 4,
           "rating": 8.88,
@@ -1165,7 +1165,7 @@
           "alias": "khayatt_pleys_yekaterinburg",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11460859&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
           "best_offer": {
-            "offerpack_hash": "b9834369-136e-4a99-9e36-13962d735781",
+            "offerpack_hash": "b78dc474-a4e3-47b3-9d8f-38f340b7aac5",
             "room_name": "Номер стандарт с 2 односпальными кроватями",
             "price": {
               "amount": 33859,
@@ -1212,45 +1212,41 @@
           "photos_total": 49
         },
         {
-          "hotel_id": "11417725",
-          "hotel_geo_id": "11417725",
-          "tutu_offer_id": "ae7de32d-c142-4045-beee-c80f2c5882ce",
-          "name": "Атриум Палас Отель",
-          "stars": 5,
-          "rating": 8.53,
-          "review_count": 63,
-          "address": "1.6 км от центра",
+          "hotel_id": "7652648",
+          "hotel_geo_id": "7652648",
+          "tutu_offer_id": "870af3d0-52e8-420d-afcc-f5a9e14ae0ab",
+          "name": "\"Успенский Двор\"",
+          "stars": 3,
+          "rating": 8.6,
+          "review_count": 68,
+          "address": "1.5 км от центра",
           "location": {
-            "lat": 56.82763,
-            "lng": 60.615925,
+            "lat": 56.82977,
+            "lng": 60.6158,
             "city": null,
             "city_geo_id": null
           },
           "photos": [
-            "https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/c7d39b886711137842a209515a4dc200a3e896d3.b321ef200918d360f4212a8aed92861cd7139606.jpeg"
+            "https://cdn.worldota.net/t/x500/extranet/65/f6/65f6a23b74f626a5a0dffde0167be51f942ebef9.jpeg"
           ],
-          "alias": "atrium_palas",
-          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11417725&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
+          "alias": "miniotel_uspensky_dvor_tsentralnaya",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=7652648&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
           "best_offer": {
-            "offerpack_hash": "1467cab1-31b6-4423-92d5-916ea5af9748",
-            "room_name": "Стандартный номер",
+            "offerpack_hash": "19bef3fc-6964-4f3d-8e13-56b667bdb0ff",
+            "room_name": "Улучшенный одноместный",
             "price": {
-              "amount": 39600,
+              "amount": 15600,
               "currency": "RUB"
             },
             "price_basis": "stay_total",
-            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11417725&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=7652648&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
             "room_size_sqm": null,
-            "breakfast_included": true,
-            "meal_name": "Завтрак включён",
+            "breakfast_included": null,
+            "meal_name": null,
             "free_cancellation": true,
             "pay_at_hotel": null,
             "pay_online": null,
             "highlights": [
-              {
-                "type": "meal",
-                "text": "Завтрак включён"
-              },
               {
                 "type": "policies",
                 "text": "Бесплатная отмена"
@@ -1258,25 +1254,25 @@
             ]
           },
           "review_summary": {
-            "rating": 8.53,
-            "review_count": 63,
-            "label": "⭐ 8.53/10 · 63 отзыва",
+            "rating": 8.6,
+            "review_count": 68,
+            "label": "⭐ 8.6/10 · 68 отзывов",
             "source": "offers-hotel-api",
             "scope": "hotel",
-            "subject": "11417725",
+            "subject": "7652648",
             "scale": 10
           },
           "checkout_ref": {
             "transport": "hotels",
-            "hotel_geo_id": "11417725",
+            "hotel_geo_id": "7652648",
             "check_in": "2026-08-26",
             "check_out": "2026-08-30",
             "adults": 1,
-            "hotel_alias": "atrium_palas",
+            "hotel_alias": "miniotel_uspensky_dvor_tsentralnaya",
             "search_id": "9ffb6f8048d289d91ba131d6e8f8e4c9",
-            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11417725&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9"
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=7652648&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9"
           },
-          "photos_total": 41
+          "photos_total": 100
         }
       ],
       "stay": {

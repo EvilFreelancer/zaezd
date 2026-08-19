@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-08-19T09:50:57.172Z",
+  "recorded_at": "2026-08-19T10:53:04.672Z",
   "source": "nominatim",
   "tool": "search",
   "arguments": {
@@ -11,7 +11,7 @@
     "status": 200,
     "body": [
       {
-        "place_id": 419355076,
+        "place_id": 418796727,
         "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
         "osm_type": "way",
         "osm_id": 41110183,
@@ -32,49 +32,7 @@
         ]
       },
       {
-        "place_id": 201098643,
-        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
-        "osm_type": "node",
-        "osm_id": 2654255490,
-        "lat": "56.8380399",
-        "lon": "60.6101532",
-        "category": "tourism",
-        "type": "artwork",
-        "place_rank": 30,
-        "importance": 0.000072487220569116,
-        "addresstype": "tourism",
-        "name": "Граффити \"Бумажный самолетик\"",
-        "display_name": "Граффити \"Бумажный самолетик\", 12, улица Толмачёва, Ленинский район, Екатеринбург, городской округ Екатеринбург, Свердловская область, Уральский федеральный округ, 620075, Россия",
-        "boundingbox": [
-          "56.8379899",
-          "56.8380899",
-          "60.6101032",
-          "60.6102032"
-        ]
-      },
-      {
-        "place_id": 199994144,
-        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
-        "osm_type": "node",
-        "osm_id": 10565423409,
-        "lat": "56.8382342",
-        "lon": "60.6102645",
-        "category": "tourism",
-        "type": "attraction",
-        "place_rank": 30,
-        "importance": 0.000072487220569116,
-        "addresstype": "tourism",
-        "name": "Граффити Лампаса Покраса \"All your walls are belong to us\"",
-        "display_name": "Граффити Лампаса Покраса \"All your walls are belong to us\", 12, улица Толмачёва, Ленинский район, Екатеринбург, городской округ Екатеринбург, Свердловская область, Уральский федеральный округ, 620075, Россия",
-        "boundingbox": [
-          "56.8381842",
-          "56.8382842",
-          "60.6102145",
-          "60.6103145"
-        ]
-      },
-      {
-        "place_id": 201098496,
+        "place_id": 200688561,
         "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
         "osm_type": "node",
         "osm_id": 1823658259,

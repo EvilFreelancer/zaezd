@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-08-19T09:50:57.172Z",
+  "recorded_at": "2026-08-19T10:53:04.672Z",
   "source": "open-meteo",
   "tool": "forecast",
   "arguments": {
@@ -10,8 +10,8 @@
   "response": {
     "status": 400,
     "body": {
-      "reason": "Parameter 'start_date' is out of allowed range from 2026-05-18 to 2026-09-03",
-      "error": true
+      "error": true,
+      "reason": "Parameter 'start_date' is out of allowed range from 2026-05-18 to 2026-09-03"
     }
   }
 }

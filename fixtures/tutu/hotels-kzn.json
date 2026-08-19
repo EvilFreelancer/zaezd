@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-08-19T09:50:57.172Z",
+  "recorded_at": "2026-08-19T10:53:04.672Z",
   "source": "tutu",
   "tool": "search_hotels",
   "arguments": {
@@ -23,7 +23,7 @@
         "content": [
           {
             "type": "text",
-            "text": "{\"hotels\":[{\"hotel_id\":\"9626750\",\"hotel_geo_id\":\"9626750\",\"tutu_offer_id\":\"d7951490-f989-405c-b947-574deec86ecd\",\"name\":\"Апарт Отель \\\"Центральный\\\"\",\"stars\":0,\"rating\":8.83,\"review_count\":88,\"address\":\"778 м от центра\",\"location\":{\"lat\":55.799152,\"lng\":49.119747,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/a1feb8dc-9a4e-4a86-85a6-3b0741508202/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/9d646fbf5d63e1f159971579c9757626.jpg\"],\"alias\":\"apartamenty_bekhtereva1\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=9626750&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"d450802c-aa8f-4aeb-829f-9281800b1721\",\"room_name\":null,\"price\":{\"amount\":22500.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=9626750&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.83,\"review_count\":88,\"label\":\"⭐ 8.83/10 · 88 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"9626750\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"9626750\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"apartamenty_bekhtereva1\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=9626750&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":52},{\"hotel_id\":\"9626970\",\"hotel_geo_id\":\"9626970\",\"tutu_offer_id\":\"f97c779c-223c-4328-a8b9-4d02a33e8b9f\",\"name\":\"Kazan Lagom\",\"stars\":0,\"rating\":9.58,\"review_count\":19,\"address\":\"712 м от центра\",\"location\":{\"lat\":55.793865,\"lng\":49.097855,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/69d10d1a-2f88-4ef7-a5b7-16e2dc379fd9/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/f2eeeb7930249dd137eea9740287a17a.jpg\"],\"alias\":\"meblirovannye_komnaty_kazanlagom\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=9626970&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"5aa32d53-286a-4390-a3b7-c029fcce8adc\",\"room_name\":\"Стандартный номер с двуспальной кроватью (ул.Коротченко,д.2)\",\"price\":{\"amount\":16480.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=9626970&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":{\"rating\":9.58,\"review_count\":19,\"label\":\"⭐ 9.58/10 · 19 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"9626970\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"9626970\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"meblirovannye_komnaty_kazanlagom\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=9626970&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":48},{\"hotel_id\":\"5747176\",\"hotel_geo_id\":\"5747176\",\"tutu_offer_id\":\"d11d4ad4-dd53-413d-8ed5-8cb44e4d7829\",\"name\":\"Отель Ривьера\",\"stars\":4,\"rating\":8.62,\"review_count\":883,\"address\":\"2.5 км от центра\",\"location\":{\"lat\":55.815334,\"lng\":49.13002,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/87eec89d-4f8f-4ec5-b056-77b39e3c1986/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/6f56e7cf54df9d396788d4d0ba004f6c.jpg\"],\"alias\":\"otel_rivyera_kazan\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=5747176&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"ed76b022-28b9-4e52-b068-27decbd7c673\",\"room_name\":\"Комфорт номер (площадь не менее 13 кв. м.)\",\"price\":{\"amount\":48760.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=5747176&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":13.0,\"breakfast_included\":true,\"meal_name\":\"Завтрак \\\"шведский стол\\\"\",\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак \\\"шведский стол\\\"\"}]},\"review_summary\":{\"rating\":8.62,\"review_count\":883,\"label\":\"⭐ 8.62/10 · 883 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"5747176\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"5747176\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"otel_rivyera_kazan\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=5747176&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":60},{\"hotel_id\":\"11410904\",\"hotel_geo_id\":\"11410904\",\"tutu_offer_id\":\"00a8ed1f-6f3b-4b65-9467-fdf9b9ec0daa\",\"name\":\"Bon Ami Hotel\",\"stars\":0,\"rating\":8.63,\"review_count\":103,\"address\":\"1.1 км от центра\",\"location\":{\"lat\":55.7879,\"lng\":49.117477,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/b6d8248a-eebb-4294-827c-d714dd7ffa55/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/8ee4724a1e163356d79fce5004e3494c.jpg\"],\"alias\":\"bon_ami\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=11410904&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"b4936ed4-83ca-4cfa-b5ac-17ff2af0d251\",\"room_name\":\"Standart\",\"price\":{\"amount\":16000.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=11410904&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.63,\"review_count\":103,\"label\":\"⭐ 8.63/10 · 103 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11410904\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11410904\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"bon_ami\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=11410904&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":20},{\"hotel_id\":\"7646186\",\"hotel_geo_id\":\"7646186\",\"tutu_offer_id\":\"97ef4f21-7adc-4985-b05d-5b427f737719\",\"name\":\"Татар Инн\",\"stars\":3,\"rating\":9.04,\"review_count\":207,\"address\":\"1.8 км от центра\",\"location\":{\"lat\":55.781227,\"lng\":49.116768,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/6d22da26-0738-458c-b2ea-9c2ebdd72e8d/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/b9049a3f76410fecf9d72df2b99cf88e.jpg\"],\"alias\":\"otel_tatarinn\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=7646186&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"25a25038-3f97-475c-8321-f61b60812cf5\",\"room_name\":\"Стандарт одноместный\",\"price\":{\"amount\":28013.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=7646186&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":{\"rating\":9.04,\"review_count\":207,\"label\":\"⭐ 9.04/10 · 207 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"7646186\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"7646186\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"otel_tatarinn\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=7646186&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":100},{\"hotel_id\":\"10254574\",\"hotel_geo_id\":\"10254574\",\"tutu_offer_id\":\"549d9f2d-d81b-4776-b392-2190e0a81dcd\",\"name\":\"Эверест\",\"stars\":0,\"rating\":8.15,\"review_count\":65,\"address\":\"579 м от центра\",\"location\":{\"lat\":55.79135,\"lng\":49.107315,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/f4ee6b2b-b58b-46fd-a0a5-ff2cf287ca5f/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/ccf5742d6de5d36960ab6c9a0a6c65ce.jpg\"],\"alias\":\"miniotel_everest\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10254574&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"71651077-dc74-4ed4-9442-e51d4b19c827\",\"room_name\":\"апартаменты номер-студио (ИНДИВИДУАЛЬНЫЙ САНУЗЕЛ ВНЕ НОМЕРА, переулок Кирова, 3, этаж 1)\",\"price\":{\"amount\":11960.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10254574&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":{\"rating\":8.15,\"review_count\":65,\"label\":\"⭐ 8.15/10 · 65 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"10254574\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"10254574\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"miniotel_everest\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10254574&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":86},{\"hotel_id\":\"10754089\",\"hotel_geo_id\":\"10754089\",\"tutu_offer_id\":\"a6395019-d0a7-4047-b0a0-6b0b18c6b28d\",\"name\":\"Rushinkzn апартаменты | Рядом Метро и ЖД Вокзал Баумана Кремль\",\"stars\":0,\"rating\":9.4,\"review_count\":2,\"address\":\"952 м от центра\",\"location\":{\"lat\":55.788086,\"lng\":49.105732,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/0dfbca2d56e40f831514a789b1abdf1bc190fefe.19d6d6a9361bf1d4558fbe6efe7a13e45136f07b.jpeg\"],\"alias\":\"odnokomnatnaya_kvartira_na_ulitse_gayaza_iskhaki_15_ulitsa_gayaza_iskhaki_15_9\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10754089&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"d6e54276-5f7a-4d1c-bfde-ebbb798bce0a\",\"room_name\":\"Однокомнатная квартира на улице: ул Гаяза Исхаки, д 15\",\"price\":{\"amount\":20296.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10754089&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":{\"rating\":9.4,\"review_count\":2,\"label\":\"⭐ 9.4/10 · 2 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"10754089\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"10754089\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"odnokomnatnaya_kvartira_na_ulitse_gayaza_iskhaki_15_ulitsa_gayaza_iskhaki_15_9\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10754089&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":27},{\"hotel_id\":\"9686397\",\"hotel_geo_id\":\"9686397\",\"tutu_offer_id\":\"5a39ddad-8f08-4bc8-952d-18c36f466d38\",\"name\":\"Гостиница Мираж\",\"stars\":5,\"rating\":8.88,\"review_count\":132,\"address\":\"437 м от центра\",\"location\":{\"lat\":55.793774,\"lng\":49.10323,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/7e5e6164-770a-4288-8db2-5ec2678421c9/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/910305331617f1a8c5c8cbb940a99ead.jpg\"],\"alias\":\"gostinitsa_mirazh\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=9686397&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"37a69c14-4566-460a-8eef-b416256c2a7f\",\"room_name\":\"Делюкс Twin с 2 раздельными кроватями\",\"price\":{\"amount\":50000.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=9686397&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":true,\"meal_name\":\"Завтрак \\\"шведский стол\\\"\",\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак \\\"шведский стол\\\"\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.88,\"review_count\":132,\"label\":\"⭐ 8.88/10 · 132 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"9686397\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"9686397\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"gostinitsa_mirazh\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=9686397&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":100},{\"hotel_id\":\"10466253\",\"hotel_geo_id\":\"10466253\",\"tutu_offer_id\":\"c1ec0e97-b7cf-4b6c-8504-e7433d9f2480\",\"name\":\"Апартаменты VIZIT на улице Габдуллы Тукая\",\"stars\":0,\"rating\":0.0,\"review_count\":0,\"address\":\"2 км от центра\",\"location\":{\"lat\":55.77876,\"lng\":49.1142,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn.bronevik.com/static/photo/g/500x500/58c6aab6e525ce119ff0a8e64b920be8\"],\"alias\":\"apartamenty_vizit_na_ulitse_gabdully_tukaya\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10466253&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"a8f97d4e-b88e-4e10-961f-3778598dbb48\",\"room_name\":\"1-комнатные апартаменты, 15м²\",\"price\":{\"amount\":16400.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10466253&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":15.0,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":null,\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"10466253\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"apartamenty_vizit_na_ulitse_gabdully_tukaya\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10466253&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":65},{\"hotel_id\":\"7644703\",\"hotel_geo_id\":\"7644703\",\"tutu_offer_id\":\"434b897f-a0ed-47ca-8175-93d3aa8496b9\",\"name\":\"Гранд Отель Казань\",\"stars\":4,\"rating\":8.51,\"review_count\":184,\"address\":\"1.5 км от центра\",\"location\":{\"lat\":55.78653,\"lng\":49.124207,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/cae26f32-bf41-4df3-ba19-26e04bc0a3df/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/59999f26801e29a580fd3660f2d610a5.jpg\"],\"alias\":\"grand_otel_kazan\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=7644703&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"a1c241f1-12f7-42ac-9db2-cbc7d37ab2a1\",\"room_name\":\"Номер Стандарт с одной двуспальной кроватью\",\"price\":{\"amount\":35300.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=7644703&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":true,\"meal_name\":\"Завтрак \\\"шведский стол\\\"\",\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак \\\"шведский стол\\\"\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.51,\"review_count\":184,\"label\":\"⭐ 8.51/10 · 184 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"7644703\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"7644703\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"grand_otel_kazan\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=7644703&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":28},{\"hotel_id\":\"10254599\",\"hotel_geo_id\":\"10254599\",\"tutu_offer_id\":\"2f960b7b-1466-42e2-aa21-39c96d3a7bcc\",\"name\":\"Отель Легенда\",\"stars\":3,\"rating\":8.33,\"review_count\":145,\"address\":\"1.8 км от центра\",\"location\":{\"lat\":55.780655,\"lng\":49.110397,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/a5db274e-6eca-4854-b4e2-82af04e34946/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/251fa53facf76161ebd7bf914e17025d.jpg\"],\"alias\":\"otel_legenda_kazan\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10254599&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"eae67247-dfb3-4226-a2ed-301aaa78e09a\",\"room_name\":\"Люкс\",\"price\":{\"amount\":27100.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10254599&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.33,\"review_count\":145,\"label\":\"⭐ 8.33/10 · 145 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"10254599\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"10254599\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"otel_legenda_kazan\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10254599&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":74},{\"hotel_id\":\"11870900\",\"hotel_geo_id\":\"11870900\",\"tutu_offer_id\":\"cf4c6dd0-9107-44d1-960c-cd666c8ea034\",\"name\":\"ВДепо\",\"stars\":0,\"rating\":9.95,\"review_count\":11,\"address\":\"5.4 км от центра\",\"location\":{\"lat\":55.84246,\"lng\":49.080612,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/d2aafc98-eb16-459c-b0be-8e18a9619ad0/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/3465968540e9d6f324038570267fc164.jpg\"],\"alias\":\"otel_vdepo\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=11870900&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"ecd1d18b-f6d8-47b0-b8b3-791d7f40d15e\",\"room_name\":\"Капсульный номер с удобствами на этаже\",\"price\":{\"amount\":10400.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=11870900&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":9.95,\"review_count\":11,\"label\":\"⭐ 9.95/10 · 11 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11870900\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11870900\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"otel_vdepo\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=11870900&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":16},{\"hotel_id\":\"10230389\",\"hotel_geo_id\":\"10230389\",\"tutu_offer_id\":\"417be406-bb53-4bc1-baec-7ea8b12ef781\",\"name\":\"Верона\",\"stars\":3,\"rating\":7.84,\"review_count\":211,\"address\":\"1.7 км от центра\",\"location\":{\"lat\":55.780933,\"lng\":49.109776,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/2d50043c-5c9d-4980-b388-96d81b287df2/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/6ec53627a4c35cc30b62ad902958a7bf.jpg\"],\"alias\":\"gostinitsa_prestige_house_verona\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10230389&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"0a17f9e2-388a-4872-a99d-d88438bcf288\",\"room_name\":\"Одноместный, класс Улучшенный\",\"price\":{\"amount\":17800.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10230389&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":7.84,\"review_count\":211,\"label\":\"⭐ 7.84/10 · 211 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"10230389\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"10230389\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"gostinitsa_prestige_house_verona\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10230389&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":18},{\"hotel_id\":\"10756289\",\"hotel_geo_id\":\"10756289\",\"tutu_offer_id\":\"5135a654-7048-463e-80b6-2d306412e4ed\",\"name\":\"Fresh\",\"stars\":0,\"rating\":10.0,\"review_count\":2,\"address\":\"3.6 км от центра\",\"location\":{\"lat\":55.8215,\"lng\":49.145264,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/769537ce-caaa-41f8-be1c-14ecca81d000/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/e4160863e8163f0fc6284ef2e7742d87.jpg\"],\"alias\":\"apartamenty_fresh_respublika_tatarstan_tatarstan_g_kazan_ul_adoratskogo_d_1b\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10756289&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"c94619ce-9214-4cdf-8b93-dbb3c385b79f\",\"room_name\":\"Апартамент Р1\",\"price\":{\"amount\":14000.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10756289&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":10.0,\"review_count\":2,\"label\":\"⭐ 10/10 · 2 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"10756289\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"10756289\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"apartamenty_fresh_respublika_tatarstan_tatarstan_g_kazan_ul_adoratskogo_d_1b\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10756289&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":6},{\"hotel_id\":\"12366039\",\"hotel_geo_id\":\"12366039\",\"tutu_offer_id\":\"ec195e19-1107-40d0-9430-31e51eac5ba3\",\"name\":\"Однокомнатная квартира на улице: Баумана 26\",\"stars\":0,\"rating\":0.0,\"review_count\":0,\"address\":\"257 м от центра\",\"location\":{\"lat\":55.794247,\"lng\":49.10765,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/bcff0903c20d8e28bd0b530e6d4b3a6f4572bd3e.9242c563bce8946dee12d162742492605939712c.jpeg\"],\"alias\":\"odnokomnatnaya_kvartira_na_ulitse_baumana_26_rossiya_kazan_baumana_26\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=12366039&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"c8012ee5-bbbc-450b-8a0d-12535920f22b\",\"room_name\":\"Однокомнатная квартира на улице: Баумана 26\",\"price\":{\"amount\":38400.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=12366039&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":null,\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"12366039\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"odnokomnatnaya_kvartira_na_ulitse_baumana_26_rossiya_kazan_baumana_26\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=12366039&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":10},{\"hotel_id\":\"10750048\",\"hotel_geo_id\":\"10750048\",\"tutu_offer_id\":\"2572d599-59de-405a-a05b-67e3df1651dc\",\"name\":\"THouse\",\"stars\":0,\"rating\":10.0,\"review_count\":2,\"address\":\"5.9 км от центра\",\"location\":{\"lat\":55.79514,\"lng\":49.202766,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn.worldota.net/t/x500/content/43/90/4390756cafd0e58bf2bc01e28f74ce6a3768452d.JPEG\"],\"alias\":\"thouse_tikhauz_ul_kosmonavtov_59_kazan\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10750048&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"746241c4-63bb-4892-ab65-c5451a9589e7\",\"room_name\":\"Одноместный номер с односпальной кроватью\",\"price\":{\"amount\":17000.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10750048&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":10.0,\"review_count\":2,\"label\":\"⭐ 10/10 · 2 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"10750048\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"10750048\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"thouse_tikhauz_ul_kosmonavtov_59_kazan\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10750048&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":44},{\"hotel_id\":\"8971797\",\"hotel_geo_id\":\"8971797\",\"tutu_offer_id\":\"9360d18b-0c66-4dbb-86db-c0c04ef2a551\",\"name\":\"2-х комнатная квартира на улице: Чистопольская 61Д\",\"stars\":0,\"rating\":9.86,\"review_count\":5,\"address\":\"3.1 км от центра\",\"location\":{\"lat\":55.819977,\"lng\":49.134926,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn.worldota.net/t/x500/extranet/a7/aa/a7aa95fc64b8b8548525108943769ce33d402656.jpeg\"],\"alias\":\"kvartira_chistopolskaya_61d\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8971797&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"b5c179e1-1843-41fd-b309-486ffeb645a3\",\"room_name\":\"2-х комнатная квартира на улице: Чистопольская 61Д\",\"price\":{\"amount\":15600.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8971797&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":{\"rating\":9.86,\"review_count\":5,\"label\":\"⭐ 9.86/10 · 5 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"8971797\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"8971797\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"kvartira_chistopolskaya_61d\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8971797&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":46},{\"hotel_id\":\"8560966\",\"hotel_geo_id\":\"8560966\",\"tutu_offer_id\":\"25319c53-3577-419b-84b2-18b5cb3dd594\",\"name\":\"2-х комнатная квартира на улице: Азата Аббасова, 5\",\"stars\":0,\"rating\":0.0,\"review_count\":0,\"address\":\"8.8 км от центра\",\"location\":{\"lat\":55.793476,\"lng\":49.248287,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn.bronevik.com/static/photo/g/500x500/8c0b31f191c109a4d137784bfca8ee26\"],\"alias\":\"my_home_may_khoum_na_ulitse_azata_abbasova\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8560966&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"a4f15b00-63de-43c6-9807-d4b4e2522bd1\",\"room_name\":\"2-х комнатная квартира на улице: Азата Аббасова, 5\",\"price\":{\"amount\":33600.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8560966&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":null,\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"8560966\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"my_home_may_khoum_na_ulitse_azata_abbasova\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8560966&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":45},{\"hotel_id\":\"8217728\",\"hotel_geo_id\":\"8217728\",\"tutu_offer_id\":\"416b4f72-bc9b-40d6-b1f9-1995d8678284\",\"name\":\"Казанский приём на улице Япеева 13А\",\"stars\":0,\"rating\":0.0,\"review_count\":0,\"address\":\"637 м от центра\",\"location\":{\"lat\":55.800297,\"lng\":49.115883,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn.bronevik.com/static/photo/g/500x500/9c1dcd031b09ec6bd19bcce21ac524e9\"],\"alias\":\"kazansky_priyom_na_ulitse_yapeeva\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8217728&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"464c43f9-aa70-4dae-86cd-8139275050b4\",\"room_name\":\"3-комнатные апартаменты, 75 м², 2 этаж\",\"price\":{\"amount\":48570.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8217728&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":75.0,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":null,\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"8217728\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"kazansky_priyom_na_ulitse_yapeeva\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8217728&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":33},{\"hotel_id\":\"8217718\",\"hotel_geo_id\":\"8217718\",\"tutu_offer_id\":\"e17a0d05-dfe0-4ec3-a55d-a4ce780f1151\",\"name\":\"Казанский приём на улице Гагарина\",\"stars\":0,\"rating\":0.0,\"review_count\":0,\"address\":\"4.7 км от центра\",\"location\":{\"lat\":55.838703,\"lng\":49.097134,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn.bronevik.com/static/photo/g/500x500/d350b32d04dc75eae7725153e719b71b\"],\"alias\":\"kazansky_priyom_na_ulitse_gagarina\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8217718&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"18e86583-aca0-4396-9911-e7dcfcc6588a\",\"room_name\":\"2-комнатные апартаменты, 55 м², 1 этаж\",\"price\":{\"amount\":17231.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8217718&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":55.0,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":null,\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"8217718\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"kazansky_priyom_na_ulitse_gagarina\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8217718&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":15}],\"stay\":{\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"nights\":4},\"meta\":{\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"page\":1,\"page_size\":20,\"total_returned\":20,\"has_more\":true,\"geo_id\":\"2656873\",\"resolved_geo\":{\"geo_id\":\"2656873\",\"name\":\"Казань\",\"country\":\"Россия\",\"region\":\"Республика Татарстан\",\"geo_type\":\"locality\",\"hotels_count\":13197},\"filters_applied\":{\"option_filters\":[],\"range_filters\":[],\"button_filters\":[],\"quick_filters_order\":[],\"changes\":[]},\"post_filter_dropped_over_cap\":0,\"post_filter_dropped_no_free_cancellation\":0,\"post_filter_dropped_no_breakfast\":0}}"
+            "text": "{\"hotels\":[{\"hotel_id\":\"9626750\",\"hotel_geo_id\":\"9626750\",\"tutu_offer_id\":\"baf1d735-e319-4e9d-9447-66030d35aa12\",\"name\":\"Апарт Отель \\\"Центральный\\\"\",\"stars\":0,\"rating\":8.83,\"review_count\":88,\"address\":\"778 м от центра\",\"location\":{\"lat\":55.799152,\"lng\":49.119747,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/a1feb8dc-9a4e-4a86-85a6-3b0741508202/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/9d646fbf5d63e1f159971579c9757626.jpg\"],\"alias\":\"apartamenty_bekhtereva1\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=9626750&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"36290184-47f4-4cf6-a656-1c16cb1a2cda\",\"room_name\":null,\"price\":{\"amount\":22500.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=9626750&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.83,\"review_count\":88,\"label\":\"⭐ 8.83/10 · 88 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"9626750\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"9626750\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"apartamenty_bekhtereva1\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=9626750&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":52},{\"hotel_id\":\"9626970\",\"hotel_geo_id\":\"9626970\",\"tutu_offer_id\":\"3948e318-e920-4c40-86a1-9bab31e270ad\",\"name\":\"Kazan Lagom\",\"stars\":0,\"rating\":9.58,\"review_count\":19,\"address\":\"712 м от центра\",\"location\":{\"lat\":55.793865,\"lng\":49.097855,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/69d10d1a-2f88-4ef7-a5b7-16e2dc379fd9/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/f2eeeb7930249dd137eea9740287a17a.jpg\"],\"alias\":\"meblirovannye_komnaty_kazanlagom\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=9626970&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"10062213-bed4-4409-b8e6-3c8c657b3f55\",\"room_name\":\"Стандартный номер с двуспальной кроватью (ул.Коротченко,д.2)\",\"price\":{\"amount\":16480.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=9626970&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":{\"rating\":9.58,\"review_count\":19,\"label\":\"⭐ 9.58/10 · 19 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"9626970\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"9626970\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"meblirovannye_komnaty_kazanlagom\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=9626970&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":48},{\"hotel_id\":\"5747176\",\"hotel_geo_id\":\"5747176\",\"tutu_offer_id\":\"6ee9a412-277e-48b5-b48a-027fb91ec862\",\"name\":\"Отель Ривьера\",\"stars\":4,\"rating\":8.62,\"review_count\":883,\"address\":\"2.5 км от центра\",\"location\":{\"lat\":55.815334,\"lng\":49.13002,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/72bef2fd-66d9-49de-acaf-2bccb8e1b77f/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/6f56e7cf54df9d396788d4d0ba004f6c.jpg\"],\"alias\":\"otel_rivyera_kazan\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=5747176&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"7318cde1-7c0d-4975-84e7-4d0e8b368dc6\",\"room_name\":\"Комфорт номер (площадь не менее 13 кв. м.)\",\"price\":{\"amount\":48760.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=5747176&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":13.0,\"breakfast_included\":true,\"meal_name\":\"Завтрак \\\"шведский стол\\\"\",\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак \\\"шведский стол\\\"\"}]},\"review_summary\":{\"rating\":8.62,\"review_count\":883,\"label\":\"⭐ 8.62/10 · 883 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"5747176\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"5747176\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"otel_rivyera_kazan\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=5747176&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":60},{\"hotel_id\":\"10466253\",\"hotel_geo_id\":\"10466253\",\"tutu_offer_id\":\"25ba71c1-58c5-4791-b144-18c8bbdf26c9\",\"name\":\"Апартаменты VIZIT на улице Габдуллы Тукая\",\"stars\":0,\"rating\":0.0,\"review_count\":0,\"address\":\"2 км от центра\",\"location\":{\"lat\":55.77876,\"lng\":49.1142,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn.bronevik.com/static/photo/g/500x500/58c6aab6e525ce119ff0a8e64b920be8\"],\"alias\":\"apartamenty_vizit_na_ulitse_gabdully_tukaya\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10466253&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"c0931d2b-b7a3-45c1-b824-30f238f1adab\",\"room_name\":\"1-комнатные апартаменты, 15м²\",\"price\":{\"amount\":16400.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10466253&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":15.0,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":null,\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"10466253\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"apartamenty_vizit_na_ulitse_gabdully_tukaya\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10466253&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":65},{\"hotel_id\":\"11410904\",\"hotel_geo_id\":\"11410904\",\"tutu_offer_id\":\"ace6b5bd-1a7a-4b11-9794-1957afedd4af\",\"name\":\"Bon Ami Hotel\",\"stars\":0,\"rating\":8.63,\"review_count\":103,\"address\":\"1.1 км от центра\",\"location\":{\"lat\":55.7879,\"lng\":49.117477,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/b6d8248a-eebb-4294-827c-d714dd7ffa55/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/8ee4724a1e163356d79fce5004e3494c.jpg\"],\"alias\":\"bon_ami\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=11410904&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"fbc942ec-2c60-40bc-9fee-22c09dabf9a3\",\"room_name\":\"Standart\",\"price\":{\"amount\":16000.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=11410904&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.63,\"review_count\":103,\"label\":\"⭐ 8.63/10 · 103 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11410904\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11410904\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"bon_ami\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=11410904&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":20},{\"hotel_id\":\"7646186\",\"hotel_geo_id\":\"7646186\",\"tutu_offer_id\":\"305f0b1c-7e5c-405c-9fa6-cba0d8d1585f\",\"name\":\"Татар Инн\",\"stars\":3,\"rating\":9.04,\"review_count\":207,\"address\":\"1.8 км от центра\",\"location\":{\"lat\":55.781227,\"lng\":49.116768,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/6d22da26-0738-458c-b2ea-9c2ebdd72e8d/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/b9049a3f76410fecf9d72df2b99cf88e.jpg\"],\"alias\":\"otel_tatarinn\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=7646186&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"4eaaf4c2-55de-4eee-a828-ec2d5f4e6c21\",\"room_name\":\"Стандарт одноместный\",\"price\":{\"amount\":28013.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=7646186&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":{\"rating\":9.04,\"review_count\":207,\"label\":\"⭐ 9.04/10 · 207 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"7646186\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"7646186\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"otel_tatarinn\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=7646186&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":100},{\"hotel_id\":\"10254574\",\"hotel_geo_id\":\"10254574\",\"tutu_offer_id\":\"1b6bb00b-9b56-4bf4-8f07-afbfa88ae2bd\",\"name\":\"Эверест\",\"stars\":0,\"rating\":8.15,\"review_count\":65,\"address\":\"579 м от центра\",\"location\":{\"lat\":55.79135,\"lng\":49.107315,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/f4ee6b2b-b58b-46fd-a0a5-ff2cf287ca5f/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/ccf5742d6de5d36960ab6c9a0a6c65ce.jpg\"],\"alias\":\"miniotel_everest\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10254574&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"b57d5f02-3ce3-4ab9-941d-7d700cc594c4\",\"room_name\":\"апартаменты номер-студио (ИНДИВИДУАЛЬНЫЙ САНУЗЕЛ ВНЕ НОМЕРА, переулок Кирова, 3, этаж 1)\",\"price\":{\"amount\":11960.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10254574&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":{\"rating\":8.15,\"review_count\":65,\"label\":\"⭐ 8.15/10 · 65 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"10254574\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"10254574\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"miniotel_everest\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10254574&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":86},{\"hotel_id\":\"10754089\",\"hotel_geo_id\":\"10754089\",\"tutu_offer_id\":\"2e2f3d36-4fdc-4306-b6d0-bf79dbbbea8a\",\"name\":\"Rushinkzn апартаменты | Рядом Метро и ЖД Вокзал Баумана Кремль\",\"stars\":0,\"rating\":9.4,\"review_count\":2,\"address\":\"952 м от центра\",\"location\":{\"lat\":55.788086,\"lng\":49.105732,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/0dfbca2d56e40f831514a789b1abdf1bc190fefe.19d6d6a9361bf1d4558fbe6efe7a13e45136f07b.jpeg\"],\"alias\":\"odnokomnatnaya_kvartira_na_ulitse_gayaza_iskhaki_15_ulitsa_gayaza_iskhaki_15_9\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10754089&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"8e252f2a-720a-46af-ae52-0209da3b6774\",\"room_name\":\"Однокомнатная квартира на улице: ул Гаяза Исхаки, д 15\",\"price\":{\"amount\":20296.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10754089&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":{\"rating\":9.4,\"review_count\":2,\"label\":\"⭐ 9.4/10 · 2 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"10754089\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"10754089\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"odnokomnatnaya_kvartira_na_ulitse_gayaza_iskhaki_15_ulitsa_gayaza_iskhaki_15_9\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10754089&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":27},{\"hotel_id\":\"9686397\",\"hotel_geo_id\":\"9686397\",\"tutu_offer_id\":\"76fed78a-28b8-4fb6-b687-964c0c034222\",\"name\":\"Гостиница Мираж\",\"stars\":5,\"rating\":8.88,\"review_count\":132,\"address\":\"437 м от центра\",\"location\":{\"lat\":55.793774,\"lng\":49.10323,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/7e5e6164-770a-4288-8db2-5ec2678421c9/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/910305331617f1a8c5c8cbb940a99ead.jpg\"],\"alias\":\"gostinitsa_mirazh\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=9686397&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"1abe279b-fc91-4f38-a828-e62ae5ee4dfe\",\"room_name\":\"Делюкс Twin с 2 раздельными кроватями\",\"price\":{\"amount\":50000.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=9686397&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":true,\"meal_name\":\"Завтрак \\\"шведский стол\\\"\",\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак \\\"шведский стол\\\"\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.88,\"review_count\":132,\"label\":\"⭐ 8.88/10 · 132 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"9686397\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"9686397\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"gostinitsa_mirazh\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=9686397&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":100},{\"hotel_id\":\"7644703\",\"hotel_geo_id\":\"7644703\",\"tutu_offer_id\":\"0bd09bbd-9760-455e-aae0-a945dbc4bf2b\",\"name\":\"Гранд Отель Казань\",\"stars\":4,\"rating\":8.51,\"review_count\":184,\"address\":\"1.5 км от центра\",\"location\":{\"lat\":55.78653,\"lng\":49.124207,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/cae26f32-bf41-4df3-ba19-26e04bc0a3df/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/59999f26801e29a580fd3660f2d610a5.jpg\"],\"alias\":\"grand_otel_kazan\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=7644703&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"2722ab02-c296-4627-858f-77f8852c7eea\",\"room_name\":\"Номер Стандарт с одной двуспальной кроватью\",\"price\":{\"amount\":35300.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=7644703&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":true,\"meal_name\":\"Завтрак \\\"шведский стол\\\"\",\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак \\\"шведский стол\\\"\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.51,\"review_count\":184,\"label\":\"⭐ 8.51/10 · 184 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"7644703\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"7644703\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"grand_otel_kazan\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=7644703&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":28},{\"hotel_id\":\"10254599\",\"hotel_geo_id\":\"10254599\",\"tutu_offer_id\":\"4c9f9302-978b-4641-a7ff-f3255408db37\",\"name\":\"Отель Легенда\",\"stars\":3,\"rating\":8.33,\"review_count\":145,\"address\":\"1.8 км от центра\",\"location\":{\"lat\":55.780655,\"lng\":49.110397,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/a5db274e-6eca-4854-b4e2-82af04e34946/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/251fa53facf76161ebd7bf914e17025d.jpg\"],\"alias\":\"otel_legenda_kazan\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10254599&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"a4b3ebfe-0302-4171-b131-a9e7a654913d\",\"room_name\":\"Люкс\",\"price\":{\"amount\":27100.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10254599&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.33,\"review_count\":145,\"label\":\"⭐ 8.33/10 · 145 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"10254599\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"10254599\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"otel_legenda_kazan\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10254599&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":74},{\"hotel_id\":\"11870900\",\"hotel_geo_id\":\"11870900\",\"tutu_offer_id\":\"4ddc0fa3-39f4-45b5-a29c-0471887e82ed\",\"name\":\"ВДепо\",\"stars\":0,\"rating\":9.95,\"review_count\":11,\"address\":\"5.4 км от центра\",\"location\":{\"lat\":55.84246,\"lng\":49.080612,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/d2aafc98-eb16-459c-b0be-8e18a9619ad0/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/3465968540e9d6f324038570267fc164.jpg\"],\"alias\":\"otel_vdepo\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=11870900&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"c9016830-307b-4090-a3b1-bd28448aacef\",\"room_name\":\"Капсульный номер с удобствами на этаже\",\"price\":{\"amount\":10400.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=11870900&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":9.95,\"review_count\":11,\"label\":\"⭐ 9.95/10 · 11 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11870900\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11870900\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"otel_vdepo\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=11870900&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":16},{\"hotel_id\":\"10230389\",\"hotel_geo_id\":\"10230389\",\"tutu_offer_id\":\"c2595974-67d1-4440-9d0c-da4a3d6a9b25\",\"name\":\"Верона\",\"stars\":3,\"rating\":7.84,\"review_count\":211,\"address\":\"1.7 км от центра\",\"location\":{\"lat\":55.780933,\"lng\":49.109776,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/2d50043c-5c9d-4980-b388-96d81b287df2/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/6ec53627a4c35cc30b62ad902958a7bf.jpg\"],\"alias\":\"gostinitsa_prestige_house_verona\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10230389&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"2292f432-ec32-418f-99f0-85eee98bb40d\",\"room_name\":\"Одноместный, класс Улучшенный\",\"price\":{\"amount\":17800.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10230389&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":7.84,\"review_count\":211,\"label\":\"⭐ 7.84/10 · 211 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"10230389\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"10230389\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"gostinitsa_prestige_house_verona\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10230389&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":18},{\"hotel_id\":\"8217728\",\"hotel_geo_id\":\"8217728\",\"tutu_offer_id\":\"fa8bd8e9-37ef-4cdd-b983-44511baa000c\",\"name\":\"Казанский приём на улице Япеева 13А\",\"stars\":0,\"rating\":0.0,\"review_count\":0,\"address\":\"637 м от центра\",\"location\":{\"lat\":55.800297,\"lng\":49.115883,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn.bronevik.com/static/photo/g/500x500/9c1dcd031b09ec6bd19bcce21ac524e9\"],\"alias\":\"kazansky_priyom_na_ulitse_yapeeva\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8217728&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"87d5c523-33c0-4782-92f6-1e84257fde4a\",\"room_name\":\"3-комнатные апартаменты, 75 м², 2 этаж\",\"price\":{\"amount\":48570.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8217728&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":75.0,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":null,\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"8217728\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"kazansky_priyom_na_ulitse_yapeeva\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8217728&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":33},{\"hotel_id\":\"8120272\",\"hotel_geo_id\":\"8120272\",\"tutu_offer_id\":\"ace8418e-5070-4a38-a56e-ddc7ae5cc548\",\"name\":\"Отель Kazan Sultan\",\"stars\":3,\"rating\":8.25,\"review_count\":177,\"address\":\"1.9 км от центра\",\"location\":{\"lat\":55.779945,\"lng\":49.11458,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/01ad6820-cdcb-4467-b894-14ba90b7a03c/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/aecba512dafd91b29b2bfdc50de27dab.jpg\"],\"alias\":\"otel_kazan_sultan\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8120272&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"fb1b439b-026a-4228-99df-5d51bafe0ee7\",\"room_name\":\"3- мансарда две кровати- 3\",\"price\":{\"amount\":14000.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8120272&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":{\"rating\":8.25,\"review_count\":177,\"label\":\"⭐ 8.25/10 · 177 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"8120272\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"8120272\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"otel_kazan_sultan\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8120272&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":100},{\"hotel_id\":\"12389557\",\"hotel_geo_id\":\"12389557\",\"tutu_offer_id\":\"0f307d95-2df7-486b-8687-04b307ab7f16\",\"name\":\"Однокомнатная квартира на улице: Горького, 24\",\"stars\":0,\"rating\":0.0,\"review_count\":0,\"address\":\"1.8 км от центра\",\"location\":{\"lat\":55.79347,\"lng\":49.135952,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/696041f7ebf0c0715f2f66362284139a064f76df.1557818fcff51c38697762437d99802b15ff3e36.jpeg\"],\"alias\":\"odnokomnatnaya_kvartira_na_ulitse_gorkogo_24_rossiya_kazan_ulitsa_gorkogo_24\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=12389557&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"3ae5b36d-fedf-4d62-8f54-bff8f04c3863\",\"room_name\":\"Однокомнатная квартира на улице: Горького, 24\",\"price\":{\"amount\":32000.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=12389557&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":null,\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"12389557\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"odnokomnatnaya_kvartira_na_ulitse_gorkogo_24_rossiya_kazan_ulitsa_gorkogo_24\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=12389557&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":40},{\"hotel_id\":\"11418151\",\"hotel_geo_id\":\"11418151\",\"tutu_offer_id\":\"e2557c47-6f67-4fe0-865c-0dd657475d16\",\"name\":\"Aron Hotel\",\"stars\":3,\"rating\":8.99,\"review_count\":181,\"address\":\"482 м от центра\",\"location\":{\"lat\":55.792313,\"lng\":49.10993,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/9dc1ece2267707291ee6b19dc3299a0755e02041.b154621fe0b36ac9a1814a935dae2a941d62e709.jpeg\"],\"alias\":\"aron\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=11418151&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"0ca65438-b55f-4a75-933a-f378ffe6ac92\",\"room_name\":\"Улучшенный  с 1 двухспальной  кроватью\",\"price\":{\"amount\":27600.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=11418151&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":true,\"meal_name\":\"Завтрак включён\",\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.99,\"review_count\":181,\"label\":\"⭐ 8.99/10 · 181 отзыв\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11418151\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11418151\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"aron\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=11418151&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":18},{\"hotel_id\":\"8217718\",\"hotel_geo_id\":\"8217718\",\"tutu_offer_id\":\"cd8dfc20-f020-40af-a638-29630a7d23af\",\"name\":\"Казанский приём на улице Гагарина\",\"stars\":0,\"rating\":0.0,\"review_count\":0,\"address\":\"4.7 км от центра\",\"location\":{\"lat\":55.838703,\"lng\":49.097134,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn.bronevik.com/static/photo/g/500x500/d350b32d04dc75eae7725153e719b71b\"],\"alias\":\"kazansky_priyom_na_ulitse_gagarina\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8217718&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"a18ae16f-d48e-4c5e-bb5f-d59bdd10b8f8\",\"room_name\":\"2-комнатные апартаменты, 55 м², 1 этаж\",\"price\":{\"amount\":17231.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8217718&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":55.0,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":null,\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"8217718\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"kazansky_priyom_na_ulitse_gagarina\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8217718&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":15},{\"hotel_id\":\"8971797\",\"hotel_geo_id\":\"8971797\",\"tutu_offer_id\":\"b0818504-22c4-40b9-8560-c790e1503ad2\",\"name\":\"2-х комнатная квартира на улице: Чистопольская 61Д\",\"stars\":0,\"rating\":9.86,\"review_count\":5,\"address\":\"3.1 км от центра\",\"location\":{\"lat\":55.819977,\"lng\":49.134926,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn.worldota.net/t/x500/extranet/a7/aa/a7aa95fc64b8b8548525108943769ce33d402656.jpeg\"],\"alias\":\"kvartira_chistopolskaya_61d\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8971797&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"41d3333d-836b-4281-9334-a82cd04f8921\",\"room_name\":\"2-х комнатная квартира на улице: Чистопольская 61Д\",\"price\":{\"amount\":15600.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8971797&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":{\"rating\":9.86,\"review_count\":5,\"label\":\"⭐ 9.86/10 · 5 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"8971797\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"8971797\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"kvartira_chistopolskaya_61d\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8971797&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":46},{\"hotel_id\":\"10750048\",\"hotel_geo_id\":\"10750048\",\"tutu_offer_id\":\"c13c4696-bcc4-45f1-bc06-28c3c9181877\",\"name\":\"THouse\",\"stars\":0,\"rating\":10.0,\"review_count\":2,\"address\":\"5.9 км от центра\",\"location\":{\"lat\":55.79514,\"lng\":49.202766,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn.worldota.net/t/x500/content/43/90/4390756cafd0e58bf2bc01e28f74ce6a3768452d.JPEG\"],\"alias\":\"thouse_tikhauz_ul_kosmonavtov_59_kazan\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10750048&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"best_offer\":{\"offerpack_hash\":\"ebf5e29e-ae55-47d9-a76c-6227f36ee0e0\",\"room_name\":\"Одноместный номер с односпальной кроватью\",\"price\":{\"amount\":17000.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10750048&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":10.0,\"review_count\":2,\"label\":\"⭐ 10/10 · 2 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"10750048\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"10750048\",\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"adults\":1,\"hotel_alias\":\"thouse_tikhauz_ul_kosmonavtov_59_kazan\",\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10750048&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46\"},\"photos_total\":44}],\"stay\":{\"check_in\":\"2026-10-28\",\"check_out\":\"2026-11-01\",\"nights\":4},\"meta\":{\"search_id\":\"63dfb69f8950f7607df4be18e3aa4e46\",\"page\":1,\"page_size\":20,\"total_returned\":20,\"has_more\":true,\"geo_id\":\"2656873\",\"resolved_geo\":{\"geo_id\":\"2656873\",\"name\":\"Казань\",\"country\":\"Россия\",\"region\":\"Республика Татарстан\",\"geo_type\":\"locality\",\"hotels_count\":13197},\"filters_applied\":{\"option_filters\":[],\"range_filters\":[],\"button_filters\":[],\"quick_filters_order\":[],\"changes\":[]},\"post_filter_dropped_over_cap\":0,\"post_filter_dropped_no_free_cancellation\":0,\"post_filter_dropped_no_breakfast\":0}}"
           }
         ],
         "isError": false
@@ -34,7 +34,7 @@
         {
           "hotel_id": "9626750",
           "hotel_geo_id": "9626750",
-          "tutu_offer_id": "d7951490-f989-405c-b947-574deec86ecd",
+          "tutu_offer_id": "baf1d735-e319-4e9d-9447-66030d35aa12",
           "name": "Апарт Отель \"Центральный\"",
           "stars": 0,
           "rating": 8.83,
@@ -52,7 +52,7 @@
           "alias": "apartamenty_bekhtereva1",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=9626750&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
           "best_offer": {
-            "offerpack_hash": "d450802c-aa8f-4aeb-829f-9281800b1721",
+            "offerpack_hash": "36290184-47f4-4cf6-a656-1c16cb1a2cda",
             "room_name": null,
             "price": {
               "amount": 22500,
@@ -97,7 +97,7 @@
         {
           "hotel_id": "9626970",
           "hotel_geo_id": "9626970",
-          "tutu_offer_id": "f97c779c-223c-4328-a8b9-4d02a33e8b9f",
+          "tutu_offer_id": "3948e318-e920-4c40-86a1-9bab31e270ad",
           "name": "Kazan Lagom",
           "stars": 0,
           "rating": 9.58,
@@ -115,7 +115,7 @@
           "alias": "meblirovannye_komnaty_kazanlagom",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=9626970&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
           "best_offer": {
-            "offerpack_hash": "5aa32d53-286a-4390-a3b7-c029fcce8adc",
+            "offerpack_hash": "10062213-bed4-4409-b8e6-3c8c657b3f55",
             "room_name": "Стандартный номер с двуспальной кроватью (ул.Коротченко,д.2)",
             "price": {
               "amount": 16480,
@@ -155,7 +155,7 @@
         {
           "hotel_id": "5747176",
           "hotel_geo_id": "5747176",
-          "tutu_offer_id": "d11d4ad4-dd53-413d-8ed5-8cb44e4d7829",
+          "tutu_offer_id": "6ee9a412-277e-48b5-b48a-027fb91ec862",
           "name": "Отель Ривьера",
           "stars": 4,
           "rating": 8.62,
@@ -168,12 +168,12 @@
             "city_geo_id": null
           },
           "photos": [
-            "https://cdn2.tu-tu.ru/imghub/view/87eec89d-4f8f-4ec5-b056-77b39e3c1986/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/6f56e7cf54df9d396788d4d0ba004f6c.jpg"
+            "https://cdn2.tu-tu.ru/imghub/view/72bef2fd-66d9-49de-acaf-2bccb8e1b77f/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/6f56e7cf54df9d396788d4d0ba004f6c.jpg"
           ],
           "alias": "otel_rivyera_kazan",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=5747176&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
           "best_offer": {
-            "offerpack_hash": "ed76b022-28b9-4e52-b068-27decbd7c673",
+            "offerpack_hash": "7318cde1-7c0d-4975-84e7-4d0e8b368dc6",
             "room_name": "Комфорт номер (площадь не менее 13 кв. м.)",
             "price": {
               "amount": 48760,
@@ -216,9 +216,64 @@
           "photos_total": 60
         },
         {
+          "hotel_id": "10466253",
+          "hotel_geo_id": "10466253",
+          "tutu_offer_id": "25ba71c1-58c5-4791-b144-18c8bbdf26c9",
+          "name": "Апартаменты VIZIT на улице Габдуллы Тукая",
+          "stars": 0,
+          "rating": 0,
+          "review_count": 0,
+          "address": "2 км от центра",
+          "location": {
+            "lat": 55.77876,
+            "lng": 49.1142,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn.bronevik.com/static/photo/g/500x500/58c6aab6e525ce119ff0a8e64b920be8"
+          ],
+          "alias": "apartamenty_vizit_na_ulitse_gabdully_tukaya",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10466253&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
+          "best_offer": {
+            "offerpack_hash": "c0931d2b-b7a3-45c1-b824-30f238f1adab",
+            "room_name": "1-комнатные апартаменты, 15м²",
+            "price": {
+              "amount": 16400,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10466253&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
+            "room_size_sqm": 15,
+            "breakfast_included": null,
+            "meal_name": null,
+            "free_cancellation": true,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": [
+              {
+                "type": "policies",
+                "text": "Бесплатная отмена"
+              }
+            ]
+          },
+          "review_summary": null,
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "10466253",
+            "check_in": "2026-10-28",
+            "check_out": "2026-11-01",
+            "adults": 1,
+            "hotel_alias": "apartamenty_vizit_na_ulitse_gabdully_tukaya",
+            "search_id": "63dfb69f8950f7607df4be18e3aa4e46",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10466253&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46"
+          },
+          "photos_total": 65
+        },
+        {
           "hotel_id": "11410904",
           "hotel_geo_id": "11410904",
-          "tutu_offer_id": "00a8ed1f-6f3b-4b65-9467-fdf9b9ec0daa",
+          "tutu_offer_id": "ace6b5bd-1a7a-4b11-9794-1957afedd4af",
           "name": "Bon Ami Hotel",
           "stars": 0,
           "rating": 8.63,
@@ -236,7 +291,7 @@
           "alias": "bon_ami",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=11410904&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
           "best_offer": {
-            "offerpack_hash": "b4936ed4-83ca-4cfa-b5ac-17ff2af0d251",
+            "offerpack_hash": "fbc942ec-2c60-40bc-9fee-22c09dabf9a3",
             "room_name": "Standart",
             "price": {
               "amount": 16000,
@@ -281,7 +336,7 @@
         {
           "hotel_id": "7646186",
           "hotel_geo_id": "7646186",
-          "tutu_offer_id": "97ef4f21-7adc-4985-b05d-5b427f737719",
+          "tutu_offer_id": "305f0b1c-7e5c-405c-9fa6-cba0d8d1585f",
           "name": "Татар Инн",
           "stars": 3,
           "rating": 9.04,
@@ -299,7 +354,7 @@
           "alias": "otel_tatarinn",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=7646186&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
           "best_offer": {
-            "offerpack_hash": "25a25038-3f97-475c-8321-f61b60812cf5",
+            "offerpack_hash": "4eaaf4c2-55de-4eee-a828-ec2d5f4e6c21",
             "room_name": "Стандарт одноместный",
             "price": {
               "amount": 28013,
@@ -339,7 +394,7 @@
         {
           "hotel_id": "10254574",
           "hotel_geo_id": "10254574",
-          "tutu_offer_id": "549d9f2d-d81b-4776-b392-2190e0a81dcd",
+          "tutu_offer_id": "1b6bb00b-9b56-4bf4-8f07-afbfa88ae2bd",
           "name": "Эверест",
           "stars": 0,
           "rating": 8.15,
@@ -357,7 +412,7 @@
           "alias": "miniotel_everest",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10254574&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
           "best_offer": {
-            "offerpack_hash": "71651077-dc74-4ed4-9442-e51d4b19c827",
+            "offerpack_hash": "b57d5f02-3ce3-4ab9-941d-7d700cc594c4",
             "room_name": "апартаменты номер-студио (ИНДИВИДУАЛЬНЫЙ САНУЗЕЛ ВНЕ НОМЕРА, переулок Кирова, 3, этаж 1)",
             "price": {
               "amount": 11960,
@@ -397,7 +452,7 @@
         {
           "hotel_id": "10754089",
           "hotel_geo_id": "10754089",
-          "tutu_offer_id": "a6395019-d0a7-4047-b0a0-6b0b18c6b28d",
+          "tutu_offer_id": "2e2f3d36-4fdc-4306-b6d0-bf79dbbbea8a",
           "name": "Rushinkzn апартаменты | Рядом Метро и ЖД Вокзал Баумана Кремль",
           "stars": 0,
           "rating": 9.4,
@@ -415,7 +470,7 @@
           "alias": "odnokomnatnaya_kvartira_na_ulitse_gayaza_iskhaki_15_ulitsa_gayaza_iskhaki_15_9",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10754089&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
           "best_offer": {
-            "offerpack_hash": "d6e54276-5f7a-4d1c-bfde-ebbb798bce0a",
+            "offerpack_hash": "8e252f2a-720a-46af-ae52-0209da3b6774",
             "room_name": "Однокомнатная квартира на улице: ул Гаяза Исхаки, д 15",
             "price": {
               "amount": 20296,
@@ -455,7 +510,7 @@
         {
           "hotel_id": "9686397",
           "hotel_geo_id": "9686397",
-          "tutu_offer_id": "5a39ddad-8f08-4bc8-952d-18c36f466d38",
+          "tutu_offer_id": "76fed78a-28b8-4fb6-b687-964c0c034222",
           "name": "Гостиница Мираж",
           "stars": 5,
           "rating": 8.88,
@@ -473,7 +528,7 @@
           "alias": "gostinitsa_mirazh",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=9686397&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
           "best_offer": {
-            "offerpack_hash": "37a69c14-4566-460a-8eef-b416256c2a7f",
+            "offerpack_hash": "1abe279b-fc91-4f38-a828-e62ae5ee4dfe",
             "room_name": "Делюкс Twin с 2 раздельными кроватями",
             "price": {
               "amount": 50000,
@@ -520,64 +575,9 @@
           "photos_total": 100
         },
         {
-          "hotel_id": "10466253",
-          "hotel_geo_id": "10466253",
-          "tutu_offer_id": "c1ec0e97-b7cf-4b6c-8504-e7433d9f2480",
-          "name": "Апартаменты VIZIT на улице Габдуллы Тукая",
-          "stars": 0,
-          "rating": 0,
-          "review_count": 0,
-          "address": "2 км от центра",
-          "location": {
-            "lat": 55.77876,
-            "lng": 49.1142,
-            "city": null,
-            "city_geo_id": null
-          },
-          "photos": [
-            "https://cdn.bronevik.com/static/photo/g/500x500/58c6aab6e525ce119ff0a8e64b920be8"
-          ],
-          "alias": "apartamenty_vizit_na_ulitse_gabdully_tukaya",
-          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10466253&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
-          "best_offer": {
-            "offerpack_hash": "a8f97d4e-b88e-4e10-961f-3778598dbb48",
-            "room_name": "1-комнатные апартаменты, 15м²",
-            "price": {
-              "amount": 16400,
-              "currency": "RUB"
-            },
-            "price_basis": "stay_total",
-            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10466253&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
-            "room_size_sqm": 15,
-            "breakfast_included": null,
-            "meal_name": null,
-            "free_cancellation": true,
-            "pay_at_hotel": null,
-            "pay_online": null,
-            "highlights": [
-              {
-                "type": "policies",
-                "text": "Бесплатная отмена"
-              }
-            ]
-          },
-          "review_summary": null,
-          "checkout_ref": {
-            "transport": "hotels",
-            "hotel_geo_id": "10466253",
-            "check_in": "2026-10-28",
-            "check_out": "2026-11-01",
-            "adults": 1,
-            "hotel_alias": "apartamenty_vizit_na_ulitse_gabdully_tukaya",
-            "search_id": "63dfb69f8950f7607df4be18e3aa4e46",
-            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10466253&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46"
-          },
-          "photos_total": 65
-        },
-        {
           "hotel_id": "7644703",
           "hotel_geo_id": "7644703",
-          "tutu_offer_id": "434b897f-a0ed-47ca-8175-93d3aa8496b9",
+          "tutu_offer_id": "0bd09bbd-9760-455e-aae0-a945dbc4bf2b",
           "name": "Гранд Отель Казань",
           "stars": 4,
           "rating": 8.51,
@@ -595,7 +595,7 @@
           "alias": "grand_otel_kazan",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=7644703&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
           "best_offer": {
-            "offerpack_hash": "a1c241f1-12f7-42ac-9db2-cbc7d37ab2a1",
+            "offerpack_hash": "2722ab02-c296-4627-858f-77f8852c7eea",
             "room_name": "Номер Стандарт с одной двуспальной кроватью",
             "price": {
               "amount": 35300,
@@ -644,7 +644,7 @@
         {
           "hotel_id": "10254599",
           "hotel_geo_id": "10254599",
-          "tutu_offer_id": "2f960b7b-1466-42e2-aa21-39c96d3a7bcc",
+          "tutu_offer_id": "4c9f9302-978b-4641-a7ff-f3255408db37",
           "name": "Отель Легенда",
           "stars": 3,
           "rating": 8.33,
@@ -662,7 +662,7 @@
           "alias": "otel_legenda_kazan",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10254599&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
           "best_offer": {
-            "offerpack_hash": "eae67247-dfb3-4226-a2ed-301aaa78e09a",
+            "offerpack_hash": "a4b3ebfe-0302-4171-b131-a9e7a654913d",
             "room_name": "Люкс",
             "price": {
               "amount": 27100,
@@ -707,7 +707,7 @@
         {
           "hotel_id": "11870900",
           "hotel_geo_id": "11870900",
-          "tutu_offer_id": "cf4c6dd0-9107-44d1-960c-cd666c8ea034",
+          "tutu_offer_id": "4ddc0fa3-39f4-45b5-a29c-0471887e82ed",
           "name": "ВДепо",
           "stars": 0,
           "rating": 9.95,
@@ -725,7 +725,7 @@
           "alias": "otel_vdepo",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=11870900&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
           "best_offer": {
-            "offerpack_hash": "ecd1d18b-f6d8-47b0-b8b3-791d7f40d15e",
+            "offerpack_hash": "c9016830-307b-4090-a3b1-bd28448aacef",
             "room_name": "Капсульный номер с удобствами на этаже",
             "price": {
               "amount": 10400,
@@ -770,7 +770,7 @@
         {
           "hotel_id": "10230389",
           "hotel_geo_id": "10230389",
-          "tutu_offer_id": "417be406-bb53-4bc1-baec-7ea8b12ef781",
+          "tutu_offer_id": "c2595974-67d1-4440-9d0c-da4a3d6a9b25",
           "name": "Верона",
           "stars": 3,
           "rating": 7.84,
@@ -788,7 +788,7 @@
           "alias": "gostinitsa_prestige_house_verona",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10230389&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
           "best_offer": {
-            "offerpack_hash": "0a17f9e2-388a-4872-a99d-d88438bcf288",
+            "offerpack_hash": "2292f432-ec32-418f-99f0-85eee98bb40d",
             "room_name": "Одноместный, класс Улучшенный",
             "price": {
               "amount": 17800,
@@ -831,35 +831,35 @@
           "photos_total": 18
         },
         {
-          "hotel_id": "10756289",
-          "hotel_geo_id": "10756289",
-          "tutu_offer_id": "5135a654-7048-463e-80b6-2d306412e4ed",
-          "name": "Fresh",
+          "hotel_id": "8217728",
+          "hotel_geo_id": "8217728",
+          "tutu_offer_id": "fa8bd8e9-37ef-4cdd-b983-44511baa000c",
+          "name": "Казанский приём на улице Япеева 13А",
           "stars": 0,
-          "rating": 10,
-          "review_count": 2,
-          "address": "3.6 км от центра",
+          "rating": 0,
+          "review_count": 0,
+          "address": "637 м от центра",
           "location": {
-            "lat": 55.8215,
-            "lng": 49.145264,
+            "lat": 55.800297,
+            "lng": 49.115883,
             "city": null,
             "city_geo_id": null
           },
           "photos": [
-            "https://cdn2.tu-tu.ru/imghub/view/769537ce-caaa-41f8-be1c-14ecca81d000/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/e4160863e8163f0fc6284ef2e7742d87.jpg"
+            "https://cdn.bronevik.com/static/photo/g/500x500/9c1dcd031b09ec6bd19bcce21ac524e9"
           ],
-          "alias": "apartamenty_fresh_respublika_tatarstan_tatarstan_g_kazan_ul_adoratskogo_d_1b",
-          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10756289&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
+          "alias": "kazansky_priyom_na_ulitse_yapeeva",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8217728&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
           "best_offer": {
-            "offerpack_hash": "c94619ce-9214-4cdf-8b93-dbb3c385b79f",
-            "room_name": "Апартамент Р1",
+            "offerpack_hash": "87d5c523-33c0-4782-92f6-1e84257fde4a",
+            "room_name": "3-комнатные апартаменты, 75 м², 2 этаж",
             "price": {
-              "amount": 14000,
+              "amount": 48570,
               "currency": "RUB"
             },
             "price_basis": "stay_total",
-            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10756289&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
-            "room_size_sqm": null,
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8217728&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
+            "room_size_sqm": 75,
             "breakfast_included": null,
             "meal_name": null,
             "free_cancellation": true,
@@ -872,56 +872,106 @@
               }
             ]
           },
-          "review_summary": {
-            "rating": 10,
-            "review_count": 2,
-            "label": "⭐ 10/10 · 2 отзыва",
-            "source": "offers-hotel-api",
-            "scope": "hotel",
-            "subject": "10756289",
-            "scale": 10
-          },
+          "review_summary": null,
           "checkout_ref": {
             "transport": "hotels",
-            "hotel_geo_id": "10756289",
+            "hotel_geo_id": "8217728",
             "check_in": "2026-10-28",
             "check_out": "2026-11-01",
             "adults": 1,
-            "hotel_alias": "apartamenty_fresh_respublika_tatarstan_tatarstan_g_kazan_ul_adoratskogo_d_1b",
+            "hotel_alias": "kazansky_priyom_na_ulitse_yapeeva",
             "search_id": "63dfb69f8950f7607df4be18e3aa4e46",
-            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10756289&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46"
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8217728&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46"
           },
-          "photos_total": 6
+          "photos_total": 33
         },
         {
-          "hotel_id": "12366039",
-          "hotel_geo_id": "12366039",
-          "tutu_offer_id": "ec195e19-1107-40d0-9430-31e51eac5ba3",
-          "name": "Однокомнатная квартира на улице: Баумана 26",
-          "stars": 0,
-          "rating": 0,
-          "review_count": 0,
-          "address": "257 м от центра",
+          "hotel_id": "8120272",
+          "hotel_geo_id": "8120272",
+          "tutu_offer_id": "ace8418e-5070-4a38-a56e-ddc7ae5cc548",
+          "name": "Отель Kazan Sultan",
+          "stars": 3,
+          "rating": 8.25,
+          "review_count": 177,
+          "address": "1.9 км от центра",
           "location": {
-            "lat": 55.794247,
-            "lng": 49.10765,
+            "lat": 55.779945,
+            "lng": 49.11458,
             "city": null,
             "city_geo_id": null
           },
           "photos": [
-            "https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/bcff0903c20d8e28bd0b530e6d4b3a6f4572bd3e.9242c563bce8946dee12d162742492605939712c.jpeg"
+            "https://cdn2.tu-tu.ru/imghub/view/01ad6820-cdcb-4467-b894-14ba90b7a03c/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/aecba512dafd91b29b2bfdc50de27dab.jpg"
           ],
-          "alias": "odnokomnatnaya_kvartira_na_ulitse_baumana_26_rossiya_kazan_baumana_26",
-          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=12366039&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
+          "alias": "otel_kazan_sultan",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8120272&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
           "best_offer": {
-            "offerpack_hash": "c8012ee5-bbbc-450b-8a0d-12535920f22b",
-            "room_name": "Однокомнатная квартира на улице: Баумана 26",
+            "offerpack_hash": "fb1b439b-026a-4228-99df-5d51bafe0ee7",
+            "room_name": "3- мансарда две кровати- 3",
             "price": {
-              "amount": 38400,
+              "amount": 14000,
               "currency": "RUB"
             },
             "price_basis": "stay_total",
-            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=12366039&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8120272&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
+            "room_size_sqm": null,
+            "breakfast_included": null,
+            "meal_name": null,
+            "free_cancellation": null,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": []
+          },
+          "review_summary": {
+            "rating": 8.25,
+            "review_count": 177,
+            "label": "⭐ 8.25/10 · 177 отзывов",
+            "source": "offers-hotel-api",
+            "scope": "hotel",
+            "subject": "8120272",
+            "scale": 10
+          },
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "8120272",
+            "check_in": "2026-10-28",
+            "check_out": "2026-11-01",
+            "adults": 1,
+            "hotel_alias": "otel_kazan_sultan",
+            "search_id": "63dfb69f8950f7607df4be18e3aa4e46",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8120272&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46"
+          },
+          "photos_total": 100
+        },
+        {
+          "hotel_id": "12389557",
+          "hotel_geo_id": "12389557",
+          "tutu_offer_id": "0f307d95-2df7-486b-8687-04b307ab7f16",
+          "name": "Однокомнатная квартира на улице: Горького, 24",
+          "stars": 0,
+          "rating": 0,
+          "review_count": 0,
+          "address": "1.8 км от центра",
+          "location": {
+            "lat": 55.79347,
+            "lng": 49.135952,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/696041f7ebf0c0715f2f66362284139a064f76df.1557818fcff51c38697762437d99802b15ff3e36.jpeg"
+          ],
+          "alias": "odnokomnatnaya_kvartira_na_ulitse_gorkogo_24_rossiya_kazan_ulitsa_gorkogo_24",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=12389557&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
+          "best_offer": {
+            "offerpack_hash": "3ae5b36d-fedf-4d62-8f54-bff8f04c3863",
+            "room_name": "Однокомнатная квартира на улице: Горького, 24",
+            "price": {
+              "amount": 32000,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=12389557&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
             "room_size_sqm": null,
             "breakfast_included": null,
             "meal_name": null,
@@ -933,20 +983,200 @@
           "review_summary": null,
           "checkout_ref": {
             "transport": "hotels",
-            "hotel_geo_id": "12366039",
+            "hotel_geo_id": "12389557",
             "check_in": "2026-10-28",
             "check_out": "2026-11-01",
             "adults": 1,
-            "hotel_alias": "odnokomnatnaya_kvartira_na_ulitse_baumana_26_rossiya_kazan_baumana_26",
+            "hotel_alias": "odnokomnatnaya_kvartira_na_ulitse_gorkogo_24_rossiya_kazan_ulitsa_gorkogo_24",
             "search_id": "63dfb69f8950f7607df4be18e3aa4e46",
-            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=12366039&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46"
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=12389557&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46"
           },
-          "photos_total": 10
+          "photos_total": 40
+        },
+        {
+          "hotel_id": "11418151",
+          "hotel_geo_id": "11418151",
+          "tutu_offer_id": "e2557c47-6f67-4fe0-865c-0dd657475d16",
+          "name": "Aron Hotel",
+          "stars": 3,
+          "rating": 8.99,
+          "review_count": 181,
+          "address": "482 м от центра",
+          "location": {
+            "lat": 55.792313,
+            "lng": 49.10993,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/9dc1ece2267707291ee6b19dc3299a0755e02041.b154621fe0b36ac9a1814a935dae2a941d62e709.jpeg"
+          ],
+          "alias": "aron",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=11418151&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
+          "best_offer": {
+            "offerpack_hash": "0ca65438-b55f-4a75-933a-f378ffe6ac92",
+            "room_name": "Улучшенный  с 1 двухспальной  кроватью",
+            "price": {
+              "amount": 27600,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=11418151&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
+            "room_size_sqm": null,
+            "breakfast_included": true,
+            "meal_name": "Завтрак включён",
+            "free_cancellation": true,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": [
+              {
+                "type": "meal",
+                "text": "Завтрак включён"
+              },
+              {
+                "type": "policies",
+                "text": "Бесплатная отмена"
+              }
+            ]
+          },
+          "review_summary": {
+            "rating": 8.99,
+            "review_count": 181,
+            "label": "⭐ 8.99/10 · 181 отзыв",
+            "source": "offers-hotel-api",
+            "scope": "hotel",
+            "subject": "11418151",
+            "scale": 10
+          },
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "11418151",
+            "check_in": "2026-10-28",
+            "check_out": "2026-11-01",
+            "adults": 1,
+            "hotel_alias": "aron",
+            "search_id": "63dfb69f8950f7607df4be18e3aa4e46",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=11418151&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46"
+          },
+          "photos_total": 18
+        },
+        {
+          "hotel_id": "8217718",
+          "hotel_geo_id": "8217718",
+          "tutu_offer_id": "cd8dfc20-f020-40af-a638-29630a7d23af",
+          "name": "Казанский приём на улице Гагарина",
+          "stars": 0,
+          "rating": 0,
+          "review_count": 0,
+          "address": "4.7 км от центра",
+          "location": {
+            "lat": 55.838703,
+            "lng": 49.097134,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn.bronevik.com/static/photo/g/500x500/d350b32d04dc75eae7725153e719b71b"
+          ],
+          "alias": "kazansky_priyom_na_ulitse_gagarina",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8217718&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
+          "best_offer": {
+            "offerpack_hash": "a18ae16f-d48e-4c5e-bb5f-d59bdd10b8f8",
+            "room_name": "2-комнатные апартаменты, 55 м², 1 этаж",
+            "price": {
+              "amount": 17231,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8217718&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
+            "room_size_sqm": 55,
+            "breakfast_included": null,
+            "meal_name": null,
+            "free_cancellation": true,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": [
+              {
+                "type": "policies",
+                "text": "Бесплатная отмена"
+              }
+            ]
+          },
+          "review_summary": null,
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "8217718",
+            "check_in": "2026-10-28",
+            "check_out": "2026-11-01",
+            "adults": 1,
+            "hotel_alias": "kazansky_priyom_na_ulitse_gagarina",
+            "search_id": "63dfb69f8950f7607df4be18e3aa4e46",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8217718&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46"
+          },
+          "photos_total": 15
+        },
+        {
+          "hotel_id": "8971797",
+          "hotel_geo_id": "8971797",
+          "tutu_offer_id": "b0818504-22c4-40b9-8560-c790e1503ad2",
+          "name": "2-х комнатная квартира на улице: Чистопольская 61Д",
+          "stars": 0,
+          "rating": 9.86,
+          "review_count": 5,
+          "address": "3.1 км от центра",
+          "location": {
+            "lat": 55.819977,
+            "lng": 49.134926,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn.worldota.net/t/x500/extranet/a7/aa/a7aa95fc64b8b8548525108943769ce33d402656.jpeg"
+          ],
+          "alias": "kvartira_chistopolskaya_61d",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8971797&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
+          "best_offer": {
+            "offerpack_hash": "41d3333d-836b-4281-9334-a82cd04f8921",
+            "room_name": "2-х комнатная квартира на улице: Чистопольская 61Д",
+            "price": {
+              "amount": 15600,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8971797&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
+            "room_size_sqm": null,
+            "breakfast_included": null,
+            "meal_name": null,
+            "free_cancellation": null,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": []
+          },
+          "review_summary": {
+            "rating": 9.86,
+            "review_count": 5,
+            "label": "⭐ 9.86/10 · 5 отзывов",
+            "source": "offers-hotel-api",
+            "scope": "hotel",
+            "subject": "8971797",
+            "scale": 10
+          },
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "8971797",
+            "check_in": "2026-10-28",
+            "check_out": "2026-11-01",
+            "adults": 1,
+            "hotel_alias": "kvartira_chistopolskaya_61d",
+            "search_id": "63dfb69f8950f7607df4be18e3aa4e46",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8971797&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46"
+          },
+          "photos_total": 46
         },
         {
           "hotel_id": "10750048",
           "hotel_geo_id": "10750048",
-          "tutu_offer_id": "2572d599-59de-405a-a05b-67e3df1651dc",
+          "tutu_offer_id": "c13c4696-bcc4-45f1-bc06-28c3c9181877",
           "name": "THouse",
           "stars": 0,
           "rating": 10,
@@ -964,7 +1194,7 @@
           "alias": "thouse_tikhauz_ul_kosmonavtov_59_kazan",
           "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10750048&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
           "best_offer": {
-            "offerpack_hash": "746241c4-63bb-4892-ab65-c5451a9589e7",
+            "offerpack_hash": "ebf5e29e-ae55-47d9-a76c-6227f36ee0e0",
             "room_name": "Одноместный номер с односпальной кроватью",
             "price": {
               "amount": 17000,
@@ -1005,224 +1235,6 @@
             "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=10750048&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46"
           },
           "photos_total": 44
-        },
-        {
-          "hotel_id": "8971797",
-          "hotel_geo_id": "8971797",
-          "tutu_offer_id": "9360d18b-0c66-4dbb-86db-c0c04ef2a551",
-          "name": "2-х комнатная квартира на улице: Чистопольская 61Д",
-          "stars": 0,
-          "rating": 9.86,
-          "review_count": 5,
-          "address": "3.1 км от центра",
-          "location": {
-            "lat": 55.819977,
-            "lng": 49.134926,
-            "city": null,
-            "city_geo_id": null
-          },
-          "photos": [
-            "https://cdn.worldota.net/t/x500/extranet/a7/aa/a7aa95fc64b8b8548525108943769ce33d402656.jpeg"
-          ],
-          "alias": "kvartira_chistopolskaya_61d",
-          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8971797&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
-          "best_offer": {
-            "offerpack_hash": "b5c179e1-1843-41fd-b309-486ffeb645a3",
-            "room_name": "2-х комнатная квартира на улице: Чистопольская 61Д",
-            "price": {
-              "amount": 15600,
-              "currency": "RUB"
-            },
-            "price_basis": "stay_total",
-            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8971797&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
-            "room_size_sqm": null,
-            "breakfast_included": null,
-            "meal_name": null,
-            "free_cancellation": null,
-            "pay_at_hotel": null,
-            "pay_online": null,
-            "highlights": []
-          },
-          "review_summary": {
-            "rating": 9.86,
-            "review_count": 5,
-            "label": "⭐ 9.86/10 · 5 отзывов",
-            "source": "offers-hotel-api",
-            "scope": "hotel",
-            "subject": "8971797",
-            "scale": 10
-          },
-          "checkout_ref": {
-            "transport": "hotels",
-            "hotel_geo_id": "8971797",
-            "check_in": "2026-10-28",
-            "check_out": "2026-11-01",
-            "adults": 1,
-            "hotel_alias": "kvartira_chistopolskaya_61d",
-            "search_id": "63dfb69f8950f7607df4be18e3aa4e46",
-            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8971797&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46"
-          },
-          "photos_total": 46
-        },
-        {
-          "hotel_id": "8560966",
-          "hotel_geo_id": "8560966",
-          "tutu_offer_id": "25319c53-3577-419b-84b2-18b5cb3dd594",
-          "name": "2-х комнатная квартира на улице: Азата Аббасова, 5",
-          "stars": 0,
-          "rating": 0,
-          "review_count": 0,
-          "address": "8.8 км от центра",
-          "location": {
-            "lat": 55.793476,
-            "lng": 49.248287,
-            "city": null,
-            "city_geo_id": null
-          },
-          "photos": [
-            "https://cdn.bronevik.com/static/photo/g/500x500/8c0b31f191c109a4d137784bfca8ee26"
-          ],
-          "alias": "my_home_may_khoum_na_ulitse_azata_abbasova",
-          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8560966&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
-          "best_offer": {
-            "offerpack_hash": "a4f15b00-63de-43c6-9807-d4b4e2522bd1",
-            "room_name": "2-х комнатная квартира на улице: Азата Аббасова, 5",
-            "price": {
-              "amount": 33600,
-              "currency": "RUB"
-            },
-            "price_basis": "stay_total",
-            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8560966&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
-            "room_size_sqm": null,
-            "breakfast_included": null,
-            "meal_name": null,
-            "free_cancellation": null,
-            "pay_at_hotel": null,
-            "pay_online": null,
-            "highlights": []
-          },
-          "review_summary": null,
-          "checkout_ref": {
-            "transport": "hotels",
-            "hotel_geo_id": "8560966",
-            "check_in": "2026-10-28",
-            "check_out": "2026-11-01",
-            "adults": 1,
-            "hotel_alias": "my_home_may_khoum_na_ulitse_azata_abbasova",
-            "search_id": "63dfb69f8950f7607df4be18e3aa4e46",
-            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8560966&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46"
-          },
-          "photos_total": 45
-        },
-        {
-          "hotel_id": "8217728",
-          "hotel_geo_id": "8217728",
-          "tutu_offer_id": "416b4f72-bc9b-40d6-b1f9-1995d8678284",
-          "name": "Казанский приём на улице Япеева 13А",
-          "stars": 0,
-          "rating": 0,
-          "review_count": 0,
-          "address": "637 м от центра",
-          "location": {
-            "lat": 55.800297,
-            "lng": 49.115883,
-            "city": null,
-            "city_geo_id": null
-          },
-          "photos": [
-            "https://cdn.bronevik.com/static/photo/g/500x500/9c1dcd031b09ec6bd19bcce21ac524e9"
-          ],
-          "alias": "kazansky_priyom_na_ulitse_yapeeva",
-          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8217728&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
-          "best_offer": {
-            "offerpack_hash": "464c43f9-aa70-4dae-86cd-8139275050b4",
-            "room_name": "3-комнатные апартаменты, 75 м², 2 этаж",
-            "price": {
-              "amount": 48570,
-              "currency": "RUB"
-            },
-            "price_basis": "stay_total",
-            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8217728&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
-            "room_size_sqm": 75,
-            "breakfast_included": null,
-            "meal_name": null,
-            "free_cancellation": true,
-            "pay_at_hotel": null,
-            "pay_online": null,
-            "highlights": [
-              {
-                "type": "policies",
-                "text": "Бесплатная отмена"
-              }
-            ]
-          },
-          "review_summary": null,
-          "checkout_ref": {
-            "transport": "hotels",
-            "hotel_geo_id": "8217728",
-            "check_in": "2026-10-28",
-            "check_out": "2026-11-01",
-            "adults": 1,
-            "hotel_alias": "kazansky_priyom_na_ulitse_yapeeva",
-            "search_id": "63dfb69f8950f7607df4be18e3aa4e46",
-            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8217728&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46"
-          },
-          "photos_total": 33
-        },
-        {
-          "hotel_id": "8217718",
-          "hotel_geo_id": "8217718",
-          "tutu_offer_id": "e17a0d05-dfe0-4ec3-a55d-a4ce780f1151",
-          "name": "Казанский приём на улице Гагарина",
-          "stars": 0,
-          "rating": 0,
-          "review_count": 0,
-          "address": "4.7 км от центра",
-          "location": {
-            "lat": 55.838703,
-            "lng": 49.097134,
-            "city": null,
-            "city_geo_id": null
-          },
-          "photos": [
-            "https://cdn.bronevik.com/static/photo/g/500x500/d350b32d04dc75eae7725153e719b71b"
-          ],
-          "alias": "kazansky_priyom_na_ulitse_gagarina",
-          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8217718&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
-          "best_offer": {
-            "offerpack_hash": "18e86583-aca0-4396-9911-e7dcfcc6588a",
-            "room_name": "2-комнатные апартаменты, 55 м², 1 этаж",
-            "price": {
-              "amount": 17231,
-              "currency": "RUB"
-            },
-            "price_basis": "stay_total",
-            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8217718&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46",
-            "room_size_sqm": 55,
-            "breakfast_included": null,
-            "meal_name": null,
-            "free_cancellation": true,
-            "pay_at_hotel": null,
-            "pay_online": null,
-            "highlights": [
-              {
-                "type": "policies",
-                "text": "Бесплатная отмена"
-              }
-            ]
-          },
-          "review_summary": null,
-          "checkout_ref": {
-            "transport": "hotels",
-            "hotel_geo_id": "8217718",
-            "check_in": "2026-10-28",
-            "check_out": "2026-11-01",
-            "adults": 1,
-            "hotel_alias": "kazansky_priyom_na_ulitse_gagarina",
-            "search_id": "63dfb69f8950f7607df4be18e3aa4e46",
-            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-10-28&check_out=2026-11-01&geo_id=8217718&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=1&search_id=63dfb69f8950f7607df4be18e3aa4e46"
-          },
-          "photos_total": 15
         }
       ],
       "stay": {

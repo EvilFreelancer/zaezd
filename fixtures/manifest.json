@@ -1,9 +1,9 @@
 {
-  "recorded_at": "2026-08-19T09:50:57.172Z",
+  "recorded_at": "2026-08-19T10:53:04.672Z",
   "entries": [
     {
       "file": "confcal/initialize.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "confcal",
       "tool": "initialize",
       "arguments": {},
@@ -14,7 +14,7 @@
     },
     {
       "file": "confcal/list-cities.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "confcal",
       "tool": "list_cities",
       "arguments": {
@@ -24,7 +24,7 @@
     },
     {
       "file": "confcal/list-topics.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "confcal",
       "tool": "list_topics",
       "arguments": {
@@ -34,7 +34,7 @@
     },
     {
       "file": "confcal/list-cities-page-2.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "confcal",
       "tool": "list_cities",
       "arguments": {
@@ -45,7 +45,7 @@
     },
     {
       "file": "confcal/events-ai-offline.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "confcal",
       "tool": "search_events",
       "arguments": {
@@ -65,7 +65,7 @@
     },
     {
       "file": "confcal/events-ai-online.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "confcal",
       "tool": "search_events",
       "arguments": {
@@ -82,7 +82,7 @@
     },
     {
       "file": "confcal/events-ai-moscow.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "confcal",
       "tool": "search_events",
       "arguments": {
@@ -99,7 +99,7 @@
     },
     {
       "file": "confcal/events-empty.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "confcal",
       "tool": "search_events",
       "arguments": {
@@ -116,7 +116,7 @@
     },
     {
       "file": "confcal/session-lost.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "confcal",
       "tool": "list_cities",
       "arguments": {
@@ -126,41 +126,43 @@
     },
     {
       "file": "tutu/multitransport-msk-ekb-out.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "tutu",
       "tool": "search_multitransport",
       "arguments": {
         "origin": "Москва",
         "destination": "Екатеринбург",
         "departure_date": "2026-08-26",
+        "adults": 1,
         "page_size": 6
       },
+      "note": "outbound leg of the default demo",
       "volatile": [
         "variants[].checkout_ref",
         "variants[].checkout_url"
-      ],
-      "note": "outbound leg of the default demo"
+      ]
     },
     {
       "file": "tutu/multitransport-ekb-msk-back.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "tutu",
       "tool": "search_multitransport",
       "arguments": {
         "origin": "Екатеринбург",
         "destination": "Москва",
         "departure_date": "2026-08-30",
+        "adults": 1,
         "page_size": 6
       },
+      "note": "the return leg, without which the total is knowably wrong",
       "volatile": [
         "variants[].checkout_ref",
         "variants[].checkout_url"
-      ],
-      "note": "the return leg, without which the total is knowably wrong"
+      ]
     },
     {
       "file": "tutu/hotels-ekb.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "tutu",
       "tool": "search_hotels",
       "arguments": {
@@ -179,13 +181,14 @@
     },
     {
       "file": "tutu/multitransport-msk-kzn-out.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "tutu",
       "tool": "search_multitransport",
       "arguments": {
         "origin": "Москва",
         "destination": "Казань",
         "departure_date": "2026-10-28",
+        "adults": 1,
         "page_size": 6
       },
       "volatile": [
@@ -195,13 +198,14 @@
     },
     {
       "file": "tutu/multitransport-kzn-msk-back.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "tutu",
       "tool": "search_multitransport",
       "arguments": {
         "origin": "Казань",
         "destination": "Москва",
         "departure_date": "2026-11-01",
+        "adults": 1,
         "page_size": 6
       },
       "volatile": [
@@ -211,7 +215,7 @@
     },
     {
       "file": "tutu/hotels-kzn.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "tutu",
       "tool": "search_hotels",
       "arguments": {
@@ -230,24 +234,25 @@
     },
     {
       "file": "tutu/multitransport-thin-route.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "tutu",
       "tool": "search_multitransport",
       "arguments": {
         "origin": "Иннополис",
         "destination": "Калининград",
         "departure_date": "2026-10-28",
+        "adults": 1,
         "page_size": 6
       },
+      "note": "a thin route: some modes come back empty while others live",
       "volatile": [
         "variants[].checkout_ref",
         "variants[].checkout_url"
-      ],
-      "note": "a thin route: some modes come back empty while others live"
+      ]
     },
     {
       "file": "tutu/error-extra-key.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "tutu",
       "tool": "search_multitransport",
       "arguments": {
@@ -259,7 +264,7 @@
     },
     {
       "file": "tutu/checkout-rail.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "tutu",
       "tool": "create_checkout_link",
       "arguments": {
@@ -274,18 +279,18 @@
         "arrival_geo_point_id": 2959918,
         "offer_hash": "4e78226229488cf595ecbe06706307e9",
         "segment_hash": "b54cabb5c00bbaa744434476fb30759f",
-        "search_id": "4B74CFFC-055D-471B-8DBF-4A0F41BA3B31",
-        "result_id": "e745e539-9ba6-5213-9f5b-147d16dd1ae2",
+        "search_id": "31F4433F-36A2-4511-AD1B-C7E772B9A707",
+        "result_id": "302a9f3e-b48e-5df4-821d-eb6f976b9aad",
         "card_id": "55313c4951e7d58002dfcc44286c5227"
       },
+      "note": "rail without a seat choice; the kind decides the label, we do not",
       "volatile": [
         "checkout_url"
-      ],
-      "note": "rail without a seat choice; the kind decides the label, we do not"
+      ]
     },
     {
       "file": "tutu/checkout-avia.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "tutu",
       "tool": "create_checkout_link",
       "arguments": {
@@ -303,14 +308,14 @@
         "passengers_child": 0,
         "passengers_infant": 0
       },
+      "note": "air: in a cold browser this lands on search, which is what the label must say",
       "volatile": [
         "checkout_url"
-      ],
-      "note": "air: in a cold browser this lands on search, which is what the label must say"
+      ]
     },
     {
       "file": "tutu/checkout-hotel-page.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "tutu",
       "tool": "create_checkout_link",
       "arguments": {
@@ -323,14 +328,14 @@
         "search_id": "9ffb6f8048d289d91ba131d6e8f8e4c9",
         "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11409967&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9"
       },
+      "note": "no offer_pack_hash: this opens the hotel page and is not a cart, whatever we wish",
       "volatile": [
         "checkout_url"
-      ],
-      "note": "no offer_pack_hash: this opens the hotel page and is not a cart, whatever we wish"
+      ]
     },
     {
       "file": "tutu/offer-details-ekb.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "tutu",
       "tool": "get_offer_details",
       "arguments": {
@@ -340,14 +345,14 @@
         "check_out": "2026-08-30",
         "adults": 1
       },
+      "note": "only a room rate offerpack_hash mints a cart; the listing best_offer one does not",
       "volatile": [
         "rooms[].rates[].offerpack_hash"
-      ],
-      "note": "only a room rate offerpack_hash mints a cart; the listing best_offer one does not"
+      ]
     },
     {
       "file": "tutu/checkout-hotel-cart.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "tutu",
       "tool": "create_checkout_link",
       "arguments": {
@@ -359,16 +364,16 @@
         "hotel_alias": "marins_park_otel_yekaterinburg",
         "search_id": "9ffb6f8048d289d91ba131d6e8f8e4c9",
         "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-26&check_out=2026-08-30&geo_id=11409967&geo_name=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=9ffb6f8048d289d91ba131d6e8f8e4c9",
-        "offer_pack_hash": "1d25103c-f6c2-4292-b60f-cbb9bb6504c9"
+        "offer_pack_hash": "f153760d-b1d6-4a17-ab0a-d59a64084994"
       },
+      "note": "with a room rate hash this really is a cart",
       "volatile": [
         "checkout_url"
-      ],
-      "note": "with a room rate hash this really is a cart"
+      ]
     },
     {
       "file": "enrich/nominatim-venue-verbatim.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "nominatim",
       "tool": "search",
       "arguments": {
@@ -379,7 +384,7 @@
     },
     {
       "file": "enrich/nominatim-street.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "nominatim",
       "tool": "search",
       "arguments": {
@@ -390,7 +395,7 @@
     },
     {
       "file": "enrich/nominatim-company-name.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "nominatim",
       "tool": "search",
       "arguments": {
@@ -401,7 +406,7 @@
     },
     {
       "file": "enrich/nominatim-city.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "nominatim",
       "tool": "search",
       "arguments": {
@@ -412,7 +417,7 @@
     },
     {
       "file": "enrich/osrm-foot.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "osrm",
       "tool": "route-foot",
       "arguments": {
@@ -423,7 +428,7 @@
     },
     {
       "file": "enrich/osrm-car.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "osrm",
       "tool": "route-car",
       "arguments": {
@@ -434,7 +439,7 @@
     },
     {
       "file": "enrich/isdayoff-2026-08.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "isdayoff",
       "tool": "getdata",
       "arguments": {
@@ -446,7 +451,7 @@
     },
     {
       "file": "enrich/isdayoff-2026-09.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "isdayoff",
       "tool": "getdata",
       "arguments": {
@@ -458,7 +463,7 @@
     },
     {
       "file": "enrich/isdayoff-2026-10.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "isdayoff",
       "tool": "getdata",
       "arguments": {
@@ -470,7 +475,7 @@
     },
     {
       "file": "enrich/isdayoff-2026-11.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "isdayoff",
       "tool": "getdata",
       "arguments": {
@@ -482,7 +487,7 @@
     },
     {
       "file": "enrich/openmeteo-in-window.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "open-meteo",
       "tool": "forecast",
       "arguments": {
@@ -493,7 +498,7 @@
     },
     {
       "file": "enrich/openmeteo-out-of-window.json",
-      "recorded_at": "2026-08-19T09:50:57.172Z",
+      "recorded_at": "2026-08-19T10:53:04.672Z",
       "source": "open-meteo",
       "tool": "forecast",
       "arguments": {
