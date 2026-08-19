@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-08-19T11:07:53.110Z",
+  "recorded_at": "2026-08-19T11:31:57.818Z",
   "source": "confcal",
   "tool": "initialize",
   "arguments": {},
@@ -9,7 +9,7 @@
   ],
   "response": {
     "headers": {
-      "mcp-session-id": "3475976d55ba4e2f80551b5269114325"
+      "mcp-session-id": "e45fd239e5de49d68af579b5906ed6bd"
     },
     "body": {
       "jsonrpc": "2.0",

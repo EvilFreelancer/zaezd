@@ -16,7 +16,7 @@ import type { ZaezdWorld } from '../support/world.ts';
  */
 const VENUE: GeoPoint = { lat: 59.9340393, lng: 30.4363945 };
 const CITY_CENTRE: GeoPoint = { lat: 59.9606739, lng: 30.1586551 };
-const HOTEL: GeoPoint = { lat: 59.886078, lng: 30.368853 };
+const HOTEL: GeoPoint = { lat: 59.91768, lng: 30.398684 };
 
 type Wiring = { readonly http: HttpFetch; readonly cache: TtlCache };
 

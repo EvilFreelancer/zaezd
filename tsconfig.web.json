@@ -1,21 +1,30 @@
 {
   "compilerOptions": {
     "target": "es2023",
-    "lib": ["es2023", "dom", "dom.iterable"],
+    "lib": [
+      "es2023",
+      "dom",
+      "dom.iterable"
+    ],
     "module": "esnext",
     "moduleResolution": "bundler",
-
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
     "noImplicitOverride": true,
     "noFallthroughCasesInSwitch": true,
-
-    "allowJs": true,
-    "checkJs": true,
+    "verbatimModuleSyntax": true,
+    "erasableSyntaxOnly": true,
+    "isolatedModules": true,
     "skipLibCheck": true,
-    "noEmit": true
+    "noEmit": false,
+    "outDir": "src/web/public",
+    "rootDir": "src/web/client",
+    "sourceMap": true,
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true
   },
-  "include": ["src/web/public/**/*.js"],
-  "exclude": ["src/web/public/vendor/**"]
+  "include": [
+    "src/web/client/**/*.ts"
+  ]
 }

@@ -10,6 +10,8 @@ export default tseslint.config(
       'research/**',
       '.opencode/**',
       'src/web/public/vendor/**',
+      // Compiled output; the source is src/web/client/*.ts.
+      'src/web/public/*.js',
     ],
   },
   ...tseslint.configs.recommended,

@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-08-19T11:07:53.110Z",
+  "recorded_at": "2026-08-19T11:31:57.818Z",
   "source": "tutu",
   "tool": "create_checkout_link",
   "arguments": {
@@ -20,7 +20,7 @@
   "volatile": [
     "checkout_url"
   ],
-  "note": "air: in a cold browser this lands on search, which is what the label must say",
+  "note": "outbound avia; the kind decides the label, we do not",
   "response": {
     "envelope": {
       "jsonrpc": "2.0",

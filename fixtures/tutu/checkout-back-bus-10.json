@@ -1,0 +1,48 @@
+{
+  "recorded_at": "2026-08-19T11:31:57.818Z",
+  "source": "tutu",
+  "tool": "create_checkout_link",
+  "arguments": {
+    "transport": "bus",
+    "offer_hash": "Axo1hc0mIpXakixPMkPcLjxNgfOF89fWAJ7yGHmNRWbcEy6my8FGtjiP5YXOGQAyvr6E6p0AUxHimckR9SVwvXafTNaf2W4RNyc7hnSFdd9GcX5j745RfHg%2BgkFRtT58pkfZ5QyGWDLbK7n37rA9Lf2yJi9x3vVTzejdhxY%2FBVgoqD8p7%2Fx4D4643kJD",
+    "search_id": "1D9DAFB4-FF72-48FF-97B0-0CF8C10D0FAA",
+    "departure_geo_city_id": 2656915,
+    "arrival_geo_city_id": 2657260,
+    "departure_id": "1447624",
+    "arrival_id": "1447874",
+    "departure_stop_id": 2857715,
+    "arrival_stop_id": 2925665,
+    "departure_stop_name": "Автовокзал",
+    "arrival_stop_name": "Международный автовокзал Северные Ворота",
+    "city_from": "Санкт-Петербург",
+    "city_to": "Москва",
+    "departure_at": "2026-08-21T23:00:00+03:00",
+    "passengers": 1,
+    "passengers_adult": 1,
+    "passengers_child": 0
+  },
+  "volatile": [
+    "checkout_url"
+  ],
+  "note": "return bus; the kind decides the label, we do not",
+  "response": {
+    "envelope": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"kind\":\"deeplink\",\"checkout_url\":\"https://mtp-deeplink.tutu.ru/api/v1/deeplink/explicit/bus?geo_mode=original&departure_time=2026-08-21T23:00:00%2B03:00&departure_geo_city_id=1447624&arrival_geo_city_id=1447874&hash=Axo1hc0mIpXakixPMkPcLjxNgfOF89fWAJ7yGHmNRWbcEy6my8FGtjiP5YXOGQAyvr6E6p0AUxHimckR9SVwvXafTNaf2W4RNyc7hnSFdd9GcX5j745RfHg%252BgkFRtT58pkfZ5QyGWDLbK7n37rA9Lf2yJi9x3vVTzejdhxY%252FBVgoqD8p7%252Fx4D4643kJD&fallback_to_vid=true&source=mcp\",\"purchase_url_note\":\"checkout_url is a Tutu deeplink that opens this bus's seat-selection page; falls back to search if the offer is gone. To mint the cart with exact seats instead, call again with `seat_numbers` (from `get_offer_details` seat_selection) + `checkout_ref.search_id` after the user confirms seats.\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    "payload": {
+      "kind": "deeplink",
+      "checkout_url": "https://mtp-deeplink.tutu.ru/api/v1/deeplink/explicit/bus?geo_mode=original&departure_time=2026-08-21T23:00:00%2B03:00&departure_geo_city_id=1447624&arrival_geo_city_id=1447874&hash=Axo1hc0mIpXakixPMkPcLjxNgfOF89fWAJ7yGHmNRWbcEy6my8FGtjiP5YXOGQAyvr6E6p0AUxHimckR9SVwvXafTNaf2W4RNyc7hnSFdd9GcX5j745RfHg%252BgkFRtT58pkfZ5QyGWDLbK7n37rA9Lf2yJi9x3vVTzejdhxY%252FBVgoqD8p7%252Fx4D4643kJD&fallback_to_vid=true&source=mcp",
+      "purchase_url_note": "checkout_url is a Tutu deeplink that opens this bus's seat-selection page; falls back to search if the offer is gone. To mint the cart with exact seats instead, call again with `seat_numbers` (from `get_offer_details` seat_selection) + `checkout_ref.search_id` after the user confirms seats."
+    }
+  }
+}

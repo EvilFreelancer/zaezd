@@ -1,0 +1,41 @@
+{
+  "recorded_at": "2026-08-19T11:31:57.818Z",
+  "source": "tutu",
+  "tool": "create_checkout_link",
+  "arguments": {
+    "transport": "hotels",
+    "hotel_geo_id": "8181037",
+    "check_in": "2026-08-20",
+    "check_out": "2026-08-21",
+    "adults": 1,
+    "hotel_alias": "otel_art_deko_nevsky",
+    "search_id": "2312d3d861021709757e73ddd657a004",
+    "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=2312d3d861021709757e73ddd657a004",
+    "offer_pack_hash": "818d7246-db91-4f21-bab0-8c374967a53f"
+  },
+  "volatile": [
+    "checkout_url"
+  ],
+  "note": "with a room rate hash this really is a cart",
+  "response": {
+    "envelope": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"checkout_url\":\"https://mtp-deeplink.tutu.ru/api/v1/deeplink/explicit/hotel?hotel_alias=otel_art_deko_nevsky&check_in=2026-08-20&check_out=2026-08-21&search_id=2312d3d861021709757e73ddd657a004&adults=1&checkout=true&offer_pack_hash=818d7246-db91-4f21-bab0-8c374967a53f&fallback_to_details=true&source=mcp\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=2312d3d861021709757e73ddd657a004\",\"kind\":\"checkout_deeplink\",\"purchase_url_note\":\"checkout_url is a Tutu checkout-mode deeplink. It mints the cart for the offer pack in the opener's session (a cold browser works) ONLY when offer_pack_hash is a ROOM rate's `offerpack_hash` from `get_offer_details`. The listing `best_offer.offerpack_hash` does NOT mint a cart — it lands on the hotel page, as does a stale pack (fallback_to_details). So present this as 'opens your chosen room in the cart' only if you passed a room-level hash the user picked; otherwise tell the user they'll pick the room on the page. Do NOT promise a ready cart for a listing hash.\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    "payload": {
+      "checkout_url": "https://mtp-deeplink.tutu.ru/api/v1/deeplink/explicit/hotel?hotel_alias=otel_art_deko_nevsky&check_in=2026-08-20&check_out=2026-08-21&search_id=2312d3d861021709757e73ddd657a004&adults=1&checkout=true&offer_pack_hash=818d7246-db91-4f21-bab0-8c374967a53f&fallback_to_details=true&source=mcp",
+      "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-08-20&check_out=2026-08-21&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=2312d3d861021709757e73ddd657a004",
+      "kind": "checkout_deeplink",
+      "purchase_url_note": "checkout_url is a Tutu checkout-mode deeplink. It mints the cart for the offer pack in the opener's session (a cold browser works) ONLY when offer_pack_hash is a ROOM rate's `offerpack_hash` from `get_offer_details`. The listing `best_offer.offerpack_hash` does NOT mint a cart — it lands on the hotel page, as does a stale pack (fallback_to_details). So present this as 'opens your chosen room in the cart' only if you passed a room-level hash the user picked; otherwise tell the user they'll pick the room on the page. Do NOT promise a ready cart for a listing hash."
+    }
+  }
+}

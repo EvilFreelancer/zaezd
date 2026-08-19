@@ -141,6 +141,6 @@ Feature: What the trip actually costs
     And the recorded journeys home
     And the recorded hotels of the demo trip
     When the cheapest recorded trip is priced
-    Then the total is 12679.22 ₽
+    Then the total is 7762.69 ₽
     And the hotel line equals the price Tutu returned for the whole stay
     And the breakdown adds up to the total

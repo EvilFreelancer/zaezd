@@ -1,5 +1,8 @@
 node_modules/
 dist/
+# Compiled browser code; the source is src/web/client/*.ts
+src/web/public/*.js
+src/web/public/*.js.map
 .env
 .env.local
 docker-compose.override.yaml

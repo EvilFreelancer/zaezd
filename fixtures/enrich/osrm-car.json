@@ -1,9 +1,9 @@
 {
-  "recorded_at": "2026-08-19T11:07:53.110Z",
+  "recorded_at": "2026-08-19T11:31:57.818Z",
   "source": "osrm",
   "tool": "route-car",
   "arguments": {
-    "url": "https://router.project-osrm.org/route/v1/driving/30.368853,59.886078;30.4363945,59.9340393?overview=false",
+    "url": "https://router.project-osrm.org/route/v1/driving/30.398684,59.91768;30.4363945,59.9340393?overview=false",
     "profile": "driving"
   },
   "note": "the public demo server serves this profile only; never shown as walking",
@@ -16,27 +16,27 @@
           "legs": [
             {
               "steps": [],
-              "weight": 910,
+              "weight": 559.7,
               "summary": "",
-              "duration": 910,
-              "distance": 10639.7
+              "duration": 559.7,
+              "distance": 5802
             }
           ],
           "weight_name": "routability",
-          "weight": 910,
-          "duration": 910,
-          "distance": 10639.7
+          "weight": 559.7,
+          "duration": 559.7,
+          "distance": 5802
         }
       ],
       "waypoints": [
         {
-          "hint": "3YJTkeCCU5EJAAAAAAAAAIkAAAAYAAAAmEhnQAAAAADUU2NCiCYjQQkAAAAAAAAAiQAAABgAAAB1JQEAp2bPAUrIkQNVZM8B_smRAwoArxEAAAAA",
+          "hint": "9tU8ijTYwo0EAAAACgAAAN4AAACHAAAA7IX5P9vcfEDM8LhC33VhQgQAAAAKAAAA3gAAAIcAAAB1JQEAKtjPAcpEkgPc2M8BcEWSAxIAbwcAAAAA",
           "location": [
-            30.369447,
-            59.885642
+            30.398506,
+            59.917514
           ],
           "name": "",
-          "distance": 58.87628972
+          "distance": 21.003237
         },
         {
           "hint": "OlYjlP___38OAAAAEAAAAGIBAABHAAAA9Vu3QGk3TD9aSRNDrGrtQQ4AAAAQAAAAYgEAAEcAAAB1JQEApm3QASqFkgMrbNABV4WSAwgAHwwAAAAA",

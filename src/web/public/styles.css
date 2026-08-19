@@ -1,5 +1,19 @@
-/* Product styles. Colour, spacing and typography come from the vendored Kite token extract
-   in vendor/kite/tutu-core.css; nothing here hard-codes a brand colour. */
+/* The trip board.
+   Every colour reads a --tutu-* token from the vendored Kite extract; no brand value is
+   written literally here. States are not decoration: hover, focus, active, disabled and the
+   flagged card are what a screen is judged on. */
+
+:root {
+  --gap: 1rem;
+  --radius: 14px;
+  --shadow: 0 1px 2px rgba(24, 28, 45, 0.06), 0 8px 24px rgba(24, 28, 45, 0.06);
+  --late: #b4304a;
+}
+
+:root[data-theme='dark'] {
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.35);
+  --late: #ff7a90;
+}
 
 * {
   box-sizing: border-box;
@@ -7,56 +21,465 @@
 
 body {
   margin: 0;
+  padding: 0;
   background: var(--tutu-surface-muted);
   color: var(--tutu-text);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 15px;
   line-height: 1.5;
 }
 
-.shell {
-  max-width: 40rem;
-  margin: 0 auto;
-  padding: 3rem 1rem;
-}
-
-.shell__title {
-  margin: 0 0 0.5rem;
+a {
   color: var(--tutu-brand);
-  font-size: 2rem;
-  letter-spacing: -0.02em;
 }
 
-.shell__lead {
+a:focus-visible,
+button:focus-visible,
+.card:focus-visible {
+  outline: 3px solid var(--tutu-brand-light);
+  outline-offset: 2px;
+}
+
+.board {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--gap);
+}
+
+.board__body {
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  align-items: start;
+}
+
+.board__left,
+.board__right {
+  display: grid;
+  gap: var(--gap);
+  min-width: 0;
+}
+
+/* Event header ------------------------------------------------------------------------- */
+
+.event {
+  padding: 1.25rem;
+  margin-bottom: var(--gap);
+  border-radius: var(--radius);
+  background: var(--tutu-surface);
+  box-shadow: var(--shadow);
+}
+
+.event__title {
+  margin: 0 0 0.25rem;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  overflow-wrap: anywhere;
+}
+
+.event__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.event__link:hover {
+  color: var(--tutu-brand);
+}
+
+.event__facts {
   margin: 0;
   color: var(--tutu-text-secondary);
 }
 
-code {
-  padding: 0.1em 0.35em;
-  border-radius: 4px;
-  background: var(--tutu-surface);
+.event__venue,
+.event__walk,
+.event__note {
+  margin: 0.35rem 0 0;
+  color: var(--tutu-text-tertiary);
+  font-size: 0.9rem;
+}
+
+/* Cards -------------------------------------------------------------------------------- */
+
+.cards {
+  display: grid;
+  gap: var(--gap);
+}
+
+.card {
+  display: grid;
+  gap: 0.6rem;
+  padding: 1rem;
   border: 1px solid var(--tutu-border);
-  font-size: 0.9em;
+  border-radius: var(--radius);
+  background: var(--tutu-surface);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: border-color 0.15s ease, transform 0.15s ease;
 }
 
-@media (prefers-color-scheme: dark) {
-  html:not([data-theme='light']) {
-    color-scheme: dark;
-  }
+.card:hover {
+  border-color: var(--tutu-brand-light);
 }
 
-/* The server always renders the text fallback; boot.js hides it once scripting is proven
-   alive. A script that fails to load therefore leaves the readable version on screen. */
-:root[data-js='on'] .shell__fallback {
+.card:active {
+  transform: translateY(1px);
+}
+
+.card--chosen {
+  border-color: var(--tutu-brand);
+  box-shadow: 0 0 0 1px var(--tutu-brand), var(--shadow);
+}
+
+/* A variant that misses the opening greys out and cannot be chosen as the headline trip. */
+.card--late {
+  opacity: 0.72;
+  background: var(--tutu-surface-muted);
+}
+
+.card__head {
+  display: flex;
+  gap: 0.75rem;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.card__rule {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.card__total {
+  margin: 0;
+  color: var(--tutu-brand);
+  font-size: 1.35rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.card__flag {
+  margin: 0;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--late) 12%, transparent);
+  color: var(--late);
+  font-size: 0.85rem;
+}
+
+.card__flag--soft {
+  background: var(--tutu-surface-muted);
+  color: var(--tutu-text-secondary);
+}
+
+.card__days {
+  margin: 0;
+  color: var(--tutu-text-secondary);
+  font-size: 0.9rem;
+}
+
+.card__checkout {
+  justify-self: start;
+  padding: 0.5rem 0.9rem;
+  border: 0;
+  border-radius: 10px;
+  background: var(--tutu-brand);
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.card__checkout:hover {
+  background: var(--tutu-brand-pressed);
+}
+
+.card__checkout:disabled {
+  background: var(--tutu-text-tertiary);
+  cursor: progress;
+}
+
+/* Legs and hotel ------------------------------------------------------------------------ */
+
+.leg {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.15rem 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--tutu-border);
+}
+
+.leg--absent {
+  color: var(--tutu-text-tertiary);
+}
+
+.leg__what {
+  overflow-wrap: anywhere;
+}
+
+.leg__price {
+  grid-row: 1;
+  grid-column: 2;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.leg__when,
+.leg__margin {
+  grid-column: 1 / -1;
+  color: var(--tutu-text-secondary);
+  font-size: 0.85rem;
+}
+
+.leg__margin--late {
+  color: var(--late);
+}
+
+/* Budget bar ---------------------------------------------------------------------------- */
+
+.budget {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.bar {
+  display: flex;
+  overflow: hidden;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--tutu-surface-muted);
+}
+
+.bar__part {
+  height: 100%;
+}
+
+.bar__part--outbound,
+.bar__part--back {
+  background: var(--tutu-brand);
+}
+
+.bar__part--hotel {
+  background: var(--tutu-brand-light);
+}
+
+.bar__part--event {
+  background: var(--tutu-accent);
+}
+
+.budget__sum {
+  margin: 0;
+  color: var(--tutu-text-secondary);
+  font-size: 0.85rem;
+  overflow-wrap: anywhere;
+}
+
+/* Timeline ------------------------------------------------------------------------------ */
+
+.timeline {
+  padding: 1rem;
+  border-radius: var(--radius);
+  background: var(--tutu-surface);
+  box-shadow: var(--shadow);
+}
+
+.timeline__rail {
+  position: relative;
+  height: 28px;
+  margin-bottom: 0.5rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--tutu-brand-soft), var(--tutu-brand-light));
+}
+
+.timeline__mark {
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--tutu-surface);
+  border-radius: 50%;
+  background: var(--tutu-brand);
+  transform: translate(-50%, -50%);
+}
+
+.timeline__legend {
+  margin: 0;
+  color: var(--tutu-text-secondary);
+  font-size: 0.85rem;
+}
+
+/* Map ----------------------------------------------------------------------------------- */
+
+.map {
+  height: 420px;
+  border-radius: var(--radius);
+  background: var(--tutu-surface);
+  box-shadow: var(--shadow);
+}
+
+.map[hidden] {
   display: none;
 }
 
-.shell__fallback {
-  margin: 1rem 0 0;
-  padding: 0.75rem 1rem;
-  border: 1px solid var(--tutu-border);
-  border-radius: 12px;
+.pin {
+  display: grid;
+  place-items: center;
+}
+
+.pin__label {
+  display: none;
+}
+
+/* Secondary blocks ---------------------------------------------------------------------- */
+
+.weather,
+.notices,
+.others,
+.skipped,
+.empty {
+  padding: 1rem;
+  border-radius: var(--radius);
   background: var(--tutu-surface);
+  box-shadow: var(--shadow);
+}
+
+.notices,
+.others,
+.skipped,
+.coverage {
+  margin-top: var(--gap);
+}
+
+.weather__title,
+.others__title,
+.skipped__title {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.weather__list,
+.others__list,
+.skipped__list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.notices__item {
+  margin: 0 0 0.35rem;
   color: var(--tutu-text-secondary);
-  font-size: 0.9rem;
+}
+
+.notices__item:last-child {
+  margin-bottom: 0;
+}
+
+.coverage {
+  color: var(--tutu-text-tertiary);
+  font-size: 0.85rem;
+}
+
+.empty__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.4rem;
+}
+
+.empty__why {
+  margin: 0 0 var(--gap);
+  color: var(--tutu-text-secondary);
+}
+
+/* Checkout list ------------------------------------------------------------------------- */
+
+.checkout {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.checkout__item {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.checkout__link {
+  justify-self: start;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid var(--tutu-brand);
+  border-radius: 10px;
+  color: var(--tutu-brand);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.checkout__link:hover {
+  background: var(--tutu-brand-soft);
+}
+
+.checkout__link--cart {
+  background: var(--tutu-brand);
+  color: #fff;
+}
+
+.checkout__link--cart:hover {
+  background: var(--tutu-brand-pressed);
+}
+
+.checkout__caveat {
+  color: var(--tutu-text-tertiary);
+  font-size: 0.8rem;
+}
+
+/* The server always renders the text fallback; boot.js hides it once scripting is proven
+   alive, so a script that fails to load leaves the readable version on screen. */
+.fallback {
+  display: block;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--gap);
+  color: var(--tutu-text-secondary);
+}
+
+:root[data-js='on'] .fallback {
+  display: none;
+}
+
+/* Widths ---------------------------------------------------------------------------------
+   Three are checked: 360, 768 and 1280. On a phone the cards come first and the map shrinks,
+   because a traveller scrolling on a phone wants the price before the geography. */
+
+@media (max-width: 992px) {
+  .board__body {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .map {
+    height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .board {
+    padding: 0.75rem;
+  }
+
+  .event__title {
+    font-size: 1.3rem;
+  }
+
+  .card__head {
+    flex-wrap: wrap;
+  }
+
+  .map {
+    height: 240px;
+  }
+
+  /* Clear of the back gesture, which lives at the bottom edge on a phone. */
+  .card__checkout {
+    margin-bottom: 0.25rem;
+  }
 }

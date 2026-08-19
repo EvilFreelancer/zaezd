@@ -5,6 +5,7 @@ import type { TripVariant } from '../../src/composer/packages.ts';
 import { checkFeasibility } from '../../src/composer/feasibility.ts';
 import { parseEventPrice, priceTrip } from '../../src/composer/pricing.ts';
 import { normalizeHotels, normalizeTransport } from '../../src/sources/normalize.ts';
+import { rankHotels } from '../../src/composer/hotels.ts';
 import { TtlCache } from '../../src/sources/cache.ts';
 import { tutuClient, type TutuClient } from '../../src/sources/tutu.ts';
 import { replayTransport, type McpTransport } from '../../src/sources/mcp-client.ts';
@@ -37,11 +38,17 @@ function variantFrom(world: ZaezdWorld, options: { withHotel: boolean }): TripVa
   const home = normalizeTransport(loadPayload('tutu/demo-back.json')).legs[0];
   assert.ok(there !== undefined && home !== undefined, 'the recordings hold no journeys');
 
-  // The first row of the listing, which is the room the checkout links were recorded for.
+  // The room the product would pick: nearest to the recorded venue, which is also the room the
+  // checkout links were recorded for. Picking any other one would test the fallback, not the cart.
+  const venuePoint = loadPayload<{ lat: string; lon: string }[]>('enrich/nominatim-street.json')[0];
+  assert.ok(venuePoint !== undefined, 'the venue was never geocoded in the recordings');
+
   const listing = normalizeHotels(loadPayload('tutu/demo-hotels.json'));
-  const first = listing.hotels[0];
-  assert.ok(first !== undefined, 'the recordings hold no hotels');
-  const room = { hotel: first };
+  const room = rankHotels({
+    hotels: listing.hotels,
+    venue: { precision: 'exact', lat: Number(venuePoint.lat), lng: Number(venuePoint.lon) },
+  }).hotels[0];
+  assert.ok(room !== undefined, 'the recordings hold no hotels');
 
   void world;
   return {

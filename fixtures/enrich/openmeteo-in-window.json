@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-08-19T11:07:53.110Z",
+  "recorded_at": "2026-08-19T11:31:57.818Z",
   "source": "open-meteo",
   "tool": "forecast",
   "arguments": {
@@ -12,7 +12,7 @@
     "body": {
       "latitude": 59.933983,
       "longitude": 30.430069,
-      "generationtime_ms": 0.7022619247436523,
+      "generationtime_ms": 0.6469488143920898,
       "utc_offset_seconds": 10800,
       "timezone": "Europe/Moscow",
       "timezone_abbreviation": "GMT+3",

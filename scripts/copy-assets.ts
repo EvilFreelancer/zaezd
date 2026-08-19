@@ -10,6 +10,8 @@ import { cpSync, existsSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 
 const PAIRS: readonly (readonly [string, string])[] = [
+  // The browser bundle is compiled into src/web/public by `npm run build:web` first, so this
+  // one copy carries the stylesheet, the vendored map library and the compiled client alike.
   ['src/web/public', 'dist/web/public'],
   ['fixtures', 'dist/fixtures'],
 ];

@@ -261,17 +261,17 @@ describe('normalizeHotels', () => {
 
 describe('normalizeCheckout', () => {
   it('reads the kind Tutu returned for a hotel page', () => {
-    expect(normalizeCheckout(loadPayload('tutu/checkout-hotel-page.json')).kind).toBe('deeplink');
+    expect(normalizeCheckout(loadPayload('tutu/checkout-hotel-page-1.json')).kind).toBe('deeplink');
   });
 
   it('reads the kind Tutu returned for a real cart', () => {
-    expect(normalizeCheckout(loadPayload('tutu/checkout-hotel-cart.json')).kind).toBe(
+    expect(normalizeCheckout(loadPayload('tutu/checkout-hotel-cart-1.json')).kind).toBe(
       'checkout_deeplink',
     );
   });
 
   it('keeps the link itself', () => {
-    expect(normalizeCheckout(loadPayload('tutu/checkout-rail.json')).url).toMatch(/^https:\/\//);
+    expect(normalizeCheckout(loadPayload('tutu/checkout-out-railway-1.json')).url).toMatch(/^https:\/\//);
   });
 
   it('falls back to the search results url when there is no other fallback', () => {

@@ -10,9 +10,9 @@
   },
   "scripts": {
     "start": "node dist/main.js",
-    "dev": "node src/main.ts",
+    "dev": "npm run build:web && node src/main.ts",
     "record": "node --use-env-proxy scripts/record.ts",
-    "typecheck": "tsc --noEmit && tsc -p tsconfig.web.json",
+    "typecheck": "tsc --noEmit && tsc -p tsconfig.web.json --noEmit",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "rules:sync": "node scripts/sync-rules.ts",
@@ -20,8 +20,9 @@
     "bdd": "cucumber-js",
     "test": "vitest run",
     "test:watch": "vitest",
-    "build": "rm -rf dist && tsc -p tsconfig.build.json && node scripts/copy-assets.ts",
-    "verify": "npm run rules:check && npm run typecheck && npm run lint && npm run bdd && npm run test"
+    "build": "rm -rf dist && tsc -p tsconfig.build.json && npm run build:web && node scripts/copy-assets.ts",
+    "verify": "npm run rules:check && npm run typecheck && npm run lint && npm run bdd && npm run test",
+    "build:web": "tsc -p tsconfig.web.json"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^13.2.1",

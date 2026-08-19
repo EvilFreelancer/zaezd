@@ -24,6 +24,8 @@ import { dirname, join } from 'node:path';
 import { eventQueryFor } from '../src/composer/build-trip.ts';
 import { computeStayDates, type StayDates } from '../src/composer/dates.ts';
 import { selectEvents } from '../src/composer/selection.ts';
+import { rankHotels } from '../src/composer/hotels.ts';
+import { normalizeHotels } from '../src/sources/normalize.ts';
 import { addressPart } from '../src/enrich/geo.ts';
 import {
   normalizeCityDirectory,
@@ -340,7 +342,7 @@ async function recordTutu(scenarios: {
     scenario: Scenario,
     prefix: string,
     note: string,
-  ): Promise<{ outbound: unknown; hotels: unknown }> => {
+  ): Promise<{ outbound: unknown; back: unknown; hotels: unknown }> => {
     const city = scenario.event.city ?? '';
     const outbound = await call(
       `tutu/${prefix}-out.json`,
@@ -354,7 +356,7 @@ async function recordTutu(scenarios: {
       },
       { volatile: volatileTransport, note: `${note}, outbound` },
     );
-    await call(
+    const back = await call(
       `tutu/${prefix}-back.json`,
       'search_multitransport',
       {
@@ -381,7 +383,7 @@ async function recordTutu(scenarios: {
       },
       { volatile: volatileHotels, note },
     );
-    return { outbound, hotels };
+    return { outbound, back, hotels };
   };
 
   const demo = await recordScenario(
@@ -389,12 +391,10 @@ async function recordTutu(scenarios: {
     'demo',
     `the default demo: ${scenarios.demo.event.title}`,
   );
-  const listing = (demo.hotels as { hotels?: { location?: { lat?: number; lng?: number } }[] })
-    ?.hotels;
-  const point = listing?.find((hotel) => hotel.location?.lat !== undefined)?.location;
-  if (point?.lat !== undefined && point.lng !== undefined) {
-    firstHotelPoint = { lat: point.lat, lng: point.lng };
-  }
+  // The walk is recorded from the hotel the product would actually pick, which is the nearest
+  // one to the venue - not the first row of the listing. Recording the wrong hotel means the
+  // walking time silently disappears from the screen, which looks exactly like OSRM being down.
+  demoListing = normalizeHotels(demo.hotels);
   if (scenarios.degraded !== undefined) {
     await recordScenario(
       scenarios.degraded,
@@ -419,18 +419,15 @@ async function recordTutu(scenarios: {
     { note: 'the validation error every agent hits sooner or later' },
   );
 
-  await recordCheckouts(call, demo.outbound, demo.hotels, scenarios.demo.stay);
+  demoCheckouts = async (venue?: GeoHit): Promise<void> => {
+    await recordCheckouts(call, demo.outbound, demo.back, demo.hotels, scenarios.demo.stay, venue);
+  };
 }
 
 type Ref = Readonly<Record<string, unknown>>;
 
 type Variant = {
   readonly transport?: string;
-  readonly checkout_ref?: Ref;
-};
-
-type Hotel = {
-  readonly hotel_id?: string;
   readonly checkout_ref?: Ref;
 };
 
@@ -442,71 +439,82 @@ type TutuCall = (
 ) => Promise<unknown>;
 
 /**
- * A checkout link per `kind`, because the button label is derived from the `kind` Tutu
- * actually returned and there is no way to test that against invented values.
+ * A checkout link for every journey and every room the product might offer.
+ *
+ * Not just the first row: the packages are chosen by price, time and working days, so any of
+ * the recorded legs can end up on a card. Recording only one means the screen falls back to a
+ * search page for the others, which is honest but makes the demo look broken.
  */
 async function recordCheckouts(
   call: TutuCall,
   outbound: unknown,
+  back: unknown,
   hotels: unknown,
   stay: StayDates,
+  venue?: GeoHit,
 ): Promise<void> {
-  const variants = (outbound as { variants?: Variant[] } | undefined)?.variants ?? [];
-  const rail = variants.find((variant) => variant.transport === 'railway')?.checkout_ref;
-  const avia = variants.find((variant) => variant.transport === 'avia')?.checkout_ref;
-  const hotel = (hotels as { hotels?: Hotel[] } | undefined)?.hotels?.[0];
+  const legsOf = (search: unknown): readonly Variant[] =>
+    (search as { variants?: Variant[] } | undefined)?.variants ?? [];
 
-  if (rail !== undefined) {
-    await call('tutu/checkout-rail.json', 'create_checkout_link', { ...rail }, {
+  let index = 0;
+  for (const [direction, search] of [['out', outbound], ['back', back]] as const) {
+    for (const variant of legsOf(search)) {
+      if (variant.checkout_ref === undefined) continue;
+      index += 1;
+      await call(
+        `tutu/checkout-${direction}-${variant.transport}-${index}.json`,
+        'create_checkout_link',
+        { ...variant.checkout_ref },
+        {
+          volatile: ['checkout_url'],
+          note: `${direction === 'out' ? 'outbound' : 'return'} ${variant.transport}; the kind decides the label, we do not`,
+        },
+      );
+    }
+  }
+
+  const listing = normalizeHotels(hotels);
+  const shortlist = rankHotels({
+    hotels: listing.hotels,
+    venue: venue === undefined ? { precision: 'unknown' } : { precision: 'exact', ...venue },
+  }).hotels;
+
+  for (const [position, entry] of shortlist.entries()) {
+    const ref = entry.hotel.checkoutRef;
+    if (ref === undefined) continue;
+
+    await call(`tutu/checkout-hotel-page-${position + 1}.json`, 'create_checkout_link', { ...ref }, {
       volatile: ['checkout_url'],
-      note: 'rail without a seat choice; the kind decides the label, we do not',
+      note: 'no offer_pack_hash: this opens the hotel page and is not a cart, whatever we wish',
     });
-  }
-  if (avia !== undefined) {
-    await call('tutu/checkout-avia.json', 'create_checkout_link', { ...avia }, {
-      volatile: ['checkout_url'],
-      note: 'air: in a cold browser this lands on search, which is what the label must say',
-    });
-  }
 
-  if (hotel?.checkout_ref === undefined || hotel.hotel_id === undefined) {
-    console.error('no usable hotel row in the Yekaterinburg listing; hotel checkout not recorded');
-    return;
+    const details = await call(
+      `tutu/offer-details-${position + 1}.json`,
+      'get_offer_details',
+      {
+        product_type: 'hotels',
+        offer_id: entry.hotel.id,
+        check_in: stay.checkIn,
+        check_out: stay.checkOut,
+        adults: 1,
+      },
+      {
+        volatile: ['rooms[].rates[].offerpack_hash'],
+        note: 'only a room rate offerpack_hash mints a cart; the listing best_offer one does not',
+      },
+    );
+
+    const rate = (details as { rooms?: { rates?: { offerpack_hash?: string }[] }[] } | undefined)
+      ?.rooms?.[0]?.rates?.[0]?.offerpack_hash;
+    if (rate === undefined) continue;
+
+    await call(
+      `tutu/checkout-hotel-cart-${position + 1}.json`,
+      'create_checkout_link',
+      { ...ref, offer_pack_hash: rate },
+      { volatile: ['checkout_url'], note: 'with a room rate hash this really is a cart' },
+    );
   }
-
-  await call('tutu/checkout-hotel-page.json', 'create_checkout_link', { ...hotel.checkout_ref }, {
-    volatile: ['checkout_url'],
-    note: 'no offer_pack_hash: this opens the hotel page and is not a cart, whatever we wish',
-  });
-
-  const details = await call(
-    'tutu/offer-details.json',
-    'get_offer_details',
-    {
-      product_type: 'hotels',
-      offer_id: hotel.hotel_id,
-      check_in: stay.checkIn,
-      check_out: stay.checkOut,
-      adults: 1,
-    },
-    {
-      volatile: ['rooms[].rates[].offerpack_hash'],
-      note: 'only a room rate offerpack_hash mints a cart; the listing best_offer one does not',
-    },
-  );
-
-  const rate = (details as { rooms?: { rates?: { offerpack_hash?: string }[] }[] } | undefined)
-    ?.rooms?.[0]?.rates?.[0]?.offerpack_hash;
-  if (rate === undefined) {
-    console.error('no room rate offerpack_hash in the details answer; the cart link was skipped');
-    return;
-  }
-  await call(
-    'tutu/checkout-hotel-cart.json',
-    'create_checkout_link',
-    { ...hotel.checkout_ref, offer_pack_hash: rate },
-    { volatile: ['checkout_url'], note: 'with a room rate hash this really is a cart' },
-  );
 }
 
 async function recordHttp(
@@ -616,7 +624,11 @@ async function recordEnrich(scenarios: {
   // The same pair of points on both profiles, so a car answer relabelled as a walk can be
   // caught by a test rather than by a traveller.
   if (venuePoint !== undefined) {
-    const hotel = firstHotelPoint;
+    const nearest = rankHotels({
+      hotels: demoListing?.hotels ?? [],
+      venue: { precision: 'exact', ...venuePoint },
+    }).hotels[0];
+    const hotel = nearest?.hotel.location;
     if (hotel !== undefined) {
       const pair = `${hotel.lng},${hotel.lat};${venuePoint.lng},${venuePoint.lat}`;
       await recordHttp(
@@ -637,6 +649,8 @@ async function recordEnrich(scenarios: {
       );
     }
   }
+
+  await demoCheckouts?.(venuePoint);
 
   for (const month of monthsTouched(scenarios)) {
     const [year, mm] = month.split('-') as [string, string];
@@ -679,8 +693,10 @@ async function recordEnrich(scenarios: {
 type GeoHit = { readonly lat: number; readonly lng: number };
 
 let lastGeoHit: GeoHit | undefined;
-let firstHotelPoint: GeoHit | undefined;
+/** Checkout links wait for the geocoder, because the shortlist depends on where the venue is. */
+let demoCheckouts: ((venue?: GeoHit) => Promise<void>) | undefined;
 let degradedCentre: GeoHit | undefined;
+let demoListing: ReturnType<typeof normalizeHotels> | undefined;
 
 function forecastUrl(where: GeoHit, stay: StayDates): string {
   return (

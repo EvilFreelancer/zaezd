@@ -35,13 +35,13 @@ Given(
 Given(
   'the recorded checkout link built without a room rate',
   function (this: ZaezdWorld) {
-    this.remember('kind', loadPayload<{ kind?: string }>('tutu/checkout-hotel-page.json').kind);
+    this.remember('kind', loadPayload<{ kind?: string }>('tutu/checkout-hotel-page-1.json').kind);
     this.remember('product', 'hotels');
   },
 );
 
 Given('the recorded checkout link built with a room rate', function (this: ZaezdWorld) {
-  this.remember('kind', loadPayload<{ kind?: string }>('tutu/checkout-hotel-cart.json').kind);
+  this.remember('kind', loadPayload<{ kind?: string }>('tutu/checkout-hotel-cart-1.json').kind);
   this.remember('product', 'hotels');
 });
 
