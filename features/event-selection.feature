@@ -27,23 +27,36 @@ Feature: Only events worth travelling to become a trip
     Then the first offer is "SPb Python Meetup 2026"
     And at most five events are offered
 
-  Scenario: Only the first offer is worth computing in full
+  Scenario: Events past the cap are still accounted for
     Given the recorded catalogue of offline events on artificial intelligence
     When the events are narrowed down
-    Then one event is chosen for the full trip
-    And the rest are listed without being computed
+    Then at most five events are offered
+    And the answer explains that those events did not fit on the shortlist
+
+  Scenario: An offline event the catalogue gave no city for cannot become a trip
+    Given an event "Где-то" with no city running from 2026-09-01 to 2026-09-01
+    When the events are narrowed down
+    Then no event is offered as a trip
+    And the answer explains that those events name no city to travel to
+
+  Scenario: One self-contradictory record does not take the catalogue down with it
+    Given an event "Нормальное" in Казань running from 2026-09-01 to 2026-09-02
+    And an event "Задом наперёд" in Казань running from 2026-09-10 to 2026-08-01
+    When the events are narrowed down
+    Then the first offer is "Нормальное"
+    And the answer explains that those events contradict themselves
 
   Scenario: An event that has already started is not offered
     Given an event "Прошедшее" in Казань running from 2026-08-10 to 2026-08-12
     When the events are narrowed down
     Then no event is offered as a trip
-    And the answer explains that those events have already started
+    And the answer explains that those events can no longer be reached in time
 
   Scenario: An event the traveller can no longer reach in time is not offered
     Given an event "Завтра утром" in Казань running from 2026-08-19 to 2026-08-19 that opens at 10:00
     When the events are narrowed down
     Then no event is offered as a trip
-    And the answer explains that those events have already started
+    And the answer explains that those events can no longer be reached in time
 
   Scenario: An event outside the requested dates is not offered
     Given an event "Поздней осенью" in Казань running from 2026-11-20 to 2026-11-22
@@ -52,10 +65,10 @@ Feature: Only events worth travelling to become a trip
     Then no event is offered as a trip
     And the answer explains that those events fall outside the requested dates
 
-  Scenario: Two events on the same day are always offered in the same order
+  Scenario: Two events on the same day are offered in the same order whichever way they arrive
     Given an event "Второе по счёту" in Казань running from 2026-09-01 to 2026-09-01
     And an event "Первое по счёту" in Казань running from 2026-09-01 to 2026-09-01
-    When the events are narrowed down twice
+    When the events are narrowed down, and narrowed down again in the opposite order
     Then both answers are identical
 
   Scenario: An empty answer still owes the traveller an explanation
@@ -70,4 +83,10 @@ Feature: Only events worth travelling to become a trip
     Then it says the catalogue lists 21 cities
     And it says 15 of them have upcoming events
     And it names Москва as the city with the most events
-    And it counts 40 upcoming events with no city at all
+    And it counts 40 upcoming online events
+
+  Scenario: A single page of the directory does not get to speak for the whole catalogue
+    Given one page of the recorded directory of catalogue cities
+    When the coverage is described
+    Then it says the catalogue lists 21 cities
+    And it admits the counts cover only part of the directory

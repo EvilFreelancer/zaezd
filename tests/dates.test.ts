@@ -218,6 +218,26 @@ describe('computeStayDates', () => {
     expect(stay).toMatchObject({ openingTimeKnown: false, checkIn: '2026-08-26' });
   });
 
+  it('rejects a date inside the timestamp that could not exist', () => {
+    const stay = computeStayDates({
+      startDate: '2026-08-27',
+      endDate: '2026-08-29',
+      startsAt: '2026-99-99T10:00:00+03:00',
+    });
+
+    expect(stay.openingTimeKnown).toBe(false);
+  });
+
+  it('rejects an offset no place on earth uses', () => {
+    const stay = computeStayDates({
+      startDate: '2026-08-27',
+      endDate: '2026-08-29',
+      startsAt: '2026-08-27T10:00:00+99:99',
+    });
+
+    expect(stay.openingTimeKnown).toBe(false);
+  });
+
   it('rejects an hour that does not exist', () => {
     const stay = computeStayDates({
       startDate: '2026-08-27',

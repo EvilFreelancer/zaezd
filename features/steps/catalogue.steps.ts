@@ -12,9 +12,11 @@ import type { ZaezdWorld } from '../support/world.ts';
 type RecordedEvent = {
   readonly id: number;
   readonly title: string;
+  readonly url: string | null;
   readonly start_date: string;
   readonly end_date: string;
   readonly starts_at: string | null;
+  readonly ends_at?: string | null;
   readonly city: string | null;
   readonly city_slug: string | null;
   readonly venue: string | null;
@@ -30,16 +32,24 @@ type RecordedEvent = {
  * scenarios will be rewired through the real normalizer when it lands.
  */
 function asEvent(recorded: RecordedEvent): CatalogueEvent {
-  const format =
-    recorded.format === 'online' || recorded.format === 'hybrid' ? recorded.format : 'offline';
+  // A format nobody has seen is not quietly rounded down to "offline": that would hide a
+  // change in the source behind a green suite.
+  if (recorded.format !== 'offline' && recorded.format !== 'online' && recorded.format !== 'hybrid') {
+    throw new Error(`The catalogue used an event format nobody has mapped: "${recorded.format}"`);
+  }
+
   return {
     id: recorded.id,
     title: recorded.title,
     startDate: recorded.start_date,
     endDate: recorded.end_date,
-    format,
+    format: recorded.format,
     topics: recorded.topics,
+    ...(recorded.url === null ? {} : { url: recorded.url }),
     ...(recorded.starts_at === null ? {} : { startsAt: recorded.starts_at }),
+    ...(recorded.ends_at === null || recorded.ends_at === undefined
+      ? {}
+      : { endsAt: recorded.ends_at }),
     ...(recorded.city === null ? {} : { city: recorded.city }),
     ...(recorded.city_slug === null ? {} : { citySlug: recorded.city_slug }),
     ...(recorded.venue === null ? {} : { venue: recorded.venue }),

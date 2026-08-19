@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { describeCoverage, selectEvents } from '../src/composer/selection.ts';
-import type { CatalogueEvent, ResolvedCity } from '../src/composer/types.ts';
+import type { CatalogueEvent, CityDirectory, ResolvedCity } from '../src/composer/types.ts';
 
 const MOSCOW: ResolvedCity = { title: 'Москва', slug: 'moscow' };
 
@@ -37,6 +37,52 @@ describe('selectEvents', () => {
     const result = narrow([event({ id: 1, format: 'online' })]);
 
     expect(result.skipped).toEqual([{ reason: 'online', events: [{ id: 1, title: 'Событие 1' }] }]);
+  });
+
+  it('keeps the link to a dropped event so the traveller can still open it', () => {
+    const result = narrow([
+      event({ id: 1, format: 'online', url: 'https://example.test/event' }),
+    ]);
+
+    expect(result.skipped[0]?.events[0]).toEqual({
+      id: 1,
+      title: 'Событие 1',
+      url: 'https://example.test/event',
+    });
+  });
+
+  it('builds no trip for an offline event the catalogue named no city for', () => {
+    const nowhere: CatalogueEvent = {
+      id: 1,
+      title: 'Где-то',
+      startDate: '2026-09-10',
+      endDate: '2026-09-10',
+      format: 'offline',
+      topics: ['ai'],
+    };
+
+    expect(narrow([nowhere]).skipped[0]?.reason).toBe('no-destination');
+  });
+
+  it('drops one self-contradictory record without losing the rest of the catalogue', () => {
+    const result = narrow([
+      event({ id: 1, startDate: '2026-09-10', endDate: '2026-08-01' }),
+      event({ id: 2, startDate: '2026-09-11', endDate: '2026-09-11' }),
+    ]);
+
+    expect(result.primary?.id).toBe(2);
+  });
+
+  it('names the self-contradictory record instead of swallowing it', () => {
+    const result = narrow([
+      event({ id: 1, startDate: '2026-09-10', endDate: '2026-08-01' }),
+      event({ id: 2, startDate: '2026-09-11', endDate: '2026-09-11' }),
+    ]);
+
+    expect(result.skipped).toContainEqual({
+      reason: 'unreadable',
+      events: [{ id: 1, title: 'Событие 1' }],
+    });
   });
 
   it('builds no trip for an event in the origin city', () => {
@@ -139,7 +185,17 @@ describe('selectEvents', () => {
     expect(1 + result.alternatives.length).toBe(5);
   });
 
-  it('computes only the first offer and leaves the rest uncomputed', () => {
+  it('accounts for every event past the cap instead of truncating the list silently', () => {
+    const many = Array.from({ length: 9 }, (_, index) =>
+      event({ id: index + 1, startDate: `2026-09-0${index + 1}`, endDate: `2026-09-0${index + 1}` }),
+    );
+
+    const overflow = narrow(many).skipped.find((note) => note.reason === 'over-the-cap');
+
+    expect(overflow?.events.map((item) => item.id)).toEqual([6, 7, 8, 9]);
+  });
+
+  it('puts the nearest event first and the rest behind it', () => {
     const result = narrow([
       event({ id: 1, startDate: '2026-09-01', endDate: '2026-09-01' }),
       event({ id: 2, startDate: '2026-09-02', endDate: '2026-09-02' }),
@@ -182,56 +238,69 @@ describe('selectEvents', () => {
     expect(narrow([event({ id: 1, format: 'hybrid' })]).primary?.id).toBe(1);
   });
 
-  it('answers identically every time it is asked', () => {
-    const events = [event({ id: 2 }), event({ id: 1, format: 'online' })];
+  it('answers the same whichever order the catalogue happened to list the events in', () => {
+    const events = [
+      event({ id: 2, startDate: '2026-09-01', endDate: '2026-09-01' }),
+      event({ id: 1, startDate: '2026-09-01', endDate: '2026-09-01' }),
+      event({ id: 3, startDate: '2026-09-01', endDate: '2026-09-01' }),
+    ];
 
-    expect(narrow(events)).toEqual(narrow(events));
+    const forwards = narrow(events);
+    const backwards = narrow([...events].reverse());
+
+    expect(forwards).toEqual(backwards);
+    expect(forwards.primary?.id).toBe(1);
   });
 });
 
 describe('describeCoverage', () => {
-  const directory = {
-    total: 21,
-    online_count: 40,
-    items: [
-      { slug: 'moscow', title: 'Москва', events_count: 162 },
-      { slug: 'spb', title: 'Санкт-Петербург', events_count: 58 },
-      { slug: 'kazan', title: 'Казань', events_count: 4 },
-      { slug: 'perm', title: 'Пермь', events_count: 0 },
+  const directory: CityDirectory = {
+    citiesTotal: 21,
+    onlineEvents: 40,
+    cities: [
+      { slug: 'moscow', title: 'Москва', upcomingEvents: 162 },
+      { slug: 'spb', title: 'Санкт-Петербург', upcomingEvents: 58 },
+      { slug: 'kazan', title: 'Казань', upcomingEvents: 4 },
+      { slug: 'perm', title: 'Пермь', upcomingEvents: 0 },
     ],
   };
 
+  const whole: CityDirectory = { ...directory, citiesTotal: 4 };
+
   it('reports how many cities the catalogue lists at all', () => {
-    expect(describeCoverage(directory).citiesListed).toBe(21);
+    expect(describeCoverage(whole).citiesListed).toBe(4);
   });
 
   it('reports how many of them actually have events', () => {
-    expect(describeCoverage(directory).citiesWithEvents).toBe(3);
+    expect(describeCoverage(whole).citiesWithEvents).toBe(3);
   });
 
   it('names the busiest cities in order', () => {
-    expect(describeCoverage(directory).busiestCities.map((city) => city.title)).toEqual([
+    expect(describeCoverage(whole).busiestCities.map((city) => city.title)).toEqual([
       'Москва',
       'Санкт-Петербург',
       'Казань',
     ]);
   });
 
-  it('counts the events with no city at all', () => {
-    expect(describeCoverage(directory).onlineEvents).toBe(40);
+  it('counts the upcoming events that have no city to travel to', () => {
+    expect(describeCoverage(whole).onlineEvents).toBe(40);
   });
 
-  it('counts cities on the whole directory, not on the page it was handed', () => {
-    // A paginated answer lists five cities out of twenty-one; calling that the catalogue
-    // would understate the coverage by a factor of four.
-    const page = { total: 21, online_count: 40, items: directory.items.slice(0, 2) };
+  it('does not let one page of the directory speak for the whole catalogue', () => {
+    // Four cities out of twenty-one: saying "3 cities have events" here would be a fifth of
+    // the truth dressed up as all of it.
+    const coverage = describeCoverage(directory);
 
-    expect(describeCoverage(page)).toMatchObject({ citiesListed: 21, pageIsPartial: true });
+    expect(coverage).toEqual({
+      citiesListed: 21,
+      busiestCities: [],
+      onlineEvents: 40,
+      countsCoverWholeDirectory: false,
+    });
   });
 
-  it('does not claim a partial page when the whole directory arrived', () => {
-    expect(describeCoverage({ total: 4, online_count: 0, items: directory.items }).pageIsPartial).toBe(
-      false,
-    );
+  it('says plainly when its counts do cover the whole directory', () => {
+    expect(describeCoverage(whole).countsCoverWholeDirectory).toBe(true);
   });
 });

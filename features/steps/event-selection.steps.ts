@@ -1,38 +1,49 @@
 import assert from 'node:assert/strict';
 import { Given, Then, When } from '@cucumber/cucumber';
-import type { CatalogueEvent, ResolvedCity } from '../../src/composer/types.ts';
+import type {
+  CatalogueEvent,
+  CityDirectory,
+  CoverageNote,
+  ResolvedCity,
+  SkipReason,
+} from '../../src/composer/types.ts';
 import {
   describeCoverage,
   selectEvents,
-  type CityDirectory,
-  type CoverageNote,
   type SelectionResult,
-  type SkipReason,
 } from '../../src/composer/selection.ts';
 import { loadPayload } from '../support/fixtures.ts';
 import type { ZaezdWorld } from '../support/world.ts';
 
 const SLUGS: Readonly<Record<string, string>> = { Москва: 'moscow', Казань: 'kazan' };
 
-let inventedId = 900;
+/**
+ * Scenario state lives on the World, never in a module variable: Cucumber builds one World
+ * per scenario, and that is what keeps two scenarios from leaning on each other.
+ */
+function nextId(world: ZaezdWorld): number {
+  const used = world.scratch.has('inventedIds') ? world.recall<number>('inventedIds') : 900;
+  world.remember('inventedIds', used + 1);
+  return used + 1;
+}
 
 function invent(
+  world: ZaezdWorld,
   title: string,
-  city: string,
+  city: string | undefined,
   from: string,
   to: string,
   opens?: string,
 ): CatalogueEvent {
-  inventedId += 1;
   return {
-    id: inventedId,
+    id: nextId(world),
     title,
+    url: `https://example.test/${encodeURIComponent(title)}`,
     startDate: from,
     endDate: to,
     format: 'offline',
     topics: ['ai'],
-    city,
-    citySlug: SLUGS[city] ?? city.toLowerCase(),
+    ...(city === undefined ? {} : { city, citySlug: SLUGS[city] ?? city.toLowerCase() }),
     ...(opens === undefined ? {} : { startsAt: `${from}T${opens}:00+03:00` }),
   };
 }
@@ -40,6 +51,25 @@ function invent(
 function addEvent(world: ZaezdWorld, event: CatalogueEvent): void {
   const events = world.scratch.has('events') ? world.recall<CatalogueEvent[]>('events') : [];
   world.remember('events', [...events, event]);
+}
+
+/** The directory as the catalogue writes it, before anything renames its fields. */
+type RecordedDirectory = {
+  readonly total: number;
+  readonly online_count: number;
+  readonly items: readonly { slug: string; title: string; events_count: number }[];
+};
+
+function asDirectory(recorded: RecordedDirectory): CityDirectory {
+  return {
+    citiesTotal: recorded.total,
+    onlineEvents: recorded.online_count,
+    cities: recorded.items.map((city) => ({
+      slug: city.slug,
+      title: city.title,
+      upcomingEvents: city.events_count,
+    })),
+  };
 }
 
 Given('the traveller sets out from {word}', function (this: ZaezdWorld, city: string) {
@@ -58,7 +88,14 @@ Given('the traveller can only travel until {word}', function (this: ZaezdWorld, 
 Given(
   'an event {string} in {word} running from {word} to {word}',
   function (this: ZaezdWorld, title: string, city: string, from: string, to: string) {
-    addEvent(this, invent(title, city, from, to));
+    addEvent(this, invent(this, title, city, from, to));
+  },
+);
+
+Given(
+  'an event {string} with no city running from {word} to {word}',
+  function (this: ZaezdWorld, title: string, from: string, to: string) {
+    addEvent(this, invent(this, title, undefined, from, to));
   },
 );
 
@@ -72,12 +109,19 @@ Given(
     to: string,
     opens: string,
   ) {
-    addEvent(this, invent(title, city, from, to, opens));
+    addEvent(this, invent(this, title, city, from, to, opens));
   },
 );
 
 Given('the recorded directory of catalogue cities', function (this: ZaezdWorld) {
-  this.remember('directory', loadPayload<CityDirectory>('confcal/list-cities.json'));
+  this.remember('directory', asDirectory(loadPayload<RecordedDirectory>('confcal/list-cities.json')));
+});
+
+Given('one page of the recorded directory of catalogue cities', function (this: ZaezdWorld) {
+  this.remember(
+    'directory',
+    asDirectory(loadPayload<RecordedDirectory>('confcal/list-cities-page-2.json')),
+  );
 });
 
 function narrow(world: ZaezdWorld): SelectionResult {
@@ -93,9 +137,16 @@ When('the events are narrowed down', function (this: ZaezdWorld) {
   this.remember('selection', narrow(this));
 });
 
-When('the events are narrowed down twice', function (this: ZaezdWorld) {
-  this.remember('selections', [narrow(this), narrow(this)]);
-});
+When(
+  'the events are narrowed down, and narrowed down again in the opposite order',
+  function (this: ZaezdWorld) {
+    const events = this.recall<CatalogueEvent[]>('events');
+    const first = narrow(this);
+    this.remember('events', [...events].reverse());
+    const second = narrow(this);
+    this.remember('selections', [first, second]);
+  },
+);
 
 When('the coverage is described', function (this: ZaezdWorld) {
   this.remember('coverage', describeCoverage(this.recall<CityDirectory>('directory')));
@@ -120,17 +171,14 @@ Then('one event is chosen for the full trip', function (this: ZaezdWorld) {
   assert.ok(this.recall<SelectionResult>('selection').primary !== undefined);
 });
 
-Then('the rest are listed without being computed', function (this: ZaezdWorld) {
-  const { primary, alternatives } = this.recall<SelectionResult>('selection');
-  assert.ok(alternatives.length > 0, 'the recorded catalogue should offer more than one event');
-  assert.ok(alternatives.every((event) => event.id !== primary?.id));
-});
-
 const REASONS: Readonly<Record<string, SkipReason>> = {
   'are online and need no travel': 'online',
   'are already in Москва': 'origin-city',
-  'have already started': 'unreachable',
+  'name no city to travel to': 'no-destination',
+  'can no longer be reached in time': 'unreachable',
   'fall outside the requested dates': 'outside-window',
+  'contradict themselves': 'unreadable',
+  'did not fit on the shortlist': 'over-the-cap',
 };
 
 Then(
@@ -168,9 +216,13 @@ Then('it names {word} as the city with the most events', function (this: ZaezdWo
   assert.equal(this.recall<CoverageNote>('coverage').busiestCities[0]?.title, city);
 });
 
-Then(
-  'it counts {int} upcoming events with no city at all',
-  function (this: ZaezdWorld, count: number) {
-    assert.equal(this.recall<CoverageNote>('coverage').onlineEvents, count);
-  },
-);
+Then('it counts {int} upcoming online events', function (this: ZaezdWorld, count: number) {
+  assert.equal(this.recall<CoverageNote>('coverage').onlineEvents, count);
+});
+
+Then('it admits the counts cover only part of the directory', function (this: ZaezdWorld) {
+  const coverage = this.recall<CoverageNote>('coverage');
+  assert.equal(coverage.countsCoverWholeDirectory, false);
+  assert.equal(coverage.citiesWithEvents, undefined);
+  assert.deepEqual(coverage.busiestCities, []);
+});

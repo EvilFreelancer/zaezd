@@ -43,10 +43,20 @@ both go into `search_hotels` verbatim as `check_in` and `check_out`.
 ## Event selection, `selection.ts`
 
 Applied in order: drop `format: "online"` (they go to a separate "no travel needed" list),
-drop events in the origin city, drop events whose `start_date` has passed or falls outside
-`dateTo`, sort by date proximity, keep at most five candidates, assemble only the first.
-The other four are listed without computation. "Passed" is judged against a reference date
-passed in as an argument, never against the wall clock, otherwise the tests rot on their own.
+drop offline events with no city at all (there is nowhere to send anyone), drop events in the
+origin city, drop events outside the requested dates, drop events that can no longer be
+reached, drop records that contradict themselves, sort by date proximity with the catalogue id
+as the tie-break, keep at most five candidates, assemble only the first.
+
+"Can no longer be reached" is judged on the arrival day from `dates.ts`, not on `start_date`:
+an event opening tomorrow morning wants the traveller in town tonight and a hotel cannot be
+booked for yesterday. The reference day arrives as an argument, never from the wall clock,
+otherwise the tests rot on their own.
+
+Every dropped event is reported with a reason and its link, including the ones that were fine
+but fell past the cap. A silently truncated list reads as "that is all there is", which is a
+different and false statement. One self-contradictory record is dropped on its own rather than
+taking the whole catalogue down with it.
 
 ## Hotel ranking, `hotels.ts`
 
@@ -54,6 +64,14 @@ When the venue was geocoded precisely, rank by straight-line distance to it; the
 of every hotel arrive in the listing. When it was not, rank by price and rating and suppress
 the distance block entirely rather than ranking against a city centre and calling it
 proximity.
+
+## Coverage, `selection.ts`
+
+The catalogue's own directory, reported without flattery: how many cities it lists, how many of
+those have upcoming events, the busiest few, and how many upcoming events have no city at all.
+Counts are claimed only for what was actually seen - a single page of a paginated directory
+cannot say how many cities have events, and reporting a page figure as a catalogue figure
+understates the coverage by whatever the page size happened to be.
 
 ## Feasibility, `feasibility.ts`
 

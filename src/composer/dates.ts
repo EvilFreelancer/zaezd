@@ -44,7 +44,7 @@ const DATE_PATTERN = /^(\d{4})-(\d{2})-(\d{2})$/;
  * asks for the instant separately and demands one.
  */
 const TIME_PATTERN =
-  /^\d{4}-\d{2}-\d{2}[T ](\d{2}):(\d{2})(?::(\d{2})(?:\.\d+)?)?(?:Z|[+-]\d{2}:?\d{2})?$/;
+  /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])[T ](\d{2}):(\d{2})(?::(\d{2})(?:\.\d+)?)?(?:Z|[+-](?:0\d|1[0-4]):?[0-5]\d)?$/;
 
 /** Days since the epoch. Calendar arithmetic runs in UTC so daylight saving cannot shift it. */
 function toEpochDay(value: IsoDate): number {
@@ -85,7 +85,9 @@ function localMinutes(value: IsoDateTime | undefined): number | undefined {
   const parts = TIME_PATTERN.exec(value);
   if (parts === null) return undefined;
 
-  const [, hours, minutes, seconds] = parts as unknown as [
+  const [, , , hours, minutes, seconds] = parts as unknown as [
+    string,
+    string,
     string,
     string,
     string,
