@@ -265,6 +265,132 @@ button:focus-visible,
   color: var(--late);
 }
 
+/* The request row ----------------------------------------------------------------------- */
+
+.ask {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: end;
+  margin: 0 0 1rem;
+  padding: 0.75rem;
+  background: var(--tutu-surface-raised);
+  border: 1px solid var(--tutu-border);
+  border-radius: var(--radius);
+}
+
+.ask__field {
+  display: grid;
+  gap: 0.2rem;
+  flex: 1 1 12rem;
+  min-width: 0;
+}
+
+.ask__field--narrow {
+  flex: 0 1 8rem;
+}
+
+.ask__label {
+  color: var(--tutu-text-secondary);
+  font-size: 0.8rem;
+}
+
+.ask__input {
+  width: 100%;
+  padding: 0.5rem 0.65rem;
+  font: inherit;
+  color: var(--tutu-text);
+  background: var(--tutu-surface);
+  border: 1px solid var(--tutu-border);
+  border-radius: 10px;
+}
+
+.ask__input:focus-visible {
+  outline: 2px solid var(--tutu-brand);
+  outline-offset: 1px;
+}
+
+.ask__go {
+  padding: 0.55rem 1.1rem;
+  font: inherit;
+  font-weight: 600;
+  color: #fff;
+  background: var(--tutu-brand);
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.ask__go:hover {
+  background: var(--tutu-brand-pressed);
+}
+
+.ask__go:focus-visible {
+  outline: 2px solid var(--tutu-text);
+  outline-offset: 2px;
+}
+
+/* Where to sleep ------------------------------------------------------------------------ */
+
+.hotels {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.hotels__title {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.hotels__list {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hotels__pick {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.1rem 0.75rem;
+  width: 100%;
+  padding: 0.5rem 0.65rem;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  background: var(--tutu-surface-raised);
+  border: 1px solid var(--tutu-border);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.hotels__pick:hover {
+  border-color: var(--tutu-brand);
+}
+
+.hotels__pick:focus-visible {
+  outline: 2px solid var(--tutu-brand);
+  outline-offset: 1px;
+}
+
+.hotels__name {
+  overflow-wrap: anywhere;
+}
+
+.hotels__price {
+  grid-row: 1;
+  grid-column: 2;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.hotels__where {
+  grid-column: 1 / -1;
+  color: var(--tutu-text-secondary);
+  font-size: 0.85rem;
+}
+
 /* Waiting and failing ------------------------------------------------------------------- */
 
 /* Inside a host the board is empty until the host forwards a result. Say so, do not sit blank. */
@@ -521,5 +647,28 @@ button:focus-visible,
   /* Clear of the back gesture, which lives at the bottom edge on a phone. */
   .card__checkout {
     margin-bottom: 0.25rem;
+  }
+
+  /*
+   * Two fields per row on a phone. Stacked, the request row runs to 220 px and pushes the trip
+   * itself below the fold, which is the one thing this screen must not do.
+   */
+  .ask {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.6rem;
+  }
+
+  .ask__field {
+    min-width: 0;
+  }
+
+  .ask__label {
+    font-size: 0.75rem;
+  }
+
+  .ask__go {
+    align-self: end;
+    height: 2.5rem;
   }
 }

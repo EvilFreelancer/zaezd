@@ -216,7 +216,7 @@ function packageCard(
             )}`,
           }),
       budgetBar(variant.cost),
-      el('button', { class: 'card__checkout', type: 'button', 'data-variant': variant.id, text: 'Как оплатить' }),
+      el('button', { class: 'card__checkout', type: 'button', 'data-variant': variant.id, text: 'Собрать ссылки на оплату' }),
     ],
   );
 
@@ -300,6 +300,45 @@ function timeline(trip: TripResult): HTMLElement | undefined {
 
 function coverageNote(trip: TripResult): HTMLElement {
   return el('p', { class: 'coverage', text: coverageSentence(trip.coverage) });
+}
+
+/**
+ * The shortlist, in words.
+ *
+ * It carries what the map carries - which hotel, how far, how much - so a refused tile server
+ * costs the picture and nothing else. It is also the only way to read the shortlist on a phone
+ * held in one hand.
+ */
+function hotelList(trip: TripResult, onSelect: (variantId: string) => void): HTMLElement | undefined {
+  const seen = new Set<string>();
+  const rows: HTMLElement[] = [];
+
+  for (const item of trip.packages) {
+    const ranked = item.variant.hotel;
+    if (ranked === undefined || seen.has(ranked.hotel.id)) continue;
+    seen.add(ranked.hotel.id);
+
+    const distance =
+      ranked.distanceM === undefined
+        ? 'расстояние не посчитано'
+        : `${(ranked.distanceM / 1000).toFixed(1)} км до площадки`;
+
+    const row = el('li', { class: 'hotels__item' }, [
+      el('button', { class: 'hotels__pick', type: 'button', 'data-variant': item.variant.id }, [
+        el('span', { class: 'hotels__name', text: ranked.hotel.name }),
+        el('span', { class: 'hotels__where', text: distance }),
+        el('span', { class: 'hotels__price', text: money(ranked.hotel.price) }),
+      ]),
+    ]);
+    row.addEventListener('click', () => onSelect(item.variant.id));
+    rows.push(row);
+  }
+
+  if (rows.length === 0) return undefined;
+  return el('section', { class: 'hotels', 'aria-label': 'Отели рядом с площадкой' }, [
+    el('h2', { class: 'hotels__title', text: 'Где спать' }),
+    el('ul', { class: 'hotels__list' }, rows),
+  ]);
 }
 
 function alternativesList(trip: TripResult): HTMLElement | undefined {
@@ -417,6 +456,7 @@ export function renderTrip(
       el('div', { class: 'board__left' }, [cards, timeline(trip)]),
       el('div', { class: 'board__right' }, [
         el('div', { class: 'map', id: 'map', 'aria-label': 'Карта города события' }),
+        hotelList(trip, onSelect),
         forecastBlock(trip),
       ]),
     ]),

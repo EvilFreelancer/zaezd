@@ -110,6 +110,7 @@ Then('the trip beside the answer carries nothing a board cannot draw', function 
 });
 
 const ASSETS = {
+  tokens: '/vendor/kite/tutu-core.css',
   styles: '/styles.css',
   script: '/boot.js',
   leaflet: '/vendor/leaflet/leaflet.css',

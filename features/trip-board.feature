@@ -43,3 +43,23 @@ Feature: The public link opens on a trip, not on a form
     When the page is rendered for an agent
     Then the trip is not embedded in the page
     And the page loads the same renderer as the web page
+
+  Scenario: The request that produced the screen is on the screen, ready to be changed
+    Given the recorded trip is ready to show
+    When the page is rendered
+    Then the page carries the asked-for topic and origin, filled in
+
+  Scenario: A city the traveller cannot leave from is not offered as a starting point
+    Given the recorded trip is ready to show
+    When the page is rendered
+    Then the origin can be typed rather than picked from a list
+
+  Scenario: A reader without scripting also learns where they would sleep
+    Given the recorded trip is ready to show
+    When the page is rendered
+    Then the fallback names the hotel and its price
+
+  Scenario: The screen loads the colours it says it uses
+    Given the recorded trip is ready to show
+    When the page is rendered
+    Then the page loads the vendored Tutu tokens before its own styles

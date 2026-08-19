@@ -21,10 +21,13 @@ import type { RankedHotel, TripResult } from './types.ts';
  */
 type LatLng = readonly [number, number];
 
-type Marker = { addTo(map: LeafletMap): Marker };
+type Marker = {
+  addTo(map: LeafletMap): Marker;
+  on(event: 'click', handler: () => void): Marker;
+};
 
 type TileLayer = {
-  on(event: 'tileerror', handler: () => void): TileLayer;
+  on(event: 'tileerror' | 'tileload', handler: () => void): TileLayer;
   addTo(map: LeafletMap): TileLayer;
 };
 
@@ -64,11 +67,18 @@ function pin(colour: string, label?: string): unknown {
   });
 }
 
+/** How long a tile server gets before the map is replaced by the list under it. */
+const TILE_PATIENCE_MS = 6000;
+
 let map: LeafletMap | undefined;
 /** The element the current map was built on; a re-render replaces it with a fresh one. */
 let mapHost: HTMLElement | undefined;
 
-export function drawMap(trip: TripResult | undefined, selectedId?: string): void {
+export function drawMap(
+  trip: TripResult | undefined,
+  selectedId?: string,
+  onSelect?: (variantId: string) => void,
+): void {
   const container = document.getElementById('map');
   if (container === null || trip === undefined) return;
 
@@ -104,16 +114,27 @@ export function drawMap(trip: TripResult | undefined, selectedId?: string): void
   if (map === undefined) {
     map = L.map(container, { attributionControl: true, scrollWheelZoom: false });
     mapHost = container;
+    let drewSomething = false;
     L.tileLayer('https://tile.openstreetmap.de/{z}/{x}/{y}.png', {
       maxZoom: 18,
       // Public tiles require attribution; this is a condition of use, not decoration.
       attribution: '© OpenStreetMap',
     })
+      .on('tileload', () => {
+        drewSomething = true;
+      })
       .on('tileerror', () => {
-        // Tiles refused. Better no map than a grey rectangle pretending to be one.
+        // Tiles refused. Better no map than a grey rectangle pretending to be one; the hotels
+        // are listed under it either way, so hiding this loses the picture and nothing else.
         container.hidden = true;
       })
       .addTo(map);
+
+    // A tile server that is merely slow never fires an error, and a half-drawn map is the
+    // same grey rectangle by another route. Venue wi-fi does this for a living.
+    window.setTimeout(() => {
+      if (!drewSomething) container.hidden = true;
+    }, TILE_PATIENCE_MS);
   }
 
   for (const layer of Object.values(map._layers ?? {})) {
@@ -133,19 +154,36 @@ export function drawMap(trip: TripResult | undefined, selectedId?: string): void
     const chosen = trip.packages.some(
       (item) => item.variant.id === selectedId && item.variant.hotel?.hotel.id === entry.hotel.id,
     );
-    L.marker([lat, lng], {
+    const marker = L.marker([lat, lng], {
       icon: pin(chosen ? '#f76b3b' : '#8b87ff', entry.hotel.name),
       title: entry.hotel.name,
     }).addTo(map);
+
+    // A marker is a way into its card: clicking it selects the package that sleeps there.
+    const owner = trip.packages.find((item) => item.variant.hotel?.hotel.id === entry.hotel.id);
+    if (owner !== undefined && onSelect !== undefined) {
+      marker.on('click', () => onSelect(owner.variant.id));
+    }
     points.push([lat, lng]);
   }
 
   if (points.length > 1) map.fitBounds(points, { padding: [32, 32] });
   else map.setView(centre, 13);
 
-  // Inside an iframe the container is often sized after the map is built.
+  // The container is laid out after the map is built, and inside a host it is resized again
+  // when the panel changes. Leaflet caches the size it saw, so it has to be told each time,
+  // or the tiles cover a rectangle that no longer matches the box.
   const built = map;
   requestAnimationFrame(() => built.invalidateSize());
+  watch(container, () => built.invalidateSize());
+}
+
+let watching: ResizeObserver | undefined;
+
+function watch(container: HTMLElement, onResize: () => void): void {
+  watching?.disconnect();
+  watching = new ResizeObserver(onResize);
+  watching.observe(container);
 }
 
 export function resizeMap(): void {

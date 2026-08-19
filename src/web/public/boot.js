@@ -34,7 +34,7 @@ function show(trip) {
         selectedId = undefined;
     if (board !== null)
         renderTrip(board, trip, { onSelect: select });
-    drawMap(trip, selectedId);
+    drawMap(trip, selectedId, select);
 }
 /** One line where the board would be. Used while waiting on a host and when one fails. */
 function say(message) {
@@ -55,7 +55,7 @@ function select(variantId) {
         card.setAttribute('aria-pressed', mine ? 'true' : 'false');
         card.classList.toggle('card--chosen', mine);
     }
-    drawMap(current, selectedId);
+    drawMap(current, selectedId, select);
 }
 const embedded = document.getElementById('trip-data');
 if (embedded !== null) {

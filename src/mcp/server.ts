@@ -646,6 +646,7 @@ export function createMcpServer(app: App, publicUrl: string): McpServer {
             channel: 'app',
             title: 'Заезд',
             assets: {
+              tokens: `${publicUrl}/vendor/kite/tutu-core.css`,
               styles: `${publicUrl}/styles.css`,
               script: `${publicUrl}/boot.js`,
               leaflet: `${publicUrl}/vendor/leaflet/leaflet.css`,

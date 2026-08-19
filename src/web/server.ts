@@ -28,6 +28,7 @@ const PUBLIC_DIR = resolve(import.meta.dirname, 'public');
 const MAX_BODY_BYTES = 16_384;
 
 const ASSETS = {
+  tokens: '/vendor/kite/tutu-core.css',
   styles: '/styles.css',
   script: '/boot.js',
   leaflet: '/vendor/leaflet/leaflet.css',

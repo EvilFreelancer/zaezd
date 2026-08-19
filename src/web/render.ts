@@ -20,7 +20,13 @@ export type ShellOptions = {
   readonly trip?: TripResult;
   /** A one-line explanation shown when there is no trip to show at all. */
   readonly problem?: string;
-  readonly assets: { readonly styles: string; readonly script: string; readonly leaflet: string };
+  readonly assets: {
+    /** The vendored Kite token extract. Every colour on the screen reads from it. */
+    readonly tokens: string;
+    readonly styles: string;
+    readonly script: string;
+    readonly leaflet: string;
+  };
 };
 
 const ENTITIES: Readonly<Record<string, string>> = {
@@ -65,9 +71,17 @@ function fallbackText(
   const lines = [
     `${trip.event.event.title}, ${trip.event.event.city ?? 'город не указан'}`,
     `${trip.stay?.checkIn ?? ''} - ${trip.stay?.checkOut ?? ''}`,
-    ...trip.packages.map(
-      (item) => `${item.variant.cost.total} ${item.variant.cost.currency}, вариант ${item.variant.id}`,
-    ),
+    ...trip.packages.map((item) => {
+      const hotel = item.variant.hotel?.hotel;
+      const stay =
+        hotel === undefined
+          ? 'без отеля'
+          : `${hotel.name}, ${hotel.price.amount} ${hotel.price.currency} за проживание`;
+      return (
+        `${item.rules.join(' + ')}: ${item.variant.cost.total} ${item.variant.cost.currency}, ` +
+        `${item.variant.outbound.mode} туда, ${stay}, ${item.variant.back.mode} обратно`
+      );
+    }),
   ];
   return lines.map((line) => escapeHtml(line)).join('<br />');
 }
@@ -115,6 +129,30 @@ export function renderShell(options: ShellOptions): string {
       ? ''
       : `\n    <script type="application/json" id="trip-data">${escapeJson(boardPayload(options.trip))}</script>`;
 
+  // The request that produced this screen, ready to be changed. Server-rendered and plain GET,
+  // so it works before any script runs and shares its result as a link. A host gets no form:
+  // inside one, asking again is the agent's job, not the page's.
+  const request = options.trip?.request;
+  const ask =
+    options.channel !== 'web'
+      ? ''
+      : `
+    <form class="ask" method="get" action="/" role="search">
+      <label class="ask__field">
+        <span class="ask__label">Тема</span>
+        <input class="ask__input" name="topics" value="${escapeHtml((request?.topics ?? []).join(', '))}" placeholder="ai, data" />
+      </label>
+      <label class="ask__field">
+        <span class="ask__label">Откуда</span>
+        <input class="ask__input" name="origin" value="${escapeHtml(request?.origin ?? '')}" placeholder="Москва" />
+      </label>
+      <label class="ask__field ask__field--narrow">
+        <span class="ask__label">Бюджет, ₽</span>
+        <input class="ask__input" name="budget" type="number" min="0" step="1000" value="${request?.budget ?? ''}" placeholder="30000" />
+      </label>
+      <button class="ask__go" type="submit">Собрать поездку</button>
+    </form>`;
+
   // In a host the bridge is fetched here rather than by the board's own dynamic import, so the
   // transport is up before the host sends its first notification. On the web it is never fetched.
   const bridge =
@@ -128,11 +166,12 @@ export function renderShell(options: ShellOptions): string {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>${escapeHtml(options.title)}</title>
+    <link rel="stylesheet" href="${options.assets.tokens}" />
     <link rel="stylesheet" href="${options.assets.leaflet}" />
     <link rel="stylesheet" href="${options.assets.styles}" />
   </head>
   <body data-channel="${options.channel}">
-    <noscript class="fallback">${fallbackText(options.trip, options.problem, options.channel)}</noscript>
+    <noscript class="fallback">${fallbackText(options.trip, options.problem, options.channel)}</noscript>${ask}
     <div id="board" class="board" aria-live="polite"></div>${data}
     <script src="${options.assets.leaflet.replace('.css', '.js')}"></script>${bridge}
     <script type="module" src="${options.assets.script}"></script>

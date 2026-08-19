@@ -11,6 +11,7 @@ import { replayHttp, type HttpFetch } from '../../src/enrich/http.ts';
 import type { ZaezdWorld } from '../support/world.ts';
 
 const ASSETS = {
+  tokens: '/vendor/kite/tutu-core.css',
   styles: '/styles.css',
   script: '/boot.js',
   leaflet: '/vendor/leaflet/leaflet.css',
@@ -129,4 +130,33 @@ Then('the page explains what went wrong', function (this: ZaezdWorld) {
 
 Then('the page loads the same renderer as the web page', function (this: ZaezdWorld) {
   assert.ok(html(this).includes(ASSETS.script));
+});
+
+Then('the page carries the asked-for topic and origin, filled in', function (this: ZaezdWorld) {
+  const page = html(this);
+  assert.match(page, /<form[^>]*class="ask"/, 'there is nothing to change the request with');
+  assert.match(page, /name="topics"[^>]*value="ai"/, 'the topic is not filled in');
+  assert.match(page, /name="origin"[^>]*value="Москва"/, 'the origin is not filled in');
+});
+
+Then('the origin can be typed rather than picked from a list', function (this: ZaezdWorld) {
+  // A dropdown of cities would be a promise that we know which ones work. We do not.
+  assert.ok(!/<select[^>]*name="origin"/.test(html(this)), 'the origin pretends to be a closed list');
+});
+
+Then('the fallback names the hotel and its price', function (this: ZaezdWorld) {
+  const noscript = /<noscript class="fallback">([\s\S]*?)<\/noscript>/.exec(html(this));
+  assert.ok(noscript !== null, 'there is no fallback at all');
+  assert.match(noscript[1] ?? '', /Номера у Невы/, 'the fallback does not name the hotel');
+});
+
+Then('the page loads the vendored Tutu tokens before its own styles', function (this: ZaezdWorld) {
+  const page = html(this);
+  const tokens = page.indexOf(ASSETS.tokens);
+  const styles = page.indexOf(ASSETS.styles);
+
+  // Without this sheet every --tutu-* falls back to nothing and the whole palette quietly
+  // disappears, which is exactly how it shipped before anyone measured a computed colour.
+  assert.ok(tokens !== -1, 'the token sheet is not loaded at all');
+  assert.ok(tokens < styles, 'our styles would be read before the tokens they use');
 });
