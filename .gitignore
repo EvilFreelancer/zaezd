@@ -12,3 +12,4 @@ docker-compose.override.yaml
 research/
 test-results/
 playwright-report/
+.playwright-mcp/
