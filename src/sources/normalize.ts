@@ -309,6 +309,7 @@ const HOTEL = z.object({
   alias: nullable(z.string()),
   location: nullable(z.object({ lat: nullable(z.number()), lng: nullable(z.number()) })),
   photos: nullable(z.array(z.string())),
+  checkout_ref: nullable(z.record(z.string(), z.unknown())),
   best_offer: z.object({ price: MONEY, price_basis: z.string().optional() }),
 });
 
@@ -360,6 +361,9 @@ export function normalizeHotels(payload: unknown): HotelSearch {
       ...(text(hotel.alias) === undefined ? {} : { alias: text(hotel.alias) as string }),
       ...(location === undefined ? {} : { location }),
       ...(text(hotel.photos?.[0]) === undefined ? {} : { photo: text(hotel.photos?.[0]) as string }),
+      ...(hotel.checkout_ref === null || hotel.checkout_ref === undefined
+        ? {}
+        : { checkoutRef: hotel.checkout_ref }),
     };
   });
 

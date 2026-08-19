@@ -140,6 +140,8 @@ export type HotelOffer = {
   readonly price: Money;
   readonly photo?: string;
   readonly alias?: string;
+  /** Tutu's own handle on this listing row, carried verbatim and never rebuilt from parts. */
+  readonly checkoutRef?: Readonly<Record<string, unknown>>;
 };
 
 export type TransportMode = 'avia' | 'railway' | 'bus' | 'etrain';
