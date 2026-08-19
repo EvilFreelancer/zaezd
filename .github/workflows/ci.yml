@@ -18,8 +18,8 @@ jobs:
 
       - run: npm ci
 
-      # Rule-tree sync, typecheck of the Node and the browser tree, lint, executable Gherkin
-      # specifications and unit tests. Everything runs offline against fixtures/.
+      # Rule-tree sync, typecheck of the Node and the browser tree, lint, the browser build,
+      # executable Gherkin specifications and unit tests. All offline against fixtures/.
       - run: npm run verify
 
       - run: npm run build

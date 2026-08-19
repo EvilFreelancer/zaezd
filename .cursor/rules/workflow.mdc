@@ -36,7 +36,9 @@ Triggered by "фича", "feature", "добавить", "implement", "add a use 
    the units are undertested.
 6. **Run the full gate.**
    `npm run verify` (rules check, typecheck of both the Node and the browser tree, lint,
-   bdd, unit tests). Everything green, no exceptions.
+   the browser build, bdd, unit tests). Everything green, no exceptions. The browser tree is
+   compiled before the specifications because one of them asks the server for the compiled
+   `boot.js`, and on a clean clone that file does not exist yet.
 7. **Update the documentation in the same change.**
    README, `docs/user-guide.md`, `docs/architecture.md`, `docs/decisions.md`.
    Never document a capability that does not exist in the code: the repository is graded
