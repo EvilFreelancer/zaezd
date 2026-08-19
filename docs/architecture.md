@@ -47,6 +47,7 @@ flowchart TB
   mcp --> build
   mcp --> checkout
   web --> tripid
+  web --> mcp
   mcp --> tripid
 
   build --> confcal
@@ -62,7 +63,7 @@ flowchart TB
   tutu --> normalize
   confcal --> cache
   tutu --> cache
-  cache --> replay
+  replay --> cache
 
   normalize --> core
 ```

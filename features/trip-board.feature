@@ -63,3 +63,9 @@ Feature: The public link opens on a trip, not on a form
     Given the recorded trip is ready to show
     When the page is rendered
     Then the page loads the vendored Tutu tokens before its own styles
+
+  Scenario: Asking again names the stages instead of going blank
+    Given the recorded trip is ready to show
+    When the trip is assembled with the stages announced
+    Then the stages arrive before the trip does
+    And the trip that arrives is the one the page would have embedded

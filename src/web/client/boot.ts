@@ -73,6 +73,56 @@ if (embedded !== null) {
 }
 
 /**
+ * Asking again, without going blank.
+ *
+ * The form works as a plain GET without any of this, which is what a reader with no scripting
+ * gets. With scripting the same question goes over the stream, so the stages are named while
+ * the sources answer instead of leaving an empty page for the ten seconds a cold search takes.
+ */
+const STAGE_TEXTS: Readonly<Record<string, string>> = {
+  events: 'События найдены, считаем транспорт…',
+  transport: 'Транспорт рассчитан, подбираем отели…',
+  hotels: 'Отели подобраны, уточняем детали…',
+  context: 'Собираем поездку…',
+  done: 'Готово',
+};
+
+function ask(form: HTMLFormElement): void {
+  const query = new URLSearchParams(new FormData(form) as unknown as Record<string, string>);
+  // An empty field is not an answer; leaving it in makes a shared link carry `budget=`.
+  for (const [name, value] of [...query]) if (value.trim() === '') query.delete(name);
+  history.replaceState(null, '', `/?${query.toString()}`);
+  say('Ищем события…');
+
+  const stream = new EventSource(`/api/trip?${query.toString()}`);
+  stream.addEventListener('stage', (event) => {
+    const { stage } = JSON.parse((event as MessageEvent<string>).data) as { stage: string };
+    if (stage !== 'done') say(STAGE_TEXTS[stage] ?? 'Собираем поездку…');
+  });
+  stream.addEventListener('trip', (event) => {
+    stream.close();
+    show(JSON.parse((event as MessageEvent<string>).data) as TripResult);
+  });
+  stream.addEventListener('failed', (event) => {
+    stream.close();
+    const { message } = JSON.parse((event as MessageEvent<string>).data) as { message: string };
+    say(`Источник не ответил: ${message}`);
+  });
+  stream.addEventListener('error', () => {
+    stream.close();
+    say('Связь с сервером прервалась, попробуйте ещё раз.');
+  });
+}
+
+const form = document.querySelector('form.ask');
+if (form instanceof HTMLFormElement && channel === 'web') {
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    ask(form);
+  });
+}
+
+/**
  * Who builds the payment links.
  *
  * On our own origin the page asks its own server. Inside a host the page has no origin to ask -

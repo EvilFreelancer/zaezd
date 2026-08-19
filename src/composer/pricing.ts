@@ -71,7 +71,9 @@ export function parseEventPrice(raw: string | undefined, isFree?: boolean): Even
     return { kind: 'exact', amount: toNumber(only), currency: RUB, text };
   }
 
-  if (saysFree && !saysPaid && amounts.length === 0) return { kind: 'free', text };
+  // Free, but only for somebody, is not free for the person asking. The catalogue never says
+  // whose price it wrote, so a qualified "бесплатно" stays unread and is shown verbatim.
+  if (saysFree && !saysPaid && !qualified && amounts.length === 0) return { kind: 'free', text };
 
   return { kind: 'unparsed', text };
 }

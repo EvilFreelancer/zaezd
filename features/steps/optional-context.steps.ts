@@ -132,6 +132,11 @@ Then('the venue is known only as a city', function (this: ZaezdWorld) {
   assert.equal(this.recall<VenueLocation>('venue').precision, 'city');
 });
 
+Then('the venue is placed roughly, by its name', function (this: ZaezdWorld) {
+  // A geocoder recognising a company is not the catalogue giving an address.
+  assert.equal(this.recall<VenueLocation>('venue').precision, 'approximate');
+});
+
 Then('the venue is not located', function (this: ZaezdWorld) {
   assert.equal(this.recall<VenueLocation>('venue').precision, 'unknown');
 });

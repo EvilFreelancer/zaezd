@@ -15,6 +15,7 @@ export type GeoPoint = { readonly lat: number; readonly lng: number };
 
 export type VenueLocation =
   | ({ readonly precision: 'exact' } & GeoPoint)
+  | ({ readonly precision: 'approximate' } & GeoPoint)
   | ({ readonly precision: 'city' } & GeoPoint)
   | { readonly precision: 'unknown' };
 

@@ -64,8 +64,10 @@ export function addressPart(venue: string): string | undefined {
 /**
  * Where the event is, and how sure anyone is about it.
  *
- * Three rungs, in order: the venue as written, the address pulled out of it, the city. Only the
- * first two ever produce `exact`; the city is `city` and draws no marker and claims no distance.
+ * Three rungs, in order: the venue as written, the address pulled out of it, the city. `exact`
+ * is earned only by a string that actually carries a street and a number - a geocoder happily
+ * resolves a company name to its head office, and a head office is not a conference hall. A
+ * name hit is `approximate`: worth saying, not worth a pin or a walking time.
  */
 export async function locateVenue(
   options: GeoOptions,
@@ -73,10 +75,12 @@ export async function locateVenue(
   city: string | undefined,
 ): Promise<VenueLocation> {
   if (venue !== undefined && city !== undefined) {
-    const precise = await lookUp(options, `${venue}, ${city}`);
-    if (precise !== undefined) return { precision: 'exact', ...precise };
-
     const address = addressPart(venue);
+    const precise = await lookUp(options, `${venue}, ${city}`);
+    if (precise !== undefined) {
+      return { precision: address === undefined ? 'approximate' : 'exact', ...precise };
+    }
+
     if (address !== undefined) {
       const byAddress = await lookUp(options, `${address}, ${city}`);
       if (byAddress !== undefined) return { precision: 'exact', ...byAddress };

@@ -61,7 +61,7 @@ function pin(colour: string, label?: string): unknown {
       `<svg viewBox="0 0 24 32" width="24" height="32" aria-hidden="true">` +
       `<path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 20 12 20s12-11 12-20C24 5.4 18.6 0 12 0z" fill="${colour}"/>` +
       `<circle cx="12" cy="12" r="5" fill="#fff"/></svg>` +
-      (label === undefined ? '' : `<span class="pin__label">${label}</span>`),
+      (label === undefined ? '' : `<span class="pin__label">${escapeHtml(label)}</span>`),
     iconSize: [24, 32],
     iconAnchor: [12, 32],
   });
@@ -69,6 +69,24 @@ function pin(colour: string, label?: string): unknown {
 
 /** How long a tile server gets before the map is replaced by the list under it. */
 const TILE_PATIENCE_MS = 6000;
+
+const ENTITIES: Readonly<Record<string, string>> = {
+  '&': '&amp;',
+  '<': '&lt;',
+  '>': '&gt;',
+  '"': '&quot;',
+  "'": '&#39;',
+};
+
+/**
+ * A hotel name is third-party input here as much as anywhere else.
+ *
+ * The marker is built as an HTML string, which is the one place on this screen where a name
+ * from Tutu is not passed through `textContent`.
+ */
+function escapeHtml(value: string): string {
+  return value.replaceAll(/[&<>"']/g, (char) => ENTITIES[char] as string);
+}
 
 let map: LeafletMap | undefined;
 /** The element the current map was built on; a re-render replaces it with a fresh one. */

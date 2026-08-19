@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { Given, Then, When } from '@cucumber/cucumber';
-import { renderShell, type Channel } from '../../src/web/render.ts';
+import { boardPayload, renderShell, type Channel } from '../../src/web/render.ts';
+import { createApp } from '../../src/app.ts';
 import { buildTrip, type TripResult } from '../../src/composer/build-trip.ts';
 import { TtlCache } from '../../src/sources/cache.ts';
 import { confcalClient } from '../../src/sources/confcal.ts';
@@ -159,4 +160,32 @@ Then('the page loads the vendored Tutu tokens before its own styles', function (
   // disappears, which is exactly how it shipped before anyone measured a computed colour.
   assert.ok(tokens !== -1, 'the token sheet is not loaded at all');
   assert.ok(tokens < styles, 'our styles would be read before the tokens they use');
+});
+
+When('the trip is assembled with the stages announced', async function (this: ZaezdWorld) {
+  const seen: string[] = [];
+  const app = createApp({ mode: 'replay' });
+  const trip = await app.assemble({ topics: ['ai'], origin: 'Москва', adults: 1 }, (stage) =>
+    seen.push(stage),
+  );
+
+  this.remember('stages', seen);
+  this.remember('streamed', trip);
+});
+
+Then('the stages arrive before the trip does', function (this: ZaezdWorld) {
+  const stages = this.recall<readonly string[]>('stages');
+  // Named steps, not a spinner: the traveller is told the events are found while the transport
+  // is still being priced.
+  assert.ok(stages.includes('events'), `no events stage among ${JSON.stringify(stages)}`);
+  assert.ok(stages.includes('transport'), 'nobody said the transport was priced');
+  assert.equal(stages.at(-1), 'done', 'the stream never says it finished');
+});
+
+Then('the trip that arrives is the one the page would have embedded', function (this: ZaezdWorld) {
+  assert.equal(
+    JSON.stringify(boardPayload(this.recall('streamed'))),
+    JSON.stringify(boardPayload(this.recall('trip'))),
+    'the streamed trip and the embedded trip are different trips',
+  );
 });

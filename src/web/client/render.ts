@@ -161,9 +161,20 @@ function budgetBar(cost: TripCost): HTMLElement {
         ? `, остаток ${money({ amount: cost.budget.remaining, currency: cost.currency })}`
         : `, превышение ${money({ amount: -cost.budget.remaining, currency: cost.currency })}`;
 
+  // What the catalogue wrote about the price of taking part, verbatim, when it was not a number
+  // anyone could sum. Leaving it out would make a total look like the whole cost of the trip.
+  const eventPrice =
+    cost.eventPriceExcluded && cost.eventPriceText !== undefined
+      ? el('p', {
+          class: 'budget__event',
+          text: `Участие в сумму не входит, каталог написал: ${cost.eventPriceText}`,
+        })
+      : undefined;
+
   return el('div', { class: 'budget' }, [
     el('div', { class: 'bar' }, segments),
     el('p', { class: 'budget__sum', text: `${sum} = ${totalText}${left}` }),
+    eventPrice,
   ]);
 }
 
@@ -246,9 +257,11 @@ function eventHeader(trip: TripResult, card: NonNullable<TripResult['event']>): 
   const venue =
     card.venueLocation.precision === 'exact'
       ? event.venue
-      : card.venueLocation.precision === 'city'
-        ? 'точный адрес каталог не отдал, показан центр города'
-        : 'адрес площадки неизвестен';
+      : card.venueLocation.precision === 'approximate'
+        ? `${event.venue ?? 'площадка'} - адреса каталог не дал, точка найдена по названию`
+        : card.venueLocation.precision === 'city'
+          ? 'точный адрес каталог не отдал, показан центр города'
+          : 'адрес площадки неизвестен';
 
   return el('header', { class: 'event' }, [
     el('h1', { class: 'event__title' }, [

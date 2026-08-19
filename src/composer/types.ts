@@ -123,6 +123,11 @@ export type GeoPoint = {
  */
 export type VenueLocation =
   | ({ readonly precision: 'exact' } & GeoPoint)
+  /**
+   * A geocoder recognised the name and returned a point, but nobody wrote an address. Good
+   * enough to say roughly where, never good enough to claim a distance or draw a venue pin.
+   */
+  | ({ readonly precision: 'approximate' } & GeoPoint)
   | ({ readonly precision: 'city' } & GeoPoint)
   | { readonly precision: 'unknown' };
 

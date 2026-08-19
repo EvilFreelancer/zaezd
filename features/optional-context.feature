@@ -15,7 +15,9 @@ Feature: The optional context, and the silence when there is none
 
   Scenario: A company name resolves to something plausible, and precision is not claimed for it
     When the venue "YADRO" in Санкт-Петербург is located
-    Then the venue is located precisely
+    And the walk from a hotel is measured
+    Then the venue is placed roughly, by its name
+    And no walking time is given
 
   Scenario: A venue the catalogue never named is not located at all
     When a venue nobody named in Санкт-Петербург is located

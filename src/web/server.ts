@@ -18,7 +18,7 @@ import { decodeTripId, encodeTripId, TripIdError } from '../composer/trip-id.ts'
 import { toList, toNumber, toText } from '../sources/arguments.ts';
 import type { TripRequest } from '../composer/types.ts';
 import type { TripResult } from '../composer/build-trip.ts';
-import { renderShell } from './render.ts';
+import { boardPayload, renderShell } from './render.ts';
 import { createMcpServer } from '../mcp/server.ts';
 import { StreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/streamableHttp.js';
 
@@ -170,7 +170,7 @@ async function stream(app: App, res: ServerResponse, request: TripRequest): Prom
 
   try {
     const trip = await app.assemble(request, (stage) => send('stage', { stage }));
-    send('trip', trip);
+    send('trip', boardPayload(trip));
   } catch (error) {
     send('failed', { message: error instanceof Error ? error.message : 'источник не ответил' });
   }

@@ -92,35 +92,31 @@ in a real browser, and named in the feature only as an outcome the renderer prod
 No `@skip` and no `@wip` in committed specs. A scenario is red only while the task that
 introduced it is in progress; a task is not done until every scenario is green.
 
-## Use cases waiting to be specified
+## The acceptance surface
 
-Written as `.feature` files when the matching layer is built, in this order. This list is
-the acceptance surface of the product, derived from `specs/10-proverka.md` and
-`specs/04-kompozitor.md`; keep it in sync as specs are written.
+Every use case below is specified in `features/` and runs offline. The list is the acceptance
+surface of the product, derived from `specs/10-proverka.md` and `specs/04-kompozitor.md`.
 
-| File | Behaviour it owns |
+| Feature file | What it holds |
 |---|---|
-| `stay-dates.feature` | a morning event pulls check-in one day earlier; the catalogue gives no end time, so a night is added; zero nights is a same-day trip without a hotel |
-| `event-selection.feature` | an online event and an event in the origin city each produce their own "no trip" message; candidates are capped at five and only the first is computed |
-| `feasibility.feature` | arriving later than one hour before the opening is flagged and cannot be the primary package; an unknown start time relaxes the check and says so |
-| `trip-price.feature` | the total carries both legs plus the whole-stay hotel price; the hotel price is never multiplied by nights; a free-text price is shown and excluded; "от N" makes the total a lower bound |
-| `hotel-choice.feature` | hotels rank by distance only when the venue was geocoded precisely, otherwise by price and rating with no distance shown |
-| `three-packages.feature` | two rules picking one variant emit fewer cards, not duplicates; an over-budget result still renders with an overflow badge |
-| `checkout-labels.feature` | a button is labelled from the `kind` Tutu actually returned; an unknown `kind` gets the most cautious label |
-| `source-payloads.feature` | a field the source omitted stays missing all the way to the screen; a partial transport-mode failure never becomes "there is no such transport" |
-| `recorded-sources.feature` | equivalent argument shapes (`["ai","data"]`, `"[\\"ai\\",\\"data\\"]"`, `"ai, data"`) resolve to one request; a repeated request returns the same answer without touching the source |
-| `event-catalogue.feature` | a lost catalogue session recovers once and the answer still arrives; a catalogue outage is an error screen with a reason |
-| `transport-and-stay.feature` | a transport outage assembles no package and says why; a hotel outage leaves packages without a hotel, labelled as such |
-| `working-days.feature` | a night departure and a midday departure burn a different number of working days |
-| `venue-location.feature` | a venue that could not be geocoded gets no precise marker and says so; walking time is absent rather than guessed |
-| `weather-window.feature` | a date beyond the forecast window shows no weather block instead of history |
-| `trip-assembly.feature` | the whole trip assembles from recordings; a failing optional source hides its block and leaves the trip intact |
-| `checkout-links.feature` | a hotel link built without a room rate's `offerpack_hash` is not called a cart; a failed live call falls back to the search page, labelled honestly |
-| `public-trip-link.feature` | a public link reopens the trip and says when it was computed; a corrupted, over-long or unknown-version identifier is refused with a readable reason |
-| `trip-web-app.feature` | the public link opens on a computed trip, not a form; stages appear as they become ready |
-| `trip-board.feature` | the card carries its six things and the arithmetic under the budget bar adds up; every empty state has its own text |
-| `agent-tools.feature` | an agent gets the event, the packages and the coverage note; arguments in any of the three shapes are accepted |
-| `trip-widget.feature` | the widget receives its result, recomputes through the host, and opens a checkout link outside |
+| `stay-dates.feature` | check-in, check-out, nights, unknown start time |
+| `event-selection.feature` | online, origin city, the window, the cap of five |
+| `feasibility.feature` | arrival before the opening, departure after the end, unknown times |
+| `trip-price.feature` | both legs plus the whole-stay hotel, event price as text, budget |
+| `hotel-choice.feature` | ranking by distance, and by price when there is no distance |
+| `three-packages.feature` | the three rules and their collapse to fewer cards |
+| `checkout-labels.feature`, `checkout-links.feature` | the label a `kind` earns, and the live build |
+| `source-payloads.feature`, `source-clients.feature` | normalization, sessions, one call at a time |
+| `recorded-sources.feature` | cache keys, equivalent argument shapes, replay |
+| `optional-context.feature` | geocoding, walking time, working days, forecast |
+| `trip-assembly.feature` | the whole product on recordings, including failing sources |
+| `trip-board.feature` | the screen: naming, escaping, stages, the request row |
+| `agent-tools.feature` | the three tools, their honesty, the published address |
+| `trip-widget.feature` | the `ui://` resource and what travels beside the answer |
+| `harness.feature` | the tooling's own self-check |
+
+A behaviour that is not in this table and not in a `.feature` file does not exist. When one is
+added, add its row here in the same change.
 
 ## References
 

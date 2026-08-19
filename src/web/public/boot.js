@@ -62,6 +62,51 @@ if (embedded !== null) {
     show(JSON.parse(embedded.textContent ?? '{}'));
 }
 /**
+ * Asking again, without going blank.
+ *
+ * The form works as a plain GET without any of this, which is what a reader with no scripting
+ * gets. With scripting the same question goes over the stream, so the stages are named while
+ * the sources answer instead of leaving an empty page for the ten seconds a cold search takes.
+ */
+const STAGE_TEXTS = {
+    events: 'События найдены, считаем транспорт…',
+    transport: 'Транспорт рассчитан, подбираем отели…',
+    hotels: 'Отели подобраны, уточняем детали…',
+    context: 'Собираем поездку…',
+    done: 'Готово',
+};
+function ask(form) {
+    const query = new URLSearchParams(new FormData(form));
+    history.replaceState(null, '', `/?${query.toString()}`);
+    say('Ищем события…');
+    const stream = new EventSource(`/api/trip?${query.toString()}`);
+    stream.addEventListener('stage', (event) => {
+        const { stage } = JSON.parse(event.data);
+        if (stage !== 'done')
+            say(STAGE_TEXTS[stage] ?? 'Собираем поездку…');
+    });
+    stream.addEventListener('trip', (event) => {
+        stream.close();
+        show(JSON.parse(event.data));
+    });
+    stream.addEventListener('failed', (event) => {
+        stream.close();
+        const { message } = JSON.parse(event.data);
+        say(`Источник не ответил: ${message}`);
+    });
+    stream.addEventListener('error', () => {
+        stream.close();
+        say('Связь с сервером прервалась, попробуйте ещё раз.');
+    });
+}
+const form = document.querySelector('form.ask');
+if (form instanceof HTMLFormElement && channel === 'web') {
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        ask(form);
+    });
+}
+/**
  * Who builds the payment links.
  *
  * On our own origin the page asks its own server. Inside a host the page has no origin to ask -
