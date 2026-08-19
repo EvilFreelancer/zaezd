@@ -19,6 +19,8 @@ import { toList, toNumber, toText } from '../sources/arguments.ts';
 import type { TripRequest } from '../composer/types.ts';
 import type { TripResult } from '../composer/build-trip.ts';
 import { renderShell } from './render.ts';
+import { createMcpServer } from '../mcp/server.ts';
+import { StreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/streamableHttp.js';
 
 const PUBLIC_DIR = resolve(import.meta.dirname, 'public');
 
@@ -189,9 +191,75 @@ async function checkout(app: App, res: ServerResponse, body: unknown): Promise<v
   json(res, 200, await app.checkout(trip, chosen.variant));
 }
 
-export function createHandler(app: App) {
+/**
+ * One MCP server and one transport per request, no session store.
+ *
+ * `trip_id` encodes the request, so nothing about a conversation needs remembering between
+ * calls, and a restart costs an agent nothing. The transport closes with the response it
+ * served, which is why it cannot be built once and reused: a stateless transport is done
+ * after one exchange.
+ */
+async function handleMcp(
+  app: App,
+  publicUrl: string,
+  req: IncomingMessage,
+  res: ServerResponse,
+): Promise<void> {
+  // Stateless means there is nothing for a stream to deliver later and no session to delete:
+  // every answer belongs to the request that asked for it. Saying so beats holding a socket
+  // open forever on a GET and reporting a successful close of a session that never existed.
+  if (req.method !== 'POST') {
+    res.writeHead(405, { Allow: 'POST', 'Content-Type': 'application/json; charset=utf-8' });
+    res.end(
+      JSON.stringify({
+        jsonrpc: '2.0',
+        error: { code: -32000, message: 'Этот MCP-сервер без сессий, используйте POST' },
+        id: null,
+      }),
+    );
+    return;
+  }
+
+  // The transport would read the stream itself, without a ceiling. It arrives from strangers.
+  let body: unknown;
+  try {
+    body = await readBody(req);
+  } catch (error) {
+    res.writeHead(error instanceof RangeError ? 413 : 400, {
+      'Content-Type': 'application/json; charset=utf-8',
+    });
+    res.end(
+      JSON.stringify({
+        jsonrpc: '2.0',
+        error: { code: -32700, message: 'Запрос слишком большой или это не JSON' },
+        id: null,
+      }),
+    );
+    return;
+  }
+
+  const mcp = createMcpServer(app, publicUrl);
+  // No options at all is the SDK's stateless mode: no session id is minted, because there is
+  // no per-conversation state to key it to.
+  const transport = new StreamableHTTPServerTransport();
+
+  res.on('close', () => {
+    void transport.close();
+    void mcp.close();
+  });
+
+  await mcp.connect(transport as unknown as Parameters<typeof mcp.connect>[0]);
+  await transport.handleRequest(req, res, body);
+}
+
+export function createHandler(app: App, publicUrl = process.env['ZAEZD_PUBLIC_URL'] ?? 'http://localhost:8080') {
   return async function handle(req: IncomingMessage, res: ServerResponse): Promise<void> {
     const url = new URL(req.url ?? '/', 'http://localhost');
+
+    if (url.pathname === '/mcp') {
+      await handleMcp(app, publicUrl, req, res);
+      return;
+    }
 
     if (url.pathname === '/healthz') {
       json(res, 200, { status: 'ok', mode: app.mode, referenceDate: app.referenceDate });
@@ -249,8 +317,11 @@ export function publicLinkFor(request: TripRequest, baseUrl: string): string {
 }
 
 export function startServer(port: number, app: App = createApp()): Server {
+  const handler = createHandler(app);
   const server = createServer((req, res) => {
-    void createHandler(app)(req, res).catch(() => {
+    void handler(req, res).catch((error: unknown) => {
+      // A handler that throws is an operational event, not a user error: say what broke.
+      console.error(`${req.method} ${req.url} failed:`, error);
       if (!res.headersSent) res.writeHead(500, { 'Content-Type': 'text/plain' });
       res.end('Internal Server Error\n');
     });

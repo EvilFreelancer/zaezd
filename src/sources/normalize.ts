@@ -33,14 +33,24 @@ import type {
  * Written without parameter properties: the toolchain runs TypeScript through Node's native
  * type stripping, which only erases syntax and cannot generate assignments.
  */
+/**
+ * Why a source did not deliver, as a code rather than as a sentence.
+ *
+ * The sentence is written in English for whoever reads the logs; the traveller is shown a
+ * Russian one built from this code, so an operational detail never becomes product copy.
+ */
+export type SourceReason = 'timeout' | 'unreachable' | 'refused' | 'unreadable' | 'not-recorded';
+
 export class SourceError extends Error {
   readonly source: string;
+  readonly reason: SourceReason;
   readonly detail: unknown;
 
-  constructor(source: string, message: string, detail?: unknown) {
+  constructor(source: string, message: string, detail?: unknown, reason: SourceReason = 'unreadable') {
     super(`${source}: ${message}`);
     this.name = 'SourceError';
     this.source = source;
+    this.reason = reason;
     this.detail = detail;
   }
 }

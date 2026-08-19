@@ -64,18 +64,18 @@ describe('encodeTripId and decodeTripId', () => {
   });
 
   it('refuses a damaged link rather than half-reading it', () => {
-    expect(() => decodeTripId('v1.тут-мусор')).toThrow(/damaged|does not describe/);
+    expect(() => decodeTripId('v1.тут-мусор')).toThrow(/повреждена|не описывает поездку/);
   });
 
   it('refuses a link that decodes to something that is not a trip', () => {
     const id = `v1.${Buffer.from(JSON.stringify({ hello: 'world' }), 'utf8').toString('base64url')}`;
 
-    expect(() => decodeTripId(id)).toThrow(/does not describe a trip/);
+    expect(() => decodeTripId(id)).toThrow(/не описывает поездку/);
   });
 
   it('refuses a link longer than a link has any business being', () => {
     // It arrives in a URL from strangers; nobody gets to make the server parse a megabyte.
-    expect(() => decodeTripId(`v1.${'A'.repeat(1000)}`)).toThrow(/longer than/);
+    expect(() => decodeTripId(`v1.${'A'.repeat(1000)}`)).toThrow(/длиннее/);
   });
 
   it('says why it refused, so the screen can explain rather than shrug', () => {

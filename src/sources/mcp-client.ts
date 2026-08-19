@@ -80,6 +80,7 @@ export function httpTransport(options: HttpTransportOptions): McpTransport {
           options.source,
           timedOut ? `did not answer within ${options.timeoutMs} ms` : 'could not be reached',
           cause,
+          timedOut ? 'timeout' : 'unreachable',
         );
       }
 
@@ -88,7 +89,7 @@ export function httpTransport(options: HttpTransportOptions): McpTransport {
 
       const text = await response.text();
       if (!response.ok) {
-        throw new SourceError(options.source, `answered with HTTP ${response.status}`, text);
+        throw new SourceError(options.source, `answered with HTTP ${response.status}`, text, 'refused');
       }
 
       try {
@@ -132,12 +133,17 @@ export async function initializeSession(options: {
       signal: AbortSignal.timeout(options.timeoutMs),
     });
   } catch (cause) {
-    throw new SourceError(options.source, 'could not be reached to open a session', cause);
+    throw new SourceError(options.source, 'could not be reached to open a session', cause, 'unreachable');
   }
 
   await response.text();
   if (!response.ok) {
-    throw new SourceError(options.source, `refused a session with HTTP ${response.status}`);
+    throw new SourceError(
+      options.source,
+      `refused a session with HTTP ${response.status}`,
+      undefined,
+      'refused',
+    );
   }
   return response.headers.get('mcp-session-id') ?? undefined;
 }

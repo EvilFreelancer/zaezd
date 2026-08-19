@@ -150,7 +150,12 @@ export type TripResult = {
   readonly noTravelNeeded: readonly SkippedNote[];
   readonly coverage: CoverageNote;
   readonly notes: readonly string[];
-  readonly sourceNotes: readonly { readonly source: string; readonly what: string; readonly message: string }[];
+  readonly sourceNotes: readonly {
+    readonly source: string;
+    readonly what: string;
+    readonly reason: string;
+    readonly message: string;
+  }[];
   readonly emptyReason?: string;
   readonly workingDaysCounted: boolean;
   readonly forecast?: readonly DayForecast[];

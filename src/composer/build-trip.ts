@@ -31,7 +31,7 @@ import type {
 } from './types.ts';
 import type { ConfcalClient } from '../sources/confcal.ts';
 import type { TutuClient } from '../sources/tutu.ts';
-import { SourceError } from '../sources/normalize.ts';
+import { SourceError, type SourceReason } from '../sources/normalize.ts';
 import { loadCalendar, type CalendarOptions } from '../enrich/calendar.ts';
 import { locateVenue, walkingMinutes, type GeoOptions } from '../enrich/geo.ts';
 import { forecastFor, type DayForecast, type WeatherOptions } from '../enrich/weather.ts';
@@ -46,6 +46,9 @@ export type Stage = 'events' | 'transport' | 'hotels' | 'context' | 'done';
 export type SourceNote = {
   readonly source: string;
   readonly what: 'transport-out' | 'transport-back' | 'hotels' | 'catalogue';
+  /** Why it failed, as a code the delivery layer turns into a Russian sentence. */
+  readonly reason: SourceReason;
+  /** The English detail, for logs. The screen and the agent are shown the code instead. */
   readonly message: string;
 };
 
@@ -134,6 +137,7 @@ function noteFor(error: unknown, source: string, what: SourceNote['what']): Sour
   return {
     source,
     what,
+    reason: error instanceof SourceError ? error.reason : 'unreachable',
     message: error instanceof SourceError ? error.message : 'did not answer',
   };
 }

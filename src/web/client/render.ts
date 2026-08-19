@@ -18,6 +18,15 @@ import type {
   Feasibility,
   TripCost,
 } from './types.ts';
+import {
+  coverageSentence,
+  plural,
+  sourceNoteText,
+  EMPTY_REASONS,
+  MODE_NAMES,
+  NOTE_TEXTS,
+  RULE_NAMES,
+} from './copy.ts';
 
 const MONEY_SUFFIX: Readonly<Record<string, string>> = { RUB: '₽' };
 
@@ -72,44 +81,6 @@ function el(tag: string, attrs: Attrs = {}, children: Child | readonly Child[] =
   }
   return node;
 }
-
-const MODE_NAMES: Readonly<Record<string, string>> = {
-  avia: 'самолёт',
-  railway: 'поезд',
-  bus: 'автобус',
-  etrain: 'электричка',
-};
-
-const RULE_NAMES: Readonly<Record<string, string>> = {
-  cheapest: 'Дешевле всего',
-  'no-leave': 'Без отпуска',
-  fastest: 'Быстрее всего',
-};
-
-const EMPTY_REASONS: Readonly<Record<string, string>> = {
-  'catalogue-empty': 'Каталог не вернул ни одного события по этой теме.',
-  'all-online': 'Все события по этой теме проходят онлайн, ехать никуда не надо.',
-  'all-in-origin-city': 'Все события по этой теме уже в вашем городе.',
-  'all-unreachable': 'До всех ближайших событий уже не успеть.',
-  'all-outside-window': 'Все события выходят за выбранные даты.',
-  'all-without-destination': 'Каталог не назвал город ни у одного события.',
-  'all-unreadable': 'Записи каталога по этой теме противоречат сами себе.',
-  'nothing-left': 'После отбора не осталось ни одного варианта поездки.',
-};
-
-const NOTE_TEXTS: Readonly<Record<string, string>> = {
-  'no-feasible-variant': 'Ни один вариант не успевает к открытию. Показаны все, помеченными.',
-  'over-budget': 'В бюджет не влезает ни один вариант. Показан самый дешёвый.',
-  'budget-uncertain': 'Итог занижен, поэтому уложиться в бюджет не гарантировано.',
-  'no-working-day-data': 'Производственный календарь не ответил, карточка про отпуск не собрана.',
-};
-
-const SOURCE_TEXTS: Readonly<Record<string, string>> = {
-  'transport-out': 'Дорога туда не загрузилась',
-  'transport-back': 'Дорога обратно не загрузилась',
-  hotels: 'Отели не загрузились',
-  catalogue: 'Каталог событий не ответил',
-};
 
 function legLine(leg: Leg, feasibility: Feasibility, which: 'there' | 'back'): HTMLElement {
   const mode = MODE_NAMES[leg.mode] ?? leg.mode;
@@ -312,28 +283,8 @@ function timeline(trip: TripResult): HTMLElement | undefined {
   ]);
 }
 
-/**
- * Russian counts three ways, and "21 городов" is the kind of thing a judge notices in the first
- * five seconds. One helper, used everywhere a number meets a noun.
- */
-function plural(count: number, one: string, few: string, many: string): string {
-  const tens = count % 100;
-  if (tens >= 11 && tens <= 14) return many;
-  const ones = count % 10;
-  if (ones === 1) return one;
-  if (ones >= 2 && ones <= 4) return few;
-  return many;
-}
-
 function coverageNote(trip: TripResult): HTMLElement {
-  const coverage = trip.coverage;
-  const counted = coverage.countsCoverWholeDirectory && coverage.citiesWithEvents !== undefined;
-  const cities = `${coverage.citiesListed} ${plural(coverage.citiesListed, 'город', 'города', 'городов')}`;
-  const online = `${coverage.onlineEvents} ${plural(coverage.onlineEvents, 'событие', 'события', 'событий')}`;
-  const text = counted
-    ? `Каталог знает ${cities}, события есть в ${coverage.citiesWithEvents}. Ещё ${online} проходят онлайн.`
-    : `Каталог знает ${cities}. Счётчики показаны по одной странице справочника.`;
-  return el('p', { class: 'coverage', text });
+  return el('p', { class: 'coverage', text: coverageSentence(trip.coverage) });
 }
 
 function alternativesList(trip: TripResult): HTMLElement | undefined {
@@ -385,7 +336,7 @@ function skippedList(trip: TripResult): HTMLElement | undefined {
 function notices(trip: TripResult): HTMLElement | undefined {
   const items = [
     ...trip.notes.map((note) => NOTE_TEXTS[note]).filter(Boolean),
-    ...trip.sourceNotes.map((note) => `${SOURCE_TEXTS[note.what] ?? note.source}: ${note.message}`),
+    ...trip.sourceNotes.map(sourceNoteText),
     trip.forecast === undefined && trip.event !== undefined
       ? 'Прогноз погоды на эти даты недоступен, окно прогноза 16 дней.'
       : undefined,

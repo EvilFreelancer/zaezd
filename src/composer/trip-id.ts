@@ -73,7 +73,7 @@ export function encodeTripId(trip: EncodedTrip): string {
 
 export function decodeTripId(id: string): EncodedTrip {
   if (id.length > MAX_LENGTH) {
-    throw new TripIdError('too-long', `A trip link may not be longer than ${MAX_LENGTH} characters`);
+    throw new TripIdError('too-long', `Ссылка на поездку длиннее ${MAX_LENGTH} символов, столько мы не читаем`);
   }
 
   const dot = id.indexOf('.');
@@ -81,7 +81,7 @@ export function decodeTripId(id: string): EncodedTrip {
   if (version !== VERSION) {
     throw new TripIdError(
       'unknown-version',
-      `This link was made by a different version of Zaezd ("${version}")`,
+      `Эту ссылку сделала другая версия Заезда ("${version}"), соберите поездку заново`,
     );
   }
 
@@ -89,7 +89,7 @@ export function decodeTripId(id: string): EncodedTrip {
   try {
     wire = JSON.parse(Buffer.from(id.slice(dot + 1), 'base64url').toString('utf8'));
   } catch {
-    throw new TripIdError('malformed', 'This link is damaged and cannot be read');
+    throw new TripIdError('malformed', 'Ссылка повреждена, прочитать её не получилось');
   }
 
   const shaped = wire as Partial<Wire>;
@@ -99,7 +99,7 @@ export function decodeTripId(id: string): EncodedTrip {
     shaped.o === '' ||
     typeof shaped.a !== 'number'
   ) {
-    throw new TripIdError('malformed', 'This link does not describe a trip');
+    throw new TripIdError('malformed', 'Эта ссылка не описывает поездку');
   }
 
   return {

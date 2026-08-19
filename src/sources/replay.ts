@@ -64,6 +64,7 @@ export function loadRecordings(root = 'fixtures'): Recordings {
       'replay',
       `could not read ${manifestPath}; run npm run record to create it`,
       cause,
+      'not-recorded',
     );
   }
 
@@ -94,6 +95,7 @@ export function loadRecordings(root = 'fixtures'): Recordings {
           'replay',
           `has no recording of ${source}.${tool} with these arguments; run npm run record`,
           args,
+          'not-recorded',
         );
       }
       return stored.response.envelope ?? stored.response.body ?? stored.response;
@@ -106,6 +108,7 @@ export function loadRecordings(root = 'fixtures'): Recordings {
           'replay',
           `has no recording of ${source}.${tool} with these arguments; run npm run record`,
           args,
+          'not-recorded',
         );
       }
       return { status: stored.response.status ?? 200, body: stored.response.body };
