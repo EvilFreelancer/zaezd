@@ -1,23 +1,10 @@
 import assert from 'node:assert/strict';
 import { Given, Then, When } from '@cucumber/cucumber';
 import { parseEventPrice, priceTrip, type TripCost, type TripCostInput } from '../../src/composer/pricing.ts';
-import { loadPayload } from '../support/fixtures.ts';
 import type { ZaezdWorld } from '../support/world.ts';
+import type { RecordedHotel, RecordedVariant } from './tutu.steps.ts';
 
 const RUB = 'RUB';
-
-type RecordedVariant = {
-  readonly transport: string;
-  readonly price: { readonly amount: number; readonly currency: string };
-};
-
-type RecordedHotel = {
-  readonly name: string;
-  readonly best_offer: {
-    readonly price: { readonly amount: number; readonly currency: string };
-    readonly price_basis: string;
-  };
-};
 
 function draft(world: ZaezdWorld): Partial<TripCostInput> {
   return world.scratch.has('cost-input') ? world.recall<Partial<TripCostInput>>('cost-input') : {};
@@ -55,11 +42,6 @@ Given('the traveller has a budget of {float} ₽', function (this: ZaezdWorld, b
   extend(this, { budget });
 });
 
-Given('the recorded hotels in {word}', function (this: ZaezdWorld, city: string) {
-  const fixture = city === 'Екатеринбург' ? 'tutu/hotels-ekb.json' : 'tutu/hotels-kzn.json';
-  this.remember('hotels', loadPayload<{ hotels: RecordedHotel[] }>(fixture).hotels);
-});
-
 When('the trip is priced', function (this: ZaezdWorld) {
   const input = draft(this);
   this.remember('cost', priceTrip({ ...input, eventPrice: input.eventPrice ?? parseEventPrice(undefined) }));
@@ -68,7 +50,7 @@ When('the trip is priced', function (this: ZaezdWorld) {
 When('the cheapest recorded trip is priced', function (this: ZaezdWorld) {
   const there = cheapest(this.recall<RecordedVariant[]>('journeys:Москва->Екатеринбург'));
   const home = cheapest(this.recall<RecordedVariant[]>('journeys:Екатеринбург->Москва'));
-  const hotel = this.recall<RecordedHotel[]>('hotels')[0];
+  const hotel = this.recall<RecordedHotel[]>('recorded-hotels')[0];
   assert.ok(hotel !== undefined, 'the recorded listing has no hotels');
   assert.equal(hotel.best_offer.price_basis, 'stay_total');
 

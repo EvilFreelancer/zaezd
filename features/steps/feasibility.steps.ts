@@ -2,20 +2,13 @@ import assert from 'node:assert/strict';
 import { Given, Then, When } from '@cucumber/cucumber';
 import { checkFeasibility, type Feasibility } from '../../src/composer/feasibility.ts';
 import type { CatalogueEvent, IsoDateTime } from '../../src/composer/types.ts';
-import { loadPayload } from '../support/fixtures.ts';
 import type { ZaezdWorld } from '../support/world.ts';
+import type { RecordedVariant } from './tutu.steps.ts';
 
 type EventTiming = {
   startDate: string;
   endDate: string;
   startsAt?: IsoDateTime;
-};
-
-type RecordedVariant = {
-  readonly transport: string;
-  readonly departure_at: string;
-  readonly arrival_at: string;
-  readonly price: { readonly amount: number };
 };
 
 function timing(world: ZaezdWorld): EventTiming {
@@ -48,23 +41,6 @@ Given('the event is {string}', function (this: ZaezdWorld, title: string) {
     ...(event.startsAt === undefined ? {} : { startsAt: event.startsAt }),
   });
 });
-
-const RECORDED_JOURNEYS: Readonly<Record<string, string>> = {
-  'Москва->Екатеринбург': 'tutu/multitransport-msk-ekb-out.json',
-  'Екатеринбург->Москва': 'tutu/multitransport-ekb-msk-back.json',
-};
-
-Given(
-  'the recorded journeys from {word} to {word}',
-  function (this: ZaezdWorld, from: string, to: string) {
-    const fixture = RECORDED_JOURNEYS[`${from}->${to}`];
-    assert.ok(fixture !== undefined, `no recorded journeys from ${from} to ${to}`);
-
-    const { variants } = loadPayload<{ variants: RecordedVariant[] }>(fixture);
-    this.remember('variants', variants);
-    this.remember(`journeys:${from}->${to}`, variants);
-  },
-);
 
 When('the traveller arrives at {word}', function (this: ZaezdWorld, arrivalAt: string) {
   this.remember('feasibility', checkFeasibility({ event: timing(this), arrivalAt }));

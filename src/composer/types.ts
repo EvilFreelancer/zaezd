@@ -107,3 +107,37 @@ export type CoverageNote = {
   readonly onlineEvents: number;
   readonly countsCoverWholeDirectory: boolean;
 };
+
+/** A point on the map, as a source gave it. */
+export type GeoPoint = {
+  readonly lat: number;
+  readonly lng: number;
+};
+
+/**
+ * Where the event actually is, and how sure anyone is about it.
+ *
+ * The distinction is the product's, not the geocoder's. `city` means the geocoder answered but
+ * only with a city centre, which is a normal outcome for venue strings like "YADRO", and it is
+ * emphatically not a venue: no marker is drawn and no distance is claimed from it.
+ */
+export type VenueLocation =
+  | ({ readonly precision: 'exact' } & GeoPoint)
+  | ({ readonly precision: 'city' } & GeoPoint)
+  | { readonly precision: 'unknown' };
+
+/** One hotel from a Tutu listing, after normalization. */
+export type HotelOffer = {
+  readonly id: string;
+  readonly name: string;
+  readonly stars?: number;
+  readonly rating?: number;
+  readonly reviewCount?: number;
+  /** Tutu writes this as prose, usually "N м от центра". Shown as written, never parsed. */
+  readonly address?: string;
+  readonly location?: GeoPoint;
+  /** `price_basis: "stay_total"`. The whole stay, never per night. */
+  readonly price: Money;
+  readonly photo?: string;
+  readonly alias?: string;
+};
