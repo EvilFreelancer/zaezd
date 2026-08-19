@@ -1,0 +1,93 @@
+---
+description: "Trip board screen, states, honesty, Kite tokens, adaptivity"
+paths:
+  - "src/web/**/*.ts"
+  - "src/web/**/*.html"
+  - "src/web/**/*.css"
+---
+
+# Web UI: the trip board
+
+UX is worth 20 points, more than any other criterion, and this is the only screen. It also
+ships verbatim as the `ui://zaezd/trip-board` resource, so **one HTML serves both channels**.
+Full specification in `specs/05-interfeys.md`.
+
+## The first thirty seconds
+
+The public link opens on an already computed trip, never on an empty form. The input row
+sits on top, pre-filled. Chat, if it exists at all, is a side panel and never the main way
+to work.
+
+## Layout and card
+
+Header answers "where and why", cards answer "how and how much", the map answers "where
+exactly", the timeline answers "do I make it".
+
+A package card carries exactly six things: the selection rule name, the total participation
+price as one number, the outbound leg with transport type, number and buffer to the opening,
+the hotel with its name, whole-stay price and walking time to the venue, the return leg,
+and a budget bar broken into transport, stay and event with any overflow visible. Under the
+bar, one line of arithmetic that adds up:
+
+```
+поезд 2 090 ₽ + отель 12 800 ₽ + обратно 2 090 ₽ = 16 980 ₽, остаток 13 020 ₽
+```
+
+A variant flagged "arrives after the opening" renders grey and cannot be selected as the
+primary package.
+
+## Honesty in the interface
+
+- Prices are rendered exactly as they appear in the payload, without rounding.
+- A field the source did not return is shown as missing, never inferred.
+- A venue that was not geocoded precisely gets no marker at all; the map centres on the
+  city and a caption says the catalogue did not provide an address.
+- Button labels come from the actual checkout `kind` (`.claude/rules/mcp-layer.md`), so "Открыть
+  поиск, корзины не будет" is a label that really ships.
+- Catalogue coverage is stated plainly: live offline events exist in five or six cities,
+  and empty cities are not hidden.
+- Resolved geography is named back from `meta.resolved_geo`, including a homonym note when
+  `also_named[]` is present. Reviews are quoted verbatim with their date or not at all.
+
+## States, all of them
+
+The most common way a hackathon UI looks unfinished is missing states. All of these are
+implemented:
+
+- **Progressive load.** Stages, not a spinner: "события найдены", "транспорт рассчитан",
+  "отели загружаются". Cards appear as they become ready.
+- **Empty**, with a different text per cause: the event is online, the city has no offline
+  events on this topic, nothing makes the opening, the budget does not fit.
+- **Source error**, naming what failed and what fallback is shown.
+- **Stale snapshot**, with the snapshot time and a refresh button.
+- **Imprecise venue**, its own state because it happens often.
+
+## Map and timeline
+
+Destination city only. Venue as an anchor marker, hotels as price chips, the selected
+variant highlighted, clicking a marker selects its card. No cross-country route line: it
+destroys the scale at either zoom level. OpenStreetMap attribution is mandatory. Hotel
+photos from `cdn1.tu-tu.ru` render only if the domain is allowed by CSP, otherwise a
+placeholder, because broken images are worse than none.
+
+The timeline runs from departure to return and marks departure, arrival, event start, event
+end, return departure, return arrival, with the buffer as a coloured span. It shows
+feasibility better than the map does.
+
+## Style, adaptivity, accessibility
+
+Local Kite token extract (`ideas/ui-kit/`), product purple `#6f5df6`, not the slide
+`#816dff`. Do not pull the 384 KB `index.css` from a third-party CDN. Copying colours is
+not enough: hover, focus, loading and error states are what the score is made of. Follow
+the host theme; verify contrast on light.
+
+Three widths are checked: 360, 768, 1280. On mobile the cards come first, the map shrinks
+to 240-320 px, and the checkout button stays clear of the back gesture. Keyboard focus,
+contrast, long-name overflow and the absence of horizontal scroll are all verified before
+calling the screen done.
+
+## References
+
+`.claude/rules/mcp-layer.md`
+`.claude/rules/architecture.md`
+`.claude/rules/bdd-specs.md`

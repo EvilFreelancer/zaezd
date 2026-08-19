@@ -1,0 +1,5 @@
+{
+ "kind": "deeplink",
+ "checkout_url": "https://mtp-deeplink.tutu.ru/api/v1/deeplink/explicit/train?geo_mode=unified&departure_time=2026-09-05T01:15:00%2B03:00&departure_geo_point_id=2957765&arrival_geo_point_id=2961212&first_leg_route_number=206%D0%A5&fallback_to_vid=true&source=mcp&departure_geo_city_id=2657260&arrival_geo_city_id=2656873",
+ "purchase_url_note": "checkout_url is a Tutu deeplink that opens this train's seat-selection page; if the offer is gone it falls back to search. To mint the cart with exact seats instead, call again with the seat choice from `get_rail_seatmap` (`car_number` + `seat_numbers`) after the user confirms seats."
+}

@@ -1,0 +1,274 @@
+{
+ "offers": [
+  {
+   "offer_id": "cf6757af54d6556d32647b07bf2fc993",
+   "transport": "railway",
+   "price": {
+    "amount": 2090.93,
+    "currency": "RUB"
+   },
+   "duration_min": 785,
+   "carriers": [
+    "ФПК"
+   ],
+   "search_results_url": "https://www.tutu.ru/poezda/rasp_d.php?date=05.09.2026&nnst1=2000000&nnst2=2060615",
+   "segments_count": 1,
+   "checkout_url": "https://www.tutu.ru/poezda/order/?departure_st=2657260&arrival_st=2656873&dep_st=2000003&arr_st=2060500&tn=206%D0%A5&date=05.09.2026+01:15:00",
+   "departure_at": "2026-09-05T01:15:00+03:00",
+   "arrival_at": "2026-09-05T14:20:00+03:00",
+   "legs": [
+    {
+     "label": "outbound",
+     "from": "Москва — Казанский вокзал (2000003)",
+     "to": "Казань — Казань Пасс (2060500)",
+     "departure_at": "2026-09-05T01:15:00+03:00",
+     "arrival_at": "2026-09-05T14:20:00+03:00",
+     "duration_min": 785,
+     "segments": [
+      {
+       "from": "Москва — Казанский вокзал (2000003)",
+       "to": "Казань — Казань Пасс (2060500)",
+       "departure_at": "2026-09-05T01:15:00+03:00",
+       "arrival_at": "2026-09-05T14:20:00+03:00",
+       "duration_min": 785,
+       "carrier": "ФПК",
+       "voyage_no": "206Х",
+       "from_geo_point_id": 2957765,
+       "to_geo_point_id": 2961212
+      }
+     ]
+    }
+   ],
+   "checkout_ref": {
+    "transport": "railway",
+    "departure_city_id": 2657260,
+    "arrival_city_id": 2656873,
+    "departure_station_code": "2000003",
+    "arrival_station_code": "2060500",
+    "train_number": "206Х",
+    "departure_at": "2026-09-05T01:15:00+03:00",
+    "departure_geo_point_id": 2957765,
+    "arrival_geo_point_id": 2961212,
+    "offer_hash": "cf6757af54d6556d32647b07bf2fc993",
+    "segment_hash": "d1d9827d4a868641860c5d0434f17f32",
+    "search_id": "6FB59723-F3EC-491C-9CB7-CFF59008F4BA",
+    "result_id": "b0e54404-4867-5c7b-942a-deddcd72290b",
+    "card_id": "e5273202fc6756ff68194aa2d5a1821b"
+   },
+   "details_ref": {
+    "transport": "railway",
+    "source": "seats-gateway.seats-by-params",
+    "departure_station_code": "2000003",
+    "arrival_station_code": "2060500",
+    "train_number": "206Х",
+    "departure_at": "2026-09-05T01:15:00+03:00",
+    "price": {
+     "amount": 2090.93,
+     "currency": "RUB"
+    },
+    "title": "Поезд 206Х",
+    "carriers": [
+     "ФПК"
+    ],
+    "duration_min": 785,
+    "arrival_at": "2026-09-05T14:20:00+03:00",
+    "review_summary": {
+     "rating": 7.2,
+     "review_count": 120,
+     "label": "⭐ 7.2/10 · 120 отзывов",
+     "source": "offers-api.feedback",
+     "scope": "train",
+     "subject": "206Х",
+     "scale": 10,
+     "feedback_key": "206Х"
+    }
+   },
+   "review_summary": {
+    "rating": 7.2,
+    "review_count": 120,
+    "label": "⭐ 7.2/10 · 120 отзывов",
+    "source": "offers-api.feedback",
+    "scope": "train",
+    "subject": "206Х",
+    "scale": 10,
+    "feedback_key": "206Х"
+   },
+   "fares": {
+    "count": 18,
+    "price_from": 2090.93,
+    "price_to": 7320.82,
+    "currency": "RUB",
+    "refundable_count": 18,
+    "changeable_count": 0,
+    "seat_categories": {
+     "RESERVED_SEAT": {
+      "count": 16,
+      "price_from": 2090.93
+     },
+     "COMPARTMENT": {
+      "count": 2,
+      "price_from": 7320.82
+     }
+    }
+   }
+  },
+  {
+   "offer_id": "48e280ccc31c536dea1cb64d15597ef6",
+   "transport": "railway",
+   "price": {
+    "amount": 2507.51,
+    "currency": "RUB"
+   },
+   "duration_min": 754,
+   "carriers": [
+    "ФПК"
+   ],
+   "search_results_url": "https://www.tutu.ru/poezda/rasp_d.php?date=05.09.2026&nnst1=2000000&nnst2=2060615",
+   "segments_count": 1,
+   "checkout_url": "https://www.tutu.ru/poezda/order/?departure_st=2657260&arrival_st=2656873&dep_st=2000003&arr_st=2060500&tn=128%D0%9C&date=05.09.2026+19:16:00",
+   "departure_at": "2026-09-05T19:16:00+03:00",
+   "arrival_at": "2026-09-06T07:50:00+03:00",
+   "legs": [
+    {
+     "label": "outbound",
+     "from": "Москва — Казанский вокзал (2000003)",
+     "to": "Казань — Казань Пасс (2060500)",
+     "departure_at": "2026-09-05T19:16:00+03:00",
+     "arrival_at": "2026-09-06T07:50:00+03:00",
+     "duration_min": 754,
+     "segments": [
+      {
+       "from": "Москва — Казанский вокзал (2000003)",
+       "to": "Казань — Казань Пасс (2060500)",
+       "departure_at": "2026-09-05T19:16:00+03:00",
+       "arrival_at": "2026-09-06T07:50:00+03:00",
+       "duration_min": 754,
+       "carrier": "ФПК",
+       "voyage_no": "128М",
+       "from_geo_point_id": 2957765,
+       "to_geo_point_id": 2961212
+      }
+     ]
+    }
+   ],
+   "checkout_ref": {
+    "transport": "railway",
+    "departure_city_id": 2657260,
+    "arrival_city_id": 2656873,
+    "departure_station_code": "2000003",
+    "arrival_station_code": "2060500",
+    "train_number": "128М",
+    "departure_at": "2026-09-05T19:16:00+03:00",
+    "departure_geo_point_id": 2957765,
+    "arrival_geo_point_id": 2961212,
+    "offer_hash": "48e280ccc31c536dea1cb64d15597ef6",
+    "segment_hash": "2f2d7e8e6eb7b11fedd1558d12aed19e",
+    "search_id": "6FB59723-F3EC-491C-9CB7-CFF59008F4BA",
+    "result_id": "46aafca5-baae-522a-a296-1a174f24a13b",
+    "card_id": "2cdf29ff3c35d19772c49d81ee0db61c"
+   },
+   "details_ref": {
+    "transport": "railway",
+    "source": "seats-gateway.seats-by-params",
+    "departure_station_code": "2000003",
+    "arrival_station_code": "2060500",
+    "train_number": "128М",
+    "departure_at": "2026-09-05T19:16:00+03:00",
+    "price": {
+     "amount": 2507.51,
+     "currency": "RUB"
+    },
+    "title": "Поезд 128М",
+    "carriers": [
+     "ФПК"
+    ],
+    "duration_min": 754,
+    "arrival_at": "2026-09-06T07:50:00+03:00",
+    "review_summary": {
+     "rating": 7.2,
+     "review_count": 76,
+     "label": "⭐ 7.2/10 · 76 отзывов",
+     "source": "offers-api.feedback",
+     "scope": "train",
+     "subject": "128М",
+     "scale": 10,
+     "feedback_key": "128М"
+    }
+   },
+   "review_summary": {
+    "rating": 7.2,
+    "review_count": 76,
+    "label": "⭐ 7.2/10 · 76 отзывов",
+    "source": "offers-api.feedback",
+    "scope": "train",
+    "subject": "128М",
+    "scale": 10,
+    "feedback_key": "128М"
+   },
+   "fares": {
+    "count": 28,
+    "price_from": 2507.51,
+    "price_to": 14017.68,
+    "currency": "RUB",
+    "refundable_count": 23,
+    "changeable_count": 0,
+    "seat_categories": {
+     "SEDENTARY": {
+      "count": 2,
+      "price_from": 2507.51
+     },
+     "RESERVED_SEAT": {
+      "count": 8,
+      "price_from": 3462.49
+     },
+     "COMPARTMENT": {
+      "count": 16,
+      "price_from": 5056.98
+     },
+     "LUX": {
+      "count": 2,
+      "price_from": 14017.68
+     }
+    }
+   }
+  }
+ ],
+ "meta": {
+  "transport": "railway",
+  "from": {
+   "name": "Москва",
+   "geo_id": "2657260",
+   "region": "Москва"
+  },
+  "to": {
+   "name": "Казань",
+   "geo_id": "2656873",
+   "region": "Республика Татарстан, городской округ Казань"
+  },
+  "sort": "price_asc",
+  "page": 1,
+  "page_size": 2,
+  "total_returned": 2,
+  "total_matched": 10,
+  "total_matched_exact": true,
+  "has_more": true,
+  "post_filter_dropped_over_cap": 0,
+  "post_filter_dropped_not_direct": 0,
+  "post_filter_dropped_wrong_carrier": 0,
+  "post_filter_dropped_wrong_train_number": 0,
+  "post_filter_dropped_wrong_seat_category": 0,
+  "post_filter_unverified_seat_category": 0,
+  "carriers_available": [
+   {
+    "name": "ФПК",
+    "offers_count": 10,
+    "price_from": 2090.93
+   }
+  ],
+  "cashback": {
+   "rate_pct": 3.0,
+   "applies_to": "all_fares",
+   "note": "Tutu loyalty points credited to the buyer's Tutu account after payment. NOT a discount: every `price` here is the full amount payable."
+  }
+ }
+}

@@ -1,0 +1,3492 @@
+{
+ "transport": "railway",
+ "passenger_requirements": [
+  {
+   "passenger_type": "ADULT",
+   "max_age": 200,
+   "needs_ticket": true,
+   "chargeable": true
+  },
+  {
+   "passenger_type": "CHILD",
+   "max_age": 10,
+   "needs_ticket": true,
+   "chargeable": true
+  },
+  {
+   "passenger_type": "BABY",
+   "max_age": 5,
+   "needs_ticket": true,
+   "chargeable": false
+  }
+ ],
+ "source": {
+  "endpoint": "GET /api/seats-by-params",
+  "read_only": true,
+  "note": "Seat layout is read-only. `cars[].canvas.svg_url` points at the CDN-hosted vagon outline; the file is a graphical contour with no `<text>` seat numbers, so it is useful as an illustration but NOT as a vision-readable seat map — use `seats[].position` for any spatial reasoning."
+ },
+ "train_meta": {
+  "number": "206Х",
+  "name": "",
+  "train_class": "common",
+  "is_premium": false,
+  "is_firm": false,
+  "is_double_decker": false
+ },
+ "cars": [
+  {
+   "car_hash": "e09ec796fc640c3b222342a636962f05",
+   "car_number": "1",
+   "car_type": "RESERVED_SEAT",
+   "train_number": "206Х",
+   "service_class": "3Б",
+   "service_class_description": "В вагоне разрешено провозить мелких домашних животных. Крупных собак провозить запрещено. Оформить билет для животного можно за дополнительную плату и только в кассах на вокзале.",
+   "amenities": [
+    {
+     "code": "AIR_CONDITIONING",
+     "label": "Кондиционер"
+    },
+    {
+     "code": "BIO_TOILET",
+     "label": "Биотуалет"
+    },
+    {
+     "code": "WITH_PETS",
+     "label": "Можно с животными"
+    },
+    {
+     "code": "BEDDING",
+     "label": "Постельное бельё"
+    }
+   ],
+   "seat_groups": [
+    {
+     "group_index": 0,
+     "type": "SIDE_UPPER",
+     "service_class": "3Б",
+     "service_class_description": "В вагоне разрешено провозить мелких домашних животных. Крупных собак провозить запрещено. Оформить билет для животного можно за дополнительную плату и только в кассах на вокзале.",
+     "is_gender": false,
+     "seats_count": 4,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 2181.3,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 833.71,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 2181.3,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 833.71,
+        "currency": "RUB"
+       }
+      }
+     ]
+    },
+    {
+     "group_index": 1,
+     "type": "SIDE_LOWER",
+     "service_class": "3Б",
+     "service_class_description": "В вагоне разрешено провозить мелких домашних животных. Крупных собак провозить запрещено. Оформить билет для животного можно за дополнительную плату и только в кассах на вокзале.",
+     "is_gender": false,
+     "seats_count": 8,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 3425.4,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 1346.43,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 3425.4,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 1346.43,
+        "currency": "RUB"
+       }
+      }
+     ]
+    },
+    {
+     "group_index": 2,
+     "type": "LOWER",
+     "service_class": "3Б",
+     "service_class_description": "В вагоне разрешено провозить мелких домашних животных. Крупных собак провозить запрещено. Оформить билет для животного можно за дополнительную плату и только в кассах на вокзале.",
+     "is_gender": false,
+     "seats_count": 11,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 3425.4,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 1346.43,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 3425.4,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 1346.43,
+        "currency": "RUB"
+       }
+      }
+     ]
+    },
+    {
+     "group_index": 3,
+     "type": "UPPER",
+     "service_class": "3Б",
+     "service_class_description": "В вагоне разрешено провозить мелких домашних животных. Крупных собак провозить запрещено. Оформить билет для животного можно за дополнительную плату и только в кассах на вокзале.",
+     "is_gender": false,
+     "seats_count": 16,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 3425.4,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 1346.43,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 3425.4,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 1346.43,
+        "currency": "RUB"
+       }
+      }
+     ]
+    }
+   ],
+   "seats": [
+    {
+     "number": "1",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 1,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 95.5
+    },
+    {
+     "number": "2",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 1,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 86.6
+    },
+    {
+     "number": "3",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 1,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 129.0
+    },
+    {
+     "number": "4",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 1,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 122.6
+    },
+    {
+     "number": "5",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 2,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 177.2
+    },
+    {
+     "number": "6",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 2,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 172.6
+    },
+    {
+     "number": "7",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 2,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 212.4
+    },
+    {
+     "number": "8",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 2,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 208.5
+    },
+    {
+     "number": "10",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 3,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 258.5
+    },
+    {
+     "number": "12",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 3,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 294.5
+    },
+    {
+     "number": "13",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 4,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 346.9
+    },
+    {
+     "number": "14",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 4,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 344.5
+    },
+    {
+     "number": "16",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 4,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 380.5
+    },
+    {
+     "number": "20",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 5,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 393.5
+    },
+    {
+     "number": "24",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 6,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 307.5
+    },
+    {
+     "number": "25",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 260.7
+    },
+    {
+     "number": "26",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 257.5
+    },
+    {
+     "number": "27",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 225.2
+    },
+    {
+     "number": "28",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 221.5
+    },
+    {
+     "number": "29",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 176.2
+    },
+    {
+     "number": "30",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 171.6
+    },
+    {
+     "number": "31",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 141.4
+    },
+    {
+     "number": "32",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 135.6
+    },
+    {
+     "number": "33",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 94.6
+    },
+    {
+     "number": "34",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 85.6
+    },
+    {
+     "number": "35",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 64.0
+    },
+    {
+     "number": "36",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 49.7
+    },
+    {
+     "number": "37",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 135.0
+    },
+    {
+     "number": "39",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 200.8
+    },
+    {
+     "number": "40",
+     "type": "SIDE_UPPER",
+     "group_index": 0,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 171.1
+    },
+    {
+     "number": "41",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 277.9
+    },
+    {
+     "number": "43",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 6,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 359.0
+    },
+    {
+     "number": "45",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 5,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 442.0
+    },
+    {
+     "number": "46",
+     "type": "SIDE_UPPER",
+     "group_index": 0,
+     "compartment_number": 5,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 407.1
+    },
+    {
+     "number": "47",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 4,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 360.0
+    },
+    {
+     "number": "51",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 2,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 201.7
+    },
+    {
+     "number": "52",
+     "type": "SIDE_UPPER",
+     "group_index": 0,
+     "compartment_number": 2,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 233.2
+    },
+    {
+     "number": "53",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 1,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 135.7
+    },
+    {
+     "number": "54",
+     "type": "SIDE_UPPER",
+     "group_index": 0,
+     "compartment_number": 1,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 161.0
+    }
+   ],
+   "hints": {
+    "wc": [
+     {
+      "x": 50,
+      "y": 14,
+      "width": 24,
+      "height": 24
+     },
+     {
+      "x": 910,
+      "y": 14,
+      "width": 24,
+      "height": 24
+     }
+    ],
+    "conductor": [
+     {
+      "x": 86,
+      "y": 14,
+      "width": 24,
+      "height": 24
+     }
+    ],
+    "cooler": [
+     {
+      "x": 50,
+      "y": 122,
+      "width": 24,
+      "height": 24
+     }
+    ],
+    "garbage": [
+     {
+      "x": 910,
+      "y": 122,
+      "width": 24,
+      "height": 24
+     }
+    ]
+   },
+   "canvas": {
+    "width": 948,
+    "height": 160,
+    "svg_url": "https://cdn1.tu-tu.ru/images2/train/order/car/re/plazcardWOEmergencyExits_1700560633.svg",
+    "background_svg_url": "https://cdn1.tu-tu.ru/images2/train/order/car/re/background_plazcardWOEmergencyExits_1700560634.svg"
+   }
+  },
+  {
+   "car_hash": "ce2ecbb7b556ce5a6129df319ebd6d6c",
+   "car_number": "2",
+   "car_type": "RESERVED_SEAT",
+   "train_number": "206Х",
+   "service_class": "3Э",
+   "service_class_description": "Спальный пассажирский вагон открытого типа без услуг, с кондиционером и биотуалетом. Крупных собак и мелких животных провозить запрещено.",
+   "amenities": [
+    {
+     "code": "AIR_CONDITIONING",
+     "label": "Кондиционер"
+    },
+    {
+     "code": "BIO_TOILET",
+     "label": "Биотуалет"
+    },
+    {
+     "code": "BEDDING",
+     "label": "Постельное бельё"
+    }
+   ],
+   "seat_groups": [
+    {
+     "group_index": 0,
+     "type": "SIDE_UPPER",
+     "service_class": "3Э",
+     "service_class_description": "Спальный пассажирский вагон открытого типа без услуг, с кондиционером и биотуалетом. Крупных собак и мелких животных провозить запрещено.",
+     "is_gender": false,
+     "seats_count": 6,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 2181.3,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 833.71,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 2181.3,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 833.71,
+        "currency": "RUB"
+       }
+      }
+     ]
+    },
+    {
+     "group_index": 1,
+     "type": "SIDE_LOWER",
+     "service_class": "3Э",
+     "service_class_description": "Спальный пассажирский вагон открытого типа без услуг, с кондиционером и биотуалетом. Крупных собак и мелких животных провозить запрещено.",
+     "is_gender": false,
+     "seats_count": 9,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 3425.4,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 1346.43,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 3425.4,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 1346.43,
+        "currency": "RUB"
+       }
+      }
+     ]
+    },
+    {
+     "group_index": 2,
+     "type": "LOWER",
+     "service_class": "3Э",
+     "service_class_description": "Спальный пассажирский вагон открытого типа без услуг, с кондиционером и биотуалетом. Крупных собак и мелких животных провозить запрещено.",
+     "is_gender": false,
+     "seats_count": 15,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 3425.4,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 1346.43,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 3425.4,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 1346.43,
+        "currency": "RUB"
+       }
+      }
+     ]
+    },
+    {
+     "group_index": 3,
+     "type": "UPPER",
+     "service_class": "3Э",
+     "service_class_description": "Спальный пассажирский вагон открытого типа без услуг, с кондиционером и биотуалетом. Крупных собак и мелких животных провозить запрещено.",
+     "is_gender": false,
+     "seats_count": 18,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 3425.4,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 1346.43,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 3425.4,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 1346.43,
+        "currency": "RUB"
+       }
+      }
+     ]
+    }
+   ],
+   "seats": [
+    {
+     "number": "2",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 1,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 86.6
+    },
+    {
+     "number": "3",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 1,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 129.0
+    },
+    {
+     "number": "4",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 1,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 122.6
+    },
+    {
+     "number": "5",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 2,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 177.2
+    },
+    {
+     "number": "6",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 2,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 172.6
+    },
+    {
+     "number": "7",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 2,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 212.4
+    },
+    {
+     "number": "8",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 2,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 208.5
+    },
+    {
+     "number": "9",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 3,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 261.7
+    },
+    {
+     "number": "10",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 3,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 258.5
+    },
+    {
+     "number": "11",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 3,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 297.3
+    },
+    {
+     "number": "12",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 3,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 294.5
+    },
+    {
+     "number": "13",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 4,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 346.9
+    },
+    {
+     "number": "14",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 4,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 344.5
+    },
+    {
+     "number": "15",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 4,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 382.6
+    },
+    {
+     "number": "16",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 4,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 380.5
+    },
+    {
+     "number": "18",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 5,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 429.5
+    },
+    {
+     "number": "20",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 5,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 393.5
+    },
+    {
+     "number": "21",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 6,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 345.9
+    },
+    {
+     "number": "22",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 6,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 343.5
+    },
+    {
+     "number": "23",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 6,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 310.2
+    },
+    {
+     "number": "24",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 6,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 307.5
+    },
+    {
+     "number": "25",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 260.7
+    },
+    {
+     "number": "26",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 257.5
+    },
+    {
+     "number": "27",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 225.2
+    },
+    {
+     "number": "28",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 221.5
+    },
+    {
+     "number": "29",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 176.2
+    },
+    {
+     "number": "30",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 171.6
+    },
+    {
+     "number": "31",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 141.4
+    },
+    {
+     "number": "32",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 135.6
+    },
+    {
+     "number": "33",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 94.6
+    },
+    {
+     "number": "34",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 85.6
+    },
+    {
+     "number": "35",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 64.0
+    },
+    {
+     "number": "36",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 49.7
+    },
+    {
+     "number": "37",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 135.0
+    },
+    {
+     "number": "38",
+     "type": "SIDE_UPPER",
+     "group_index": 0,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 115.6
+    },
+    {
+     "number": "39",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 200.8
+    },
+    {
+     "number": "40",
+     "type": "SIDE_UPPER",
+     "group_index": 0,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 171.1
+    },
+    {
+     "number": "41",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 277.9
+    },
+    {
+     "number": "42",
+     "type": "SIDE_UPPER",
+     "group_index": 0,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 244.9
+    },
+    {
+     "number": "43",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 6,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 359.0
+    }
+   ],
+   "hints": {
+    "wc": [
+     {
+      "x": 50,
+      "y": 14,
+      "width": 24,
+      "height": 24
+     },
+     {
+      "x": 910,
+      "y": 14,
+      "width": 24,
+      "height": 24
+     }
+    ],
+    "conductor": [
+     {
+      "x": 86,
+      "y": 14,
+      "width": 24,
+      "height": 24
+     }
+    ],
+    "cooler": [
+     {
+      "x": 50,
+      "y": 122,
+      "width": 24,
+      "height": 24
+     }
+    ],
+    "garbage": [
+     {
+      "x": 910,
+      "y": 122,
+      "width": 24,
+      "height": 24
+     }
+    ]
+   },
+   "canvas": {
+    "width": 948,
+    "height": 160,
+    "svg_url": "https://cdn1.tu-tu.ru/images2/train/order/car/re/plazcardWOEmergencyExits_1700560633.svg",
+    "background_svg_url": "https://cdn1.tu-tu.ru/images2/train/order/car/re/background_plazcardWOEmergencyExits_1700560634.svg"
+   },
+   "seats_omitted_for_pagination": true
+  },
+  {
+   "car_hash": "0011d740a9c57030f996bad1e6aac83c",
+   "car_number": "3",
+   "car_type": "RESERVED_SEAT",
+   "train_number": "206Х",
+   "service_class": "3Б",
+   "service_class_description": "В вагоне разрешено провозить мелких домашних животных. Крупных собак провозить запрещено. Оформить билет для животного можно за дополнительную плату и только в кассах на вокзале.",
+   "amenities": [
+    {
+     "code": "AIR_CONDITIONING",
+     "label": "Кондиционер"
+    },
+    {
+     "code": "BIO_TOILET",
+     "label": "Биотуалет"
+    },
+    {
+     "code": "WITH_PETS",
+     "label": "Можно с животными"
+    },
+    {
+     "code": "BEDDING",
+     "label": "Постельное бельё"
+    }
+   ],
+   "seat_groups": [
+    {
+     "group_index": 0,
+     "type": "SIDE_UPPER",
+     "service_class": "3Б",
+     "service_class_description": "В вагоне разрешено провозить мелких домашних животных. Крупных собак провозить запрещено. Оформить билет для животного можно за дополнительную плату и только в кассах на вокзале.",
+     "is_gender": false,
+     "seats_count": 9,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 2181.3,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 833.71,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 2181.3,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 833.71,
+        "currency": "RUB"
+       }
+      }
+     ]
+    },
+    {
+     "group_index": 1,
+     "type": "SIDE_LOWER",
+     "service_class": "3Б",
+     "service_class_description": "В вагоне разрешено провозить мелких домашних животных. Крупных собак провозить запрещено. Оформить билет для животного можно за дополнительную плату и только в кассах на вокзале.",
+     "is_gender": false,
+     "seats_count": 9,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 3425.4,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 1346.43,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 3425.4,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 1346.43,
+        "currency": "RUB"
+       }
+      }
+     ]
+    },
+    {
+     "group_index": 2,
+     "type": "LOWER",
+     "service_class": "3Б",
+     "service_class_description": "В вагоне разрешено провозить мелких домашних животных. Крупных собак провозить запрещено. Оформить билет для животного можно за дополнительную плату и только в кассах на вокзале.",
+     "is_gender": false,
+     "seats_count": 12,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 3425.4,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 1346.43,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 3425.4,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 1346.43,
+        "currency": "RUB"
+       }
+      }
+     ]
+    },
+    {
+     "group_index": 3,
+     "type": "UPPER",
+     "service_class": "3Б",
+     "service_class_description": "В вагоне разрешено провозить мелких домашних животных. Крупных собак провозить запрещено. Оформить билет для животного можно за дополнительную плату и только в кассах на вокзале.",
+     "is_gender": false,
+     "seats_count": 18,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 3425.4,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 1346.43,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 3425.4,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 1346.43,
+        "currency": "RUB"
+       }
+      }
+     ]
+    }
+   ],
+   "seats": [
+    {
+     "number": "1",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 1,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 95.5
+    },
+    {
+     "number": "2",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 1,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 86.6
+    },
+    {
+     "number": "3",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 1,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 129.0
+    },
+    {
+     "number": "4",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 1,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 122.6
+    },
+    {
+     "number": "6",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 2,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 172.6
+    },
+    {
+     "number": "8",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 2,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 208.5
+    },
+    {
+     "number": "9",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 3,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 261.7
+    },
+    {
+     "number": "10",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 3,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 258.5
+    },
+    {
+     "number": "11",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 3,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 297.3
+    },
+    {
+     "number": "12",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 3,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 294.5
+    },
+    {
+     "number": "14",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 4,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 344.5
+    },
+    {
+     "number": "16",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 4,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 380.5
+    },
+    {
+     "number": "17",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 5,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 431.4
+    },
+    {
+     "number": "18",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 5,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 429.5
+    },
+    {
+     "number": "20",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 5,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 393.5
+    },
+    {
+     "number": "22",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 6,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 343.5
+    },
+    {
+     "number": "23",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 6,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 310.2
+    },
+    {
+     "number": "24",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 6,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 307.5
+    },
+    {
+     "number": "25",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 260.7
+    },
+    {
+     "number": "26",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 257.5
+    },
+    {
+     "number": "27",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 225.2
+    },
+    {
+     "number": "28",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 221.5
+    },
+    {
+     "number": "29",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 176.2
+    },
+    {
+     "number": "30",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 171.6
+    },
+    {
+     "number": "31",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 141.4
+    },
+    {
+     "number": "32",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 135.6
+    },
+    {
+     "number": "33",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 94.6
+    },
+    {
+     "number": "34",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 85.6
+    },
+    {
+     "number": "35",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 64.0
+    },
+    {
+     "number": "36",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 49.7
+    },
+    {
+     "number": "37",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 135.0
+    },
+    {
+     "number": "38",
+     "type": "SIDE_UPPER",
+     "group_index": 0,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 115.6
+    },
+    {
+     "number": "39",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 200.8
+    },
+    {
+     "number": "40",
+     "type": "SIDE_UPPER",
+     "group_index": 0,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 171.1
+    },
+    {
+     "number": "41",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 277.9
+    },
+    {
+     "number": "42",
+     "type": "SIDE_UPPER",
+     "group_index": 0,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 244.9
+    },
+    {
+     "number": "43",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 6,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 359.0
+    },
+    {
+     "number": "44",
+     "type": "SIDE_UPPER",
+     "group_index": 0,
+     "compartment_number": 6,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 324.8
+    },
+    {
+     "number": "45",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 5,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 442.0
+    },
+    {
+     "number": "46",
+     "type": "SIDE_UPPER",
+     "group_index": 0,
+     "compartment_number": 5,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 407.1
+    }
+   ],
+   "hints": {
+    "wc": [
+     {
+      "x": 50,
+      "y": 14,
+      "width": 24,
+      "height": 24
+     },
+     {
+      "x": 910,
+      "y": 14,
+      "width": 24,
+      "height": 24
+     }
+    ],
+    "conductor": [
+     {
+      "x": 86,
+      "y": 14,
+      "width": 24,
+      "height": 24
+     }
+    ],
+    "cooler": [
+     {
+      "x": 50,
+      "y": 122,
+      "width": 24,
+      "height": 24
+     }
+    ],
+    "garbage": [
+     {
+      "x": 910,
+      "y": 122,
+      "width": 24,
+      "height": 24
+     }
+    ]
+   },
+   "canvas": {
+    "width": 948,
+    "height": 160,
+    "svg_url": "https://cdn1.tu-tu.ru/images2/train/order/car/re/plazcardWOEmergencyExits_1700560633.svg",
+    "background_svg_url": "https://cdn1.tu-tu.ru/images2/train/order/car/re/background_plazcardWOEmergencyExits_1700560634.svg"
+   },
+   "seats_omitted_for_pagination": true
+  },
+  {
+   "car_hash": "7f68630bca5c3f133b985eaa5a6c9b50",
+   "car_number": "4",
+   "car_type": "RESERVED_SEAT",
+   "train_number": "206Х",
+   "service_class": "3Э",
+   "service_class_description": "Спальный пассажирский вагон открытого типа без услуг, с кондиционером и биотуалетом. Крупных собак и мелких животных провозить запрещено.",
+   "amenities": [
+    {
+     "code": "AIR_CONDITIONING",
+     "label": "Кондиционер"
+    },
+    {
+     "code": "BIO_TOILET",
+     "label": "Биотуалет"
+    },
+    {
+     "code": "BEDDING",
+     "label": "Постельное бельё"
+    }
+   ],
+   "seat_groups": [
+    {
+     "group_index": 0,
+     "type": "SIDE_UPPER",
+     "service_class": "3Э",
+     "service_class_description": "Спальный пассажирский вагон открытого типа без услуг, с кондиционером и биотуалетом. Крупных собак и мелких животных провозить запрещено.",
+     "is_gender": false,
+     "seats_count": 7,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 2181.3,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 833.71,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 2181.3,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 833.71,
+        "currency": "RUB"
+       }
+      }
+     ]
+    },
+    {
+     "group_index": 1,
+     "type": "SIDE_LOWER",
+     "service_class": "3Э",
+     "service_class_description": "Спальный пассажирский вагон открытого типа без услуг, с кондиционером и биотуалетом. Крупных собак и мелких животных провозить запрещено.",
+     "is_gender": false,
+     "seats_count": 9,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 3425.4,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 1346.43,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 3425.4,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 1346.43,
+        "currency": "RUB"
+       }
+      }
+     ]
+    },
+    {
+     "group_index": 2,
+     "type": "LOWER",
+     "service_class": "3Э",
+     "service_class_description": "Спальный пассажирский вагон открытого типа без услуг, с кондиционером и биотуалетом. Крупных собак и мелких животных провозить запрещено.",
+     "is_gender": false,
+     "seats_count": 11,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 3425.4,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 1346.43,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 3425.4,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 1346.43,
+        "currency": "RUB"
+       }
+      }
+     ]
+    },
+    {
+     "group_index": 3,
+     "type": "UPPER",
+     "service_class": "3Э",
+     "service_class_description": "Спальный пассажирский вагон открытого типа без услуг, с кондиционером и биотуалетом. Крупных собак и мелких животных провозить запрещено.",
+     "is_gender": false,
+     "seats_count": 14,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 3425.4,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 1346.43,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 3425.4,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 1346.43,
+        "currency": "RUB"
+       }
+      }
+     ]
+    }
+   ],
+   "seats": [
+    {
+     "number": "1",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 1,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 95.5
+    },
+    {
+     "number": "2",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 1,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 86.6
+    },
+    {
+     "number": "3",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 1,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 129.0
+    },
+    {
+     "number": "4",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 1,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 122.6
+    },
+    {
+     "number": "6",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 2,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 172.6
+    },
+    {
+     "number": "8",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 2,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 208.5
+    },
+    {
+     "number": "13",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 4,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 346.9
+    },
+    {
+     "number": "14",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 4,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 344.5
+    },
+    {
+     "number": "15",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 4,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 382.6
+    },
+    {
+     "number": "16",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 4,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 380.5
+    },
+    {
+     "number": "18",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 5,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 429.5
+    },
+    {
+     "number": "19",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 5,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 395.6
+    },
+    {
+     "number": "20",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 5,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 393.5
+    },
+    {
+     "number": "25",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 260.7
+    },
+    {
+     "number": "26",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 257.5
+    },
+    {
+     "number": "27",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 225.2
+    },
+    {
+     "number": "28",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 221.5
+    },
+    {
+     "number": "29",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 176.2
+    },
+    {
+     "number": "30",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 171.6
+    },
+    {
+     "number": "31",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 141.4
+    },
+    {
+     "number": "32",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 135.6
+    },
+    {
+     "number": "33",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 94.6
+    },
+    {
+     "number": "34",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 85.6
+    },
+    {
+     "number": "35",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 64.0
+    },
+    {
+     "number": "36",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 49.7
+    },
+    {
+     "number": "37",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 135.0
+    },
+    {
+     "number": "38",
+     "type": "SIDE_UPPER",
+     "group_index": 0,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 115.6
+    },
+    {
+     "number": "39",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 200.8
+    },
+    {
+     "number": "40",
+     "type": "SIDE_UPPER",
+     "group_index": 0,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 171.1
+    },
+    {
+     "number": "41",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 277.9
+    },
+    {
+     "number": "42",
+     "type": "SIDE_UPPER",
+     "group_index": 0,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 244.9
+    },
+    {
+     "number": "43",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 6,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 359.0
+    },
+    {
+     "number": "45",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 5,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 442.0
+    },
+    {
+     "number": "46",
+     "type": "SIDE_UPPER",
+     "group_index": 0,
+     "compartment_number": 5,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 407.1
+    },
+    {
+     "number": "47",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 4,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 360.0
+    },
+    {
+     "number": "49",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 3,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 278.8
+    },
+    {
+     "number": "50",
+     "type": "SIDE_UPPER",
+     "group_index": 0,
+     "compartment_number": 3,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 312.5
+    },
+    {
+     "number": "51",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 2,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 201.7
+    },
+    {
+     "number": "52",
+     "type": "SIDE_UPPER",
+     "group_index": 0,
+     "compartment_number": 2,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 233.2
+    },
+    {
+     "number": "53",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 1,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 135.7
+    }
+   ],
+   "hints": {
+    "wc": [
+     {
+      "x": 50,
+      "y": 14,
+      "width": 24,
+      "height": 24
+     },
+     {
+      "x": 910,
+      "y": 14,
+      "width": 24,
+      "height": 24
+     }
+    ],
+    "conductor": [
+     {
+      "x": 86,
+      "y": 14,
+      "width": 24,
+      "height": 24
+     }
+    ],
+    "cooler": [
+     {
+      "x": 50,
+      "y": 122,
+      "width": 24,
+      "height": 24
+     }
+    ],
+    "garbage": [
+     {
+      "x": 910,
+      "y": 122,
+      "width": 24,
+      "height": 24
+     }
+    ]
+   },
+   "canvas": {
+    "width": 948,
+    "height": 160,
+    "svg_url": "https://cdn1.tu-tu.ru/images2/train/order/car/re/plazcardWOEmergencyExits_1700560633.svg",
+    "background_svg_url": "https://cdn1.tu-tu.ru/images2/train/order/car/re/background_plazcardWOEmergencyExits_1700560634.svg"
+   },
+   "seats_omitted_for_pagination": true
+  },
+  {
+   "car_hash": "7c4b1e39ee37feefcb847362eb8fc27d",
+   "car_number": "5",
+   "car_type": "RESERVED_SEAT",
+   "train_number": "206Х",
+   "service_class": "3Б",
+   "service_class_description": "В вагоне разрешено провозить мелких домашних животных. Крупных собак провозить запрещено. Оформить билет для животного можно за дополнительную плату и только в кассах на вокзале.",
+   "amenities": [
+    {
+     "code": "AIR_CONDITIONING",
+     "label": "Кондиционер"
+    },
+    {
+     "code": "BIO_TOILET",
+     "label": "Биотуалет"
+    },
+    {
+     "code": "WITH_PETS",
+     "label": "Можно с животными"
+    },
+    {
+     "code": "BEDDING",
+     "label": "Постельное бельё"
+    }
+   ],
+   "seat_groups": [
+    {
+     "group_index": 0,
+     "type": "SIDE_UPPER",
+     "service_class": "3Б",
+     "service_class_description": "В вагоне разрешено провозить мелких домашних животных. Крупных собак провозить запрещено. Оформить билет для животного можно за дополнительную плату и только в кассах на вокзале.",
+     "is_gender": false,
+     "seats_count": 3,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 2181.3,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 833.71,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 2181.3,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 833.71,
+        "currency": "RUB"
+       }
+      }
+     ]
+    },
+    {
+     "group_index": 1,
+     "type": "SIDE_LOWER",
+     "service_class": "3Б",
+     "service_class_description": "В вагоне разрешено провозить мелких домашних животных. Крупных собак провозить запрещено. Оформить билет для животного можно за дополнительную плату и только в кассах на вокзале.",
+     "is_gender": false,
+     "seats_count": 6,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 3425.4,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 1346.43,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 3425.4,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 1346.43,
+        "currency": "RUB"
+       }
+      }
+     ]
+    },
+    {
+     "group_index": 2,
+     "type": "LOWER",
+     "service_class": "3Б",
+     "service_class_description": "В вагоне разрешено провозить мелких домашних животных. Крупных собак провозить запрещено. Оформить билет для животного можно за дополнительную плату и только в кассах на вокзале.",
+     "is_gender": false,
+     "seats_count": 4,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 3425.4,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 1346.43,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 3425.4,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 1346.43,
+        "currency": "RUB"
+       }
+      }
+     ]
+    },
+    {
+     "group_index": 3,
+     "type": "UPPER",
+     "service_class": "3Б",
+     "service_class_description": "В вагоне разрешено провозить мелких домашних животных. Крупных собак провозить запрещено. Оформить билет для животного можно за дополнительную плату и только в кассах на вокзале.",
+     "is_gender": false,
+     "seats_count": 16,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 3425.4,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 1346.43,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 3425.4,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 1346.43,
+        "currency": "RUB"
+       }
+      }
+     ]
+    }
+   ],
+   "seats": [
+    {
+     "number": "2",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 1,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 86.6
+    },
+    {
+     "number": "4",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 1,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 122.6
+    },
+    {
+     "number": "6",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 2,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 172.6
+    },
+    {
+     "number": "8",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 2,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 208.5
+    },
+    {
+     "number": "12",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 3,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 294.5
+    },
+    {
+     "number": "14",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 4,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 344.5
+    },
+    {
+     "number": "15",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 4,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 382.6
+    },
+    {
+     "number": "16",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 4,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 380.5
+    },
+    {
+     "number": "17",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 5,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 431.4
+    },
+    {
+     "number": "18",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 5,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 429.5
+    },
+    {
+     "number": "20",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 5,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 393.5
+    },
+    {
+     "number": "24",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 6,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 307.5
+    },
+    {
+     "number": "26",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 257.5
+    },
+    {
+     "number": "28",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 221.5
+    },
+    {
+     "number": "30",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 171.6
+    },
+    {
+     "number": "32",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 135.6
+    },
+    {
+     "number": "33",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 94.6
+    },
+    {
+     "number": "34",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 85.6
+    },
+    {
+     "number": "35",
+     "type": "LOWER",
+     "group_index": 2,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 64.0
+    },
+    {
+     "number": "36",
+     "type": "UPPER",
+     "group_index": 3,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 49.7
+    },
+    {
+     "number": "37",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 135.0
+    },
+    {
+     "number": "38",
+     "type": "SIDE_UPPER",
+     "group_index": 0,
+     "compartment_number": 9,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 115.6
+    },
+    {
+     "number": "39",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 200.8
+    },
+    {
+     "number": "40",
+     "type": "SIDE_UPPER",
+     "group_index": 0,
+     "compartment_number": 8,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 171.1
+    },
+    {
+     "number": "41",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 277.9
+    },
+    {
+     "number": "42",
+     "type": "SIDE_UPPER",
+     "group_index": 0,
+     "compartment_number": 7,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "top",
+     "distance_to_nearest_wc_px": 244.9
+    },
+    {
+     "number": "45",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 5,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 442.0
+    },
+    {
+     "number": "51",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 2,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 201.7
+    },
+    {
+     "number": "53",
+     "type": "SIDE_LOWER",
+     "group_index": 1,
+     "compartment_number": 1,
+     "deck": null,
+     "gender": "NO_GENDER",
+     "level": "bottom",
+     "distance_to_nearest_wc_px": 135.7
+    }
+   ],
+   "hints": {
+    "wc": [
+     {
+      "x": 50,
+      "y": 14,
+      "width": 24,
+      "height": 24
+     },
+     {
+      "x": 910,
+      "y": 14,
+      "width": 24,
+      "height": 24
+     }
+    ],
+    "conductor": [
+     {
+      "x": 86,
+      "y": 14,
+      "width": 24,
+      "height": 24
+     }
+    ],
+    "cooler": [
+     {
+      "x": 50,
+      "y": 122,
+      "width": 24,
+      "height": 24
+     }
+    ],
+    "garbage": [
+     {
+      "x": 910,
+      "y": 122,
+      "width": 24,
+      "height": 24
+     }
+    ]
+   },
+   "canvas": {
+    "width": 948,
+    "height": 160,
+    "svg_url": "https://cdn1.tu-tu.ru/images2/train/order/car/re/plazcardWOEmergencyExits_1700560633.svg",
+    "background_svg_url": "https://cdn1.tu-tu.ru/images2/train/order/car/re/background_plazcardWOEmergencyExits_1700560634.svg"
+   }
+  },
+  {
+   "car_hash": "936eb3fd488265bbdd4c9b43d535adef",
+   "car_number": "6",
+   "car_type": "RESERVED_SEAT",
+   "train_number": "206Х",
+   "service_class": "3Э",
+   "service_class_description": "Спальный пассажирский вагон открытого типа без услуг, с кондиционером и биотуалетом. Крупных собак и мелких животных провозить запрещено.",
+   "amenities": [
+    {
+     "code": "AIR_CONDITIONING",
+     "label": "Кондиционер"
+    },
+    {
+     "code": "BIO_TOILET",
+     "label": "Биотуалет"
+    },
+    {
+     "code": "BEDDING",
+     "label": "Постельное бельё"
+    }
+   ],
+   "seat_groups": [
+    {
+     "group_index": 0,
+     "type": "SIDE_UPPER",
+     "service_class": "3Э",
+     "service_class_description": "Спальный пассажирский вагон открытого типа без услуг, с кондиционером и биотуалетом. Крупных собак и мелких животных провозить запрещено.",
+     "is_gender": false,
+     "seats_count": 4,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 2181.3,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 833.71,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 2181.3,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 833.71,
+        "currency": "RUB"
+       }
+      }
+     ]
+    },
+    {
+     "group_index": 1,
+     "type": "SIDE_LOWER",
+     "service_class": "3Э",
+     "service_class_description": "Спальный пассажирский вагон открытого типа без услуг, с кондиционером и биотуалетом. Крупных собак и мелких животных провозить запрещено.",
+     "is_gender": false,
+     "seats_count": 6,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 3425.4,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 1346.43,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 3425.4,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 1346.43,
+        "currency": "RUB"
+       }
+      }
+     ]
+    },
+    {
+     "group_index": 2,
+     "type": "LOWER",
+     "service_class": "3Э",
+     "service_class_description": "Спальный пассажирский вагон открытого типа без услуг, с кондиционером и биотуалетом. Крупных собак и мелких животных провозить запрещено.",
+     "is_gender": false,
+     "seats_count": 7,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 3425.4,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 1346.43,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 3425.4,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 1346.43,
+        "currency": "RUB"
+       }
+      }
+     ]
+    },
+    {
+     "group_index": 3,
+     "type": "UPPER",
+     "service_class": "3Э",
+     "service_class_description": "Спальный пассажирский вагон открытого типа без услуг, с кондиционером и биотуалетом. Крупных собак и мелких животных провозить запрещено.",
+     "is_gender": false,
+     "seats_count": 18,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 3425.4,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 1346.43,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 3425.4,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 1346.43,
+        "currency": "RUB"
+       }
+      }
+     ]
+    }
+   ],
+   "seats": [],
+   "hints": {
+    "wc": [
+     {
+      "x": 50,
+      "y": 14,
+      "width": 24,
+      "height": 24
+     },
+     {
+      "x": 910,
+      "y": 14,
+      "width": 24,
+      "height": 24
+     }
+    ],
+    "conductor": [
+     {
+      "x": 86,
+      "y": 14,
+      "width": 24,
+      "height": 24
+     }
+    ],
+    "cooler": [
+     {
+      "x": 50,
+      "y": 122,
+      "width": 24,
+      "height": 24
+     }
+    ],
+    "garbage": [
+     {
+      "x": 910,
+      "y": 122,
+      "width": 24,
+      "height": 24
+     }
+    ]
+   },
+   "canvas": {
+    "width": 948,
+    "height": 160,
+    "svg_url": "https://cdn1.tu-tu.ru/images2/train/order/car/re/plazcardWOEmergencyExits_1700560633.svg",
+    "background_svg_url": "https://cdn1.tu-tu.ru/images2/train/order/car/re/background_plazcardWOEmergencyExits_1700560634.svg"
+   },
+   "seats_omitted_for_pagination": true
+  },
+  {
+   "car_hash": "1a564f68a39135bb945e8f1fc1fa789e",
+   "car_number": "7",
+   "car_type": "COMPARTMENT",
+   "train_number": "206Х",
+   "service_class": "2К",
+   "service_class_description": "Спальный вагон с четырехместными купе, с кондиционером.. С возможностью провоза домашних животных. Билет на проезд мелких животных оформляется в кассе вокзала. Для провоза крупных животных необходимо выкупить купе целиком, в этом случае оформлять билет для провоза животного не требуется.",
+   "amenities": [
+    {
+     "code": "AIR_CONDITIONING",
+     "label": "Кондиционер"
+    },
+    {
+     "code": "BIO_TOILET",
+     "label": "Биотуалет"
+    },
+    {
+     "code": "BEDDING",
+     "label": "Постельное бельё"
+    }
+   ],
+   "seat_groups": [
+    {
+     "group_index": 0,
+     "type": "LOWER",
+     "service_class": "2К",
+     "service_class_description": "Спальный вагон с четырехместными купе, с кондиционером.. С возможностью провоза домашних животных. Билет на проезд мелких животных оформляется в кассе вокзала. Для провоза крупных животных необходимо выкупить купе целиком, в этом случае оформлять билет для провоза животного не требуется.",
+     "is_gender": false,
+     "seats_count": 1,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 6637.5,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 2733.77,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 6637.5,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 2733.77,
+        "currency": "RUB"
+       }
+      }
+     ]
+    },
+    {
+     "group_index": 1,
+     "type": "UPPER",
+     "service_class": "2К",
+     "service_class_description": "Спальный вагон с четырехместными купе, с кондиционером.. С возможностью провоза домашних животных. Билет на проезд мелких животных оформляется в кассе вокзала. Для провоза крупных животных необходимо выкупить купе целиком, в этом случае оформлять билет для провоза животного не требуется.",
+     "is_gender": false,
+     "seats_count": 1,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 6637.5,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 2733.77,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 6637.5,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 2733.77,
+        "currency": "RUB"
+       }
+      }
+     ]
+    }
+   ],
+   "seats": [],
+   "hints": {
+    "wc": [
+     {
+      "x": 50,
+      "y": 14,
+      "width": 24,
+      "height": 24
+     },
+     {
+      "x": 824,
+      "y": 14,
+      "width": 24,
+      "height": 24
+     }
+    ],
+    "conductor": [
+     {
+      "x": 86,
+      "y": 14,
+      "width": 24,
+      "height": 24
+     }
+    ],
+    "cooler": [
+     {
+      "x": 50,
+      "y": 110,
+      "width": 24,
+      "height": 24
+     }
+    ],
+    "garbage": [
+     {
+      "x": 824,
+      "y": 110,
+      "width": 24,
+      "height": 24
+     }
+    ]
+   },
+   "canvas": {
+    "width": 862,
+    "height": 148,
+    "svg_url": "https://cdn1.tu-tu.ru/images2/train/order/car/re/coupe26BaggageAccessible_1725978289.svg",
+    "background_svg_url": "https://cdn1.tu-tu.ru/images2/train/order/car/re/background_coupe26BaggageAccessible_1725978290.svg"
+   },
+   "seats_omitted_for_pagination": true
+  },
+  {
+   "car_hash": "3ed13c2d7f9e240d69912a6d58588eef",
+   "car_number": "8",
+   "car_type": "RESERVED_SEAT",
+   "train_number": "206Х",
+   "service_class": "3Э",
+   "service_class_description": "Спальный пассажирский вагон открытого типа без услуг, с кондиционером и биотуалетом. Крупных собак и мелких животных провозить запрещено.",
+   "amenities": [
+    {
+     "code": "AIR_CONDITIONING",
+     "label": "Кондиционер"
+    },
+    {
+     "code": "BIO_TOILET",
+     "label": "Биотуалет"
+    },
+    {
+     "code": "BEDDING",
+     "label": "Постельное бельё"
+    }
+   ],
+   "seat_groups": [
+    {
+     "group_index": 0,
+     "type": "SIDE_UPPER",
+     "service_class": "3Э",
+     "service_class_description": "Спальный пассажирский вагон открытого типа без услуг, с кондиционером и биотуалетом. Крупных собак и мелких животных провозить запрещено.",
+     "is_gender": false,
+     "seats_count": 4,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 2181.3,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 833.71,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 2181.3,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 833.71,
+        "currency": "RUB"
+       }
+      }
+     ]
+    },
+    {
+     "group_index": 1,
+     "type": "SIDE_LOWER",
+     "service_class": "3Э",
+     "service_class_description": "Спальный пассажирский вагон открытого типа без услуг, с кондиционером и биотуалетом. Крупных собак и мелких животных провозить запрещено.",
+     "is_gender": false,
+     "seats_count": 7,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 3425.4,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 1346.43,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 3425.4,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 1346.43,
+        "currency": "RUB"
+       }
+      }
+     ]
+    },
+    {
+     "group_index": 2,
+     "type": "LOWER",
+     "service_class": "3Э",
+     "service_class_description": "Спальный пассажирский вагон открытого типа без услуг, с кондиционером и биотуалетом. Крупных собак и мелких животных провозить запрещено.",
+     "is_gender": false,
+     "seats_count": 5,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 3425.4,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 1346.43,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 3425.4,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 1346.43,
+        "currency": "RUB"
+       }
+      }
+     ]
+    },
+    {
+     "group_index": 3,
+     "type": "UPPER",
+     "service_class": "3Э",
+     "service_class_description": "Спальный пассажирский вагон открытого типа без услуг, с кондиционером и биотуалетом. Крупных собак и мелких животных провозить запрещено.",
+     "is_gender": false,
+     "seats_count": 15,
+     "cheapest_fare": {
+      "fare_type": "REFUNDABLE",
+      "price": {
+       "amount": 3425.4,
+       "currency": "RUB"
+      },
+      "child_price": {
+       "amount": 1346.43,
+       "currency": "RUB"
+      }
+     },
+     "fares": [
+      {
+       "fare_type": "REFUNDABLE",
+       "price": {
+        "amount": 3425.4,
+        "currency": "RUB"
+       },
+       "child_price": {
+        "amount": 1346.43,
+        "currency": "RUB"
+       }
+      }
+     ]
+    }
+   ],
+   "seats": [],
+   "hints": {
+    "wc": [
+     {
+      "x": 50,
+      "y": 14,
+      "width": 24,
+      "height": 24
+     },
+     {
+      "x": 910,
+      "y": 14,
+      "width": 24,
+      "height": 24
+     }
+    ],
+    "conductor": [
+     {
+      "x": 86,
+      "y": 14,
+      "width": 24,
+      "height": 24
+     }
+    ],
+    "cooler": [
+     {
+      "x": 50,
+      "y": 122,
+      "width": 24,
+      "height": 24
+     }
+    ],
+    "garbage": [
+     {
+      "x": 910,
+      "y": 122,
+      "width": 24,
+      "height": 24
+     }
+    ]
+   },
+   "canvas": {
+    "width": 948,
+    "height": 160,
+    "svg_url": "https://cdn1.tu-tu.ru/images2/train/order/car/re/plazcardWOEmergencyExits_1700560633.svg",
+    "background_svg_url": "https://cdn1.tu-tu.ru/images2/train/order/car/re/background_plazcardWOEmergencyExits_1700560634.svg"
+   },
+   "seats_omitted_for_pagination": true
+  }
+ ],
+ "warnings": [],
+ "pricing_note": "Prices in `fares[]` are pre-cart totals (fare + its service fee) and run BELOW the final cart price: the checkout applies Tutu's own, larger service fee (observed +6–8%). The `search_rail` listing prices DO match the cart. Use this map to compare seats and fare types (refundable vs non-refundable deltas are correct); quote the bookable total from the search listing, or say the exact final price appears in the cart.",
+ "caveats": [
+  "Seats listed here are *bookable*; sold/holding seats are omitted upstream and so are absent from this list.",
+  "Window/aisle flags are not provided and cannot be derived — the scheme marks neither windows nor the aisle. In lying-berth cars (плацкарт/купе/СВ/мягкий) every section has its own window, so «у окна» does not select a berth; in SEDENTARY window-vs-aisle is unknown here — say so instead of guessing from coordinates.",
+  "Power outlets / Wi-Fi are advertised at the wagon (`cars[].amenities`) level, never per seat."
+ ],
+ "seatmap_status": "ok",
+ "meta": {
+  "total_cars": 8,
+  "returned_cars": 8,
+  "cars_with_full_seats": 2,
+  "has_more_cars": true,
+  "total_seats": 273,
+  "returned_seats": 188,
+  "cars_with_more_seats": [
+   "2",
+   "3",
+   "4"
+  ],
+  "car_number_filter": null,
+  "pagination_hint": "Showed full seats for 2 of 8 car(s). Cars [2, 3, 4] returned `seats[:max_seats_per_car]` (partial — listed in `meta.cars_with_more_seats`, `seats_omitted_for_pagination=true`). Cars beyond `max_cars` ship as skeletons (`seats=[]`, `seats_omitted_for_pagination=true`). Pass `car_number=<id>` to load every seat of one car."
+ }
+}

@@ -1,0 +1,90 @@
+---
+description: "The three outward MCP tools, outputSchema, checkout labels, ui resource"
+globs: src/mcp/**/*.ts
+alwaysApply: false
+---
+
+# MCP layer: three tools and one widget
+
+`src/mcp/` exposes the product to agents. It is an adapter: it validates input, calls the
+orchestrator, and shapes the answer. No business logic lives here.
+
+## The three tools
+
+| Tool | Arguments | Returns |
+|---|---|---|
+| `find_event_trips` | `topics[]`, `origin`, `budget?`, `date_from?`, `date_to?`, `adults?` | the event, up to three packages, the coverage note, a link to the web version |
+| `get_trip_details` | `trip_id`, `package` | package details, hotel, rates, weather when available |
+| `create_trip_checkout` | `trip_id`, `package` | a checklist of two or three links, each carrying its actual `kind` |
+
+These exact names appear in the code, the README, the user guide and the architecture
+diagram. Renaming one means renaming it everywhere in the same change.
+
+- All three declare `outputSchema` and return `structuredContent`. This is precisely the
+  gap measured in Tutu MCP, and closing it removes a whole class of client parse errors.
+- Annotations are honest: `readOnlyHint: true` and `destructiveHint: false` on all three,
+  `idempotentHint: false` on `create_trip_checkout` because the links expire.
+- Input validation is forgiving (see @data-sources.mdc): arrays accepted as array, JSON
+  string or comma-separated string; numeric strings coerced; a missing argument object
+  treated as empty. Reject nothing that can be understood.
+
+## What this layer must not do
+
+- Proxy raw Tutu tools outward. The point of the gateway is a product contract of three
+  verbs, not a re-export of sixteen searches.
+- Keep trip state on the server. `trip_id` is a compact encoding of the request, not a key
+  in a store, and `/t/:id` is reproducible from it alone.
+- Create a cart. The user opens the link and the cart appears in their own Tutu session.
+  That is Tutu's legal model and it is not ours to work around.
+- Store a checkout link in a snapshot. Links are rebuilt live on click; if the live call
+  fails, fall back to `search_results_url` with an honest label.
+
+## Checkout labels
+
+The button text is derived from the `kind` Tutu actually returned, never assigned in
+advance.
+
+| `kind` | Label |
+|---|---|
+| `checkout_deeplink` | Открыть корзину |
+| `deeplink` | Открыть страницу выбора |
+| `search_redirect` | Открыть поиск, корзины не будет |
+| `order_url`, `seats_url` | Открыть заказ |
+
+Air deeplinks open a cart only in a browser with a live Tutu session, so in a cold browser
+they land on search. The demo therefore leads with rail plus hotel and offers air as an
+explicitly labelled alternative. `passengers_full` / `child` / `infant` from `checkout_ref`
+are always forwarded, otherwise the cart opens for one adult and the sum stops matching
+the card.
+
+## The `ui://` resource
+
+One resource, `ui://zaezd/trip-board`, `mimeType: text/html;profile=mcp-app`, serving the
+**same HTML** as the web screen. Two copies would drift and the UX score would suffer on
+whichever channel the judge actually opens.
+
+`_meta.ui.csp` declares `connectDomains` (our host) and `resourceDomains`
+(`cdn1.tu-tu.ru`, `cdn2.tu-tu.ru`, the tile server). The tool links to the resource through
+`_meta.ui.resourceUri` with `visibility: ["model", "app"]`.
+
+Inside the iframe use only: `ui/initialize`, `ui/notifications/tool-result`, `tools/call`,
+`ui/open-link`, `ui/update-model-context`.
+
+CSP is the main practical risk: the host defaults to `default-src 'none'`, which breaks
+MapLibre first (blob: workers, WebGL, external tiles). Verify in a real MCP host, since a
+plain browser does not reproduce the iframe restrictions. Order of work: browser first,
+then the same page in an iframe with a deliberately strict CSP, then inside the agent.
+If the map cannot start there, the MCP App falls back to a static map image with an "open
+in full" link, and that fallback is prepared in advance, not improvised.
+
+## Hosts
+
+Claude Desktop renders `ui://` natively and is the primary widget channel; Codex is the
+text channel and must read well from `structuredContent` alone. Both run strong models, so
+do not degrade the payload for small ones.
+
+## References
+
+@architecture.mdc
+@web-ui.mdc
+@data-sources.mdc

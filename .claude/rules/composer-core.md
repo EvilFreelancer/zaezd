@@ -1,0 +1,102 @@
+---
+description: "Deterministic trip rules for dates, feasibility, price and packages"
+paths:
+  - "src/composer/**/*.ts"
+---
+
+# Composer core: the deterministic rules
+
+`src/composer/` holds the only part of the product that is allowed to decide numbers.
+It is pure: no network, no file system, no `Date.now()`. The current date arrives as an
+argument. This is what makes three identical requests produce three identical answers,
+which a language model demonstrably does not (three live runs of one request gave 3, 2 and
+2 nights and a 1.5x hotel price spread; `specs/10-proverka.md`).
+
+## Stay dates, `dates.ts`
+
+```
+check-in day:
+  starts_at known and start time <  12:00  -> start_date minus one day
+  starts_at known and start time >= 12:00  -> start_date
+  starts_at is null                        -> start_date minus one day (cautious)
+
+check-out day:
+  end_date plus one day, if the event ends after 18:00 or the end time is unknown
+  otherwise end_date
+
+nights = check-out day minus check-in day
+```
+
+Nights are never zero. A zero means a same-day event in a neighbouring city: assemble a
+package without a hotel but with a return leg on the same day, if one exists. The check-in
+day is the outbound travel date, the check-out day is the return travel date, and both go
+into `search_hotels` verbatim as `check_in` and `check_out`.
+
+## Event selection
+
+Applied in order: drop `format: "online"` (they go to a separate "no travel needed" list),
+drop events in the origin city, drop events whose `start_date` has passed or falls outside
+`dateTo`, sort by date proximity, keep at most five candidates, assemble only the first.
+The other four are listed without computation.
+
+## Feasibility, `feasibility.ts`
+
+| Check | Rule | Effect |
+|---|---|---|
+| Makes the opening | `arrival_at` no later than `starts_at` minus 60 minutes | otherwise flagged, cannot be the primary package |
+| Leaves after the end | return departure not before the event ends | otherwise flagged |
+| Start time unknown | `starts_at === null` | relax the check and say so on the card |
+
+The buffer is reported as a number ("запас 4 ч 15 мин"), never as the word "успевает".
+
+## Price, `pricing.ts`
+
+```
+total = outbound leg + return leg + hotel for the whole stay + event price (only if parsed)
+```
+
+- The return leg is mandatory. Without it the total is knowably wrong.
+- The hotel price is `price_basis: "stay_total"`. **Never multiply it by the night count.**
+- The event `price` from confcal is free text. Parse it or show it as text with an explicit
+  note that it is excluded from the sum. Never guess a number.
+- Render prices exactly as they arrive in the payload, with no rounding.
+- Working days burnt: days in `[check-in, check-out]` that isDayOff reports as working.
+
+## Packages, `packages.ts`
+
+Over the cartesian product of outbound leg, return leg and hotel, restricted to variants
+that passed feasibility:
+
+```
+"Дешевле всего"  = min(total)
+"Без отпуска"    = min(working days burnt), ties broken by min(total)
+"Быстрее всего"  = min(outbound duration + return duration)
+```
+
+If two rules pick the same variant, emit fewer cards rather than duplicates. If nothing
+fits the budget, emit the cheapest with an explicit overflow badge. An empty screen is
+never an acceptable output.
+
+## The composer never
+
+- builds a trip for an online event;
+- multiplies a hotel price by the number of nights;
+- treats an empty transport-mode array as proof that the mode does not exist
+  (`search_multitransport` allows partial per-mode failures);
+- includes an unparsed event price in the sum;
+- produces a precise venue marker from a venue it could not geocode;
+- calls a link a cart when its `kind` says otherwise.
+
+## Orchestration, `build-trip.ts`
+
+L3 only. Fans out with the budgets from `specs/04-kompozitor.md`: both transport searches in
+parallel, hotels next, enrichment in parallel and optional. Caps: three concurrent trip
+assemblies per process, one computed event per request, three geocoding calls per request.
+Results stream to the client as they become ready; a card must not wait for the last
+optional source.
+
+## References
+
+`.claude/rules/architecture.md`
+`.claude/rules/testing.md`
+`.claude/rules/data-sources.md`

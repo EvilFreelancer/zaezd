@@ -1,0 +1,70 @@
+---
+description: "Layer by layer build order, inner layers first"
+globs: src/**/*.ts
+alwaysApply: false
+---
+
+# Implementation order: inner layers first
+
+Build the cake from the inside out. A unit may be written only when everything it depends
+on already exists and is green. This keeps every layer testable without mocks and stops
+the classic hackathon failure where a beautiful screen sits on top of arithmetic nobody
+verified.
+
+## The order
+
+**L0. Pure domain core, `src/composer/`.** No imports outside the file's own layer, no I/O,
+no clock, no network.
+
+1. `types.ts` - `TripRequest`, `TripResult`, `TripPackage`, `EventCard`, `Leg`,
+   `HotelOffer`, `CheckoutLink`, `CoverageNote`, `SkippedNote`.
+2. `dates.ts` - check-in day, check-out day, night count.
+3. `feasibility.ts` - arrival buffer, departure after the event, unknown start time.
+4. `pricing.ts` - total participation price, budget breakdown, working days burnt.
+5. `packages.ts` - the three selection rules and their collapse to fewer cards.
+
+**L1. Sources, `src/sources/`.** Protocol and normalization, one module per concern.
+
+6. `types.ts` - normalized shapes the rest of the code sees.
+7. `normalize.ts` - raw payload (`unknown`) to domain types, plus forgiving input coercion.
+8. `cache.ts` - keyed in-memory cache with per-source TTL, replay from `fixtures/`.
+9. `confcal.ts` - session handling, one concurrent call, automatic re-initialize.
+10. `tutu.ts` - sessionless client over the four tools actually used.
+
+**L2. Enrichment, `src/enrich/`.** Each one a function with a timeout and a fallback,
+independent of the others.
+
+11. `calendar.ts`, then `geo.ts`, then `weather.ts`.
+
+**L3. Orchestration, `src/composer/build-trip.ts`.** Candidate selection, parallel fan-out,
+concurrency limits, assembly of the result. Written only when L0 to L2 are green.
+
+**L4. Delivery, `src/web/` then `src/mcp/`.** The web screen comes first because the public
+link is what gets graded; the MCP tools and the `ui://` resource reuse the same result and
+the same HTML.
+
+## Rules
+
+- One unit at a time, and it is specified in Gherkin and unit tested before it is written
+  (@workflow.mdc).
+- Never reach upward. If an L0 function needs a city name resolved by an L1 client, the
+  resolution happens in L3 and the resolved value is passed in as an argument.
+- Never widen a lower layer to make a higher one convenient. Add a mapping in the higher
+  layer instead.
+- A layer is finished when its unit tests pass without a single mock of a sibling module.
+- Cutting scope cuts from the outside in: the reserve list in `specs/09-plan-po-chasam.md`
+  drops the `ui://` resource, then the map, then walking time, then weather, then the
+  second and third packages. The date algorithm, the return leg and honest link labels are
+  never cut.
+
+## Forbidden
+
+- Writing `src/web/` or `src/mcp/` logic that computes prices, dates or feasibility.
+- Starting the orchestrator before `dates.ts`, `feasibility.ts` and `pricing.ts` are green.
+- Adding a sixth enrichment source. Three optional ones are the agreed ceiling.
+
+## References
+
+@architecture.mdc
+@workflow.mdc
+@composer-core.mdc

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "neuraldeep/qwen3.8-27b",
+  "provider": {
+    "neuraldeep": {
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "https://api.neuraldeep.ru/v1",
+        "apiKey": "{env:NEURALDEEP_API_KEY}"
+      },
+      "models": {
+        "qwen3.8-27b": { "tools": true },
+        "qwen3.8-27b-noreason": { "tools": true }
+      }
+    }
+  },
+  "mcp": {
+    "tutu":    { "type": "remote", "url": "https://mcp.tutu.ru/mcp",    "enabled": true },
+    "confcal": { "type": "remote", "url": "https://confcal.rpa.icu/mcp", "enabled": true }
+  }
+}

@@ -1,0 +1,165 @@
+{
+ "hotels": [
+  {
+   "hotel_id": "9626750",
+   "hotel_geo_id": "9626750",
+   "tutu_offer_id": "0e1fcf73-8e3d-44d4-b5f6-93f9c78a70d5",
+   "name": "Апарт Отель \"Центральный\"",
+   "stars": 0,
+   "rating": 8.83,
+   "review_count": 88,
+   "address": "778 м от центра",
+   "location": {
+    "lat": 55.799152,
+    "lng": 49.119747,
+    "city": null,
+    "city_geo_id": null
+   },
+   "photos": [
+    "https://cdn2.tu-tu.ru/imghub/view/a1feb8dc-9a4e-4a86-85a6-3b0741508202/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/9d646fbf5d63e1f159971579c9757626.jpg"
+   ],
+   "alias": "apartamenty_bekhtereva1",
+   "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-05&check_out=2026-09-07&geo_id=9626750&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=2&search_id=506898e8b98dfbdf5fae274926c3ab00",
+   "best_offer": {
+    "offerpack_hash": "fbdcdb77-403e-4800-a9d2-80a83098a3a3",
+    "room_name": "Апартаменты L",
+    "price": {
+     "amount": 15000.0,
+     "currency": "RUB"
+    },
+    "price_basis": "stay_total",
+    "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-05&check_out=2026-09-07&geo_id=9626750&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=2&search_id=506898e8b98dfbdf5fae274926c3ab00",
+    "room_size_sqm": null,
+    "breakfast_included": null,
+    "meal_name": null,
+    "free_cancellation": true,
+    "pay_at_hotel": null,
+    "pay_online": null,
+    "highlights": [
+     {
+      "type": "policies",
+      "text": "Бесплатная отмена"
+     }
+    ]
+   },
+   "review_summary": {
+    "rating": 8.83,
+    "review_count": 88,
+    "label": "⭐ 8.83/10 · 88 отзывов",
+    "source": "offers-hotel-api",
+    "scope": "hotel",
+    "subject": "9626750",
+    "scale": 10
+   },
+   "checkout_ref": {
+    "transport": "hotels",
+    "hotel_geo_id": "9626750",
+    "check_in": "2026-09-05",
+    "check_out": "2026-09-07",
+    "adults": 2,
+    "hotel_alias": "apartamenty_bekhtereva1",
+    "search_id": "506898e8b98dfbdf5fae274926c3ab00",
+    "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-05&check_out=2026-09-07&geo_id=9626750&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=2&search_id=506898e8b98dfbdf5fae274926c3ab00"
+   },
+   "photos_total": 52
+  },
+  {
+   "hotel_id": "7645692",
+   "hotel_geo_id": "7645692",
+   "tutu_offer_id": "49d4eb69-7ba7-4054-9e03-4bf1bd1dd6bc",
+   "name": "Гвардейская",
+   "stars": 2,
+   "rating": 6.77,
+   "review_count": 122,
+   "address": "4.2 км от центра",
+   "location": {
+    "lat": 55.784893,
+    "lng": 49.171642,
+    "city": null,
+    "city_geo_id": null
+   },
+   "photos": [
+    "https://cdn2.tu-tu.ru/imghub/view/ff50438f-0570-4ca8-acfb-8b364752bb3a/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/a9715a50a02dfb6a72595d46430761f2.jpg"
+   ],
+   "alias": "gostinitsa_gvardeyskaya",
+   "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-05&check_out=2026-09-07&geo_id=7645692&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=2&search_id=506898e8b98dfbdf5fae274926c3ab00",
+   "best_offer": {
+    "offerpack_hash": "3e282f7d-c2e5-4d84-ab75-f1851613f3d7",
+    "room_name": "Трехместный номер в блоке 4 категории (эконом)",
+    "price": {
+     "amount": 6540.0,
+     "currency": "RUB"
+    },
+    "price_basis": "stay_total",
+    "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-05&check_out=2026-09-07&geo_id=7645692&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=2&search_id=506898e8b98dfbdf5fae274926c3ab00",
+    "room_size_sqm": null,
+    "breakfast_included": true,
+    "meal_name": "Завтрак включён",
+    "free_cancellation": true,
+    "pay_at_hotel": null,
+    "pay_online": null,
+    "highlights": [
+     {
+      "type": "meal",
+      "text": "Завтрак включён"
+     },
+     {
+      "type": "policies",
+      "text": "Бесплатная отмена"
+     }
+    ]
+   },
+   "review_summary": {
+    "rating": 6.77,
+    "review_count": 122,
+    "label": "⭐ 6.77/10 · 122 отзыва",
+    "source": "offers-hotel-api",
+    "scope": "hotel",
+    "subject": "7645692",
+    "scale": 10
+   },
+   "checkout_ref": {
+    "transport": "hotels",
+    "hotel_geo_id": "7645692",
+    "check_in": "2026-09-05",
+    "check_out": "2026-09-07",
+    "adults": 2,
+    "hotel_alias": "gostinitsa_gvardeyskaya",
+    "search_id": "506898e8b98dfbdf5fae274926c3ab00",
+    "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-05&check_out=2026-09-07&geo_id=7645692&geo_name=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&room%5B0%5D=2&search_id=506898e8b98dfbdf5fae274926c3ab00"
+   },
+   "photos_total": 28
+  }
+ ],
+ "stay": {
+  "check_in": "2026-09-05",
+  "check_out": "2026-09-07",
+  "nights": 2
+ },
+ "meta": {
+  "search_id": "506898e8b98dfbdf5fae274926c3ab00",
+  "page": 1,
+  "page_size": 2,
+  "total_returned": 2,
+  "has_more": true,
+  "geo_id": "2656873",
+  "resolved_geo": {
+   "geo_id": "2656873",
+   "name": "Казань",
+   "country": "Россия",
+   "region": "Республика Татарстан",
+   "geo_type": "locality",
+   "hotels_count": 13197
+  },
+  "filters_applied": {
+   "option_filters": [],
+   "range_filters": [],
+   "button_filters": [],
+   "quick_filters_order": [],
+   "changes": []
+  },
+  "post_filter_dropped_over_cap": 0,
+  "post_filter_dropped_no_free_cancellation": 0,
+  "post_filter_dropped_no_breakfast": 0
+ }
+}

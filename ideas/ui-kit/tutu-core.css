@@ -1,0 +1,46 @@
+/* Ядро палитры Туту для быстрой вёрстки.
+   Источник: боевая дизайн-система Kite 5.10.0, cdn1.tu-tu.ru/lib-assets/@tutu/kite@5.10.0/
+   Блок --tutu-deck-* снят с презентации открытия хакатона.
+   Снято 19 августа 2026 года. Полный набор из 1726 токенов в kite-tokens.json */
+
+:root {
+  /* бренд, одинаков в обеих темах */
+  --tutu-brand:            #6f5df6;
+  --tutu-brand-pressed:    #654eef;
+  --tutu-brand-light:      #8b87ff;
+  --tutu-brand-soft:       rgba(111,93,246,.15);
+  --tutu-accent:           #f76b3b;
+  --tutu-warning:          #ffdd3e;
+
+  /* светлая тема */
+  --tutu-surface:          #ffffff;
+  --tutu-surface-muted:    #f5f5f9;
+  --tutu-text:             #181c2d;
+  --tutu-text-secondary:   #555a7a;
+  --tutu-text-tertiary:    #7d82a0;
+  --tutu-border:           rgba(112,116,149,.15);
+
+  /* цвета презентации хакатона */
+  --tutu-deck-purple:      #816dff;
+  --tutu-deck-orange:      #fd5623;
+  --tutu-deck-lime:        #d1ff11;
+  --tutu-deck-navy:        #0d0b68;
+  --tutu-deck-lavender:    #efecff;
+
+  /* брейкпоинты Kite */
+  --tutu-bp-sm: 576px;
+  --tutu-bp-md: 768px;
+  --tutu-bp-lg: 992px;
+  --tutu-bp-xl: 1200px;
+  --tutu-bp-xxl: 1400px;
+}
+
+[data-theme="dark"] {
+  --tutu-surface:          #1a1e2d;
+  --tutu-surface-muted:    #212537;
+  --tutu-surface-raised:   #292c40;
+  --tutu-text:             #f5f5f9;
+  --tutu-text-secondary:   rgba(245,245,249,.6);
+  --tutu-text-tertiary:    #707495;
+  --tutu-border:           rgba(112,116,149,.15);
+}

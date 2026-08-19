@@ -1,0 +1,77 @@
+---
+description: "TypeScript style, language policy, hygiene, shared domain vocabulary"
+---
+
+# Code style
+
+## Language
+
+- **Code, comments, identifiers, docstrings, commit messages: English.**
+- **Agent rule files and briefs** (`.cursor/rules/*.mdc`, `.claude/rules/*.md`, `AGENTS.md`,
+  `CLAUDE.md`): English, unless the project owner asks otherwise; then switch every tree at
+  once so the Rules Sync diff stays reviewable.
+- **User-facing product copy** (the trip board, the user guide): Russian, following the
+  microcopy rules in `specs/05-interfeys.md`.
+- **Chat replies to the user: Russian.**
+
+## TypeScript
+
+- Node >= 22.6, ESM only (`"type": "module"`). Relative imports carry the `.ts` extension;
+  the toolchain runs TypeScript through Node's native type stripping, so only erasable
+  syntax is allowed: no `enum`, no `namespace`, no parameter properties, no decorators.
+  Use `const` objects with `as const` instead of `enum`.
+- `strict` is on, together with `noUncheckedIndexedAccess`, `exactOptionalPropertyTypes`
+  and `verbatimModuleSyntax`. Type-only imports use `import type`.
+- **`any` is forbidden** and the linter enforces it. External payloads enter as `unknown`
+  and are narrowed by an explicit parser in `src/sources/`. Everything downstream of that
+  parser is a domain type.
+- Prefer `type` aliases for data, discriminated unions over optional-field soup, and
+  readonly arrays for anything crossing a module boundary.
+- Named exports only; one clear responsibility per module. A file above roughly 300 lines
+  is a signal to split, and a single file holding two thousand lines is an explicit
+  reviewer complaint in `specs/08-repozitoriy.md`.
+
+## Errors and absence
+
+- A missing field is `undefined` and stays visible as missing all the way to the UI.
+  Never substitute a default, a guess or a web-search answer for data a source did not
+  return. This is the product's core promise, not a style preference.
+- Throw typed errors carrying the source name and the arguments that failed
+  (`class SourceError extends Error`), not bare strings.
+- Optional enrichment never throws outward: it resolves to `undefined` after its timeout
+  and the caller renders the absence.
+
+## Hygiene
+
+- No `TODO`, no commented-out code, no stub that returns a plausible value. The repository
+  is read by an AI reviewer that scores exactly this.
+- No secrets. `.env.example` documents every variable; real values live in `.env`, ignored.
+- No unused dependencies. Add a package in the same change that starts using it.
+- Every file ends with a newline.
+- `console.log` is off outside `scripts/`; use `console.warn` and `console.error` for
+  operational messages.
+
+## Naming
+
+- Types and classes `PascalCase`; functions, variables and files `camelCase` for modules
+  with a single export, `kebab-case` for multi-word file names (`build-trip.ts`).
+- Domain vocabulary is fixed and shared with the specs and the documentation:
+  `TripRequest`, `TripResult`, `TripPackage`, `EventCard`, `CoverageNote`, `SkippedNote`,
+  `Leg`, `HotelOffer`, `CheckoutLink`. Do not invent a synonym in a new module.
+- Tool names are identical in code, README, user guide and architecture diagram:
+  `find_event_trips`, `get_trip_details`, `create_trip_checkout`. A mismatch between the
+  diagram and the code was flagged by both reviewers of the plan; do not reintroduce it.
+
+## Commands
+
+```bash
+npm run typecheck   # tsc --noEmit
+npm run lint        # eslint .
+npm run lint:fix
+npm run verify      # the full gate
+```
+
+## References
+
+`.claude/rules/architecture.md`
+`.claude/rules/testing.md`

@@ -1,0 +1,441 @@
+{
+ "offers": [
+  {
+   "offer_id": "143a7c06719f149e17b6735fa6d37a05",
+   "transport": "avia",
+   "price": {
+    "amount": 4147.07,
+    "currency": "RUB"
+   },
+   "duration_min": 100,
+   "carriers": [
+    "Победа"
+   ],
+   "search_results_url": "https://avia.tutu.ru/f/Moskva/Kazan/?class=Y&travelers=1&route[0]=491-05092026-33",
+   "segments_count": 1,
+   "departure_at": "2026-09-05T18:40:00+03:00",
+   "arrival_at": "2026-09-05T20:20:00+03:00",
+   "legs": [
+    {
+     "label": "outbound",
+     "from": "Москва — Шереметьево (SVO), терм. D",
+     "to": "Казань, KZN, терм. 1",
+     "departure_at": "2026-09-05T18:40:00+03:00",
+     "arrival_at": "2026-09-05T20:20:00+03:00",
+     "duration_min": 100,
+     "segments": [
+      {
+       "from": "Москва — Шереметьево (SVO), терм. D",
+       "to": "Казань, KZN, терм. 1",
+       "departure_at": "2026-09-05T18:40:00+03:00",
+       "arrival_at": "2026-09-05T20:20:00+03:00",
+       "duration_min": 100,
+       "carrier": "Победа",
+       "voyage_no": "DP-6843",
+       "from_geo_point_id": 2719726,
+       "to_geo_point_id": 2718725,
+       "review_summary": {
+        "rating": 6.93,
+        "review_count": 14260,
+        "label": "⭐ 6.93/10 · 14 260 отзывов",
+        "source": "offers-api.feedback",
+        "scope": "carrier",
+        "subject": "Победа",
+        "scale": 10,
+        "feedback_key": "2227"
+       }
+      }
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "variant_id": "568c2279e8e7cff9ce36a3ca435a8611:671018c27b97d70aa92a2c65120e84ac",
+     "offer_hash": "{\"Price\":4148,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"55eb1d0da09c19f69443d128325db2a5\\\",\\\"variantConditionsHash\\\":\\\"143a7c06719f149e17b6735fa6d37a05:f4b7bd50b88d2aef62aa0ef78689dd61\\\",\\\"pricingVariantHash\\\":\\\"0b60b7a5fda48bea215814fa37862b50\\\"}]\"}",
+     "price": {
+      "amount": 4147.07,
+      "currency": "RUB"
+     },
+     "conditions": {
+      "fare_family": "Базовый",
+      "baggage": {
+       "kg": 0,
+       "pieces": 0
+      },
+      "cabin_baggage": {
+       "kg": null,
+       "pieces": 1,
+       "dimensions": "36 × 30 × 27"
+      },
+      "refundable": false,
+      "changeable": false
+     },
+     "service_class": "ECONOMIC"
+    },
+    {
+     "variant_id": "568c2279e8e7cff9ce36a3ca435a8611:6216f4b2c5b065a73a13b6ce8448635a",
+     "offer_hash": "{\"Price\":7124,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"30693255e786b4e73628674202cdc5e3\\\",\\\"variantConditionsHash\\\":\\\"143a7c06719f149e17b6735fa6d37a05:7bdef7201719c823a5aaf6841db6231e\\\",\\\"pricingVariantHash\\\":\\\"aefee00ad4b60d8b2fb51e6c3cb58ccb\\\"}]\"}",
+     "price": {
+      "amount": 7123.96,
+      "currency": "RUB"
+     },
+     "conditions": {
+      "fare_family": "Выгодный",
+      "baggage": {
+       "kg": 10,
+       "pieces": 1
+      },
+      "cabin_baggage": {
+       "kg": null,
+       "pieces": 1,
+       "dimensions": "36 × 30 × 27"
+      },
+      "refundable": false,
+      "changeable": true,
+      "exchange": {
+       "available": true,
+       "deadline_hours": 48
+      }
+     },
+     "service_class": "ECONOMIC"
+    },
+    {
+     "variant_id": "568c2279e8e7cff9ce36a3ca435a8611:66fcf35c9562f0614bb9617bbea50c84",
+     "offer_hash": "{\"Price\":10307,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"afd657206fd32653f874ff975f3bfefc\\\",\\\"variantConditionsHash\\\":\\\"143a7c06719f149e17b6735fa6d37a05:81e223a99b8ce32d2cd1059cbdcab4ab\\\",\\\"pricingVariantHash\\\":\\\"729abd7222eaff9a4f1aff54935f1d05\\\"}]\"}",
+     "price": {
+      "amount": 10306.69,
+      "currency": "RUB"
+     },
+     "conditions": {
+      "fare_family": "Максимум",
+      "baggage": {
+       "kg": 20,
+       "pieces": 1
+      },
+      "cabin_baggage": {
+       "kg": null,
+       "pieces": 1,
+       "dimensions": "36 × 30 × 27"
+      },
+      "refundable": true,
+      "changeable": true,
+      "exchange": {
+       "available": true,
+       "deadline_hours": 48
+      }
+     },
+     "service_class": "ECONOMIC"
+    }
+   ],
+   "checkout_ref": {
+    "transport": "avia",
+    "is_round_trip": false,
+    "search_results_url": "https://avia.tutu.ru/f/Moskva/Kazan/?class=Y&travelers=1&route[0]=491-05092026-33",
+    "offer_hash": "{\"Price\":4148,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"55eb1d0da09c19f69443d128325db2a5\\\",\\\"variantConditionsHash\\\":\\\"143a7c06719f149e17b6735fa6d37a05:f4b7bd50b88d2aef62aa0ef78689dd61\\\",\\\"pricingVariantHash\\\":\\\"0b60b7a5fda48bea215814fa37862b50\\\"}]\"}",
+    "departure_geo_city_id": 2657260,
+    "arrival_geo_city_id": 2656873,
+    "departure_at": "2026-09-05T18:40:00+03:00",
+    "service_class": "ECONOMIC",
+    "departure_avia_id": "491",
+    "arrival_avia_id": "33",
+    "passengers_full": 1,
+    "passengers_child": 0,
+    "passengers_infant": 0
+   },
+   "review_summary": {
+    "rating": 6.93,
+    "review_count": 14260,
+    "label": "⭐ 6.93/10 · 14 260 отзывов",
+    "source": "offers-api.feedback",
+    "scope": "carrier",
+    "subject": "Победа",
+    "scale": 10,
+    "feedback_key": "2227"
+   }
+  },
+  {
+   "offer_id": "81c2aa092025737bf04c2fa95802ec2b",
+   "transport": "avia",
+   "price": {
+    "amount": 4412.74,
+    "currency": "RUB"
+   },
+   "duration_min": 100,
+   "carriers": [
+    "Аэрофлот"
+   ],
+   "search_results_url": "https://avia.tutu.ru/f/Moskva/Kazan/?class=Y&travelers=1&route[0]=491-05092026-33",
+   "segments_count": 1,
+   "departure_at": "2026-09-05T22:15:00+03:00",
+   "arrival_at": "2026-09-05T23:55:00+03:00",
+   "legs": [
+    {
+     "label": "outbound",
+     "from": "Москва — Шереметьево (SVO), терм. B",
+     "to": "Казань, KZN, терм. 1",
+     "departure_at": "2026-09-05T22:15:00+03:00",
+     "arrival_at": "2026-09-05T23:55:00+03:00",
+     "duration_min": 100,
+     "segments": [
+      {
+       "from": "Москва — Шереметьево (SVO), терм. B",
+       "to": "Казань, KZN, терм. 1",
+       "departure_at": "2026-09-05T22:15:00+03:00",
+       "arrival_at": "2026-09-05T23:55:00+03:00",
+       "duration_min": 100,
+       "carrier": "Аэрофлот",
+       "voyage_no": "SU-1198",
+       "from_geo_point_id": 2719726,
+       "to_geo_point_id": 2718725,
+       "review_summary": {
+        "rating": 9.25,
+        "review_count": 22870,
+        "label": "⭐ 9.25/10 · 22 870 отзывов",
+        "source": "offers-api.feedback",
+        "scope": "carrier",
+        "subject": "Аэрофлот",
+        "scale": 10,
+        "feedback_key": "1062"
+       }
+      }
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "variant_id": "a9d5004a7ac50b796a0498b8dd387804:06dd44ad3a22ddcce66412f835719a8b",
+     "offer_hash": "{\"Price\":4413,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"030703dd2bc239fbe5f4f0d2071b9b6b\\\",\\\"variantConditionsHash\\\":\\\"81c2aa092025737bf04c2fa95802ec2b:4a15ebaf82f14491e2bac3a776e17da0\\\",\\\"pricingVariantHash\\\":\\\"07fba059fd20c2d887a26b88d52add3e\\\"}]\"}",
+     "price": {
+      "amount": 4412.74,
+      "currency": "RUB"
+     },
+     "conditions": {
+      "fare_family": "Эконом Базовый",
+      "baggage": {
+       "kg": 0,
+       "pieces": 0
+      },
+      "cabin_baggage": {
+       "kg": 10,
+       "pieces": 1,
+       "dimensions": "55 × 40 × 25"
+      },
+      "refundable": false,
+      "changeable": true,
+      "seat_selection": "available_paid",
+      "boarding_privileges": "unavailable",
+      "exchange": {
+       "available": true,
+       "deadline_hours": 1
+      }
+     },
+     "service_class": "ECONOMIC"
+    },
+    {
+     "variant_id": "a9d5004a7ac50b796a0498b8dd387804:e17195945116eee5cc4360dcb82da5f9",
+     "offer_hash": "{\"Price\":7607,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"d6a40ec170f3d1147c6cd9f945d2c559\\\",\\\"variantConditionsHash\\\":\\\"81c2aa092025737bf04c2fa95802ec2b:3512777c0927777baf7233034bcadd1e\\\",\\\"pricingVariantHash\\\":\\\"1630f533d96344e144ac93f1b6313f64\\\"}]\"}",
+     "price": {
+      "amount": 7607.0,
+      "currency": "RUB"
+     },
+     "conditions": {
+      "fare_family": "Эконом Оптимум",
+      "baggage": {
+       "kg": 23,
+       "pieces": 1
+      },
+      "cabin_baggage": {
+       "kg": 10,
+       "pieces": 1,
+       "dimensions": "55 × 40 × 25"
+      },
+      "refundable": true,
+      "changeable": true,
+      "seat_selection": "available_paid",
+      "boarding_privileges": "unavailable",
+      "exchange": {
+       "available": true,
+       "deadline_hours": 1
+      }
+     },
+     "service_class": "ECONOMIC"
+    },
+    {
+     "variant_id": "a9d5004a7ac50b796a0498b8dd387804:4d092885eeefcfea271ba047c06138ee",
+     "offer_hash": "{\"Price\":17149,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"ac5a3ab1c61551cd55a210e76c2d23a8\\\",\\\"variantConditionsHash\\\":\\\"81c2aa092025737bf04c2fa95802ec2b:82e1de26d80c0447c4375b0fe9df31c8\\\",\\\"pricingVariantHash\\\":\\\"bcf40c36e04df5b49f45f220a827bc22\\\"}]\"}",
+     "price": {
+      "amount": 17148.71,
+      "currency": "RUB"
+     },
+     "conditions": {
+      "fare_family": "Эконом Максимум",
+      "baggage": {
+       "kg": 23,
+       "pieces": 2
+      },
+      "cabin_baggage": {
+       "kg": 10,
+       "pieces": 1,
+       "dimensions": "55 × 40 × 25"
+      },
+      "refundable": true,
+      "changeable": true,
+      "seat_selection": "available_free",
+      "boarding_privileges": "free",
+      "exchange": {
+       "available": true,
+       "deadline_hours": 1
+      }
+     },
+     "service_class": "ECONOMIC"
+    },
+    {
+     "variant_id": "a9d5004a7ac50b796a0498b8dd387804:3816b3b0bc66756051ce27437191e540",
+     "offer_hash": "{\"Price\":54972,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"125a0d0844d42daf5bad50fd14792172\\\",\\\"variantConditionsHash\\\":\\\"81c2aa092025737bf04c2fa95802ec2b:71ac8e907bd67cd6dcdbf26f298bfc43\\\",\\\"pricingVariantHash\\\":\\\"f53ece00f9a191a1f1c6eace6d2ba690\\\"}]\"}",
+     "price": {
+      "amount": 54971.14,
+      "currency": "RUB"
+     },
+     "conditions": {
+      "fare_family": "Бизнес Базовый",
+      "baggage": {
+       "kg": 32,
+       "pieces": 1
+      },
+      "cabin_baggage": {
+       "kg": 15,
+       "pieces": 1,
+       "dimensions": "55 × 40 × 25"
+      },
+      "refundable": false,
+      "changeable": true,
+      "seat_selection": "available_free",
+      "business_hall_allowed": true,
+      "boarding_privileges": "free",
+      "exchange": {
+       "available": true,
+       "deadline_hours": 1
+      }
+     },
+     "service_class": "BUSINESS"
+    },
+    {
+     "variant_id": "a9d5004a7ac50b796a0498b8dd387804:46f9e51481197e3f8f65e1d51d167338",
+     "offer_hash": "{\"Price\":62723,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"a07495d457f2545f883ac8aac0ebb4c4\\\",\\\"variantConditionsHash\\\":\\\"81c2aa092025737bf04c2fa95802ec2b:8f2a245a2a2a76b399b0cd6268977c2f\\\",\\\"pricingVariantHash\\\":\\\"104729ec95037198e4c78c529ed2c5cb\\\"}]\"}",
+     "price": {
+      "amount": 62722.42,
+      "currency": "RUB"
+     },
+     "conditions": {
+      "fare_family": "Бизнес Оптимум",
+      "baggage": {
+       "kg": 32,
+       "pieces": 2
+      },
+      "cabin_baggage": {
+       "kg": 15,
+       "pieces": 1,
+       "dimensions": "55 × 40 × 25"
+      },
+      "refundable": true,
+      "changeable": true,
+      "seat_selection": "available_free",
+      "business_hall_allowed": true,
+      "boarding_privileges": "free",
+      "exchange": {
+       "available": true,
+       "deadline_hours": 1
+      }
+     },
+     "service_class": "BUSINESS"
+    }
+   ],
+   "checkout_ref": {
+    "transport": "avia",
+    "is_round_trip": false,
+    "search_results_url": "https://avia.tutu.ru/f/Moskva/Kazan/?class=Y&travelers=1&route[0]=491-05092026-33",
+    "offer_hash": "{\"Price\":4413,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"030703dd2bc239fbe5f4f0d2071b9b6b\\\",\\\"variantConditionsHash\\\":\\\"81c2aa092025737bf04c2fa95802ec2b:4a15ebaf82f14491e2bac3a776e17da0\\\",\\\"pricingVariantHash\\\":\\\"07fba059fd20c2d887a26b88d52add3e\\\"}]\"}",
+    "departure_geo_city_id": 2657260,
+    "arrival_geo_city_id": 2656873,
+    "departure_at": "2026-09-05T22:15:00+03:00",
+    "service_class": "ECONOMIC",
+    "departure_avia_id": "491",
+    "arrival_avia_id": "33",
+    "passengers_full": 1,
+    "passengers_child": 0,
+    "passengers_infant": 0
+   },
+   "review_summary": {
+    "rating": 9.25,
+    "review_count": 22870,
+    "label": "⭐ 9.25/10 · 22 870 отзывов",
+    "source": "offers-api.feedback",
+    "scope": "carrier",
+    "subject": "Аэрофлот",
+    "scale": 10,
+    "feedback_key": "1062"
+   }
+  }
+ ],
+ "meta": {
+  "transport": "avia",
+  "from": {
+   "name": "Москва",
+   "geo_id": "2657260",
+   "region": "Москва город федерального значения",
+   "iata": "MOW"
+  },
+  "to": {
+   "name": "Казань",
+   "geo_id": "2656873",
+   "region": "городской округ Казань, Республика Татарстан",
+   "iata": "KZN"
+  },
+  "round_trip": false,
+  "return_date": null,
+  "sort": "price_asc",
+  "page": 1,
+  "page_size": 2,
+  "total_returned": 2,
+  "total_matched": 19,
+  "total_matched_exact": true,
+  "has_more": true,
+  "post_filter_dropped_over_cap": 0,
+  "post_filter_dropped_not_direct": 0,
+  "post_filter_dropped_wrong_carrier": 0,
+  "post_filter_dropped_wrong_flight_number": 0,
+  "carriers_available": [
+   {
+    "name": "Победа",
+    "offers_count": 2,
+    "price_from": 4147.07
+   },
+   {
+    "name": "Аэрофлот",
+    "offers_count": 9,
+    "price_from": 4412.74
+   },
+   {
+    "name": "Nordwind Airlines",
+    "offers_count": 1,
+    "price_from": 5158.3
+   },
+   {
+    "name": "S7 Airlines",
+    "offers_count": 1,
+    "price_from": 5705.91
+   },
+   {
+    "name": "Utair",
+    "offers_count": 3,
+    "price_from": 9472.84
+   },
+   {
+    "name": "Ред Вингс",
+    "offers_count": 3,
+    "price_from": 40411.37
+   }
+  ],
+  "upstream_note": null
+ }
+}

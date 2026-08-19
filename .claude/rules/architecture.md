@@ -1,0 +1,82 @@
+---
+description: "Layers, dependency direction, fixed architectural decisions"
+---
+
+# Architecture and boundaries
+
+Zaezd assembles a whole trip from a reason to travel. An event catalogue (confcal) says
+where and when, Tutu says how to get there and where to sleep, and a deterministic
+composer turns both into at most three explainable packages. Full specification in
+`specs/02-arhitektura.md`.
+
+## Layers
+
+Dependencies point downward only. A module may import from its own layer and from lower
+layers, never from a higher one.
+
+| Layer | Location | Depends on | Nature |
+|---|---|---|---|
+| L0 domain core | `src/composer/{types,dates,feasibility,pricing,packages}.ts` | nothing | pure, deterministic, no I/O, no clock |
+| L1 sources | `src/sources/{types,normalize,cache,confcal,tutu}.ts` | L0 | I/O, protocol, normalization |
+| L2 enrichment | `src/enrich/{geo,calendar,weather}.ts` | L0, L1 | optional, each with a timeout and a fallback |
+| L3 orchestration | `src/composer/build-trip.ts` | L0, L1, L2 | fan-out, budgets, assembly |
+| L4 delivery | `src/mcp/**`, `src/web/**` | L3 | adapters, no business logic |
+
+Two consequences worth stating outright. Business rules never live in L4: if a price or a
+date is computed in a route handler or in a template, it is in the wrong file. And L0 is
+reachable by unit tests without a single mock, which is why it is where correctness is
+actually proven.
+
+## Fixed decisions
+
+These were settled in the specs and reviewed twice. Do not relitigate them in code.
+
+- **Gateway, not a direct browser connection.** CORS blocks it, the Tutu manifest is about
+  25.5k tokens, and their responses arrive as a JSON string inside a text block with no
+  `outputSchema`. Normalization happens in one place.
+- **Three outward tools, not sixteen.** `find_event_trips`, `get_trip_details`,
+  `create_trip_checkout`. See `.claude/rules/mcp-layer.md`.
+- **The web screen is primary, the MCP App is secondary.** The same HTML serves
+  `GET /` and `ui://zaezd/trip-board`. If they diverge, both channels lose.
+- **No server-side trip state.** `trip_id` is a compact encoding of the request, not a key
+  in a store. `/t/:id` recomputes or replays; switching packages is a choice among
+  already computed ones.
+- **In-memory cache with TTL plus file fixtures.** Two modes only: `live` and `replay`.
+  Recording is a script (`scripts/record.ts`), not a server mode.
+- **One computed event per request.** Up to five candidates are listed; only the first is
+  assembled. A fan-out over five events is a spinner, not a product.
+- **Deterministic dates in code.** Three identical live runs produced three different night
+  counts and a 1.5x price spread. The algorithm belongs in `src/composer/dates.ts`, never
+  in a model prompt. See `.claude/rules/composer-core.md`.
+
+## Repository map
+
+```
+src/sources/    confcal and Tutu clients, normalization, cache
+src/composer/   pure rules (L0) and the orchestrator (L3)
+src/enrich/     geocoding, production calendar, weather - all optional
+src/mcp/        MCP server: three tools, outputSchema, ui:// resource
+src/web/        the single trip board screen
+features/       executable Gherkin specifications
+tests/          unit tests over the pure layer
+fixtures/       recorded source payloads, used by specs, tests and replay mode
+scripts/        record.ts and other one-off tooling
+docs/           user guide, architecture, decision log
+specs/          the product specification this repository implements
+ideas/          research materials; not part of the product
+```
+
+## Failure policy
+
+Falling optional sources must never break trip assembly. Every enrichment is a function
+with a timeout and a fallback, not a service. Nothing is ever invented to fill a gap:
+absence is rendered as absence. Timeouts are in `specs/07-nadezhnost.md` and in
+`.claude/rules/data-sources.md`.
+
+## References
+
+`.claude/rules/implementation-order.md`
+`.claude/rules/composer-core.md`
+`.claude/rules/data-sources.md`
+`.claude/rules/mcp-layer.md`
+`.claude/rules/web-ui.md`
