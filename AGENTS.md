@@ -17,8 +17,9 @@ clients, the three optional enrichments, the orchestrator, the trip board and th
 tools with the `ui://` widget. It ships as a container and runs behind whatever reverse proxy
 a deployment happens to have; `npm run verify` covers all of it offline against `fixtures/`.
 
-`ideas/` and `research/` hold the reconnaissance the specs were built from and are not part
-of the product; when the public repository is created they move to `docs/research/`.
+`ideas/` holds the reconnaissance the specs were built from. It ships with the public
+repository as history, not as product code, and nothing under `src/` may import from it.
+`research/` holds raw probes and review transcripts and stays out of git.
 
 ## Commands
 
