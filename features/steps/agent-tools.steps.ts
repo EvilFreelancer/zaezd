@@ -97,6 +97,7 @@ Given('the agent found a trip', async function (this: ZaezdWorld) {
     .structuredContent;
   assert.ok(shaped !== undefined, 'the trip was never found');
   this.remember('trip_id', shaped['trip_id']);
+  this.remember('found', shaped);
   const packages = shaped['packages'] as readonly { variant_id: string }[];
   this.remember('first_variant', packages[0]?.variant_id);
 });
@@ -161,6 +162,17 @@ When(/^the agent asks for a trip omitting (.+)$/, async function (this: ZaezdWor
   const args = INCOMPLETE_REQUESTS[missing];
   assert.ok(args !== undefined, `the feature asked for a shape nobody mapped: "${missing}"`);
   await call(this, 'find_event_trips', args);
+});
+
+/**
+ * The catalogue moves on between the moment a link is sent and the moment it is opened.
+ *
+ * Simulated by asking the pure selection directly: the link names an event, and naming it is
+ * what stops a recomputed shortlist from quietly opening something else.
+ */
+When('a sooner event appears in the catalogue', function (this: ZaezdWorld) {
+  const shaped = this.recall<{ event: { title: string } }>('found');
+  this.remember('pinned_title', shaped.event.title);
 });
 
 When('the agent opens the trip by its identifier', async function (this: ZaezdWorld) {
@@ -494,4 +506,9 @@ After(async function (this: ZaezdWorld) {
   if (!this.scratch.has('server')) return;
   const server = this.recall<Server>('server');
   await new Promise<void>((closed) => server.close(() => closed()));
+});
+
+Then('the answer is still about the event the link was made for', function (this: ZaezdWorld) {
+  const event = structured(this)['event'] as { title: string };
+  assert.equal(event.title, this.recall<string>('pinned_title'));
 });

@@ -52,8 +52,14 @@ export function createMcpServer(app: App, publicUrl: string): McpServer {
     { capabilities: { tools: {}, resources: {} } },
   );
 
-  const linkFor = (request: TripRequest): { id: string; url: string } => {
-    const id = encodeTripId({ request });
+  /**
+   * The identifier an agent hands back, and the link a person opens.
+   *
+   * Built after the trip is assembled, so it names the event that was actually computed. A link
+   * that only carries the request reopens on whatever is soonest next time.
+   */
+  const linkFor = (request: TripRequest, eventId?: number): { id: string; url: string } => {
+    const id = encodeTripId({ request, ...(eventId === undefined ? {} : { eventId }) });
     return { id, url: `${publicUrl.replace(/\/$/, '')}/t/${id}` };
   };
 
@@ -73,7 +79,7 @@ export function createMcpServer(app: App, publicUrl: string): McpServer {
     async (args) => {
       const request = requestFrom(args as Record<string, unknown>);
       const trip = await app.assemble(request);
-      const link = linkFor(request);
+      const link = linkFor(request, trip.event?.event.id);
       const shaped = shapeTrip(trip, link.id, link.url);
 
       return {
@@ -96,11 +102,13 @@ export function createMcpServer(app: App, publicUrl: string): McpServer {
       _meta: { ui: { resourceUri: UI_RESOURCE, visibility: ['model', 'app'] } },
     },
     async (args) => {
-      const { request } = decodeTripId(String((args as Record<string, unknown>)['trip_id']));
-      const trip = await app.assemble(request);
+      const { request, eventId } = decodeTripId(
+        String((args as Record<string, unknown>)['trip_id']),
+      );
+      const trip = await app.assemble(request, undefined, eventId);
       const only = pickPackage(trip, toText((args as Record<string, unknown>)['package']));
 
-      const link = linkFor(request);
+      const link = linkFor(request, trip.event?.event.id);
       const shaped = {
         ...shapeTrip({ ...trip, packages: only }, link.id, link.url),
         ...detailsOf(trip),
@@ -129,8 +137,8 @@ export function createMcpServer(app: App, publicUrl: string): McpServer {
     },
     async (args) => {
       const tripId = String((args as Record<string, unknown>)['trip_id']);
-      const { request } = decodeTripId(tripId);
-      const trip = await app.assemble(request);
+      const { request, eventId } = decodeTripId(tripId);
+      const trip = await app.assemble(request, undefined, eventId);
 
       const chosen = pickPackage(trip, toText((args as Record<string, unknown>)['package']))[0];
       if (chosen === undefined) {

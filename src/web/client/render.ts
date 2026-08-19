@@ -405,7 +405,9 @@ function notices(trip: TripResult): HTMLElement | undefined {
     ...trip.notes.map((note) => NOTE_TEXTS[note]).filter(Boolean),
     ...trip.sourceNotes.map(sourceNoteText),
     trip.forecast === undefined && trip.event !== undefined
-      ? 'Прогноз погоды на эти даты недоступен, окно прогноза 16 дней.'
+      ? trip.event.venueLocation.precision === 'unknown'
+        ? 'Прогноза нет: город события неизвестен, спрашивать погоду не у чего.'
+        : 'Прогноза на эти даты нет. Он бывает на 16 дней вперёд, а источник мог и не ответить.'
       : undefined,
     trip.mode === 'replay' ? `Экран собран из записи от ${day(trip.computedAt)}.` : undefined,
   ].filter(Boolean);

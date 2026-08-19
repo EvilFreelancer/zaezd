@@ -12,9 +12,11 @@ checkout link labels.
 
 ## State of the repository
 
-Specification and research are complete; the product code is being written layer by layer,
-one feature per commit. Present now: the toolchain, the executable-specification harness,
-the delivery scaffolding (CI, Docker, asset copy, rule-tree generator) and these rules.
+All five layers are written, specified and deployed: the pure core, the confcal and Tutu
+clients, the three optional enrichments, the orchestrator, the trip board and the three MCP
+tools with the `ui://` widget. The product runs live at https://zaezd.rpa.icu behind Traefik,
+and `npm run verify` covers it offline against `fixtures/`.
+
 `ideas/` and `research/` hold the reconnaissance the specs were built from and are not part
 of the product; when the public repository is created they move to `docs/research/`.
 
@@ -28,6 +30,7 @@ npm test             # unit tests (tests/)
 npm run typecheck    # tsc over the Node tree and the browser tree
 npm run lint         # eslint
 npm run rules:sync   # regenerate .cursor/rules from .claude/rules
+npm run docs:check   # every command the documentation names really exists
 npm run build        # compile to dist/ and copy static assets
 npm run verify       # all of the above except build, the gate before calling anything done
 ```

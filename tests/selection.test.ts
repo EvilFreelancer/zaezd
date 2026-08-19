@@ -253,6 +253,46 @@ describe('selectEvents', () => {
   });
 });
 
+describe('selectEvents with a pinned event', () => {
+  const soon = event({ id: 1, startDate: '2026-08-25', endDate: '2026-08-25' });
+  const later = event({ id: 2, startDate: '2026-09-10', endDate: '2026-09-10' });
+
+  it('opens the event the link names, not the sooner one', () => {
+    const chosen = selectEvents({
+      events: [soon, later],
+      origin: MOSCOW,
+      asOf: '2026-08-19',
+      pinnedEventId: 2,
+    });
+
+    expect(chosen.primary?.id).toBe(2);
+    expect(chosen.alternatives.map((item) => item.id)).toEqual([1]);
+  });
+
+  it('falls back to the nearest one when the pinned event is gone', () => {
+    const chosen = selectEvents({
+      events: [soon, later],
+      origin: MOSCOW,
+      asOf: '2026-08-19',
+      pinnedEventId: 999,
+    });
+
+    expect(chosen.primary?.id).toBe(1);
+  });
+
+  it('does not resurrect an event the filters dropped', () => {
+    const online = event({ id: 3, format: 'online', startDate: '2026-08-21', endDate: '2026-08-21' });
+    const chosen = selectEvents({
+      events: [online, soon],
+      origin: MOSCOW,
+      asOf: '2026-08-19',
+      pinnedEventId: 3,
+    });
+
+    expect(chosen.primary?.id).toBe(1);
+  });
+});
+
 describe('describeCoverage', () => {
   const directory: CityDirectory = {
     citiesTotal: 21,

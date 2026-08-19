@@ -43,6 +43,14 @@ export type SelectionInput = {
   readonly asOf: IsoDate;
   readonly dateFrom?: IsoDate;
   readonly dateTo?: IsoDate;
+  /**
+   * The event a shared link was built for.
+   *
+   * Without it a link recomputes the shortlist and can open a different, sooner event than the
+   * one somebody sent, which is not what "открой мою поездку" means. Honoured only when the
+   * event is still in the shortlist; a stale id falls back to the nearest one.
+   */
+  readonly pinnedEventId?: number;
 };
 
 export type SelectionResult = {
@@ -165,7 +173,14 @@ export function selectEvents(input: SelectionInput): SelectionResult {
     (reason) => ({ reason, events: dropped.get(reason) as EventRef[] }),
   );
 
-  const [primary, ...alternatives] = candidates;
+  // The pinned event goes first when it survived the filters; everything else keeps its order.
+  const pinned = candidates.findIndex((event) => event.id === input.pinnedEventId);
+  const chosen =
+    pinned <= 0
+      ? candidates
+      : [candidates[pinned] as CatalogueEvent, ...candidates.filter((_, at) => at !== pinned)];
+
+  const [primary, ...alternatives] = chosen;
   return {
     ...(primary === undefined ? {} : { primary }),
     alternatives,

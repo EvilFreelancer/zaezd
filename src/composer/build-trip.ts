@@ -85,6 +85,8 @@ export type BuildTripOptions = {
   readonly computedAt: IsoDateTime;
   readonly mode: 'live' | 'replay';
   readonly onStage?: (stage: Stage) => void;
+  /** The event a shared link named, so the link opens the trip it was made from. */
+  readonly pinnedEventId?: number;
 };
 
 /**
@@ -192,6 +194,7 @@ export async function buildTrip(
     asOf: options.asOf,
     ...(request.dateFrom === undefined ? {} : { dateFrom: request.dateFrom }),
     ...(request.dateTo === undefined ? {} : { dateTo: request.dateTo }),
+    ...(options.pinnedEventId === undefined ? {} : { pinnedEventId: options.pinnedEventId }),
   });
 
   const base = {

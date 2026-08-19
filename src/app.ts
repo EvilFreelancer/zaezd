@@ -27,7 +27,12 @@ export type App = {
   readonly mode: Mode;
   /** In replay this is the day the fixtures were recorded, so nothing rots overnight. */
   readonly referenceDate: string;
-  assemble(request: TripRequest, onStage?: (stage: Stage) => void): Promise<TripResult>;
+  assemble(
+    request: TripRequest,
+    onStage?: (stage: Stage) => void,
+    /** The event a shared link named, so `/t/:id` opens the trip it was made from. */
+    pinnedEventId?: number,
+  ): Promise<TripResult>;
   checkout(trip: TripResult, variant: TripVariant): Promise<readonly CheckoutLink[]>;
 };
 
@@ -94,7 +99,7 @@ export function createApp(options: AppOptions = {}): App {
     mode,
     referenceDate,
 
-    async assemble(request, onStage) {
+    async assemble(request, onStage, pinnedEventId) {
       return queue(async () =>
         buildTrip(request, {
           confcal,
@@ -106,6 +111,7 @@ export function createApp(options: AppOptions = {}): App {
           computedAt: mode === 'replay' ? (recordings?.recordedAt ?? '') : now().toISOString(),
           mode,
           ...(onStage === undefined ? {} : { onStage }),
+          ...(pinnedEventId === undefined ? {} : { pinnedEventId }),
         }),
       );
     },

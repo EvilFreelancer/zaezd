@@ -1,7 +1,7 @@
 /**
  * The HTTP surface of Zaezd.
  *
- * Four routes and nothing clever. `GET /` opens on a computed trip rather than on a form,
+ * A handful of routes and nothing clever. `GET /` opens on a computed trip rather than on a form,
  * because the first thirty seconds decide whether anyone reads the second screen. `GET /t/:id`
  * reopens a shared trip from the identifier alone - there is no trip state on this server.
  * `GET /api/trip` streams the stages so cards appear as they become ready, and
@@ -129,10 +129,15 @@ async function readBody(req: IncomingMessage): Promise<unknown> {
   }
 }
 
-async function board(app: App, res: ServerResponse, request: TripRequest): Promise<void> {
+async function board(
+  app: App,
+  res: ServerResponse,
+  request: TripRequest,
+  pinnedEventId?: number,
+): Promise<void> {
   let trip: TripResult;
   try {
-    trip = await app.assemble(request);
+    trip = await app.assemble(request, undefined, pinnedEventId);
   } catch (error) {
     html(
       res,
@@ -299,8 +304,8 @@ export function createHandler(app: App, publicUrl = process.env['ZAEZD_PUBLIC_UR
 
     if (url.pathname.startsWith('/t/')) {
       try {
-        const { request } = decodeTripId(url.pathname.slice('/t/'.length));
-        await board(app, res, request);
+        const { request, eventId } = decodeTripId(url.pathname.slice('/t/'.length));
+        await board(app, res, request, eventId);
       } catch (error) {
         const message =
           error instanceof TripIdError ? error.message : 'Эту ссылку не удалось прочитать';
@@ -316,9 +321,21 @@ export function createHandler(app: App, publicUrl = process.env['ZAEZD_PUBLIC_UR
   };
 }
 
-/** The shareable link for a request, so the screen and the MCP tools hand back the same URL. */
-export function publicLinkFor(request: TripRequest, baseUrl: string): string {
-  return `${baseUrl.replace(/\/$/, '')}/t/${encodeTripId({ request })}`;
+/**
+ * The shareable link for a trip, so the screen and the MCP tools hand back the same URL.
+ *
+ * Naming the event matters: without it the link recomputes the shortlist and can open a sooner
+ * event than the one somebody actually sent.
+ */
+export function publicLinkFor(
+  request: TripRequest,
+  baseUrl: string,
+  eventId?: number,
+): string {
+  return `${baseUrl.replace(/\/$/, '')}/t/${encodeTripId({
+    request,
+    ...(eventId === undefined ? {} : { eventId }),
+  })}`;
 }
 
 export function startServer(port: number, app: App = createApp()): Server {

@@ -55,6 +55,12 @@ Feature: An agent gets three verbs, not sixteen searches
     Then every package that calls itself complete lists nothing as missing
     And a package that excludes the event price says so
 
+  Scenario: A shared link opens the trip it was made from, not a newer one
+    Given the agent found a trip
+    When a sooner event appears in the catalogue
+    And the agent opens the trip by its identifier
+    Then the answer is still about the event the link was made for
+
   Scenario: Opening a trip needs nothing but its identifier
     Given the agent found a trip
     When the agent opens the trip by its identifier

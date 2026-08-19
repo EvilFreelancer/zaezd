@@ -21,8 +21,9 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "build": "rm -rf dist && tsc -p tsconfig.build.json && npm run build:web && node scripts/copy-assets.ts",
-    "verify": "npm run rules:check && npm run typecheck && npm run lint && npm run bdd && npm run test",
-    "build:web": "tsc -p tsconfig.web.json"
+    "verify": "npm run rules:check && npm run docs:check && npm run typecheck && npm run lint && npm run bdd && npm run test",
+    "build:web": "tsc -p tsconfig.web.json",
+    "docs:check": "node scripts/check-docs.ts"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^13.2.1",
