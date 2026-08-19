@@ -1,30 +1,20 @@
-# Deployment behind Traefik. The names differ between installations - one calls its TLS
-# entrypoint `websecure`, another `https` - so they are variables with the values this
-# deployment actually uses. Anything else host-specific belongs in docker-compose.override.yaml,
-# which is gitignored.
+# The service and nothing else.
+#
+# No reverse proxy, no labels, no external network: which proxy sits in front, what the host
+# is called and which network it lives on are properties of a deployment, not of the product.
+# They belong in `docker-compose.override.yaml`, which is gitignored and exists only on the
+# machine that runs it. The example in the README shows what one looks like behind Traefik.
 services:
   zaezd:
     build: .
     image: zaezd:latest
     restart: unless-stopped
+    # Everything the process reads is documented in .env.example. `.env` is not committed.
     env_file:
       - .env
     environment:
       PORT: 8080
-      ZAEZD_MODE: ${ZAEZD_MODE:-live}
-      ZAEZD_PUBLIC_URL: ${ZAEZD_PUBLIC_URL:-https://zaezd.rpa.icu}
-    labels:
-      traefik.enable: "true"
-      traefik.http.routers.zaezd.rule: Host(`${ZAEZD_HOST:-zaezd.rpa.icu}`)
-      traefik.http.routers.zaezd.entrypoints: ${ZAEZD_ENTRYPOINT:-https}
-      traefik.http.routers.zaezd.tls: "true"
-      traefik.http.routers.zaezd.tls.certresolver: ${ZAEZD_CERTRESOLVER:-letsencrypt}
-      traefik.docker.network: ${ZAEZD_NETWORK:-traefik}
-      traefik.http.services.zaezd.loadbalancer.server.port: "8080"
-    networks:
-      - traefik
-
-networks:
-  traefik:
-    name: ${ZAEZD_NETWORK:-traefik}
-    external: true
+    # Published locally by default, so `docker compose up` gives a working screen with no proxy
+    # in front. A deployment behind one usually drops this and joins the proxy's network instead.
+    ports:
+      - '127.0.0.1:8080:8080'

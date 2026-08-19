@@ -37,7 +37,7 @@ import type { CatalogueEvent } from '../src/composer/types.ts';
 const CONFCAL_URL = process.env['ZAEZD_CONFCAL_URL'] ?? 'https://confcal.rpa.icu/mcp';
 const TUTU_URL = process.env['ZAEZD_TUTU_URL'] ?? 'https://mcp.tutu.ru/mcp';
 const CONTACT = process.env['ZAEZD_CONTACT_EMAIL'] ?? 'freelancerevil@gmail.com';
-const USER_AGENT = `zaezd-recorder/0.1 (+https://zaezd.rpa.icu; ${CONTACT})`;
+const USER_AGENT = `zaezd-recorder/0.1 (${CONTACT})`;
 
 const FIXTURES = 'fixtures';
 const RECORDED_AT = new Date().toISOString();

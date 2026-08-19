@@ -4,18 +4,8 @@
   "mcp": {
     "zaezd": {
       "type": "remote",
-      "url": "https://zaezd.rpa.icu/mcp",
+      "url": "http://localhost:8080/mcp",
       "enabled": true
-    },
-    "tutu": {
-      "type": "remote",
-      "url": "https://mcp.tutu.ru/mcp",
-      "enabled": false
-    },
-    "confcal": {
-      "type": "remote",
-      "url": "https://confcal.rpa.icu/mcp",
-      "enabled": false
     }
   }
 }

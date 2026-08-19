@@ -8,17 +8,19 @@
 Первая вертикаль - ИТ-конференции. Каталог событий даёт confcal MCP, транспорт и жильё - Tutu
 MCP, а собирает всё детерминированный композитор, а не модель.
 
-## Ссылки
+## Что где
 
-| Что | Куда |
+| Что | Где |
 |---|---|
-| Экран поездки | https://zaezd.rpa.icu/ |
+| Экран поездки | `/` на том адресе, где вы запустили Заезд |
+| Поездка по ссылке | `/t/<trip_id>`, ссылку отдаёт экран и любой из инструментов |
+| MCP-эндпоинт | `/mcp`, streamable HTTP, без ключа |
+| Проверка живости | `/healthz`, отвечает режимом и опорной датой |
 | Руководство пользователя | [docs/user-guide.md](docs/user-guide.md) |
-| MCP-эндпоинт | https://zaezd.rpa.icu/mcp |
 
 ## Сквозной сценарий
 
-Открываете https://zaezd.rpa.icu/. На экране уже собранная поездка, а не пустая форма.
+Открываете корень. На экране уже собранная поездка, а не пустая форма.
 Сверху событие, дата, город, площадка и время пешком до неё от ближайшего отеля. Ниже до трёх
 карточек: дорога туда с номером поезда или рейса, отель с ценой за всё проживание и
 расстоянием до площадки, дорога обратно, итог одной цифрой и строка арифметики под ним,
@@ -34,7 +36,7 @@ MCP, а собирает всё детерминированный композ�
 структурой, `get_trip_details` раскрывает пакет, `create_trip_checkout` собирает чек-лист.
 Хост, который умеет рисовать, получает тот же экран как MCP App.
 
-## Запуск
+## Запуск из исходников
 
 ```bash
 npm install
@@ -42,8 +44,8 @@ ZAEZD_MODE=replay npm run dev
 ```
 
 Откроется http://localhost:8080. В режиме `replay` продукт работает на записанных ответах из
-`fixtures/` и не ходит в сеть: с ним можно жить без интернета, и опорной датой служит день
-записи. Живой режим - `ZAEZD_MODE=live`, переменные описаны в `.env.example`.
+`fixtures/` и не ходит в сеть: с ним можно жить без интернета и без ключей, а опорной датой
+служит день записи. Живой режим - `ZAEZD_MODE=live`.
 
 Проверка целиком:
 
@@ -51,29 +53,108 @@ ZAEZD_MODE=replay npm run dev
 npm run verify
 ```
 
-Это типизация, линтер, исполняемые сценарии на Gherkin и юнит-тесты. Всё офлайн.
+Это синхронность правил, сверка документированных команд, типизация, линтер, исполняемые
+сценарии на Gherkin и юнит-тесты. Всё офлайн.
+
+## Запуск в контейнере
+
+Образ собирается из репозитория и внутри содержит и код, и фикстуры, поэтому в режиме
+`replay` контейнеру не нужен ни интернет, ни секреты.
+
+```bash
+cp .env.example .env      # и отредактируйте
+docker compose up -d --build
+```
+
+Экран поднимется на http://127.0.0.1:8080. Без файла `.env` compose не стартует: это
+намеренно, чтобы никто не запустил продукт на чужих значениях по умолчанию.
+
+Без compose то же самое одной командой:
+
+```bash
+docker build -t zaezd .
+docker run -d --name zaezd -p 127.0.0.1:8080:8080 --env-file .env zaezd
+```
+
+Разово, без файла окружения, чтобы просто посмотреть:
+
+```bash
+docker run --rm -p 127.0.0.1:8080:8080 \
+  -e ZAEZD_MODE=replay -e ZAEZD_PUBLIC_URL=http://localhost:8080 zaezd
+```
+
+### Переменные окружения
+
+Полный список с комментариями лежит в [.env.example](.env.example). Коротко:
+
+| Переменная | Зачем | По умолчанию |
+|---|---|---|
+| `ZAEZD_MODE` | `live` ходит в источники, `replay` читает `fixtures/` | `live` |
+| `PORT` | порт внутри контейнера | `8080` |
+| `ZAEZD_PUBLIC_URL` | адрес, по которому продукт виден снаружи. Из него строятся ссылки на поездку и CSP виджета | `http://localhost:8080` |
+| `ZAEZD_CONTACT_EMAIL` | контакт в `User-Agent`; Nominatim банит анонимные запросы | `zaezd@example.com` |
+| `ZAEZD_CONFCAL_URL` | MCP каталога событий | публичный confcal |
+| `ZAEZD_TUTU_URL` | MCP Туту | `https://mcp.tutu.ru/mcp` |
+
+Ключей и токенов нет ни одного: оба источника открытые. Значение `ZAEZD_PUBLIC_URL` важно
+задать честно - именно этот адрес уезжает агенту как ссылка на экран и попадает в CSP
+виджета, и если он не совпадает с реальным, доска внутри хоста останется пустой.
+
+Контейнер несёт `HEALTHCHECK` на `/healthz`, так что `docker ps` показывает `healthy` только
+когда приложение действительно отвечает.
+
+### За обратным прокси
+
+Сам `docker-compose.yaml` ничего не знает про прокси, домены и сети - это свойства площадки,
+а не продукта. Всё это кладётся в `docker-compose.override.yaml`, он в гитигноре и живёт
+только на той машине, которая разворачивает сервис. Пример для Traefik:
+
+```yaml
+services:
+  zaezd:
+    ports: !reset []          # наружу светит прокси, а не контейнер
+    environment:
+      ZAEZD_PUBLIC_URL: https://zaezd.example.com
+    labels:
+      traefik.enable: 'true'
+      traefik.http.routers.zaezd.rule: Host(`zaezd.example.com`)
+      traefik.http.routers.zaezd.entrypoints: https
+      traefik.http.routers.zaezd.tls: 'true'
+      traefik.http.routers.zaezd.tls.certresolver: letsencrypt
+      traefik.http.services.zaezd.loadbalancer.server.port: '8080'
+    networks: [proxy]
+
+networks:
+  proxy:
+    external: true
+```
+
+Имена точки входа, резолвера сертификатов и сети у всех разные, поэтому в примере они
+подставные. Для nginx или Caddy override будет другим, продукт от этого не меняется: он
+слушает `PORT` и отдаёт `/healthz`.
 
 ## Подключить к агенту
 
-Эндпоинт `https://zaezd.rpa.icu/mcp` работает по streamable HTTP и не требует ключа.
+Эндпоинт `<адрес>/mcp` работает по streamable HTTP и не требует ключа. Локально это
+`http://localhost:8080/mcp`, на развёрнутом сервисе - ваш адрес из `ZAEZD_PUBLIC_URL`.
 
 Claude Desktop, в `claude_desktop_config.json`:
 
 ```json
-{ "mcpServers": { "zaezd": { "type": "http", "url": "https://zaezd.rpa.icu/mcp" } } }
+{ "mcpServers": { "zaezd": { "type": "http", "url": "http://localhost:8080/mcp" } } }
 ```
 
 Claude Code и Codex CLI:
 
 ```bash
-claude mcp add --transport http zaezd https://zaezd.rpa.icu/mcp
-codex mcp add zaezd --url https://zaezd.rpa.icu/mcp
+claude mcp add --transport http zaezd http://localhost:8080/mcp
+codex mcp add zaezd --url http://localhost:8080/mcp
 ```
 
 Qwen Code:
 
 ```bash
-qwen mcp add --transport http zaezd https://zaezd.rpa.icu/mcp
+qwen mcp add --transport http zaezd http://localhost:8080/mcp
 ```
 
 Хост, который умеет рисовать виджеты, получит тот же экран через ресурс

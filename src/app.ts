@@ -46,8 +46,9 @@ export type AppOptions = {
 };
 
 function userAgentFor(contact: string): string {
-  // Nominatim bans anonymous traffic and asks to be able to reach a human.
-  return `zaezd/0.1 (+https://zaezd.rpa.icu; ${contact})`;
+  // Nominatim bans anonymous traffic and asks to be able to reach a human. Where this instance
+  // is deployed is nobody's business but its own, so the contact is the part that has to be real.
+  return `zaezd/0.1 (${contact})`;
 }
 
 /** One source of enrichment answers, dispatched by host, so replay needs no extra plumbing. */
@@ -68,7 +69,7 @@ export function createApp(options: AppOptions = {}): App {
   const mode: Mode = options.mode ?? (process.env['ZAEZD_MODE'] === 'replay' ? 'replay' : 'live');
   const now = options.now ?? ((): Date => new Date());
   const cache = new TtlCache({ clock: () => (options.now?.() ?? new Date()).getTime() });
-  const contact = options.contactEmail ?? process.env['ZAEZD_CONTACT_EMAIL'] ?? 'hello@zaezd.rpa.icu';
+  const contact = options.contactEmail ?? process.env['ZAEZD_CONTACT_EMAIL'] ?? 'zaezd@example.com';
   const userAgent = userAgentFor(contact);
 
   let confcal: ConfcalClient;

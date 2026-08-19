@@ -14,8 +14,8 @@ checkout link labels.
 
 All five layers are written, specified and deployed: the pure core, the confcal and Tutu
 clients, the three optional enrichments, the orchestrator, the trip board and the three MCP
-tools with the `ui://` widget. The product runs live at https://zaezd.rpa.icu behind Traefik,
-and `npm run verify` covers it offline against `fixtures/`.
+tools with the `ui://` widget. It ships as a container and runs behind whatever reverse proxy
+a deployment happens to have; `npm run verify` covers all of it offline against `fixtures/`.
 
 `ideas/` and `research/` hold the reconnaissance the specs were built from and are not part
 of the product; when the public repository is created they move to `docs/research/`.
