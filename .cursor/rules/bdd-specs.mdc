@@ -3,6 +3,7 @@ description: "Executable Gherkin specifications, layout, style, tags, offline by
 alwaysApply: true
 ---
 
+
 # Executable Gherkin specifications
 
 `features/` holds the product contract. Every use case is written here in Gherkin
@@ -56,6 +57,8 @@ whose feature owns them and import nothing between step files.
 ## Offline by construction
 
 Every scenario runs against recorded JSON in `fixtures/`, never against the live network.
+In `replay` the reference "today" is the fixture's `recorded_at`, so a recorded event never
+turns into a past event and reddens the suite on its own.
 This is not a preference: confcal and Tutu are slow and rate limited, `checkout_ref` and
 `search_id` expire, and the demo must survive the venue network. Live calls belong to
 `scripts/record.ts` and to manual smoke runs.
@@ -73,6 +76,19 @@ If a scenario cannot be expressed without the network, the fixture is missing. R
 | `@web` | the trip board screen |
 | `@checkout` | payment links and their honest labels |
 
+## What Gherkin does not cover
+
+Two things belong elsewhere and putting them in a `.feature` breaks the rules above.
+
+**Protocol and process limits.** Cache keys, TTLs, session re-initialization, concurrency
+ceilings, `outputSchema` shapes, MIME profiles and byte-for-byte equality are not things a
+traveller observes. They are unit and contract tests. The scenario states the observable
+consequence instead: the same request answers the same way without touching the source.
+
+**Anything that needs a browser.** Widths, horizontal scroll, keyboard focus, contrast, CSP
+and the map are invisible to Cucumber on Node. They are covered by Playwright
+(`npm run test:ui`) and named in the feature only as an outcome the renderer produces.
+
 No `@skip` and no `@wip` in committed specs. A scenario is red only while the task that
 introduced it is in progress; a task is not done until every scenario is green.
 
@@ -82,22 +98,29 @@ Written as `.feature` files when the matching layer is built, in this order. Thi
 the acceptance surface of the product, derived from `specs/10-proverka.md` and
 `specs/04-kompozitor.md`; keep it in sync as specs are written.
 
-- [ ] Stay dates: morning event pulls check-in one day earlier; a late finish adds a night;
-      unknown start time falls back to the cautious estimate; nights are never zero.
-- [ ] Online event and event in the origin city produce no trip, each with its own message.
-- [ ] A variant arriving later than one hour before the opening is flagged and cannot be
-      the primary package.
-- [ ] Total price contains both legs plus the whole-stay hotel price; a free-text event
-      price is shown but excluded from the sum.
-- [ ] Hotel price is never multiplied by the number of nights.
-- [ ] Three packages collapse to fewer cards when two rules pick the same variant.
-- [ ] Over-budget results still render, with an explicit overflow badge, never an empty screen.
-- [ ] A venue that could not be geocoded gets no precise marker and says so.
-- [ ] A partial transport-mode failure never becomes a claim that the mode does not exist.
-- [ ] Checkout buttons are labelled from the actual `kind` returned by Tutu.
-- [ ] A failing optional source hides its block and leaves the trip intact.
-- [ ] Equivalent argument shapes (`["ai"]`, `"[\"ai\"]"`, `"ai, data"`) resolve to one
-      request and one cache key.
+| File | Behaviour it owns |
+|---|---|
+| `stay-dates.feature` | a morning event pulls check-in one day earlier; the catalogue gives no end time, so a night is added; zero nights is a same-day trip without a hotel |
+| `event-selection.feature` | an online event and an event in the origin city each produce their own "no trip" message; candidates are capped at five and only the first is computed |
+| `feasibility.feature` | arriving later than one hour before the opening is flagged and cannot be the primary package; an unknown start time relaxes the check and says so |
+| `trip-price.feature` | the total carries both legs plus the whole-stay hotel price; the hotel price is never multiplied by nights; a free-text price is shown and excluded; "от N" makes the total a lower bound |
+| `hotel-choice.feature` | hotels rank by distance only when the venue was geocoded precisely, otherwise by price and rating with no distance shown |
+| `three-packages.feature` | two rules picking one variant emit fewer cards, not duplicates; an over-budget result still renders with an overflow badge |
+| `checkout-labels.feature` | a button is labelled from the `kind` Tutu actually returned; an unknown `kind` gets the most cautious label |
+| `source-payloads.feature` | a field the source omitted stays missing all the way to the screen; a partial transport-mode failure never becomes "there is no such transport" |
+| `recorded-sources.feature` | equivalent argument shapes (`["ai","data"]`, `"[\\"ai\\",\\"data\\"]"`, `"ai, data"`) resolve to one request; a repeated request returns the same answer without touching the source |
+| `event-catalogue.feature` | a lost catalogue session recovers once and the answer still arrives; a catalogue outage is an error screen with a reason |
+| `transport-and-stay.feature` | a transport outage assembles no package and says why; a hotel outage leaves packages without a hotel, labelled as such |
+| `working-days.feature` | a night departure and a midday departure burn a different number of working days |
+| `venue-location.feature` | a venue that could not be geocoded gets no precise marker and says so; walking time is absent rather than guessed |
+| `weather-window.feature` | a date beyond the forecast window shows no weather block instead of history |
+| `trip-assembly.feature` | the whole trip assembles from recordings; a failing optional source hides its block and leaves the trip intact |
+| `checkout-links.feature` | a hotel link built without a room rate's `offerpack_hash` is not called a cart; a failed live call falls back to the search page, labelled honestly |
+| `public-trip-link.feature` | a public link reopens the trip and says when it was computed; a corrupted, over-long or unknown-version identifier is refused with a readable reason |
+| `trip-web-app.feature` | the public link opens on a computed trip, not a form; stages appear as they become ready |
+| `trip-board.feature` | the card carries its six things and the arithmetic under the budget bar adds up; every empty state has its own text |
+| `agent-tools.feature` | an agent gets the event, the packages and the coverage note; arguments in any of the three shapes are accepted |
+| `trip-widget.feature` | the widget receives its result, recomputes through the host, and opens a checkout link outside |
 
 ## References
 

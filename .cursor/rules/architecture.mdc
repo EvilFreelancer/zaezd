@@ -3,6 +3,7 @@ description: "Layers, dependency direction, fixed architectural decisions"
 alwaysApply: true
 ---
 
+
 # Architecture and boundaries
 
 Zaezd assembles a whole trip from a reason to travel. An event catalogue (confcal) says
@@ -17,11 +18,11 @@ layers, never from a higher one.
 
 | Layer | Location | Depends on | Nature |
 |---|---|---|---|
-| L0 domain core | `src/composer/{types,dates,feasibility,pricing,packages}.ts` | nothing | pure, deterministic, no I/O, no clock |
-| L1 sources | `src/sources/{types,normalize,cache,confcal,tutu}.ts` | L0 | I/O, protocol, normalization |
-| L2 enrichment | `src/enrich/{geo,calendar,weather}.ts` | L0, L1 | optional, each with a timeout and a fallback |
-| L3 orchestration | `src/composer/build-trip.ts` | L0, L1, L2 | fan-out, budgets, assembly |
-| L4 delivery | `src/mcp/**`, `src/web/**` | L3 | adapters, no business logic |
+| L0 domain core | `src/composer/{types,dates,selection,feasibility,pricing,hotels,packages,checkout-labels}.ts` | nothing | pure, deterministic, no I/O, no clock |
+| L1 sources | `src/sources/{types,normalize,cache,replay,mcp-client,confcal,tutu}.ts` | L0 | I/O, protocol, normalization |
+| L2 enrichment | `src/enrich/{calendar,geo,weather}.ts` | L0, L1 | optional, each with a timeout and a fallback |
+| L3 orchestration | `src/composer/{build-trip,build-checkout,trip-id}.ts` | L0, L1, L2 | fan-out, budgets, assembly |
+| L4 delivery | `src/web/**`, `src/mcp/**` | L3 | adapters, no business logic |
 
 Two consequences worth stating outright. Business rules never live in L4: if a price or a
 date is computed in a route handler or in a template, it is in the wrong file. And L0 is
@@ -37,11 +38,19 @@ These were settled in the specs and reviewed twice. Do not relitigate them in co
   `outputSchema`. Normalization happens in one place.
 - **Three outward tools, not sixteen.** `find_event_trips`, `get_trip_details`,
   `create_trip_checkout`. See @mcp-layer.mdc.
-- **The web screen is primary, the MCP App is secondary.** The same HTML serves
-  `GET /` and `ui://zaezd/trip-board`. If they diverge, both channels lose.
+- **The web screen is primary, the MCP App is secondary.** One client-side renderer serves
+  `GET /` and `ui://zaezd/trip-board`. What is shared is the renderer, not a finished
+  document: the web page gets the `TripResult` embedded by the server, the `ui://` resource
+  gets it from the host through `ui/notifications/tool-result`, because an MCP App resource
+  loads independently of the tool call. If the renderer forks, both channels lose.
 - **No server-side trip state.** `trip_id` is a compact encoding of the request, not a key
   in a store. `/t/:id` recomputes or replays; switching packages is a choice among
   already computed ones.
+- **Leaflet, not MapLibre.** Raster tiles as plain `img` elements: no WebGL, no `blob:`
+  workers, so the map survives a host CSP of `default-src 'none'` on a single `img-src`
+  exception. Markers are `L.divIcon` with inline SVG, because Leaflet's stock CSS pulls its
+  marker images by relative URL and they 404 once the CSS is inlined. Reasoning in
+  `docs/decisions.md`.
 - **In-memory cache with TTL plus file fixtures.** Two modes only: `live` and `replay`.
   Recording is a script (`scripts/record.ts`), not a server mode.
 - **One computed event per request.** Up to five candidates are listed; only the first is

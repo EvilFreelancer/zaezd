@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      # Rule-tree sync, typecheck of the Node and the browser tree, lint, executable Gherkin
+      # specifications and unit tests. Everything runs offline against fixtures/.
+      - run: npm run verify
+
+      - run: npm run build
+
+  image:
+    runs-on: ubuntu-latest
+    needs: verify
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t zaezd:ci .
+      - name: The image must serve /healthz
+        run: |
+          docker run -d --name zaezd -p 8080:8080 zaezd:ci
+          for i in $(seq 1 30); do
+            curl -fsS http://127.0.0.1:8080/healthz && break
+            sleep 1
+          done
+          curl -fsS http://127.0.0.1:8080/healthz
+          docker rm -f zaezd

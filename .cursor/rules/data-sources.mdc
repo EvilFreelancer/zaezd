@@ -4,6 +4,7 @@ globs: src/sources/**/*.ts,src/enrich/**/*.ts
 alwaysApply: false
 ---
 
+
 # Data sources: clients, normalization, degradation
 
 `src/sources/` speaks protocol and normalizes; `src/enrich/` adds optional context. Raw
@@ -32,6 +33,15 @@ in `specs/03-istochniki.md` and `ideas/01-tutu-mcp-obzor.md`.
   Geocoding is mandatory and will fail often; falling back to the city centre is a normal
   mode of operation, not an exception.
 - **`starts_at` may be null.** Then only the date is known and feasibility relaxes.
+- **confcal has no event end time at all.** The field set is `id`, `title`, `url`,
+  `start_date`, `end_date`, `starts_at`, `city`, `city_slug`, `venue`, `format`, `is_free`,
+  `price`, `topics`, `tags`, `program_url`, `description`. The check-out day is therefore
+  always `end_date` plus one.
+- **OSRM must run the foot profile.** The public `router.project-osrm.org` serves the car
+  profile only; measured on one pair of points in Kazan it answered 269 s where
+  `routing.openstreetmap.de/routed-foot` answered 847 s on the same pair. Labelling a car
+  route "N мин пешком" is a lie. Use the foot profile, and when it is unavailable show no
+  walking time at all.
 - **Tutu responses arrive as a JSON string inside a text block,** with no `outputSchema`.
   Parse in one place, in `normalize.ts`.
 
@@ -59,6 +69,18 @@ source did not return stay `undefined`; nothing is filled in from general knowle
 
 `ZAEZD_MODE=live` calls the sources and caches; `ZAEZD_MODE=replay` reads `fixtures/` and
 never opens a socket. Recording is `scripts/record.ts`, not a third server mode.
+
+Every fixture is an envelope, not a bare payload: `recorded_at`, `source`, `tool`,
+`arguments`, `response`, and `volatile: true` on anything that expires (`checkout_ref`,
+`search_id`, ready-made `checkout_url`). `fixtures/manifest.json` maps a normalized request
+to its snapshot date and file. In `replay` the reference "today" is `recorded_at`, otherwise
+recorded events silently become past events and the suite rots on its own. A `volatile`
+field is good for parsing and is never checked for liveness.
+
+The two modes also settle the checkout question. In `live` a checkout link is rebuilt at
+click time. In `replay` it comes from the recording and is labelled as recorded, with its
+snapshot date and a warning that it has most likely expired. Neither mode passes a recorded
+link off as a live one.
 
 ## Timeouts and fallbacks
 

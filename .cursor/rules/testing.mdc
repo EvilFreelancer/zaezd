@@ -4,6 +4,7 @@ globs: tests/**/*.ts
 alwaysApply: false
 ---
 
+
 # Unit tests
 
 Vitest, `tests/**/*.test.ts`. Unit tests protect the deterministic core; the observable
@@ -39,6 +40,26 @@ observed or is one payload away:
 11. A partial transport-mode failure is not turned into "there is no such transport".
 12. A free-text event price stays out of the sum.
 
+Twelve more that the plan review surfaced, each a defect one payload away:
+
+13. An ISO time with an offset is compared on the right calendar day: 11:59+03:00 must not
+    cross noon or slide to the neighbouring date on the way through UTC.
+14. Zero nights is a legal answer and produces a hotel-less package, not a forced night.
+15. Every tie in the three package rules is broken by a stable secondary key.
+16. Working days burnt differ between a night departure and a midday one, so "Без отпуска"
+    does not collapse into "Дешевле всего".
+17. "от 7 000 ₽" parses as a lower bound and the total is labelled as one.
+18. The cache does not store a rejected promise, coalesces identical in-flight requests and
+    respects its size ceiling.
+19. `trip_id` round-trips Cyrillic, sorts its keys canonically, and rejects a corrupted
+    string, an unknown version and one over the length ceiling.
+20. Every string from a source is escaped in text, in attributes, in URLs and inside the
+    embedded JSON.
+21. A walking time is never derived from an OSRM car-profile answer.
+22. A total assembled without a hotel is not called the full participation price.
+23. Empty sets: no return leg, no hotel, no feasible pair at all.
+24. In `replay` the reference date is the fixture's `recorded_at`, not the wall clock.
+
 ## Rules
 
 - **No network.** Load recorded payloads from `fixtures/` through the same reader the
@@ -62,8 +83,8 @@ npm run bdd           # executable Gherkin specs
 npm run verify        # typecheck + lint + bdd + unit tests
 ```
 
-`vitest.config.ts` keeps `passWithNoTests: true` so the pipeline is green on a fresh
-checkout. Remove it once the suite is real, so an accidentally empty run cannot pass.
+`passWithNoTests` was removed from `vitest.config.ts` with the first real test, so an
+accidentally empty run can no longer pass.
 
 ## References
 

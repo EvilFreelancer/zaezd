@@ -27,17 +27,32 @@ check-out day:
 nights = check-out day minus check-in day
 ```
 
-Nights are never zero. A zero means a same-day event in a neighbouring city: assemble a
-package without a hotel but with a return leg on the same day, if one exists. The check-in
-day is the outbound travel date, the check-out day is the return travel date, and both go
-into `search_hotels` verbatim as `check_in` and `check_out`.
+**confcal has no event end time.** Verified against the live catalogue: an event carries
+`start_date`, `end_date` and `starts_at` and nothing else about time. The second branch of
+the check-out rule is therefore unreachable on real data and the check-out day is always
+`end_date` plus one. The 18:00 branch stays in the function because a source may appear,
+and it is covered by a unit test, not by a scenario on fixtures.
 
-## Event selection
+Nights are never negative. Zero nights is a legal answer and means a same-day trip to a
+neighbouring city: assemble a package without a hotel but with a mandatory return leg the
+same day. Never round zero up to one, that buys a night the traveller does not need. The
+check-in day is the outbound travel date, the check-out day is the return travel date, and
+both go into `search_hotels` verbatim as `check_in` and `check_out`.
+
+## Event selection, `selection.ts`
 
 Applied in order: drop `format: "online"` (they go to a separate "no travel needed" list),
 drop events in the origin city, drop events whose `start_date` has passed or falls outside
 `dateTo`, sort by date proximity, keep at most five candidates, assemble only the first.
-The other four are listed without computation.
+The other four are listed without computation. "Passed" is judged against a reference date
+passed in as an argument, never against the wall clock, otherwise the tests rot on their own.
+
+## Hotel ranking, `hotels.ts`
+
+When the venue was geocoded precisely, rank by straight-line distance to it; the coordinates
+of every hotel arrive in the listing. When it was not, rank by price and rating and suppress
+the distance block entirely rather than ranking against a city centre and calling it
+proximity.
 
 ## Feasibility, `feasibility.ts`
 
@@ -60,18 +75,30 @@ total = outbound leg + return leg + hotel for the whole stay + event price (only
 - The event `price` from confcal is free text. Parse it or show it as text with an explicit
   note that it is excluded from the sum. Never guess a number.
 - Render prices exactly as they arrive in the payload, with no rounding.
-- Working days burnt: days in `[check-in, check-out]` that isDayOff reports as working.
+- Working days burnt: days in `[outbound departure day, return arrival day]` that are
+  working days and on which the traveller is away or in transit during the 10:00-19:00
+  working window. The range follows the actual legs, not the stay interval. Computed over
+  the stay interval the number is identical for every variant, "Без отпуска" collapses into
+  a copy of "Дешевле всего", and the card stops meaning anything. Over the legs a night
+  train leaving at 23:15 on Friday does not burn Friday and a 14:00 flight does.
+- The event price is often a lower bound ("от 7 000 ₽"). Parsed as a lower bound, the total
+  is labelled a lower bound too, never presented as an exact sum.
+- The marked set of working days arrives as an argument. Reading isDayOff is L2.
 
 ## Packages, `packages.ts`
 
-Over the cartesian product of outbound leg, return leg and hotel, restricted to variants
-that passed feasibility:
+L3 builds the cartesian product of outbound leg, return leg and hotel and hands it over;
+`packages.ts` only chooses among the variants that passed feasibility:
 
 ```
 "Дешевле всего"  = min(total)
 "Без отпуска"    = min(working days burnt), ties broken by min(total)
 "Быстрее всего"  = min(outbound duration + return duration)
 ```
+
+Every tie is broken down to a stable secondary key and, in the last resort, to the variant
+identifier, so the same input always yields the same card. A tie left to array order
+destroys the determinism the whole layer exists for.
 
 If two rules pick the same variant, emit fewer cards rather than duplicates. If nothing
 fits the budget, emit the cheapest with an explicit overflow badge. An empty screen is
@@ -86,6 +113,12 @@ never an acceptable output.
 - includes an unparsed event price in the sum;
 - produces a precise venue marker from a venue it could not geocode;
 - calls a link a cart when its `kind` says otherwise.
+
+## Checkout labels, `checkout-labels.ts`
+
+A pure table from the `kind` Tutu returned to the button text. An absent or unknown `kind`
+maps to the most cautious label available, never to "Открыть корзину". Everything that talks
+to Tutu lives in `build-checkout.ts` at L3.
 
 ## Orchestration, `build-trip.ts`
 

@@ -4,10 +4,18 @@ globs: src/web/**/*.ts,src/web/**/*.html,src/web/**/*.css
 alwaysApply: false
 ---
 
+
 # Web UI: the trip board
 
-UX is worth 20 points, more than any other criterion, and this is the only screen. It also
-ships verbatim as the `ui://zaezd/trip-board` resource, so **one HTML serves both channels**.
+UX is worth 20 points, more than any other criterion, and this is the only screen. The same
+skeleton and the same client renderer also ship as the `ui://zaezd/trip-board` resource, so
+**one renderer serves both channels**. Only the data path differs: the web page reads the
+`TripResult` the server embedded, the MCP App receives it through
+`ui/notifications/tool-result`. Recompute differs too - a form on our own origin in the web,
+`tools/call` through the host in the App. Nothing else may fork.
+
+No arithmetic in the browser. The `TripResult` arrives computed; the renderer lays out
+numbers it was given. A `noscript` block carries a text summary of the trip.
 Full specification in `specs/05-interfeys.md`.
 
 ## The first thirty seconds
@@ -62,11 +70,19 @@ implemented:
 
 ## Map and timeline
 
+Leaflet with raster tiles, vendored locally, markers as `L.divIcon` with inline SVG. No
+stock Leaflet marker images: their CSS references them by relative URL and they 404 once the
+CSS is inlined for the `ui://` channel. Inside an iframe call `invalidateSize` after the
+handshake and after every resize, or the map renders into a stale box.
+
 Destination city only. Venue as an anchor marker, hotels as price chips, the selected
 variant highlighted, clicking a marker selects its card. No cross-country route line: it
-destroys the scale at either zoom level. OpenStreetMap attribution is mandatory. Hotel
-photos from `cdn1.tu-tu.ru` render only if the domain is allowed by CSP, otherwise a
-placeholder, because broken images are worse than none.
+destroys the scale at either zoom level. OpenStreetMap attribution is mandatory, and the
+tile provider must be one whose usage policy allows this - `tile.openstreetmap.org` does
+not. If tiles fail to load, hide the map block and render the hotels as a list with their
+distances; an empty grey rectangle is worse than no map. Hotel photos from `cdn1.tu-tu.ru`
+render only if the domain is allowed by CSP, otherwise a placeholder, because broken images
+are worse than none.
 
 The timeline runs from departure to return and marks departure, arrival, event start, event
 end, return departure, return arrival, with the buffer as a coloured span. It shows
@@ -74,15 +90,24 @@ feasibility better than the map does.
 
 ## Style, adaptivity, accessibility
 
-Local Kite token extract (`ideas/ui-kit/`), product purple `#6f5df6`, not the slide
-`#816dff`. Do not pull the 384 KB `index.css` from a third-party CDN. Copying colours is
-not enough: hover, focus, loading and error states are what the score is made of. Follow
-the host theme; verify contrast on light.
+Local Kite token extract, vendored at `src/web/public/vendor/kite/` with its provenance in
+`src/web/public/vendor/README.md`. Product purple `#6f5df6`, not the slide `#816dff`. Do not
+pull the 384 KB `index.css` from a third-party CDN. Every colour in `styles.css` reads a
+`--tutu-*` token; no brand value is written literally outside the vendored extract.
+
+Copying colours is not enough: hover, focus, loading and error states are what the score is
+made of. Follow the host theme - the extract keys its dark palette off `data-theme`, so
+`boot.js` sets that from `prefers-color-scheme` in the browser and from the host handshake
+inside an App. Verify contrast on light.
 
 Three widths are checked: 360, 768, 1280. On mobile the cards come first, the map shrinks
 to 240-320 px, and the checkout button stays clear of the back gesture. Keyboard focus,
-contrast, long-name overflow and the absence of horizontal scroll are all verified before
-calling the screen done.
+contrast, long-name overflow and the absence of horizontal scroll are verified by Playwright
+(`npm run test:ui`), not by eye - Cucumber on Node cannot see any of it.
+
+Every string that came from confcal or Tutu is escaped on the way out, in text, in
+attributes, in URLs and inside the embedded JSON. Event and hotel names are third-party
+input and are treated as such.
 
 ## References
 

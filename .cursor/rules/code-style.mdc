@@ -3,6 +3,7 @@ description: "TypeScript style, language policy, hygiene, shared domain vocabula
 alwaysApply: true
 ---
 
+
 # Code style
 
 ## Language

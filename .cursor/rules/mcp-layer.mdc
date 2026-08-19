@@ -4,6 +4,7 @@ globs: src/mcp/**/*.ts
 alwaysApply: false
 ---
 
+
 # MCP layer: three tools and one widget
 
 `src/mcp/` exposes the product to agents. It is an adapter: it validates input, calls the
@@ -60,22 +61,32 @@ the card.
 ## The `ui://` resource
 
 One resource, `ui://zaezd/trip-board`, `mimeType: text/html;profile=mcp-app`, serving the
-**same HTML** as the web screen. Two copies would drift and the UX score would suffer on
+**same skeleton and the same client renderer** as the web screen. What differs is where the
+data comes from: the web page has the `TripResult` embedded by the server, this resource
+receives it from the host through `ui/notifications/tool-result`, because the resource loads
+independently of the tool call. Two renderers would drift and the UX score would suffer on
 whichever channel the judge actually opens.
 
 `_meta.ui.csp` declares `connectDomains` (our host) and `resourceDomains`
 (`cdn1.tu-tu.ru`, `cdn2.tu-tu.ru`, the tile server). The tool links to the resource through
 `_meta.ui.resourceUri` with `visibility: ["model", "app"]`.
 
+The protocol is not hand-rolled. `@modelcontextprotocol/ext-apps` (MIT) provides the server
+helpers `registerAppTool` and `registerAppResource` and a pre-bundled browser build,
+`app-with-deps.js`, that loads without a bundler. Writing JSON-RPC over `postMessage` by
+hand is exactly the kind of reinvention this repository is graded against.
+
 Inside the iframe use only: `ui/initialize`, `ui/notifications/tool-result`, `tools/call`,
 `ui/open-link`, `ui/update-model-context`.
 
-CSP is the main practical risk: the host defaults to `default-src 'none'`, which breaks
-MapLibre first (blob: workers, WebGL, external tiles). Verify in a real MCP host, since a
-plain browser does not reproduce the iframe restrictions. Order of work: browser first,
-then the same page in an iframe with a deliberately strict CSP, then inside the agent.
-If the map cannot start there, the MCP App falls back to a static map image with an "open
-in full" link, and that fallback is prepared in advance, not improvised.
+CSP is the main practical risk: the host defaults to `default-src 'none'`. This is why the
+map is Leaflet and not MapLibre - raster tiles as plain `img` need one `img-src` exception
+and nothing else, no WebGL and no `blob:` worker. Verify in a real MCP host, since a plain
+browser does not reproduce the iframe restrictions. Order of work: browser first, then the
+same page in an iframe with a deliberately strict CSP, then inside the agent. If the tiles
+cannot load there, the map block is hidden and the hotels render as a list with distances,
+never as an empty grey rectangle. Inside an iframe Leaflet also needs `invalidateSize`
+after the handshake and after every container resize.
 
 ## Hosts
 

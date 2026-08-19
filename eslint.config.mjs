@@ -1,7 +1,17 @@
+import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
-  { ignores: ['dist/**', 'node_modules/**', 'ideas/**', 'research/**', '.opencode/**'] },
+  {
+    ignores: [
+      'dist/**',
+      'node_modules/**',
+      'ideas/**',
+      'research/**',
+      '.opencode/**',
+      'src/web/public/vendor/**',
+    ],
+  },
   ...tseslint.configs.recommended,
   {
     rules: {
@@ -9,6 +19,14 @@ export default tseslint.config(
       '@typescript-eslint/consistent-type-imports': 'error',
       'no-console': ['warn', { allow: ['warn', 'error'] }],
       eqeqeq: ['error', 'always'],
+    },
+  },
+  {
+    // Browser code: real files, linted like everything else, but with the DOM in scope.
+    files: ['src/web/public/**/*.js'],
+    languageOptions: {
+      globals: globals.browser,
+      parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
     },
   },
   {

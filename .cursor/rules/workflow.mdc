@@ -3,6 +3,7 @@ description: "BDD delivery order, Gherkin spec before tests before code, definit
 alwaysApply: true
 ---
 
+
 # Workflow: specification first, then tests, then code
 
 Zaezd is delivered BDD-style. The executable Gherkin specification is the contract,
@@ -34,7 +35,8 @@ Triggered by "фича", "feature", "добавить", "implement", "add a use 
    `npm test`, then `npm run bdd`. In that order: a green scenario over red units means
    the units are undertested.
 6. **Run the full gate.**
-   `npm run verify` (typecheck, lint, bdd, unit tests). Everything green, no exceptions.
+   `npm run verify` (rules check, typecheck of both the Node and the browser tree, lint,
+   bdd, unit tests). Everything green, no exceptions.
 7. **Update the documentation in the same change.**
    README, `docs/user-guide.md`, `docs/architecture.md`, `docs/decisions.md`.
    Never document a capability that does not exist in the code: the repository is graded
@@ -98,28 +100,35 @@ slow (up to 6.3 s cold) and the venue Wi-Fi is not a dependency worth having.
 **MANDATORY** - if any rule file is added or changed in this task, mirror the change to
 every other agent's rule tree in the same commit. Do not leave one tree ahead of the other.
 
-1. Identify every rule tree in the repo: `.cursor/rules/`, `.claude/rules/`, root
-   `AGENTS.md` / `CLAUDE.md`, the Codex bridge (`.codex/`), plus any other agent roots
-   present (`.github/copilot-instructions.md`, `.opencode/`).
-2. For each edited file, locate or create its counterpart in every other tree under the
-   same topic name (`workflow`, `bdd-specs`, `testing`, `architecture`, `code-style`,
-   `implementation-order`, `composer-core`, `data-sources`, `mcp-layer`, `web-ui`).
-3. Copy the body verbatim, then adapt frontmatter and inline links:
-   - Cursor `alwaysApply: true` without `globs` <-> Claude rule **without** `paths:`;
-   - Cursor `globs: src/**/*.ts` + `alwaysApply: false` <-> Claude `paths: ["src/**/*.ts"]`;
-   - Cursor `@file.mdc` references <-> Claude `.claude/rules/file.md` references;
-   - file extension `.mdc` <-> `.md`.
-4. Keep the language identical across trees. Rule files and `AGENTS.md` are written in
+`.claude/rules/*.md` is the single source of truth. `.cursor/rules/*.mdc` is generated from
+it, so the sync is a command, not a discipline:
+
+```bash
+npm run rules:sync    # rewrite the Cursor tree from the Claude tree
+npm run rules:check   # fail if the Cursor tree is stale; runs inside npm run verify
+```
+
+The generator translates exactly two things, the frontmatter dialect
+(Claude `paths: [...]` becomes Cursor `globs:` plus `alwaysApply: false`, and a rule with no
+`paths:` becomes `alwaysApply: true`) and the way a rule cites a sibling
+(`` @file.mdc `` becomes `@file.mdc`). Everything else is copied verbatim,
+which is what keeps the two trees provably identical in substance.
+
+The rest of the sync is still manual, because it is not mechanical:
+
+1. Keep the language identical across trees. Rule files and `AGENTS.md` are written in
    **English**; chat replies stay in Russian.
-5. If `AGENTS.md` changed, verify `CLAUDE.md` still resolves to it
+2. If `AGENTS.md` changed, verify `CLAUDE.md` still resolves to it
    (`ls -la CLAUDE.md` shows `CLAUDE.md -> AGENTS.md`; restore with `ln -sf AGENTS.md CLAUDE.md`).
-6. If a rule file was added, renamed or removed, refresh the index in `.codex/rules.md`.
+3. If a rule file was added, renamed or removed, refresh the index in `.codex/rules.md`.
    The hook itself (`.codex/hooks.json`, `.codex/hooks/attach_rules.py`) reads
    `.cursor/rules/` directly and needs no update.
-7. Commit both sides together and list every synced file in the report.
+4. Check the other agent roots that may appear later (`.github/copilot-instructions.md`,
+   `.opencode/`) and mirror there by hand.
+5. Commit both sides together and list every synced file in the report.
 
-Skip only when a topic is genuinely tool-specific. When skipping, leave a one-line comment
-in the file that diverges so the divergence is visible and intentional.
+Never hand-edit a file under `.cursor/rules/`. The next `npm run rules:sync` overwrites it,
+and `npm run rules:check` will have failed the build before that anyway.
 
 ## References
 

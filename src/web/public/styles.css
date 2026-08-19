@@ -1,0 +1,62 @@
+/* Product styles. Colour, spacing and typography come from the vendored Kite token extract
+   in vendor/kite/tutu-core.css; nothing here hard-codes a brand colour. */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--tutu-surface-muted);
+  color: var(--tutu-text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.shell {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.shell__title {
+  margin: 0 0 0.5rem;
+  color: var(--tutu-brand);
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.shell__lead {
+  margin: 0;
+  color: var(--tutu-text-secondary);
+}
+
+code {
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  background: var(--tutu-surface);
+  border: 1px solid var(--tutu-border);
+  font-size: 0.9em;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme='light']) {
+    color-scheme: dark;
+  }
+}
+
+/* The server always renders the text fallback; boot.js hides it once scripting is proven
+   alive. A script that fails to load therefore leaves the readable version on screen. */
+:root[data-js='on'] .shell__fallback {
+  display: none;
+}
+
+.shell__fallback {
+  margin: 1rem 0 0;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--tutu-border);
+  border-radius: 12px;
+  background: var(--tutu-surface);
+  color: var(--tutu-text-secondary);
+  font-size: 0.9rem;
+}

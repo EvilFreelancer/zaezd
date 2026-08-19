@@ -9,19 +9,24 @@
     "node": ">=22.6"
   },
   "scripts": {
-    "typecheck": "tsc --noEmit",
+    "start": "node dist/main.js",
+    "dev": "node src/main.ts",
+    "typecheck": "tsc --noEmit && tsc -p tsconfig.web.json",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "rules:sync": "node scripts/sync-rules.ts",
+    "rules:check": "node scripts/sync-rules.ts --check",
     "bdd": "cucumber-js",
     "test": "vitest run",
     "test:watch": "vitest",
-    "build": "tsc -p tsconfig.build.json",
-    "verify": "npm run typecheck && npm run lint && npm run bdd && npm run test"
+    "build": "rm -rf dist && tsc -p tsconfig.build.json && node scripts/copy-assets.ts",
+    "verify": "npm run rules:check && npm run typecheck && npm run lint && npm run bdd && npm run test"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^13.2.1",
     "@types/node": "^26.2.0",
     "eslint": "^10.8.1",
+    "globals": "^17.11.0",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.67.0",
     "vitest": "^4.1.11"

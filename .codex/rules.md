@@ -1,7 +1,12 @@
 # Codex bridge for Cursor rules
 
-This repository keeps detailed project rules in `.cursor/rules/*.mdc`, and that directory
-is their single source of truth. Codex does not read `.mdc` files on its own, so
+This repository keeps detailed project rules in two trees. `.claude/rules/*.md` is the
+source of truth and `.cursor/rules/*.mdc` is generated from it by `npm run rules:sync`;
+`npm run rules:check` runs inside `npm run verify` and fails the build if they drift. Never
+hand-edit a file under `.cursor/rules/`.
+
+The bridge reads the generated Cursor tree, because that is where the `globs` frontmatter
+Codex needs already lives. Codex does not read `.mdc` files on its own, so
 `.codex/hooks/attach_rules.py` delivers them.
 
 ## How delivery works
