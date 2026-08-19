@@ -141,3 +141,65 @@ export type HotelOffer = {
   readonly photo?: string;
   readonly alias?: string;
 };
+
+export type TransportMode = 'avia' | 'railway' | 'bus' | 'etrain';
+
+/**
+ * One journey, in one direction, as Tutu offered it.
+ *
+ * `checkoutRef` is carried verbatim and never inspected here. It is Tutu's own handle on the
+ * offer, its shape differs per mode, and rebuilding it from parts is how a checkout link ends
+ * up pointing at the wrong train.
+ */
+export type Leg = {
+  readonly offerId: string;
+  readonly mode: TransportMode;
+  readonly price: Money;
+  readonly durationMin: number;
+  readonly departureAt: IsoDateTime;
+  readonly arrivalAt: IsoDateTime;
+  readonly carriers: readonly string[];
+  /** Train or flight number, when the mode has one. */
+  readonly voyageNo?: string;
+  /** Station or airport names, as Tutu wrote them. They are not accepted as search input. */
+  readonly from?: string;
+  readonly to?: string;
+  readonly searchResultsUrl?: string;
+  readonly checkoutRef?: Readonly<Record<string, unknown>>;
+};
+
+/** Why a whole transport mode is missing from a search. Never the same as "no offers". */
+export type ModeFailure = {
+  readonly mode: TransportMode;
+  readonly reason: string;
+  readonly detail?: string;
+};
+
+/**
+ * A transport search, with the difference between "nothing on this page" and "this mode did
+ * not answer" preserved. `search_multitransport` fails softly per mode, and an empty array is
+ * not proof that a mode does not exist.
+ */
+export type TransportSearch = {
+  readonly legs: readonly Leg[];
+  readonly modesRequested: readonly TransportMode[];
+  /** Modes that returned at least one offer somewhere, even beyond the page we were given. */
+  readonly modesWithOffers: readonly TransportMode[];
+  readonly modesUnavailable: readonly ModeFailure[];
+  /** What Tutu decided the origin and destination were. Named back to the traveller. */
+  readonly resolvedFrom?: string;
+  readonly resolvedTo?: string;
+};
+
+/** A hotel listing, with the geography Tutu resolved and the identifiers it minted. */
+export type HotelSearch = {
+  readonly hotels: readonly HotelOffer[];
+  readonly resolvedGeoName?: string;
+  readonly resolvedGeoType?: string;
+  /** Other geographies sharing the name, so a homonym can be named rather than hidden. */
+  readonly alsoNamed: readonly string[];
+  /** Expires quickly. Never cached, never stored in a snapshot. */
+  readonly searchId?: string;
+  readonly totalReturned: number;
+  readonly hasMore: boolean;
+};
