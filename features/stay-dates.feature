@@ -1,9 +1,10 @@
 @composer
 Feature: Stay dates are decided by the event, not by the model
 
-  Three identical live runs of one request produced three different night counts and a hotel
-  price spread of one and a half times. So the length of the stay is not a judgement call: it
-  follows from the event, in code, and the same event always answers the same way.
+  Asked the same question three times, a traveller got three different trip lengths and a
+  hotel bill that varied by half again. The length of a stay is not a matter of opinion: it
+  follows from when the event opens and closes, and the same event always answers the same
+  way.
 
   Scenario Outline: The arrival day depends on when the event opens
     Given an event running from <from> to <to> that opens at <opens>
@@ -27,10 +28,10 @@ Feature: Stay dates are decided by the event, not by the model
       | 2026-08-27 | 2026-08-29 | unknown | 2026-08-26 | 2026-08-30 | 4      |
 
   Scenario: The catalogue never says when an event closes, so the last night is kept
-    Given an event running from 2026-08-27 to 2026-08-29 that opens at 10:00
-    When the stay is computed
-    Then the traveller leaves on 2026-08-30
-    And the trip says the closing time is unknown
+    Given the recorded catalogue of offline events on artificial intelligence
+    When the stay is computed for "Искусственный интеллект для роста бизнеса AI Growth Days"
+    Then the trip says the closing time is unknown
+    And the traveller leaves on 2026-08-30
 
   Scenario: A stay that crosses the end of a month keeps counting
     Given an event running from 2026-10-29 to 2026-10-31 that opens at unknown
@@ -51,6 +52,12 @@ Feature: Stay dates are decided by the event, not by the model
     When the stay is computed
     Then the outbound journey is booked for 2026-08-26
     And the return journey is booked for 2026-08-30
+    And the trip books a hotel
+
+  Scenario: An event that ends before it starts is refused rather than reshaped
+    Given an event running from 2026-08-27 to 2026-08-20 that opens at 10:00
+    When the stay is computed and refused
+    Then the refusal names both dates
 
   Scenario: A same-day event needs no hotel
     Given an event running from 2026-08-27 to 2026-08-27 that opens at 12:00 and closes at 17:00
@@ -81,3 +88,8 @@ Feature: Stay dates are decided by the event, not by the model
     Given the recorded catalogue of offline events on artificial intelligence
     When the stay is computed for "Kazan Digital Week - 2026"
     Then the trip says the opening time is unknown
+
+  Scenario: An event the catalogue did give a start time for is not called unknown
+    Given the recorded catalogue of offline events on artificial intelligence
+    When the stay is computed for "SPb Python Meetup 2026"
+    Then the trip says the opening time is known

@@ -1,17 +1,8 @@
 import assert from 'node:assert/strict';
 import { Given, Then, When } from '@cucumber/cucumber';
 import { computeStayDates, type EventSchedule, type StayDates } from '../../src/composer/dates.ts';
-import { loadPayload } from '../support/fixtures.ts';
+import type { CatalogueEvent } from '../../src/composer/types.ts';
 import type { ZaezdWorld } from '../support/world.ts';
-
-const EVENTS_FIXTURE = 'confcal/events-ai-offline.json';
-
-type RecordedEvent = {
-  readonly title: string;
-  readonly start_date: string;
-  readonly end_date: string;
-  readonly starts_at: string | null;
-};
 
 /** A time of day written the way the catalogue writes it, in Moscow time, or "unknown". */
 function scheduleFrom(from: string, to: string, opens: string, closes?: string): EventSchedule {
@@ -37,30 +28,15 @@ Given(
   },
 );
 
-Given(
-  'the recorded catalogue of offline events on artificial intelligence',
-  function (this: ZaezdWorld) {
-    const { items } = loadPayload<{ items: RecordedEvent[] }>(EVENTS_FIXTURE);
-    this.remember('catalogue', items);
-  },
-);
-
 When('the stay is computed', function (this: ZaezdWorld) {
   this.remember('stay', computeStayDates(this.recall<EventSchedule>('schedule')));
 });
 
 When('the stay is computed for {string}', function (this: ZaezdWorld, title: string) {
-  const event = this.recall<RecordedEvent[]>('catalogue').find((item) => item.title === title);
+  const event = this.recall<CatalogueEvent[]>('events').find((item) => item.title === title);
   assert.ok(event !== undefined, `the recorded catalogue has no event titled "${title}"`);
 
-  this.remember(
-    'stay',
-    computeStayDates({
-      startDate: event.start_date,
-      endDate: event.end_date,
-      ...(event.starts_at === null ? {} : { startsAt: event.starts_at }),
-    }),
-  );
+  this.remember('stay', computeStayDates(event));
 });
 
 When('the stay is computed three times', function (this: ZaezdWorld) {
@@ -92,8 +68,32 @@ Then('the return journey is booked for {word}', function (this: ZaezdWorld, day:
   assert.equal(this.recall<StayDates>('stay').returnDate, day);
 });
 
+When('the stay is computed and refused', function (this: ZaezdWorld) {
+  try {
+    computeStayDates(this.recall<EventSchedule>('schedule'));
+    this.remember('refusal', undefined);
+  } catch (error) {
+    this.remember('refusal', error);
+  }
+});
+
+Then('the refusal names both dates', function (this: ZaezdWorld) {
+  const refusal = this.recall<unknown>('refusal');
+  assert.ok(refusal instanceof RangeError, 'a corrupted date range must be refused, not reshaped');
+  assert.match(refusal.message, /2026-08-27/);
+  assert.match(refusal.message, /2026-08-20/);
+});
+
 Then('the trip needs no hotel', function (this: ZaezdWorld) {
   assert.equal(this.recall<StayDates>('stay').needsHotel, false);
+});
+
+Then('the trip books a hotel', function (this: ZaezdWorld) {
+  assert.equal(this.recall<StayDates>('stay').needsHotel, true);
+});
+
+Then('the trip says the opening time is known', function (this: ZaezdWorld) {
+  assert.equal(this.recall<StayDates>('stay').openingTimeKnown, true);
 });
 
 Then('the trip says the opening time is unknown', function (this: ZaezdWorld) {

@@ -13,3 +13,35 @@ export type IsoDate = string;
  * and "does the traveller arrive in time" is a question about the instant.
  */
 export type IsoDateTime = string;
+
+/** What a source calls a place, after L3 has resolved the traveller's free-text origin. */
+export type ResolvedCity = {
+  readonly slug: string;
+  readonly title: string;
+};
+
+export type EventFormat = 'offline' | 'online' | 'hybrid';
+
+/**
+ * One event from the catalogue, after normalization. A field the catalogue did not return
+ * stays `undefined` all the way to the screen and is rendered as missing, never guessed.
+ */
+export type CatalogueEvent = {
+  readonly id: number;
+  readonly title: string;
+  readonly url?: string;
+  readonly startDate: IsoDate;
+  readonly endDate: IsoDate;
+  readonly startsAt?: IsoDateTime;
+  /** confcal never supplies this. It exists for a source that might. */
+  readonly endsAt?: IsoDateTime;
+  readonly city?: string;
+  readonly citySlug?: string;
+  /** Free text: "РУДН, Москва", "YADRO", or nothing at all. Never coordinates. */
+  readonly venue?: string;
+  readonly format: EventFormat;
+  readonly isFree?: boolean;
+  /** Free text too: "от 7 000 ₽", "бесплатно", "уточняется у организатора". */
+  readonly price?: string;
+  readonly topics: readonly string[];
+};

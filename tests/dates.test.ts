@@ -157,15 +157,85 @@ describe('computeStayDates', () => {
     expect(stay).toMatchObject({ outboundDate: '2026-08-26', returnDate: '2026-08-30' });
   });
 
-  it('never produces a negative stay when the catalogue ends an event before it starts', () => {
+  it('refuses an event that ends before it starts instead of reshaping it into a trip', () => {
+    // Clamping would answer with a plausible same-day stay on 27 August, and the next layer
+    // would book transport for an event that finished on the 20th.
+    expect(() =>
+      computeStayDates({
+        startDate: '2026-08-27',
+        endDate: '2026-08-20',
+        startsAt: '2026-08-27T12:00:00+03:00',
+      }),
+    ).toThrow(/2026-08-27.*2026-08-20/);
+  });
+
+  it('asks for a hotel on any stay longer than a day', () => {
     const stay = computeStayDates({
       startDate: '2026-08-27',
-      endDate: '2026-08-20',
-      startsAt: '2026-08-27T12:00:00+03:00',
-      endsAt: '2026-08-20T17:00:00+03:00',
+      endDate: '2026-08-29',
+      startsAt: '2026-08-27T10:00:00+03:00',
     });
 
-    expect(stay).toMatchObject({ checkIn: '2026-08-27', checkOut: '2026-08-27', nights: 0 });
+    expect(stay).toMatchObject({ needsHotel: true, nights: 4 });
+  });
+
+  it('reports a known opening time as known', () => {
+    const stay = computeStayDates({
+      startDate: '2026-08-27',
+      endDate: '2026-08-29',
+      startsAt: '2026-08-27T10:00:00+03:00',
+    });
+
+    expect(stay.openingTimeKnown).toBe(true);
+  });
+
+  it('reports a known closing time as known', () => {
+    const stay = computeStayDates({
+      startDate: '2026-08-27',
+      endDate: '2026-08-27',
+      startsAt: '2026-08-27T12:00:00+03:00',
+      endsAt: '2026-08-27T17:00:00+03:00',
+    });
+
+    expect(stay.closingTimeKnown).toBe(true);
+  });
+
+  it('reports a missing closing time as unknown', () => {
+    const stay = computeStayDates({ startDate: '2026-08-27', endDate: '2026-08-29' });
+
+    expect(stay.closingTimeKnown).toBe(false);
+  });
+
+  it('rejects a time with trailing rubbish rather than reading its prefix', () => {
+    // A prefix match would read 12:00 here and report a known opening time for a string
+    // nobody can actually interpret.
+    const stay = computeStayDates({
+      startDate: '2026-08-27',
+      endDate: '2026-08-29',
+      startsAt: '2026-08-27T12:00junk',
+    });
+
+    expect(stay).toMatchObject({ openingTimeKnown: false, checkIn: '2026-08-26' });
+  });
+
+  it('rejects an hour that does not exist', () => {
+    const stay = computeStayDates({
+      startDate: '2026-08-27',
+      endDate: '2026-08-29',
+      startsAt: '2026-08-27T25:00:00+03:00',
+    });
+
+    expect(stay.openingTimeKnown).toBe(false);
+  });
+
+  it('accepts a time without seconds, which is how some sources write it', () => {
+    const stay = computeStayDates({
+      startDate: '2026-08-27',
+      endDate: '2026-08-29',
+      startsAt: '2026-08-27T14:30+03:00',
+    });
+
+    expect(stay).toMatchObject({ openingTimeKnown: true, checkIn: '2026-08-27' });
   });
 
   it('refuses a date it cannot read rather than inventing one', () => {
@@ -190,13 +260,22 @@ describe('computeStayDates', () => {
     expect(stay).toMatchObject({ openingTimeKnown: false, checkIn: '2026-08-26' });
   });
 
-  it('answers identically every time it is asked', () => {
-    const schedule = {
+  it('answers the whole stay exactly, so a later change cannot slip through unnoticed', () => {
+    const stay = computeStayDates({
       startDate: '2026-08-27',
       endDate: '2026-08-29',
       startsAt: '2026-08-27T10:00:00+03:00',
-    };
+    });
 
-    expect(computeStayDates(schedule)).toEqual(computeStayDates(schedule));
+    expect(stay).toEqual({
+      checkIn: '2026-08-26',
+      checkOut: '2026-08-30',
+      outboundDate: '2026-08-26',
+      returnDate: '2026-08-30',
+      nights: 4,
+      needsHotel: true,
+      openingTimeKnown: true,
+      closingTimeKnown: false,
+    });
   });
 });

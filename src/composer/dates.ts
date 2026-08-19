@@ -36,7 +36,15 @@ const NOON_MINUTES = 12 * 60;
 const EVENING_MINUTES = 18 * 60;
 
 const DATE_PATTERN = /^(\d{4})-(\d{2})-(\d{2})$/;
-const TIME_PATTERN = /^\d{4}-\d{2}-\d{2}[T ](\d{2}):(\d{2})/;
+
+/**
+ * A whole ISO 8601 moment, anchored at both ends. Anchoring matters: a prefix match accepts
+ * "2026-08-27T12:00junk" and would report a known opening time for a string nobody can read.
+ * The offset is optional here because "before noon" is a wall-clock question; feasibility
+ * asks for the instant separately and demands one.
+ */
+const TIME_PATTERN =
+  /^\d{4}-\d{2}-\d{2}[T ](\d{2}):(\d{2})(?::(\d{2})(?:\.\d+)?)?(?:Z|[+-]\d{2}:?\d{2})?$/;
 
 /** Days since the epoch. Calendar arithmetic runs in UTC so daylight saving cannot shift it. */
 function toEpochDay(value: IsoDate): number {
@@ -77,14 +85,30 @@ function localMinutes(value: IsoDateTime | undefined): number | undefined {
   const parts = TIME_PATTERN.exec(value);
   if (parts === null) return undefined;
 
-  const [, hours, minutes] = parts as unknown as [string, string, string];
-  const total = Number(hours) * 60 + Number(minutes);
-  return Number.isFinite(total) && Number(hours) < 24 && Number(minutes) < 60 ? total : undefined;
+  const [, hours, minutes, seconds] = parts as unknown as [
+    string,
+    string,
+    string,
+    string | undefined,
+  ];
+  if (Number(hours) > 23 || Number(minutes) > 59) return undefined;
+  if (seconds !== undefined && Number(seconds) > 59) return undefined;
+
+  return Number(hours) * 60 + Number(minutes);
 }
 
 export function computeStayDates(event: EventSchedule): StayDates {
   const startDay = toEpochDay(event.startDate);
   const endDay = toEpochDay(event.endDate);
+
+  // An event that ends before it starts is corrupted catalogue data, and the only safe answer
+  // is to say so. Clamping it produces a perfectly plausible stay - and the next layer would
+  // book transport for a date the event had already finished on.
+  if (endDay < startDay) {
+    throw new RangeError(
+      `An event cannot end before it starts: ${event.startDate} to ${event.endDate}`,
+    );
+  }
 
   const opening = localMinutes(event.startsAt);
   const closing = localMinutes(event.endsAt);
@@ -96,7 +120,7 @@ export function computeStayDates(event: EventSchedule): StayDates {
 
   // The catalogue never says when an event closes, so the cautious branch is the normal one.
   const staysOver = closing === undefined || closing > EVENING_MINUTES;
-  const checkOutDay = Math.max(checkInDay, staysOver ? endDay + 1 : endDay);
+  const checkOutDay = staysOver ? endDay + 1 : endDay;
 
   const nights = checkOutDay - checkInDay;
   const checkIn = toIsoDate(checkInDay);
