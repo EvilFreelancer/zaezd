@@ -32,6 +32,7 @@ import {
   FIND_INPUT,
   FIND_OUTPUT,
 } from './schemas.ts';
+import { speakCurrentDialect } from './dialect.ts';
 import { detailsOf, pickPackage, requestFrom, shapeTrip, textFor, PART_NAMES } from './shape.ts';
 
 export const UI_RESOURCE = 'ui://zaezd/trip-board';
@@ -63,6 +64,12 @@ export function createMcpServer(app: App, publicUrl: string): McpServer {
     { name: 'zaezd', version: '0.1.0' },
     { capabilities: { tools: {}, resources: {} } },
   );
+
+  // Every transport this server is ever connected to, not only the published one: the SDK
+  // stamps the manifest with a JSON Schema dialect it gives us no way to choose, and a host
+  // that validates it drops the tool over that label. See `dialect.ts`.
+  const connect = server.connect.bind(server);
+  server.connect = (transport) => connect(speakCurrentDialect(transport));
 
   /**
    * The identifier an agent hands back, and the link a person opens.

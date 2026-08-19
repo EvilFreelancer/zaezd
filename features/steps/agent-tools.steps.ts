@@ -212,7 +212,8 @@ When(
 
 type ListedTool = {
   readonly name: string;
-  readonly outputSchema?: unknown;
+  readonly inputSchema?: { readonly $schema?: string };
+  readonly outputSchema?: { readonly $schema?: string };
   readonly annotations?: {
     readonly readOnlyHint?: boolean;
     readonly destructiveHint?: boolean;
@@ -258,11 +259,50 @@ Then('the address refuses it without reading it all', function (this: ZaezdWorld
   assert.match(body, /слишком большой/);
 });
 
+Then('every schema is written in the dialect hosts validate against', function (this: ZaezdWorld) {
+  // A host validates `structuredContent` against this schema before it will draw anything, and
+  // the common validator understands 2020-12 only. An older dialect is not a warning there, it
+  // is a tool that refuses to run.
+  for (const tool of tools(this)) {
+    for (const [what, schema] of [
+      ['inputSchema', tool.inputSchema],
+      ['outputSchema', tool.outputSchema],
+    ] as const) {
+      if (schema === undefined) continue;
+      assert.ok(
+        schema.$schema === undefined || schema.$schema.includes('2020-12'),
+        `${tool.name}.${what} declares ${String(schema.$schema)}`,
+      );
+    }
+  }
+});
+
 Then('every tool declares what it returns', function (this: ZaezdWorld) {
   for (const tool of tools(this)) {
     assert.ok(tool.outputSchema !== undefined, `${tool.name} declares no outputSchema`);
   }
 });
+
+Then(
+  'every schema is published in the dialect a current validator reads',
+  function (this: ZaezdWorld) {
+    // A host whose validator implements 2020-12 only drops the whole tool over the label
+    // alone, so a stale dialect costs the agent the verb, not just the validation.
+    for (const tool of tools(this)) {
+      for (const [side, schema] of [
+        ['inputSchema', tool.inputSchema],
+        ['outputSchema', tool.outputSchema],
+      ] as const) {
+        assert.ok(schema !== undefined, `${tool.name} publishes no ${side}`);
+        assert.equal(
+          schema.$schema,
+          'https://json-schema.org/draft/2020-12/schema',
+          `${tool.name} publishes its ${side} as ${String(schema.$schema)}`,
+        );
+      }
+    }
+  },
+);
 
 Then('every tool is marked read-only and non-destructive', function (this: ZaezdWorld) {
   for (const tool of tools(this)) {

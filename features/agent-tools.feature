@@ -17,6 +17,11 @@ Feature: An agent gets three verbs, not sixteen searches
     And every tool declares what it returns
     And every tool is marked read-only and non-destructive
     And the payment checklist does not promise the same links twice
+    And every schema is written in the dialect hosts validate against
+
+  Scenario: A host that checks the schemas still sees all three verbs
+    When the agent lists the tools
+    Then every schema is published in the dialect a current validator reads
 
   Scenario: Finding a trip answers with structure, not with prose to be parsed
     When the agent asks for a trip on "ai" from "Москва"
