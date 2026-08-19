@@ -1,9 +1,9 @@
 {
-  "recorded_at": "2026-08-19T10:58:53.435Z",
+  "recorded_at": "2026-08-19T11:07:53.110Z",
   "source": "osrm",
   "tool": "route-foot",
   "arguments": {
-    "url": "https://routing.openstreetmap.de/routed-foot/route/v1/foot/49.119747,55.799152;49.108891,55.796127?overview=false",
+    "url": "https://routing.openstreetmap.de/routed-foot/route/v1/foot/30.368853,59.886078;30.4363945,59.9340393?overview=false",
     "profile": "foot"
   },
   "note": "the only profile a walking time may come from",
@@ -16,36 +16,36 @@
           "legs": [
             {
               "steps": [],
-              "weight": 88.91,
+              "weight": 798.23,
               "summary": "",
-              "duration": 847.1,
-              "distance": 1058.6
+              "duration": 7549.3,
+              "distance": 9418.6
             }
           ],
           "weight_name": "routability",
-          "weight": 88.91,
-          "duration": 847.1,
-          "distance": 1058.6
+          "weight": 798.23,
+          "duration": 7549.3,
+          "distance": 9418.6
         }
       ],
       "waypoints": [
         {
-          "hint": "IHhFnDZ4RZyeAQAAKAAAAAAAAADPAAAAn74lQvCQfUAAAAAAlJilQUsBAAAgAAAAAAAAAKYAAAB6AAAAoYHtAlFtUwMDgu0CcG1TAwAAbwkAAAAA",
+          "hint": "6UQ9mBX-y50LAgAAswAAAAAAAADDBAAAlHN7QkCbqkEAAAAAmD0SQ_YBAACsAAAAAAAAAJIEAAB6AAAAoWTPARjKkQNVZM8B_smRAwAAbxQAAAAA",
           "location": [
-            49.119649,
-            55.799121
+            30.368929,
+            59.886104
           ],
           "name": "",
-          "distance": 7.052286431
+          "distance": 5.148874251
         },
         {
-          "hint": "F9cBh-bN5JBNAAAA7wAAAAAAAACZAAAAOrcTQWQ35UEAAAAAc6GSQUoAAADlAAAAAAAAAJMAAAB6AAAAWVftAm9hUwObV-0Cn2FTAwAATxMAAAAA",
+          "hint": "5omeibCNE5I4AAAAdAAAAAAAAABGAAAARPDZQKsbXUEAAAAAouiyQDYAAABvAAAAAAAAAC0AAAB6AAAARmzQATeFkgMrbNABV4WSAwAAbw8AAAAA",
           "location": [
-            49.108825,
-            55.796079
+            30.436422,
+            59.934007
           ],
           "name": "",
-          "distance": 6.761303378
+          "distance": 3.871748719
         }
       ]
     }

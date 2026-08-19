@@ -6,7 +6,7 @@ Feature: Which hotels are worth showing
   how far is it from the venue - is answered here, and only when the venue is genuinely known.
 
   Background:
-    Given the recorded hotels in Екатеринбург
+    Given the recorded hotels of the demo trip
 
   Scenario: With a precise venue the nearest hotels come first
     Given the venue is at 56.8381978, 60.6103939

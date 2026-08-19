@@ -10,13 +10,13 @@ import type { GeoPoint, IsoDate, VenueLocation } from '../../src/composer/types.
 import type { ZaezdWorld } from '../support/world.ts';
 
 /**
- * Where the product actually asks about, which is where the geocoder put the venue: the street
- * address in Yekaterinburg, the city centre in Kazan where the catalogue named no venue.
+ * The points the product actually asks about, taken from the recordings themselves: the venue
+ * of the demo trip, the city centre of the showcase that names no venue, and the hotel the walk
+ * is measured from.
  */
-const CITIES: Readonly<Record<string, GeoPoint>> = {
-  Екатеринбург: { lat: 56.8381978, lng: 60.6103939 },
-  Казань: { lat: 55.7946485, lng: 49.1115022 },
-};
+const VENUE: GeoPoint = { lat: 59.9340393, lng: 30.4363945 };
+const CITY_CENTRE: GeoPoint = { lat: 59.9606739, lng: 30.1586551 };
+const HOTEL: GeoPoint = { lat: 59.886078, lng: 30.368853 };
 
 type Wiring = { readonly http: HttpFetch; readonly cache: TtlCache };
 
@@ -53,16 +53,12 @@ Given('every optional source fails', function (this: ZaezdWorld) {
 });
 
 Given('only the city of the venue is known', function (this: ZaezdWorld) {
-  const centre = CITIES['Екатеринбург'] as GeoPoint;
-  this.remember('venue', { precision: 'city', ...centre } satisfies VenueLocation);
+  this.remember('venue', { precision: 'city', ...CITY_CENTRE } satisfies VenueLocation);
 });
 
-Given(
-  'the venue is located precisely at {float}, {float}',
-  function (this: ZaezdWorld, lat: number, lng: number) {
-    this.remember('venue', { precision: 'exact', lat, lng } satisfies VenueLocation);
-  },
-);
+Given('the venue is located precisely at the recorded venue', function (this: ZaezdWorld) {
+  this.remember('venue', { precision: 'exact', ...VENUE } satisfies VenueLocation);
+});
 
 When(
   'the venue {string} in {word} is located',
@@ -79,24 +75,17 @@ When('a venue nobody named in no city is located', async function (this: ZaezdWo
   this.remember('venue', await locateVenue(wiring(this), undefined, undefined));
 });
 
-When(
-  'the walk from a hotel at {float}, {float} is measured',
-  async function (this: ZaezdWorld, lat: number, lng: number) {
-    this.remember(
-      'walk',
-      await walkingMinutes(wiring(this), { lat, lng }, this.recall<VenueLocation>('venue')),
-    );
-  },
-);
+When('the walk from the recorded hotel is measured', async function (this: ZaezdWorld) {
+  this.remember(
+    'walk',
+    await walkingMinutes(wiring(this), HOTEL, this.recall<VenueLocation>('venue')),
+  );
+});
 
 When('the walk from a hotel is measured', async function (this: ZaezdWorld) {
   this.remember(
     'walk',
-    await walkingMinutes(
-      wiring(this),
-      { lat: 56.85621, lng: 60.60571 },
-      this.recall<VenueLocation>('venue'),
-    ),
+    await walkingMinutes(wiring(this), HOTEL, this.recall<VenueLocation>('venue')),
   );
 });
 
@@ -107,12 +96,17 @@ When(
   },
 );
 
+const FORECAST_POINTS: Readonly<Record<string, { readonly at: GeoPoint; readonly city: string }>> = {
+  'the venue': { at: VENUE, city: 'Санкт-Петербург' },
+  'the city centre': { at: CITY_CENTRE, city: 'Санкт-Петербург' },
+};
+
 When(
-  'the forecast is asked for {word} from {word} to {word}',
-  async function (this: ZaezdWorld, city: string, from: string, to: string) {
-    const where = CITIES[city];
-    assert.ok(where !== undefined, `nobody recorded coordinates for ${city}`);
-    this.remember('forecast', await forecastFor(wiring(this), where, from, to, city));
+  /^the forecast is asked for (the venue|the city centre) from (\S+) to (\S+)$/,
+  async function (this: ZaezdWorld, where: string, from: string, to: string) {
+    const point = FORECAST_POINTS[where];
+    assert.ok(point !== undefined, `nobody mapped "${where}" to a recorded point`);
+    this.remember('forecast', await forecastFor(wiring(this), point.at, from, to, point.city));
   },
 );
 

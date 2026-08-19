@@ -1,55 +1,34 @@
 {
-  "recorded_at": "2026-08-19T10:58:53.435Z",
+  "recorded_at": "2026-08-19T11:07:53.110Z",
   "source": "nominatim",
   "tool": "search",
   "arguments": {
-    "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=5&q=%D1%83%D0%BB.%20%D0%A2%D0%BE%D0%BB%D0%BC%D0%B0%D1%87%D1%91%D0%B2%D0%B0%2C%2012%2C%20%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3",
-    "q": "ул. Толмачёва, 12, Екатеринбург"
+    "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=5&q=%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D1%8C%20%D0%9A%D0%B0%D1%80%D0%BB%D0%B0%20%D0%A4%D0%B0%D0%B1%D0%B5%D1%80%D0%B6%D0%B5%2C%208%D0%92%2C%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3",
+    "q": "площадь Карла Фаберже, 8В, Санкт-Петербург"
   },
-  "note": "step two, the address part pulled out of the venue string: this is what actually resolves",
+  "note": "step two, the address pulled out of the venue string",
   "response": {
     "status": 200,
     "body": [
       {
-        "place_id": 418796727,
+        "place_id": 169090306,
         "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
         "osm_type": "way",
-        "osm_id": 41110183,
-        "lat": "56.8381978",
-        "lon": "60.6103939",
-        "category": "building",
-        "type": "civic",
-        "place_rank": 30,
-        "importance": 0.000072487220569116,
-        "addresstype": "building",
-        "name": "",
-        "display_name": "12, улица Толмачёва, Ленинский район, Екатеринбург, городской округ Екатеринбург, Свердловская область, Уральский федеральный округ, 620075, Россия",
+        "osm_id": 132387626,
+        "lat": "59.9340393",
+        "lon": "30.4363945",
+        "category": "place",
+        "type": "square",
+        "place_rank": 25,
+        "importance": 0.22052600253021823,
+        "addresstype": "square",
+        "name": "площадь Карла Фаберже",
+        "display_name": "площадь Карла Фаберже, Яблоновка, округ Малая Охта, Санкт-Петербург, Северо-Западный федеральный округ, Россия",
         "boundingbox": [
-          "56.8379896",
-          "56.8384263",
-          "60.6099633",
-          "60.6107436"
-        ]
-      },
-      {
-        "place_id": 200688561,
-        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
-        "osm_type": "node",
-        "osm_id": 1823658259,
-        "lat": "56.8383439",
-        "lon": "60.6099907",
-        "category": "amenity",
-        "type": "restaurant",
-        "place_rank": 30,
-        "importance": 0.000072487220569116,
-        "addresstype": "amenity",
-        "name": "Pumpula",
-        "display_name": "Pumpula, 12, улица Толмачёва, Ленинский район, Екатеринбург, городской округ Екатеринбург, Свердловская область, Уральский федеральный округ, 620075, Россия",
-        "boundingbox": [
-          "56.8382939",
-          "56.8383939",
-          "60.6099407",
-          "60.6100407"
+          "59.9336566",
+          "59.9344923",
+          "30.4355969",
+          "30.4372798"
         ]
       }
     ]

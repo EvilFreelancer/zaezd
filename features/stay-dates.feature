@@ -29,9 +29,9 @@ Feature: Stay dates are decided by the event, not by the model
 
   Scenario: The catalogue never says when an event closes, so the last night is kept
     Given the recorded catalogue of offline events on artificial intelligence
-    When the stay is computed for "Искусственный интеллект для роста бизнеса AI Growth Days"
+    When the stay is computed for "SPb Python Meetup 2026"
     Then the trip says the closing time is unknown
-    And the traveller leaves on 2026-08-30
+    And the traveller leaves on 2026-08-21
 
   Scenario: A stay that crosses the end of a month keeps counting
     Given an event running from 2026-10-29 to 2026-10-31 that opens at unknown
@@ -79,14 +79,13 @@ Feature: Stay dates are decided by the event, not by the model
 
     Examples:
       | event                                            | arrival    | departure  | nights |
-      | SPb Python Meetup 2026                           | 2026-08-20 | 2026-08-21 | 1      |
-      | Конференция СTRL+ALT+LEAD                        | 2026-08-19 | 2026-08-21 | 2      |
-      | Искусственный интеллект для роста бизнеса AI Growth Days | 2026-08-26 | 2026-08-30 | 4      |
-      | Kazan Digital Week - 2026                        | 2026-10-28 | 2026-11-01 | 4      |
+      | SPb Python Meetup 2026                                     | 2026-08-20 | 2026-08-21 | 1 |
+      | Конференция СTRL+ALT+LEAD                                  | 2026-08-19 | 2026-08-21 | 2 |
+      | CNews Петербург 2026 — передовые технологии и кейсы России | 2026-09-23 | 2026-09-25 | 2 |
 
   Scenario: An event the catalogue gave no start time for says so out loud
     Given the recorded catalogue of offline events on artificial intelligence
-    When the stay is computed for "Kazan Digital Week - 2026"
+    When the stay is computed for "CNews Петербург 2026 — передовые технологии и кейсы России"
     Then the trip says the opening time is unknown
 
   Scenario: An event the catalogue did give a start time for is not called unknown

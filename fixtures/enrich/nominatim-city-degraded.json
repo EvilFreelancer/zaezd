@@ -6,7 +6,7 @@
     "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=5&q=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3",
     "q": "Санкт-Петербург"
   },
-  "note": "step three, the city itself: a normal mode of operation, not an exception",
+  "note": "the showcase names no venue, so the ladder falls all the way to the city centre",
   "response": {
     "status": 200,
     "body": [

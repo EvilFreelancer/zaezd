@@ -78,10 +78,10 @@ Feature: Whether the traveller actually makes it
     Then the trip cannot say whether it makes the opening
     And the variant cannot be offered as the main trip
 
-  Scenario: The recorded overnight train misses a morning opening in another time zone
+  Scenario: The cheapest recorded train is checked against the real opening time
     Given the recorded catalogue of offline events on artificial intelligence
-    And the event is "Искусственный интеллект для роста бизнеса AI Growth Days"
-    And the recorded journeys from Москва to Екатеринбург
+    And the event is "SPb Python Meetup 2026"
+    And the recorded journeys there
     When the cheapest recorded train is checked
     Then the trip misses the opening
     And the variant cannot be offered as the main trip

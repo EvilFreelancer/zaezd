@@ -56,35 +56,26 @@ export function asHotel(recorded: RecordedHotel): HotelOffer {
   };
 }
 
+/**
+ * The fixtures are named by their role in the demo rather than by a city, because the demo is
+ * derived from whatever the catalogue offers and the city changes with it.
+ */
 const JOURNEYS: Readonly<Record<string, string>> = {
-  'Москва->Екатеринбург': 'tutu/multitransport-msk-ekb-out.json',
-  'Екатеринбург->Москва': 'tutu/multitransport-ekb-msk-back.json',
-  'Москва->Казань': 'tutu/multitransport-msk-kzn-out.json',
-  'Казань->Москва': 'tutu/multitransport-kzn-msk-back.json',
+  there: 'tutu/demo-out.json',
+  home: 'tutu/demo-back.json',
 };
 
-const LISTINGS: Readonly<Record<string, string>> = {
-  Екатеринбург: 'tutu/hotels-ekb.json',
-  Казань: 'tutu/hotels-kzn.json',
-};
+Given('the recorded journeys {word}', function (this: ZaezdWorld, direction: string) {
+  const fixture = JOURNEYS[direction];
+  assert.ok(fixture !== undefined, `no recorded journeys "${direction}"`);
 
-Given(
-  'the recorded journeys from {word} to {word}',
-  function (this: ZaezdWorld, from: string, to: string) {
-    const fixture = JOURNEYS[`${from}->${to}`];
-    assert.ok(fixture !== undefined, `no recorded journeys from ${from} to ${to}`);
+  const { variants } = loadPayload<{ variants: RecordedVariant[] }>(fixture);
+  this.remember('variants', variants);
+  this.remember(`journeys:${direction}`, variants);
+});
 
-    const { variants } = loadPayload<{ variants: RecordedVariant[] }>(fixture);
-    this.remember('variants', variants);
-    this.remember(`journeys:${from}->${to}`, variants);
-  },
-);
-
-Given('the recorded hotels in {word}', function (this: ZaezdWorld, city: string) {
-  const fixture = LISTINGS[city];
-  assert.ok(fixture !== undefined, `no recorded hotel listing for ${city}`);
-
-  const { hotels } = loadPayload<{ hotels: RecordedHotel[] }>(fixture);
+Given('the recorded hotels of the demo trip', function (this: ZaezdWorld) {
+  const { hotels } = loadPayload<{ hotels: RecordedHotel[] }>('tutu/demo-hotels.json');
   this.remember('recorded-hotels', hotels);
   this.remember('hotels', hotels.map(asHotel));
 });

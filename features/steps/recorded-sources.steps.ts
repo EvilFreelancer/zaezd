@@ -113,7 +113,7 @@ When('the recorded catalogue answer is looked up', function (this: ZaezdWorld) {
   this.remember(
     'looked-up',
     this.recall<Recordings>('recordings').envelope('confcal', 'search_events', {
-      cities: ['ekaterinburg', 'kazan', 'spb', 'novosibirsk'],
+      cities: ['chelyabinsk', 'ekaterinburg', 'kaliningrad', 'kazan', 'krasnodar', 'novosibirsk', 'orenburg', 'rostov', 'sochi', 'spb', 'tomsk', 'ufa', 'volgograd', 'voronezh'],
       topics: ['ai'],
       event_format: 'offline',
       limit: 20,

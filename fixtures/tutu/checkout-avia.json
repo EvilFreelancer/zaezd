@@ -1,18 +1,18 @@
 {
-  "recorded_at": "2026-08-19T10:58:53.435Z",
+  "recorded_at": "2026-08-19T11:07:53.110Z",
   "source": "tutu",
   "tool": "create_checkout_link",
   "arguments": {
     "transport": "avia",
     "is_round_trip": false,
-    "search_results_url": "https://avia.tutu.ru/f/Moskva/Ekaterinburg/?class=Y&travelers=1&route[0]=491-26082026-29",
-    "offer_hash": "{\"Price\":6453,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"8a836197e0d49ddf369cccf67374eaee\\\",\\\"variantConditionsHash\\\":\\\"8d49e974c066566c6e0b1560e2cf3f45:f4b7bd50b88d2aef62aa0ef78689dd61\\\",\\\"pricingVariantHash\\\":\\\"4575c91f296ce6ca1701ee6a1e613a1f\\\"}]\"}",
+    "search_results_url": "https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75",
+    "offer_hash": "{\"Price\":10535,\"OriginalHash\":\"[{\\\"offerVariantHash\\\":\\\"521fbbc4bb8905c709f84e87dbc2380f\\\",\\\"variantConditionsHash\\\":\\\"fa9adb59deeca88256396ebf53ca2c90:4a15ebaf82f14491e2bac3a776e17da0\\\",\\\"pricingVariantHash\\\":\\\"c76b15591c4b2c741052f1f3376684e0\\\"}]\"}",
     "departure_geo_city_id": 2657260,
-    "arrival_geo_city_id": 2656869,
-    "departure_at": "2026-08-26T00:50:00+03:00",
+    "arrival_geo_city_id": 2656915,
+    "departure_at": "2026-08-20T23:30:00+03:00",
     "service_class": "ECONOMIC",
     "departure_avia_id": "491",
-    "arrival_avia_id": "29",
+    "arrival_avia_id": "75",
     "passengers_full": 1,
     "passengers_child": 0,
     "passengers_infant": 0
@@ -29,7 +29,7 @@
         "content": [
           {
             "type": "text",
-            "text": "{\"kind\":\"deeplink\",\"search_results_url\":\"https://avia.tutu.ru/f/Moskva/Ekaterinburg/?class=Y&travelers=1&route[0]=491-26082026-29\",\"checkout_url\":\"https://mtp-deeplink.tutu.ru/api/v1/deeplink/explicit/avia?departure_geo_city_id=2657260&arrival_geo_city_id=2656869&departure_time=2026-08-26T00:50:00%2B03:00&offer_variant_hash=8a836197e0d49ddf369cccf67374eaee&variant_conditions_hash=8d49e974c066566c6e0b1560e2cf3f45:f4b7bd50b88d2aef62aa0ef78689dd61&pricing_variant_hash=4575c91f296ce6ca1701ee6a1e613a1f&service_class=1&fallback_to_vid=true&source=mcp&passengers_full=1&passengers_child=0&passengers_infant=0&loading=true\",\"purchase_url_note\":\"checkout_url is a Tutu deeplink that 301-redirects to this exact ticket's purchase page (cheapest fare family of the chosen offer; for a different fare override `offer_hash` with the selected `variants[i].offer_hash`). If the offer becomes unavailable, the deeplink falls back to the avia search results instead of breaking. The deeplink requests the passenger composition you passed (`passengers_full/child/infant`); tell the user to confirm the passenger count in the cart before paying.\"}"
+            "text": "{\"kind\":\"deeplink\",\"search_results_url\":\"https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75\",\"checkout_url\":\"https://mtp-deeplink.tutu.ru/api/v1/deeplink/explicit/avia?departure_geo_city_id=2657260&arrival_geo_city_id=2656915&departure_time=2026-08-20T23:30:00%2B03:00&offer_variant_hash=521fbbc4bb8905c709f84e87dbc2380f&variant_conditions_hash=fa9adb59deeca88256396ebf53ca2c90:4a15ebaf82f14491e2bac3a776e17da0&pricing_variant_hash=c76b15591c4b2c741052f1f3376684e0&service_class=1&fallback_to_vid=true&source=mcp&passengers_full=1&passengers_child=0&passengers_infant=0&loading=true\",\"purchase_url_note\":\"checkout_url is a Tutu deeplink that 301-redirects to this exact ticket's purchase page (cheapest fare family of the chosen offer; for a different fare override `offer_hash` with the selected `variants[i].offer_hash`). If the offer becomes unavailable, the deeplink falls back to the avia search results instead of breaking. The deeplink requests the passenger composition you passed (`passengers_full/child/infant`); tell the user to confirm the passenger count in the cart before paying.\"}"
           }
         ],
         "isError": false
@@ -37,8 +37,8 @@
     },
     "payload": {
       "kind": "deeplink",
-      "search_results_url": "https://avia.tutu.ru/f/Moskva/Ekaterinburg/?class=Y&travelers=1&route[0]=491-26082026-29",
-      "checkout_url": "https://mtp-deeplink.tutu.ru/api/v1/deeplink/explicit/avia?departure_geo_city_id=2657260&arrival_geo_city_id=2656869&departure_time=2026-08-26T00:50:00%2B03:00&offer_variant_hash=8a836197e0d49ddf369cccf67374eaee&variant_conditions_hash=8d49e974c066566c6e0b1560e2cf3f45:f4b7bd50b88d2aef62aa0ef78689dd61&pricing_variant_hash=4575c91f296ce6ca1701ee6a1e613a1f&service_class=1&fallback_to_vid=true&source=mcp&passengers_full=1&passengers_child=0&passengers_infant=0&loading=true",
+      "search_results_url": "https://avia.tutu.ru/f/Moskva/Sankt-peterburg/?class=Y&travelers=1&route[0]=491-20082026-75",
+      "checkout_url": "https://mtp-deeplink.tutu.ru/api/v1/deeplink/explicit/avia?departure_geo_city_id=2657260&arrival_geo_city_id=2656915&departure_time=2026-08-20T23:30:00%2B03:00&offer_variant_hash=521fbbc4bb8905c709f84e87dbc2380f&variant_conditions_hash=fa9adb59deeca88256396ebf53ca2c90:4a15ebaf82f14491e2bac3a776e17da0&pricing_variant_hash=c76b15591c4b2c741052f1f3376684e0&service_class=1&fallback_to_vid=true&source=mcp&passengers_full=1&passengers_child=0&passengers_infant=0&loading=true",
       "purchase_url_note": "checkout_url is a Tutu deeplink that 301-redirects to this exact ticket's purchase page (cheapest fare family of the chosen offer; for a different fare override `offer_hash` with the selected `variants[i].offer_hash`). If the offer becomes unavailable, the deeplink falls back to the avia search results instead of breaking. The deeplink requests the passenger composition you passed (`passengers_full/child/infant`); tell the user to confirm the passenger count in the cart before paying."
     }
   }

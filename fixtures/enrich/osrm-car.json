@@ -1,12 +1,12 @@
 {
-  "recorded_at": "2026-08-19T10:58:53.435Z",
+  "recorded_at": "2026-08-19T11:07:53.110Z",
   "source": "osrm",
   "tool": "route-car",
   "arguments": {
-    "url": "https://router.project-osrm.org/route/v1/driving/49.119747,55.799152;49.108891,55.796127?overview=false",
+    "url": "https://router.project-osrm.org/route/v1/driving/30.368853,59.886078;30.4363945,59.9340393?overview=false",
     "profile": "driving"
   },
-  "note": "the public demo server serves this profile only; it must never be shown as walking",
+  "note": "the public demo server serves this profile only; never shown as walking",
   "response": {
     "status": 200,
     "body": {
@@ -16,36 +16,36 @@
           "legs": [
             {
               "steps": [],
-              "weight": 269.4,
+              "weight": 910,
               "summary": "",
-              "duration": 269.4,
-              "distance": 2047.6
+              "duration": 910,
+              "distance": 10639.7
             }
           ],
           "weight_name": "routability",
-          "weight": 269.4,
-          "duration": 269.4,
-          "distance": 2047.6
+          "weight": 910,
+          "duration": 910,
+          "distance": 10639.7
         }
       ],
       "waypoints": [
         {
-          "hint": "1-Q9guvvFoPeAAAAHgAAACgAAAAxAAAAHWy5QjTEQ0H554VBh7OjQd4AAAAeAAAAKAAAADEAAAB1JQEAFoPtAs5tUwMDgu0CcG1TAwIATwkAAAAA",
+          "hint": "3YJTkeCCU5EJAAAAAAAAAIkAAAAYAAAAmEhnQAAAAADUU2NCiCYjQQkAAAAAAAAAiQAAABgAAAB1JQEAp2bPAUrIkQNVZM8B_smRAwoArxEAAAAA",
           "location": [
-            49.120022,
-            55.799246
+            30.369447,
+            59.885642
           ],
           "name": "",
-          "distance": 20.18304493
+          "distance": 58.87628972
         },
         {
-          "hint": "iFD0gR2rj4kMAAAAHAAAACUAAAAoAAAAOqc0QRXfwUE0OwRCrhgJQgwAAAAcAAAAJQAAACgAAAB1JQEARljtAi5iUwObV-0Cn2FTAwIA_xIAAAAA",
+          "hint": "OlYjlP___38OAAAAEAAAAGIBAABHAAAA9Vu3QGk3TD9aSRNDrGrtQQ4AAAAQAAAAYgEAAEcAAAB1JQEApm3QASqFkgMrbNABV4WSAwgAHwwAAAAA",
           "location": [
-            49.109062,
-            55.79627
+            30.436774,
+            59.933994
           ],
-          "name": "Кремлёвская улица",
-          "distance": 19.20008937
+          "name": "",
+          "distance": 21.78090138
         }
       ]
     }

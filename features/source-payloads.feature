@@ -9,36 +9,36 @@ Feature: What the sources said, and what they did not
   Scenario: The catalogue answer is read into events the product understands
     Given the recorded catalogue answer for offline events on artificial intelligence
     When the answer is read
-    Then 18 events are understood
-    And the event "Kazan Digital Week - 2026" is in Казань
+    Then 20 events are understood
+    And the event "CNews Петербург 2026 — передовые технологии и кейсы России" is in Санкт-Петербург
 
   Scenario: A field the catalogue did not fill stays missing
     Given the recorded catalogue answer for offline events on artificial intelligence
     When the answer is read
-    Then the event "Kazan Digital Week - 2026" has no venue
-    And the event "Kazan Digital Week - 2026" has no opening time
+    Then the event "CNews Петербург 2026 — передовые технологии и кейсы России" has no venue
+    And the event "CNews Петербург 2026 — передовые технологии и кейсы России" has no opening time
 
   Scenario: A field the catalogue did fill is kept
     Given the recorded catalogue answer for offline events on artificial intelligence
     When the answer is read
-    Then the event "Искусственный интеллект для роста бизнеса AI Growth Days" has a venue
-    And the event "Искусственный интеллект для роста бизнеса AI Growth Days" has an opening time
-    And the event "Искусственный интеллект для роста бизнеса AI Growth Days" has a link
+    Then the event "SPb Python Meetup 2026" has a venue
+    And the event "SPb Python Meetup 2026" has an opening time
+    And the event "SPb Python Meetup 2026" has a link
 
   Scenario: The transport answer is read into journeys
-    Given the recorded transport answer from Москва to Екатеринбург
+    Given the recorded transport answer there
     When the answer is read
     Then 6 journeys are understood
     And every journey names its price, its duration and both its times
-    And the answer names Москва and Екатеринбург as the places Tutu resolved
+    And the answer names Москва and Санкт-Петербург as the places Tutu resolved
 
   Scenario: A journey keeps the handle Tutu will need back at checkout
-    Given the recorded transport answer from Москва to Екатеринбург
+    Given the recorded transport answer there
     When the answer is read
     Then every journey carries the checkout handle Tutu returned
 
   Scenario: An empty mode is not a claim that the mode does not exist
-    Given the recorded transport answer from Москва to Екатеринбург
+    Given the recorded transport answer there
     When the answer is read
     Then no journey by suburban trains is offered
     But suburban trains are not reported as unavailable
@@ -51,11 +51,11 @@ Feature: What the sources said, and what they did not
     And the reason Tutu gave is kept
 
   Scenario: The hotel listing is read into hotels with their coordinates
-    Given the recorded hotel listing for Екатеринбург
+    Given the recorded hotel listing of the demo trip
     When the answer is read
     Then 20 hotels are understood
     And every hotel names its whole-stay price
-    And the answer names Екатеринбург as the geography Tutu resolved
+    And the answer names Санкт-Петербург as the geography Tutu resolved
 
   Scenario: A tool error is an error, not data
     Given the recorded answer where Tutu rejected an unknown argument
@@ -64,7 +64,7 @@ Feature: What the sources said, and what they did not
     And the refusal repeats what Tutu said
 
   Scenario: A hotel geography identifier is never taken from a transport answer
-    Given the recorded transport answer from Москва to Екатеринбург
-    And the recorded hotel listing for Екатеринбург
+    Given the recorded transport answer there
+    And the recorded hotel listing of the demo trip
     When both answers are read
     Then the hotel geography and the transport geography are different identifiers

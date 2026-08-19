@@ -1,0 +1,975 @@
+{
+  "recorded_at": "2026-08-19T11:07:53.110Z",
+  "source": "tutu",
+  "tool": "search_multitransport",
+  "arguments": {
+    "origin": "Москва",
+    "destination": "Санкт-Петербург",
+    "departure_date": "2026-09-23",
+    "adults": 1,
+    "page_size": 6
+  },
+  "volatile": [
+    "variants[].checkout_ref",
+    "variants[].checkout_url"
+  ],
+  "note": "the honest-degradation showcase: no opening time and no venue, outbound",
+  "response": {
+    "envelope": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"variants\":[{\"offer_id\":\"142f2a17ff720a4eeba0bc2f4667842e\",\"transport\":\"railway\",\"price\":{\"amount\":1140.98,\"currency\":\"RUB\"},\"duration_min\":355,\"carriers\":[\"ФПК\"],\"search_results_url\":\"https://www.tutu.ru/poezda/rasp_d.php?date=23.09.2026&nnst1=2000000&nnst2=2004000\",\"segments_count\":1,\"checkout_url\":\"https://www.tutu.ru/poezda/order/?departure_st=2657260&arrival_st=2656915&dep_st=2006004&arr_st=2004001&tn=746%D0%A3&date=23.09.2026+17:45:00\",\"departure_at\":\"2026-09-23T17:45:00+03:00\",\"arrival_at\":\"2026-09-23T23:40:00+03:00\",\"legs\":[{\"label\":\"outbound\",\"from\":\"Москва — Ленинградский вокзал (2006004)\",\"to\":\"Санкт-Петербург — Московский вокзал (2004001)\",\"departure_at\":\"2026-09-23T17:45:00+03:00\",\"arrival_at\":\"2026-09-23T23:40:00+03:00\",\"duration_min\":355,\"segments\":[{\"from\":\"Москва — Ленинградский вокзал (2006004)\",\"to\":\"Санкт-Петербург — Московский вокзал (2004001)\",\"departure_at\":\"2026-09-23T17:45:00+03:00\",\"arrival_at\":\"2026-09-23T23:40:00+03:00\",\"duration_min\":355,\"carrier\":\"ФПК\",\"voyage_no\":\"746У\",\"from_geo_point_id\":2958868,\"to_geo_point_id\":2958266,\"vehicle_meta\":{\"name\":\"АВРОРА\",\"is_premium\":true,\"is_double_decker\":true}}]}],\"checkout_ref\":{\"transport\":\"railway\",\"departure_city_id\":2657260,\"arrival_city_id\":2656915,\"departure_station_code\":\"2006004\",\"arrival_station_code\":\"2004001\",\"train_number\":\"746У\",\"departure_at\":\"2026-09-23T17:45:00+03:00\",\"departure_geo_point_id\":2958868,\"arrival_geo_point_id\":2958266,\"offer_hash\":\"142f2a17ff720a4eeba0bc2f4667842e\",\"segment_hash\":\"9a96084f1ce5bfe2407cb0b046ae10bf\",\"search_id\":\"1EC12D21-E6FF-4B5A-8779-C67A9174688D\",\"result_id\":\"a9731cae-4fc8-5f95-9c44-96f0819ce885\",\"card_id\":\"0d23e0ca29e14d82bae364f2f04be1a1\"},\"details_ref\":{\"transport\":\"railway\",\"source\":\"seats-gateway.seats-by-params\",\"departure_station_code\":\"2006004\",\"arrival_station_code\":\"2004001\",\"train_number\":\"746У\",\"departure_at\":\"2026-09-23T17:45:00+03:00\",\"price\":{\"amount\":1140.98,\"currency\":\"RUB\"},\"title\":\"Поезд 746У\",\"carriers\":[\"ФПК\"],\"duration_min\":355,\"arrival_at\":\"2026-09-23T23:40:00+03:00\",\"review_summary\":{\"rating\":9.4,\"review_count\":69,\"label\":\"⭐ 9.4/10 · 69 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"train\",\"subject\":\"746У\",\"scale\":10,\"feedback_key\":\"746У\"}},\"review_summary\":{\"rating\":9.4,\"review_count\":69,\"label\":\"⭐ 9.4/10 · 69 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"train\",\"subject\":\"746У\",\"scale\":10,\"feedback_key\":\"746У\"},\"fares\":{\"count\":26,\"price_from\":1140.98,\"price_to\":10624.94,\"currency\":\"RUB\",\"refundable_count\":18,\"changeable_count\":0,\"seat_categories\":{\"SEDENTARY\":{\"count\":13,\"price_from\":1140.98},\"COMPARTMENT\":{\"count\":12,\"price_from\":3222.38},\"LUX\":{\"count\":1,\"price_from\":10624.94}}}},{\"offer_id\":\"72ada1b2e5247e7dece939ae4103052e\",\"transport\":\"railway\",\"price\":{\"amount\":1140.98,\"currency\":\"RUB\"},\"duration_min\":373,\"carriers\":[\"ФПК\"],\"search_results_url\":\"https://www.tutu.ru/poezda/rasp_d.php?date=23.09.2026&nnst1=2000000&nnst2=2004000\",\"segments_count\":1,\"checkout_url\":\"https://www.tutu.ru/poezda/order/?departure_st=2657260&arrival_st=2656915&dep_st=2006004&arr_st=2004001&tn=742%D0%A3&date=23.09.2026+06:00:00\",\"departure_at\":\"2026-09-23T06:00:00+03:00\",\"arrival_at\":\"2026-09-23T12:13:00+03:00\",\"legs\":[{\"label\":\"outbound\",\"from\":\"Москва — Ленинградский вокзал (2006004)\",\"to\":\"Санкт-Петербург — Московский вокзал (2004001)\",\"departure_at\":\"2026-09-23T06:00:00+03:00\",\"arrival_at\":\"2026-09-23T12:13:00+03:00\",\"duration_min\":373,\"segments\":[{\"from\":\"Москва — Ленинградский вокзал (2006004)\",\"to\":\"Санкт-Петербург — Московский вокзал (2004001)\",\"departure_at\":\"2026-09-23T06:00:00+03:00\",\"arrival_at\":\"2026-09-23T12:13:00+03:00\",\"duration_min\":373,\"carrier\":\"ФПК\",\"voyage_no\":\"742У\",\"from_geo_point_id\":2958868,\"to_geo_point_id\":2958266,\"vehicle_meta\":{\"name\":\"Аврора (двухэтажный)\",\"is_premium\":true,\"is_double_decker\":true}}]}],\"checkout_ref\":{\"transport\":\"railway\",\"departure_city_id\":2657260,\"arrival_city_id\":2656915,\"departure_station_code\":\"2006004\",\"arrival_station_code\":\"2004001\",\"train_number\":\"742У\",\"departure_at\":\"2026-09-23T06:00:00+03:00\",\"departure_geo_point_id\":2958868,\"arrival_geo_point_id\":2958266,\"offer_hash\":\"72ada1b2e5247e7dece939ae4103052e\",\"segment_hash\":\"68b7a9341a0073e84612043e01b8351d\",\"search_id\":\"1EC12D21-E6FF-4B5A-8779-C67A9174688D\",\"result_id\":\"38839483-08a7-5237-bb3d-2f4140010368\",\"card_id\":\"78e593015908dcf8e4fd0b79bb52fc87\"},\"details_ref\":{\"transport\":\"railway\",\"source\":\"seats-gateway.seats-by-params\",\"departure_station_code\":\"2006004\",\"arrival_station_code\":\"2004001\",\"train_number\":\"742У\",\"departure_at\":\"2026-09-23T06:00:00+03:00\",\"price\":{\"amount\":1140.98,\"currency\":\"RUB\"},\"title\":\"Поезд 742У\",\"carriers\":[\"ФПК\"],\"duration_min\":373,\"arrival_at\":\"2026-09-23T12:13:00+03:00\",\"review_summary\":{\"rating\":9.6,\"review_count\":309,\"label\":\"⭐ 9.6/10 · 309 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"train\",\"subject\":\"742У\",\"scale\":10,\"feedback_key\":\"742У\"}},\"review_summary\":{\"rating\":9.6,\"review_count\":309,\"label\":\"⭐ 9.6/10 · 309 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"train\",\"subject\":\"742У\",\"scale\":10,\"feedback_key\":\"742У\"},\"fares\":{\"count\":25,\"price_from\":1140.98,\"price_to\":10624.94,\"currency\":\"RUB\",\"refundable_count\":18,\"changeable_count\":0,\"seat_categories\":{\"SEDENTARY\":{\"count\":13,\"price_from\":1140.98},\"COMPARTMENT\":{\"count\":10,\"price_from\":3222.38},\"LUX\":{\"count\":2,\"price_from\":10624.94}}}},{\"offer_id\":\"879958422fb6e75a6df6cdc293de4e72\",\"transport\":\"railway\",\"price\":{\"amount\":1140.98,\"currency\":\"RUB\"},\"duration_min\":385,\"carriers\":[\"ФПК\"],\"search_results_url\":\"https://www.tutu.ru/poezda/rasp_d.php?date=23.09.2026&nnst1=2000000&nnst2=2004000\",\"segments_count\":1,\"checkout_url\":\"https://www.tutu.ru/poezda/order/?departure_st=2657260&arrival_st=2656915&dep_st=2006004&arr_st=2004001&tn=740%D0%A3&date=23.09.2026+06:30:00\",\"departure_at\":\"2026-09-23T06:30:00+03:00\",\"arrival_at\":\"2026-09-23T12:55:00+03:00\",\"legs\":[{\"label\":\"outbound\",\"from\":\"Москва — Ленинградский вокзал (2006004)\",\"to\":\"Санкт-Петербург — Московский вокзал (2004001)\",\"departure_at\":\"2026-09-23T06:30:00+03:00\",\"arrival_at\":\"2026-09-23T12:55:00+03:00\",\"duration_min\":385,\"segments\":[{\"from\":\"Москва — Ленинградский вокзал (2006004)\",\"to\":\"Санкт-Петербург — Московский вокзал (2004001)\",\"departure_at\":\"2026-09-23T06:30:00+03:00\",\"arrival_at\":\"2026-09-23T12:55:00+03:00\",\"duration_min\":385,\"carrier\":\"ФПК\",\"voyage_no\":\"740У\",\"from_geo_point_id\":2958868,\"to_geo_point_id\":2958266,\"vehicle_meta\":{\"name\":\"АВРОРА\",\"is_premium\":true,\"is_double_decker\":true}}]}],\"checkout_ref\":{\"transport\":\"railway\",\"departure_city_id\":2657260,\"arrival_city_id\":2656915,\"departure_station_code\":\"2006004\",\"arrival_station_code\":\"2004001\",\"train_number\":\"740У\",\"departure_at\":\"2026-09-23T06:30:00+03:00\",\"departure_geo_point_id\":2958868,\"arrival_geo_point_id\":2958266,\"offer_hash\":\"879958422fb6e75a6df6cdc293de4e72\",\"segment_hash\":\"80f36d3533cda988e944943b8b817b44\",\"search_id\":\"1EC12D21-E6FF-4B5A-8779-C67A9174688D\",\"result_id\":\"a96bdfdc-3b8a-545e-b18f-7d90ca1f2459\",\"card_id\":\"c1113b7389014bb50cedd011dd56ec8d\"},\"details_ref\":{\"transport\":\"railway\",\"source\":\"seats-gateway.seats-by-params\",\"departure_station_code\":\"2006004\",\"arrival_station_code\":\"2004001\",\"train_number\":\"740У\",\"departure_at\":\"2026-09-23T06:30:00+03:00\",\"price\":{\"amount\":1140.98,\"currency\":\"RUB\"},\"title\":\"Поезд 740У\",\"carriers\":[\"ФПК\"],\"duration_min\":385,\"arrival_at\":\"2026-09-23T12:55:00+03:00\",\"review_summary\":{\"rating\":9.2,\"review_count\":28,\"label\":\"⭐ 9.2/10 · 28 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"train\",\"subject\":\"740У\",\"scale\":10,\"feedback_key\":\"740У\"}},\"review_summary\":{\"rating\":9.2,\"review_count\":28,\"label\":\"⭐ 9.2/10 · 28 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"train\",\"subject\":\"740У\",\"scale\":10,\"feedback_key\":\"740У\"},\"fares\":{\"count\":22,\"price_from\":1140.98,\"price_to\":10624.94,\"currency\":\"RUB\",\"refundable_count\":15,\"changeable_count\":0,\"seat_categories\":{\"SEDENTARY\":{\"count\":9,\"price_from\":1140.98},\"COMPARTMENT\":{\"count\":12,\"price_from\":3222.38},\"LUX\":{\"count\":1,\"price_from\":10624.94}}}},{\"offer_id\":\"93ca734a8af24e71eebbffb0929c1d79\",\"transport\":\"bus\",\"price\":{\"amount\":1700.0,\"currency\":\"RUB\"},\"duration_min\":510,\"carriers\":[\"Евротранс\"],\"search_results_url\":\"https://bus.tutu.ru/bilety_na_avtobus/Moskva/Sankt-peterburg/\",\"segments_count\":1,\"checkout_url\":\"https://mtp-deeplink.tutu.ru/api/v1/deeplink/explicit/bus?geo_mode=original&departure_time=2026-09-23T08:30:00%2B03:00&departure_geo_city_id=1447874&arrival_geo_city_id=1447624&hash=k0G1AO1WKhaEl%252BeiCJvKclyq%252Fn0s4EeSaHd%252FWMB0KTtUo40XcZeaQquvA2y0hliJzQl4H12taFJMdo61us8dqiAUaMIj6qEcRcolgm3VUuAWx6vjRHSMcboJdnonwJngs48h5uNCDdgdwMTC2RsUQH8Fhf2U58NTIBP8bLf6VpLF6JS8VhBvdb%252BqJvbht7%252FmxHQod6B2JTQ077w3uf0%252BK6XPJq7hApzDfG%252F629ERjtVd3XtaOxqx6Ex0WtYTRYEdpFOglWAk8eTcaDDPsjvle7YL7jItQpBRPtjB8jpsOjMfj6dk%252FMwfRjr%252F5bhunlfb3wf8%252BBJ%252FKgxDnI3K5N5F8woK9LzpS4n0bYesyMB140RggfTLtMtgOEKkrv%252BAAOF4R%252FEch2JL2yuTiI%252B%252BcT2Ur8LXjFDvVomUgUQW%252FTJWYX5Tove0HctNtt0rv005x2CSvbZyguN%252BXBd3IzNHFFTbJLvjn%252BxG8jn9hZV%252BdY015xoRJmgGAXaEbp3YChiMMv3KDhGsDvQI2EWAsSJnXSWhbj9uYXL02m1niZUQXv%252BpQlqr4Ldrr7M%252FYHSi%252FU%252FmmOBtNWJ4psD40ufXKavG15bJpIEBAA6mr3WDA%252Bw%252BQUOk1Zl0910%253D&fallback_to_vid=true&source=mcp\",\"departure_at\":\"2026-09-23T08:30:00+03:00\",\"arrival_at\":\"2026-09-23T17:00:00+03:00\",\"legs\":[{\"label\":\"outbound\",\"from\":\"Международный автовокзал Саларьево\",\"to\":\"Автовокзал\",\"departure_at\":\"2026-09-23T08:30:00+03:00\",\"arrival_at\":\"2026-09-23T17:00:00+03:00\",\"duration_min\":510,\"segments\":[{\"from\":\"Международный автовокзал Саларьево\",\"to\":\"Автовокзал\",\"departure_at\":\"2026-09-23T08:30:00+03:00\",\"arrival_at\":\"2026-09-23T17:00:00+03:00\",\"duration_min\":510,\"carrier\":\"Евротранс\",\"voyage_no\":null,\"from_geo_point_id\":4583261,\"to_geo_point_id\":2857715}]}],\"variants\":[{\"variant_id\":\"ab7b57619b38cc85b9ac53683e9aa8a3\",\"offer_hash\":\"k0G1AO1WKhaEl%2BeiCJvKclyq%2Fn0s4EeSaHd%2FWMB0KTtUo40XcZeaQquvA2y0hliJzQl4H12taFJMdo61us8dqiAUaMIj6qEcRcolgm3VUuAWx6vjRHSMcboJdnonwJngs48h5uNCDdgdwMTC2RsUQH8Fhf2U58NTIBP8bLf6VpLF6JS8VhBvdb%2BqJvbht7%2FmxHQod6B2JTQ077w3uf0%2BK6XPJq7hApzDfG%2F629ERjtVd3XtaOxqx6Ex0WtYTRYEdpFOglWAk8eTcaDDPsjvle7YL7jItQpBRPtjB8jpsOjMfj6dk%2FMwfRjr%2F5bhunlfb3wf8%2BBJ%2FKgxDnI3K5N5F8woK9LzpS4n0bYesyMB140RggfTLtMtgOEKkrv%2BAAOF4R%2FEch2JL2yuTiI%2B%2BcT2Ur8LXjFDvVomUgUQW%2FTJWYX5Tove0HctNtt0rv005x2CSvbZyguN%2BXBd3IzNHFFTbJLvjn%2BxG8jn9hZV%2BdY015xoRJmgGAXaEbp3YChiMMv3KDhGsDvQI2EWAsSJnXSWhbj9uYXL02m1niZUQXv%2BpQlqr4Ldrr7M%2FYHSi%2FU%2FmmOBtNWJ4psD40ufXKavG15bJpIEBAA6mr3WDA%2Bw%2BQUOk1Zl0910%3D\",\"price\":{\"amount\":1700.0,\"currency\":\"RUB\"}}],\"checkout_ref\":{\"transport\":\"bus\",\"offer_hash\":\"k0G1AO1WKhaEl%2BeiCJvKclyq%2Fn0s4EeSaHd%2FWMB0KTtUo40XcZeaQquvA2y0hliJzQl4H12taFJMdo61us8dqiAUaMIj6qEcRcolgm3VUuAWx6vjRHSMcboJdnonwJngs48h5uNCDdgdwMTC2RsUQH8Fhf2U58NTIBP8bLf6VpLF6JS8VhBvdb%2BqJvbht7%2FmxHQod6B2JTQ077w3uf0%2BK6XPJq7hApzDfG%2F629ERjtVd3XtaOxqx6Ex0WtYTRYEdpFOglWAk8eTcaDDPsjvle7YL7jItQpBRPtjB8jpsOjMfj6dk%2FMwfRjr%2F5bhunlfb3wf8%2BBJ%2FKgxDnI3K5N5F8woK9LzpS4n0bYesyMB140RggfTLtMtgOEKkrv%2BAAOF4R%2FEch2JL2yuTiI%2B%2BcT2Ur8LXjFDvVomUgUQW%2FTJWYX5Tove0HctNtt0rv005x2CSvbZyguN%2BXBd3IzNHFFTbJLvjn%2BxG8jn9hZV%2BdY015xoRJmgGAXaEbp3YChiMMv3KDhGsDvQI2EWAsSJnXSWhbj9uYXL02m1niZUQXv%2BpQlqr4Ldrr7M%2FYHSi%2FU%2FmmOBtNWJ4psD40ufXKavG15bJpIEBAA6mr3WDA%2Bw%2BQUOk1Zl0910%3D\",\"search_id\":\"5782CF45-708A-4921-98D7-E878C852B763\",\"departure_geo_city_id\":2657260,\"arrival_geo_city_id\":2656915,\"departure_id\":\"1447874\",\"arrival_id\":\"1447624\",\"departure_stop_id\":4583261,\"arrival_stop_id\":2857715,\"departure_stop_name\":\"Международный автовокзал Саларьево\",\"arrival_stop_name\":\"Автовокзал\",\"city_from\":\"Москва\",\"city_to\":\"Санкт-Петербург\",\"departure_at\":\"2026-09-23T08:30:00+03:00\",\"passengers\":1,\"passengers_adult\":1,\"passengers_child\":0},\"details_ref\":{\"transport\":\"bus\",\"source\":\"api-bus.search.detail\",\"departure_id\":\"1447874\",\"arrival_id\":\"1447624\",\"departure_date\":\"2026-09-23\",\"seat_count\":1,\"passengers_adult\":1,\"passengers_child\":0,\"offer_hash\":\"k0G1AO1WKhaEl%2BeiCJvKclyq%2Fn0s4EeSaHd%2FWMB0KTtUo40XcZeaQquvA2y0hliJzQl4H12taFJMdo61us8dqiAUaMIj6qEcRcolgm3VUuAWx6vjRHSMcboJdnonwJngs48h5uNCDdgdwMTC2RsUQH8Fhf2U58NTIBP8bLf6VpLF6JS8VhBvdb%2BqJvbht7%2FmxHQod6B2JTQ077w3uf0%2BK6XPJq7hApzDfG%2F629ERjtVd3XtaOxqx6Ex0WtYTRYEdpFOglWAk8eTcaDDPsjvle7YL7jItQpBRPtjB8jpsOjMfj6dk%2FMwfRjr%2F5bhunlfb3wf8%2BBJ%2FKgxDnI3K5N5F8woK9LzpS4n0bYesyMB140RggfTLtMtgOEKkrv%2BAAOF4R%2FEch2JL2yuTiI%2B%2BcT2Ur8LXjFDvVomUgUQW%2FTJWYX5Tove0HctNtt0rv005x2CSvbZyguN%2BXBd3IzNHFFTbJLvjn%2BxG8jn9hZV%2BdY015xoRJmgGAXaEbp3YChiMMv3KDhGsDvQI2EWAsSJnXSWhbj9uYXL02m1niZUQXv%2BpQlqr4Ldrr7M%2FYHSi%2FU%2FmmOBtNWJ4psD40ufXKavG15bJpIEBAA6mr3WDA%2Bw%2BQUOk1Zl0910%3D\",\"departure_stop_id\":4583261,\"arrival_stop_id\":2857715,\"departure_stop_name\":\"Международный автовокзал Саларьево\",\"arrival_stop_name\":\"Автовокзал\",\"price\":{\"amount\":1700.0,\"currency\":\"RUB\"},\"carriers\":[\"Евротранс\"],\"duration_min\":510,\"departure_at\":\"2026-09-23T08:30:00+03:00\",\"arrival_at\":\"2026-09-23T17:00:00+03:00\",\"review_summary\":{\"rating\":8.6,\"review_count\":2976,\"label\":\"⭐ 8.6/10 · 2 976 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"Евротранс\",\"aspects\":[{\"rating\":8.6,\"scale\":10,\"text\":\"Автобус\",\"source\":\"offers-api.feedback\",\"scope\":\"bus_aspect\",\"subject\":\"Евротранс\",\"label\":\"⭐ 8.6/10 · Автобус\"},{\"rating\":9.2,\"scale\":10,\"text\":\"Водитель\",\"source\":\"offers-api.feedback\",\"scope\":\"bus_aspect\",\"subject\":\"Евротранс\",\"label\":\"⭐ 9.2/10 · Водитель\"},{\"rating\":8.1,\"scale\":10,\"text\":\"Общее впечатление\",\"source\":\"offers-api.feedback\",\"scope\":\"bus_aspect\",\"subject\":\"Евротранс\",\"label\":\"⭐ 8.1/10 · Общее впечатление\"}],\"scale\":10,\"feedback_key\":\"7420\"}},\"review_summary\":{\"rating\":8.6,\"review_count\":2976,\"label\":\"⭐ 8.6/10 · 2 976 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"Евротранс\",\"aspects\":[{\"rating\":8.6,\"scale\":10,\"text\":\"Автобус\",\"source\":\"offers-api.feedback\",\"scope\":\"bus_aspect\",\"subject\":\"Евротранс\",\"label\":\"⭐ 8.6/10 · Автобус\"},{\"rating\":9.2,\"scale\":10,\"text\":\"Водитель\",\"source\":\"offers-api.feedback\",\"scope\":\"bus_aspect\",\"subject\":\"Евротранс\",\"label\":\"⭐ 9.2/10 · Водитель\"},{\"rating\":8.1,\"scale\":10,\"text\":\"Общее впечатление\",\"source\":\"offers-api.feedback\",\"scope\":\"bus_aspect\",\"subject\":\"Евротранс\",\"label\":\"⭐ 8.1/10 · Общее впечатление\"}],\"scale\":10,\"feedback_key\":\"7420\"}},{\"offer_id\":\"4ffd3564d2d42aa82c96c13276180c59\",\"transport\":\"bus\",\"price\":{\"amount\":1700.0,\"currency\":\"RUB\"},\"duration_min\":540,\"carriers\":[\"VolgaLine\"],\"search_results_url\":\"https://bus.tutu.ru/bilety_na_avtobus/Moskva/Sankt-peterburg/\",\"segments_count\":1,\"checkout_url\":\"https://mtp-deeplink.tutu.ru/api/v1/deeplink/explicit/bus?geo_mode=original&departure_time=2026-09-23T07:00:00%2B03:00&departure_geo_city_id=1447874&arrival_geo_city_id=1447624&hash=Kx4pwcxWItPbkkwmcoJ18edv6KOPg52QvTi0XqLj%252FpZ9%252FwOHL7%252BwVajv5yIQyjGA46v3pLTho2BXbKw2ZnWOhCAG59JM4RocRWco9huANZj1fIPyyCf3Ck5wg9OQSvxfM7E8QFCsNeMS4X%252Fke3x89%252Fpi4PTzb0%252FFd4J839NWOFfrRXML3cr%252Bqvy2pUbMA0dspUAimKa80Kny117f%252FbRb7cDaDpX%252BEnTOM2Ny25fuXYRHxt7ku4Rz4FlR9fs9%252BA%253D%253D&fallback_to_vid=true&source=mcp\",\"departure_at\":\"2026-09-23T07:00:00+03:00\",\"arrival_at\":\"2026-09-23T16:00:00+03:00\",\"legs\":[{\"label\":\"outbound\",\"from\":\"Автовокзал Котельники\",\"to\":\"Автовокзал\",\"departure_at\":\"2026-09-23T07:00:00+03:00\",\"arrival_at\":\"2026-09-23T16:00:00+03:00\",\"duration_min\":540,\"segments\":[{\"from\":\"Автовокзал Котельники\",\"to\":\"Автовокзал\",\"departure_at\":\"2026-09-23T07:00:00+03:00\",\"arrival_at\":\"2026-09-23T16:00:00+03:00\",\"duration_min\":540,\"carrier\":\"VolgaLine\",\"voyage_no\":null,\"from_geo_point_id\":2754359,\"to_geo_point_id\":2857715}]}],\"variants\":[{\"variant_id\":\"df89ccc3fc107a53dd93b675183024b3\",\"offer_hash\":\"Kx4pwcxWItPbkkwmcoJ18edv6KOPg52QvTi0XqLj%2FpZ9%2FwOHL7%2BwVajv5yIQyjGA46v3pLTho2BXbKw2ZnWOhCAG59JM4RocRWco9huANZj1fIPyyCf3Ck5wg9OQSvxfM7E8QFCsNeMS4X%2Fke3x89%2Fpi4PTzb0%2FFd4J839NWOFfrRXML3cr%2Bqvy2pUbMA0dspUAimKa80Kny117f%2FbRb7cDaDpX%2BEnTOM2Ny25fuXYRHxt7ku4Rz4FlR9fs9%2BA%3D%3D\",\"price\":{\"amount\":1700.0,\"currency\":\"RUB\"}}],\"checkout_ref\":{\"transport\":\"bus\",\"offer_hash\":\"Kx4pwcxWItPbkkwmcoJ18edv6KOPg52QvTi0XqLj%2FpZ9%2FwOHL7%2BwVajv5yIQyjGA46v3pLTho2BXbKw2ZnWOhCAG59JM4RocRWco9huANZj1fIPyyCf3Ck5wg9OQSvxfM7E8QFCsNeMS4X%2Fke3x89%2Fpi4PTzb0%2FFd4J839NWOFfrRXML3cr%2Bqvy2pUbMA0dspUAimKa80Kny117f%2FbRb7cDaDpX%2BEnTOM2Ny25fuXYRHxt7ku4Rz4FlR9fs9%2BA%3D%3D\",\"search_id\":\"5782CF45-708A-4921-98D7-E878C852B763\",\"departure_geo_city_id\":2657260,\"arrival_geo_city_id\":2656915,\"departure_id\":\"1447874\",\"arrival_id\":\"1447624\",\"departure_stop_id\":2754359,\"arrival_stop_id\":2857715,\"departure_stop_name\":\"Автовокзал Котельники\",\"arrival_stop_name\":\"Автовокзал\",\"city_from\":\"Москва\",\"city_to\":\"Санкт-Петербург\",\"departure_at\":\"2026-09-23T07:00:00+03:00\",\"passengers\":1,\"passengers_adult\":1,\"passengers_child\":0},\"details_ref\":{\"transport\":\"bus\",\"source\":\"api-bus.search.detail\",\"departure_id\":\"1447874\",\"arrival_id\":\"1447624\",\"departure_date\":\"2026-09-23\",\"seat_count\":1,\"passengers_adult\":1,\"passengers_child\":0,\"offer_hash\":\"Kx4pwcxWItPbkkwmcoJ18edv6KOPg52QvTi0XqLj%2FpZ9%2FwOHL7%2BwVajv5yIQyjGA46v3pLTho2BXbKw2ZnWOhCAG59JM4RocRWco9huANZj1fIPyyCf3Ck5wg9OQSvxfM7E8QFCsNeMS4X%2Fke3x89%2Fpi4PTzb0%2FFd4J839NWOFfrRXML3cr%2Bqvy2pUbMA0dspUAimKa80Kny117f%2FbRb7cDaDpX%2BEnTOM2Ny25fuXYRHxt7ku4Rz4FlR9fs9%2BA%3D%3D\",\"departure_stop_id\":2754359,\"arrival_stop_id\":2857715,\"departure_stop_name\":\"Автовокзал Котельники\",\"arrival_stop_name\":\"Автовокзал\",\"price\":{\"amount\":1700.0,\"currency\":\"RUB\"},\"carriers\":[\"VolgaLine\"],\"duration_min\":540,\"departure_at\":\"2026-09-23T07:00:00+03:00\",\"arrival_at\":\"2026-09-23T16:00:00+03:00\",\"review_summary\":{\"rating\":9.0,\"review_count\":1383,\"label\":\"⭐ 9/10 · 1 383 отзыва\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"VolgaLine\",\"aspects\":[{\"rating\":8.8,\"scale\":10,\"text\":\"Автобус\",\"source\":\"offers-api.feedback\",\"scope\":\"bus_aspect\",\"subject\":\"VolgaLine\",\"label\":\"⭐ 8.8/10 · Автобус\"},{\"rating\":9.6,\"scale\":10,\"text\":\"Водитель\",\"source\":\"offers-api.feedback\",\"scope\":\"bus_aspect\",\"subject\":\"VolgaLine\",\"label\":\"⭐ 9.6/10 · Водитель\"},{\"rating\":8.8,\"scale\":10,\"text\":\"Общее впечатление\",\"source\":\"offers-api.feedback\",\"scope\":\"bus_aspect\",\"subject\":\"VolgaLine\",\"label\":\"⭐ 8.8/10 · Общее впечатление\"}],\"scale\":10,\"feedback_key\":\"5972\"}},\"review_summary\":{\"rating\":9.0,\"review_count\":1383,\"label\":\"⭐ 9/10 · 1 383 отзыва\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"VolgaLine\",\"aspects\":[{\"rating\":8.8,\"scale\":10,\"text\":\"Автобус\",\"source\":\"offers-api.feedback\",\"scope\":\"bus_aspect\",\"subject\":\"VolgaLine\",\"label\":\"⭐ 8.8/10 · Автобус\"},{\"rating\":9.6,\"scale\":10,\"text\":\"Водитель\",\"source\":\"offers-api.feedback\",\"scope\":\"bus_aspect\",\"subject\":\"VolgaLine\",\"label\":\"⭐ 9.6/10 · Водитель\"},{\"rating\":8.8,\"scale\":10,\"text\":\"Общее впечатление\",\"source\":\"offers-api.feedback\",\"scope\":\"bus_aspect\",\"subject\":\"VolgaLine\",\"label\":\"⭐ 8.8/10 · Общее впечатление\"}],\"scale\":10,\"feedback_key\":\"5972\"}},{\"offer_id\":\"4436697b263573c2618c833a64c1df04\",\"transport\":\"bus\",\"price\":{\"amount\":1800.0,\"currency\":\"RUB\"},\"duration_min\":535,\"carriers\":[\"Евротранс\"],\"search_results_url\":\"https://bus.tutu.ru/bilety_na_avtobus/Moskva/Sankt-peterburg/\",\"segments_count\":1,\"checkout_url\":\"https://mtp-deeplink.tutu.ru/api/v1/deeplink/explicit/bus?geo_mode=original&departure_time=2026-09-23T20:45:00%2B03:00&departure_geo_city_id=1447874&arrival_geo_city_id=1447624&hash=k0GpAO1WLlbEl7ciYu23%252B%252FYf%252BPRMg3ttcR1XCMchA%252FEQ%252BuOTvbZuy%252FVtXi9xGb0iL9obCvC6JVCYKfeyd4TaidubUNGMsTXDH078%252BMC7OZfr1TnIRSUfzrsRs2vR51vck3OTKDLsFx882H73B5gPyB4URU%252BkCORc%252B4lhMp9ndr6P%252Bh27KNZMGMH4o%252FJr4iWloN857S92nsbzYCJ9kysQ3TmkglzvFzhUNQON8VKbfwf6TWTYuKByMo4mPEXvjuwjxmjiKqSEKKOvjgU%252BxCKu85YN%252FxG9x839z9C7n0L%252BmHZKmF2a1VTLQ50zW46qtL%252BB%252BkHMZqChBBpzNrVqtTCLyoB2%252BfIrOKpptMJtr19Cw2takmu7tadkpVevG9JBCkuNz5H%252BSGpcnjiikbbsFfpUxVxiRleHTnICIum3hza0ISBSZLeweayNeyJ%252FI%252Fw1OrQgeWm0wDExNeqyV3K2s73UiEjg0pdSq8IBAZck8ViwQHHKLVMVXTcDzn1swHb0tQ33D%252BGw7wzioHVPMUH1oMgqYwn0nGQ1NHHBNsFgL4onyh9InRQsOu2eBGObFbTkQUVmAqi16MSkJQ%252B42Kaxt6cXI%252BlgdnhK%252FWZVPg3b87Ydf5t0CF3u&fallback_to_vid=true&source=mcp\",\"departure_at\":\"2026-09-23T20:45:00+03:00\",\"arrival_at\":\"2026-09-24T05:40:00+03:00\",\"legs\":[{\"label\":\"outbound\",\"from\":\"Международный автовокзал Саларьево\",\"to\":\"Автовокзал\",\"departure_at\":\"2026-09-23T20:45:00+03:00\",\"arrival_at\":\"2026-09-24T05:40:00+03:00\",\"duration_min\":535,\"segments\":[{\"from\":\"Международный автовокзал Саларьево\",\"to\":\"Автовокзал\",\"departure_at\":\"2026-09-23T20:45:00+03:00\",\"arrival_at\":\"2026-09-24T05:40:00+03:00\",\"duration_min\":535,\"carrier\":\"Евротранс\",\"voyage_no\":null,\"from_geo_point_id\":4583261,\"to_geo_point_id\":2857715}]}],\"variants\":[{\"variant_id\":\"d150283fb1e46c2c329e3b8f02e60250\",\"offer_hash\":\"k0GpAO1WLlbEl7ciYu23%2B%2FYf%2BPRMg3ttcR1XCMchA%2FEQ%2BuOTvbZuy%2FVtXi9xGb0iL9obCvC6JVCYKfeyd4TaidubUNGMsTXDH078%2BMC7OZfr1TnIRSUfzrsRs2vR51vck3OTKDLsFx882H73B5gPyB4URU%2BkCORc%2B4lhMp9ndr6P%2Bh27KNZMGMH4o%2FJr4iWloN857S92nsbzYCJ9kysQ3TmkglzvFzhUNQON8VKbfwf6TWTYuKByMo4mPEXvjuwjxmjiKqSEKKOvjgU%2BxCKu85YN%2FxG9x839z9C7n0L%2BmHZKmF2a1VTLQ50zW46qtL%2BB%2BkHMZqChBBpzNrVqtTCLyoB2%2BfIrOKpptMJtr19Cw2takmu7tadkpVevG9JBCkuNz5H%2BSGpcnjiikbbsFfpUxVxiRleHTnICIum3hza0ISBSZLeweayNeyJ%2FI%2Fw1OrQgeWm0wDExNeqyV3K2s73UiEjg0pdSq8IBAZck8ViwQHHKLVMVXTcDzn1swHb0tQ33D%2BGw7wzioHVPMUH1oMgqYwn0nGQ1NHHBNsFgL4onyh9InRQsOu2eBGObFbTkQUVmAqi16MSkJQ%2B42Kaxt6cXI%2BlgdnhK%2FWZVPg3b87Ydf5t0CF3u\",\"price\":{\"amount\":1800.0,\"currency\":\"RUB\"}}],\"checkout_ref\":{\"transport\":\"bus\",\"offer_hash\":\"k0GpAO1WLlbEl7ciYu23%2B%2FYf%2BPRMg3ttcR1XCMchA%2FEQ%2BuOTvbZuy%2FVtXi9xGb0iL9obCvC6JVCYKfeyd4TaidubUNGMsTXDH078%2BMC7OZfr1TnIRSUfzrsRs2vR51vck3OTKDLsFx882H73B5gPyB4URU%2BkCORc%2B4lhMp9ndr6P%2Bh27KNZMGMH4o%2FJr4iWloN857S92nsbzYCJ9kysQ3TmkglzvFzhUNQON8VKbfwf6TWTYuKByMo4mPEXvjuwjxmjiKqSEKKOvjgU%2BxCKu85YN%2FxG9x839z9C7n0L%2BmHZKmF2a1VTLQ50zW46qtL%2BB%2BkHMZqChBBpzNrVqtTCLyoB2%2BfIrOKpptMJtr19Cw2takmu7tadkpVevG9JBCkuNz5H%2BSGpcnjiikbbsFfpUxVxiRleHTnICIum3hza0ISBSZLeweayNeyJ%2FI%2Fw1OrQgeWm0wDExNeqyV3K2s73UiEjg0pdSq8IBAZck8ViwQHHKLVMVXTcDzn1swHb0tQ33D%2BGw7wzioHVPMUH1oMgqYwn0nGQ1NHHBNsFgL4onyh9InRQsOu2eBGObFbTkQUVmAqi16MSkJQ%2B42Kaxt6cXI%2BlgdnhK%2FWZVPg3b87Ydf5t0CF3u\",\"search_id\":\"5782CF45-708A-4921-98D7-E878C852B763\",\"departure_geo_city_id\":2657260,\"arrival_geo_city_id\":2656915,\"departure_id\":\"1447874\",\"arrival_id\":\"1447624\",\"departure_stop_id\":4583261,\"arrival_stop_id\":2857715,\"departure_stop_name\":\"Международный автовокзал Саларьево\",\"arrival_stop_name\":\"Автовокзал\",\"city_from\":\"Москва\",\"city_to\":\"Санкт-Петербург\",\"departure_at\":\"2026-09-23T20:45:00+03:00\",\"passengers\":1,\"passengers_adult\":1,\"passengers_child\":0},\"details_ref\":{\"transport\":\"bus\",\"source\":\"api-bus.search.detail\",\"departure_id\":\"1447874\",\"arrival_id\":\"1447624\",\"departure_date\":\"2026-09-23\",\"seat_count\":1,\"passengers_adult\":1,\"passengers_child\":0,\"offer_hash\":\"k0GpAO1WLlbEl7ciYu23%2B%2FYf%2BPRMg3ttcR1XCMchA%2FEQ%2BuOTvbZuy%2FVtXi9xGb0iL9obCvC6JVCYKfeyd4TaidubUNGMsTXDH078%2BMC7OZfr1TnIRSUfzrsRs2vR51vck3OTKDLsFx882H73B5gPyB4URU%2BkCORc%2B4lhMp9ndr6P%2Bh27KNZMGMH4o%2FJr4iWloN857S92nsbzYCJ9kysQ3TmkglzvFzhUNQON8VKbfwf6TWTYuKByMo4mPEXvjuwjxmjiKqSEKKOvjgU%2BxCKu85YN%2FxG9x839z9C7n0L%2BmHZKmF2a1VTLQ50zW46qtL%2BB%2BkHMZqChBBpzNrVqtTCLyoB2%2BfIrOKpptMJtr19Cw2takmu7tadkpVevG9JBCkuNz5H%2BSGpcnjiikbbsFfpUxVxiRleHTnICIum3hza0ISBSZLeweayNeyJ%2FI%2Fw1OrQgeWm0wDExNeqyV3K2s73UiEjg0pdSq8IBAZck8ViwQHHKLVMVXTcDzn1swHb0tQ33D%2BGw7wzioHVPMUH1oMgqYwn0nGQ1NHHBNsFgL4onyh9InRQsOu2eBGObFbTkQUVmAqi16MSkJQ%2B42Kaxt6cXI%2BlgdnhK%2FWZVPg3b87Ydf5t0CF3u\",\"departure_stop_id\":4583261,\"arrival_stop_id\":2857715,\"departure_stop_name\":\"Международный автовокзал Саларьево\",\"arrival_stop_name\":\"Автовокзал\",\"price\":{\"amount\":1800.0,\"currency\":\"RUB\"},\"carriers\":[\"Евротранс\"],\"duration_min\":535,\"departure_at\":\"2026-09-23T20:45:00+03:00\",\"arrival_at\":\"2026-09-24T05:40:00+03:00\",\"review_summary\":{\"rating\":8.6,\"review_count\":2976,\"label\":\"⭐ 8.6/10 · 2 976 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"Евротранс\",\"aspects\":[{\"rating\":8.6,\"scale\":10,\"text\":\"Автобус\",\"source\":\"offers-api.feedback\",\"scope\":\"bus_aspect\",\"subject\":\"Евротранс\",\"label\":\"⭐ 8.6/10 · Автобус\"},{\"rating\":9.2,\"scale\":10,\"text\":\"Водитель\",\"source\":\"offers-api.feedback\",\"scope\":\"bus_aspect\",\"subject\":\"Евротранс\",\"label\":\"⭐ 9.2/10 · Водитель\"},{\"rating\":8.1,\"scale\":10,\"text\":\"Общее впечатление\",\"source\":\"offers-api.feedback\",\"scope\":\"bus_aspect\",\"subject\":\"Евротранс\",\"label\":\"⭐ 8.1/10 · Общее впечатление\"}],\"scale\":10,\"feedback_key\":\"7420\"}},\"review_summary\":{\"rating\":8.6,\"review_count\":2976,\"label\":\"⭐ 8.6/10 · 2 976 отзывов\",\"source\":\"offers-api.feedback\",\"scope\":\"carrier\",\"subject\":\"Евротранс\",\"aspects\":[{\"rating\":8.6,\"scale\":10,\"text\":\"Автобус\",\"source\":\"offers-api.feedback\",\"scope\":\"bus_aspect\",\"subject\":\"Евротранс\",\"label\":\"⭐ 8.6/10 · Автобус\"},{\"rating\":9.2,\"scale\":10,\"text\":\"Водитель\",\"source\":\"offers-api.feedback\",\"scope\":\"bus_aspect\",\"subject\":\"Евротранс\",\"label\":\"⭐ 9.2/10 · Водитель\"},{\"rating\":8.1,\"scale\":10,\"text\":\"Общее впечатление\",\"source\":\"offers-api.feedback\",\"scope\":\"bus_aspect\",\"subject\":\"Евротранс\",\"label\":\"⭐ 8.1/10 · Общее впечатление\"}],\"scale\":10,\"feedback_key\":\"7420\"}}],\"meta\":{\"from\":{\"name\":\"Москва\",\"geo_id\":\"2657260\",\"region\":\"Москва город федерального значения\",\"iata\":\"MOW\"},\"to\":{\"name\":\"Санкт-Петербург\",\"geo_id\":\"2656915\",\"region\":\"Санкт-Петербург город федерального значения\",\"iata\":\"LED\"},\"optimize_for\":\"price\",\"modes_requested\":[\"avia\",\"railway\",\"bus\",\"etrain\"],\"modes_summary\":{\"avia\":{\"count\":8,\"min_price\":4014.0,\"min_duration_min\":80},\"railway\":{\"count\":8,\"min_price\":1140.98,\"min_duration_min\":335,\"cashback\":{\"rate_pct\":3.0,\"applies_to\":\"all_fares\",\"note\":\"Tutu loyalty points credited to the buyer's Tutu account after payment. NOT a discount: every `price` here is the full amount payable.\",\"scope\":\"mode_page\"}},\"bus\":{\"count\":5,\"min_price\":1700.0,\"min_duration_min\":510,\"cashback\":{\"rate_pct\":3.0,\"applies_to\":\"all_fares\",\"note\":\"Tutu loyalty points credited to the buyer's Tutu account after payment. NOT a discount: every `price` here is the full amount payable.\",\"scope\":\"mode_page\"}},\"etrain\":{\"count\":0,\"min_price\":null,\"min_duration_min\":null}},\"unavailable\":[],\"page\":1,\"page_size\":6,\"total_returned\":6,\"has_more\":true}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    "payload": {
+      "variants": [
+        {
+          "offer_id": "142f2a17ff720a4eeba0bc2f4667842e",
+          "transport": "railway",
+          "price": {
+            "amount": 1140.98,
+            "currency": "RUB"
+          },
+          "duration_min": 355,
+          "carriers": [
+            "ФПК"
+          ],
+          "search_results_url": "https://www.tutu.ru/poezda/rasp_d.php?date=23.09.2026&nnst1=2000000&nnst2=2004000",
+          "segments_count": 1,
+          "checkout_url": "https://www.tutu.ru/poezda/order/?departure_st=2657260&arrival_st=2656915&dep_st=2006004&arr_st=2004001&tn=746%D0%A3&date=23.09.2026+17:45:00",
+          "departure_at": "2026-09-23T17:45:00+03:00",
+          "arrival_at": "2026-09-23T23:40:00+03:00",
+          "legs": [
+            {
+              "label": "outbound",
+              "from": "Москва — Ленинградский вокзал (2006004)",
+              "to": "Санкт-Петербург — Московский вокзал (2004001)",
+              "departure_at": "2026-09-23T17:45:00+03:00",
+              "arrival_at": "2026-09-23T23:40:00+03:00",
+              "duration_min": 355,
+              "segments": [
+                {
+                  "from": "Москва — Ленинградский вокзал (2006004)",
+                  "to": "Санкт-Петербург — Московский вокзал (2004001)",
+                  "departure_at": "2026-09-23T17:45:00+03:00",
+                  "arrival_at": "2026-09-23T23:40:00+03:00",
+                  "duration_min": 355,
+                  "carrier": "ФПК",
+                  "voyage_no": "746У",
+                  "from_geo_point_id": 2958868,
+                  "to_geo_point_id": 2958266,
+                  "vehicle_meta": {
+                    "name": "АВРОРА",
+                    "is_premium": true,
+                    "is_double_decker": true
+                  }
+                }
+              ]
+            }
+          ],
+          "checkout_ref": {
+            "transport": "railway",
+            "departure_city_id": 2657260,
+            "arrival_city_id": 2656915,
+            "departure_station_code": "2006004",
+            "arrival_station_code": "2004001",
+            "train_number": "746У",
+            "departure_at": "2026-09-23T17:45:00+03:00",
+            "departure_geo_point_id": 2958868,
+            "arrival_geo_point_id": 2958266,
+            "offer_hash": "142f2a17ff720a4eeba0bc2f4667842e",
+            "segment_hash": "9a96084f1ce5bfe2407cb0b046ae10bf",
+            "search_id": "1EC12D21-E6FF-4B5A-8779-C67A9174688D",
+            "result_id": "a9731cae-4fc8-5f95-9c44-96f0819ce885",
+            "card_id": "0d23e0ca29e14d82bae364f2f04be1a1"
+          },
+          "details_ref": {
+            "transport": "railway",
+            "source": "seats-gateway.seats-by-params",
+            "departure_station_code": "2006004",
+            "arrival_station_code": "2004001",
+            "train_number": "746У",
+            "departure_at": "2026-09-23T17:45:00+03:00",
+            "price": {
+              "amount": 1140.98,
+              "currency": "RUB"
+            },
+            "title": "Поезд 746У",
+            "carriers": [
+              "ФПК"
+            ],
+            "duration_min": 355,
+            "arrival_at": "2026-09-23T23:40:00+03:00",
+            "review_summary": {
+              "rating": 9.4,
+              "review_count": 69,
+              "label": "⭐ 9.4/10 · 69 отзывов",
+              "source": "offers-api.feedback",
+              "scope": "train",
+              "subject": "746У",
+              "scale": 10,
+              "feedback_key": "746У"
+            }
+          },
+          "review_summary": {
+            "rating": 9.4,
+            "review_count": 69,
+            "label": "⭐ 9.4/10 · 69 отзывов",
+            "source": "offers-api.feedback",
+            "scope": "train",
+            "subject": "746У",
+            "scale": 10,
+            "feedback_key": "746У"
+          },
+          "fares": {
+            "count": 26,
+            "price_from": 1140.98,
+            "price_to": 10624.94,
+            "currency": "RUB",
+            "refundable_count": 18,
+            "changeable_count": 0,
+            "seat_categories": {
+              "SEDENTARY": {
+                "count": 13,
+                "price_from": 1140.98
+              },
+              "COMPARTMENT": {
+                "count": 12,
+                "price_from": 3222.38
+              },
+              "LUX": {
+                "count": 1,
+                "price_from": 10624.94
+              }
+            }
+          }
+        },
+        {
+          "offer_id": "72ada1b2e5247e7dece939ae4103052e",
+          "transport": "railway",
+          "price": {
+            "amount": 1140.98,
+            "currency": "RUB"
+          },
+          "duration_min": 373,
+          "carriers": [
+            "ФПК"
+          ],
+          "search_results_url": "https://www.tutu.ru/poezda/rasp_d.php?date=23.09.2026&nnst1=2000000&nnst2=2004000",
+          "segments_count": 1,
+          "checkout_url": "https://www.tutu.ru/poezda/order/?departure_st=2657260&arrival_st=2656915&dep_st=2006004&arr_st=2004001&tn=742%D0%A3&date=23.09.2026+06:00:00",
+          "departure_at": "2026-09-23T06:00:00+03:00",
+          "arrival_at": "2026-09-23T12:13:00+03:00",
+          "legs": [
+            {
+              "label": "outbound",
+              "from": "Москва — Ленинградский вокзал (2006004)",
+              "to": "Санкт-Петербург — Московский вокзал (2004001)",
+              "departure_at": "2026-09-23T06:00:00+03:00",
+              "arrival_at": "2026-09-23T12:13:00+03:00",
+              "duration_min": 373,
+              "segments": [
+                {
+                  "from": "Москва — Ленинградский вокзал (2006004)",
+                  "to": "Санкт-Петербург — Московский вокзал (2004001)",
+                  "departure_at": "2026-09-23T06:00:00+03:00",
+                  "arrival_at": "2026-09-23T12:13:00+03:00",
+                  "duration_min": 373,
+                  "carrier": "ФПК",
+                  "voyage_no": "742У",
+                  "from_geo_point_id": 2958868,
+                  "to_geo_point_id": 2958266,
+                  "vehicle_meta": {
+                    "name": "Аврора (двухэтажный)",
+                    "is_premium": true,
+                    "is_double_decker": true
+                  }
+                }
+              ]
+            }
+          ],
+          "checkout_ref": {
+            "transport": "railway",
+            "departure_city_id": 2657260,
+            "arrival_city_id": 2656915,
+            "departure_station_code": "2006004",
+            "arrival_station_code": "2004001",
+            "train_number": "742У",
+            "departure_at": "2026-09-23T06:00:00+03:00",
+            "departure_geo_point_id": 2958868,
+            "arrival_geo_point_id": 2958266,
+            "offer_hash": "72ada1b2e5247e7dece939ae4103052e",
+            "segment_hash": "68b7a9341a0073e84612043e01b8351d",
+            "search_id": "1EC12D21-E6FF-4B5A-8779-C67A9174688D",
+            "result_id": "38839483-08a7-5237-bb3d-2f4140010368",
+            "card_id": "78e593015908dcf8e4fd0b79bb52fc87"
+          },
+          "details_ref": {
+            "transport": "railway",
+            "source": "seats-gateway.seats-by-params",
+            "departure_station_code": "2006004",
+            "arrival_station_code": "2004001",
+            "train_number": "742У",
+            "departure_at": "2026-09-23T06:00:00+03:00",
+            "price": {
+              "amount": 1140.98,
+              "currency": "RUB"
+            },
+            "title": "Поезд 742У",
+            "carriers": [
+              "ФПК"
+            ],
+            "duration_min": 373,
+            "arrival_at": "2026-09-23T12:13:00+03:00",
+            "review_summary": {
+              "rating": 9.6,
+              "review_count": 309,
+              "label": "⭐ 9.6/10 · 309 отзывов",
+              "source": "offers-api.feedback",
+              "scope": "train",
+              "subject": "742У",
+              "scale": 10,
+              "feedback_key": "742У"
+            }
+          },
+          "review_summary": {
+            "rating": 9.6,
+            "review_count": 309,
+            "label": "⭐ 9.6/10 · 309 отзывов",
+            "source": "offers-api.feedback",
+            "scope": "train",
+            "subject": "742У",
+            "scale": 10,
+            "feedback_key": "742У"
+          },
+          "fares": {
+            "count": 25,
+            "price_from": 1140.98,
+            "price_to": 10624.94,
+            "currency": "RUB",
+            "refundable_count": 18,
+            "changeable_count": 0,
+            "seat_categories": {
+              "SEDENTARY": {
+                "count": 13,
+                "price_from": 1140.98
+              },
+              "COMPARTMENT": {
+                "count": 10,
+                "price_from": 3222.38
+              },
+              "LUX": {
+                "count": 2,
+                "price_from": 10624.94
+              }
+            }
+          }
+        },
+        {
+          "offer_id": "879958422fb6e75a6df6cdc293de4e72",
+          "transport": "railway",
+          "price": {
+            "amount": 1140.98,
+            "currency": "RUB"
+          },
+          "duration_min": 385,
+          "carriers": [
+            "ФПК"
+          ],
+          "search_results_url": "https://www.tutu.ru/poezda/rasp_d.php?date=23.09.2026&nnst1=2000000&nnst2=2004000",
+          "segments_count": 1,
+          "checkout_url": "https://www.tutu.ru/poezda/order/?departure_st=2657260&arrival_st=2656915&dep_st=2006004&arr_st=2004001&tn=740%D0%A3&date=23.09.2026+06:30:00",
+          "departure_at": "2026-09-23T06:30:00+03:00",
+          "arrival_at": "2026-09-23T12:55:00+03:00",
+          "legs": [
+            {
+              "label": "outbound",
+              "from": "Москва — Ленинградский вокзал (2006004)",
+              "to": "Санкт-Петербург — Московский вокзал (2004001)",
+              "departure_at": "2026-09-23T06:30:00+03:00",
+              "arrival_at": "2026-09-23T12:55:00+03:00",
+              "duration_min": 385,
+              "segments": [
+                {
+                  "from": "Москва — Ленинградский вокзал (2006004)",
+                  "to": "Санкт-Петербург — Московский вокзал (2004001)",
+                  "departure_at": "2026-09-23T06:30:00+03:00",
+                  "arrival_at": "2026-09-23T12:55:00+03:00",
+                  "duration_min": 385,
+                  "carrier": "ФПК",
+                  "voyage_no": "740У",
+                  "from_geo_point_id": 2958868,
+                  "to_geo_point_id": 2958266,
+                  "vehicle_meta": {
+                    "name": "АВРОРА",
+                    "is_premium": true,
+                    "is_double_decker": true
+                  }
+                }
+              ]
+            }
+          ],
+          "checkout_ref": {
+            "transport": "railway",
+            "departure_city_id": 2657260,
+            "arrival_city_id": 2656915,
+            "departure_station_code": "2006004",
+            "arrival_station_code": "2004001",
+            "train_number": "740У",
+            "departure_at": "2026-09-23T06:30:00+03:00",
+            "departure_geo_point_id": 2958868,
+            "arrival_geo_point_id": 2958266,
+            "offer_hash": "879958422fb6e75a6df6cdc293de4e72",
+            "segment_hash": "80f36d3533cda988e944943b8b817b44",
+            "search_id": "1EC12D21-E6FF-4B5A-8779-C67A9174688D",
+            "result_id": "a96bdfdc-3b8a-545e-b18f-7d90ca1f2459",
+            "card_id": "c1113b7389014bb50cedd011dd56ec8d"
+          },
+          "details_ref": {
+            "transport": "railway",
+            "source": "seats-gateway.seats-by-params",
+            "departure_station_code": "2006004",
+            "arrival_station_code": "2004001",
+            "train_number": "740У",
+            "departure_at": "2026-09-23T06:30:00+03:00",
+            "price": {
+              "amount": 1140.98,
+              "currency": "RUB"
+            },
+            "title": "Поезд 740У",
+            "carriers": [
+              "ФПК"
+            ],
+            "duration_min": 385,
+            "arrival_at": "2026-09-23T12:55:00+03:00",
+            "review_summary": {
+              "rating": 9.2,
+              "review_count": 28,
+              "label": "⭐ 9.2/10 · 28 отзывов",
+              "source": "offers-api.feedback",
+              "scope": "train",
+              "subject": "740У",
+              "scale": 10,
+              "feedback_key": "740У"
+            }
+          },
+          "review_summary": {
+            "rating": 9.2,
+            "review_count": 28,
+            "label": "⭐ 9.2/10 · 28 отзывов",
+            "source": "offers-api.feedback",
+            "scope": "train",
+            "subject": "740У",
+            "scale": 10,
+            "feedback_key": "740У"
+          },
+          "fares": {
+            "count": 22,
+            "price_from": 1140.98,
+            "price_to": 10624.94,
+            "currency": "RUB",
+            "refundable_count": 15,
+            "changeable_count": 0,
+            "seat_categories": {
+              "SEDENTARY": {
+                "count": 9,
+                "price_from": 1140.98
+              },
+              "COMPARTMENT": {
+                "count": 12,
+                "price_from": 3222.38
+              },
+              "LUX": {
+                "count": 1,
+                "price_from": 10624.94
+              }
+            }
+          }
+        },
+        {
+          "offer_id": "93ca734a8af24e71eebbffb0929c1d79",
+          "transport": "bus",
+          "price": {
+            "amount": 1700,
+            "currency": "RUB"
+          },
+          "duration_min": 510,
+          "carriers": [
+            "Евротранс"
+          ],
+          "search_results_url": "https://bus.tutu.ru/bilety_na_avtobus/Moskva/Sankt-peterburg/",
+          "segments_count": 1,
+          "checkout_url": "https://mtp-deeplink.tutu.ru/api/v1/deeplink/explicit/bus?geo_mode=original&departure_time=2026-09-23T08:30:00%2B03:00&departure_geo_city_id=1447874&arrival_geo_city_id=1447624&hash=k0G1AO1WKhaEl%252BeiCJvKclyq%252Fn0s4EeSaHd%252FWMB0KTtUo40XcZeaQquvA2y0hliJzQl4H12taFJMdo61us8dqiAUaMIj6qEcRcolgm3VUuAWx6vjRHSMcboJdnonwJngs48h5uNCDdgdwMTC2RsUQH8Fhf2U58NTIBP8bLf6VpLF6JS8VhBvdb%252BqJvbht7%252FmxHQod6B2JTQ077w3uf0%252BK6XPJq7hApzDfG%252F629ERjtVd3XtaOxqx6Ex0WtYTRYEdpFOglWAk8eTcaDDPsjvle7YL7jItQpBRPtjB8jpsOjMfj6dk%252FMwfRjr%252F5bhunlfb3wf8%252BBJ%252FKgxDnI3K5N5F8woK9LzpS4n0bYesyMB140RggfTLtMtgOEKkrv%252BAAOF4R%252FEch2JL2yuTiI%252B%252BcT2Ur8LXjFDvVomUgUQW%252FTJWYX5Tove0HctNtt0rv005x2CSvbZyguN%252BXBd3IzNHFFTbJLvjn%252BxG8jn9hZV%252BdY015xoRJmgGAXaEbp3YChiMMv3KDhGsDvQI2EWAsSJnXSWhbj9uYXL02m1niZUQXv%252BpQlqr4Ldrr7M%252FYHSi%252FU%252FmmOBtNWJ4psD40ufXKavG15bJpIEBAA6mr3WDA%252Bw%252BQUOk1Zl0910%253D&fallback_to_vid=true&source=mcp",
+          "departure_at": "2026-09-23T08:30:00+03:00",
+          "arrival_at": "2026-09-23T17:00:00+03:00",
+          "legs": [
+            {
+              "label": "outbound",
+              "from": "Международный автовокзал Саларьево",
+              "to": "Автовокзал",
+              "departure_at": "2026-09-23T08:30:00+03:00",
+              "arrival_at": "2026-09-23T17:00:00+03:00",
+              "duration_min": 510,
+              "segments": [
+                {
+                  "from": "Международный автовокзал Саларьево",
+                  "to": "Автовокзал",
+                  "departure_at": "2026-09-23T08:30:00+03:00",
+                  "arrival_at": "2026-09-23T17:00:00+03:00",
+                  "duration_min": 510,
+                  "carrier": "Евротранс",
+                  "voyage_no": null,
+                  "from_geo_point_id": 4583261,
+                  "to_geo_point_id": 2857715
+                }
+              ]
+            }
+          ],
+          "variants": [
+            {
+              "variant_id": "ab7b57619b38cc85b9ac53683e9aa8a3",
+              "offer_hash": "k0G1AO1WKhaEl%2BeiCJvKclyq%2Fn0s4EeSaHd%2FWMB0KTtUo40XcZeaQquvA2y0hliJzQl4H12taFJMdo61us8dqiAUaMIj6qEcRcolgm3VUuAWx6vjRHSMcboJdnonwJngs48h5uNCDdgdwMTC2RsUQH8Fhf2U58NTIBP8bLf6VpLF6JS8VhBvdb%2BqJvbht7%2FmxHQod6B2JTQ077w3uf0%2BK6XPJq7hApzDfG%2F629ERjtVd3XtaOxqx6Ex0WtYTRYEdpFOglWAk8eTcaDDPsjvle7YL7jItQpBRPtjB8jpsOjMfj6dk%2FMwfRjr%2F5bhunlfb3wf8%2BBJ%2FKgxDnI3K5N5F8woK9LzpS4n0bYesyMB140RggfTLtMtgOEKkrv%2BAAOF4R%2FEch2JL2yuTiI%2B%2BcT2Ur8LXjFDvVomUgUQW%2FTJWYX5Tove0HctNtt0rv005x2CSvbZyguN%2BXBd3IzNHFFTbJLvjn%2BxG8jn9hZV%2BdY015xoRJmgGAXaEbp3YChiMMv3KDhGsDvQI2EWAsSJnXSWhbj9uYXL02m1niZUQXv%2BpQlqr4Ldrr7M%2FYHSi%2FU%2FmmOBtNWJ4psD40ufXKavG15bJpIEBAA6mr3WDA%2Bw%2BQUOk1Zl0910%3D",
+              "price": {
+                "amount": 1700,
+                "currency": "RUB"
+              }
+            }
+          ],
+          "checkout_ref": {
+            "transport": "bus",
+            "offer_hash": "k0G1AO1WKhaEl%2BeiCJvKclyq%2Fn0s4EeSaHd%2FWMB0KTtUo40XcZeaQquvA2y0hliJzQl4H12taFJMdo61us8dqiAUaMIj6qEcRcolgm3VUuAWx6vjRHSMcboJdnonwJngs48h5uNCDdgdwMTC2RsUQH8Fhf2U58NTIBP8bLf6VpLF6JS8VhBvdb%2BqJvbht7%2FmxHQod6B2JTQ077w3uf0%2BK6XPJq7hApzDfG%2F629ERjtVd3XtaOxqx6Ex0WtYTRYEdpFOglWAk8eTcaDDPsjvle7YL7jItQpBRPtjB8jpsOjMfj6dk%2FMwfRjr%2F5bhunlfb3wf8%2BBJ%2FKgxDnI3K5N5F8woK9LzpS4n0bYesyMB140RggfTLtMtgOEKkrv%2BAAOF4R%2FEch2JL2yuTiI%2B%2BcT2Ur8LXjFDvVomUgUQW%2FTJWYX5Tove0HctNtt0rv005x2CSvbZyguN%2BXBd3IzNHFFTbJLvjn%2BxG8jn9hZV%2BdY015xoRJmgGAXaEbp3YChiMMv3KDhGsDvQI2EWAsSJnXSWhbj9uYXL02m1niZUQXv%2BpQlqr4Ldrr7M%2FYHSi%2FU%2FmmOBtNWJ4psD40ufXKavG15bJpIEBAA6mr3WDA%2Bw%2BQUOk1Zl0910%3D",
+            "search_id": "5782CF45-708A-4921-98D7-E878C852B763",
+            "departure_geo_city_id": 2657260,
+            "arrival_geo_city_id": 2656915,
+            "departure_id": "1447874",
+            "arrival_id": "1447624",
+            "departure_stop_id": 4583261,
+            "arrival_stop_id": 2857715,
+            "departure_stop_name": "Международный автовокзал Саларьево",
+            "arrival_stop_name": "Автовокзал",
+            "city_from": "Москва",
+            "city_to": "Санкт-Петербург",
+            "departure_at": "2026-09-23T08:30:00+03:00",
+            "passengers": 1,
+            "passengers_adult": 1,
+            "passengers_child": 0
+          },
+          "details_ref": {
+            "transport": "bus",
+            "source": "api-bus.search.detail",
+            "departure_id": "1447874",
+            "arrival_id": "1447624",
+            "departure_date": "2026-09-23",
+            "seat_count": 1,
+            "passengers_adult": 1,
+            "passengers_child": 0,
+            "offer_hash": "k0G1AO1WKhaEl%2BeiCJvKclyq%2Fn0s4EeSaHd%2FWMB0KTtUo40XcZeaQquvA2y0hliJzQl4H12taFJMdo61us8dqiAUaMIj6qEcRcolgm3VUuAWx6vjRHSMcboJdnonwJngs48h5uNCDdgdwMTC2RsUQH8Fhf2U58NTIBP8bLf6VpLF6JS8VhBvdb%2BqJvbht7%2FmxHQod6B2JTQ077w3uf0%2BK6XPJq7hApzDfG%2F629ERjtVd3XtaOxqx6Ex0WtYTRYEdpFOglWAk8eTcaDDPsjvle7YL7jItQpBRPtjB8jpsOjMfj6dk%2FMwfRjr%2F5bhunlfb3wf8%2BBJ%2FKgxDnI3K5N5F8woK9LzpS4n0bYesyMB140RggfTLtMtgOEKkrv%2BAAOF4R%2FEch2JL2yuTiI%2B%2BcT2Ur8LXjFDvVomUgUQW%2FTJWYX5Tove0HctNtt0rv005x2CSvbZyguN%2BXBd3IzNHFFTbJLvjn%2BxG8jn9hZV%2BdY015xoRJmgGAXaEbp3YChiMMv3KDhGsDvQI2EWAsSJnXSWhbj9uYXL02m1niZUQXv%2BpQlqr4Ldrr7M%2FYHSi%2FU%2FmmOBtNWJ4psD40ufXKavG15bJpIEBAA6mr3WDA%2Bw%2BQUOk1Zl0910%3D",
+            "departure_stop_id": 4583261,
+            "arrival_stop_id": 2857715,
+            "departure_stop_name": "Международный автовокзал Саларьево",
+            "arrival_stop_name": "Автовокзал",
+            "price": {
+              "amount": 1700,
+              "currency": "RUB"
+            },
+            "carriers": [
+              "Евротранс"
+            ],
+            "duration_min": 510,
+            "departure_at": "2026-09-23T08:30:00+03:00",
+            "arrival_at": "2026-09-23T17:00:00+03:00",
+            "review_summary": {
+              "rating": 8.6,
+              "review_count": 2976,
+              "label": "⭐ 8.6/10 · 2 976 отзывов",
+              "source": "offers-api.feedback",
+              "scope": "carrier",
+              "subject": "Евротранс",
+              "aspects": [
+                {
+                  "rating": 8.6,
+                  "scale": 10,
+                  "text": "Автобус",
+                  "source": "offers-api.feedback",
+                  "scope": "bus_aspect",
+                  "subject": "Евротранс",
+                  "label": "⭐ 8.6/10 · Автобус"
+                },
+                {
+                  "rating": 9.2,
+                  "scale": 10,
+                  "text": "Водитель",
+                  "source": "offers-api.feedback",
+                  "scope": "bus_aspect",
+                  "subject": "Евротранс",
+                  "label": "⭐ 9.2/10 · Водитель"
+                },
+                {
+                  "rating": 8.1,
+                  "scale": 10,
+                  "text": "Общее впечатление",
+                  "source": "offers-api.feedback",
+                  "scope": "bus_aspect",
+                  "subject": "Евротранс",
+                  "label": "⭐ 8.1/10 · Общее впечатление"
+                }
+              ],
+              "scale": 10,
+              "feedback_key": "7420"
+            }
+          },
+          "review_summary": {
+            "rating": 8.6,
+            "review_count": 2976,
+            "label": "⭐ 8.6/10 · 2 976 отзывов",
+            "source": "offers-api.feedback",
+            "scope": "carrier",
+            "subject": "Евротранс",
+            "aspects": [
+              {
+                "rating": 8.6,
+                "scale": 10,
+                "text": "Автобус",
+                "source": "offers-api.feedback",
+                "scope": "bus_aspect",
+                "subject": "Евротранс",
+                "label": "⭐ 8.6/10 · Автобус"
+              },
+              {
+                "rating": 9.2,
+                "scale": 10,
+                "text": "Водитель",
+                "source": "offers-api.feedback",
+                "scope": "bus_aspect",
+                "subject": "Евротранс",
+                "label": "⭐ 9.2/10 · Водитель"
+              },
+              {
+                "rating": 8.1,
+                "scale": 10,
+                "text": "Общее впечатление",
+                "source": "offers-api.feedback",
+                "scope": "bus_aspect",
+                "subject": "Евротранс",
+                "label": "⭐ 8.1/10 · Общее впечатление"
+              }
+            ],
+            "scale": 10,
+            "feedback_key": "7420"
+          }
+        },
+        {
+          "offer_id": "4ffd3564d2d42aa82c96c13276180c59",
+          "transport": "bus",
+          "price": {
+            "amount": 1700,
+            "currency": "RUB"
+          },
+          "duration_min": 540,
+          "carriers": [
+            "VolgaLine"
+          ],
+          "search_results_url": "https://bus.tutu.ru/bilety_na_avtobus/Moskva/Sankt-peterburg/",
+          "segments_count": 1,
+          "checkout_url": "https://mtp-deeplink.tutu.ru/api/v1/deeplink/explicit/bus?geo_mode=original&departure_time=2026-09-23T07:00:00%2B03:00&departure_geo_city_id=1447874&arrival_geo_city_id=1447624&hash=Kx4pwcxWItPbkkwmcoJ18edv6KOPg52QvTi0XqLj%252FpZ9%252FwOHL7%252BwVajv5yIQyjGA46v3pLTho2BXbKw2ZnWOhCAG59JM4RocRWco9huANZj1fIPyyCf3Ck5wg9OQSvxfM7E8QFCsNeMS4X%252Fke3x89%252Fpi4PTzb0%252FFd4J839NWOFfrRXML3cr%252Bqvy2pUbMA0dspUAimKa80Kny117f%252FbRb7cDaDpX%252BEnTOM2Ny25fuXYRHxt7ku4Rz4FlR9fs9%252BA%253D%253D&fallback_to_vid=true&source=mcp",
+          "departure_at": "2026-09-23T07:00:00+03:00",
+          "arrival_at": "2026-09-23T16:00:00+03:00",
+          "legs": [
+            {
+              "label": "outbound",
+              "from": "Автовокзал Котельники",
+              "to": "Автовокзал",
+              "departure_at": "2026-09-23T07:00:00+03:00",
+              "arrival_at": "2026-09-23T16:00:00+03:00",
+              "duration_min": 540,
+              "segments": [
+                {
+                  "from": "Автовокзал Котельники",
+                  "to": "Автовокзал",
+                  "departure_at": "2026-09-23T07:00:00+03:00",
+                  "arrival_at": "2026-09-23T16:00:00+03:00",
+                  "duration_min": 540,
+                  "carrier": "VolgaLine",
+                  "voyage_no": null,
+                  "from_geo_point_id": 2754359,
+                  "to_geo_point_id": 2857715
+                }
+              ]
+            }
+          ],
+          "variants": [
+            {
+              "variant_id": "df89ccc3fc107a53dd93b675183024b3",
+              "offer_hash": "Kx4pwcxWItPbkkwmcoJ18edv6KOPg52QvTi0XqLj%2FpZ9%2FwOHL7%2BwVajv5yIQyjGA46v3pLTho2BXbKw2ZnWOhCAG59JM4RocRWco9huANZj1fIPyyCf3Ck5wg9OQSvxfM7E8QFCsNeMS4X%2Fke3x89%2Fpi4PTzb0%2FFd4J839NWOFfrRXML3cr%2Bqvy2pUbMA0dspUAimKa80Kny117f%2FbRb7cDaDpX%2BEnTOM2Ny25fuXYRHxt7ku4Rz4FlR9fs9%2BA%3D%3D",
+              "price": {
+                "amount": 1700,
+                "currency": "RUB"
+              }
+            }
+          ],
+          "checkout_ref": {
+            "transport": "bus",
+            "offer_hash": "Kx4pwcxWItPbkkwmcoJ18edv6KOPg52QvTi0XqLj%2FpZ9%2FwOHL7%2BwVajv5yIQyjGA46v3pLTho2BXbKw2ZnWOhCAG59JM4RocRWco9huANZj1fIPyyCf3Ck5wg9OQSvxfM7E8QFCsNeMS4X%2Fke3x89%2Fpi4PTzb0%2FFd4J839NWOFfrRXML3cr%2Bqvy2pUbMA0dspUAimKa80Kny117f%2FbRb7cDaDpX%2BEnTOM2Ny25fuXYRHxt7ku4Rz4FlR9fs9%2BA%3D%3D",
+            "search_id": "5782CF45-708A-4921-98D7-E878C852B763",
+            "departure_geo_city_id": 2657260,
+            "arrival_geo_city_id": 2656915,
+            "departure_id": "1447874",
+            "arrival_id": "1447624",
+            "departure_stop_id": 2754359,
+            "arrival_stop_id": 2857715,
+            "departure_stop_name": "Автовокзал Котельники",
+            "arrival_stop_name": "Автовокзал",
+            "city_from": "Москва",
+            "city_to": "Санкт-Петербург",
+            "departure_at": "2026-09-23T07:00:00+03:00",
+            "passengers": 1,
+            "passengers_adult": 1,
+            "passengers_child": 0
+          },
+          "details_ref": {
+            "transport": "bus",
+            "source": "api-bus.search.detail",
+            "departure_id": "1447874",
+            "arrival_id": "1447624",
+            "departure_date": "2026-09-23",
+            "seat_count": 1,
+            "passengers_adult": 1,
+            "passengers_child": 0,
+            "offer_hash": "Kx4pwcxWItPbkkwmcoJ18edv6KOPg52QvTi0XqLj%2FpZ9%2FwOHL7%2BwVajv5yIQyjGA46v3pLTho2BXbKw2ZnWOhCAG59JM4RocRWco9huANZj1fIPyyCf3Ck5wg9OQSvxfM7E8QFCsNeMS4X%2Fke3x89%2Fpi4PTzb0%2FFd4J839NWOFfrRXML3cr%2Bqvy2pUbMA0dspUAimKa80Kny117f%2FbRb7cDaDpX%2BEnTOM2Ny25fuXYRHxt7ku4Rz4FlR9fs9%2BA%3D%3D",
+            "departure_stop_id": 2754359,
+            "arrival_stop_id": 2857715,
+            "departure_stop_name": "Автовокзал Котельники",
+            "arrival_stop_name": "Автовокзал",
+            "price": {
+              "amount": 1700,
+              "currency": "RUB"
+            },
+            "carriers": [
+              "VolgaLine"
+            ],
+            "duration_min": 540,
+            "departure_at": "2026-09-23T07:00:00+03:00",
+            "arrival_at": "2026-09-23T16:00:00+03:00",
+            "review_summary": {
+              "rating": 9,
+              "review_count": 1383,
+              "label": "⭐ 9/10 · 1 383 отзыва",
+              "source": "offers-api.feedback",
+              "scope": "carrier",
+              "subject": "VolgaLine",
+              "aspects": [
+                {
+                  "rating": 8.8,
+                  "scale": 10,
+                  "text": "Автобус",
+                  "source": "offers-api.feedback",
+                  "scope": "bus_aspect",
+                  "subject": "VolgaLine",
+                  "label": "⭐ 8.8/10 · Автобус"
+                },
+                {
+                  "rating": 9.6,
+                  "scale": 10,
+                  "text": "Водитель",
+                  "source": "offers-api.feedback",
+                  "scope": "bus_aspect",
+                  "subject": "VolgaLine",
+                  "label": "⭐ 9.6/10 · Водитель"
+                },
+                {
+                  "rating": 8.8,
+                  "scale": 10,
+                  "text": "Общее впечатление",
+                  "source": "offers-api.feedback",
+                  "scope": "bus_aspect",
+                  "subject": "VolgaLine",
+                  "label": "⭐ 8.8/10 · Общее впечатление"
+                }
+              ],
+              "scale": 10,
+              "feedback_key": "5972"
+            }
+          },
+          "review_summary": {
+            "rating": 9,
+            "review_count": 1383,
+            "label": "⭐ 9/10 · 1 383 отзыва",
+            "source": "offers-api.feedback",
+            "scope": "carrier",
+            "subject": "VolgaLine",
+            "aspects": [
+              {
+                "rating": 8.8,
+                "scale": 10,
+                "text": "Автобус",
+                "source": "offers-api.feedback",
+                "scope": "bus_aspect",
+                "subject": "VolgaLine",
+                "label": "⭐ 8.8/10 · Автобус"
+              },
+              {
+                "rating": 9.6,
+                "scale": 10,
+                "text": "Водитель",
+                "source": "offers-api.feedback",
+                "scope": "bus_aspect",
+                "subject": "VolgaLine",
+                "label": "⭐ 9.6/10 · Водитель"
+              },
+              {
+                "rating": 8.8,
+                "scale": 10,
+                "text": "Общее впечатление",
+                "source": "offers-api.feedback",
+                "scope": "bus_aspect",
+                "subject": "VolgaLine",
+                "label": "⭐ 8.8/10 · Общее впечатление"
+              }
+            ],
+            "scale": 10,
+            "feedback_key": "5972"
+          }
+        },
+        {
+          "offer_id": "4436697b263573c2618c833a64c1df04",
+          "transport": "bus",
+          "price": {
+            "amount": 1800,
+            "currency": "RUB"
+          },
+          "duration_min": 535,
+          "carriers": [
+            "Евротранс"
+          ],
+          "search_results_url": "https://bus.tutu.ru/bilety_na_avtobus/Moskva/Sankt-peterburg/",
+          "segments_count": 1,
+          "checkout_url": "https://mtp-deeplink.tutu.ru/api/v1/deeplink/explicit/bus?geo_mode=original&departure_time=2026-09-23T20:45:00%2B03:00&departure_geo_city_id=1447874&arrival_geo_city_id=1447624&hash=k0GpAO1WLlbEl7ciYu23%252B%252FYf%252BPRMg3ttcR1XCMchA%252FEQ%252BuOTvbZuy%252FVtXi9xGb0iL9obCvC6JVCYKfeyd4TaidubUNGMsTXDH078%252BMC7OZfr1TnIRSUfzrsRs2vR51vck3OTKDLsFx882H73B5gPyB4URU%252BkCORc%252B4lhMp9ndr6P%252Bh27KNZMGMH4o%252FJr4iWloN857S92nsbzYCJ9kysQ3TmkglzvFzhUNQON8VKbfwf6TWTYuKByMo4mPEXvjuwjxmjiKqSEKKOvjgU%252BxCKu85YN%252FxG9x839z9C7n0L%252BmHZKmF2a1VTLQ50zW46qtL%252BB%252BkHMZqChBBpzNrVqtTCLyoB2%252BfIrOKpptMJtr19Cw2takmu7tadkpVevG9JBCkuNz5H%252BSGpcnjiikbbsFfpUxVxiRleHTnICIum3hza0ISBSZLeweayNeyJ%252FI%252Fw1OrQgeWm0wDExNeqyV3K2s73UiEjg0pdSq8IBAZck8ViwQHHKLVMVXTcDzn1swHb0tQ33D%252BGw7wzioHVPMUH1oMgqYwn0nGQ1NHHBNsFgL4onyh9InRQsOu2eBGObFbTkQUVmAqi16MSkJQ%252B42Kaxt6cXI%252BlgdnhK%252FWZVPg3b87Ydf5t0CF3u&fallback_to_vid=true&source=mcp",
+          "departure_at": "2026-09-23T20:45:00+03:00",
+          "arrival_at": "2026-09-24T05:40:00+03:00",
+          "legs": [
+            {
+              "label": "outbound",
+              "from": "Международный автовокзал Саларьево",
+              "to": "Автовокзал",
+              "departure_at": "2026-09-23T20:45:00+03:00",
+              "arrival_at": "2026-09-24T05:40:00+03:00",
+              "duration_min": 535,
+              "segments": [
+                {
+                  "from": "Международный автовокзал Саларьево",
+                  "to": "Автовокзал",
+                  "departure_at": "2026-09-23T20:45:00+03:00",
+                  "arrival_at": "2026-09-24T05:40:00+03:00",
+                  "duration_min": 535,
+                  "carrier": "Евротранс",
+                  "voyage_no": null,
+                  "from_geo_point_id": 4583261,
+                  "to_geo_point_id": 2857715
+                }
+              ]
+            }
+          ],
+          "variants": [
+            {
+              "variant_id": "d150283fb1e46c2c329e3b8f02e60250",
+              "offer_hash": "k0GpAO1WLlbEl7ciYu23%2B%2FYf%2BPRMg3ttcR1XCMchA%2FEQ%2BuOTvbZuy%2FVtXi9xGb0iL9obCvC6JVCYKfeyd4TaidubUNGMsTXDH078%2BMC7OZfr1TnIRSUfzrsRs2vR51vck3OTKDLsFx882H73B5gPyB4URU%2BkCORc%2B4lhMp9ndr6P%2Bh27KNZMGMH4o%2FJr4iWloN857S92nsbzYCJ9kysQ3TmkglzvFzhUNQON8VKbfwf6TWTYuKByMo4mPEXvjuwjxmjiKqSEKKOvjgU%2BxCKu85YN%2FxG9x839z9C7n0L%2BmHZKmF2a1VTLQ50zW46qtL%2BB%2BkHMZqChBBpzNrVqtTCLyoB2%2BfIrOKpptMJtr19Cw2takmu7tadkpVevG9JBCkuNz5H%2BSGpcnjiikbbsFfpUxVxiRleHTnICIum3hza0ISBSZLeweayNeyJ%2FI%2Fw1OrQgeWm0wDExNeqyV3K2s73UiEjg0pdSq8IBAZck8ViwQHHKLVMVXTcDzn1swHb0tQ33D%2BGw7wzioHVPMUH1oMgqYwn0nGQ1NHHBNsFgL4onyh9InRQsOu2eBGObFbTkQUVmAqi16MSkJQ%2B42Kaxt6cXI%2BlgdnhK%2FWZVPg3b87Ydf5t0CF3u",
+              "price": {
+                "amount": 1800,
+                "currency": "RUB"
+              }
+            }
+          ],
+          "checkout_ref": {
+            "transport": "bus",
+            "offer_hash": "k0GpAO1WLlbEl7ciYu23%2B%2FYf%2BPRMg3ttcR1XCMchA%2FEQ%2BuOTvbZuy%2FVtXi9xGb0iL9obCvC6JVCYKfeyd4TaidubUNGMsTXDH078%2BMC7OZfr1TnIRSUfzrsRs2vR51vck3OTKDLsFx882H73B5gPyB4URU%2BkCORc%2B4lhMp9ndr6P%2Bh27KNZMGMH4o%2FJr4iWloN857S92nsbzYCJ9kysQ3TmkglzvFzhUNQON8VKbfwf6TWTYuKByMo4mPEXvjuwjxmjiKqSEKKOvjgU%2BxCKu85YN%2FxG9x839z9C7n0L%2BmHZKmF2a1VTLQ50zW46qtL%2BB%2BkHMZqChBBpzNrVqtTCLyoB2%2BfIrOKpptMJtr19Cw2takmu7tadkpVevG9JBCkuNz5H%2BSGpcnjiikbbsFfpUxVxiRleHTnICIum3hza0ISBSZLeweayNeyJ%2FI%2Fw1OrQgeWm0wDExNeqyV3K2s73UiEjg0pdSq8IBAZck8ViwQHHKLVMVXTcDzn1swHb0tQ33D%2BGw7wzioHVPMUH1oMgqYwn0nGQ1NHHBNsFgL4onyh9InRQsOu2eBGObFbTkQUVmAqi16MSkJQ%2B42Kaxt6cXI%2BlgdnhK%2FWZVPg3b87Ydf5t0CF3u",
+            "search_id": "5782CF45-708A-4921-98D7-E878C852B763",
+            "departure_geo_city_id": 2657260,
+            "arrival_geo_city_id": 2656915,
+            "departure_id": "1447874",
+            "arrival_id": "1447624",
+            "departure_stop_id": 4583261,
+            "arrival_stop_id": 2857715,
+            "departure_stop_name": "Международный автовокзал Саларьево",
+            "arrival_stop_name": "Автовокзал",
+            "city_from": "Москва",
+            "city_to": "Санкт-Петербург",
+            "departure_at": "2026-09-23T20:45:00+03:00",
+            "passengers": 1,
+            "passengers_adult": 1,
+            "passengers_child": 0
+          },
+          "details_ref": {
+            "transport": "bus",
+            "source": "api-bus.search.detail",
+            "departure_id": "1447874",
+            "arrival_id": "1447624",
+            "departure_date": "2026-09-23",
+            "seat_count": 1,
+            "passengers_adult": 1,
+            "passengers_child": 0,
+            "offer_hash": "k0GpAO1WLlbEl7ciYu23%2B%2FYf%2BPRMg3ttcR1XCMchA%2FEQ%2BuOTvbZuy%2FVtXi9xGb0iL9obCvC6JVCYKfeyd4TaidubUNGMsTXDH078%2BMC7OZfr1TnIRSUfzrsRs2vR51vck3OTKDLsFx882H73B5gPyB4URU%2BkCORc%2B4lhMp9ndr6P%2Bh27KNZMGMH4o%2FJr4iWloN857S92nsbzYCJ9kysQ3TmkglzvFzhUNQON8VKbfwf6TWTYuKByMo4mPEXvjuwjxmjiKqSEKKOvjgU%2BxCKu85YN%2FxG9x839z9C7n0L%2BmHZKmF2a1VTLQ50zW46qtL%2BB%2BkHMZqChBBpzNrVqtTCLyoB2%2BfIrOKpptMJtr19Cw2takmu7tadkpVevG9JBCkuNz5H%2BSGpcnjiikbbsFfpUxVxiRleHTnICIum3hza0ISBSZLeweayNeyJ%2FI%2Fw1OrQgeWm0wDExNeqyV3K2s73UiEjg0pdSq8IBAZck8ViwQHHKLVMVXTcDzn1swHb0tQ33D%2BGw7wzioHVPMUH1oMgqYwn0nGQ1NHHBNsFgL4onyh9InRQsOu2eBGObFbTkQUVmAqi16MSkJQ%2B42Kaxt6cXI%2BlgdnhK%2FWZVPg3b87Ydf5t0CF3u",
+            "departure_stop_id": 4583261,
+            "arrival_stop_id": 2857715,
+            "departure_stop_name": "Международный автовокзал Саларьево",
+            "arrival_stop_name": "Автовокзал",
+            "price": {
+              "amount": 1800,
+              "currency": "RUB"
+            },
+            "carriers": [
+              "Евротранс"
+            ],
+            "duration_min": 535,
+            "departure_at": "2026-09-23T20:45:00+03:00",
+            "arrival_at": "2026-09-24T05:40:00+03:00",
+            "review_summary": {
+              "rating": 8.6,
+              "review_count": 2976,
+              "label": "⭐ 8.6/10 · 2 976 отзывов",
+              "source": "offers-api.feedback",
+              "scope": "carrier",
+              "subject": "Евротранс",
+              "aspects": [
+                {
+                  "rating": 8.6,
+                  "scale": 10,
+                  "text": "Автобус",
+                  "source": "offers-api.feedback",
+                  "scope": "bus_aspect",
+                  "subject": "Евротранс",
+                  "label": "⭐ 8.6/10 · Автобус"
+                },
+                {
+                  "rating": 9.2,
+                  "scale": 10,
+                  "text": "Водитель",
+                  "source": "offers-api.feedback",
+                  "scope": "bus_aspect",
+                  "subject": "Евротранс",
+                  "label": "⭐ 9.2/10 · Водитель"
+                },
+                {
+                  "rating": 8.1,
+                  "scale": 10,
+                  "text": "Общее впечатление",
+                  "source": "offers-api.feedback",
+                  "scope": "bus_aspect",
+                  "subject": "Евротранс",
+                  "label": "⭐ 8.1/10 · Общее впечатление"
+                }
+              ],
+              "scale": 10,
+              "feedback_key": "7420"
+            }
+          },
+          "review_summary": {
+            "rating": 8.6,
+            "review_count": 2976,
+            "label": "⭐ 8.6/10 · 2 976 отзывов",
+            "source": "offers-api.feedback",
+            "scope": "carrier",
+            "subject": "Евротранс",
+            "aspects": [
+              {
+                "rating": 8.6,
+                "scale": 10,
+                "text": "Автобус",
+                "source": "offers-api.feedback",
+                "scope": "bus_aspect",
+                "subject": "Евротранс",
+                "label": "⭐ 8.6/10 · Автобус"
+              },
+              {
+                "rating": 9.2,
+                "scale": 10,
+                "text": "Водитель",
+                "source": "offers-api.feedback",
+                "scope": "bus_aspect",
+                "subject": "Евротранс",
+                "label": "⭐ 9.2/10 · Водитель"
+              },
+              {
+                "rating": 8.1,
+                "scale": 10,
+                "text": "Общее впечатление",
+                "source": "offers-api.feedback",
+                "scope": "bus_aspect",
+                "subject": "Евротранс",
+                "label": "⭐ 8.1/10 · Общее впечатление"
+              }
+            ],
+            "scale": 10,
+            "feedback_key": "7420"
+          }
+        }
+      ],
+      "meta": {
+        "from": {
+          "name": "Москва",
+          "geo_id": "2657260",
+          "region": "Москва город федерального значения",
+          "iata": "MOW"
+        },
+        "to": {
+          "name": "Санкт-Петербург",
+          "geo_id": "2656915",
+          "region": "Санкт-Петербург город федерального значения",
+          "iata": "LED"
+        },
+        "optimize_for": "price",
+        "modes_requested": [
+          "avia",
+          "railway",
+          "bus",
+          "etrain"
+        ],
+        "modes_summary": {
+          "avia": {
+            "count": 8,
+            "min_price": 4014,
+            "min_duration_min": 80
+          },
+          "railway": {
+            "count": 8,
+            "min_price": 1140.98,
+            "min_duration_min": 335,
+            "cashback": {
+              "rate_pct": 3,
+              "applies_to": "all_fares",
+              "note": "Tutu loyalty points credited to the buyer's Tutu account after payment. NOT a discount: every `price` here is the full amount payable.",
+              "scope": "mode_page"
+            }
+          },
+          "bus": {
+            "count": 5,
+            "min_price": 1700,
+            "min_duration_min": 510,
+            "cashback": {
+              "rate_pct": 3,
+              "applies_to": "all_fares",
+              "note": "Tutu loyalty points credited to the buyer's Tutu account after payment. NOT a discount: every `price` here is the full amount payable.",
+              "scope": "mode_page"
+            }
+          },
+          "etrain": {
+            "count": 0,
+            "min_price": null,
+            "min_duration_min": null
+          }
+        },
+        "unavailable": [],
+        "page": 1,
+        "page_size": 6,
+        "total_returned": 6,
+        "has_more": true
+      }
+    }
+  }
+}

@@ -63,8 +63,8 @@ When('the trip is priced', function (this: ZaezdWorld) {
 });
 
 When('the cheapest recorded trip is priced', function (this: ZaezdWorld) {
-  const there = cheapest(this.recall<RecordedVariant[]>('journeys:Москва->Екатеринбург'));
-  const home = cheapest(this.recall<RecordedVariant[]>('journeys:Екатеринбург->Москва'));
+  const there = cheapest(this.recall<RecordedVariant[]>('journeys:there'));
+  const home = cheapest(this.recall<RecordedVariant[]>('journeys:home'));
   const hotels = this.recall<RecordedHotel[]>('recorded-hotels');
   const hotel = hotels.reduce((best, item) =>
     item.best_offer.price.amount < best.best_offer.price.amount ? item : best,

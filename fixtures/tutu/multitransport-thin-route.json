@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-08-19T10:58:53.435Z",
+  "recorded_at": "2026-08-19T11:07:53.110Z",
   "source": "tutu",
   "tool": "search_multitransport",
   "arguments": {
@@ -13,7 +13,7 @@
     "variants[].checkout_ref",
     "variants[].checkout_url"
   ],
-  "note": "a thin route: some modes come back empty while others live",
+  "note": "a thin route: some modes fail upstream while others simply have nothing",
   "response": {
     "envelope": {
       "jsonrpc": "2.0",

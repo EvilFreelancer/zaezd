@@ -54,9 +54,10 @@ async function lookUp(options: GeoOptions, query: string): Promise<GeoPoint | un
  * to the right building once the street and number are pulled out of it.
  */
 export function addressPart(venue: string): string | undefined {
-  const match = /((?:ул\.|улица|наб\.|набережная|пр\.|проспект|пер\.|переулок|ш\.|шоссе)[^,]*,\s*\d+[^,]*)/iu.exec(
-    venue,
-  );
+  const kinds =
+    'ул\\.|улица|наб\\.|набережная|пр\\.|проспект|просп\\.|пер\\.|переулок|ш\\.|шоссе|' +
+    'пл\\.|площадь|б-р|бульвар|линия|тракт|аллея|проезд';
+  const match = new RegExp(`((?:${kinds})[^,]*,\\s*\\d+[^,]*)`, 'iu').exec(venue);
   return match?.[1]?.trim();
 }
 

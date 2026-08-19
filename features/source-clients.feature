@@ -9,8 +9,8 @@ Feature: Talking to the catalogue and to Tutu
   Scenario: The catalogue answers from the recordings
     Given the catalogue and Tutu are wired to the recordings
     When the catalogue is asked for offline events on artificial intelligence
-    Then 18 events come back
-    And the event "Kazan Digital Week - 2026" is among them
+    Then 20 events come back
+    And the event "SPb Python Meetup 2026" is among them
 
   Scenario: The catalogue directory answers from the recordings
     Given the catalogue and Tutu are wired to the recordings
@@ -21,7 +21,7 @@ Feature: Talking to the catalogue and to Tutu
     Given the catalogue lost its session
     When the catalogue is asked for offline events on artificial intelligence
     Then the session was reopened once
-    And 18 events come back
+    And 20 events come back
 
   Scenario: A catalogue that is simply down is not retried forever
     Given the catalogue is down
@@ -36,18 +36,18 @@ Feature: Talking to the catalogue and to Tutu
 
   Scenario: Tutu answers with journeys
     Given the catalogue and Tutu are wired to the recordings
-    When Tutu is asked for journeys from Москва to Екатеринбург on 2026-08-26
+    When Tutu is asked for journeys from Москва to Санкт-Петербург on 2026-08-20
     Then 6 journeys come back
 
   Scenario: Tutu answers with hotels
     Given the catalogue and Tutu are wired to the recordings
-    When Tutu is asked for hotels in Екатеринбург from 2026-08-26 to 2026-08-30
+    When Tutu is asked for hotels in Санкт-Петербург from 2026-08-20 to 2026-08-21
     Then 20 hotels come back
-    And the listing names Екатеринбург as the geography it resolved
+    And the listing names Санкт-Петербург as the geography it resolved
 
   Scenario: Hotels are searched by city name, never by an identifier from a transport answer
     Given the catalogue and Tutu are wired to the recordings
-    When Tutu is asked for hotels in Екатеринбург from 2026-08-26 to 2026-08-30
+    When Tutu is asked for hotels in Санкт-Петербург from 2026-08-20 to 2026-08-21
     Then the question Tutu was asked names the city and no transport identifier
 
   Scenario: A checkout link is never answered from memory

@@ -137,10 +137,10 @@ Feature: What the trip actually costs
     Then the trip does not say how many working days it burns
 
   Scenario: The cheapest recorded trip is priced from the recorded payloads
-    Given the recorded journeys from Москва to Екатеринбург
-    And the recorded journeys from Екатеринбург to Москва
-    And the recorded hotels in Екатеринбург
+    Given the recorded journeys there
+    And the recorded journeys home
+    And the recorded hotels of the demo trip
     When the cheapest recorded trip is priced
-    Then the total is 15889.65 ₽
+    Then the total is 12679.22 ₽
     And the hotel line equals the price Tutu returned for the whole stay
     And the breakdown adds up to the total

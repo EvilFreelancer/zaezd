@@ -43,6 +43,15 @@ traced back to the request that produced it without guessing from the filename.
 
 ## What is recorded and why
 
+The demo is not typed in by hand. `scripts/record.ts` reads the catalogue, runs the product's
+own `eventQueryFor` and `selectEvents` over the answer, and records transport, hotels and
+enrichment for whatever the product would actually choose. A demo pinned to an event id rots
+the moment the catalogue moves on, and - worse - records answers to questions the product will
+never ask, which shows up as replay refusing every lookup while looking exactly like an outage.
+
+That is also why fixtures are named by their role rather than by a city: `demo-out.json` is
+"the journey there", whichever city that turns out to be this month.
+
 ### confcal
 
 | File | What it proves |
@@ -51,29 +60,20 @@ traced back to the request that produced it without guessing from the filename.
 | `session-lost.json` | what an expired session looks like, so the client can re-initialize once and retry |
 | `list-cities.json`, `list-topics.json` | the catalogue directories and their event counters |
 | `list-cities-page-2.json` | pagination, so coverage is not computed from page one and called the whole catalogue |
-| `events-ai-offline.json` | the working set: a 10:00 start with a real address, a `null` `starts_at`, a `null` `venue` |
+| `events-ai-offline.json` | the working set, asked exactly as the product asks it: every city that has events, minus home |
 | `events-ai-online.json` | online events, which build no trip |
 | `events-ai-moscow.json` | events in the origin city, which build no trip either |
 | `events-empty.json` | an empty answer that still owes the user a coverage note |
-
-The default demo is event 197, Yekaterinburg, 27-29 August 2026, starting at 10:00 at
-"Городской молодёжный кластер «Салют», ул. Толмачёва, 12". It exercises the whole happy path:
-a morning start pulls check-in a day earlier, the address geocodes, walking time is real, and
-the dates fall inside the weather forecast window.
-
-Event 277, Kazan, 29-31 October, is the honest-degradation showcase: `starts_at` and `venue`
-are both `null`, so there is no precise marker, no walking time and no hard feasibility check,
-and the screen has to say so.
 
 ### Tutu
 
 | File | What it proves |
 |---|---|
-| `multitransport-msk-ekb-out.json`, `-ekb-msk-back.json` | both legs of the demo; the return leg is not optional, without it the total is knowably wrong |
-| `multitransport-msk-kzn-out.json`, `-kzn-msk-back.json` | the same for the degradation showcase |
+| `demo-out.json`, `demo-back.json` | both legs of the demo; the return leg is not optional, without it the total is knowably wrong |
+| `demo-hotels.json` | hotel coordinates arrive in the listing, so distance sorting needs no extra call; `price_basis: "stay_total"` is on every price |
+| `degraded-*.json` | the same three calls for the showcase event that has neither an opening time nor a venue |
 | `multitransport-thin-route.json` | `meta.unavailable` naming a mode that failed upstream, next to modes that simply have no offers. An empty array is not proof that a mode does not exist |
-| `hotels-ekb.json`, `hotels-kzn.json` | hotel coordinates arrive in the listing, so distance sorting needs no extra call; `price_basis: "stay_total"` is on every price |
-| `offer-details-ekb.json` | nine rooms, five rates each, each with its own `offerpack_hash` |
+| `offer-details.json` | the room rates, each with its own `offerpack_hash` |
 | `error-extra-key.json` | the pydantic `extra_forbidden` error every agent hits sooner or later |
 
 Checkout links, one per observed `kind`, because the button label is derived from what Tutu
@@ -89,7 +89,7 @@ actually returned and cannot be tested against invented values:
 The two hotel links differ by one argument. `checkout-hotel-page.json` passes the listing
 `checkout_ref` and gets a hotel page; `checkout-hotel-cart.json` adds a room rate's
 `offer_pack_hash` from `get_offer_details` and gets a real cart. This is exactly the trap the
-product must not fall into, and it is now a recorded fact rather than a warning in a document.
+product must not fall into, and it is a recorded fact rather than a warning in a document.
 
 `search_redirect` and `order_url` were not returned by any live call during recording, so the
 label table covers them by unit test rather than by fixture. Which kinds have been observed
@@ -97,27 +97,21 @@ live is stated here rather than implied.
 
 ### Enrichment
 
-The Nominatim files are the three-step precision ladder, recorded in the order the geocoder
-actually degrades:
+The Nominatim files are the precision ladder, recorded in the order the geocoder actually
+descends it: the venue string as the catalogue wrote it, the address pulled out of it, the
+city. A company name is recorded separately because it resolves to something plausible and
+nearly meaningless, which is the case precision must not be claimed for.
 
-| File | Query | Result |
-|---|---|---|
-| `nominatim-venue-verbatim.json` | the venue string as the catalogue wrote it | nothing at all |
-| `nominatim-street.json` | the address pulled out of that string | four hits, the first one right |
-| `nominatim-company-name.json` | "YADRO, Санкт-Петербург" | plausible and nearly meaningless; precision must not be claimed |
-| `nominatim-city.json` | the city | the centre, a normal mode of operation |
+`osrm-foot.json` and `osrm-car.json` are the same pair of points on both profiles. The public
+`router.project-osrm.org` serves the car profile only, which is why a walking time may come
+from `routing.openstreetmap.de/routed-foot` or from nowhere.
 
-`osrm-foot.json` and `osrm-car.json` are the same pair of points on both profiles: 847 seconds
-on foot against 269 by car. The public `router.project-osrm.org` serves the car profile only,
-which is why a walking time may come from `routing.openstreetmap.de/routed-foot` or from
-nowhere.
+`isdayoff-*.json` covers every month the recorded trips touch, including any boundary they
+cross. The body is a bare string of digits, one per day, stored as a string on purpose:
+`JSON.parse` would turn `"1100000110000011"` into `1.1e15` and destroy the calendar without any
+error at all.
 
-`isdayoff-2026-08.json` through `-11.json` cover the whole span both demos touch, including the
-month boundary the Kazan trip crosses. The body is a bare string of digits, one per day, and it
-is stored as a string on purpose: `JSON.parse` would turn `"1100000110000011"` into `1.1e15`
-and destroy the calendar without any error.
-
-`openmeteo-in-window.json` is inside the sixteen-day forecast window at the time of recording.
-`openmeteo-out-of-window.json` is the refusal, and it is worth reading: Open-Meteo does not
-return an empty forecast, it rejects the range and names its bounds. The weather block is
-hidden; history is never substituted for a forecast.
+`openmeteo-in-window.json` is the forecast at the venue, inside the sixteen-day window at the
+time of recording. `openmeteo-out-of-window.json` is the refusal, and it is worth reading:
+Open-Meteo does not return an empty forecast, it rejects the range and names its bounds. The
+weather block is hidden; history is never substituted for a forecast.

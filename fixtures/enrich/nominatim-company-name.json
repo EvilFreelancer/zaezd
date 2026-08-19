@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-08-19T10:58:53.435Z",
+  "recorded_at": "2026-08-19T11:07:53.110Z",
   "source": "nominatim",
   "tool": "search",
   "arguments": {
@@ -11,7 +11,7 @@
     "status": 200,
     "body": [
       {
-        "place_id": 169312327,
+        "place_id": 169141172,
         "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
         "osm_type": "node",
         "osm_id": 5563374530,
@@ -23,7 +23,7 @@
         "importance": 0.00008232166018153685,
         "addresstype": "office",
         "name": "Yadro",
-        "display_name": "Yadro, Итальянская улица, Дворцовый округ, Санкт-Петербург, Северо-Западный федеральный округ, 191168, Россия",
+        "display_name": "Yadro, 17, Итальянская улица, Дворцовый округ, Санкт-Петербург, Северо-Западный федеральный округ, 191186, Россия",
         "boundingbox": [
           "59.9361719",
           "59.9362719",
@@ -32,7 +32,7 @@
         ]
       },
       {
-        "place_id": 177156966,
+        "place_id": 169857515,
         "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
         "osm_type": "node",
         "osm_id": 12952682131,
@@ -44,7 +44,7 @@
         "importance": 0.00008232166018153685,
         "addresstype": "office",
         "name": "Yadro",
-        "display_name": "Yadro, улица Жукова, Выборгская сторона, Финляндский округ, Санкт-Петербург, Северо-Западный федеральный округ, 195160, Россия",
+        "display_name": "Yadro, 44 литБ, Свердловская набережная, Выборгская сторона, Финляндский округ, Санкт-Петербург, Северо-Западный федеральный округ, 195027, Россия",
         "boundingbox": [
           "59.9613093",
           "59.9614093",

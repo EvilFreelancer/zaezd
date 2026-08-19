@@ -18,7 +18,7 @@ describe('unwrapToolResult', () => {
   it('opens the JSON string both servers hide inside a text block', () => {
     const payload = unwrapToolResult('confcal', envelope('confcal/events-ai-offline.json'));
 
-    expect(payload).toMatchObject({ count: 18 });
+    expect(payload).toMatchObject({ count: 20 });
   });
 
   it('refuses a tool error instead of reading its message as data', () => {
@@ -73,28 +73,30 @@ describe('normalizeEvents', () => {
   const events = normalizeEvents(loadPayload('confcal/events-ai-offline.json'));
 
   it('reads every event in the recorded answer', () => {
-    expect(events).toHaveLength(18);
+    expect(events).toHaveLength(20);
   });
 
   it('leaves a venue the catalogue did not fill as missing', () => {
-    const kazan = events.find((event) => event.title === 'Kazan Digital Week - 2026');
+    const bare = events.find((event) => event.venue === undefined);
 
-    expect(kazan?.venue).toBeUndefined();
+    expect(bare).toBeDefined();
+    expect(bare?.venue).toBeUndefined();
   });
 
   it('leaves an opening time the catalogue did not fill as missing', () => {
-    const kazan = events.find((event) => event.title === 'Kazan Digital Week - 2026');
+    const timeless = events.find((event) => event.startsAt === undefined);
 
-    expect(kazan?.startsAt).toBeUndefined();
+    expect(timeless).toBeDefined();
+    expect(timeless?.startsAt).toBeUndefined();
   });
 
   it('keeps the fields the catalogue did fill', () => {
-    const ekb = events.find((event) => event.title.startsWith('Искусственный интеллект'));
+    const demo = events.find((event) => event.title === 'SPb Python Meetup 2026');
 
-    expect(ekb).toMatchObject({
-      city: 'Екатеринбург',
-      citySlug: 'ekaterinburg',
-      startsAt: '2026-08-27T10:00:00+03:00',
+    expect(demo).toMatchObject({
+      city: 'Санкт-Петербург',
+      citySlug: 'spb',
+      startsAt: '2026-08-20T19:00:00+03:00',
       format: 'offline',
     });
   });
@@ -156,7 +158,7 @@ describe('normalizeCityDirectory', () => {
 });
 
 describe('normalizeTransport', () => {
-  const search = normalizeTransport(loadPayload('tutu/multitransport-msk-ekb-out.json'));
+  const search = normalizeTransport(loadPayload('tutu/demo-out.json'));
 
   it('reads every journey on the page', () => {
     expect(search.legs).toHaveLength(6);
@@ -167,7 +169,7 @@ describe('normalizeTransport', () => {
   });
 
   it('names the places Tutu resolved, so they can be said back to the traveller', () => {
-    expect(search).toMatchObject({ resolvedFrom: 'Москва', resolvedTo: 'Екатеринбург' });
+    expect(search).toMatchObject({ resolvedFrom: 'Москва', resolvedTo: 'Санкт-Петербург' });
   });
 
   it('reads the train number out of the first segment', () => {
@@ -207,7 +209,7 @@ describe('normalizeTransport', () => {
 });
 
 describe('normalizeHotels', () => {
-  const listing = normalizeHotels(loadPayload('tutu/hotels-ekb.json'));
+  const listing = normalizeHotels(loadPayload('tutu/demo-hotels.json'));
 
   it('reads every hotel on the page', () => {
     expect(listing.hotels).toHaveLength(20);
@@ -218,7 +220,7 @@ describe('normalizeHotels', () => {
   });
 
   it('names the geography Tutu resolved', () => {
-    expect(listing).toMatchObject({ resolvedGeoName: 'Екатеринбург', resolvedGeoType: 'locality' });
+    expect(listing).toMatchObject({ resolvedGeoName: 'Санкт-Петербург', resolvedGeoType: 'locality' });
   });
 
   it('carries the search identifier without pretending it lasts', () => {

@@ -1,0 +1,1281 @@
+{
+  "recorded_at": "2026-08-19T11:07:53.110Z",
+  "source": "tutu",
+  "tool": "search_hotels",
+  "arguments": {
+    "city_name": "Санкт-Петербург",
+    "check_in": "2026-09-23",
+    "check_out": "2026-09-25",
+    "adults": 1,
+    "page_size": 20
+  },
+  "volatile": [
+    "hotels[].checkout_ref",
+    "hotels[].checkout_url",
+    "hotels[].best_offer.checkout_url",
+    "meta.search_id"
+  ],
+  "note": "the honest-degradation showcase: no opening time and no venue",
+  "response": {
+    "envelope": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"hotels\":[{\"hotel_id\":\"8601075\",\"hotel_geo_id\":\"8601075\",\"tutu_offer_id\":\"b412a244-6348-4610-8164-aa05450cc160\",\"name\":\"Вало Нетворк\",\"stars\":3,\"rating\":8.26,\"review_count\":263,\"address\":\"6.6 км от центра, 268 м от метро Бухарестская\",\"location\":{\"lat\":59.886078,\"lng\":30.368853,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/0419a832-5746-465d-bc7f-86764996ebda/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/e09f34c5c09bd490223e7fbf14d1648a.jpg\"],\"alias\":\"apartotel_valo_network\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=8601075&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"best_offer\":{\"offerpack_hash\":\"39f09626-c6db-48b1-aeaf-a5903cdaf364\",\"room_name\":\"Нетворк Стандарт 3* с большим матрасом на подиуме\",\"price\":{\"amount\":6290.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=8601075&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.26,\"review_count\":263,\"label\":\"⭐ 8.26/10 · 263 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"8601075\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"8601075\",\"check_in\":\"2026-09-23\",\"check_out\":\"2026-09-25\",\"adults\":1,\"hotel_alias\":\"apartotel_valo_network\",\"search_id\":\"67ca708174b150286cbdc007522fd64f\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=8601075&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\"},\"photos_total\":23},{\"hotel_id\":\"11485267\",\"hotel_geo_id\":\"11485267\",\"tutu_offer_id\":\"591afe67-f916-4c7a-ab73-5d8972eaf9af\",\"name\":\"Central inn\",\"stars\":0,\"rating\":8.77,\"review_count\":23,\"address\":\"902 м от центра, 699 м от метро Адмиралтейская\",\"location\":{\"lat\":59.933746,\"lng\":30.303516,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/4ba1b351-28b0-4f4a-a358-e9d2f057c554/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/9c32a3b38db8960d830f635640484c28.jpg\"],\"alias\":\"otel_central_inn_atmosfera_ulitsa_yakubovicha_d2_sanktpeterburg\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11485267&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"best_offer\":{\"offerpack_hash\":\"7d3a425f-da47-4b84-8fe0-ac7281cdac6d\",\"room_name\":\"Двухместный Стандарт с раздельными кроватями\",\"price\":{\"amount\":9000.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11485267&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.77,\"review_count\":23,\"label\":\"⭐ 8.77/10 · 23 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11485267\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11485267\",\"check_in\":\"2026-09-23\",\"check_out\":\"2026-09-25\",\"adults\":1,\"hotel_alias\":\"otel_central_inn_atmosfera_ulitsa_yakubovicha_d2_sanktpeterburg\",\"search_id\":\"67ca708174b150286cbdc007522fd64f\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11485267&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\"},\"photos_total\":29},{\"hotel_id\":\"7650303\",\"hotel_geo_id\":\"7650303\",\"tutu_offer_id\":\"d5b61f9a-1a11-4183-8971-11f2616b4023\",\"name\":\"Docklands \",\"stars\":4,\"rating\":8.73,\"review_count\":113,\"address\":\"4.6 км от центра, 1 км от метро Приморская\",\"location\":{\"lat\":59.957043,\"lng\":30.241987,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/2271c6b7-cb65-4b41-8cf8-3a3428cbd530/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/293f09103b5a6a423770f0785cbfd8ab.jpg\"],\"alias\":\"apartotel_docklands\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=7650303&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"best_offer\":{\"offerpack_hash\":\"f7f4b639-738a-4ce6-a663-40f4bc905803\",\"room_name\":\"Студия с видом во двор\",\"price\":{\"amount\":10880.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=7650303&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.73,\"review_count\":113,\"label\":\"⭐ 8.73/10 · 113 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"7650303\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"7650303\",\"check_in\":\"2026-09-23\",\"check_out\":\"2026-09-25\",\"adults\":1,\"hotel_alias\":\"apartotel_docklands\",\"search_id\":\"67ca708174b150286cbdc007522fd64f\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=7650303&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\"},\"photos_total\":100},{\"hotel_id\":\"12470476\",\"hotel_geo_id\":\"12470476\",\"tutu_offer_id\":\"f2572bff-3a10-4fbb-b59a-bc4bd605feb8\",\"name\":\"Номера на Кременчугской\",\"stars\":0,\"rating\":0.0,\"review_count\":0,\"address\":\"3.8 км от центра, 868 м от метро Площадь Александра Невского 2\",\"location\":{\"lat\":59.91902,\"lng\":30.370638,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/51fe7e8ee7ed8c335dfc25d2cad9f154bd20370e.e84f46e19980a132cff0633c0034087f03f43454.jpeg\"],\"alias\":\"nomera_na_kremenchugskoy\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12470476&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"best_offer\":{\"offerpack_hash\":\"3e4f181b-f016-453f-841d-d9586c87d08a\",\"room_name\":\"Одноместный номер Стандарт\",\"price\":{\"amount\":7198.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12470476&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":null,\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"12470476\",\"check_in\":\"2026-09-23\",\"check_out\":\"2026-09-25\",\"adults\":1,\"hotel_alias\":\"nomera_na_kremenchugskoy\",\"search_id\":\"67ca708174b150286cbdc007522fd64f\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12470476&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\"},\"photos_total\":11},{\"hotel_id\":\"11836632\",\"hotel_geo_id\":\"11836632\",\"tutu_offer_id\":\"5ccbfe65-ef15-4bc6-9b5e-d491fecfbef7\",\"name\":\"Отель Санкт-Петербург\",\"stars\":4,\"rating\":8.51,\"review_count\":1585,\"address\":\"2.5 км от центра, 760 м от метро Площадь Ленина\",\"location\":{\"lat\":59.9569,\"lng\":30.34183,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/c3e2cf2b3d804cdc3c4196ed22a170aedfa9bb7f.d6a7cb8320d26591db3e47d2e537bce5ccb9230b.jpeg\"],\"alias\":\"sanktpeterburg\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11836632&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"best_offer\":{\"offerpack_hash\":\"486b3fca-51d2-4c62-9560-1aa75452ec4c\",\"room_name\":\"Стандартный двухместный номер с 1 кроватью или двумя отдельными кроватями и видом во двор\",\"price\":{\"amount\":12580.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11836632&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.51,\"review_count\":1585,\"label\":\"⭐ 8.51/10 · 1 585 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11836632\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11836632\",\"check_in\":\"2026-09-23\",\"check_out\":\"2026-09-25\",\"adults\":1,\"hotel_alias\":\"sanktpeterburg\",\"search_id\":\"67ca708174b150286cbdc007522fd64f\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11836632&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\"},\"photos_total\":33},{\"hotel_id\":\"11681935\",\"hotel_geo_id\":\"11681935\",\"tutu_offer_id\":\"49903a29-0b5c-4e8b-96ac-24e7238b1ef0\",\"name\":\"Simple Hotel B9\",\"stars\":0,\"rating\":8.98,\"review_count\":111,\"address\":\"1.7 км от центра, 885 м от метро Гостиный двор\",\"location\":{\"lat\":59.93813,\"lng\":30.346563,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/0eaabbd7-5a24-4992-bb0d-65dc9c99b9ba/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/c4945bd1ae7d3a7d35b76b2ce7762e1b.jpg\"],\"alias\":\"otel_simple_hotel_b9_ulitsa_belinskogo_d_9_sanktpeterburg\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11681935&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"best_offer\":{\"offerpack_hash\":\"b3172dca-2aea-42d9-97be-a4cefd9d03b6\",\"room_name\":\"Небольшой двухместный номер с личными удобствами вне номера\",\"price\":{\"amount\":5400.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11681935&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":{\"rating\":8.98,\"review_count\":111,\"label\":\"⭐ 8.98/10 · 111 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11681935\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11681935\",\"check_in\":\"2026-09-23\",\"check_out\":\"2026-09-25\",\"adults\":1,\"hotel_alias\":\"otel_simple_hotel_b9_ulitsa_belinskogo_d_9_sanktpeterburg\",\"search_id\":\"67ca708174b150286cbdc007522fd64f\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11681935&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\"},\"photos_total\":9},{\"hotel_id\":\"11794251\",\"hotel_geo_id\":\"11794251\",\"tutu_offer_id\":\"888373a8-f791-45cb-abc1-ea62c18b2aea\",\"name\":\"Однокомнатная квартира на улице: Санкт-Петербург, Лиговский проспект, 244, подъезд 2\",\"stars\":0,\"rating\":0.0,\"review_count\":0,\"address\":\"4.4 км от центра, 1 км от метро Волковская\",\"location\":{\"lat\":59.901375,\"lng\":30.342638,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/374e80a5-8816-4d0a-8ab1-1fc269e01ea0/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/390af5cada8156afa424ced7120c12b8.jpg\"],\"alias\":\"odnokomnatnaya_kvartira_na_ulitse_sanktpeterburg_ligovsky_prospekt_244_podyezd_2\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11794251&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"best_offer\":{\"offerpack_hash\":\"f70d0e86-647b-4b66-809b-db660558052a\",\"room_name\":\"Однокомнатная квартира на улице: Санкт-Петербург, Лиговский проспект, 244, подъезд 2\",\"price\":{\"amount\":9676.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11794251&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":null,\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11794251\",\"check_in\":\"2026-09-23\",\"check_out\":\"2026-09-25\",\"adults\":1,\"hotel_alias\":\"odnokomnatnaya_kvartira_na_ulitse_sanktpeterburg_ligovsky_prospekt_244_podyezd_2\",\"search_id\":\"67ca708174b150286cbdc007522fd64f\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11794251&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\"},\"photos_total\":12},{\"hotel_id\":\"11430844\",\"hotel_geo_id\":\"11430844\",\"tutu_offer_id\":\"b74a91b3-8893-479c-931b-c846f589a78b\",\"name\":\"River Palace Hotel\",\"stars\":4,\"rating\":9.49,\"review_count\":126,\"address\":\"2.3 км от центра, 519 м от метро Спортивная\",\"location\":{\"lat\":59.948883,\"lng\":30.279308,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/53f08b48-db77-4b13-9246-0ec80efc5c87/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/ce2d41614becdab1136764f8a76a0785.jpg\"],\"alias\":\"river_palas_199178_rossiya_sanktpeterburg_ul_2ya_liniya_vo_d_6130\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11430844&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"best_offer\":{\"offerpack_hash\":\"7c95e7c4-dcea-46a3-84ea-49837b425ddd\",\"room_name\":\"Стандарт с двумя кроватями | Вид на город\",\"price\":{\"amount\":22470.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11430844&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"room_size_sqm\":null,\"breakfast_included\":true,\"meal_name\":\"Завтрак \\\"шведский стол\\\"\",\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак \\\"шведский стол\\\"\"},{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":9.49,\"review_count\":126,\"label\":\"⭐ 9.49/10 · 126 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11430844\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11430844\",\"check_in\":\"2026-09-23\",\"check_out\":\"2026-09-25\",\"adults\":1,\"hotel_alias\":\"river_palas_199178_rossiya_sanktpeterburg_ul_2ya_liniya_vo_d_6130\",\"search_id\":\"67ca708174b150286cbdc007522fd64f\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11430844&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\"},\"photos_total\":21},{\"hotel_id\":\"8181037\",\"hotel_geo_id\":\"8181037\",\"tutu_offer_id\":\"cb3d594e-00d4-4a9f-9f2f-eb9474d9284b\",\"name\":\"Номера у Невы\",\"stars\":3,\"rating\":7.85,\"review_count\":136,\"address\":\"5.2 км от центра, 1 км от метро Площадь Александра Невского 1\",\"location\":{\"lat\":59.91768,\"lng\":30.398684,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/ebf7ecd0-590d-4466-a722-d6350f6cced7/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/a299aabd7b89700a1811a7642bfaa1fd.jpg\"],\"alias\":\"otel_art_deko_nevsky\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"best_offer\":{\"offerpack_hash\":\"4ce034a9-72b9-4da8-b2b5-0c97a837c76a\",\"room_name\":\"Одноместный номер Стандарт\",\"price\":{\"amount\":5398.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":7.85,\"review_count\":136,\"label\":\"⭐ 7.85/10 · 136 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"8181037\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"8181037\",\"check_in\":\"2026-09-23\",\"check_out\":\"2026-09-25\",\"adults\":1,\"hotel_alias\":\"otel_art_deko_nevsky\",\"search_id\":\"67ca708174b150286cbdc007522fd64f\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\"},\"photos_total\":29},{\"hotel_id\":\"12494128\",\"hotel_geo_id\":\"12494128\",\"tutu_offer_id\":\"cb12c274-9e46-4814-8edf-f2b31d4d4f00\",\"name\":\"Дом Кумовича\",\"stars\":0,\"rating\":0.0,\"review_count\":0,\"address\":\"2.7 км от центра, 683 м от метро Чернышевская\",\"location\":{\"lat\":59.938736,\"lng\":30.36397,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/ba087cf25c697804773a49a262328675802ce112.ca2d17d9b684a0b5b4b46bba95ea7119291ec1e4.jpeg\"],\"alias\":\"dom_kumovicha_rossiyskaya_federatsiya_sanktpeterburg_tsentralny_g_sanktpeterburg_ul_nekrasova_d_46a\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12494128&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"best_offer\":{\"offerpack_hash\":\"a5c47eb3-ce0c-457f-b161-c437a2f0f074\",\"room_name\":\"Эконом 2х местный (индивидуальные удобства на этаже) №7\",\"price\":{\"amount\":8000.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12494128&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":null,\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"12494128\",\"check_in\":\"2026-09-23\",\"check_out\":\"2026-09-25\",\"adults\":1,\"hotel_alias\":\"dom_kumovicha_rossiyskaya_federatsiya_sanktpeterburg_tsentralny_g_sanktpeterburg_ul_nekrasova_d_46a\",\"search_id\":\"67ca708174b150286cbdc007522fd64f\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12494128&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\"},\"photos_total\":6},{\"hotel_id\":\"9539352\",\"hotel_geo_id\":\"9539352\",\"tutu_offer_id\":\"3ae8a611-84f0-4a7e-a1ab-41f5dafbb0df\",\"name\":\"Номера на Балтийской\",\"stars\":0,\"rating\":8.93,\"review_count\":311,\"address\":\"4.8 км от центра, 1.5 км от метро Нарвская\",\"location\":{\"lat\":59.909332,\"lng\":30.25353,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/da37e6d0-dea8-40bb-aaa4-4e9ec7a2ffc3/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/e42e736f2618b21e2a2de72df7c9d7a6.jpg\"],\"alias\":\"kanonerka_hostel\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=9539352&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"best_offer\":{\"offerpack_hash\":\"a085fdd0-0626-4e82-9092-e4da2b4faf9b\",\"room_name\":\"Стандартный номер с общей ванной комнатой\",\"price\":{\"amount\":4198.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=9539352&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.93,\"review_count\":311,\"label\":\"⭐ 8.93/10 · 311 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"9539352\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"9539352\",\"check_in\":\"2026-09-23\",\"check_out\":\"2026-09-25\",\"adults\":1,\"hotel_alias\":\"kanonerka_hostel\",\"search_id\":\"67ca708174b150286cbdc007522fd64f\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=9539352&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\"},\"photos_total\":53},{\"hotel_id\":\"9933954\",\"hotel_geo_id\":\"9933954\",\"tutu_offer_id\":\"b80eb46c-5953-47e8-9afc-9ccf514e94c6\",\"name\":\"Номера на Гончарной\",\"stars\":1,\"rating\":8.93,\"review_count\":810,\"address\":\"3.2 км от центра, 613 м от метро Площадь Восстания\",\"location\":{\"lat\":59.928253,\"lng\":30.369331,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/b215ff31-e1d0-482f-8914-3e10cc4871f6/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/fb40261d1ec4e74761debefaa71e18f0.jpg\"],\"alias\":\"otel_nomera_na_goncharnoy\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=9933954&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"best_offer\":{\"offerpack_hash\":\"e00bfcfc-3fa2-45ec-8739-5f67f82bdb76\",\"room_name\":\"Стандартный номер с общей ванной комнатой\",\"price\":{\"amount\":5598.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=9933954&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.93,\"review_count\":810,\"label\":\"⭐ 8.93/10 · 810 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"9933954\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"9933954\",\"check_in\":\"2026-09-23\",\"check_out\":\"2026-09-25\",\"adults\":1,\"hotel_alias\":\"otel_nomera_na_goncharnoy\",\"search_id\":\"67ca708174b150286cbdc007522fd64f\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=9933954&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\"},\"photos_total\":10},{\"hotel_id\":\"11682617\",\"hotel_geo_id\":\"11682617\",\"tutu_offer_id\":\"88eacf1c-d1c6-4062-a0ce-f0f7ea500170\",\"name\":\"TerraPlace Hotel\",\"stars\":4,\"rating\":9.34,\"review_count\":39,\"address\":\"3.2 км от центра, 552 м от метро Площадь Восстания\",\"location\":{\"lat\":59.929,\"lng\":30.369,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/974751830e8b7bc5c9c7c69c1ce448c412b94f81.f27732acd37d2f82a1671ab620cd29cf303caf02.jpeg\"],\"alias\":\"terrapleys_bay_miks_khotels\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11682617&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"best_offer\":{\"offerpack_hash\":\"52d7bf92-ffcc-4695-9164-957298746f54\",\"room_name\":\"Стандартный Номер\",\"price\":{\"amount\":15896.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11682617&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":9.34,\"review_count\":39,\"label\":\"⭐ 9.34/10 · 39 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"11682617\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11682617\",\"check_in\":\"2026-09-23\",\"check_out\":\"2026-09-25\",\"adults\":1,\"hotel_alias\":\"terrapleys_bay_miks_khotels\",\"search_id\":\"67ca708174b150286cbdc007522fd64f\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11682617&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\"},\"photos_total\":68},{\"hotel_id\":\"11329178\",\"hotel_geo_id\":\"11329178\",\"tutu_offer_id\":\"4f1b6ad0-e55e-456f-bf10-9e0628bcf17d\",\"name\":\"2-х комнатная квартира на улице: Чайковского, 61\",\"stars\":0,\"rating\":0.0,\"review_count\":0,\"address\":\"2.6 км от центра, 191 м от метро Чернышевская\",\"location\":{\"lat\":59.946205,\"lng\":30.360739,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/2a28bd004d379e674f66b29946f49dbc1e8aa666.c809718efed14c112e130d925c50bcb506fe8f1c.jpeg\"],\"alias\":\"2kh_komnatnaya_kvartira_na_ulitse_chaykovskogo_61\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11329178&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"best_offer\":{\"offerpack_hash\":\"d9ebf153-159c-4b04-8100-a659a128adf3\",\"room_name\":\"2-х комнатная квартира на улице: Чайковского, 61\",\"price\":{\"amount\":17250.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11329178&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":null,\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"11329178\",\"check_in\":\"2026-09-23\",\"check_out\":\"2026-09-25\",\"adults\":1,\"hotel_alias\":\"2kh_komnatnaya_kvartira_na_ulitse_chaykovskogo_61\",\"search_id\":\"67ca708174b150286cbdc007522fd64f\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11329178&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\"},\"photos_total\":32},{\"hotel_id\":\"12318688\",\"hotel_geo_id\":\"12318688\",\"tutu_offer_id\":\"5c7acbe8-3075-4c6d-9d8b-4fe39b739003\",\"name\":\"Cosmos Selection Санкт-Петербург Невский Роял Отель\",\"stars\":5,\"rating\":8.77,\"review_count\":658,\"address\":\"1.9 км от центра, 408 м от метро Маяковская\",\"location\":{\"lat\":59.9323,\"lng\":30.348,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://storage.hotelstar.ru/hotelstar//c/9/8/6969034.jpeg\"],\"alias\":\"kosmos_selekshn_sanktpeterburg_nevsky_royal\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12318688&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"best_offer\":{\"offerpack_hash\":\"9ed8702b-096f-47b6-8c39-b6dfb92cbc9c\",\"room_name\":\"Стандарт\",\"price\":{\"amount\":27625.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12318688&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.77,\"review_count\":658,\"label\":\"⭐ 8.77/10 · 658 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"12318688\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"12318688\",\"check_in\":\"2026-09-23\",\"check_out\":\"2026-09-25\",\"adults\":1,\"hotel_alias\":\"kosmos_selekshn_sanktpeterburg_nevsky_royal\",\"search_id\":\"67ca708174b150286cbdc007522fd64f\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12318688&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\"},\"photos_total\":100},{\"hotel_id\":\"9504505\",\"hotel_geo_id\":\"9504505\",\"tutu_offer_id\":\"f8744012-dd00-42bc-976b-22e13c0b28ee\",\"name\":\"В сердце Питера на Загородном\",\"stars\":0,\"rating\":8.49,\"review_count\":23,\"address\":\"2.1 км от центра, 171 м от метро Достоевская\",\"location\":{\"lat\":59.926872,\"lng\":30.344793,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/78ad090db9a8af8c7e7dc3f60e4fbedca4903dfc.c54b54e1531446a8575ace8d0f7376dfaae0ccf9.jpeg\"],\"alias\":\"miniotel_tipichny_piter_na_zagorodnom\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=9504505&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"best_offer\":{\"offerpack_hash\":\"f4c93397-fb07-497a-a1b7-57c27748fe92\",\"room_name\":\"Уютная двухместная комната с арт-дизайном. Удобства на этаже\",\"price\":{\"amount\":4600.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=9504505&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.49,\"review_count\":23,\"label\":\"⭐ 8.49/10 · 23 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"9504505\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"9504505\",\"check_in\":\"2026-09-23\",\"check_out\":\"2026-09-25\",\"adults\":1,\"hotel_alias\":\"miniotel_tipichny_piter_na_zagorodnom\",\"search_id\":\"67ca708174b150286cbdc007522fd64f\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=9504505&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\"},\"photos_total\":48},{\"hotel_id\":\"12165010\",\"hotel_geo_id\":\"12165010\",\"tutu_offer_id\":\"8e4f846b-d0ca-4f51-bc40-0cf1fef8b188\",\"name\":\"Астерия\",\"stars\":3,\"rating\":8.74,\"review_count\":1034,\"address\":\"1.6 км от центра, 495 м от метро Сенная площадь\",\"location\":{\"lat\":59.9265,\"lng\":30.3292,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn2.tu-tu.ru/imghub/view/305b65fe-0c6a-4fcd-85d3-e7f69392bf37/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/95c09811be7f8ee569f16424f6115598.jpg\"],\"alias\":\"asteriya_191023_sanktpeterburg_nab_reki_fontanki_d_71\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12165010&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"best_offer\":{\"offerpack_hash\":\"0ca3ed41-9cd2-478a-93c6-7c733fac8b79\",\"room_name\":\"Классический одноместный номер\",\"price\":{\"amount\":12000.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12165010&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"room_size_sqm\":null,\"breakfast_included\":true,\"meal_name\":\"Завтрак включён\",\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"meal\",\"text\":\"Завтрак включён\"}]},\"review_summary\":{\"rating\":8.74,\"review_count\":1034,\"label\":\"⭐ 8.74/10 · 1 034 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"12165010\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"12165010\",\"check_in\":\"2026-09-23\",\"check_out\":\"2026-09-25\",\"adults\":1,\"hotel_alias\":\"asteriya_191023_sanktpeterburg_nab_reki_fontanki_d_71\",\"search_id\":\"67ca708174b150286cbdc007522fd64f\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12165010&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\"},\"photos_total\":11},{\"hotel_id\":\"12353615\",\"hotel_geo_id\":\"12353615\",\"tutu_offer_id\":\"56ded2d3-4f1b-4deb-b673-74596c976303\",\"name\":\"Меблированная комната на Английском проспекте 17- 19\",\"stars\":0,\"rating\":8.33,\"review_count\":3,\"address\":\"2.5 км от центра, 1.4 км от метро Горный институт\",\"location\":{\"lat\":59.924442,\"lng\":30.282467,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/721d2c6af88116428b1598aaec51454f4ad08b08.ca330e60c169dda6130ca9126272c8f40dfa42b5.jpeg\"],\"alias\":\"meblirovannaya_komnata_na_angliyskom_prospekte_17_19\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12353615&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"best_offer\":{\"offerpack_hash\":\"71b8f06a-d864-45a0-bb26-7db086e124e7\",\"room_name\":null,\"price\":{\"amount\":3600.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12353615&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":8.33,\"review_count\":3,\"label\":\"⭐ 8.33/10 · 3 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"12353615\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"12353615\",\"check_in\":\"2026-09-23\",\"check_out\":\"2026-09-25\",\"adults\":1,\"hotel_alias\":\"meblirovannaya_komnata_na_angliyskom_prospekte_17_19\",\"search_id\":\"67ca708174b150286cbdc007522fd64f\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12353615&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\"},\"photos_total\":6},{\"hotel_id\":\"8675199\",\"hotel_geo_id\":\"8675199\",\"tutu_offer_id\":\"39e42f8e-59d6-424b-8ba3-d4d125d1f6d9\",\"name\":\"Simple B46\",\"stars\":0,\"rating\":8.5,\"review_count\":174,\"address\":\"2.4 км от центра, 552 м от метро Чкаловская\",\"location\":{\"lat\":59.959576,\"lng\":30.30153,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn.worldota.net/t/x500/extranet/5a/f5/5af5b5ee4457eb89e9a26982befd2feb55c82600.jpeg\"],\"alias\":\"apartotel_simple_b46\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=8675199&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"best_offer\":{\"offerpack_hash\":\"656e88b7-e4ac-4a8d-b8e8-356442f78046\",\"room_name\":\"Номер Лофт\",\"price\":{\"amount\":5952.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=8675199&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":null,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[]},\"review_summary\":{\"rating\":8.5,\"review_count\":174,\"label\":\"⭐ 8.5/10 · 174 отзыва\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"8675199\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"8675199\",\"check_in\":\"2026-09-23\",\"check_out\":\"2026-09-25\",\"adults\":1,\"hotel_alias\":\"apartotel_simple_b46\",\"search_id\":\"67ca708174b150286cbdc007522fd64f\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=8675199&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\"},\"photos_total\":13},{\"hotel_id\":\"10965338\",\"hotel_geo_id\":\"10965338\",\"tutu_offer_id\":\"edeb52b4-cac0-461e-885d-6631147d5266\",\"name\":\"Welcome\",\"stars\":0,\"rating\":9.89,\"review_count\":13,\"address\":\"3.7 км от центра, 287 м от метро Балтийская\",\"location\":{\"lat\":59.90629,\"lng\":30.304255,\"city\":null,\"city_geo_id\":null},\"photos\":[\"https://cdn.worldota.net/t/x500/extranet/9a/f4/9af48513e7575a81719afcc9e42210477ece11ee.JPEG\"],\"alias\":\"welcome_g_sanktpeterburg_bulvar_izmaylovsky_d_1_korp_2\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=10965338&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"best_offer\":{\"offerpack_hash\":\"4e2b1281-1934-415a-b29e-c905e2094960\",\"room_name\":\"Studio Standart с кроватью\",\"price\":{\"amount\":9800.0,\"currency\":\"RUB\"},\"price_basis\":\"stay_total\",\"checkout_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=10965338&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\",\"room_size_sqm\":null,\"breakfast_included\":null,\"meal_name\":null,\"free_cancellation\":true,\"pay_at_hotel\":null,\"pay_online\":null,\"highlights\":[{\"type\":\"policies\",\"text\":\"Бесплатная отмена\"}]},\"review_summary\":{\"rating\":9.89,\"review_count\":13,\"label\":\"⭐ 9.89/10 · 13 отзывов\",\"source\":\"offers-hotel-api\",\"scope\":\"hotel\",\"subject\":\"10965338\",\"scale\":10},\"checkout_ref\":{\"transport\":\"hotels\",\"hotel_geo_id\":\"10965338\",\"check_in\":\"2026-09-23\",\"check_out\":\"2026-09-25\",\"adults\":1,\"hotel_alias\":\"welcome_g_sanktpeterburg_bulvar_izmaylovsky_d_1_korp_2\",\"search_id\":\"67ca708174b150286cbdc007522fd64f\",\"fallback_url\":\"https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=10965338&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f\"},\"photos_total\":36}],\"stay\":{\"check_in\":\"2026-09-23\",\"check_out\":\"2026-09-25\",\"nights\":2},\"meta\":{\"search_id\":\"67ca708174b150286cbdc007522fd64f\",\"page\":1,\"page_size\":20,\"total_returned\":20,\"has_more\":true,\"geo_id\":\"2656915\",\"resolved_geo\":{\"geo_id\":\"2656915\",\"name\":\"Санкт-Петербург\",\"country\":\"Россия\",\"region\":\"Санкт-Петербург\",\"geo_type\":\"locality\",\"hotels_count\":43074},\"filters_applied\":{\"option_filters\":[],\"range_filters\":[],\"button_filters\":[],\"quick_filters_order\":[],\"changes\":[]},\"post_filter_dropped_over_cap\":0,\"post_filter_dropped_no_free_cancellation\":0,\"post_filter_dropped_no_breakfast\":0}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    "payload": {
+      "hotels": [
+        {
+          "hotel_id": "8601075",
+          "hotel_geo_id": "8601075",
+          "tutu_offer_id": "b412a244-6348-4610-8164-aa05450cc160",
+          "name": "Вало Нетворк",
+          "stars": 3,
+          "rating": 8.26,
+          "review_count": 263,
+          "address": "6.6 км от центра, 268 м от метро Бухарестская",
+          "location": {
+            "lat": 59.886078,
+            "lng": 30.368853,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn2.tu-tu.ru/imghub/view/0419a832-5746-465d-bc7f-86764996ebda/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/e09f34c5c09bd490223e7fbf14d1648a.jpg"
+          ],
+          "alias": "apartotel_valo_network",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=8601075&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+          "best_offer": {
+            "offerpack_hash": "39f09626-c6db-48b1-aeaf-a5903cdaf364",
+            "room_name": "Нетворк Стандарт 3* с большим матрасом на подиуме",
+            "price": {
+              "amount": 6290,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=8601075&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+            "room_size_sqm": null,
+            "breakfast_included": null,
+            "meal_name": null,
+            "free_cancellation": true,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": [
+              {
+                "type": "policies",
+                "text": "Бесплатная отмена"
+              }
+            ]
+          },
+          "review_summary": {
+            "rating": 8.26,
+            "review_count": 263,
+            "label": "⭐ 8.26/10 · 263 отзыва",
+            "source": "offers-hotel-api",
+            "scope": "hotel",
+            "subject": "8601075",
+            "scale": 10
+          },
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "8601075",
+            "check_in": "2026-09-23",
+            "check_out": "2026-09-25",
+            "adults": 1,
+            "hotel_alias": "apartotel_valo_network",
+            "search_id": "67ca708174b150286cbdc007522fd64f",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=8601075&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f"
+          },
+          "photos_total": 23
+        },
+        {
+          "hotel_id": "11485267",
+          "hotel_geo_id": "11485267",
+          "tutu_offer_id": "591afe67-f916-4c7a-ab73-5d8972eaf9af",
+          "name": "Central inn",
+          "stars": 0,
+          "rating": 8.77,
+          "review_count": 23,
+          "address": "902 м от центра, 699 м от метро Адмиралтейская",
+          "location": {
+            "lat": 59.933746,
+            "lng": 30.303516,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn2.tu-tu.ru/imghub/view/4ba1b351-28b0-4f4a-a358-e9d2f057c554/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/9c32a3b38db8960d830f635640484c28.jpg"
+          ],
+          "alias": "otel_central_inn_atmosfera_ulitsa_yakubovicha_d2_sanktpeterburg",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11485267&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+          "best_offer": {
+            "offerpack_hash": "7d3a425f-da47-4b84-8fe0-ac7281cdac6d",
+            "room_name": "Двухместный Стандарт с раздельными кроватями",
+            "price": {
+              "amount": 9000,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11485267&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+            "room_size_sqm": null,
+            "breakfast_included": null,
+            "meal_name": null,
+            "free_cancellation": true,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": [
+              {
+                "type": "policies",
+                "text": "Бесплатная отмена"
+              }
+            ]
+          },
+          "review_summary": {
+            "rating": 8.77,
+            "review_count": 23,
+            "label": "⭐ 8.77/10 · 23 отзыва",
+            "source": "offers-hotel-api",
+            "scope": "hotel",
+            "subject": "11485267",
+            "scale": 10
+          },
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "11485267",
+            "check_in": "2026-09-23",
+            "check_out": "2026-09-25",
+            "adults": 1,
+            "hotel_alias": "otel_central_inn_atmosfera_ulitsa_yakubovicha_d2_sanktpeterburg",
+            "search_id": "67ca708174b150286cbdc007522fd64f",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11485267&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f"
+          },
+          "photos_total": 29
+        },
+        {
+          "hotel_id": "7650303",
+          "hotel_geo_id": "7650303",
+          "tutu_offer_id": "d5b61f9a-1a11-4183-8971-11f2616b4023",
+          "name": "Docklands ",
+          "stars": 4,
+          "rating": 8.73,
+          "review_count": 113,
+          "address": "4.6 км от центра, 1 км от метро Приморская",
+          "location": {
+            "lat": 59.957043,
+            "lng": 30.241987,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn2.tu-tu.ru/imghub/view/2271c6b7-cb65-4b41-8cf8-3a3428cbd530/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/293f09103b5a6a423770f0785cbfd8ab.jpg"
+          ],
+          "alias": "apartotel_docklands",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=7650303&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+          "best_offer": {
+            "offerpack_hash": "f7f4b639-738a-4ce6-a663-40f4bc905803",
+            "room_name": "Студия с видом во двор",
+            "price": {
+              "amount": 10880,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=7650303&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+            "room_size_sqm": null,
+            "breakfast_included": null,
+            "meal_name": null,
+            "free_cancellation": true,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": [
+              {
+                "type": "policies",
+                "text": "Бесплатная отмена"
+              }
+            ]
+          },
+          "review_summary": {
+            "rating": 8.73,
+            "review_count": 113,
+            "label": "⭐ 8.73/10 · 113 отзывов",
+            "source": "offers-hotel-api",
+            "scope": "hotel",
+            "subject": "7650303",
+            "scale": 10
+          },
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "7650303",
+            "check_in": "2026-09-23",
+            "check_out": "2026-09-25",
+            "adults": 1,
+            "hotel_alias": "apartotel_docklands",
+            "search_id": "67ca708174b150286cbdc007522fd64f",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=7650303&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f"
+          },
+          "photos_total": 100
+        },
+        {
+          "hotel_id": "12470476",
+          "hotel_geo_id": "12470476",
+          "tutu_offer_id": "f2572bff-3a10-4fbb-b59a-bc4bd605feb8",
+          "name": "Номера на Кременчугской",
+          "stars": 0,
+          "rating": 0,
+          "review_count": 0,
+          "address": "3.8 км от центра, 868 м от метро Площадь Александра Невского 2",
+          "location": {
+            "lat": 59.91902,
+            "lng": 30.370638,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/51fe7e8ee7ed8c335dfc25d2cad9f154bd20370e.e84f46e19980a132cff0633c0034087f03f43454.jpeg"
+          ],
+          "alias": "nomera_na_kremenchugskoy",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12470476&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+          "best_offer": {
+            "offerpack_hash": "3e4f181b-f016-453f-841d-d9586c87d08a",
+            "room_name": "Одноместный номер Стандарт",
+            "price": {
+              "amount": 7198,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12470476&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+            "room_size_sqm": null,
+            "breakfast_included": null,
+            "meal_name": null,
+            "free_cancellation": true,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": [
+              {
+                "type": "policies",
+                "text": "Бесплатная отмена"
+              }
+            ]
+          },
+          "review_summary": null,
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "12470476",
+            "check_in": "2026-09-23",
+            "check_out": "2026-09-25",
+            "adults": 1,
+            "hotel_alias": "nomera_na_kremenchugskoy",
+            "search_id": "67ca708174b150286cbdc007522fd64f",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12470476&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f"
+          },
+          "photos_total": 11
+        },
+        {
+          "hotel_id": "11836632",
+          "hotel_geo_id": "11836632",
+          "tutu_offer_id": "5ccbfe65-ef15-4bc6-9b5e-d491fecfbef7",
+          "name": "Отель Санкт-Петербург",
+          "stars": 4,
+          "rating": 8.51,
+          "review_count": 1585,
+          "address": "2.5 км от центра, 760 м от метро Площадь Ленина",
+          "location": {
+            "lat": 59.9569,
+            "lng": 30.34183,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/c3e2cf2b3d804cdc3c4196ed22a170aedfa9bb7f.d6a7cb8320d26591db3e47d2e537bce5ccb9230b.jpeg"
+          ],
+          "alias": "sanktpeterburg",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11836632&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+          "best_offer": {
+            "offerpack_hash": "486b3fca-51d2-4c62-9560-1aa75452ec4c",
+            "room_name": "Стандартный двухместный номер с 1 кроватью или двумя отдельными кроватями и видом во двор",
+            "price": {
+              "amount": 12580,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11836632&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+            "room_size_sqm": null,
+            "breakfast_included": null,
+            "meal_name": null,
+            "free_cancellation": true,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": [
+              {
+                "type": "policies",
+                "text": "Бесплатная отмена"
+              }
+            ]
+          },
+          "review_summary": {
+            "rating": 8.51,
+            "review_count": 1585,
+            "label": "⭐ 8.51/10 · 1 585 отзывов",
+            "source": "offers-hotel-api",
+            "scope": "hotel",
+            "subject": "11836632",
+            "scale": 10
+          },
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "11836632",
+            "check_in": "2026-09-23",
+            "check_out": "2026-09-25",
+            "adults": 1,
+            "hotel_alias": "sanktpeterburg",
+            "search_id": "67ca708174b150286cbdc007522fd64f",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11836632&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f"
+          },
+          "photos_total": 33
+        },
+        {
+          "hotel_id": "11681935",
+          "hotel_geo_id": "11681935",
+          "tutu_offer_id": "49903a29-0b5c-4e8b-96ac-24e7238b1ef0",
+          "name": "Simple Hotel B9",
+          "stars": 0,
+          "rating": 8.98,
+          "review_count": 111,
+          "address": "1.7 км от центра, 885 м от метро Гостиный двор",
+          "location": {
+            "lat": 59.93813,
+            "lng": 30.346563,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn2.tu-tu.ru/imghub/view/0eaabbd7-5a24-4992-bb0d-65dc9c99b9ba/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/c4945bd1ae7d3a7d35b76b2ce7762e1b.jpg"
+          ],
+          "alias": "otel_simple_hotel_b9_ulitsa_belinskogo_d_9_sanktpeterburg",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11681935&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+          "best_offer": {
+            "offerpack_hash": "b3172dca-2aea-42d9-97be-a4cefd9d03b6",
+            "room_name": "Небольшой двухместный номер с личными удобствами вне номера",
+            "price": {
+              "amount": 5400,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11681935&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+            "room_size_sqm": null,
+            "breakfast_included": null,
+            "meal_name": null,
+            "free_cancellation": null,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": []
+          },
+          "review_summary": {
+            "rating": 8.98,
+            "review_count": 111,
+            "label": "⭐ 8.98/10 · 111 отзывов",
+            "source": "offers-hotel-api",
+            "scope": "hotel",
+            "subject": "11681935",
+            "scale": 10
+          },
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "11681935",
+            "check_in": "2026-09-23",
+            "check_out": "2026-09-25",
+            "adults": 1,
+            "hotel_alias": "otel_simple_hotel_b9_ulitsa_belinskogo_d_9_sanktpeterburg",
+            "search_id": "67ca708174b150286cbdc007522fd64f",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11681935&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f"
+          },
+          "photos_total": 9
+        },
+        {
+          "hotel_id": "11794251",
+          "hotel_geo_id": "11794251",
+          "tutu_offer_id": "888373a8-f791-45cb-abc1-ea62c18b2aea",
+          "name": "Однокомнатная квартира на улице: Санкт-Петербург, Лиговский проспект, 244, подъезд 2",
+          "stars": 0,
+          "rating": 0,
+          "review_count": 0,
+          "address": "4.4 км от центра, 1 км от метро Волковская",
+          "location": {
+            "lat": 59.901375,
+            "lng": 30.342638,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn2.tu-tu.ru/imghub/view/374e80a5-8816-4d0a-8ab1-1fc269e01ea0/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/390af5cada8156afa424ced7120c12b8.jpg"
+          ],
+          "alias": "odnokomnatnaya_kvartira_na_ulitse_sanktpeterburg_ligovsky_prospekt_244_podyezd_2",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11794251&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+          "best_offer": {
+            "offerpack_hash": "f70d0e86-647b-4b66-809b-db660558052a",
+            "room_name": "Однокомнатная квартира на улице: Санкт-Петербург, Лиговский проспект, 244, подъезд 2",
+            "price": {
+              "amount": 9676,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11794251&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+            "room_size_sqm": null,
+            "breakfast_included": null,
+            "meal_name": null,
+            "free_cancellation": null,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": []
+          },
+          "review_summary": null,
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "11794251",
+            "check_in": "2026-09-23",
+            "check_out": "2026-09-25",
+            "adults": 1,
+            "hotel_alias": "odnokomnatnaya_kvartira_na_ulitse_sanktpeterburg_ligovsky_prospekt_244_podyezd_2",
+            "search_id": "67ca708174b150286cbdc007522fd64f",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11794251&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f"
+          },
+          "photos_total": 12
+        },
+        {
+          "hotel_id": "11430844",
+          "hotel_geo_id": "11430844",
+          "tutu_offer_id": "b74a91b3-8893-479c-931b-c846f589a78b",
+          "name": "River Palace Hotel",
+          "stars": 4,
+          "rating": 9.49,
+          "review_count": 126,
+          "address": "2.3 км от центра, 519 м от метро Спортивная",
+          "location": {
+            "lat": 59.948883,
+            "lng": 30.279308,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn2.tu-tu.ru/imghub/view/53f08b48-db77-4b13-9246-0ec80efc5c87/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/ce2d41614becdab1136764f8a76a0785.jpg"
+          ],
+          "alias": "river_palas_199178_rossiya_sanktpeterburg_ul_2ya_liniya_vo_d_6130",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11430844&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+          "best_offer": {
+            "offerpack_hash": "7c95e7c4-dcea-46a3-84ea-49837b425ddd",
+            "room_name": "Стандарт с двумя кроватями | Вид на город",
+            "price": {
+              "amount": 22470,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11430844&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+            "room_size_sqm": null,
+            "breakfast_included": true,
+            "meal_name": "Завтрак \"шведский стол\"",
+            "free_cancellation": true,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": [
+              {
+                "type": "meal",
+                "text": "Завтрак \"шведский стол\""
+              },
+              {
+                "type": "policies",
+                "text": "Бесплатная отмена"
+              }
+            ]
+          },
+          "review_summary": {
+            "rating": 9.49,
+            "review_count": 126,
+            "label": "⭐ 9.49/10 · 126 отзывов",
+            "source": "offers-hotel-api",
+            "scope": "hotel",
+            "subject": "11430844",
+            "scale": 10
+          },
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "11430844",
+            "check_in": "2026-09-23",
+            "check_out": "2026-09-25",
+            "adults": 1,
+            "hotel_alias": "river_palas_199178_rossiya_sanktpeterburg_ul_2ya_liniya_vo_d_6130",
+            "search_id": "67ca708174b150286cbdc007522fd64f",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11430844&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f"
+          },
+          "photos_total": 21
+        },
+        {
+          "hotel_id": "8181037",
+          "hotel_geo_id": "8181037",
+          "tutu_offer_id": "cb3d594e-00d4-4a9f-9f2f-eb9474d9284b",
+          "name": "Номера у Невы",
+          "stars": 3,
+          "rating": 7.85,
+          "review_count": 136,
+          "address": "5.2 км от центра, 1 км от метро Площадь Александра Невского 1",
+          "location": {
+            "lat": 59.91768,
+            "lng": 30.398684,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn2.tu-tu.ru/imghub/view/ebf7ecd0-590d-4466-a722-d6350f6cced7/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/a299aabd7b89700a1811a7642bfaa1fd.jpg"
+          ],
+          "alias": "otel_art_deko_nevsky",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+          "best_offer": {
+            "offerpack_hash": "4ce034a9-72b9-4da8-b2b5-0c97a837c76a",
+            "room_name": "Одноместный номер Стандарт",
+            "price": {
+              "amount": 5398,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+            "room_size_sqm": null,
+            "breakfast_included": null,
+            "meal_name": null,
+            "free_cancellation": true,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": [
+              {
+                "type": "policies",
+                "text": "Бесплатная отмена"
+              }
+            ]
+          },
+          "review_summary": {
+            "rating": 7.85,
+            "review_count": 136,
+            "label": "⭐ 7.85/10 · 136 отзывов",
+            "source": "offers-hotel-api",
+            "scope": "hotel",
+            "subject": "8181037",
+            "scale": 10
+          },
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "8181037",
+            "check_in": "2026-09-23",
+            "check_out": "2026-09-25",
+            "adults": 1,
+            "hotel_alias": "otel_art_deko_nevsky",
+            "search_id": "67ca708174b150286cbdc007522fd64f",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=8181037&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f"
+          },
+          "photos_total": 29
+        },
+        {
+          "hotel_id": "12494128",
+          "hotel_geo_id": "12494128",
+          "tutu_offer_id": "cb12c274-9e46-4814-8edf-f2b31d4d4f00",
+          "name": "Дом Кумовича",
+          "stars": 0,
+          "rating": 0,
+          "review_count": 0,
+          "address": "2.7 км от центра, 683 м от метро Чернышевская",
+          "location": {
+            "lat": 59.938736,
+            "lng": 30.36397,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/ba087cf25c697804773a49a262328675802ce112.ca2d17d9b684a0b5b4b46bba95ea7119291ec1e4.jpeg"
+          ],
+          "alias": "dom_kumovicha_rossiyskaya_federatsiya_sanktpeterburg_tsentralny_g_sanktpeterburg_ul_nekrasova_d_46a",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12494128&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+          "best_offer": {
+            "offerpack_hash": "a5c47eb3-ce0c-457f-b161-c437a2f0f074",
+            "room_name": "Эконом 2х местный (индивидуальные удобства на этаже) №7",
+            "price": {
+              "amount": 8000,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12494128&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+            "room_size_sqm": null,
+            "breakfast_included": null,
+            "meal_name": null,
+            "free_cancellation": true,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": [
+              {
+                "type": "policies",
+                "text": "Бесплатная отмена"
+              }
+            ]
+          },
+          "review_summary": null,
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "12494128",
+            "check_in": "2026-09-23",
+            "check_out": "2026-09-25",
+            "adults": 1,
+            "hotel_alias": "dom_kumovicha_rossiyskaya_federatsiya_sanktpeterburg_tsentralny_g_sanktpeterburg_ul_nekrasova_d_46a",
+            "search_id": "67ca708174b150286cbdc007522fd64f",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12494128&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f"
+          },
+          "photos_total": 6
+        },
+        {
+          "hotel_id": "9539352",
+          "hotel_geo_id": "9539352",
+          "tutu_offer_id": "3ae8a611-84f0-4a7e-a1ab-41f5dafbb0df",
+          "name": "Номера на Балтийской",
+          "stars": 0,
+          "rating": 8.93,
+          "review_count": 311,
+          "address": "4.8 км от центра, 1.5 км от метро Нарвская",
+          "location": {
+            "lat": 59.909332,
+            "lng": 30.25353,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn2.tu-tu.ru/imghub/view/da37e6d0-dea8-40bb-aaa4-4e9ec7a2ffc3/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/e42e736f2618b21e2a2de72df7c9d7a6.jpg"
+          ],
+          "alias": "kanonerka_hostel",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=9539352&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+          "best_offer": {
+            "offerpack_hash": "a085fdd0-0626-4e82-9092-e4da2b4faf9b",
+            "room_name": "Стандартный номер с общей ванной комнатой",
+            "price": {
+              "amount": 4198,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=9539352&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+            "room_size_sqm": null,
+            "breakfast_included": null,
+            "meal_name": null,
+            "free_cancellation": true,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": [
+              {
+                "type": "policies",
+                "text": "Бесплатная отмена"
+              }
+            ]
+          },
+          "review_summary": {
+            "rating": 8.93,
+            "review_count": 311,
+            "label": "⭐ 8.93/10 · 311 отзывов",
+            "source": "offers-hotel-api",
+            "scope": "hotel",
+            "subject": "9539352",
+            "scale": 10
+          },
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "9539352",
+            "check_in": "2026-09-23",
+            "check_out": "2026-09-25",
+            "adults": 1,
+            "hotel_alias": "kanonerka_hostel",
+            "search_id": "67ca708174b150286cbdc007522fd64f",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=9539352&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f"
+          },
+          "photos_total": 53
+        },
+        {
+          "hotel_id": "9933954",
+          "hotel_geo_id": "9933954",
+          "tutu_offer_id": "b80eb46c-5953-47e8-9afc-9ccf514e94c6",
+          "name": "Номера на Гончарной",
+          "stars": 1,
+          "rating": 8.93,
+          "review_count": 810,
+          "address": "3.2 км от центра, 613 м от метро Площадь Восстания",
+          "location": {
+            "lat": 59.928253,
+            "lng": 30.369331,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn2.tu-tu.ru/imghub/view/b215ff31-e1d0-482f-8914-3e10cc4871f6/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/fb40261d1ec4e74761debefaa71e18f0.jpg"
+          ],
+          "alias": "otel_nomera_na_goncharnoy",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=9933954&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+          "best_offer": {
+            "offerpack_hash": "e00bfcfc-3fa2-45ec-8739-5f67f82bdb76",
+            "room_name": "Стандартный номер с общей ванной комнатой",
+            "price": {
+              "amount": 5598,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=9933954&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+            "room_size_sqm": null,
+            "breakfast_included": null,
+            "meal_name": null,
+            "free_cancellation": true,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": [
+              {
+                "type": "policies",
+                "text": "Бесплатная отмена"
+              }
+            ]
+          },
+          "review_summary": {
+            "rating": 8.93,
+            "review_count": 810,
+            "label": "⭐ 8.93/10 · 810 отзывов",
+            "source": "offers-hotel-api",
+            "scope": "hotel",
+            "subject": "9933954",
+            "scale": 10
+          },
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "9933954",
+            "check_in": "2026-09-23",
+            "check_out": "2026-09-25",
+            "adults": 1,
+            "hotel_alias": "otel_nomera_na_goncharnoy",
+            "search_id": "67ca708174b150286cbdc007522fd64f",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=9933954&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f"
+          },
+          "photos_total": 10
+        },
+        {
+          "hotel_id": "11682617",
+          "hotel_geo_id": "11682617",
+          "tutu_offer_id": "88eacf1c-d1c6-4062-a0ce-f0f7ea500170",
+          "name": "TerraPlace Hotel",
+          "stars": 4,
+          "rating": 9.34,
+          "review_count": 39,
+          "address": "3.2 км от центра, 552 м от метро Площадь Восстания",
+          "location": {
+            "lat": 59.929,
+            "lng": 30.369,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/974751830e8b7bc5c9c7c69c1ce448c412b94f81.f27732acd37d2f82a1671ab620cd29cf303caf02.jpeg"
+          ],
+          "alias": "terrapleys_bay_miks_khotels",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11682617&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+          "best_offer": {
+            "offerpack_hash": "52d7bf92-ffcc-4695-9164-957298746f54",
+            "room_name": "Стандартный Номер",
+            "price": {
+              "amount": 15896,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11682617&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+            "room_size_sqm": null,
+            "breakfast_included": null,
+            "meal_name": null,
+            "free_cancellation": true,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": [
+              {
+                "type": "policies",
+                "text": "Бесплатная отмена"
+              }
+            ]
+          },
+          "review_summary": {
+            "rating": 9.34,
+            "review_count": 39,
+            "label": "⭐ 9.34/10 · 39 отзывов",
+            "source": "offers-hotel-api",
+            "scope": "hotel",
+            "subject": "11682617",
+            "scale": 10
+          },
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "11682617",
+            "check_in": "2026-09-23",
+            "check_out": "2026-09-25",
+            "adults": 1,
+            "hotel_alias": "terrapleys_bay_miks_khotels",
+            "search_id": "67ca708174b150286cbdc007522fd64f",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11682617&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f"
+          },
+          "photos_total": 68
+        },
+        {
+          "hotel_id": "11329178",
+          "hotel_geo_id": "11329178",
+          "tutu_offer_id": "4f1b6ad0-e55e-456f-bf10-9e0628bcf17d",
+          "name": "2-х комнатная квартира на улице: Чайковского, 61",
+          "stars": 0,
+          "rating": 0,
+          "review_count": 0,
+          "address": "2.6 км от центра, 191 м от метро Чернышевская",
+          "location": {
+            "lat": 59.946205,
+            "lng": 30.360739,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/2a28bd004d379e674f66b29946f49dbc1e8aa666.c809718efed14c112e130d925c50bcb506fe8f1c.jpeg"
+          ],
+          "alias": "2kh_komnatnaya_kvartira_na_ulitse_chaykovskogo_61",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11329178&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+          "best_offer": {
+            "offerpack_hash": "d9ebf153-159c-4b04-8100-a659a128adf3",
+            "room_name": "2-х комнатная квартира на улице: Чайковского, 61",
+            "price": {
+              "amount": 17250,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11329178&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+            "room_size_sqm": null,
+            "breakfast_included": null,
+            "meal_name": null,
+            "free_cancellation": null,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": []
+          },
+          "review_summary": null,
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "11329178",
+            "check_in": "2026-09-23",
+            "check_out": "2026-09-25",
+            "adults": 1,
+            "hotel_alias": "2kh_komnatnaya_kvartira_na_ulitse_chaykovskogo_61",
+            "search_id": "67ca708174b150286cbdc007522fd64f",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=11329178&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f"
+          },
+          "photos_total": 32
+        },
+        {
+          "hotel_id": "12318688",
+          "hotel_geo_id": "12318688",
+          "tutu_offer_id": "5c7acbe8-3075-4c6d-9d8b-4fe39b739003",
+          "name": "Cosmos Selection Санкт-Петербург Невский Роял Отель",
+          "stars": 5,
+          "rating": 8.77,
+          "review_count": 658,
+          "address": "1.9 км от центра, 408 м от метро Маяковская",
+          "location": {
+            "lat": 59.9323,
+            "lng": 30.348,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://storage.hotelstar.ru/hotelstar//c/9/8/6969034.jpeg"
+          ],
+          "alias": "kosmos_selekshn_sanktpeterburg_nevsky_royal",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12318688&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+          "best_offer": {
+            "offerpack_hash": "9ed8702b-096f-47b6-8c39-b6dfb92cbc9c",
+            "room_name": "Стандарт",
+            "price": {
+              "amount": 27625,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12318688&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+            "room_size_sqm": null,
+            "breakfast_included": null,
+            "meal_name": null,
+            "free_cancellation": true,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": [
+              {
+                "type": "policies",
+                "text": "Бесплатная отмена"
+              }
+            ]
+          },
+          "review_summary": {
+            "rating": 8.77,
+            "review_count": 658,
+            "label": "⭐ 8.77/10 · 658 отзывов",
+            "source": "offers-hotel-api",
+            "scope": "hotel",
+            "subject": "12318688",
+            "scale": 10
+          },
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "12318688",
+            "check_in": "2026-09-23",
+            "check_out": "2026-09-25",
+            "adults": 1,
+            "hotel_alias": "kosmos_selekshn_sanktpeterburg_nevsky_royal",
+            "search_id": "67ca708174b150286cbdc007522fd64f",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12318688&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f"
+          },
+          "photos_total": 100
+        },
+        {
+          "hotel_id": "9504505",
+          "hotel_geo_id": "9504505",
+          "tutu_offer_id": "f8744012-dd00-42bc-976b-22e13c0b28ee",
+          "name": "В сердце Питера на Загородном",
+          "stars": 0,
+          "rating": 8.49,
+          "review_count": 23,
+          "address": "2.1 км от центра, 171 м от метро Достоевская",
+          "location": {
+            "lat": 59.926872,
+            "lng": 30.344793,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/78ad090db9a8af8c7e7dc3f60e4fbedca4903dfc.c54b54e1531446a8575ace8d0f7376dfaae0ccf9.jpeg"
+          ],
+          "alias": "miniotel_tipichny_piter_na_zagorodnom",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=9504505&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+          "best_offer": {
+            "offerpack_hash": "f4c93397-fb07-497a-a1b7-57c27748fe92",
+            "room_name": "Уютная двухместная комната с арт-дизайном. Удобства на этаже",
+            "price": {
+              "amount": 4600,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=9504505&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+            "room_size_sqm": null,
+            "breakfast_included": null,
+            "meal_name": null,
+            "free_cancellation": true,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": [
+              {
+                "type": "policies",
+                "text": "Бесплатная отмена"
+              }
+            ]
+          },
+          "review_summary": {
+            "rating": 8.49,
+            "review_count": 23,
+            "label": "⭐ 8.49/10 · 23 отзыва",
+            "source": "offers-hotel-api",
+            "scope": "hotel",
+            "subject": "9504505",
+            "scale": 10
+          },
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "9504505",
+            "check_in": "2026-09-23",
+            "check_out": "2026-09-25",
+            "adults": 1,
+            "hotel_alias": "miniotel_tipichny_piter_na_zagorodnom",
+            "search_id": "67ca708174b150286cbdc007522fd64f",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=9504505&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f"
+          },
+          "photos_total": 48
+        },
+        {
+          "hotel_id": "12165010",
+          "hotel_geo_id": "12165010",
+          "tutu_offer_id": "8e4f846b-d0ca-4f51-bc40-0cf1fef8b188",
+          "name": "Астерия",
+          "stars": 3,
+          "rating": 8.74,
+          "review_count": 1034,
+          "address": "1.6 км от центра, 495 м от метро Сенная площадь",
+          "location": {
+            "lat": 59.9265,
+            "lng": 30.3292,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn2.tu-tu.ru/imghub/view/305b65fe-0c6a-4fcd-85d3-e7f69392bf37/resize_500_500/4271b6c12b3a41b87b17f2bfcd92ed9a/95c09811be7f8ee569f16424f6115598.jpg"
+          ],
+          "alias": "asteriya_191023_sanktpeterburg_nab_reki_fontanki_d_71",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12165010&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+          "best_offer": {
+            "offerpack_hash": "0ca3ed41-9cd2-478a-93c6-7c733fac8b79",
+            "room_name": "Классический одноместный номер",
+            "price": {
+              "amount": 12000,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12165010&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+            "room_size_sqm": null,
+            "breakfast_included": true,
+            "meal_name": "Завтрак включён",
+            "free_cancellation": null,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": [
+              {
+                "type": "meal",
+                "text": "Завтрак включён"
+              }
+            ]
+          },
+          "review_summary": {
+            "rating": 8.74,
+            "review_count": 1034,
+            "label": "⭐ 8.74/10 · 1 034 отзыва",
+            "source": "offers-hotel-api",
+            "scope": "hotel",
+            "subject": "12165010",
+            "scale": 10
+          },
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "12165010",
+            "check_in": "2026-09-23",
+            "check_out": "2026-09-25",
+            "adults": 1,
+            "hotel_alias": "asteriya_191023_sanktpeterburg_nab_reki_fontanki_d_71",
+            "search_id": "67ca708174b150286cbdc007522fd64f",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12165010&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f"
+          },
+          "photos_total": 11
+        },
+        {
+          "hotel_id": "12353615",
+          "hotel_geo_id": "12353615",
+          "tutu_offer_id": "56ded2d3-4f1b-4deb-b673-74596c976303",
+          "name": "Меблированная комната на Английском проспекте 17- 19",
+          "stars": 0,
+          "rating": 8.33,
+          "review_count": 3,
+          "address": "2.5 км от центра, 1.4 км от метро Горный институт",
+          "location": {
+            "lat": 59.924442,
+            "lng": 30.282467,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn4.tu-tu.ru/static/hotels-photo/hotels-photo/721d2c6af88116428b1598aaec51454f4ad08b08.ca330e60c169dda6130ca9126272c8f40dfa42b5.jpeg"
+          ],
+          "alias": "meblirovannaya_komnata_na_angliyskom_prospekte_17_19",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12353615&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+          "best_offer": {
+            "offerpack_hash": "71b8f06a-d864-45a0-bb26-7db086e124e7",
+            "room_name": null,
+            "price": {
+              "amount": 3600,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12353615&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+            "room_size_sqm": null,
+            "breakfast_included": null,
+            "meal_name": null,
+            "free_cancellation": true,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": [
+              {
+                "type": "policies",
+                "text": "Бесплатная отмена"
+              }
+            ]
+          },
+          "review_summary": {
+            "rating": 8.33,
+            "review_count": 3,
+            "label": "⭐ 8.33/10 · 3 отзыва",
+            "source": "offers-hotel-api",
+            "scope": "hotel",
+            "subject": "12353615",
+            "scale": 10
+          },
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "12353615",
+            "check_in": "2026-09-23",
+            "check_out": "2026-09-25",
+            "adults": 1,
+            "hotel_alias": "meblirovannaya_komnata_na_angliyskom_prospekte_17_19",
+            "search_id": "67ca708174b150286cbdc007522fd64f",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=12353615&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f"
+          },
+          "photos_total": 6
+        },
+        {
+          "hotel_id": "8675199",
+          "hotel_geo_id": "8675199",
+          "tutu_offer_id": "39e42f8e-59d6-424b-8ba3-d4d125d1f6d9",
+          "name": "Simple B46",
+          "stars": 0,
+          "rating": 8.5,
+          "review_count": 174,
+          "address": "2.4 км от центра, 552 м от метро Чкаловская",
+          "location": {
+            "lat": 59.959576,
+            "lng": 30.30153,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn.worldota.net/t/x500/extranet/5a/f5/5af5b5ee4457eb89e9a26982befd2feb55c82600.jpeg"
+          ],
+          "alias": "apartotel_simple_b46",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=8675199&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+          "best_offer": {
+            "offerpack_hash": "656e88b7-e4ac-4a8d-b8e8-356442f78046",
+            "room_name": "Номер Лофт",
+            "price": {
+              "amount": 5952,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=8675199&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+            "room_size_sqm": null,
+            "breakfast_included": null,
+            "meal_name": null,
+            "free_cancellation": null,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": []
+          },
+          "review_summary": {
+            "rating": 8.5,
+            "review_count": 174,
+            "label": "⭐ 8.5/10 · 174 отзыва",
+            "source": "offers-hotel-api",
+            "scope": "hotel",
+            "subject": "8675199",
+            "scale": 10
+          },
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "8675199",
+            "check_in": "2026-09-23",
+            "check_out": "2026-09-25",
+            "adults": 1,
+            "hotel_alias": "apartotel_simple_b46",
+            "search_id": "67ca708174b150286cbdc007522fd64f",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=8675199&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f"
+          },
+          "photos_total": 13
+        },
+        {
+          "hotel_id": "10965338",
+          "hotel_geo_id": "10965338",
+          "tutu_offer_id": "edeb52b4-cac0-461e-885d-6631147d5266",
+          "name": "Welcome",
+          "stars": 0,
+          "rating": 9.89,
+          "review_count": 13,
+          "address": "3.7 км от центра, 287 м от метро Балтийская",
+          "location": {
+            "lat": 59.90629,
+            "lng": 30.304255,
+            "city": null,
+            "city_geo_id": null
+          },
+          "photos": [
+            "https://cdn.worldota.net/t/x500/extranet/9a/f4/9af48513e7575a81719afcc9e42210477ece11ee.JPEG"
+          ],
+          "alias": "welcome_g_sanktpeterburg_bulvar_izmaylovsky_d_1_korp_2",
+          "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=10965338&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+          "best_offer": {
+            "offerpack_hash": "4e2b1281-1934-415a-b29e-c905e2094960",
+            "room_name": "Studio Standart с кроватью",
+            "price": {
+              "amount": 9800,
+              "currency": "RUB"
+            },
+            "price_basis": "stay_total",
+            "checkout_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=10965338&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f",
+            "room_size_sqm": null,
+            "breakfast_included": null,
+            "meal_name": null,
+            "free_cancellation": true,
+            "pay_at_hotel": null,
+            "pay_online": null,
+            "highlights": [
+              {
+                "type": "policies",
+                "text": "Бесплатная отмена"
+              }
+            ]
+          },
+          "review_summary": {
+            "rating": 9.89,
+            "review_count": 13,
+            "label": "⭐ 9.89/10 · 13 отзывов",
+            "source": "offers-hotel-api",
+            "scope": "hotel",
+            "subject": "10965338",
+            "scale": 10
+          },
+          "checkout_ref": {
+            "transport": "hotels",
+            "hotel_geo_id": "10965338",
+            "check_in": "2026-09-23",
+            "check_out": "2026-09-25",
+            "adults": 1,
+            "hotel_alias": "welcome_g_sanktpeterburg_bulvar_izmaylovsky_d_1_korp_2",
+            "search_id": "67ca708174b150286cbdc007522fd64f",
+            "fallback_url": "https://hotel.tutu.ru/offers/details?business=0&check_in=2026-09-23&check_out=2026-09-25&geo_id=10965338&geo_name=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&room%5B0%5D=1&search_id=67ca708174b150286cbdc007522fd64f"
+          },
+          "photos_total": 36
+        }
+      ],
+      "stay": {
+        "check_in": "2026-09-23",
+        "check_out": "2026-09-25",
+        "nights": 2
+      },
+      "meta": {
+        "search_id": "67ca708174b150286cbdc007522fd64f",
+        "page": 1,
+        "page_size": 20,
+        "total_returned": 20,
+        "has_more": true,
+        "geo_id": "2656915",
+        "resolved_geo": {
+          "geo_id": "2656915",
+          "name": "Санкт-Петербург",
+          "country": "Россия",
+          "region": "Санкт-Петербург",
+          "geo_type": "locality",
+          "hotels_count": 43074
+        },
+        "filters_applied": {
+          "option_filters": [],
+          "range_filters": [],
+          "button_filters": [],
+          "quick_filters_order": [],
+          "changes": []
+        },
+        "post_filter_dropped_over_cap": 0,
+        "post_filter_dropped_no_free_cancellation": 0,
+        "post_filter_dropped_no_breakfast": 0
+      }
+    }
+  }
+}

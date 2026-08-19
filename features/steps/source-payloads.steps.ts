@@ -17,8 +17,8 @@ import { loadEnvelope } from '../support/fixtures.ts';
 import type { ZaezdWorld } from '../support/world.ts';
 
 const ROUTES: Readonly<Record<string, string>> = {
-  'Москва->Екатеринбург': 'tutu/multitransport-msk-ekb-out.json',
-  'Екатеринбург->Москва': 'tutu/multitransport-ekb-msk-back.json',
+  there: 'tutu/demo-out.json',
+  home: 'tutu/demo-back.json',
 };
 
 const MODE_WORDS: Readonly<Record<string, TransportMode>> = {
@@ -44,14 +44,11 @@ Given(
   },
 );
 
-Given(
-  'the recorded transport answer from {word} to {word}',
-  function (this: ZaezdWorld, from: string, to: string) {
-    const fixture = ROUTES[`${from}->${to}`];
-    assert.ok(fixture !== undefined, `no recorded transport answer from ${from} to ${to}`);
-    this.remember('answer', { source: 'tutu', body: envelopeOf(fixture) });
-  },
-);
+Given('the recorded transport answer {word}', function (this: ZaezdWorld, direction: string) {
+  const fixture = ROUTES[direction];
+  assert.ok(fixture !== undefined, `no recorded transport answer "${direction}"`);
+  this.remember('answer', { source: 'tutu', body: envelopeOf(fixture) });
+});
 
 Given(
   'the recorded transport answer for a route with no direct connection',
@@ -63,10 +60,9 @@ Given(
   },
 );
 
-Given('the recorded hotel listing for {word}', function (this: ZaezdWorld, city: string) {
-  const fixture = city === 'Екатеринбург' ? 'tutu/hotels-ekb.json' : 'tutu/hotels-kzn.json';
-  this.remember('hotel-answer', envelopeOf(fixture));
-  this.remember('answer', { source: 'tutu', body: envelopeOf(fixture) });
+Given('the recorded hotel listing of the demo trip', function (this: ZaezdWorld) {
+  this.remember('hotel-answer', envelopeOf('tutu/demo-hotels.json'));
+  this.remember('answer', { source: 'tutu', body: envelopeOf('tutu/demo-hotels.json') });
 });
 
 Given('the recorded answer where Tutu rejected an unknown argument', function (this: ZaezdWorld) {
@@ -98,7 +94,7 @@ When('the answer is read', function (this: ZaezdWorld) {
 
 When('both answers are read', function (this: ZaezdWorld) {
   const transport = normalizeTransport(
-    unwrapToolResult('tutu', envelopeOf('tutu/multitransport-msk-ekb-out.json')),
+    unwrapToolResult('tutu', envelopeOf('tutu/demo-out.json')),
   );
   this.remember('transport', transport);
   this.remember('hotels', normalizeHotels(unwrapToolResult('tutu', this.recall('hotel-answer'))));

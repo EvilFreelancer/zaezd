@@ -99,8 +99,9 @@ Given('the catalogue is down', function (this: ZaezdWorld) {
   wire(this, { down: true });
 });
 
+/** The catalogue is asked exactly what the product asks it: every city that has events, bar home. */
 const AI_OFFLINE = {
-  cities: ['ekaterinburg', 'kazan', 'spb', 'novosibirsk'],
+  cities: ['chelyabinsk', 'ekaterinburg', 'kaliningrad', 'kazan', 'krasnodar', 'novosibirsk', 'orenburg', 'rostov', 'sochi', 'spb', 'tomsk', 'ufa', 'volgograd', 'voronezh'],
   topics: ['ai'],
   format: 'offline',
   limit: 20,
@@ -149,7 +150,7 @@ When(
 );
 
 When('the same journeys are asked for twice', async function (this: ZaezdWorld) {
-  const query = { origin: 'Москва', destination: 'Екатеринбург', departureDate: '2026-08-26' };
+  const query = { origin: 'Москва', destination: 'Санкт-Петербург', departureDate: '2026-08-20' };
   await wiring(this).tutu.searchTransport(query);
   await wiring(this).tutu.searchTransport(query);
 });
@@ -157,8 +158,8 @@ When('the same journeys are asked for twice', async function (this: ZaezdWorld) 
 When('the same checkout link is asked for twice', async function (this: ZaezdWorld) {
   const search = await wiring(this).tutu.searchTransport({
     origin: 'Москва',
-    destination: 'Екатеринбург',
-    departureDate: '2026-08-26',
+    destination: 'Санкт-Петербург',
+    departureDate: '2026-08-20',
   });
   const rail = search.legs.find((leg) => leg.mode === 'railway');
   assert.ok(rail?.checkoutRef !== undefined, 'the recorded journeys carry no checkout handle');
@@ -214,7 +215,7 @@ Then(
   function (this: ZaezdWorld) {
     const call = wiring(this).asked.find((item) => item.tool === 'search_hotels');
     assert.ok(call !== undefined, 'Tutu was never asked for hotels');
-    assert.equal(call.args['city_name'], 'Екатеринбург');
+    assert.equal(call.args['city_name'], 'Санкт-Петербург');
     assert.equal(call.args['geo_id'], undefined);
     assert.equal(call.args['from_geo_id'], undefined);
   },

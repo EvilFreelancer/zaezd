@@ -1,22 +1,22 @@
 {
-  "recorded_at": "2026-08-19T10:58:53.435Z",
+  "recorded_at": "2026-08-19T11:07:53.110Z",
   "source": "open-meteo",
   "tool": "forecast",
   "arguments": {
-    "url": "https://api.open-meteo.com/v1/forecast?latitude=56.8381978&longitude=60.6103939&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=auto&start_date=2026-08-26&end_date=2026-08-30",
-    "city": "Екатеринбург"
+    "url": "https://api.open-meteo.com/v1/forecast?latitude=59.9340393&longitude=30.4363945&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=auto&start_date=2026-08-20&end_date=2026-08-21",
+    "city": "Санкт-Петербург"
   },
   "note": "inside the 16-day forecast window at the time of recording",
   "response": {
     "status": 200,
     "body": {
-      "latitude": 56.8125,
-      "longitude": 60.625,
-      "generationtime_ms": 0.8368492126464844,
-      "utc_offset_seconds": 18000,
-      "timezone": "Asia/Yekaterinburg",
-      "timezone_abbreviation": "GMT+5",
-      "elevation": 254,
+      "latitude": 59.933983,
+      "longitude": 30.430069,
+      "generationtime_ms": 0.7022619247436523,
+      "utc_offset_seconds": 10800,
+      "timezone": "Europe/Moscow",
+      "timezone_abbreviation": "GMT+3",
+      "elevation": 7,
       "daily_units": {
         "time": "iso8601",
         "temperature_2m_max": "°C",
@@ -25,32 +25,20 @@
       },
       "daily": {
         "time": [
-          "2026-08-26",
-          "2026-08-27",
-          "2026-08-28",
-          "2026-08-29",
-          "2026-08-30"
+          "2026-08-20",
+          "2026-08-21"
         ],
         "temperature_2m_max": [
-          17.5,
-          15.6,
-          12.8,
-          16,
-          14.2
+          18.9,
+          19.2
         ],
         "temperature_2m_min": [
-          10.5,
-          11,
-          10.9,
-          8.8,
-          8.4
+          12,
+          14.8
         ],
         "precipitation_probability_max": [
-          42,
-          31,
-          39,
-          40,
-          35
+          71,
+          65
         ]
       }
     }
